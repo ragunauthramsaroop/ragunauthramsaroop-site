@@ -39,7 +39,7 @@ jobs:
         run: |
           set -euo pipefail
           CAMPAIGN='outreach/icloud-outbox/2026-10-03-executive-value-batch-02.campaign.json'
-          SEND_PAYLOAD="$(python scripts/build_executive_campaign.py "$CAMPAIGN" | tail -n 1)"
+          SEND_PAYLOAD="$(python scripts/build_executive_campaign_compat.py "$CAMPAIGN" | tail -n 1)"
           test -f "$SEND_PAYLOAD"
           echo "payload=$SEND_PAYLOAD" >> "$GITHUB_OUTPUT"
 
