@@ -1,0 +1,428 @@
+{
+  "approved": true,
+  "campaign_type": "executive_company",
+  "campaign_id": "2026-10-03-executive-value-batch-02",
+  "positioning": "International executive leadership across government relations, ESG, sustainability, corporate affairs, stakeholder strategy, regulated operations and country execution.",
+  "items": [
+    {
+      "company": "Weatherford",
+      "recipient_name": "Kristin Ruzicka",
+      "recipient_title": "Executive Vice President, Chief Human Resources Officer and Sustainability",
+      "to": "kristin.ruzicka@weatherford.com",
+      "subject": "Executive Value Proposal | Sustainability, Stakeholder & Country Leadership | Weatherford",
+      "recipient_role_source_url": "https://www.weatherford.com/about-us/our-leadership/",
+      "email_verified": true,
+      "email_verification_source": "Clay Work Email enrichment verified in prior approved unsent batch, 2026-10-03",
+      "facts": ["Weatherford operates globally in energy services and integrates sustainability with enterprise leadership.", "The recipient combines executive HR and sustainability responsibility."],
+      "themes": [
+        {"title":"Enterprise ESG Execution","rationale":"Global energy-service businesses require sustainability priorities to translate into operating ownership, evidence, governance and measurable delivery across functions and geographies.","how_i_can_help":"I bring director-level experience connecting ESG commitments with operating teams, regulators, executive stakeholders, evidence requirements and accountable follow-through in a complex extractive-industry environment."},
+        {"title":"Government and Stakeholder Strategy","rationale":"International energy operations depend on disciplined engagement with regulators, ministries, communities, contractors and strategic partners across diverse institutional settings.","how_i_can_help":"I can strengthen stakeholder mapping, issue escalation, government engagement and cross-functional coordination based on direct experience leading multi-agency relationships around a major mining operation."},
+        {"title":"Country Leadership Integration","rationale":"Regional execution improves when external affairs, sustainability, corporate priorities and operating realities are coordinated through a clear country-level governance model.","how_i_can_help":"I can support country or regional leadership mandates that require institutional judgment, executive communication, regulatory coordination and delivery across technical and corporate functions."}
+      ],
+      "sources": [
+        {"title":"Weatherford Leadership","published_at":"2026-10-03 accessed","url":"https://www.weatherford.com/about-us/our-leadership/"},
+        {"title":"Weatherford Sustainability","published_at":"2026-10-03 accessed","url":"https://www.weatherford.com/about-us/sustainability/"},
+        {"title":"Weatherford Corporate Overview","published_at":"2026-10-03 accessed","url":"https://www.weatherford.com/about-us/"}
+      ]
+    },
+    {
+      "company": "National Water Company Saudi Arabia",
+      "recipient_name": "Adel Alharbi",
+      "recipient_title": "Executive Director Sustainability",
+      "to": "aalharbi@nwc.com.sa",
+      "subject": "Strategic Value Proposal | Sustainability & Stakeholder Leadership | National Water Company",
+      "recipient_role_source_url": "https://www.nwc.com.sa/",
+      "email_verified": true,
+      "email_verification_source": "Clay Work Email enrichment verified in prior approved unsent batch, 2026-10-03",
+      "facts": ["National Water Company operates critical water and wastewater infrastructure in Saudi Arabia.", "Its mandate sits at the intersection of public service, infrastructure, sustainability and national development."],
+      "themes": [
+        {"title":"Sustainability Governance","rationale":"Critical water infrastructure requires sustainability governance that links resource efficiency, public value, regulatory obligations and long-term resilience.","how_i_can_help":"I can bring structured ESG governance, evidence ownership and executive reporting disciplines developed in a regulated natural-resources environment with significant environmental and community interfaces."},
+        {"title":"Government and Regulatory Coordination","rationale":"National infrastructure delivery depends on coherent engagement across ministries, regulators, communities and operating functions.","how_i_can_help":"My current role routinely coordinates ministries, regulators and internal technical owners, allowing me to support institutional alignment and disciplined commitment tracking."},
+        {"title":"Stakeholder Confidence","rationale":"Water services carry direct public and reputational consequences, making stakeholder responsiveness and transparent issue management essential.","how_i_can_help":"I can strengthen stakeholder mapping, grievance escalation, executive communications and cross-functional ownership around high-sensitivity issues."}
+      ],
+      "sources": [
+        {"title":"National Water Company","published_at":"2026-10-03 accessed","url":"https://www.nwc.com.sa/"},
+        {"title":"Saudi Vision 2030","published_at":"2026-10-03 accessed","url":"https://www.vision2030.gov.sa/"},
+        {"title":"Saudi Ministry of Environment Water and Agriculture","published_at":"2026-10-03 accessed","url":"https://www.mewa.gov.sa/en/Pages/default.aspx"}
+      ]
+    },
+    {
+      "company": "Dubai Electricity and Water Authority",
+      "recipient_name": "Dr Aaesha Alnuaimi",
+      "recipient_title": "Vice President, Sustainability and Innovation Centre",
+      "to": "aaesha.alnuaimi@dewa.gov.ae",
+      "subject": "Executive Value Proposal | Sustainability, Innovation & Institutional Leadership | DEWA",
+      "recipient_role_source_url": "https://dewa.gov.ae/en/about-us/media-publications/latest-news/2026/8/quotes-by-dewas-female",
+      "email_verified": true,
+      "email_verification_source": "Clay Work Email enrichment verified in prior approved unsent batch, 2026-10-03",
+      "facts": ["DEWA is central to Dubai's electricity, water, clean-energy and net-zero agenda.", "Dr Alnuaimi leads at the intersection of sustainability and innovation."],
+      "themes": [
+        {"title":"Energy Transition Execution","rationale":"Utility decarbonisation succeeds when clean-energy ambition is connected to operating evidence, stakeholder alignment and institutional delivery.","how_i_can_help":"I bring direct experience supporting external positioning and governance around a large solar and battery platform within an operating mine, including carbon-data readiness and cross-functional coordination."},
+        {"title":"Sustainability Evidence and Assurance","rationale":"Advanced sustainability programmes increasingly depend on traceable data, clear ownership and verification-ready controls.","how_i_can_help":"I can support evidence governance, responsibility matrices and assurance readiness based on experience coordinating carbon-accounting proof-of-concept work and ISO-aligned operating systems."},
+        {"title":"Institutional Partnerships","rationale":"Innovation programmes scale faster when government, industry, technology and operating stakeholders share clear objectives and governance.","how_i_can_help":"I can contribute senior stakeholder strategy, regulatory engagement and partnership coordination across complex public-private interfaces."}
+      ],
+      "sources": [
+        {"title":"DEWA Female Leadership 2026","published_at":"2026-08-01","url":"https://dewa.gov.ae/en/about-us/media-publications/latest-news/2026/8/quotes-by-dewas-female"},
+        {"title":"DEWA Sustainability","published_at":"2026-10-03 accessed","url":"https://www.dewa.gov.ae/en/about-us/sustainability"},
+        {"title":"DEWA Innovation","published_at":"2026-10-03 accessed","url":"https://www.dewa.gov.ae/en/about-us/innovation"}
+      ]
+    },
+    {
+      "company": "QatarEnergy LNG",
+      "recipient_name": "Christian Rizzi",
+      "recipient_title": "Head of SHES, North Field Production Sustainability",
+      "to": "crizzi@qatarenergylng.qa",
+      "subject": "Strategic Value Proposal | Sustainability, Stakeholder & Responsible Operations | QatarEnergy LNG",
+      "recipient_role_source_url": "https://www.qatarenergylng.qa/english",
+      "email_verified": true,
+      "email_verification_source": "Clay Work Email enrichment verified in prior approved unsent batch, 2026-10-03",
+      "facts": ["QatarEnergy LNG operates globally significant LNG assets and major expansion programmes.", "SHES and sustainability leadership are integral to responsible production and stakeholder confidence."],
+      "themes": [
+        {"title":"Responsible Operations Governance","rationale":"Large energy projects require sustainability, safety, environment and external commitments to remain integrated with operational accountability.","how_i_can_help":"I can strengthen cross-functional governance between external commitments, regulators, technical teams and executive decision-makers using experience from a major mining operation."},
+        {"title":"Regulatory and Stakeholder Alignment","rationale":"Complex production environments depend on disciplined institutional engagement and early escalation of regulatory, social and reputational issues.","how_i_can_help":"I bring hands-on leadership across ministries, regulators, communities and internal owners, with structured tracking of actions, evidence and commitments."},
+        {"title":"Energy Transition Evidence","rationale":"Credible transition narratives require operational data, assurance-ready evidence and clear governance behind emissions and energy claims.","how_i_can_help":"I can support data ownership, carbon-accounting readiness and executive sustainability positioning based on renewable-energy and carbon-governance work in mining."}
+      ],
+      "sources": [
+        {"title":"QatarEnergy LNG","published_at":"2026-10-03 accessed","url":"https://www.qatarenergylng.qa/english"},
+        {"title":"QatarEnergy Sustainability","published_at":"2026-10-03 accessed","url":"https://www.qatarenergy.qa/en/Sustainability/Pages/default.aspx"},
+        {"title":"Qatar National Vision 2030","published_at":"2026-10-03 accessed","url":"https://www.gco.gov.qa/en/about-qatar/national-vision2030/"}
+      ]
+    },
+    {
+      "company": "KONE",
+      "recipient_name": "Tero Hottinen",
+      "recipient_title": "Vice President, Head of Strategic Partnerships",
+      "to": "tero.hottinen@kone.com",
+      "subject": "Executive Value Proposal | Strategic Partnerships & Institutional Leadership | KONE",
+      "recipient_role_source_url": "https://fi.linkedin.com/in/terohottinen",
+      "email_verified": true,
+      "email_verification_source": "Clay Work Email enrichment verified in prior approved unsent batch, 2026-10-03",
+      "facts": ["KONE is a global urban mobility and building-technology company.", "Strategic partnerships are increasingly important to smart-city, sustainability and infrastructure ecosystems."],
+      "themes": [
+        {"title":"Government and Infrastructure Partnerships","rationale":"Urban infrastructure growth increasingly requires coordinated relationships with public authorities, developers, technology partners and major contractors.","how_i_can_help":"I can support partnership strategy and institutional engagement using experience coordinating ministries, regulators, investors, contractors and operating teams around complex projects."},
+        {"title":"Sustainability-Led Market Positioning","rationale":"Infrastructure technology providers benefit when sustainability commitments are translated into clear market value and stakeholder credibility.","how_i_can_help":"I bring ESG, energy-transition and executive communication experience that can connect sustainability evidence to stakeholder and market positioning."},
+        {"title":"Country-Level Execution","rationale":"Partnership strategies succeed when global priorities are adapted to local regulatory, institutional and commercial realities.","how_i_can_help":"I can contribute country or regional coordination that aligns corporate priorities with government interfaces and disciplined local execution."}
+      ],
+      "sources": [
+        {"title":"KONE Corporate","published_at":"2026-10-03 accessed","url":"https://www.kone.com/en/"},
+        {"title":"KONE Sustainability","published_at":"2026-10-03 accessed","url":"https://www.kone.com/en/sustainability/"},
+        {"title":"Tero Hottinen Professional Profile","published_at":"2026-10-03 accessed","url":"https://fi.linkedin.com/in/terohottinen"}
+      ]
+    },
+    {
+      "company": "AFRY",
+      "recipient_name": "Tiina Kaho",
+      "recipient_title": "Senior Principal and Head of Sustainability Consulting",
+      "to": "tiina.kaho@afry.com",
+      "subject": "Executive Value Proposal | Sustainability, Energy & Institutional Advisory | AFRY",
+      "recipient_role_source_url": "https://afry.com/fi-fi/palvelut/konsultointi/kestava-kehitys-ja-ymparisto/ilmastonmuutos-ja-vastuullisuus/ilmastopalvelut",
+      "email_verified": true,
+      "email_verification_source": "Clay verified address cross-supported by AFRY public contact material",
+      "facts": ["AFRY combines engineering, energy, infrastructure and management consulting.", "Tiina Kaho leads sustainability consulting with climate and transition focus."],
+      "themes": [
+        {"title":"Practical ESG Transformation","rationale":"Clients increasingly need sustainability strategies that work inside real operating environments rather than remaining reporting exercises.","how_i_can_help":"I bring operator-side experience translating ESG, regulatory and stakeholder expectations into ownership, evidence and execution within mining and infrastructure contexts."},
+        {"title":"Energy Transition Advisory","rationale":"Industrial decarbonisation requires integrated understanding of energy systems, operating constraints, stakeholder expectations and implementation governance.","how_i_can_help":"My experience around large-scale solar, battery storage and carbon-data governance provides a practical complement to strategic advisory work."},
+        {"title":"Government and Stakeholder Advisory","rationale":"Major projects often depend as much on institutional alignment as on technical design.","how_i_can_help":"I can add senior government-relations and stakeholder-execution capability across regulated projects and emerging markets."}
+      ],
+      "sources": [
+        {"title":"AFRY Climate Services","published_at":"2026-10-03 accessed","url":"https://afry.com/fi-fi/palvelut/konsultointi/kestava-kehitys-ja-ymparisto/ilmastonmuutos-ja-vastuullisuus/ilmastopalvelut"},
+        {"title":"AFRY Sustainability Consulting","published_at":"2026-10-03 accessed","url":"https://afry.com/fi-fi/palvelut/konsultointi/vastuullisuuskonsultointi"},
+        {"title":"AFRY Management Consulting","published_at":"2026-10-03 accessed","url":"https://afry.com/en/service/management-consulting"}
+      ]
+    },
+    {
+      "company": "Aramex",
+      "recipient_name": "Osama Abdulfatah",
+      "recipient_title": "Country Head Commercial",
+      "to": "osamaa@aramex.com",
+      "subject": "Executive Value Proposal | Country, Stakeholder & Commercial Leadership | Aramex",
+      "recipient_role_source_url": "https://www.aramex.com/",
+      "email_verified": true,
+      "email_verification_source": "Clay Work Email enrichment verified in prior approved unsent batch, 2026-10-03",
+      "facts": ["Aramex operates a broad logistics and express network across emerging and developed markets.", "Country-level commercial execution depends on public-sector, customer and regulatory coordination."],
+      "themes": [
+        {"title":"Country Stakeholder Strategy","rationale":"Logistics businesses depend on customs, trade, transport and other government interfaces that directly affect service performance and growth.","how_i_can_help":"I can strengthen country-level institutional relationships and issue resolution using extensive government and regulatory coordination experience."},
+        {"title":"Strategic Partnerships","rationale":"Growth in logistics increasingly comes from partnerships across commerce, infrastructure, government and supply-chain ecosystems.","how_i_can_help":"I can support partnership origination and cross-functional execution by connecting external opportunities with accountable internal owners."},
+        {"title":"Reputation and Responsible Growth","rationale":"International logistics brands need consistent stakeholder confidence as they expand into regulated and high-growth markets.","how_i_can_help":"I can integrate corporate affairs, ESG and executive communications into market-development and country-leadership priorities."}
+      ],
+      "sources": [
+        {"title":"Aramex Corporate","published_at":"2026-10-03 accessed","url":"https://www.aramex.com/"},
+        {"title":"Aramex Sustainability","published_at":"2026-10-03 accessed","url":"https://www.aramex.com/corporate/sustainability"},
+        {"title":"Aramex Investor Relations","published_at":"2026-10-03 accessed","url":"https://www.aramex.com/corporate/investor-relations"}
+      ]
+    },
+    {
+      "company": "Expeditors",
+      "recipient_name": "Vivek K. Kumar",
+      "recipient_title": "Regional Vice President, Indian Subcontinent",
+      "to": "vivek.kumar@expeditors.com",
+      "subject": "Executive Value Proposal | Regional, Government & Stakeholder Leadership | Expeditors",
+      "recipient_role_source_url": "https://www.expeditors.com/",
+      "email_verified": true,
+      "email_verification_source": "Clay Work Email enrichment verified in prior approved unsent batch, 2026-10-03",
+      "facts": ["Expeditors operates a global logistics network across customs, freight and supply-chain services.", "Regional leadership requires disciplined coordination across regulatory and commercial environments."],
+      "themes": [
+        {"title":"Regional Institutional Strategy","rationale":"Cross-border logistics performance depends on government, customs, trade and regulatory relationships across multiple jurisdictions.","how_i_can_help":"I can add structured government-relations and issue-management capability developed through direct work with numerous regulatory agencies and ministries."},
+        {"title":"Country Risk and Escalation","rationale":"Regional operations benefit from early identification and disciplined escalation of regulatory, reputational and stakeholder risks.","how_i_can_help":"I can support executive risk visibility, stakeholder mapping and coordinated corrective action across functions and external institutions."},
+        {"title":"Strategic Market Development","rationale":"Growth markets require partnership, institutional awareness and strong local execution in addition to commercial strategy.","how_i_can_help":"I can contribute regional or country mandates linking market development with government interfaces, strategic partnerships and operating delivery."}
+      ],
+      "sources": [
+        {"title":"Expeditors Corporate","published_at":"2026-10-03 accessed","url":"https://www.expeditors.com/"},
+        {"title":"Expeditors Sustainability","published_at":"2026-10-03 accessed","url":"https://www.expeditors.com/sustainability"},
+        {"title":"Expeditors Investor Relations","published_at":"2026-10-03 accessed","url":"https://investor.expeditors.com/"}
+      ]
+    },
+    {
+      "company": "CHEP",
+      "recipient_name": "Carlos Alvarez Romero",
+      "recipient_title": "Strategy, Customer Excellence, Marketing and Sustainability Director LATAM",
+      "to": "carlos.alvarez@chep.com",
+      "subject": "Executive Value Proposal | Strategy, Sustainability & Regional Leadership | CHEP",
+      "recipient_role_source_url": "https://www.linkedin.com/company/chep/",
+      "email_verified": true,
+      "email_verification_source": "Clay Work Email enrichment verified in prior approved unsent batch, 2026-10-03",
+      "facts": ["CHEP operates a circular supply-chain pooling model at global scale.", "Carlos Alvarez Romero is publicly associated with LATAM strategy, marketing and sustainability leadership."],
+      "themes": [
+        {"title":"Circular Economy Stakeholder Strategy","rationale":"Circular supply chains scale through customer adoption, policy alignment, measurable sustainability value and cross-sector partnerships.","how_i_can_help":"I can support executive stakeholder engagement and public-private alignment around sustainability value propositions and responsible growth."},
+        {"title":"Regional ESG Execution","rationale":"Regional sustainability programmes need consistent governance while adapting to different regulatory and market conditions.","how_i_can_help":"I can contribute a disciplined operating model for ESG evidence, stakeholder ownership and executive reporting across country environments."},
+        {"title":"Strategic Partnerships","rationale":"CHEP's model depends on ecosystem collaboration across customers, logistics operators and institutions.","how_i_can_help":"My experience building cross-functional and external relationships can support high-value partnerships and market development across emerging markets."}
+      ],
+      "sources": [
+        {"title":"CHEP Corporate","published_at":"2026-10-03 accessed","url":"https://www.chep.com/"},
+        {"title":"CHEP Sustainability","published_at":"2026-10-03 accessed","url":"https://www.chep.com/sustainability"},
+        {"title":"CHEP LinkedIn","published_at":"2026-10-03 accessed","url":"https://www.linkedin.com/company/chep/"}
+      ]
+    },
+    {
+      "company": "Parsons Corporation",
+      "recipient_name": "William Shelor",
+      "recipient_title": "Senior Vice President, West US Regional Manager, Mobility Solutions",
+      "to": "william.shelor@parsons.com",
+      "subject": "Executive Value Proposal | Infrastructure, Government & Stakeholder Leadership | Parsons",
+      "recipient_role_source_url": "https://www.parsons.com/",
+      "email_verified": true,
+      "email_verification_source": "Clay Work Email enrichment verified in prior approved unsent batch, 2026-10-03",
+      "facts": ["Parsons delivers major infrastructure, mobility, defence and technology programmes.", "Large infrastructure delivery depends on institutional alignment, permitting and stakeholder coordination."],
+      "themes": [
+        {"title":"Government Interface Management","rationale":"Major infrastructure programmes require structured coordination across public authorities, regulators, communities and delivery partners.","how_i_can_help":"I can strengthen government-interface strategy and issue resolution through direct experience coordinating multi-agency matters around complex industrial operations."},
+        {"title":"Stakeholder and Social Performance","rationale":"Infrastructure delivery increasingly depends on social licence, transparent commitments and early handling of stakeholder impacts.","how_i_can_help":"I can support stakeholder mapping, grievance governance, commitment tracking and executive escalation around sensitive project interfaces."},
+        {"title":"Executive Programme Coordination","rationale":"Complex programmes benefit from leaders who can translate external obligations into clear internal ownership across technical and corporate teams.","how_i_can_help":"I bring cross-functional coordination experience spanning operations, HSE, environment, legal, HR, procurement, security and executive leadership."}
+      ],
+      "sources": [
+        {"title":"Parsons Corporate","published_at":"2026-10-03 accessed","url":"https://www.parsons.com/"},
+        {"title":"Parsons Sustainability","published_at":"2026-10-03 accessed","url":"https://www.parsons.com/sustainability/"},
+        {"title":"Parsons Infrastructure","published_at":"2026-10-03 accessed","url":"https://www.parsons.com/markets/infrastructure/"}
+      ]
+    },
+    {
+      "company": "Thermax",
+      "recipient_name": "B. R. Shelar",
+      "recipient_title": "Country Head Thailand and Regional Technical Leader Southeast Asia, Industrial Energy Transition",
+      "to": "b.shelar@thermaxglobal.com",
+      "subject": "Executive Value Proposal | Industrial Energy Transition & Country Leadership | Thermax",
+      "recipient_role_source_url": "https://www.thermaxglobal.com/",
+      "email_verified": true,
+      "email_verification_source": "Clay Work Email enrichment verified in prior approved unsent batch, 2026-10-03",
+      "facts": ["Thermax provides industrial energy and environmental solutions across international markets.", "The recipient's mandate combines country leadership with industrial energy-transition responsibilities."],
+      "themes": [
+        {"title":"Industrial Decarbonisation Execution","rationale":"Industrial transition requires practical integration of energy technology, operating economics, stakeholder expectations and implementation governance.","how_i_can_help":"I can contribute operator-side insight from a large renewable-energy and storage transition within mining, together with carbon-data governance experience."},
+        {"title":"Country and Government Strategy","rationale":"Energy-transition projects often depend on public policy, permitting, utilities and institutional partnerships.","how_i_can_help":"I can support country-level government relations and strategic stakeholder engagement across regulated infrastructure and industrial markets."},
+        {"title":"Regional Partnership Development","rationale":"Scaling industrial solutions across Southeast Asia requires strong local partnerships and disciplined regional coordination.","how_i_can_help":"I can help connect strategic opportunities with government, customer and partner ecosystems while maintaining clear executive ownership and delivery discipline."}
+      ],
+      "sources": [
+        {"title":"Thermax Corporate","published_at":"2026-10-03 accessed","url":"https://www.thermaxglobal.com/"},
+        {"title":"Thermax Sustainability","published_at":"2026-10-03 accessed","url":"https://www.thermaxglobal.com/sustainability/"},
+        {"title":"Thermax Energy Solutions","published_at":"2026-10-03 accessed","url":"https://www.thermaxglobal.com/energy/"}
+      ]
+    },
+    {
+      "company": "KEO International Consultants",
+      "recipient_name": "Eoin Sheridan",
+      "recipient_title": "Regional Sustainability and Environmental Manager",
+      "to": "eoin.sheridan@keo.com",
+      "subject": "Executive Value Proposal | Sustainability, ESG & Strategic Stakeholder Advisory | KEO",
+      "recipient_role_source_url": "https://www.keo.com/eoin-sheridan",
+      "email_verified": true,
+      "email_verification_source": "KEO official GreenPort page publicly lists eoin.sheridan@keo.com, accessed 2026-10-03",
+      "facts": ["KEO operates across planning, engineering, sustainability and environmental consulting in the Middle East.", "Eoin Sheridan leads regional sustainability and environmental work and has supported Saudi giga-project strategies."],
+      "themes": [
+        {"title":"Operator-to-Adviser ESG Perspective","rationale":"Clients benefit from sustainability advice that reflects how commitments, regulators, communities and operating constraints interact in practice.","how_i_can_help":"I can bring direct operator-side ESG and government-relations experience into advisory assignments, strengthening implementation realism and executive credibility."},
+        {"title":"Saudi and GCC Stakeholder Strategy","rationale":"Giga-project and infrastructure programmes require sophisticated stakeholder, regulatory and institutional coordination.","how_i_can_help":"My experience coordinating ministries, regulators, communities and technical teams can support KEO's strategic advisory and delivery work across the GCC."},
+        {"title":"Environmental Data Governance","rationale":"Digital sustainability tools create value when source data, ownership and validation are embedded into operating processes.","how_i_can_help":"I can contribute practical experience with carbon-data traceability, ISO-aligned management systems and evidence ownership."}
+      ],
+      "sources": [
+        {"title":"KEO Eoin Sheridan","published_at":"2026-10-03 accessed","url":"https://www.keo.com/eoin-sheridan"},
+        {"title":"KEO GreenPort","published_at":"2026-10-03 accessed","url":"https://www.keo.com/greenport"},
+        {"title":"KEO Corporate","published_at":"2026-10-03 accessed","url":"https://www.keo.com/"}
+      ]
+    },
+    {
+      "company": "AD Ports Group",
+      "recipient_name": "Ross Thompson",
+      "recipient_title": "Group Chief Strategy and Growth Officer",
+      "to": "ross.thompson@adpc.ae",
+      "subject": "Executive Value Proposal | Strategy, Government & International Growth | AD Ports Group",
+      "recipient_role_source_url": "https://www.adportsgroup.com/en/about-us",
+      "email_verified": true,
+      "email_verification_source": "Published AD Ports contact address in 2025 Dry Cargo Handling Directory; current role confirmed on AD Ports Group official leadership page",
+      "facts": ["AD Ports Group is expanding internationally across ports, logistics, maritime, economic cities and trade platforms.", "Ross Thompson is the Group Chief Strategy and Growth Officer."],
+      "themes": [
+        {"title":"International Growth and Government Interfaces","rationale":"Cross-border infrastructure expansion depends on government alignment, institutional partnerships and disciplined country-level stakeholder strategy.","how_i_can_help":"I can support regional and country growth mandates by combining government relations, executive stakeholder management and cross-functional execution experience."},
+        {"title":"Economic Development Partnerships","rationale":"Ports and economic zones increasingly operate as platforms for investment, industrial development and national diversification.","how_i_can_help":"I can help connect corporate growth priorities with public institutions, investors and strategic partners based on experience across mining, trade and investment interfaces."},
+        {"title":"Responsible Infrastructure Positioning","rationale":"Global expansion requires credible ESG, community and sustainability governance alongside commercial performance.","how_i_can_help":"I can integrate ESG, social performance and executive communications into growth and country-strategy programmes."}
+      ],
+      "sources": [
+        {"title":"AD Ports Group Leadership","published_at":"2026-10-03 accessed","url":"https://www.adportsgroup.com/en/about-us"},
+        {"title":"AD Ports Group Q2 2026","published_at":"2026-08-14","url":"https://www.adportsgroup.com/en/news-and-media/2026/08/14/ad-ports-group-reports-q2-2026-net-profit"},
+        {"title":"AD Ports Group Corporate","published_at":"2026-10-03 accessed","url":"https://www.adportsgroup.com/"}
+      ]
+    },
+    {
+      "company": "Renaissance",
+      "recipient_name": "Sarah Kent",
+      "recipient_title": "Chief Strategy Officer",
+      "to": "sarah.kent@ren-hr.com",
+      "subject": "Executive Value Proposal | Strategy, Aviation & International Leadership | Renaissance",
+      "recipient_role_source_url": "https://www.ren-hr.com/contact/",
+      "email_verified": true,
+      "email_verification_source": "Renaissance official contact page publicly lists Sarah Kent and sarah.kent@ren-hr.com",
+      "facts": ["Renaissance operates in aviation, workforce, immigration and management consultancy from Dubai World Central.", "Sarah Kent is Chief Strategy Officer."],
+      "themes": [
+        {"title":"International Strategy Execution","rationale":"Advisory growth depends on converting strategy into market priorities, client partnerships and disciplined delivery across jurisdictions.","how_i_can_help":"I can contribute executive-level country insight, government relations and cross-functional execution from complex multinational operating environments."},
+        {"title":"Aviation and Government Interfaces","rationale":"Aviation-sector advisory regularly intersects with civil aviation authorities, immigration, labour and other public institutions.","how_i_can_help":"My current portfolio includes civil-aviation coordination and broader government-regulatory engagement, providing relevant institutional experience."},
+        {"title":"Executive Advisory Positioning","rationale":"Clients value advisers who combine strategic thinking with firsthand operational and stakeholder-accountability experience.","how_i_can_help":"I can add operator-side ESG, corporate affairs, regulatory and executive advisory capability to strategic client mandates."}
+      ],
+      "sources": [
+        {"title":"Renaissance Leadership Contact","published_at":"2026-10-03 accessed","url":"https://www.ren-hr.com/contact/"},
+        {"title":"Renaissance Corporate","published_at":"2026-10-03 accessed","url":"https://www.ren-hr.com/"},
+        {"title":"Renaissance Services","published_at":"2026-10-03 accessed","url":"https://www.ren-hr.com/services/"}
+      ]
+    },
+    {
+      "company": "AMAN Consultancy and Technology",
+      "recipient_name": "Saif Al-Hajri",
+      "recipient_title": "Managing Director",
+      "to": "saif@aman.om",
+      "subject": "Executive Value Proposal | Strategy, Governance & Sustainable Transformation | AMAN",
+      "recipient_role_source_url": "https://www.ita.gov.om/itaportal/Data/English/DocLibrary/202571712110218/Sultanate%20of%20Oman%20Private%20Sector%20Directory%20Space%20Sector%202024_V1.1.pdf",
+      "email_verified": true,
+      "email_verification_source": "Oman government private-sector directory publicly lists Saif Al-Hajri, Managing Director, saif@aman.om",
+      "facts": ["AMAN provides business consultancy, digital transformation, governance, PMO and emerging-technology services in Oman.", "Saif Al-Hajri is Managing Director."],
+      "themes": [
+        {"title":"Governance and Executive Transformation","rationale":"Transformation programmes create durable value when governance, accountability and institutional stakeholders are designed into execution from the outset.","how_i_can_help":"I can add governance discipline, executive coordination and regulatory-stakeholder insight drawn from complex industrial operations."},
+        {"title":"Public-Sector and Institutional Advisory","rationale":"Oman's transformation agenda creates demand for advisers who understand both enterprise execution and government-facing stakeholder dynamics.","how_i_can_help":"My government-relations background can support public-sector engagement, partnership development and implementation risk management."},
+        {"title":"Sustainability Integration","rationale":"Digital and organisational transformation increasingly need ESG, resilience and responsible-growth considerations embedded in strategy.","how_i_can_help":"I can integrate practical ESG and sustainability governance with transformation and executive advisory mandates."}
+      ],
+      "sources": [
+        {"title":"Oman Private Sector Directory - AMAN","published_at":"2025-07-17","url":"https://www.ita.gov.om/itaportal/Data/English/DocLibrary/202571712110218/Sultanate%20of%20Oman%20Private%20Sector%20Directory%20Space%20Sector%202024_V1.1.pdf"},
+        {"title":"AMAN Corporate","published_at":"2026-10-03 accessed","url":"https://aman.om/"},
+        {"title":"Oman Vision 2040","published_at":"2026-10-03 accessed","url":"https://www.oman2040.om/"}
+      ]
+    },
+    {
+      "company": "Boulevard Engineering Consultancy",
+      "recipient_name": "Faisal Al Azizi",
+      "recipient_title": "Managing Director",
+      "to": "faisal@boulevardmuscat.com",
+      "subject": "Executive Value Proposal | Infrastructure, Government & Strategic Growth | Boulevard Engineering Consultancy",
+      "recipient_role_source_url": "https://boulevardmuscat.com/",
+      "email_verified": true,
+      "email_verification_source": "Boulevard Engineering Consultancy official website publicly lists Faisal Al Azizi, Managing Director, faisal@boulevardmuscat.com",
+      "facts": ["Boulevard Engineering Consultancy is an Omani engineering company serving residential, industrial, commercial and master-planning projects.", "Faisal Al Azizi is Managing Director."],
+      "themes": [
+        {"title":"Government and Project Interfaces","rationale":"Engineering projects often depend on permits, public authorities, utilities and other institutional stakeholders beyond technical design.","how_i_can_help":"I can add structured government-relations and stakeholder coordination capability to complex project-development and delivery mandates."},
+        {"title":"Responsible Project Positioning","rationale":"Clients increasingly expect infrastructure and development projects to demonstrate sustainability, community awareness and compliance discipline.","how_i_can_help":"I can strengthen ESG, social-performance and executive-stakeholder dimensions alongside technical project delivery."},
+        {"title":"Strategic Growth Partnerships","rationale":"Regional engineering growth depends on strong partnerships with developers, contractors, investors and public institutions.","how_i_can_help":"I can support partnership strategy, market positioning and cross-functional execution around high-value opportunities."}
+      ],
+      "sources": [
+        {"title":"Boulevard Engineering Consultancy","published_at":"2026-10-03 accessed","url":"https://boulevardmuscat.com/"},
+        {"title":"Oman Vision 2040","published_at":"2026-10-03 accessed","url":"https://www.oman2040.om/"},
+        {"title":"Invest Oman","published_at":"2026-10-03 accessed","url":"https://investoman.om/"}
+      ]
+    },
+    {
+      "company": "Triad Oman Consultants International",
+      "recipient_name": "Riyadh Al Muscati",
+      "recipient_title": "Managing Director",
+      "to": "rmuscati@tocieng.biz",
+      "subject": "Executive Value Proposal | Infrastructure, Stakeholder & Country Leadership | TOCI",
+      "recipient_role_source_url": "https://tocieng.com/contact/",
+      "email_verified": true,
+      "email_verification_source": "Triad Oman Consultants International official contact page publicly lists Riyadh Al Muscati, Managing Director, rmuscati@tocieng.biz",
+      "facts": ["TOCI provides engineering and project consultancy services from Muscat.", "Riyadh Al Muscati is Managing Director."],
+      "themes": [
+        {"title":"Institutional Project Strategy","rationale":"Engineering consultancies can differentiate by helping clients manage the government, regulatory and stakeholder conditions surrounding project execution.","how_i_can_help":"I can add government-interface strategy, stakeholder mapping and commitment governance to complex infrastructure mandates."},
+        {"title":"ESG and Social Performance","rationale":"Major projects increasingly require environmental, social and governance thinking to be integrated into design and delivery decisions.","how_i_can_help":"I can contribute operator-side ESG and social-performance experience that complements engineering and project-management capability."},
+        {"title":"Regional Partnerships","rationale":"Consultancy growth depends on trusted relationships with owners, contractors, public authorities and investment partners.","how_i_can_help":"I can support executive partnership development and country-level institutional positioning across Oman and the wider region."}
+      ],
+      "sources": [
+        {"title":"TOCI Contact and Leadership","published_at":"2026-10-03 accessed","url":"https://tocieng.com/contact/"},
+        {"title":"TOCI Corporate","published_at":"2026-10-03 accessed","url":"https://tocieng.com/"},
+        {"title":"Oman Vision 2040","published_at":"2026-10-03 accessed","url":"https://www.oman2040.om/"}
+      ]
+    },
+    {
+      "company": "Mavensmark Management Services",
+      "recipient_name": "Ragesh Kumar R",
+      "recipient_title": "Managing Director",
+      "to": "ragesh@mavensmark.qa",
+      "subject": "Executive Value Proposal | Strategy, Governance & Regional Advisory | Mavensmark",
+      "recipient_role_source_url": "https://www.mavensmark.qa/contact",
+      "email_verified": true,
+      "email_verification_source": "Mavensmark official contact page publicly lists Ragesh Kumar R, Managing Director, ragesh@mavensmark.qa",
+      "facts": ["Mavensmark provides advisory, accounting, tax, compliance and business services in Qatar and the UAE.", "Ragesh Kumar R is Managing Director."],
+      "themes": [
+        {"title":"Regulatory and Institutional Advisory","rationale":"Business advisory clients increasingly require coordinated understanding of regulators, government stakeholders and operating compliance alongside traditional corporate services.","how_i_can_help":"I can add practical government-relations and regulatory-coordination capability built through direct engagement with numerous public institutions."},
+        {"title":"ESG Governance Advisory","rationale":"SMEs and larger enterprises increasingly face sustainability and governance expectations without mature internal systems.","how_i_can_help":"I can support pragmatic ESG governance, evidence ownership and executive reporting frameworks tailored to operating reality."},
+        {"title":"Regional Growth Strategy","rationale":"Advisory firms can expand value by helping clients manage cross-border stakeholder, market-entry and partnership requirements.","how_i_can_help":"I can support country-entry, institutional mapping and strategic partnership work across regulated and emerging markets."}
+      ],
+      "sources": [
+        {"title":"Mavensmark Contact and Leadership","published_at":"2026-10-03 accessed","url":"https://www.mavensmark.qa/contact"},
+        {"title":"Mavensmark Corporate","published_at":"2026-10-03 accessed","url":"https://www.mavensmark.qa/"},
+        {"title":"Qatar National Vision 2030","published_at":"2026-10-03 accessed","url":"https://www.gco.gov.qa/en/about-qatar/national-vision2030/"}
+      ]
+    },
+    {
+      "company": "ANAS Management Consultancy FZCO",
+      "recipient_name": "Antonio Nunes",
+      "recipient_title": "Managing Director and Founder",
+      "to": "a.nunes@antonio-nunes.com",
+      "subject": "Executive Value Proposal | Energy, Infrastructure & International Strategy | ANAS Management Consultancy",
+      "recipient_role_source_url": "https://www.anasconsultancy.com/",
+      "email_verified": true,
+      "email_verification_source": "ANAS Management Consultancy official website publicly lists Managing Director Antonio Nunes and a.nunes@antonio-nunes.com",
+      "facts": ["ANAS focuses on telecommunications, infrastructure, energy, data centres and international project advisory.", "Antonio Nunes brings extensive infrastructure and executive leadership experience."],
+      "themes": [
+        {"title":"Energy and Infrastructure Strategy","rationale":"Infrastructure investors and operators increasingly need integrated understanding of technology, energy, public policy and stakeholder execution.","how_i_can_help":"I can bring operator-side energy-transition, government-relations and executive-coordination experience to strategic infrastructure mandates."},
+        {"title":"Emerging-Market Government Relations","rationale":"Cross-border infrastructure programmes are shaped by government priorities, regulators, permitting and national development agendas.","how_i_can_help":"I can add institutional mapping, public-sector engagement and issue-management capability across emerging-market assignments."},
+        {"title":"Responsible Growth","rationale":"Investors and project sponsors increasingly expect ESG, social licence and carbon considerations to be integrated into commercial strategy.","how_i_can_help":"I can strengthen sustainability governance and stakeholder credibility around growth and investment programmes."}
+      ],
+      "sources": [
+        {"title":"ANAS Management Consultancy","published_at":"2026-10-03 accessed","url":"https://www.anasconsultancy.com/"},
+        {"title":"UAE Net Zero 2050","published_at":"2026-10-03 accessed","url":"https://u.ae/en/information-and-services/environment-and-energy/climate-change/theuaesresponsetoclimatechange/uae-net-zero-2050"},
+        {"title":"Invest in Dubai","published_at":"2026-10-03 accessed","url":"https://invest.dubai.ae/"}
+      ]
+    },
+    {
+      "company": "SIGEL International",
+      "recipient_name": "Francisco Garrote",
+      "recipient_title": "Managing Director",
+      "to": "francisco.garrotte@sigelgroup.com",
+      "subject": "Executive Value Proposal | Country, Stakeholder & Strategic Growth | SIGEL International",
+      "recipient_role_source_url": "https://sigelgroup.com/contact-us/",
+      "email_verified": true,
+      "email_verification_source": "SIGEL official contact page publicly lists Francisco Garrote, Managing Director, francisco.garrotte@sigelgroup.com",
+      "facts": ["SIGEL International operates from Qatar across manpower and business-support services.", "Francisco Garrote is Managing Director."],
+      "themes": [
+        {"title":"Country and Institutional Strategy","rationale":"Workforce and support-service businesses operate at the intersection of clients, labour regulation, immigration and public administration.","how_i_can_help":"I can add government-relations, labour-regulatory and executive stakeholder coordination experience to country-level strategy."},
+        {"title":"Strategic Client Partnerships","rationale":"Growth depends on trusted relationships with major employers, contractors and institutional clients.","how_i_can_help":"I can support high-level partnership development, executive communications and cross-functional follow-through around strategic accounts."},
+        {"title":"Governance and Responsible Operations","rationale":"Service providers strengthen client confidence when compliance, workforce practices and governance are visibly integrated into delivery.","how_i_can_help":"I can contribute compliance coordination, ESG thinking and stakeholder accountability disciplines to support responsible growth."}
+      ],
+      "sources": [
+        {"title":"SIGEL Contact and Leadership","published_at":"2026-10-03 accessed","url":"https://sigelgroup.com/contact-us/"},
+        {"title":"SIGEL Corporate","published_at":"2026-10-03 accessed","url":"https://sigelgroup.com/"},
+        {"title":"Qatar National Vision 2030","published_at":"2026-10-03 accessed","url":"https://www.gco.gov.qa/en/about-qatar/national-vision2030/"}
+      ]
+    }
+  ]
+}
