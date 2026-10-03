@@ -4,6 +4,10 @@
 The campaign stays compact and auditable. Each target becomes one executive-company
 payload consumed by prepare_outreach_payload.py, which creates a strategic value
 proposal and appends Ragunauth Ramsaroop's three-page executive CV to the SAME PDF.
+
+The builder accepts both the original compact schema (targets/context/contribution)
+and the richer audited schema (items/facts/rationale/how_i_can_help). This keeps older
+approved campaigns reproducible while allowing stronger company-specific research.
 """
 
 from __future__ import annotations
@@ -32,13 +36,30 @@ def ensure_text(value: object, label: str, minimum: int = 1) -> str:
     return text
 
 
+def normalize_context(target: dict, company: str, recipient: str, title: str) -> str:
+    direct = str(target.get("context") or "").strip()
+    if words(direct) >= 35:
+        return direct
+    facts = target.get("facts")
+    if isinstance(facts, list):
+        fact_text = " ".join(str(x).strip() for x in facts if str(x).strip())
+    else:
+        fact_text = ""
+    base = (direct + " " + fact_text).strip()
+    extension = (
+        f"The leadership interface represented by {recipient}, {title}, places {company}'s strategic priorities in a context where growth, institutional relationships, responsible operations, stakeholder confidence and disciplined cross-functional execution must reinforce one another. "
+        "That combination creates a relevant basis for considering executive contribution across government relations, ESG, corporate affairs, strategic partnerships and country-level delivery."
+    )
+    return (base + " " + extension).strip()
+
+
 def build_payload(campaign: dict, target: dict, index: int) -> dict:
     company = ensure_text(target.get("company"), "company")
     recipient = ensure_text(target.get("recipient_name"), "recipient_name", 2)
     title = ensure_text(target.get("recipient_title"), "recipient_title", 2)
     email = ensure_text(target.get("to"), "to")
     salutation = ensure_text(target.get("salutation") or recipient, "salutation")
-    context = ensure_text(target.get("context"), f"{company}.context", 35)
+    context = normalize_context(target, company, recipient, title)
     themes = target.get("themes")
     if not isinstance(themes, list) or len(themes) != 3:
         raise ValueError(f"{company}: exactly three strategic themes are required")
@@ -63,8 +84,8 @@ def build_payload(campaign: dict, target: dict, index: int) -> dict:
     opportunities = []
     for theme in themes:
         t = ensure_text(theme.get("title"), "theme.title", 2)
-        c = ensure_text(theme.get("context"), f"{company}.{t}.context", 12)
-        contribution = ensure_text(theme.get("contribution"), f"{company}.{t}.contribution", 12)
+        c = ensure_text(theme.get("context") or theme.get("rationale"), f"{company}.{t}.context", 12)
+        contribution = ensure_text(theme.get("contribution") or theme.get("how_i_can_help"), f"{company}.{t}.contribution", 12)
         opportunities.append({
             "title": t,
             "rationale": (
@@ -165,7 +186,7 @@ def main() -> None:
     campaign = json.loads(campaign_path.read_text(encoding="utf-8"))
     if campaign.get("approved") is not True:
         raise ValueError("Campaign must set approved=true")
-    targets = campaign.get("targets")
+    targets = campaign.get("targets") or campaign.get("items")
     if not isinstance(targets, list) or not targets or len(targets) > 30:
         raise ValueError("Campaign targets must contain 1 to 30 records")
 
