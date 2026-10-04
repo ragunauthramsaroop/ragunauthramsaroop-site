@@ -1,8 +1,7 @@
-/* Fast homepage shell, stale-while-revalidate home navigation, on-demand platform assets. */
-/* Homepage shell refreshed after 2026-09-30 executive redesign. */
+/* Fast homepage shell with cache-first home navigation and background refresh. */
 const V="rr-public-v14";
-const CORE=["/","/assets/home.css","/assets/home-runtime.js","/assets/accessibility.css","/favicon-96.png"];
-const STATIC_FIRST=new Set(["/assets/home.css","/assets/home-runtime.js","/assets/accessibility.css","/assets/preview.png","/favicon-96.png"]);
+const CORE=["/assets/home-runtime.js","/assets/accessibility.css","/favicon-96.png"];
+const STATIC_FIRST=new Set(["/assets/home-runtime.js","/assets/accessibility.css","/assets/preview.png","/favicon-96.png"]);
 const MAX_DYNAMIC_ENTRIES=60;
 
 self.addEventListener("install",event=>{
@@ -43,7 +42,7 @@ async function fromNetwork(request,event,cache){
   if(!response)response=await fetch(request);
   if(response&&response.ok){
     const url=new URL(request.url);
-    const cacheKey=url.pathname==="/"?"/":request;
+    const cacheKey=(url.pathname==="/"||url.pathname==="/index.html")?"/":request;
     event.waitUntil(remember(cache,cacheKey,response.clone()));
   }
   return response;
@@ -52,15 +51,22 @@ async function fromNetwork(request,event,cache){
 async function navigation(request,event){
   const cache=await caches.open(V);
   const url=new URL(request.url);
+  const isHome=url.pathname==="/"||url.pathname==="/index.html";
 
-  // Navigation is network-first so design and content changes are visible immediately.
+  if(isHome){
+    const cached=await cache.match("/",{ignoreSearch:true});
+    if(cached){
+      event.waitUntil(fromNetwork(request,event,cache).catch(()=>null));
+      return cached;
+    }
+  }
+
   try{
     const fresh=await fromNetwork(request,event,cache);
     if(fresh)return fresh;
   }catch{}
 
-  // Never substitute another route when offline.
-  const exact=await cache.match(request,{ignoreSearch:true});
+  const exact=await cache.match(isHome?"/":request,{ignoreSearch:true});
   if(exact)return exact;
   return new Response(
     '<!doctype html><html lang="en"><meta charset="utf-8">'+
