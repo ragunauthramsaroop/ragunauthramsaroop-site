@@ -12,6 +12,8 @@
   "recipient": "radhika.m@hiringbooster.com",
   "recipient_sha256": "f16938117fb2af9d182a64da3e4dd6c20d0b75c5c4061ba124ec81e5e2539794",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-04T12:40:47+00:00",
+  "smtp_message_id": "<179111764770.2230.12612433657046060148@icloud.com>",
+  "status": "sent",
   "subject_sha256": "da28dd69595065914a1859d4fe73311834e277adecb53e6ea718af7d0513b2bb"
 }
