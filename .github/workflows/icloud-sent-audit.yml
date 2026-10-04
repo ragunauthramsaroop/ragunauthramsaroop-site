@@ -1,0 +1,94 @@
+name: iCloud Sent mailbox audit
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'outreach/icloud-audit-requests/*.json'
+  workflow_dispatch:
+    inputs:
+      request_file:
+        description: 'Audit request under outreach/icloud-audit-requests/'
+        required: true
+        type: string
+
+permissions:
+  contents: write
+
+concurrency:
+  group: icloud-sent-audit
+  cancel-in-progress: false
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    env:
+      ICLOUD_SMTP_USER: ragunauthramsaroop@icloud.com
+      ICLOUD_APP_PASSWORD: ${{ secrets.ICLOUD_APP_PASSWORD }}
+      GH_TOKEN: ${{ github.token }}
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          fetch-depth: 2
+
+      - uses: actions/setup-python@v7
+        with:
+          python-version: '3.12'
+
+      - name: Resolve audit request
+        id: request
+        shell: bash
+        run: |
+          set -euo pipefail
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            REQUEST="${{ inputs.request_file }}"
+          else
+            REQUEST="$(git diff-tree --diff-filter=AM --no-commit-id --name-only -r "$GITHUB_SHA" | grep -E '^outreach/icloud-audit-requests/[^/]+\.json$' | head -n 1 || true)"
+          fi
+          if [ -z "$REQUEST" ]; then
+            echo "No iCloud audit request found."
+            exit 0
+          fi
+          case "$REQUEST" in
+            outreach/icloud-audit-requests/*.json) ;;
+            *) echo "Refusing request outside approved audit folder."; exit 1 ;;
+          esac
+          if [ ! -f "$REQUEST" ]; then
+            echo "Audit request not found: $REQUEST"
+            exit 1
+          fi
+          echo "request=$REQUEST" >> "$GITHUB_OUTPUT"
+
+      - name: Verify iCloud credential
+        if: steps.request.outputs.request != ''
+        shell: bash
+        run: |
+          if [ -z "$ICLOUD_APP_PASSWORD" ]; then
+            echo "ICLOUD_APP_PASSWORD is not configured."
+            exit 1
+          fi
+
+      - name: Audit iCloud Sent mailbox
+        id: audit
+        if: steps.request.outputs.request != ''
+        shell: bash
+        run: |
+          set -euo pipefail
+          OUT="outreach/icloud-audit-results/${GITHUB_RUN_ID}.json"
+          mkdir -p "$(dirname "$OUT")"
+          python scripts/audit_icloud_sent.py "${{ steps.request.outputs.request }}" --output "$OUT"
+          echo "output=$OUT" >> "$GITHUB_OUTPUT"
+
+      - name: Persist audit result
+        if: steps.audit.outputs.output != ''
+        shell: bash
+        run: |
+          set -euo pipefail
+          OUT="${{ steps.audit.outputs.output }}"
+          CONTENT="$(base64 -w0 "$OUT")"
+          gh api --method PUT "repos/${GITHUB_REPOSITORY}/contents/${OUT}" \
+            -f message="Record iCloud Sent audit ${GITHUB_RUN_ID}" \
+            -f content="$CONTENT" \
+            -f branch=main
