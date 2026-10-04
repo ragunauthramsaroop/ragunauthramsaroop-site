@@ -12,6 +12,8 @@
   "recipient": "aanwar@alvarezandmarsal.com",
   "recipient_sha256": "9f5e4eb35427616fca3abae7808490eff5cd53584523b5aace134c6d15a9a3ba",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-04T11:04:55+00:00",
+  "smtp_message_id": "<179111189513.2454.12393336991045011565@icloud.com>",
+  "status": "sent",
   "subject_sha256": "eb435cf0fce2502e2d10d913bb658b985f348e966587678c521f20d22904f356"
 }
