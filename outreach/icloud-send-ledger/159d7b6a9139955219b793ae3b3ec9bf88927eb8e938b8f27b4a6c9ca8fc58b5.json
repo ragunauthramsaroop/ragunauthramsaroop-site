@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "4201081c5fff5acff8b1549f7e9134f96f93edc2e4b340dc493969af24289434",
+  "batch_id": "norway-alt-var-energi-2026-10-04",
+  "body_sha256": "7a41c8607a2fad9adfd60e8aecdc8a75c2696863ca7783b94e2ee8702eb86f69",
+  "created_at": "2026-10-04T23:49:12+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "37245110699",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/norway-alt-var-energi-andreas-wulff-2026-10-04.json",
+  "payload_sha256": "4ac28b5f05b1ea3a249509205df65ff3ebfd00e0ed4e244b0e056f94ecda4d61",
+  "recipient": "andreas.wulff@varenergi.no",
+  "recipient_sha256": "159d7b6a9139955219b793ae3b3ec9bf88927eb8e938b8f27b4a6c9ca8fc58b5",
+  "schema": 1,
+  "status": "pending",
+  "subject_sha256": "b1d82cd4a67e2a307caa8103630b9106cef9c27a5973037529580c84f3c75e84"
+}
