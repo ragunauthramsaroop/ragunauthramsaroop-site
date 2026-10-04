@@ -12,6 +12,8 @@
   "recipient": "hrolen@capturi.slb.com",
   "recipient_sha256": "01da31045270d3fb1dc312fa326d056f7634d6885af588238aebd0a189ac34a1",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-04T23:49:40+00:00",
+  "smtp_message_id": "<179115778049.2212.5809988401633429291@icloud.com>",
+  "status": "sent",
   "subject_sha256": "7ad6b40084fccb501e4819470b8c7842d27db71d67cf7b9aea0fff38b03d1517"
 }
