@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "29d9f87fbfc25f4f3280bf636a68c179196daffcd929e1cda7f18a5de0bae762",
+  "batch_id": "norway-batch-01-aker-solutions-20261004",
+  "body_sha256": "cc0941bc869373894b10430f7761037a91ad24da8e5a59579fecfe0fca966f1e",
+  "created_at": "2026-10-04T23:23:24+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "37243562886",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/2026-10-04-aker-solutions-paal-eikeseth.json",
+  "payload_sha256": "20cd2eefbb855e54d9b1af0ed76969d651592fd7d668d3ada948304504aeeeaa",
+  "recipient": "paal.eikeseth@akersolutions.com",
+  "recipient_sha256": "b34be54e093d70d4eb935b085ea8e06d278f42fd3135770aa5be24f169a1ff30",
+  "schema": 1,
+  "status": "pending",
+  "subject_sha256": "ec967de6164d2fc9b1da2a0d04764f514aefa7255fa097d6f83cf887315fb481"
+}
