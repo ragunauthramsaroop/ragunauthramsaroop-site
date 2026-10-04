@@ -24,22 +24,25 @@ jobs:
           python - <<'PY'
           import requests
           endpoint='https://builder-backend.hostinger.com/u1/data/v3/post/dWxO8kP22PFx3w4yDpMNYZxEqL5ARGbV'
-          message='''Dear HiringBooster UAE Team,
-
-I am reaching out for consideration across senior GCC mandates in mining, energy, infrastructure and regulated industries.
-
-I serve as Liaison Director, Social Responsibility Department at AGM Inc., part of Zijin Mining Group. My scope spans ESG and sustainability, government and regulatory relations, corporate and external affairs, social performance, compliance and strategic stakeholder engagement.
-
-Across 12+ years in mining, regulated financial services and commercial operations, I have progressed into director-level leadership. I am pursuing Director, Senior Director, Head, Country Leadership, Chief of Staff and VP-track mandates across the UAE, Saudi Arabia, Qatar and wider GCC, including expatriate, residential and rotational assignments.
-
-Current three-page executive CV: https://ragunauthramsaroop.com/resume.html
-
-I would welcome consideration for current or upcoming mandates where my background aligns.
-
-Regards,
-Ragunauth Ramsaroop
-+592 608 4735
-ragunauthramsaroop@icloud.com'''
+          lines=[
+              'Dear HiringBooster UAE Team,',
+              '',
+              'I am reaching out for consideration across senior GCC mandates in mining, energy, infrastructure and regulated industries.',
+              '',
+              'I serve as Liaison Director, Social Responsibility Department at AGM Inc., part of Zijin Mining Group. My scope spans ESG and sustainability, government and regulatory relations, corporate and external affairs, social performance, compliance and strategic stakeholder engagement.',
+              '',
+              'Across 12+ years in mining, regulated financial services and commercial operations, I have progressed into director-level leadership. I am pursuing Director, Senior Director, Head, Country Leadership, Chief of Staff and VP-track mandates across the UAE, Saudi Arabia, Qatar and wider GCC, including expatriate, residential and rotational assignments.',
+              '',
+              'Current three-page executive CV: https://ragunauthramsaroop.com/resume.html',
+              '',
+              'I would welcome consideration for current or upcoming mandates where my background aligns.',
+              '',
+              'Regards,',
+              'Ragunauth Ramsaroop',
+              '+592 608 4735',
+              'ragunauthramsaroop@icloud.com'
+          ]
+          message='\n'.join(lines)
           payload={'elementId':'ai-0K2SwE','formData':{'Full name':{'value':'Ragunauth Ramsaroop','type':'text'},'Email':{'value':'ragunauthramsaroop@icloud.com','type':'email'},'Message':{'value':message,'type':'text'}}}
           headers={'Content-Type':'application/json;charset=UTF-8','Origin':'https://www.hiringbooster.com','Referer':'https://www.hiringbooster.com/find-a-branch','User-Agent':'Mozilla/5.0'}
           r=requests.post(endpoint,json=payload,headers=headers,timeout=30)
