@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "74c177a4fcb438b8ef546545c6b7ffa1012b009932aeeecdb9f77affd43a493d",
+  "batch_id": "generated-executive.batch",
+  "body_sha256": "e70de296be8f6037d32f27f5fa1c63c89344636f9a4d0d1cf1733f3c5d5d972f",
+  "created_at": "2026-10-04T11:04:54+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "37197486637",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-staged/2026_10_04_bounce_remediation_02a_03_Alvarez_Marsal_Middle_East.json",
+  "payload_sha256": "2380fecc6149729389feb8802a6a42b0026a198eff821a976c7ec3942adf14c2",
+  "recipient": "aanwar@alvarezandmarsal.com",
+  "recipient_sha256": "9f5e4eb35427616fca3abae7808490eff5cd53584523b5aace134c6d15a9a3ba",
+  "schema": 1,
+  "status": "pending",
+  "subject_sha256": "eb435cf0fce2502e2d10d913bb658b985f348e966587678c521f20d22904f356"
+}
