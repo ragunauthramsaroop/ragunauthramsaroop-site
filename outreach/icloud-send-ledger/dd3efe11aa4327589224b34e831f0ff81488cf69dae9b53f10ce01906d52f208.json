@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "de0d5a6205bd3c986466f1d1d7b4aee78adc6915c2905e8e792c887fdea7b142",
+  "batch_id": "norway-batch-02-secure-20261004",
+  "body_sha256": "63d696734b2a2754fb9f69de7627f1f4e8c51ce9643ba4fd209f18a0d33ee7f5",
+  "created_at": "2026-10-04T23:34:10+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "37244214502",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/2026-10-04-norway-batch-02.secure.json",
+  "payload_sha256": "f0d6f6739ff04eba0e18a3f8ef8887647540d168495502d50604d655380b6e4e",
+  "recipient": "eivind.kallevik@hydro.com",
+  "recipient_sha256": "dd3efe11aa4327589224b34e831f0ff81488cf69dae9b53f10ce01906d52f208",
+  "schema": 1,
+  "status": "pending",
+  "subject_sha256": "ba69e24373adac7d62d8b15d38440e08788872087ef65bbd35d13f461bd69ee1"
+}
