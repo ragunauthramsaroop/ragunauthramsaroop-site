@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "0096caeb4d9f5ee8e219c9dbd275085545c8a365ccb2eca17a22a254df5559e4",
+  "batch_id": "2026-10-04-bounce-remediation-02e-krishnan",
+  "body_sha256": "b0c5191b2729592e78530c1e33c5dd1949412a5863ba1c2c6efaeb7a8eff1017",
+  "created_at": "2026-10-04T11:06:13+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "37197569540",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/2026-10-04-bounce-remediation-02e-krishnan.json",
+  "payload_sha256": "af79c64412c9849e64f2fa7655e3f3db2792ef88c7a13803fad8e2e25fd31adf",
+  "recipient": "info@krishnaninc.com",
+  "recipient_sha256": "4803d549e82c64a519cea5eab2bdaf04252c94c818a1b5beb5ee837b58336051",
+  "schema": 1,
+  "status": "pending",
+  "subject_sha256": "9ae02998f7b9281ccd0cd38318c911f05a81d8552d63fbc6f4c375d72afe86a9"
+}
