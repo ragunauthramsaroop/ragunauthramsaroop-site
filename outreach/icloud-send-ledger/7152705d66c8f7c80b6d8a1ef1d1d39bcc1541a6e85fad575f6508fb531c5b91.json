@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "930abacac0229ca562a49e13120d39c508f6f4821c1fa1ee0c7b43af00bf2dd4",
+  "batch_id": "norway-batch-03-kongsberg-20261004",
+  "body_sha256": "494ebaf1d0401befd07bf87e6bccf4035db0b228520d4e9291ca76742180576a",
+  "created_at": "2026-10-04T23:37:08+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "37244397741",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/2026-10-04-norway-batch-03-kongsberg.secure.json",
+  "payload_sha256": "7db5e0f307e4d53c2fd3f284586ad809f8338a1cb5cb165bb218acc0d6ba4427",
+  "recipient": "ivar.simensen@kongsberg.com",
+  "recipient_sha256": "7152705d66c8f7c80b6d8a1ef1d1d39bcc1541a6e85fad575f6508fb531c5b91",
+  "schema": 1,
+  "status": "pending",
+  "subject_sha256": "5404f0bf06380c1b6988a3bf082dba3a2e3cfda49d7207c362cae8d51c772287"
+}
