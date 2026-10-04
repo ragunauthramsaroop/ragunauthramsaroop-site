@@ -12,6 +12,8 @@
   "recipient": "eren@gunuc.com",
   "recipient_sha256": "a9802bde4cc45cb37ceb642e6e1517df177e78e95c7b697b06c22145979eee82",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-04T11:05:33+00:00",
+  "smtp_message_id": "<179111193321.2494.3450714447743805961@icloud.com>",
+  "status": "sent",
   "subject_sha256": "5636a7993f8c884b1ed16b5ab8acf23d9f275cbc32099aa5f650ae5d69e0cd19"
 }
