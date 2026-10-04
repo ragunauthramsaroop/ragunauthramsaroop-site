@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "87eb7e69083f6788becb19abaa18a9f12e214ebd5b3d0b7965d6b54f824d2fe2",
+  "batch_id": "2026-10-04-bounce-remediation-02f-oman-airports",
+  "body_sha256": "b0d6451db02a9d7a4a0f5962d808e18f3874b1760ab3c0e891553a72aeac882e",
+  "created_at": "2026-10-04T11:11:27+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "37197874271",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/2026-10-04-bounce-remediation-02f-oman-airports.json",
+  "payload_sha256": "e3511f70ebbc9533eb1683b7aa65d5413f9f678f4369d6856b97ef9f99727ea7",
+  "recipient": "oamcinfo@omanairports.com",
+  "recipient_sha256": "dd25c1825a99d0ed7db915abbda9898ff25d2d5d2f9417a8ac5dbc524d33e743",
+  "schema": 1,
+  "status": "pending",
+  "subject_sha256": "6955bc040c9cafd4f8db67a40de86f1c3050811d18f3143e1481ea9419a8857a"
+}
