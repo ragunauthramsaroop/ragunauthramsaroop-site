@@ -12,6 +12,8 @@
   "recipient": "info-bkk@boyden.com",
   "recipient_sha256": "4afb526aca0e8018d64244d87e6e580dd1323e8ee9e631b6d8b274ed9b810b7f",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-04T03:20:47+00:00",
+  "smtp_message_id": "<179108404695.2218.1641822983403114747@icloud.com>",
+  "status": "sent",
   "subject_sha256": "88a56f43781c7bd16b2773ac36e03b3bfd08d24d272148dfb47aecf113a1c060"
 }
