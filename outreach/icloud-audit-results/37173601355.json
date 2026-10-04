@@ -1,0 +1,69 @@
+{
+  "audited_at": "2026-10-04T03:16:39+00:00",
+  "mailbox": "Sent Messages",
+  "recipients": [
+    {
+      "match_count": 0,
+      "matches": [],
+      "recipient": "recruitment@qataridiar.com",
+      "sent_header_match": false
+    },
+    {
+      "match_count": 0,
+      "matches": [],
+      "recipient": "info-bkk@boyden.com",
+      "sent_header_match": false
+    },
+    {
+      "match_count": 0,
+      "matches": [],
+      "recipient": "ta_onesiam@siampiwat.com",
+      "sent_header_match": false
+    },
+    {
+      "match_count": 0,
+      "matches": [],
+      "recipient": "career@banpu.co.th",
+      "sent_header_match": false
+    },
+    {
+      "match_count": 0,
+      "matches": [],
+      "recipient": "pgrecruitment@bangkokair.com",
+      "sent_header_match": false
+    },
+    {
+      "match_count": 0,
+      "matches": [],
+      "recipient": "ptt-ir@pttplc.com",
+      "sent_header_match": false
+    },
+    {
+      "match_count": 0,
+      "matches": [],
+      "recipient": "ir@pttep.com",
+      "sent_header_match": false
+    },
+    {
+      "match_count": 0,
+      "matches": [],
+      "recipient": "ir@pttor.com",
+      "sent_header_match": false
+    },
+    {
+      "match_count": 0,
+      "matches": [],
+      "recipient": "ir@irpc.co.th",
+      "sent_header_match": false
+    },
+    {
+      "match_count": 0,
+      "matches": [],
+      "recipient": "pr@energyabsolute.co.th",
+      "sent_header_match": false
+    }
+  ],
+  "request_file": "outreach/icloud-audit-requests/2026-10-03-release-rebuild-01.json",
+  "request_id": "2026-10-03-release-rebuild-01",
+  "schema": 1
+}
