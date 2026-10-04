@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "eab2ae49b48817bb4e615703f6c553ccffd4fb7f192c6093233a5cd1691d7ff1",
+  "batch_id": "2026-10-04-bounce-remediation-02d-sigel",
+  "body_sha256": "4f7948f86611974558b2c3ce3c50afaa2b13803915bbd6af163b0cd6b31b1f29",
+  "created_at": "2026-10-04T11:05:51+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "37197547060",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/2026-10-04-bounce-remediation-02d-sigel.json",
+  "payload_sha256": "cf40abf2aa0a0fe421ce4d8a81a5bdd4aa4f1d0d47ca03bf87f2b54169267f0b",
+  "recipient": "petergomez@sigelgroup.com",
+  "recipient_sha256": "4d8a3721c81cfa50e11f60b5bd0fe9f45275e23fadca118029d9cab7596746e5",
+  "schema": 1,
+  "status": "pending",
+  "subject_sha256": "5be7eb8fb6a5eeca9c980f3e3edc31c9e8e2fcc7c2ebdd612d484a5db755a481"
+}
