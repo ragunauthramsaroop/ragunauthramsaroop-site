@@ -12,6 +12,8 @@
   "recipient": "andreas.wulff@varenergi.no",
   "recipient_sha256": "159d7b6a9139955219b793ae3b3ec9bf88927eb8e938b8f27b4a6c9ca8fc58b5",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-04T23:49:13+00:00",
+  "smtp_message_id": "<179115775340.2229.12978567814331427559@icloud.com>",
+  "status": "sent",
   "subject_sha256": "b1d82cd4a67e2a307caa8103630b9106cef9c27a5973037529580c84f3c75e84"
 }
