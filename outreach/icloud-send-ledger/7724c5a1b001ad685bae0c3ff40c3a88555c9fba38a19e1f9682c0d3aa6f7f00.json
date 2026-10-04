@@ -12,6 +12,8 @@
   "recipient": "ulrike.haugen@dnv.com",
   "recipient_sha256": "7724c5a1b001ad685bae0c3ff40c3a88555c9fba38a19e1f9682c0d3aa6f7f00",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-04T23:34:09+00:00",
+  "smtp_message_id": "<179115684876.2427.12044002065899834353@icloud.com>",
+  "status": "sent",
   "subject_sha256": "194a7969bdbe9fa1e2f041281de8f05416839e635c72188f5092a85142817b71"
 }
