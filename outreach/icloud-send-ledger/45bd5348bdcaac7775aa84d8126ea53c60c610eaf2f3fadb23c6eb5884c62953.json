@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "48954d2fa8caa3d5c3ce4f59c8bb59086c46239bcaa3193ef8e526a1cc9a1f06",
+  "batch_id": "generated-executive.batch",
+  "body_sha256": "a983b126884a70cbc7c1f83e4a4399b373db11413a6d519c7365f99ffd2bfc86",
+  "created_at": "2026-10-04T11:04:52+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "37197486637",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-staged/2026_10_04_bounce_remediation_02a_02_FTI_Consulting_Middle_East.json",
+  "payload_sha256": "bbed88f5b4c7d62149dc3a04a05e63188e66f583a992aa0c8296ed0904d38d74",
+  "recipient": "oliver.williams@fticonsulting.com",
+  "recipient_sha256": "45bd5348bdcaac7775aa84d8126ea53c60c610eaf2f3fadb23c6eb5884c62953",
+  "schema": 1,
+  "status": "pending",
+  "subject_sha256": "d22c21f6bfd2c31c4a8ddda8d5e395e7a92e785bb8616e9eeb4497671a917a4a"
+}
