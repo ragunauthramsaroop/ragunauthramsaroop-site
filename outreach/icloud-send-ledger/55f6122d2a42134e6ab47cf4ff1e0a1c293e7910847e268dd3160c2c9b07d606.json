@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "c1dea0f9dd02947118dc24dbf51da3503228ef39bc33818be542c3243762bd31",
+  "batch_id": "2026-10-03-release-rebuild-01",
+  "body_sha256": "7fd450e52e4f1ad37e91e598f867c472b327ce8b630ea3539926d4308a266b2b",
+  "created_at": "2026-10-04T03:19:02+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "37173709789",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/2026-10-03-release-01-qatari-diar.json",
+  "payload_sha256": "3f60d5f096ce854f618089725b825ea891a123ef678c82e3aaa34b15c7a86f6f",
+  "recipient": "recruitment@qataridiar.com",
+  "recipient_sha256": "55f6122d2a42134e6ab47cf4ff1e0a1c293e7910847e268dd3160c2c9b07d606",
+  "schema": 1,
+  "status": "pending",
+  "subject_sha256": "0e4869bce4df3f38bf48e1bbac291eb292e3771c9edcc092d474e165814c2f83"
+}
