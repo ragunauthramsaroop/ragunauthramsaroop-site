@@ -1,0 +1,35 @@
+name: HiringBooster contact route probe
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/hiringbooster-contact-probe.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Fetch HiringBooster contact page and inspect forms
+        shell: bash
+        run: |
+          set -euo pipefail
+          python - <<'PY'
+          import requests
+          from bs4 import BeautifulSoup
+          url='https://www.hiringbooster.com/find-a-branch'
+          r=requests.get(url, timeout=30, headers={'User-Agent':'Mozilla/5.0'})
+          print('STATUS', r.status_code)
+          print('FINAL_URL', r.url)
+          soup=BeautifulSoup(r.text,'html.parser')
+          forms=soup.find_all('form')
+          print('FORM_COUNT', len(forms))
+          for i,f in enumerate(forms):
+              print('FORM', i, 'ACTION=', f.get('action'), 'METHOD=', f.get('method'))
+              for x in f.find_all(['input','textarea','button']):
+                  print(' FIELD', x.name, 'name=', x.get('name'), 'type=', x.get('type'), 'value=', x.get('value'))
+          scripts=[s.get('src') for s in soup.find_all('script') if s.get('src')]
+          print('SCRIPTS', scripts)
+          PY
