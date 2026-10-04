@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "fe100b22c4520f5f8aeb9eb2007469eefd97536391fea1a45c3058a4ddd728ac",
+  "batch_id": "2026-10-03-release-rebuild-remaining-04",
+  "body_sha256": "9c334bfa9c1ba9ce9297c52a0a28b23f959d6850211bc646501e2cf7f696a5d7",
+  "created_at": "2026-10-04T03:20:45+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "37173799762",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-staged/2026-10-01-recovery-02-boyden-thailand.json",
+  "payload_sha256": "cc848d2c0e99a142717cbc3a5177131ce3a67e0eaefefdf66cd3341856bb5133",
+  "recipient": "info-bkk@boyden.com",
+  "recipient_sha256": "4afb526aca0e8018d64244d87e6e580dd1323e8ee9e631b6d8b274ed9b810b7f",
+  "schema": 1,
+  "status": "pending",
+  "subject_sha256": "88a56f43781c7bd16b2773ac36e03b3bfd08d24d272148dfb47aecf113a1c060"
+}
