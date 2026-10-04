@@ -17,30 +17,52 @@ jobs:
           python-version: '3.12'
       - name: Install probe dependencies
         run: python -m pip install --disable-pip-version-check requests beautifulsoup4
-      - name: Inspect inline runtime used by HiringBooster form
+      - name: Inspect Hostinger form component runtime
         shell: bash
         run: |
           set -euo pipefail
           python - <<'PY'
           import re, requests
+          from urllib.parse import urljoin
           from bs4 import BeautifulSoup
-          url='https://www.hiringbooster.com/find-a-branch'
-          r=requests.get(url, timeout=30, headers={'User-Agent':'Mozilla/5.0'})
+          page_url='https://www.hiringbooster.com/find-a-branch'
+          h={'User-Agent':'Mozilla/5.0'}
+          r=requests.get(page_url, timeout=30, headers=h)
           soup=BeautifulSoup(r.text,'html.parser')
-          scripts=soup.find_all('script')
-          print('SCRIPT_COUNT', len(scripts))
-          for i,s in enumerate(scripts):
-              txt=s.get_text() or ''
-              print('SCRIPT', i, 'TYPE', s.get('type'), 'SRC', s.get('src'), 'LEN', len(txt))
-              low=txt.lower()
-              if any(k in low for k in ('form','submit','fetch','api','zyro','hostinger')):
-                  for k in ('form','submit','fetch','api','zyro','hostinger'):
-                      p=low.find(k)
-                      if p>=0:
-                          print('MATCH', i, k, txt[max(0,p-800):p+2200])
-                          break
-          for needle in ['websiteId','formId','siteId','Contact form 16','mP4My0Vy09IxKQa9']:
-              print('ALL_OCCURRENCES', needle)
-              for m in list(re.finditer(re.escape(needle), r.text, flags=re.I))[:10]:
-                  p=m.start(); print(r.text[max(0,p-700):p+1400])
+          candidates=[]
+          for tag in soup.find_all(True):
+              for k,v in tag.attrs.items():
+                  vals=v if isinstance(v,list) else [v]
+                  for val in vals:
+                      if isinstance(val,str) and ('url' in k.lower() or val.endswith('.js') or '.js?' in val):
+                          full=urljoin(r.url,val)
+                          if full not in candidates:
+                              candidates.append(full)
+                              print('ATTR_URL', tag.name, k, full)
+          print('CANDIDATE_COUNT',len(candidates))
+          for u in candidates:
+              try:
+                  rr=requests.get(u,timeout=30,headers=h)
+              except Exception as e:
+                  print('FETCH_ERR',u,e); continue
+              ct=rr.headers.get('content-type','')
+              if 'javascript' not in ct and '.js' not in u:
+                  continue
+              text=rr.text
+              low=text.lower()
+              hits=[k for k in ('submit','form','fetch(','api','token','website-builder') if k in low]
+              if not hits:
+                  continue
+              print('JS_FILE',u,'STATUS',rr.status_code,'LEN',len(text),'HITS',hits)
+              for key in ('fetch(','submit','form','token'):
+                  start=0
+                  shown=0
+                  while shown<8:
+                      p=low.find(key,start)
+                      if p<0: break
+                      snippet=text[max(0,p-650):p+1800]
+                      if any(x in snippet.lower() for x in ('api','form','token','submit')):
+                          print('JS_SNIPPET',key,snippet)
+                          shown+=1
+                      start=p+len(key)
           PY
