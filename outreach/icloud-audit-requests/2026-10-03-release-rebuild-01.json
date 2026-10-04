@@ -1,5 +1,6 @@
 {
   "request_id": "2026-10-03-release-rebuild-01",
+  "retry": 2,
   "recipients": [
     "recruitment@qataridiar.com",
     "info-bkk@boyden.com",
