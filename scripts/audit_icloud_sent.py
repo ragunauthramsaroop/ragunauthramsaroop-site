@@ -14,6 +14,7 @@ import os
 import re
 from datetime import datetime, timezone
 from email.header import decode_header, make_header
+from email.message import Message
 from email.utils import getaddresses
 from pathlib import Path
 
@@ -72,7 +73,7 @@ def find_sent_mailbox(conn: imaplib.IMAP4_SSL) -> str:
     return candidates[0][1]
 
 
-def exact_recipient_in_headers(msg: email.message.Message, target: str) -> bool:
+def exact_recipient_in_headers(msg: Message, target: str) -> bool:
     fields = []
     for header in ("to", "cc", "bcc", "resent-to", "resent-cc", "resent-bcc"):
         fields.extend(msg.get_all(header, []))
