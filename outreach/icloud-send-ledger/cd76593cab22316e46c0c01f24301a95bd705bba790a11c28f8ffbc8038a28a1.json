@@ -12,6 +12,8 @@
   "recipient": "ta_onesiam@siampiwat.com",
   "recipient_sha256": "cd76593cab22316e46c0c01f24301a95bd705bba790a11c28f8ffbc8038a28a1",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-04T03:20:49+00:00",
+  "smtp_message_id": "<179108404934.2218.14111993883351765928@icloud.com>",
+  "status": "sent",
   "subject_sha256": "daad16b43cc64458ce2d9cb199624748a4f37f61ad7d1ca817f768c384603d68"
 }
