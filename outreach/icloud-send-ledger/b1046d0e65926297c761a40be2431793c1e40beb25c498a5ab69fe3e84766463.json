@@ -12,6 +12,8 @@
   "recipient": "career@banpu.co.th",
   "recipient_sha256": "b1046d0e65926297c761a40be2431793c1e40beb25c498a5ab69fe3e84766463",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-04T03:20:52+00:00",
+  "smtp_message_id": "<179108405214.2218.17176280491887970234@icloud.com>",
+  "status": "sent",
   "subject_sha256": "baef7e93c9eff0d9d3101a9a92e0faa87dec588eda2f3ebfb3e20c590065e11c"
 }
