@@ -12,6 +12,8 @@
   "recipient": "jholme@boyden.com",
   "recipient_sha256": "022c5645630520b8c8c342a6d2b8e434da1ae2285baa8f577b2f336ba1b8c732",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-04T10:56:08+00:00",
+  "smtp_message_id": "<179111136851.2516.17354126412702474492@icloud.com>",
+  "status": "sent",
   "subject_sha256": "88a56f43781c7bd16b2773ac36e03b3bfd08d24d272148dfb47aecf113a1c060"
 }
