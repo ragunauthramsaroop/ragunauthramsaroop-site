@@ -12,6 +12,8 @@
   "recipient": "karl.johnny.hersvik@akerbp.com",
   "recipient_sha256": "0babf0d0dc3707f4e095476040948a63224349419ba62f34bd89ee5f0405bcf5",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-04T23:34:16+00:00",
+  "smtp_message_id": "<179115685602.2427.9015669091527424818@icloud.com>",
+  "status": "sent",
   "subject_sha256": "293175e0c4f158d5c2bca95eebf7e1f80c85fa237d5b2455da2dc6a832f39fa9"
 }
