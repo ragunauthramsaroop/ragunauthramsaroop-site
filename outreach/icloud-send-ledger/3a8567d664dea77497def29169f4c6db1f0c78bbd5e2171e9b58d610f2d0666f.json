@@ -12,6 +12,8 @@
   "recipient": "terje.pilskog@scatec.com",
   "recipient_sha256": "3a8567d664dea77497def29169f4c6db1f0c78bbd5e2171e9b58d610f2d0666f",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-04T23:34:14+00:00",
+  "smtp_message_id": "<179115685368.2427.12116993468914838099@icloud.com>",
+  "status": "sent",
   "subject_sha256": "9ba2e32bd5eed695e55939c7fb63dae15059294a5439a6841e42578ac8f925b3"
 }
