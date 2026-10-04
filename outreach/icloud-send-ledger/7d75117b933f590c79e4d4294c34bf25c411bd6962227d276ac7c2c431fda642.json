@@ -12,6 +12,8 @@
   "recipient": "steher@equinor.com",
   "recipient_sha256": "7d75117b933f590c79e4d4294c34bf25c411bd6962227d276ac7c2c431fda642",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-04T23:48:51+00:00",
+  "smtp_message_id": "<179115773095.2415.5643918196480607175@icloud.com>",
+  "status": "sent",
   "subject_sha256": "8345edeb83ca6cbc0e2a0d48e1a16ff9161e8d2883ee08e4273606e35e54dd76"
 }
