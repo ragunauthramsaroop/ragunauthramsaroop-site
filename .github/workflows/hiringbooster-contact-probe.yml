@@ -15,54 +15,28 @@ jobs:
       - uses: actions/setup-python@v7
         with:
           python-version: '3.12'
-      - name: Install probe dependencies
-        run: python -m pip install --disable-pip-version-check requests beautifulsoup4
-      - name: Inspect Hostinger form component runtime
+      - name: Install probe dependency
+        run: python -m pip install --disable-pip-version-check requests
+      - name: Resolve contact element ID and emitted field names
         shell: bash
         run: |
           set -euo pipefail
           python - <<'PY'
-          import re, requests
-          from urllib.parse import urljoin
-          from bs4 import BeautifulSoup
-          page_url='https://www.hiringbooster.com/find-a-branch'
-          h={'User-Agent':'Mozilla/5.0'}
-          r=requests.get(page_url, timeout=30, headers=h)
-          soup=BeautifulSoup(r.text,'html.parser')
-          candidates=[]
-          for tag in soup.find_all(True):
-              for k,v in tag.attrs.items():
-                  vals=v if isinstance(v,list) else [v]
-                  for val in vals:
-                      if isinstance(val,str) and ('url' in k.lower() or val.endswith('.js') or '.js?' in val):
-                          full=urljoin(r.url,val)
-                          if full not in candidates:
-                              candidates.append(full)
-                              print('ATTR_URL', tag.name, k, full)
-          print('CANDIDATE_COUNT',len(candidates))
-          for u in candidates:
-              try:
-                  rr=requests.get(u,timeout=30,headers=h)
-              except Exception as e:
-                  print('FETCH_ERR',u,e); continue
-              ct=rr.headers.get('content-type','')
-              if 'javascript' not in ct and '.js' not in u:
-                  continue
-              text=rr.text
-              low=text.lower()
-              hits=[k for k in ('submit','form','fetch(','api','token','website-builder') if k in low]
-              if not hits:
-                  continue
-              print('JS_FILE',u,'STATUS',rr.status_code,'LEN',len(text),'HITS',hits)
-              for key in ('fetch(','submit','form','token'):
-                  start=0
-                  shown=0
-                  while shown<8:
-                      p=low.find(key,start)
-                      if p<0: break
-                      snippet=text[max(0,p-650):p+1800]
-                      if any(x in snippet.lower() for x in ('api','form','token','submit')):
-                          print('JS_SNIPPET',key,snippet)
-                          shown+=1
-                      start=p+len(key)
+          import html, re, requests
+          url='https://www.hiringbooster.com/find-a-branch'
+          text=requests.get(url, timeout=30, headers={'User-Agent':'Mozilla/5.0'}).text
+          decoded=html.unescape(text)
+          print('ELEMENT_ID_OCCURRENCES')
+          for m in list(re.finditer(r'elementId', decoded, flags=re.I))[:30]:
+              p=m.start()
+              print(decoded[max(0,p-700):p+1400])
+          print('CONTACT_ELEMENT_CONTEXT')
+          for needle in ['ai-0K2SwE','Contact form 16','dWxO8kP22PFx3w4yDpMNYZxEqL5ARGbV']:
+              p=decoded.find(needle)
+              print('NEEDLE',needle,'POS',p)
+              if p>=0:
+                  print(decoded[max(0,p-1500):p+6500])
+          print('FORM_HTML')
+          p=decoded.find('<form name="Contact form 16"')
+          print(decoded[p:p+5000] if p>=0 else 'NOT_FOUND')
           PY
