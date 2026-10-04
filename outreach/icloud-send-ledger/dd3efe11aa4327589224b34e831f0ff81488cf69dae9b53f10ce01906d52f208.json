@@ -12,6 +12,8 @@
   "recipient": "eivind.kallevik@hydro.com",
   "recipient_sha256": "dd3efe11aa4327589224b34e831f0ff81488cf69dae9b53f10ce01906d52f208",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-04T23:34:11+00:00",
+  "smtp_message_id": "<179115685121.2427.6961366871963364603@icloud.com>",
+  "status": "sent",
   "subject_sha256": "ba69e24373adac7d62d8b15d38440e08788872087ef65bbd35d13f461bd69ee1"
 }
