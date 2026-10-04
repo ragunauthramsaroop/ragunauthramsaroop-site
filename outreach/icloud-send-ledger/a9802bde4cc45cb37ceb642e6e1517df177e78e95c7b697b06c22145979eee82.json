@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "3d0198ea404cb4403d6cae380d997c64c528c51ebc38434dc0d1dac9ccb40cee",
+  "batch_id": "generated-executive.batch",
+  "body_sha256": "893095ca08ffa1a562c64be0919b7fee7edba66c11ff48ee4edb10937013805a",
+  "created_at": "2026-10-04T11:05:31+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "37197525321",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-staged/2026_10_04_bounce_remediation_02b_01_London_Geothermal_Ltd.json",
+  "payload_sha256": "d5d5e7ba6765c45ebe96486a23f29932668d8a60b9befb001b1b61c3b66113b2",
+  "recipient": "eren@gunuc.com",
+  "recipient_sha256": "a9802bde4cc45cb37ceb642e6e1517df177e78e95c7b697b06c22145979eee82",
+  "schema": 1,
+  "status": "pending",
+  "subject_sha256": "5636a7993f8c884b1ed16b5ab8acf23d9f275cbc32099aa5f650ae5d69e0cd19"
+}
