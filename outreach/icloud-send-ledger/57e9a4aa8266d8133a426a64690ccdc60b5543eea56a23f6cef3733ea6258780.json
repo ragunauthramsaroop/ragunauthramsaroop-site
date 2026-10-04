@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "693e5e0216a4d48401eab0865eadfdb3671115b817cc64a1a07199e08137c5ce",
+  "batch_id": "2026-10-04-hiringbooster-uae-executive-outreach",
+  "body_sha256": "cb7aa06eb7620cfcb31119f19449598b0d28c1fc3de54a46854eb1cf2a245101",
+  "created_at": "2026-10-04T12:40:43+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "37202918892",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/2026-10-04-hiringbooster-uae-executive-outreach.json",
+  "payload_sha256": "f366c73c10f677885015db429176cf41238d1477768256d11386919a56f250d2",
+  "recipient": "danial.c@hiringbooster.com",
+  "recipient_sha256": "57e9a4aa8266d8133a426a64690ccdc60b5543eea56a23f6cef3733ea6258780",
+  "schema": 1,
+  "status": "pending",
+  "subject_sha256": "3db94c88a88a850e82539cbc40a102189d3eaa5b4e6cee670178a5ce34ce87e0"
+}
