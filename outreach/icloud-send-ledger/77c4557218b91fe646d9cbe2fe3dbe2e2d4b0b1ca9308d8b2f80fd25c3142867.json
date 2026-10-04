@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "1a7543adf6ee0f681fe6916be6043e71fe79afff8db1cda6d513ed886623afe6",
+  "batch_id": "generated-executive.batch",
+  "body_sha256": "10a63835a4fa4553ebb710c732c671de7697517ac5422e66c440061719e79ba7",
+  "created_at": "2026-10-04T11:04:50+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "37197486637",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-staged/2026_10_04_bounce_remediation_02a_01_PwC_Middle_East.json",
+  "payload_sha256": "1b57f7f6af732da5ecf0610076553f8b6078511e7ecf7ad3a8ef35bf6e9540a5",
+  "recipient": "stephen.x.anderson@pwc.com",
+  "recipient_sha256": "77c4557218b91fe646d9cbe2fe3dbe2e2d4b0b1ca9308d8b2f80fd25c3142867",
+  "schema": 1,
+  "status": "pending",
+  "subject_sha256": "a7102fd7faa54111368b9089b113b262772c2f0b2a0b75b4a8144f785f2d9040"
+}
