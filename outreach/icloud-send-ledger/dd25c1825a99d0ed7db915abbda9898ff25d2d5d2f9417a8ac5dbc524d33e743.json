@@ -12,6 +12,8 @@
   "recipient": "oamcinfo@omanairports.com",
   "recipient_sha256": "dd25c1825a99d0ed7db915abbda9898ff25d2d5d2f9417a8ac5dbc524d33e743",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-04T11:11:28+00:00",
+  "smtp_message_id": "<179111228851.2424.8802187385532250992@icloud.com>",
+  "status": "sent",
   "subject_sha256": "6955bc040c9cafd4f8db67a40de86f1c3050811d18f3143e1481ea9419a8857a"
 }
