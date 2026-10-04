@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "9826fd31feb103f0d73c008351bd8039ba7e6ba61a68399654798eab4f025855",
+  "batch_id": "norway-batch-01-yara-20261004",
+  "body_sha256": "991637ec77a08afff9a494d99ce5e962b7c9094efac5cc8227ef33aeca5d82fb",
+  "created_at": "2026-10-04T23:24:02+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "37243608804",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/2026-10-04-yara-bernhard-stormyr.json",
+  "payload_sha256": "ebe21e275ff32b2f352ddce86fa1cbb60fd669877054dcd902337e0d5c15db81",
+  "recipient": "bernhard.stormyr@yara.com",
+  "recipient_sha256": "a64ed7b2992601d73c1b218d140a0adb6b3c0d4b324c134072ab568cf18224bb",
+  "schema": 1,
+  "status": "pending",
+  "subject_sha256": "194407c2051b10590c98b7adc6a378a5e37b489cabf1ec0b7b1ddd5599fdcf08"
+}
