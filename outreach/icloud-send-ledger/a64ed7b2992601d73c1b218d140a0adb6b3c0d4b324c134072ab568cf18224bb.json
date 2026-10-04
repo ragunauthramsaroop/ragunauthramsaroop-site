@@ -12,6 +12,8 @@
   "recipient": "bernhard.stormyr@yara.com",
   "recipient_sha256": "a64ed7b2992601d73c1b218d140a0adb6b3c0d4b324c134072ab568cf18224bb",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-04T23:24:04+00:00",
+  "smtp_message_id": "<179115624411.2213.12727651854734323711@icloud.com>",
+  "status": "sent",
   "subject_sha256": "194407c2051b10590c98b7adc6a378a5e37b489cabf1ec0b7b1ddd5599fdcf08"
 }
