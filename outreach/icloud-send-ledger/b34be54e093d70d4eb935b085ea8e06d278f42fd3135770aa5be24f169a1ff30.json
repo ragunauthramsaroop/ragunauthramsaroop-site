@@ -12,6 +12,8 @@
   "recipient": "paal.eikeseth@akersolutions.com",
   "recipient_sha256": "b34be54e093d70d4eb935b085ea8e06d278f42fd3135770aa5be24f169a1ff30",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-04T23:23:26+00:00",
+  "smtp_message_id": "<179115620528.2255.6202833628331933439@icloud.com>",
+  "status": "sent",
   "subject_sha256": "ec967de6164d2fc9b1da2a0d04764f514aefa7255fa097d6f83cf887315fb481"
 }
