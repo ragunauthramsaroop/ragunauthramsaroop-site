@@ -12,6 +12,8 @@
   "recipient": "oliver.williams@fticonsulting.com",
   "recipient_sha256": "45bd5348bdcaac7775aa84d8126ea53c60c610eaf2f3fadb23c6eb5884c62953",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-04T11:04:53+00:00",
+  "smtp_message_id": "<179111189320.2454.13378106396797554656@icloud.com>",
+  "status": "sent",
   "subject_sha256": "d22c21f6bfd2c31c4a8ddda8d5e395e7a92e785bb8616e9eeb4497671a917a4a"
 }
