@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "5b9186ca52f8a243335818cace320812a111d4d5191c85e39d5a7f888b2a4c12",
+  "batch_id": "norway-alt-slb-2026-10-04",
+  "body_sha256": "5e3d736a5ff9a69ef0c8e5ca554a3f11256bd8f2617455f3708b5106a9f58109",
+  "created_at": "2026-10-04T23:49:39+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "37245139441",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/norway-alt-slb-hanne-rolen-2026-10-04.json",
+  "payload_sha256": "28d15825a69db7d34255a4662ae989f95058e943004f59ff5b022b6ae42c8061",
+  "recipient": "hrolen@capturi.slb.com",
+  "recipient_sha256": "01da31045270d3fb1dc312fa326d056f7634d6885af588238aebd0a189ac34a1",
+  "schema": 1,
+  "status": "pending",
+  "subject_sha256": "7ad6b40084fccb501e4819470b8c7842d27db71d67cf7b9aea0fff38b03d1517"
+}
