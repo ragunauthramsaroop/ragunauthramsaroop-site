@@ -1,6 +1,8 @@
 {
   "approved": true,
   "dry_run": false,
+  "campaign_type": "ats_application",
+  "batch_id": "2026-10-03-release-rebuild-01",
   "attachment_filename": "Ragunauth_Ramsaroop_Qatari_Diar_Executive_CV_2026.pdf",
   "cv_overlay": {
     "company": "Qatari Diar",
