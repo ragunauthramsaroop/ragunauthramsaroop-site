@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "2658d55da29e8578e9db77a76d2365b90731f13dee8739d11fb80fa7a402637a",
+  "batch_id": "2026-10-03-release-rebuild-remaining-04",
+  "body_sha256": "8a97ad67ee19c1debfa2495886f1a6450445ff45be8a46793747536be67d223f",
+  "created_at": "2026-10-04T03:20:48+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "37173799762",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-staged/2026-10-01-recovery-03-siam-piwat.json",
+  "payload_sha256": "08d9f2c6a73700715c3a2f183c74bfef2d1f50e2c691479d63c791cadd08f3bb",
+  "recipient": "ta_onesiam@siampiwat.com",
+  "recipient_sha256": "cd76593cab22316e46c0c01f24301a95bd705bba790a11c28f8ffbc8038a28a1",
+  "schema": 1,
+  "status": "pending",
+  "subject_sha256": "daad16b43cc64458ce2d9cb199624748a4f37f61ad7d1ca817f768c384603d68"
+}
