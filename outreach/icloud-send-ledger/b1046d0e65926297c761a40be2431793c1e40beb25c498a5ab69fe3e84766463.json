@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "206c1f618189e2029ac6f8f8d20d83f11511ca4c6e50d0b207eb591eef6f1ac7",
+  "batch_id": "2026-10-03-release-rebuild-remaining-04",
+  "body_sha256": "991369ca79faac9c7b3dc12536090a1960b72ff79d886aa7891cfac78c91b886",
+  "created_at": "2026-10-04T03:20:51+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "37173799762",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-staged/2026-10-01-recovery-04-banpu-power.json",
+  "payload_sha256": "645dbe3bb2e0928723f6b36f04cdf9507b8d6455c291456e981b6f13e71c3069",
+  "recipient": "career@banpu.co.th",
+  "recipient_sha256": "b1046d0e65926297c761a40be2431793c1e40beb25c498a5ab69fe3e84766463",
+  "schema": 1,
+  "status": "pending",
+  "subject_sha256": "baef7e93c9eff0d9d3101a9a92e0faa87dec588eda2f3ebfb3e20c590065e11c"
+}
