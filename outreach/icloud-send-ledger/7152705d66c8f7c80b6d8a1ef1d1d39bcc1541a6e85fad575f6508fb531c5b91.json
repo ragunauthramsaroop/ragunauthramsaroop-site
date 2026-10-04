@@ -12,6 +12,8 @@
   "recipient": "ivar.simensen@kongsberg.com",
   "recipient_sha256": "7152705d66c8f7c80b6d8a1ef1d1d39bcc1541a6e85fad575f6508fb531c5b91",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-04T23:37:09+00:00",
+  "smtp_message_id": "<179115702927.2526.11460519879239529299@icloud.com>",
+  "status": "sent",
   "subject_sha256": "5404f0bf06380c1b6988a3bf082dba3a2e3cfda49d7207c362cae8d51c772287"
 }
