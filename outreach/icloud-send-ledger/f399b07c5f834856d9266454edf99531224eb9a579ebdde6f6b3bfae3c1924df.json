@@ -12,6 +12,8 @@
   "recipient": "torbjorn.andersen@akersolutions.com",
   "recipient_sha256": "f399b07c5f834856d9266454edf99531224eb9a579ebdde6f6b3bfae3c1924df",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-04T23:27:46+00:00",
+  "smtp_message_id": "<179115646623.2451.3027331656237088805@icloud.com>",
+  "status": "sent",
   "subject_sha256": "15fc48838fef1126f617cb903a48633ac4d9b2e26ebff11d6987786d79c0b236"
 }
