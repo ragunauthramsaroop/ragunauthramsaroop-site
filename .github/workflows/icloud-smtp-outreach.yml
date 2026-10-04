@@ -15,7 +15,7 @@ on:
         type: string
 
 permissions:
-  contents: read
+  contents: write
 
 concurrency:
   group: icloud-smtp-outreach
@@ -29,6 +29,9 @@ jobs:
       ICLOUD_SMTP_USER: ragunauthramsaroop@icloud.com
       ICLOUD_APP_PASSWORD: ${{ secrets.ICLOUD_APP_PASSWORD }}
       ICLOUD_OUTREACH_TO: ${{ secrets.ICLOUD_OUTREACH_TO }}
+      GITHUB_TOKEN: ${{ github.token }}
+      ICLOUD_LEDGER_REPOSITORY: ${{ github.repository }}
+      ICLOUD_LEDGER_BRANCH: main
     steps:
       - uses: actions/checkout@v7
         with:
@@ -100,14 +103,9 @@ jobs:
             exit 1
           fi
 
-      - name: Send approved outreach through Apple iCloud SMTP
+      - name: Send through fail-closed iCloud ledger route
         if: steps.expanded.outputs.payload != ''
         shell: bash
         run: |
           set -euo pipefail
-          PAYLOAD="${{ steps.expanded.outputs.payload }}"
-          case "$PAYLOAD" in
-            *.batch.json) python scripts/send_icloud_batch.py "$PAYLOAD" ;;
-            *.secure.json) python scripts/secure_icloud_send.py "$PAYLOAD" ;;
-            *) python scripts/send_icloud_smtp.py "$PAYLOAD" ;;
-          esac
+          python scripts/send_icloud_guarded.py "${{ steps.expanded.outputs.payload }}"
