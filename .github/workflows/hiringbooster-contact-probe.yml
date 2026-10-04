@@ -32,9 +32,10 @@ jobs:
           forms=soup.find_all('form')
           print('FORM_COUNT', len(forms))
           for i,f in enumerate(forms):
-              print('FORM', i, 'ACTION=', f.get('action'), 'METHOD=', f.get('method'))
-              for x in f.find_all(['input','textarea','button']):
-                  print(' FIELD', x.name, 'name=', x.get('name'), 'type=', x.get('type'), 'value=', x.get('value'))
-          scripts=[s.get('src') for s in soup.find_all('script') if s.get('src')]
-          print('SCRIPTS', scripts)
+              print('FORM', i, 'ATTRS=', dict(f.attrs))
+              print(f.prettify()[:7000])
+          print('HTML_MARKERS')
+          for marker in ['fetch(', 'axios', 'XMLHttpRequest', 'formspree', 'web3forms', 'emailjs', 'submit']:
+              if marker.lower() in r.text.lower():
+                  print('FOUND', marker)
           PY
