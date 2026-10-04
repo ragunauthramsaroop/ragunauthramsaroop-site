@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "85c0f66e9069b0c84b4a14a0e02dfe802bae56129a6845ce05556661c6d6415e",
+  "batch_id": "norway-alt-equinor-2026-10-04",
+  "body_sha256": "2bbe80219eadee615d60615a22f23525c51c7ad7bccabae34275a42ded7676a9",
+  "created_at": "2026-10-04T23:48:49+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "37245089477",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/norway-alt-equinor-stein-hernes-2026-10-04.json",
+  "payload_sha256": "6e547363e559f9bcfef1d92a0dfa745fa793bcf59c1327b7efcff828ccd6406b",
+  "recipient": "steher@equinor.com",
+  "recipient_sha256": "7d75117b933f590c79e4d4294c34bf25c411bd6962227d276ac7c2c431fda642",
+  "schema": 1,
+  "status": "pending",
+  "subject_sha256": "8345edeb83ca6cbc0e2a0d48e1a16ff9161e8d2883ee08e4273606e35e54dd76"
+}
