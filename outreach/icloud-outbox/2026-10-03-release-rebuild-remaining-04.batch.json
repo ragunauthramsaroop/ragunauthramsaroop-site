@@ -1,0 +1,10 @@
+{
+  "approved": true,
+  "batch_id": "2026-10-03-release-rebuild-remaining-04",
+  "payload_files": [
+    "outreach/icloud-staged/2026-10-01-recovery-02-boyden-thailand.json",
+    "outreach/icloud-staged/2026-10-01-recovery-03-siam-piwat.json",
+    "outreach/icloud-staged/2026-10-01-recovery-04-banpu-power.json",
+    "outreach/icloud-staged/2026-10-01-recovery-05-bangkok-airways.json"
+  ]
+}
