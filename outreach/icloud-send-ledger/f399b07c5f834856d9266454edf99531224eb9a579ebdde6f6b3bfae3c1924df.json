@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "abd3389663a76dde796dedddf80d44156ec20a74114f167aea71ab3e40446031",
+  "batch_id": "norway-executive-outreach-2026-10-04",
+  "body_sha256": "f3570040148a8ffc12715ee762904a7ba22de55a375b5795fc9f52392c02d28a",
+  "created_at": "2026-10-04T23:27:45+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "37243828063",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/2026-10-04-aker-solutions-torbjorn-andersen.json",
+  "payload_sha256": "d87425ec40ba4243c6f707e8c05046d1234d21b6ba6e8a95bf3aab69063638e4",
+  "recipient": "torbjorn.andersen@akersolutions.com",
+  "recipient_sha256": "f399b07c5f834856d9266454edf99531224eb9a579ebdde6f6b3bfae3c1924df",
+  "schema": 1,
+  "status": "pending",
+  "subject_sha256": "15fc48838fef1126f617cb903a48633ac4d9b2e26ebff11d6987786d79c0b236"
+}
