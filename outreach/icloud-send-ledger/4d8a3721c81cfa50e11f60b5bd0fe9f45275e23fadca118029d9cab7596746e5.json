@@ -12,6 +12,8 @@
   "recipient": "petergomez@sigelgroup.com",
   "recipient_sha256": "4d8a3721c81cfa50e11f60b5bd0fe9f45275e23fadca118029d9cab7596746e5",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-04T11:05:52+00:00",
+  "smtp_message_id": "<179111195274.2414.11415961493017084205@icloud.com>",
+  "status": "sent",
   "subject_sha256": "5be7eb8fb6a5eeca9c980f3e3edc31c9e8e2fcc7c2ebdd612d484a5db755a481"
 }
