@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "ab82f803baf7b6941ce2fd61143a7e8a8f0145ade04b689eb70a1c9d4a8a44cc",
+  "batch_id": "2026-10-04-corecruitment-krishnan-doyle",
+  "body_sha256": "e50be63e18e47bcba7edc93aa7b1572f3e5bdd3237e7ed70ffd39072506e3dd5",
+  "created_at": "2026-10-04T11:46:18+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "37199848956",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/2026-10-04-corecruitment-krishnan-doyle.json",
+  "payload_sha256": "cb069a40104cd52da341345865045835ad44e19dcec828d0a0ccdbfbe9528f23",
+  "recipient": "krishnan@corecruitment.com",
+  "recipient_sha256": "482258243ce6d4e835b4187f1a5d59c31b49707f13556daf02a736de2d4ed719",
+  "schema": 1,
+  "status": "pending",
+  "subject_sha256": "a756009235e9068ae1f64fba854c1f38ce7fe0e8e9f934600830349e3cc61596"
+}
