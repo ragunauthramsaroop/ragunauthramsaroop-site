@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "de0d5a6205bd3c986466f1d1d7b4aee78adc6915c2905e8e792c887fdea7b142",
+  "batch_id": "norway-batch-02-secure-20261004",
+  "body_sha256": "999e49f426f63e042e945815450748921c12c3574171f5c926e18116fea5b40c",
+  "created_at": "2026-10-04T23:34:07+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "37244214502",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/2026-10-04-norway-batch-02.secure.json",
+  "payload_sha256": "f0d6f6739ff04eba0e18a3f8ef8887647540d168495502d50604d655380b6e4e",
+  "recipient": "ulrike.haugen@dnv.com",
+  "recipient_sha256": "7724c5a1b001ad685bae0c3ff40c3a88555c9fba38a19e1f9682c0d3aa6f7f00",
+  "schema": 1,
+  "status": "pending",
+  "subject_sha256": "194a7969bdbe9fa1e2f041281de8f05416839e635c72188f5092a85142817b71"
+}
