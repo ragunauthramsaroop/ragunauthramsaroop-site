@@ -12,6 +12,8 @@
   "recipient": "krishnan@corecruitment.com",
   "recipient_sha256": "482258243ce6d4e835b4187f1a5d59c31b49707f13556daf02a736de2d4ed719",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-04T11:46:19+00:00",
+  "smtp_message_id": "<179111437967.2219.14290645816875408197@icloud.com>",
+  "status": "sent",
   "subject_sha256": "a756009235e9068ae1f64fba854c1f38ce7fe0e8e9f934600830349e3cc61596"
 }
