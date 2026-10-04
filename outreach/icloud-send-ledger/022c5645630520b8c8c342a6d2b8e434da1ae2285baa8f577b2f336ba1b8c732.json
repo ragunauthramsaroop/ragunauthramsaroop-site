@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "c39b8218653c63673ef472aed772e6bdf3fc3677a9ae590defa99f4ac0f4cb3c",
+  "batch_id": "2026-10-04-bounce-remediation-02c-boyden-thailand",
+  "body_sha256": "a173a7681a6eadb78411d445dfbaddebe0bb97f9a2e8cd37478a1b6872c3c963",
+  "created_at": "2026-10-04T10:56:07+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "37196981613",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/2026-10-04-bounce-remediation-02c-boyden-thailand.json",
+  "payload_sha256": "0fb19edebcf1e12b164dd127eef15a399172bebed3dd5f8121a491b0814c3d96",
+  "recipient": "jholme@boyden.com",
+  "recipient_sha256": "022c5645630520b8c8c342a6d2b8e434da1ae2285baa8f577b2f336ba1b8c732",
+  "schema": 1,
+  "status": "pending",
+  "subject_sha256": "88a56f43781c7bd16b2773ac36e03b3bfd08d24d272148dfb47aecf113a1c060"
+}
