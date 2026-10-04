@@ -28,7 +28,7 @@ def now_iso() -> str:
 
 def norm(addr: str) -> str:
     value = addr.strip().lower()
-    if value.count("@") != 1:
+    if value.count("@") != 1 or value.startswith("@") or value.endswith("@"):
         raise ValueError(f"Invalid address: {addr!r}")
     return value
 
@@ -50,7 +50,6 @@ def find_sent_mailbox(conn: imaplib.IMAP4_SSL) -> str:
     candidates: list[tuple[int, str]] = []
     for raw in boxes:
         text = raw.decode("utf-8", errors="replace")
-        # mailbox name is usually the final quoted or atom token
         match = re.search(r'"([^"\\]*(?:\\.[^"\\]*)*)"\s*$', text)
         if match:
             name = match.group(1).replace('\\"', '"').replace('\\\\', '\\')
@@ -81,14 +80,16 @@ def exact_recipient_in_headers(msg: email.message.Message, target: str) -> bool:
 
 
 def search_recipient(conn: imaplib.IMAP4_SSL, recipient: str) -> list[dict]:
-    # Header search narrows candidates. Exact parsed-header match prevents substring hits.
     status, data = conn.search(None, "HEADER", "TO", f'"{recipient}"')
     if status != "OK":
         raise RuntimeError(f"IMAP search failed for {recipient}.")
     ids = (data[0] or b"").split()
     evidence: list[dict] = []
     for msg_id in ids[-50:]:
-        status, fetched = conn.fetch(msg_id, "(BODY.PEEK[HEADER.FIELDS (TO CC BCC RESENT-TO RESENT-CC RESENT-BCC SUBJECT DATE MESSAGE-ID FROM)])")
+        status, fetched = conn.fetch(
+            msg_id,
+            "(BODY.PEEK[HEADER.FIELDS (TO CC BCC RESENT-TO RESENT-CC RESENT-BCC SUBJECT DATE MESSAGE-ID FROM)])",
+        )
         if status != "OK" or not fetched:
             continue
         header_bytes = b""
@@ -130,6 +131,7 @@ def main() -> None:
         raise ValueError("Audit request needs a non-empty recipients list.")
     if len(raw_recipients) > MAX_RECIPIENTS:
         raise ValueError(f"Audit request exceeds {MAX_RECIPIENTS} recipients.")
+
     recipients = []
     seen = set()
     for item in raw_recipients:
@@ -149,7 +151,8 @@ def main() -> None:
         "recipients": [],
     }
 
-    with imaplib.IMAP4_SSL(IMAP_HOST, IMAP_PORT) as conn:
+    conn = imaplib.IMAP4_SSL(IMAP_HOST, IMAP_PORT)
+    try:
         conn.login(user, password)
         sent_box = find_sent_mailbox(conn)
         result["mailbox"] = sent_box
@@ -167,12 +170,15 @@ def main() -> None:
                 "match_count": len(matches),
                 "matches": matches,
             })
-
+    finally:
         try:
             conn.close()
         except Exception:
             pass
-        conn.logout()
+        try:
+            conn.logout()
+        except Exception:
+            pass
 
     output = Path(args.output)
     output.parent.mkdir(parents=True, exist_ok=True)
