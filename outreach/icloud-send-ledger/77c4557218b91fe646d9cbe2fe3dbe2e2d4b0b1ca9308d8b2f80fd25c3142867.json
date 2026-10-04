@@ -12,6 +12,8 @@
   "recipient": "stephen.x.anderson@pwc.com",
   "recipient_sha256": "77c4557218b91fe646d9cbe2fe3dbe2e2d4b0b1ca9308d8b2f80fd25c3142867",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-04T11:04:51+00:00",
+  "smtp_message_id": "<179111189114.2454.10238075125220696794@icloud.com>",
+  "status": "sent",
   "subject_sha256": "a7102fd7faa54111368b9089b113b262772c2f0b2a0b75b4a8144f785f2d9040"
 }
