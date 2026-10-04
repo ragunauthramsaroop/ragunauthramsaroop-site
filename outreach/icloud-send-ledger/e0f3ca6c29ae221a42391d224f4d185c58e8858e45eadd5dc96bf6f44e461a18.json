@@ -12,6 +12,8 @@
   "recipient": "pgrecruitment@bangkokair.com",
   "recipient_sha256": "e0f3ca6c29ae221a42391d224f4d185c58e8858e45eadd5dc96bf6f44e461a18",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-04T03:20:54+00:00",
+  "smtp_message_id": "<179108405450.2218.17451724731025281819@icloud.com>",
+  "status": "sent",
   "subject_sha256": "06041d8393b69c7f3a5c56622a510a437cfa8220f91d8bd177f9e07cbe5c2c1e"
 }
