@@ -12,6 +12,8 @@
   "recipient": "recruitment@qataridiar.com",
   "recipient_sha256": "55f6122d2a42134e6ab47cf4ff1e0a1c293e7910847e268dd3160c2c9b07d606",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-04T03:19:03+00:00",
+  "smtp_message_id": "<179108394329.2230.4494032340976363741@icloud.com>",
+  "status": "sent",
   "subject_sha256": "0e4869bce4df3f38bf48e1bbac291eb292e3771c9edcc092d474e165814c2f83"
 }
