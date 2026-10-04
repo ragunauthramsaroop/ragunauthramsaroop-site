@@ -12,6 +12,8 @@
   "recipient": "info@krishnaninc.com",
   "recipient_sha256": "4803d549e82c64a519cea5eab2bdaf04252c94c818a1b5beb5ee837b58336051",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-04T11:06:14+00:00",
+  "smtp_message_id": "<179111197407.2228.10809886305892683939@icloud.com>",
+  "status": "sent",
   "subject_sha256": "9ae02998f7b9281ccd0cd38318c911f05a81d8552d63fbc6f4c375d72afe86a9"
 }
