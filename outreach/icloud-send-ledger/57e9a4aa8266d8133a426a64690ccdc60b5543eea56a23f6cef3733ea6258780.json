@@ -12,6 +12,8 @@
   "recipient": "danial.c@hiringbooster.com",
   "recipient_sha256": "57e9a4aa8266d8133a426a64690ccdc60b5543eea56a23f6cef3733ea6258780",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-04T12:40:45+00:00",
+  "smtp_message_id": "<179111764507.2230.14254043877304345653@icloud.com>",
+  "status": "sent",
   "subject_sha256": "3db94c88a88a850e82539cbc40a102189d3eaa5b4e6cee670178a5ce34ce87e0"
 }
