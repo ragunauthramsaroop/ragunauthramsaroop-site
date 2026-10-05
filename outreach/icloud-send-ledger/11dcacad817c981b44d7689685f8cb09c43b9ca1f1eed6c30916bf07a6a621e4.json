@@ -12,6 +12,8 @@
   "recipient": "mathilde.hellenes@tomra.com",
   "recipient_sha256": "11dcacad817c981b44d7689685f8cb09c43b9ca1f1eed6c30916bf07a6a621e4",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-05T00:09:36+00:00",
+  "smtp_message_id": "<179115897555.2524.15042422955751262700@icloud.com>",
+  "status": "sent",
   "subject_sha256": "937009c0a7c9b8ca0561aaa7582205e90c02949a668bab3afaec58d2ecec2962"
 }
