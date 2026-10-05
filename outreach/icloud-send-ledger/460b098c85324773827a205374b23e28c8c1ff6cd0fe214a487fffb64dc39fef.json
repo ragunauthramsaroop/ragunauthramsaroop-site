@@ -12,6 +12,8 @@
   "recipient": "stina.johansen@ramboll.no",
   "recipient_sha256": "460b098c85324773827a205374b23e28c8c1ff6cd0fe214a487fffb64dc39fef",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-05T00:06:47+00:00",
+  "smtp_message_id": "<179115880662.2220.848387273480436739@icloud.com>",
+  "status": "sent",
   "subject_sha256": "63c1b85b72dcc18e2abd2b8ea0cfc4ba7fbfd62e998435c104b37141c9f5693e"
 }
