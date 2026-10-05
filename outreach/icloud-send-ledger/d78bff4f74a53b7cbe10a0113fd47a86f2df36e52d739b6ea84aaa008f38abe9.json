@@ -12,6 +12,8 @@
   "recipient": "marianne.mogster@dof.com",
   "recipient_sha256": "d78bff4f74a53b7cbe10a0113fd47a86f2df36e52d739b6ea84aaa008f38abe9",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-05T00:12:20+00:00",
+  "smtp_message_id": "<179115914028.2493.12431101277364491397@icloud.com>",
+  "status": "sent",
   "subject_sha256": "2c7b911e9d6e8d4885cf87c7deda71f77150e153fd50c94187fecb21138893b1"
 }
