@@ -12,6 +12,8 @@
   "recipient": "marianne.stigset@elkem.com",
   "recipient_sha256": "09b6ee2486bf6fcb5ba9150e385f0b998eeeb198394364867a3048761d07d1b6",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-05T00:10:08+00:00",
+  "smtp_message_id": "<179115900832.2237.15155437031643379113@icloud.com>",
+  "status": "sent",
   "subject_sha256": "795c77b6e0896b63730d3c4f90c1b2f5ac47f5779374ba02c6e9abafbf7ad538"
 }
