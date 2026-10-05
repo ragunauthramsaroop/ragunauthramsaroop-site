@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "a53994daa485df25ea97fe54871abbd55e556b63911eeb8c123b9c9a7524812b",
+  "batch_id": "norway-wave-03-odfjell-2026-10-04",
+  "body_sha256": "a84c547158a3275d534dff1e4325e05d27270a85a0d439b271d61f4085c9e3df",
+  "created_at": "2026-10-05T00:10:43+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "37246452402",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/norway-wave-03-odfjell-oistein-jensen-2026-10-04.json",
+  "payload_sha256": "a03b36cd490084814d09646aaabeadf3b32bbf8353c627c521e0904e1beb218f",
+  "recipient": "oistein.jensen@odfjell.com",
+  "recipient_sha256": "1c382967d88618f6e2fa917bce123e7315ed85b58e3f0adf989c4955ea4c6e7a",
+  "schema": 1,
+  "status": "pending",
+  "subject_sha256": "bebb93186437089e7679feb9396dc8128345af6d603e452337eeb53e14677d51"
+}
