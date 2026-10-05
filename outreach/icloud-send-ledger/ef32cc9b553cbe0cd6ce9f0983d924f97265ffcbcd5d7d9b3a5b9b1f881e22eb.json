@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "ff9b3c7c2f593d14db162bc73e58f1a83da7524ddac44e50883a6a3adc741029",
+  "batch_id": "norway-wave-02-rystad-energy-2026-10-04",
+  "body_sha256": "3de9b35583ead47ffaeed5ddc734db21be90558029c04338152d046778c38828",
+  "created_at": "2026-10-05T00:04:44+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "37246042698",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/norway-wave-02-rystad-jarand-2026-10-04.json",
+  "payload_sha256": "849b1ec41215a9e558f34cf6316c6f042ff3dfece66ac40f242cfe4b360026b6",
+  "recipient": "jarand@rystadenergy.com",
+  "recipient_sha256": "ef32cc9b553cbe0cd6ce9f0983d924f97265ffcbcd5d7d9b3a5b9b1f881e22eb",
+  "schema": 1,
+  "status": "pending",
+  "subject_sha256": "3be08a986db6e78d2321db946ae2f43c3b8d9c9d2b984376d32ebd17fc310dc9"
+}
