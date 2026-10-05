@@ -12,6 +12,8 @@
   "recipient": "oistein.jensen@odfjell.com",
   "recipient_sha256": "1c382967d88618f6e2fa917bce123e7315ed85b58e3f0adf989c4955ea4c6e7a",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-05T00:10:45+00:00",
+  "smtp_message_id": "<179115904508.2462.13663865219882622544@icloud.com>",
+  "status": "sent",
   "subject_sha256": "bebb93186437089e7679feb9396dc8128345af6d603e452337eeb53e14677d51"
 }
