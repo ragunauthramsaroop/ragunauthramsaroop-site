@@ -12,6 +12,8 @@
   "recipient": "aishwarya@mindfieldresources.com",
   "recipient_sha256": "17911655db23fbe776155932b223e09d983b019822e4814f5453ef463ac78357",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-05T16:52:24+00:00",
+  "smtp_message_id": "<179121914418.2458.2363760689772762740@icloud.com>",
+  "status": "sent",
   "subject_sha256": "5f67cac15765fe3339eb840266d9047b41e29bb1b695652c78b0d0586b4ad4a7"
 }
