@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-04T15:20:26+00:00",
+  "generated": "2026-10-05T19:16:58+00:00",
   "metrics": [
     {
       "label": "Population",
@@ -35,38 +35,6 @@
       "period": "2025",
       "unit": "GYD",
       "source": "https://statisticsguyana.gov.gy/"
-    },
-    {
-      "label": "World Bank GDP growth",
-      "value": 19.3360097091818,
-      "period": "2025",
-      "unit": "%",
-      "source": "https://data.worldbank.org/country/guyana",
-      "indicator": "NY.GDP.MKTP.KD.ZG"
-    },
-    {
-      "label": "World Bank inflation",
-      "value": 3.32982339132475,
-      "period": "2025",
-      "unit": "%",
-      "source": "https://data.worldbank.org/country/guyana",
-      "indicator": "FP.CPI.TOTL.ZG"
-    },
-    {
-      "label": "World Bank population",
-      "value": 835986,
-      "period": "2025",
-      "unit": "people",
-      "source": "https://data.worldbank.org/country/guyana",
-      "indicator": "SP.POP.TOTL"
-    },
-    {
-      "label": "World Bank GDP",
-      "value": 27097477218.2254,
-      "period": "2025",
-      "unit": "USD",
-      "source": "https://data.worldbank.org/country/guyana",
-      "indicator": "NY.GDP.MKTP.CD"
     }
   ]
 }
