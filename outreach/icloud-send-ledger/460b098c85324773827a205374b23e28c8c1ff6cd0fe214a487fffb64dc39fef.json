@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "1879bd2d841f6f3b37c32b7917e21b2d0d2031cd5176a0ebf909bd36ddeaeb10",
+  "batch_id": "norway-wave-02-ramboll-2026-10-04",
+  "body_sha256": "e826172e8c41d55aacc01fefea0de8726c0b77e2abc5e227bd3ffc32f5d43274",
+  "created_at": "2026-10-05T00:06:45+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "37246170429",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/norway-wave-02-ramboll-stina-johansen-2026-10-04.json",
+  "payload_sha256": "6274d9b0ba1a1b0f2d621c81cc18a4d94dad5b8d5b57b5b316bd88f87a59eda7",
+  "recipient": "stina.johansen@ramboll.no",
+  "recipient_sha256": "460b098c85324773827a205374b23e28c8c1ff6cd0fe214a487fffb64dc39fef",
+  "schema": 1,
+  "status": "pending",
+  "subject_sha256": "63c1b85b72dcc18e2abd2b8ea0cfc4ba7fbfd62e998435c104b37141c9f5693e"
+}
