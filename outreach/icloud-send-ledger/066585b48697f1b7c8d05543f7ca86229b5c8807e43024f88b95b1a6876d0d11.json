@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "aba4a7aed4eced1b0c23ee4b798c3a7f00f3951347ac44e2c28d72ed85ca5ea5",
+  "batch_id": "norway-wave-02-wallenius-wilhelmsen-2026-10-04",
+  "body_sha256": "223e0acb5e083a5d0765099ee162e9f44f9b9e402f2efcca7034efc152e14732",
+  "created_at": "2026-10-05T00:05:27+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "37246089482",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/norway-wave-02-wallenius-wilhelmsen-roger-strevens-2026-10-04.json",
+  "payload_sha256": "12e1828f5c3c6478c46f68a08ea8de9c621c4254b85482dd99daed685465d638",
+  "recipient": "roger.strevens@walwil.com",
+  "recipient_sha256": "066585b48697f1b7c8d05543f7ca86229b5c8807e43024f88b95b1a6876d0d11",
+  "schema": 1,
+  "status": "pending",
+  "subject_sha256": "0f7e216875c3fa13d27e39cdab1a908c4b5d3e268f68d395c993368c933ad3a4"
+}
