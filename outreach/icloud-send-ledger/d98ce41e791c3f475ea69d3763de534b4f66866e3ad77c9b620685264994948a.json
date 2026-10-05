@@ -12,6 +12,8 @@
   "recipient": "laura.exner@hoegh.com",
   "recipient_sha256": "d98ce41e791c3f475ea69d3763de534b4f66866e3ad77c9b620685264994948a",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-05T00:06:02+00:00",
+  "smtp_message_id": "<179115876239.2512.15304616023691711027@icloud.com>",
+  "status": "sent",
   "subject_sha256": "eac1d305033e6d516190850ba53c8a7015be27b21065d00f6db3299ccf85a818"
 }
