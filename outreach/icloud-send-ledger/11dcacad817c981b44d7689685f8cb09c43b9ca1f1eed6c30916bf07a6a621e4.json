@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "ab4a5b38fc9f5ef65ec51699d3765574099305b337d3b79dd62a2b96fb9240b1",
+  "batch_id": "norway-wave-03-tomra-2026-10-04",
+  "body_sha256": "66a831ed9d9c22877308b1cd9724f9d0b383d103e864a9890401e643db84acad",
+  "created_at": "2026-10-05T00:09:34+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "37246369197",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/norway-wave-03-tomra-mathilde-hellenes-2026-10-04.json",
+  "payload_sha256": "396dbe362ec7f1c3aba4870291d18244ab5264bd4945f57e1838e69f5ae0def7",
+  "recipient": "mathilde.hellenes@tomra.com",
+  "recipient_sha256": "11dcacad817c981b44d7689685f8cb09c43b9ca1f1eed6c30916bf07a6a621e4",
+  "schema": 1,
+  "status": "pending",
+  "subject_sha256": "937009c0a7c9b8ca0561aaa7582205e90c02949a668bab3afaec58d2ecec2962"
+}
