@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "268ed6861b1a92b216d6ac418361b6720bc8c1ea5bf2c8bb6e6b518956bcca5e",
+  "batch_id": "2026-10-05-mindfield-aishwarya-gcc-market-operations",
+  "body_sha256": "da41530209654af7152bea953a94ba5eb839502ac6cbca527c1d5ad833ecba2f",
+  "created_at": "2026-10-05T16:52:22+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "37344107033",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/2026-10-05_mindfield_resources_aishwarya_sharma_gcc_market_operations.json",
+  "payload_sha256": "27e0434264e8f77f5d15dfae43899e9b6e12dc54a0d1c2fd33a03587b207fcaa",
+  "recipient": "aishwarya@mindfieldresources.com",
+  "recipient_sha256": "17911655db23fbe776155932b223e09d983b019822e4814f5453ef463ac78357",
+  "schema": 1,
+  "status": "pending",
+  "subject_sha256": "5f67cac15765fe3339eb840266d9047b41e29bb1b695652c78b0d0586b4ad4a7"
+}
