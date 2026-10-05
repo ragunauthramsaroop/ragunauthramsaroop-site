@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "1000f03b78499befa6293cf24252814c65970ab50d59fbb75ffc53ab58ed797f",
+  "batch_id": "norway-wave-02-hoegh-autoliners-2026-10-04",
+  "body_sha256": "0c441c1d0220e78e604bb6462b8abb76268373cc6facecbd280266b8459f34d2",
+  "created_at": "2026-10-05T00:06:01+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "37246128565",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/norway-wave-02-hoegh-autoliners-laura-exner-2026-10-04.json",
+  "payload_sha256": "fc28a4e09646b0d1081870eb1335a1da09beeedecb1bd10818bd6370adbe3da1",
+  "recipient": "laura.exner@hoegh.com",
+  "recipient_sha256": "d98ce41e791c3f475ea69d3763de534b4f66866e3ad77c9b620685264994948a",
+  "schema": 1,
+  "status": "pending",
+  "subject_sha256": "eac1d305033e6d516190850ba53c8a7015be27b21065d00f6db3299ccf85a818"
+}
