@@ -12,6 +12,8 @@
   "recipient": "roger.strevens@walwil.com",
   "recipient_sha256": "066585b48697f1b7c8d05543f7ca86229b5c8807e43024f88b95b1a6876d0d11",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-05T00:05:29+00:00",
+  "smtp_message_id": "<179115872887.2415.3641195963821884025@icloud.com>",
+  "status": "sent",
   "subject_sha256": "0f7e216875c3fa13d27e39cdab1a908c4b5d3e268f68d395c993368c933ad3a4"
 }
