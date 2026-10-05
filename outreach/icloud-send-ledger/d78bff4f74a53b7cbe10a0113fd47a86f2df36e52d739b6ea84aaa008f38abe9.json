@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "1c962ab594d3cef2d6b377b1834ddd9f2e63d61a2965646d1dcf27ffcea63986",
+  "batch_id": "norway-wave-03-dof-2026-10-04",
+  "body_sha256": "a895988c8841088cdb1a8c941ed2969b044d607045b06bfa7867bcd2601b76da",
+  "created_at": "2026-10-05T00:12:19+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "37246561632",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/norway-wave-03-dof-marianne-mogster-2026-10-04.json",
+  "payload_sha256": "73b164a0a0fff788b1e488be9cb976546bca71878578fc4470a245a4ac7f24b3",
+  "recipient": "marianne.mogster@dof.com",
+  "recipient_sha256": "d78bff4f74a53b7cbe10a0113fd47a86f2df36e52d739b6ea84aaa008f38abe9",
+  "schema": 1,
+  "status": "pending",
+  "subject_sha256": "2c7b911e9d6e8d4885cf87c7deda71f77150e153fd50c94187fecb21138893b1"
+}
