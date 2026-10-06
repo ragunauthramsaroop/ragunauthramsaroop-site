@@ -12,6 +12,8 @@
   "recipient": "nickcroucher@frazerjones.com",
   "recipient_sha256": "d24cffecf61233bcf4526a0eb1f181b1372adbaff39923454a50c9c1b8880eb4",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-06T13:21:50+00:00",
+  "smtp_message_id": "<179129291014.2442.13235209800515219005@icloud.com>",
+  "status": "sent",
   "subject_sha256": "dc3a9ac013342880c2bb87d7da878963e6821bd058405e064934c641fcbc9d67"
 }
