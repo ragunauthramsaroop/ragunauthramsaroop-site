@@ -12,6 +12,8 @@
   "recipient": "info@staffsourceinternational.com",
   "recipient_sha256": "2778e9daead8170e96ecd4f06a77059f08e6a6ad80d1faa1fcd66f8cb5255877",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-06T10:45:07+00:00",
+  "smtp_message_id": "<179128350735.2221.12201179333735572563@icloud.com>",
+  "status": "sent",
   "subject_sha256": "fb1564c5843127b7fb357c3402ed4545ac862a90699689feb6ef6fafeebe8f6b"
 }
