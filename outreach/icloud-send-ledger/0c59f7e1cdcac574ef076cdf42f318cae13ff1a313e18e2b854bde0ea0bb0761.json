@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "59427ea93296f388697d63111e80e913bd03db6c04df1989177718dfbdbb479e",
+  "batch_id": "2026-10-05-saudi-expansion-wave-06",
+  "body_sha256": "d6e88bae70e8bfed62f4d7dc861722127c508695c8045b8a730b0010198aedb6",
+  "created_at": "2026-10-06T04:28:32+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "37413851973",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/2026-10-05-saudi-expansion-wave-06.json",
+  "payload_sha256": "6bf7c934a178552e6f858fc0ba4ef46aede20598b7c6291f3d94b2b918244b99",
+  "recipient": "career@innovest.com.sa",
+  "recipient_sha256": "0c59f7e1cdcac574ef076cdf42f318cae13ff1a313e18e2b854bde0ea0bb0761",
+  "schema": 1,
+  "status": "pending",
+  "subject_sha256": "607cf4a71a5afc1e802ddc9356c829ff994759b948bf3c195fe49dc45ebff577"
+}
