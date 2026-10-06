@@ -12,6 +12,8 @@
   "recipient": "careers@starnest.ai",
   "recipient_sha256": "f50af6a3f26ce4f13fd27eee8b69b8dd47da0d6e0c1f8918785f36f9b90e1430",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-06T13:20:47+00:00",
+  "smtp_message_id": "<179129284686.2222.14883156006368519618@icloud.com>",
+  "status": "sent",
   "subject_sha256": "dc3a9ac013342880c2bb87d7da878963e6821bd058405e064934c641fcbc9d67"
 }
