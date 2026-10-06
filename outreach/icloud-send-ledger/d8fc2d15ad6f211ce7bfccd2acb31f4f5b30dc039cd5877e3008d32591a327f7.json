@@ -12,6 +12,8 @@
   "recipient": "recruitment@sabic.com",
   "recipient_sha256": "d8fc2d15ad6f211ce7bfccd2acb31f4f5b30dc039cd5877e3008d32591a327f7",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-06T04:21:59+00:00",
+  "smtp_message_id": "<179126051925.2623.6270091328019187342@icloud.com>",
+  "status": "sent",
   "subject_sha256": "ded63861048b89c469ca6d2382fbfa8cccdca10bd86cb5d80c0013e567c06dd1"
 }
