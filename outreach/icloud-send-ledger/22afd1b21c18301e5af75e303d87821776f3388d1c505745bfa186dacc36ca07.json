@@ -12,6 +12,8 @@
   "recipient": "recruitment@alfanar.com",
   "recipient_sha256": "22afd1b21c18301e5af75e303d87821776f3388d1c505745bfa186dacc36ca07",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-06T04:26:37+00:00",
+  "smtp_message_id": "<179126079735.2237.9393158388325722316@icloud.com>",
+  "status": "sent",
   "subject_sha256": "76e7e7306d906dbe21261f1e2224ebf488c5afcce5a7b4f2bd0dfcb3d39ac792"
 }
