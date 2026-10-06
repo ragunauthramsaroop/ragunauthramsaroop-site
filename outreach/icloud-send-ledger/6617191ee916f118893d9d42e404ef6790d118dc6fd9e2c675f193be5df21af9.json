@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "aa2a47faaf94d46ec19b495e4e2aaa2130049f132eb996733005549371799c10",
+  "batch_id": "2026-10-06-recovery-c",
+  "body_sha256": "31010e3b8d90607ab91aef231b857c09df219e4035ae010be01f36dd28fc077c",
+  "created_at": "2026-10-06T13:19:39+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "37469867975",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/2026-10-06_recovery_batch_c.json",
+  "payload_sha256": "a8a1a96489b54e52e2f65142b4d9f365075aa842678c80853669080f02d389ee",
+  "recipient": "info@globallaborsupply.com",
+  "recipient_sha256": "6617191ee916f118893d9d42e404ef6790d118dc6fd9e2c675f193be5df21af9",
+  "schema": 1,
+  "status": "pending",
+  "subject_sha256": "dc3a9ac013342880c2bb87d7da878963e6821bd058405e064934c641fcbc9d67"
+}
