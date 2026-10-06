@@ -12,6 +12,8 @@
   "recipient": "info@advantishr.com",
   "recipient_sha256": "ea8f53f7463a22e6228889e8831b7d69c8563d2ec01456d6b3fec9b137f87f55",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-06T13:18:39+00:00",
+  "smtp_message_id": "<179129271889.2504.13207041102053927922@icloud.com>",
+  "status": "sent",
   "subject_sha256": "dc3a9ac013342880c2bb87d7da878963e6821bd058405e064934c641fcbc9d67"
 }
