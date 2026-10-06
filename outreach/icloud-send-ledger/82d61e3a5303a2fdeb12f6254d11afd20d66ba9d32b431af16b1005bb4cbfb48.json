@@ -12,6 +12,8 @@
   "recipient": "matt@talentry.co.nz",
   "recipient_sha256": "82d61e3a5303a2fdeb12f6254d11afd20d66ba9d32b431af16b1005bb4cbfb48",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-06T10:45:05+00:00",
+  "smtp_message_id": "<179128350468.2221.7502226478212657878@icloud.com>",
+  "status": "sent",
   "subject_sha256": "21636a5af72907102143d87f82334389acd8b99e8071cc9f3ae75017bb562176"
 }
