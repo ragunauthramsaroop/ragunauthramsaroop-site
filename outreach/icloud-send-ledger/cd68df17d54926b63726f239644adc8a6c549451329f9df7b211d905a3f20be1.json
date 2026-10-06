@@ -12,6 +12,8 @@
   "recipient": "lijy@dss-hr.com",
   "recipient_sha256": "cd68df17d54926b63726f239644adc8a6c549451329f9df7b211d905a3f20be1",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-06T04:23:50+00:00",
+  "smtp_message_id": "<179126063037.2219.159717399518987686@icloud.com>",
+  "status": "sent",
   "subject_sha256": "d5fd5ca5a090a4862af4761ba346015e1b547f97a81b6af66225d31d90d7e671"
 }
