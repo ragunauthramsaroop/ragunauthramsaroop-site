@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "d4dbf564562b2d5f18b6ed7f752deccf73b0908ef055987e7883f73e544459af",
+  "batch_id": "2026-10-05-saudi-expansion-wave-05",
+  "body_sha256": "291d9d3a55f73cf8751d535684edbbd4378f9274c3463da2fcbdc0b8f487b651",
+  "created_at": "2026-10-06T04:27:30+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "37413780526",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/2026-10-05-saudi-expansion-wave-05.json",
+  "payload_sha256": "3683c9e6a5df6f59c682561ed8e68b35cbf66cc8f37b5d8237da02f821036a9d",
+  "recipient": "hr@nawraspower.com",
+  "recipient_sha256": "832ad4857b99d0bd14f421f670d95994894cb307b4f41a1ea656a7e38710722a",
+  "schema": 1,
+  "status": "pending",
+  "subject_sha256": "b4a5d4afb9a20e5176a0e8b08d7bf63d5650f10197e2bcebe0655c08f2ca4566"
+}
