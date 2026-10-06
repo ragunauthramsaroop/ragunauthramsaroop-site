@@ -12,6 +12,8 @@
   "recipient": "njoud@abis.com.sa",
   "recipient_sha256": "53d0dbe7414883301d72a64fdce465d46b40773dfa04b481fe1caea2185a5dd4",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-06T04:28:26+00:00",
+  "smtp_message_id": "<179126090660.2216.7048661485232145804@icloud.com>",
+  "status": "sent",
   "subject_sha256": "e220deea5a57b359d303012783b7e766e72ade6c81098304d07ed4073b692ddf"
 }
