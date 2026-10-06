@@ -12,6 +12,8 @@
   "recipient": "cv@holafa.sa",
   "recipient_sha256": "5f2a09828cac002f775c9d5e967a0ef00fed1c16fd23b5ba2761bf3be9c41156",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-06T04:23:52+00:00",
+  "smtp_message_id": "<179126063239.2219.13088073350824485973@icloud.com>",
+  "status": "sent",
   "subject_sha256": "fff7a8becb978c1a63e72be361f00c6b2ef12538d4ef5ee26a88e25067e0a997"
 }
