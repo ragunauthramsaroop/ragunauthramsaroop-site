@@ -12,6 +12,8 @@
   "recipient": "adal.mirza@dpworld.com",
   "recipient_sha256": "5a47f906ae0677581684f635a6d66092ae7a18b09b4672e987e195d69978f39d",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-06T15:32:01+00:00",
+  "smtp_message_id": "<179130072101.2225.10219378919079721524@icloud.com>",
+  "status": "sent",
   "subject_sha256": "f51410aa36f58bf5e2abfa7aa7cfb9c9fc0df65c5636ebe45339e137ccd0e0ce"
 }
