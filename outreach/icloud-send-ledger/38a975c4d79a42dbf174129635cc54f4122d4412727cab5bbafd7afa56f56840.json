@@ -12,6 +12,8 @@
   "recipient": "arsh@aasthaconsulting.com",
   "recipient_sha256": "38a975c4d79a42dbf174129635cc54f4122d4412727cab5bbafd7afa56f56840",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-06T04:23:48+00:00",
+  "smtp_message_id": "<179126062825.2219.5198142999475224572@icloud.com>",
+  "status": "sent",
   "subject_sha256": "c8b8cdf93ec796b8ca7f0d5dcf6fcba5b11b1005577e1fba98c6b7f606f31166"
 }
