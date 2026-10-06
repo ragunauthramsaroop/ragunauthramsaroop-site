@@ -12,6 +12,8 @@
   "recipient": "career@innovest.com.sa",
   "recipient_sha256": "0c59f7e1cdcac574ef076cdf42f318cae13ff1a313e18e2b854bde0ea0bb0761",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-06T04:28:33+00:00",
+  "smtp_message_id": "<179126091373.2216.3587767532722464105@icloud.com>",
+  "status": "sent",
   "subject_sha256": "607cf4a71a5afc1e802ddc9356c829ff994759b948bf3c195fe49dc45ebff577"
 }
