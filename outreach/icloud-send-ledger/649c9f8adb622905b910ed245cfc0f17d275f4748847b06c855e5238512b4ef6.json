@@ -12,6 +12,8 @@
   "recipient": "hr@jobnile.com",
   "recipient_sha256": "649c9f8adb622905b910ed245cfc0f17d275f4748847b06c855e5238512b4ef6",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-06T04:23:46+00:00",
+  "smtp_message_id": "<179126062619.2219.17411072750020840222@icloud.com>",
+  "status": "sent",
   "subject_sha256": "2f4ea7567d6db93b06cd1cfba2e0265e8d8276cad6b09d033633f29bb5b11851"
 }
