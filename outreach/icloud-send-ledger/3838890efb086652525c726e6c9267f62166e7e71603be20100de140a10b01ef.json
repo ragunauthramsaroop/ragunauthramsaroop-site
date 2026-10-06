@@ -12,6 +12,8 @@
   "recipient": "hr@bytedance.com",
   "recipient_sha256": "3838890efb086652525c726e6c9267f62166e7e71603be20100de140a10b01ef",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-06T13:21:44+00:00",
+  "smtp_message_id": "<179129290457.2442.199225307792746125@icloud.com>",
+  "status": "sent",
   "subject_sha256": "f9a6a9843c485dc7d62a2819fa8ad1c495804b32e1cda2053def59eeb88c841b"
 }
