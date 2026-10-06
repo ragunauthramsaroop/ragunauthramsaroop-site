@@ -12,6 +12,8 @@
   "recipient": "recruitment@saite.com.sa",
   "recipient_sha256": "77e26d33f59df7c8a5448adecc1f9b57ac0048965c59808d154c80fdee73d6b4",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-06T04:26:39+00:00",
+  "smtp_message_id": "<179126079965.2237.8688048385834396108@icloud.com>",
+  "status": "sent",
   "subject_sha256": "855ead1eb391629ded7d49b060b39ffdec80e7e562f2e9bf962ad2c73d3aee30"
 }
