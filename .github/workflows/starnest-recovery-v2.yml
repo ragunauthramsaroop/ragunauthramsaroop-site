@@ -1,0 +1,40 @@
+name: Starnest browser recovery v2
+
+on:
+  push:
+    paths:
+      - 'scripts/starnest_recovery_v2.mjs'
+      - '.github/workflows/starnest-recovery-v2.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  recover:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    container:
+      image: mcr.microsoft.com/playwright:v1.55.0-noble
+    steps:
+      - uses: actions/checkout@v7
+      - name: Install matching Playwright package
+        run: |
+          npm init -y >/dev/null 2>&1
+          npm install playwright@1.55.0
+      - name: Run Starnest recovery
+        run: node scripts/starnest_recovery_v2.mjs
+      - name: Show audited results
+        if: always()
+        run: |
+          find outreach/browser-recovery-results -type f -name 'starnest-v2-*.json' -maxdepth 1 -print -exec cat {} \; 2>/dev/null || true
+      - name: Upload evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: starnest-browser-recovery-v2-${{ github.run_id }}
+          path: |
+            outreach/browser-recovery-results/starnest-v2-*.json
+            recovery-starnest-v2-*.png
+          if-no-files-found: ignore
+          retention-days: 14
