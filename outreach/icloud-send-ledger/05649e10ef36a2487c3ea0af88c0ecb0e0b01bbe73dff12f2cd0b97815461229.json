@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "f2dd27373efb47f64c307dd5fa7ffdffdbc425484e632f076e8748ce9304dc59",
+  "batch_id": "2026-10-05-saudi-expansion-wave-04",
+  "body_sha256": "ebe6898a23cc6e69db0b0ef314eb7a95a5a8a349f03586468840a3f6d96f4d4a",
+  "created_at": "2026-10-06T04:26:32+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "37413703136",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/2026-10-05-saudi-expansion-wave-04.json",
+  "payload_sha256": "51bb8f28ae5a8d9276696ec0f4655a422177a13f3133a23490dba197a0524f8e",
+  "recipient": "careers@daralriyadh.com",
+  "recipient_sha256": "05649e10ef36a2487c3ea0af88c0ecb0e0b01bbe73dff12f2cd0b97815461229",
+  "schema": 1,
+  "status": "pending",
+  "subject_sha256": "0c7bb6f00b9723be6ae6b6b9322e87ed8bfec364785b0e5a6d7c2663845024c4"
+}
