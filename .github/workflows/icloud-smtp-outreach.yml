@@ -88,14 +88,34 @@ jobs:
           echo "payload=$SEND_PAYLOAD" >> "$GITHUB_OUTPUT"
 
       - name: Enforce outreach policy and prepare combined proposal attachment
+        id: preflight
         if: steps.expanded.outputs.payload != ''
         shell: bash
         run: |
-          set -euo pipefail
+          set +e
           python scripts/prepare_outreach_payload_exec.py "${{ steps.expanded.outputs.payload }}"
+          code=$?
+          set -e
+
+          if [ "$code" -eq 0 ]; then
+            echo "ready=true" >> "$GITHUB_OUTPUT"
+            echo "blocked=false" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+
+          if [ "$code" -eq 78 ]; then
+            echo "ready=false" >> "$GITHUB_OUTPUT"
+            echo "blocked=true" >> "$GITHUB_OUTPUT"
+            echo "Outreach item was blocked by policy before SMTP. This is a controlled safety state, not a workflow fault." >> "$GITHUB_STEP_SUMMARY"
+            echo "::warning::Outreach item blocked by executive-recipient or payload policy. No email was sent."
+            exit 0
+          fi
+
+          echo "Unexpected outreach preflight failure with exit code $code."
+          exit "$code"
 
       - name: Verify iCloud credential is configured
-        if: steps.expanded.outputs.payload != ''
+        if: steps.preflight.outputs.ready == 'true'
         shell: bash
         run: |
           if [ -z "$ICLOUD_APP_PASSWORD" ]; then
@@ -104,8 +124,15 @@ jobs:
           fi
 
       - name: Send through fail-closed iCloud ledger route
-        if: steps.expanded.outputs.payload != ''
+        if: steps.preflight.outputs.ready == 'true'
         shell: bash
         run: |
           set -euo pipefail
           python scripts/send_icloud_guarded.py "${{ steps.expanded.outputs.payload }}"
+
+      - name: Record controlled policy block
+        if: steps.preflight.outputs.blocked == 'true'
+        shell: bash
+        run: |
+          echo 'No SMTP attempt occurred.' >> "$GITHUB_STEP_SUMMARY"
+          echo 'Review the recipient verification, seniority, company email and strategic brief evidence before resubmitting.' >> "$GITHUB_STEP_SUMMARY"
