@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "b336ac6b28e4d63a52a9c43a385d8306a2e234aa3313ff35827f1ef7eedb053e",
+  "batch_id": "2026-10-06-recovery-e",
+  "body_sha256": "31010e3b8d90607ab91aef231b857c09df219e4035ae010be01f36dd28fc077c",
+  "created_at": "2026-10-06T13:20:53+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "37470009932",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/2026-10-06_recovery_batch_e.json",
+  "payload_sha256": "453211f3bc43ca166a03cb285797ae2cae8891ca66253364e6835c30b6e120d5",
+  "recipient": "info@ejmkenya.com",
+  "recipient_sha256": "ef91380e7e0ff0e9ac22cc7838da18ea3b7377c8f2f72f65aed3d36b6e50d6b0",
+  "schema": 1,
+  "status": "pending",
+  "subject_sha256": "dc3a9ac013342880c2bb87d7da878963e6821bd058405e064934c641fcbc9d67"
+}
