@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "cfb4b8c1f85a09f897021eb4711961c9af96b590c0b872db5f38fa5ebe341717",
+  "batch_id": "2026-10-05-saudi-expansion-wave-02",
+  "body_sha256": "93a463f074b5b2d6c0a3756dd1e98d1c70ce880b86315f5a94bb6ad4cfd2a0ce",
+  "created_at": "2026-10-06T04:23:45+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "37413486203",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/2026-10-05-saudi-expansion-wave-02.json",
+  "payload_sha256": "1d60ed550e517453782e293da74dbd915d8d592662bee3d65692144e31542231",
+  "recipient": "hr@jobnile.com",
+  "recipient_sha256": "649c9f8adb622905b910ed245cfc0f17d275f4748847b06c855e5238512b4ef6",
+  "schema": 1,
+  "status": "pending",
+  "subject_sha256": "2f4ea7567d6db93b06cd1cfba2e0265e8d8276cad6b09d033633f29bb5b11851"
+}
