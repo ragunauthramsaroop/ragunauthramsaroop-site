@@ -12,6 +12,8 @@
   "recipient": "uk@boyden.com",
   "recipient_sha256": "2950d7a0ebc5d4867895bc5b3894fe0324be6c53a74aa7b18f9052918c56e84e",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-06T13:39:27+00:00",
+  "smtp_message_id": "<179129396723.2285.10833539356324209738@icloud.com>",
+  "status": "sent",
   "subject_sha256": "9f2ea56db442cd6b8fa1af3e7432fe00d907ab0e28c58b57a71d55da18f9bbe7"
 }
