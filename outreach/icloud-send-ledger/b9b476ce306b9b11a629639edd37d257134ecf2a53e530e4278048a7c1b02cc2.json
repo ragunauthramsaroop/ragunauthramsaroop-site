@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "0022ecc5adab3cb4047808280bea42b8d97b8998a1b8cfd0d623bd05cbc473a8",
+  "batch_id": "2026-10-06-starnest-leadership-reroute",
+  "body_sha256": "170b69970e2d79914fcb13dfe0a5217d599db93cb45d86e95fe9635b84a6ac48",
+  "created_at": "2026-10-06T14:58:30+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "37483422605",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/2026-10-06_starnest_leadership_reroute.json",
+  "payload_sha256": "e9cd1154a4f986f927c42b0ac45fc4456167d42e49c2b77fd3ebab1b43a2f2f6",
+  "recipient": "trust@starnest.ai",
+  "recipient_sha256": "b9b476ce306b9b11a629639edd37d257134ecf2a53e530e4278048a7c1b02cc2",
+  "schema": 1,
+  "status": "pending",
+  "subject_sha256": "5879cc5c70e14bc5b50bf44f4b646c7c99edfeea32e3f9780e66dfce995455d9"
+}
