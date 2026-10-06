@@ -12,6 +12,8 @@
   "recipient": "simonstephens@frazerjones.com",
   "recipient_sha256": "132bd94d5f946fc225497fa5a89542675e4ea57a5186855f82b565195ef96bcb",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-06T10:46:29+00:00",
+  "smtp_message_id": "<179128358940.2246.14021321437300245061@icloud.com>",
+  "status": "sent",
   "subject_sha256": "281fcddadeb3bd90162282dd2b19baa21aa33ce23f9e2bff5760a77b7e524555"
 }
