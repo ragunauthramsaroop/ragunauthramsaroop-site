@@ -12,6 +12,8 @@
   "recipient": "jobs@jci.com",
   "recipient_sha256": "697dadfacd0c376c589d5988871410a32adff852164426655a5bb12a8991f0d2",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-06T04:27:35+00:00",
+  "smtp_message_id": "<179126085575.2280.10536089957519229115@icloud.com>",
+  "status": "sent",
   "subject_sha256": "32ab65e16380eb78aa63cae836741adab4c3aab31187ef875f924d21f0317038"
 }
