@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "35937c190f0a324787a32fc4be8da1f3269b4cf679ae4abf2e42f96427585e5c",
+  "batch_id": "emirates-nbd-executive-value-2026-10-06-ibrahim-sowaidan-v2",
+  "body_sha256": "0f6804d8856ec81a970e4f4a6ddf52364076aaf012092c9093d5b8c686b498b5",
+  "created_at": "2026-10-06T15:55:04+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "37491473126",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/2026-10-06-emirates-nbd-ibrahim-sowaidan-executive-value-v2.json",
+  "payload_sha256": "517dfac6a6d4834f1eb8c51c3e904de2ec0a43da84fb21bd3baf6fdafdc5b7a9",
+  "recipient": "ibrahims@emiratesnbd.com",
+  "recipient_sha256": "1527d18a72dbccbe715fd8412a65756606435b00247710118c32470049fcca65",
+  "schema": 1,
+  "status": "pending",
+  "subject_sha256": "3f866dc4d3676ef9f9a1cf7a25700870d2e14e7691e3eea50b385245b2fbf09f"
+}
