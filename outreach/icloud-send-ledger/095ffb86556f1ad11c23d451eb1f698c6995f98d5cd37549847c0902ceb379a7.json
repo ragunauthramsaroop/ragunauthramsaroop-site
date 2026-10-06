@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "1737eda68c2977ae01600a1780428373e030aba1f617ca4545fff68ea8494159",
+  "batch_id": "2026-10-06-bounce-recovery-verified-j",
+  "body_sha256": "5bdd8ba470ca7b2b367e25c99f4420120cc36cbdcadad921c90062b1a01393fb",
+  "created_at": "2026-10-06T13:39:28+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "37472503124",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/2026-10-06_bounce_recovery_verified_j.json",
+  "payload_sha256": "f1a08eea7764070a50d03fb7733a901bf7325a8557f894e31652744947df8c3c",
+  "recipient": "advice@perdaman.com",
+  "recipient_sha256": "095ffb86556f1ad11c23d451eb1f698c6995f98d5cd37549847c0902ceb379a7",
+  "schema": 1,
+  "status": "pending",
+  "subject_sha256": "266839effb6ad7c940583b6dc13232e920d5c51691905662d05325da77b13b51"
+}
