@@ -12,6 +12,8 @@
   "recipient": "careers@acwapower.com",
   "recipient_sha256": "0bd91ea14420da697736a1cfd059d9cb17697eaa15bfc968cf5d94b9695c6c12",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-06T04:22:02+00:00",
+  "smtp_message_id": "<179126052176.2623.4812742658808148712@icloud.com>",
+  "status": "sent",
   "subject_sha256": "fc61f4b2c9509e73667db77cae415c6b6f64d02fa2c2278c10408281fb2fd096"
 }
