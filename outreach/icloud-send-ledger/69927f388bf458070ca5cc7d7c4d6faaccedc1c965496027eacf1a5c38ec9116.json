@@ -12,6 +12,8 @@
   "recipient": "setecv@setesaudia.com.sa",
   "recipient_sha256": "69927f388bf458070ca5cc7d7c4d6faaccedc1c965496027eacf1a5c38ec9116",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-06T04:27:40+00:00",
+  "smtp_message_id": "<179126086022.2280.12370264273669174903@icloud.com>",
+  "status": "sent",
   "subject_sha256": "470a16359f9de11f72f3a1777c4b214e2213b92368a51a8bdcc93d5c09226bc1"
 }
