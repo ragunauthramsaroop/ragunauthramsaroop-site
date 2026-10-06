@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "8e4b7b6a5e8312a3fd9e308148df26a1b5a1db81f660097b68804f7b724cc017",
+  "batch_id": "2026-10-06-recovery-a",
+  "body_sha256": "00279c281c746a35eef36251411784062a43adbf335cca1cec6d87f4d790a922",
+  "created_at": "2026-10-06T10:45:06+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "37451810387",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/2026-10-06_recovery_batch_a.json",
+  "payload_sha256": "53e24c2813adff7a9f1ff3d64e28bac7fc5c9ff0b931aba9018b6bcf4e974a62",
+  "recipient": "info@staffsourceinternational.com",
+  "recipient_sha256": "2778e9daead8170e96ecd4f06a77059f08e6a6ad80d1faa1fcd66f8cb5255877",
+  "schema": 1,
+  "status": "pending",
+  "subject_sha256": "fb1564c5843127b7fb357c3402ed4545ac862a90699689feb6ef6fafeebe8f6b"
+}
