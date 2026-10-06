@@ -12,6 +12,8 @@
   "recipient": "marc.hammoud@adports.ae",
   "recipient_sha256": "6aa49ce2b944a1133b394a0dd0e2af01b0b8acb62df60181ad70bd712e4492d7",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-06T16:02:31+00:00",
+  "smtp_message_id": "<179130255120.2460.6447267907415240330@icloud.com>",
+  "status": "sent",
   "subject_sha256": "7ddcd2d6ed4e0637d8d78b796b46c6c2ecc46fd101d6ce5faecae5c664643d8f"
 }
