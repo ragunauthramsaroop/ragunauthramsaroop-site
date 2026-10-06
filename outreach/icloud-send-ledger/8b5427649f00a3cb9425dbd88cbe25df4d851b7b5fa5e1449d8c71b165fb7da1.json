@@ -12,6 +12,8 @@
   "recipient": "bdm@tigihr.com",
   "recipient_sha256": "8b5427649f00a3cb9425dbd88cbe25df4d851b7b5fa5e1449d8c71b165fb7da1",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-06T13:18:36+00:00",
+  "smtp_message_id": "<179129271610.2504.5532299463701076317@icloud.com>",
+  "status": "sent",
   "subject_sha256": "dc3a9ac013342880c2bb87d7da878963e6821bd058405e064934c641fcbc9d67"
 }
