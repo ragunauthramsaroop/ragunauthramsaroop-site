@@ -12,6 +12,8 @@
   "recipient": "r.tuazon@dewan-architects.com",
   "recipient_sha256": "bcf55d3d7c28b6212abbdcaddfbd34ca3701a638117ff76097e8a7cf70d60e21",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-06T04:24:40+00:00",
+  "smtp_message_id": "<179126067983.2440.1346291208752257954@icloud.com>",
+  "status": "sent",
   "subject_sha256": "4aa9a3fd1037730cdb462d4d6e36b54e7ad10359321ffd4a5fdf2fd83b08803a"
 }
