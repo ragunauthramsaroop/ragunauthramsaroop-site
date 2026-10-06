@@ -12,6 +12,8 @@
   "recipient": "gary@jobsafrica.co.za",
   "recipient_sha256": "fd41f78cfa2be172f4c89f0d7726a4cf9d3d5a3d4e17a4dc36c22f1bb543777a",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-06T13:26:46+00:00",
+  "smtp_message_id": "<179129320633.2440.13400772073389597519@icloud.com>",
+  "status": "sent",
   "subject_sha256": "3c6e0612ba0de501062371bc9238923434f03ab3ed781d969abd2afa99769bff"
 }
