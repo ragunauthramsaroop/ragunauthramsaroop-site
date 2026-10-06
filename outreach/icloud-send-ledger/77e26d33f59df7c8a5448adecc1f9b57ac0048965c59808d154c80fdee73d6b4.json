@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "f2dd27373efb47f64c307dd5fa7ffdffdbc425484e632f076e8748ce9304dc59",
+  "batch_id": "2026-10-05-saudi-expansion-wave-04",
+  "body_sha256": "6239b338891ed1d5427083ae06c6e1dd933b59e91f37210fcabf8d4ea72f58d7",
+  "created_at": "2026-10-06T04:26:38+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "37413703136",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/2026-10-05-saudi-expansion-wave-04.json",
+  "payload_sha256": "51bb8f28ae5a8d9276696ec0f4655a422177a13f3133a23490dba197a0524f8e",
+  "recipient": "recruitment@saite.com.sa",
+  "recipient_sha256": "77e26d33f59df7c8a5448adecc1f9b57ac0048965c59808d154c80fdee73d6b4",
+  "schema": 1,
+  "status": "pending",
+  "subject_sha256": "855ead1eb391629ded7d49b060b39ffdec80e7e562f2e9bf962ad2c73d3aee30"
+}
