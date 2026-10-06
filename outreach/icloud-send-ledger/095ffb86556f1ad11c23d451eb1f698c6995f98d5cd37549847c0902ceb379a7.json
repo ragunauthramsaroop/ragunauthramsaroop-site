@@ -12,6 +12,8 @@
   "recipient": "advice@perdaman.com",
   "recipient_sha256": "095ffb86556f1ad11c23d451eb1f698c6995f98d5cd37549847c0902ceb379a7",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-06T13:39:30+00:00",
+  "smtp_message_id": "<179129397005.2285.4623576197827143350@icloud.com>",
+  "status": "sent",
   "subject_sha256": "266839effb6ad7c940583b6dc13232e920d5c51691905662d05325da77b13b51"
 }
