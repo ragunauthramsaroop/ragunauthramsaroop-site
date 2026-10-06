@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "327ab97efc2c57e76d6274b851dd6cdce59b4ccd2d99b1fc5db4eb757e29755b",
+  "batch_id": "2026-10-05-saudi-priority-executives-01",
+  "body_sha256": "4e8fb9eb8c06ee078a5bcde374ed8eb810ae6cce41b681a21b88315affc8ad25",
+  "created_at": "2026-10-06T04:22:05+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "37413335376",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/2026-10-05-saudi-priority-executives-01.json",
+  "payload_sha256": "8d9c587620fb531b72ccf867cd51dbeab8f09cfac9e76587467be05a258f4157",
+  "recipient": "careers@roshn.sa",
+  "recipient_sha256": "4800e14f57a9af4b7049224feeec6be74c529c6d855af38a80f40a21c33178b6",
+  "schema": 1,
+  "status": "pending",
+  "subject_sha256": "cfe78c6921cc37d47fbd6c382c880b8ade1d947899c98bf029b96cd0e65dc05a"
+}
