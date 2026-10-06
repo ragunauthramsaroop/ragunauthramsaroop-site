@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "4b748569b2b3abf3864b0034774377bd6240b0bf66e2ca514265a3b5e060cdf5",
+  "batch_id": "2026-10-06-recovery-b",
+  "body_sha256": "31010e3b8d90607ab91aef231b857c09df219e4035ae010be01f36dd28fc077c",
+  "created_at": "2026-10-06T13:18:34+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "37469747235",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/2026-10-06_recovery_batch_b.json",
+  "payload_sha256": "03b44970501d7f4a75572c799d06da2b365ddfaa8d9a9b56a78db8b3b92bd37c",
+  "recipient": "bdm@tigihr.com",
+  "recipient_sha256": "8b5427649f00a3cb9425dbd88cbe25df4d851b7b5fa5e1449d8c71b165fb7da1",
+  "schema": 1,
+  "status": "pending",
+  "subject_sha256": "dc3a9ac013342880c2bb87d7da878963e6821bd058405e064934c641fcbc9d67"
+}
