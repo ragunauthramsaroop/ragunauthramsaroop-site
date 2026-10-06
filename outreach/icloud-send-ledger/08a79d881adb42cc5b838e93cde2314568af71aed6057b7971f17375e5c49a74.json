@@ -12,6 +12,8 @@
   "recipient": "recruitment@yais.com.sa",
   "recipient_sha256": "08a79d881adb42cc5b838e93cde2314568af71aed6057b7971f17375e5c49a74",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-06T04:27:33+00:00",
+  "smtp_message_id": "<179126085351.2280.10468979510144270499@icloud.com>",
+  "status": "sent",
   "subject_sha256": "32527c1a07819f5b3d30ade68bb461c7c2bec4a8f0903d59e12cd0a4f6421468"
 }
