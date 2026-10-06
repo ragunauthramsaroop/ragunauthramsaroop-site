@@ -12,6 +12,8 @@
   "recipient": "himanshu@expertexecutiverecruiters.com",
   "recipient_sha256": "0832c76bf5ef70142e135fb6ef618f416202734f8f5698fd649d7f50c7db30dc",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-06T13:26:40+00:00",
+  "smtp_message_id": "<179129320052.2440.6576338411012730683@icloud.com>",
+  "status": "sent",
   "subject_sha256": "dc3a9ac013342880c2bb87d7da878963e6821bd058405e064934c641fcbc9d67"
 }
