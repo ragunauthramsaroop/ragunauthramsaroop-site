@@ -12,6 +12,8 @@
   "recipient": "info@foras.sa",
   "recipient_sha256": "6762859c34c166d7c4256de4b11e99eae767fa56ff2be788d36195d4b52852a6",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-06T13:27:18+00:00",
+  "smtp_message_id": "<179129323844.2434.108338130286155481@icloud.com>",
+  "status": "sent",
   "subject_sha256": "85bec00e46fa798610ef5c4ace0cc84abf1b372d814f57a7d915544d2ee59cc2"
 }
