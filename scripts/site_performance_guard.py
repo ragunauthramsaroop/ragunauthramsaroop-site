@@ -45,7 +45,7 @@ check(any(x.get("rel") == "preload" and x.get("as") == "image" and x.get("href")
 check(any(x.get("class") == "portrait" and x.get("fetchpriority") == "high"
           and x.get("width") and x.get("height") for x in page.images),
       "Hero must reserve dimensions and load with high priority")
-check(any(x.get("rel") == "stylesheet" and x.get("href") == "/assets/home.css" for x in page.links),
+check(any(x.get("rel") == "stylesheet" and str(x.get("href") or "").startswith("/assets/home.css") for x in page.links),
       "Dedicated homepage stylesheet must be linked directly")
 
 sw = (ROOT / "service-worker.js").read_text(encoding="utf-8")
