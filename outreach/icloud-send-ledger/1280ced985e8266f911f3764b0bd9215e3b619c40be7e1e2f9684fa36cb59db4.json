@@ -12,6 +12,8 @@
   "recipient": "hakeem@innovant.com.sa",
   "recipient_sha256": "1280ced985e8266f911f3764b0bd9215e3b619c40be7e1e2f9684fa36cb59db4",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-06T04:24:37+00:00",
+  "smtp_message_id": "<179126067734.2440.4143218853121965856@icloud.com>",
+  "status": "sent",
   "subject_sha256": "3952ebecded0b21ddda4701dc25c357c764fe509451a290da211699784d3af9f"
 }
