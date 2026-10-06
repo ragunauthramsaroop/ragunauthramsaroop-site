@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "d4dbf564562b2d5f18b6ed7f752deccf73b0908ef055987e7883f73e544459af",
+  "batch_id": "2026-10-05-saudi-expansion-wave-05",
+  "body_sha256": "97b5b6376937e5a7eb8de9eec99d4e0e401e15eae02d0a6d8e3651bf26e3a6d3",
+  "created_at": "2026-10-06T04:27:32+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "37413780526",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/2026-10-05-saudi-expansion-wave-05.json",
+  "payload_sha256": "3683c9e6a5df6f59c682561ed8e68b35cbf66cc8f37b5d8237da02f821036a9d",
+  "recipient": "recruitment@yais.com.sa",
+  "recipient_sha256": "08a79d881adb42cc5b838e93cde2314568af71aed6057b7971f17375e5c49a74",
+  "schema": 1,
+  "status": "pending",
+  "subject_sha256": "32527c1a07819f5b3d30ade68bb461c7c2bec4a8f0903d59e12cd0a4f6421468"
+}
