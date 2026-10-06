@@ -12,6 +12,8 @@
   "recipient": "hr@nawraspower.com",
   "recipient_sha256": "832ad4857b99d0bd14f421f670d95994894cb307b4f41a1ea656a7e38710722a",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-06T04:27:31+00:00",
+  "smtp_message_id": "<179126085116.2280.12225435544068663523@icloud.com>",
+  "status": "sent",
   "subject_sha256": "b4a5d4afb9a20e5176a0e8b08d7bf63d5650f10197e2bcebe0655c08f2ca4566"
 }
