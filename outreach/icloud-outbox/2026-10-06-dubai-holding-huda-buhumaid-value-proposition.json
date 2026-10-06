@@ -1,0 +1,50 @@
+{
+  "approved": true,
+  "dry_run": false,
+  "campaign_type": "executive_company",
+  "batch_id": "dubai-holding-2026-10-06-huda-buhumaid",
+  "messages": [{
+    "to": "huda.buhumaid@dubaiholding.com",
+    "recipient_name": "Huda Buhumaid",
+    "recipient_title": "Group Chief Impact Officer",
+    "email_verified": true,
+    "email_verification_source": "The address huda.buhumaid@dubaiholding.com appears in official Dubai Holding public material; current leadership is verified separately on Dubai Holding's leadership page: https://www.dubaiholding.com/en/media-hub/press-releases/4-dubai-holding-commercial-operations-group-records-aed-204-million-net-profit-in-2011",
+    "recipient_role_source_url": "https://www.dubaiholding.com/en/our-people/leadership/huda-buhumaid",
+    "subject": "Executive Value Proposition | Dubai Holding | Impact, ESG & Strategic Partnerships",
+    "body": "Dear Ms. Buhumaid,\n\nI am sharing an executive value proposition prepared for Dubai Holding, together with my three-page executive CV. I currently serve as Liaison Director at AGM Inc., part of Zijin Mining Group, with responsibilities across government and regulatory relations, ESG, corporate affairs, social performance, strategic partnerships and executive advisory.\n\nDubai Holding's scale across investment, real estate, hospitality, infrastructure and sustainability-led growth creates strong alignment with my experience. My background is particularly relevant where portfolio strategy, government relationships, ESG governance, reputation, major projects and operating delivery need disciplined coordination.\n\nThe attached brief sets out practical areas where I could support Dubai Holding or selected portfolio businesses, including stakeholder strategy, responsible investment, government affairs, strategic partnerships, energy transition and executive issue management. It includes a 90-180 day action framework.\n\nI would value a confidential discussion regarding senior opportunities across Dubai Holding or its portfolio. Given your leadership across impact, sustainability and corporate positioning, I would also appreciate your guidance if another executive or business unit represents the strongest fit.\n\nKind regards,\nRagunauth Ramsaroop\nLiaison Director | AGM Inc., Zijin Mining Group\n+592 608 4735\nragunauthramsaroop@icloud.com\nragunauthramsaroop.com\nlinkedin.com/in/ragunauth-ramsaroop"
+  }],
+  "strategic_brief": {
+    "company": "Dubai Holding",
+    "title": "Executive Value Proposition for Dubai Holding",
+    "prepared_for": "Huda Buhumaid",
+    "prepared_for_title": "Group Chief Impact Officer",
+    "executive_summary": "Dubai Holding's diversified portfolio creates a complex interface among investment strategy, government stakeholders, ESG commitments, reputation and operating execution. My value proposition is to strengthen that interface. As Liaison Director at AGM Inc., part of Zijin Mining Group, I lead government and regulatory relations, ESG coordination, corporate affairs, stakeholder strategy and executive advisory in a capital-intensive multinational environment.",
+    "company_context": "Dubai Holding is a diversified investment group spanning major sectors that shape Dubai's economic growth and global positioning. Its sustainability and impact agenda depends on translating group-level commitments into portfolio-level evidence, stakeholder confidence and measurable execution.",
+    "opportunities": [
+      {"title": "Portfolio ESG Execution", "rationale": "A diversified portfolio needs consistent evidence and accountability across sustainability priorities.", "how_i_can_help": "Connect impact commitments to operating evidence, portfolio ownership and executive reporting."},
+      {"title": "Government and Institutional Stakeholder Strategy", "rationale": "Major developments and investments depend on coordinated public-sector relationships.", "how_i_can_help": "Build stakeholder architectures, engagement plans, commitment trackers and escalation routes."},
+      {"title": "Strategic Partnerships", "rationale": "Portfolio growth benefits from structured partnerships that connect commercial outcomes with public priorities.", "how_i_can_help": "Translate institutional priorities into executable partnership workstreams and measurable commitments."},
+      {"title": "Executive Issues and Reputation", "rationale": "High-profile assets require disciplined handling of sensitive external issues.", "how_i_can_help": "Develop executive briefs, evidence trackers and cross-functional issue-management protocols."}
+    ],
+    "action_framework": {
+      "days_0_30": ["Map priority portfolio and stakeholder dependencies.", "Review ESG evidence and issue-escalation processes."],
+      "days_31_60": ["Select priority portfolio pilots.", "Build integrated stakeholder and impact action plans."],
+      "days_61_90": ["Launch pilots with accountable sponsors.", "Connect commitments to operating evidence."],
+      "days_91_180": ["Scale effective portfolio practices.", "Measure stakeholder, impact and execution outcomes."]
+    },
+    "potential_impact": ["Stronger portfolio ESG evidence.", "Earlier visibility of stakeholder dependencies.", "Improved strategic-partnership execution.", "Higher-quality executive issue management."],
+    "background_relevance": ["Current Liaison Director at AGM Inc., part of Zijin Mining Group.", "Government, regulatory, ESG, corporate affairs and executive advisory leadership.", "Renewable-energy stakeholder governance and carbon-data traceability experience.", "12+ years across multinational mining, regulated financial services and commercial operations."],
+    "sources": [
+      {"title": "Dubai Holding Sustainability", "published_at": "Accessed 6 October 2026", "url": "https://www.dubaiholding.com/en/our-story/sustainability"},
+      {"title": "Dubai Holding Impact Report", "published_at": "Accessed 6 October 2026", "url": "https://www.dubaiholding.com/en/impact-report"},
+      {"title": "Huda Buhumaid Leadership Profile", "published_at": "Accessed 6 October 2026", "url": "https://www.dubaiholding.com/en/our-people/leadership/huda-buhumaid"}
+    ]
+  },
+  "cv_overlay": {
+    "company": "Dubai Holding",
+    "headline": "ESG & IMPACT | GOVERNMENT RELATIONS | CORPORATE AFFAIRS | STRATEGIC PARTNERSHIPS",
+    "profile": "Director-level executive with 12+ years across multinational mining, regulated financial services and commercial operations. Current Liaison Director at AGM Inc., part of Zijin Mining Group, with country-facing leadership across government relations, ESG, corporate affairs, social responsibility, stakeholder strategy and executive advisory.",
+    "relevance": ["Government and institutional engagement.", "ESG, impact and energy-transition execution.", "Cross-functional major-project coordination.", "Executive stakeholder and reputation management."],
+    "capabilities": "ESG & Impact | Government Relations | Corporate Affairs | Strategic Partnerships | Stakeholder Strategy | Executive Advisory | Energy Transition | Risk & Governance"
+  }
+}
