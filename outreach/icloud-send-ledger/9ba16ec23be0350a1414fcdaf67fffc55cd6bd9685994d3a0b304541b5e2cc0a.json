@@ -12,6 +12,8 @@
   "recipient": "careers@segi.com.sa",
   "recipient_sha256": "9ba16ec23be0350a1414fcdaf67fffc55cd6bd9685994d3a0b304541b5e2cc0a",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-06T04:27:38+00:00",
+  "smtp_message_id": "<179126085804.2280.3454364716784123996@icloud.com>",
+  "status": "sent",
   "subject_sha256": "627614eb03267b22b5c73f5cd6138ff5385a62307ec910e044080e72328317b2"
 }
