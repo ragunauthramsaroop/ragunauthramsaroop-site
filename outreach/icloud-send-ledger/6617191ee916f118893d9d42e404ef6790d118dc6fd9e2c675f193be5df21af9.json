@@ -12,6 +12,8 @@
   "recipient": "info@globallaborsupply.com",
   "recipient_sha256": "6617191ee916f118893d9d42e404ef6790d118dc6fd9e2c675f193be5df21af9",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-06T13:19:40+00:00",
+  "smtp_message_id": "<179129278051.2406.4655643652354642022@icloud.com>",
+  "status": "sent",
   "subject_sha256": "dc3a9ac013342880c2bb87d7da878963e6821bd058405e064934c641fcbc9d67"
 }
