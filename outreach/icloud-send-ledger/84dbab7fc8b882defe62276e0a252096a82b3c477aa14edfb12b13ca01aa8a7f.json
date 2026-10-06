@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "a2a7ee2a404447f4342d615ba83648ac8e10bb53972b3571d02aecaa0e270d35",
+  "batch_id": "2026-10-06-recovery-h",
+  "body_sha256": "897f00d4eefb3603534a490bd95091b4c051dcdac0e5e33b38a87b9019b5d651",
+  "created_at": "2026-10-06T13:27:22+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "37470878707",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/2026-10-06_recovery_batch_h.json",
+  "payload_sha256": "33881833251e5a69c1dc9af19f708b97e64767187b0c1f24b019c02580edb1ef",
+  "recipient": "pcuk.ta@gevernova.com",
+  "recipient_sha256": "84dbab7fc8b882defe62276e0a252096a82b3c477aa14edfb12b13ca01aa8a7f",
+  "schema": 1,
+  "status": "pending",
+  "subject_sha256": "a8c5d285b1cb91b5199ac1301d4c01785349c968d734a4e98b2643a67e1f79fb"
+}
