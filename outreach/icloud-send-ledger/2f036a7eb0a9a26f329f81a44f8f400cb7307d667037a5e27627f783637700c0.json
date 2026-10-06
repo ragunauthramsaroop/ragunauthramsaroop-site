@@ -12,6 +12,8 @@
   "recipient": "recruitment@futuretalentarabia.com",
   "recipient_sha256": "2f036a7eb0a9a26f329f81a44f8f400cb7307d667037a5e27627f783637700c0",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-06T13:20:17+00:00",
+  "smtp_message_id": "<179129281768.2443.5964716799805575628@icloud.com>",
+  "status": "sent",
   "subject_sha256": "dc3a9ac013342880c2bb87d7da878963e6821bd058405e064934c641fcbc9d67"
 }
