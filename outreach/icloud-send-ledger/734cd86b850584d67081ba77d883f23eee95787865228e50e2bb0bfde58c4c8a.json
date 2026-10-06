@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "eb15248517040e9df343023f68c1a1784ae8564a57f5ac790cd4b261e8823260",
+  "batch_id": "2026-10-06-recovery-d",
+  "body_sha256": "31010e3b8d90607ab91aef231b857c09df219e4035ae010be01f36dd28fc077c",
+  "created_at": "2026-10-06T13:20:08+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "37469933508",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/2026-10-06_recovery_batch_d.json",
+  "payload_sha256": "b5e2997c7c04897c264a2e43fa923ebdeb692043a4569bc52d44d8557165d41d",
+  "recipient": "alkarim@alkarimglobal.com",
+  "recipient_sha256": "734cd86b850584d67081ba77d883f23eee95787865228e50e2bb0bfde58c4c8a",
+  "schema": 1,
+  "status": "pending",
+  "subject_sha256": "dc3a9ac013342880c2bb87d7da878963e6821bd058405e064934c641fcbc9d67"
+}
