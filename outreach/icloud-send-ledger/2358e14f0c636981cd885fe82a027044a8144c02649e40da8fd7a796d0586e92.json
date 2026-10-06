@@ -12,6 +12,8 @@
   "recipient": "info@soteriacs.com",
   "recipient_sha256": "2358e14f0c636981cd885fe82a027044a8144c02649e40da8fd7a796d0586e92",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-06T04:28:31+00:00",
+  "smtp_message_id": "<179126091142.2216.14071644450339893052@icloud.com>",
+  "status": "sent",
   "subject_sha256": "e3dcb4bdfba7a7f54cf3bda4f0ae88f1552330f8ae44ef206d0ef8b45dea3ed7"
 }
