@@ -12,6 +12,8 @@
   "recipient": "recruitment@eh.net.sa",
   "recipient_sha256": "cf3ce142a96c20afccfb8e58d7c718a24fc075e45d2cc6db8e07027bbc159271",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-06T04:24:32+00:00",
+  "smtp_message_id": "<179126067244.2440.774191284304343172@icloud.com>",
+  "status": "sent",
   "subject_sha256": "8a8bd8e2ab1f7e66f13497bcc88e6d6b292c485e6a387050a5603bd142b875e9"
 }
