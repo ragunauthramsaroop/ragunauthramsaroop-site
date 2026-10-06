@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "f2dd27373efb47f64c307dd5fa7ffdffdbc425484e632f076e8748ce9304dc59",
+  "batch_id": "2026-10-05-saudi-expansion-wave-04",
+  "body_sha256": "e997c91720f5c9ae1d3f33045eddfedfb5f84e6f15e2354d43c4d4c951d2c06c",
+  "created_at": "2026-10-06T04:26:36+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "37413703136",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/2026-10-05-saudi-expansion-wave-04.json",
+  "payload_sha256": "51bb8f28ae5a8d9276696ec0f4655a422177a13f3133a23490dba197a0524f8e",
+  "recipient": "recruitment@alfanar.com",
+  "recipient_sha256": "22afd1b21c18301e5af75e303d87821776f3388d1c505745bfa186dacc36ca07",
+  "schema": 1,
+  "status": "pending",
+  "subject_sha256": "76e7e7306d906dbe21261f1e2224ebf488c5afcce5a7b4f2bd0dfcb3d39ac792"
+}
