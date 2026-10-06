@@ -12,6 +12,8 @@
   "recipient": "pcuk.ta@gevernova.com",
   "recipient_sha256": "84dbab7fc8b882defe62276e0a252096a82b3c477aa14edfb12b13ca01aa8a7f",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-06T13:27:24+00:00",
+  "smtp_message_id": "<179129324388.2434.16235664691593367091@icloud.com>",
+  "status": "sent",
   "subject_sha256": "a8c5d285b1cb91b5199ac1301d4c01785349c968d734a4e98b2643a67e1f79fb"
 }
