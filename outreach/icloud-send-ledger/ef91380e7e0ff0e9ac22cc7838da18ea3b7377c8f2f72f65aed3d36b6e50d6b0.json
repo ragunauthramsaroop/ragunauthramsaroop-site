@@ -12,6 +12,8 @@
   "recipient": "info@ejmkenya.com",
   "recipient_sha256": "ef91380e7e0ff0e9ac22cc7838da18ea3b7377c8f2f72f65aed3d36b6e50d6b0",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-06T13:20:55+00:00",
+  "smtp_message_id": "<179129285489.2222.17962313228006652441@icloud.com>",
+  "status": "sent",
   "subject_sha256": "dc3a9ac013342880c2bb87d7da878963e6821bd058405e064934c641fcbc9d67"
 }
