@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "8e4b7b6a5e8312a3fd9e308148df26a1b5a1db81f660097b68804f7b724cc017",
+  "batch_id": "2026-10-06-recovery-a",
+  "body_sha256": "8e92fc1273fc12d4b3d6fe45134b8414b2d2523c6163689b0a7ead521c06ddcf",
+  "created_at": "2026-10-06T10:45:12+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "37451810387",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/2026-10-06_recovery_batch_a.json",
+  "payload_sha256": "53e24c2813adff7a9f1ff3d64e28bac7fc5c9ff0b931aba9018b6bcf4e974a62",
+  "recipient": "ajmani@hortoninternational.com",
+  "recipient_sha256": "972c4c6bd8b349f0568921bf85ca82c0c331059ab5a94cdb174e43a8f583dfda",
+  "schema": 1,
+  "status": "pending",
+  "subject_sha256": "e30b451bd0e358d64149d09ac6454128240dad5590276369cb346295789d2c97"
+}
