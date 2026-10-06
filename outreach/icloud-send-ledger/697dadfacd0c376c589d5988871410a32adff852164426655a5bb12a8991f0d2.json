@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "d4dbf564562b2d5f18b6ed7f752deccf73b0908ef055987e7883f73e544459af",
+  "batch_id": "2026-10-05-saudi-expansion-wave-05",
+  "body_sha256": "7239da2beab2ba17eced1dc2283c8ef6ca0655a79bca42b3d7b401d20b0fe8d0",
+  "created_at": "2026-10-06T04:27:34+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "37413780526",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/2026-10-05-saudi-expansion-wave-05.json",
+  "payload_sha256": "3683c9e6a5df6f59c682561ed8e68b35cbf66cc8f37b5d8237da02f821036a9d",
+  "recipient": "jobs@jci.com",
+  "recipient_sha256": "697dadfacd0c376c589d5988871410a32adff852164426655a5bb12a8991f0d2",
+  "schema": 1,
+  "status": "pending",
+  "subject_sha256": "32ab65e16380eb78aa63cae836741adab4c3aab31187ef875f924d21f0317038"
+}
