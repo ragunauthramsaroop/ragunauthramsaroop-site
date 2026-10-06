@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "a2a7ee2a404447f4342d615ba83648ac8e10bb53972b3571d02aecaa0e270d35",
+  "batch_id": "2026-10-06-recovery-h",
+  "body_sha256": "fc09ca0edd805c2e5c4d5e014628a3bc3b31864bf089c2591ab646902af7397a",
+  "created_at": "2026-10-06T13:27:17+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "37470878707",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/2026-10-06_recovery_batch_h.json",
+  "payload_sha256": "33881833251e5a69c1dc9af19f708b97e64767187b0c1f24b019c02580edb1ef",
+  "recipient": "info@foras.sa",
+  "recipient_sha256": "6762859c34c166d7c4256de4b11e99eae767fa56ff2be788d36195d4b52852a6",
+  "schema": 1,
+  "status": "pending",
+  "subject_sha256": "85bec00e46fa798610ef5c4ace0cc84abf1b372d814f57a7d915544d2ee59cc2"
+}
