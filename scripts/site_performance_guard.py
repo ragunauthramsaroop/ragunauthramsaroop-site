@@ -45,13 +45,16 @@ check(any(x.get("rel") == "preload" and x.get("as") == "image" and x.get("href")
 check(any(x.get("class") == "portrait" and x.get("fetchpriority") == "high"
           and x.get("width") and x.get("height") for x in page.images),
       "Hero must reserve dimensions and load with high priority")
+check(any(x.get("rel") == "stylesheet" and str(x.get("href") or "").startswith("/assets/home.css") for x in page.links),
+      "Dedicated homepage stylesheet must be linked directly")
 
 sw = (ROOT / "service-worker.js").read_text(encoding="utf-8")
 match = re.search(r"const CORE=\[([\s\S]*?)\];", sw)
 urls = re.findall(r'"(/[^"]*)"', match.group(1)) if match else []
 check(bool(match), "Service worker precache not found")
 check(len(urls) <= 5, f"Service worker precaches {len(urls)} resources; budget is 5")
-check("/" in urls, "Homepage document must be part of the fast shell")
+check('const cacheKey=(url.pathname==="/"||url.pathname==="/index.html")?"/":request;' in sw,
+      "Successful homepage navigation must be cached under the canonical root key")
 for forbidden in ("/start/","/assets/site.css","/assets/platform.css","/tools/assets/tools.css","/assets/preview.png","/assets/randy-portrait.jpg"):
     check(forbidden not in urls, f"Heavy or non-home asset must not be precached: {forbidden}")
 core_bytes = 0
@@ -63,10 +66,11 @@ check(core_bytes <= 34_000, f"Service worker eager shell is {core_bytes/1024:.1f
 check(not any("index.json" in u or u.endswith(".wasm") for u in urls),
       "Large indexes and model assets must be fetched on demand")
 check('const V="rr-public-v14"' in sw, "Service worker version must be v14")
-check("/assets/home.css" in urls, "Dedicated homepage stylesheet must be available offline")
 check("/assets/accessibility.css" in urls, "Accessibility stylesheet must be available offline")
 check("/assets/home-runtime.js" in urls, "Homepage idle runtime must be available offline")
-check("const fresh=await fromNetwork(request,event,cache);" in sw and "const exact=await cache.match(request,{ignoreSearch:true});" in sw, "Navigation must remain network-first with exact offline fallback")
+check("const fresh=await fromNetwork(request,event,cache);" in sw
+      and 'cache.match(isHome?"/":request,{ignoreSearch:true})' in sw,
+      "Navigation must remain network-first with exact same-route offline fallback")
 check("STATIC_FIRST" in sw, "Critical homepage assets must use cache-first behavior")
 check('cache.match("/start/")' not in sw, "Never serve the Start page as a fallback for unrelated URLs")
 check('status:503' in sw, "Unknown offline navigation must return an explicit 503")
@@ -88,7 +92,8 @@ runtime = (ROOT / "assets/home-runtime.js").read_text(encoding="utf-8")
 check(runtime.count("requestIdleCallback") >= 1, "Homepage runtime must defer noncritical work until idle")
 check("/assets/accessibility.js" in runtime and "/tools/assets/analytics-loader.js" in runtime,
       "Homepage runtime must idle-load accessibility and analytics")
-check('serviceWorker.register("/service-worker.js")' in runtime, "Homepage runtime must install the fast cache immediately after load")
+check('serviceWorker.register("/service-worker.js"' in runtime,
+      "Homepage runtime must register the fast cache immediately after load")
 check((ROOT / "assets/home-runtime.js").stat().st_size <= 1_500, "Homepage runtime exceeded 1.5 KB")
 accessibility = (ROOT / "assets/accessibility.js").read_text(encoding="utf-8")
 check('createElement("style")' not in accessibility, "Accessibility helper must not inject inline style under strict CSP")
@@ -114,4 +119,4 @@ if errors:
         print("FAIL", error)
     raise SystemExit(1)
 
-print(f"PASS: one idle homepage runtime, {core_bytes/1024:.1f} KB eager service-worker shell, cache-first home assets, deferred platform CSS, priority hero")
+print(f"PASS: one idle homepage runtime, {core_bytes/1024:.1f} KB eager service-worker shell, route-exact offline fallback, deferred platform CSS, priority hero")

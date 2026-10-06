@@ -1,0 +1,32 @@
+name: GitHub workflow health
+
+on:
+  pull_request:
+    paths:
+      - '.github/workflows/**'
+      - 'scripts/workflow_health.py'
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/**'
+      - 'scripts/workflow_health.py'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: workflow-health-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v7
+        with:
+          python-version: '3.12'
+      - name: Validate supported action runtimes
+        run: python scripts/workflow_health.py

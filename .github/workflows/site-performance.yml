@@ -1,4 +1,5 @@
 name: Website performance and integrity
+
 on:
   pull_request:
     paths:
@@ -28,7 +29,7 @@ on:
       - 'data/research-pages.json'
       - 'data/academy-assessments.json'
       - 'sitemap.xml'
-      - '.github/workflows/**'
+      - '.github/workflows/site-performance.yml'
   push:
     branches: [main]
     paths:
@@ -58,12 +59,18 @@ on:
       - 'data/research-pages.json'
       - 'data/academy-assessments.json'
       - 'sitemap.xml'
-      - '.github/workflows/**'
+      - '.github/workflows/site-performance.yml'
   schedule:
     - cron: '0 12 * * 1'
   workflow_dispatch:
+
 permissions:
   contents: read
+
+concurrency:
+  group: website-performance-${{ github.ref }}
+  cancel-in-progress: true
+
 jobs:
   performance:
     runs-on: ubuntu-latest
@@ -77,8 +84,6 @@ jobs:
         with:
           node-version: '22'
           package-manager-cache: false
-      - name: Guard GitHub Actions runtime health
-        run: python scripts/workflow_health.py
       - name: Guard homepage, caching and third-party budgets
         run: python scripts/site_performance_guard.py
       - name: Check browser script syntax
