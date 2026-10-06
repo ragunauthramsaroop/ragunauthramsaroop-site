@@ -12,6 +12,8 @@
   "recipient": "sindhuvarghese@hillintl.com",
   "recipient_sha256": "10cc81cd2104c5edacabb168c5ba5736fc71b093ef52f9f19fe8ddfb60b68e78",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-06T04:24:42+00:00",
+  "smtp_message_id": "<179126068230.2440.6538581853815603990@icloud.com>",
+  "status": "sent",
   "subject_sha256": "f2566318bb2c83df05d635af4d20aad76a7da8216f55a6dbae635aa27be52769"
 }
