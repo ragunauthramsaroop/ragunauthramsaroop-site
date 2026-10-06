@@ -12,6 +12,8 @@
   "recipient": "alkarim@alkarimglobal.com",
   "recipient_sha256": "734cd86b850584d67081ba77d883f23eee95787865228e50e2bb0bfde58c4c8a",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-06T13:20:10+00:00",
+  "smtp_message_id": "<179129280982.2443.7189705258215580410@icloud.com>",
+  "status": "sent",
   "subject_sha256": "dc3a9ac013342880c2bb87d7da878963e6821bd058405e064934c641fcbc9d67"
 }
