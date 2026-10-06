@@ -12,6 +12,8 @@
   "recipient": "ajmani@hortoninternational.com",
   "recipient_sha256": "972c4c6bd8b349f0568921bf85ca82c0c331059ab5a94cdb174e43a8f583dfda",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-06T10:45:13+00:00",
+  "smtp_message_id": "<179128351313.2221.7752278827925307287@icloud.com>",
+  "status": "sent",
   "subject_sha256": "e30b451bd0e358d64149d09ac6454128240dad5590276369cb346295789d2c97"
 }
