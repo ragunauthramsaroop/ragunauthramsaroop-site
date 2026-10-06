@@ -12,6 +12,8 @@
   "recipient": "job@albawani.net",
   "recipient_sha256": "0b99aa5465b1e6d94c69d3503fc6f4ddf6c09f94844c8b10ccca137794560a68",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-06T04:26:35+00:00",
+  "smtp_message_id": "<179126079509.2237.12674703638972855822@icloud.com>",
+  "status": "sent",
   "subject_sha256": "31e8931b05e8421339d4501baca40f1eeaa73d5804773081889618549f50460c"
 }
