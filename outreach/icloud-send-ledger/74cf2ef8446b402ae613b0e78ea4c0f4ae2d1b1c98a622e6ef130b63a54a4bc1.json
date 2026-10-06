@@ -12,6 +12,8 @@
   "recipient": "nikki@nssearch.co",
   "recipient_sha256": "74cf2ef8446b402ae613b0e78ea4c0f4ae2d1b1c98a622e6ef130b63a54a4bc1",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-06T13:26:38+00:00",
+  "smtp_message_id": "<179129319798.2440.6659144336427694971@icloud.com>",
+  "status": "sent",
   "subject_sha256": "e4b87c1c3fe834557f0e69e7eb638b42727895df9913f61df61e17f9aa2e6d87"
 }
