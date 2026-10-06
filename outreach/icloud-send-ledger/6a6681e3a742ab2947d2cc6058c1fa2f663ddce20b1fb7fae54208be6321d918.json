@@ -12,6 +12,8 @@
   "recipient": "recruitment@perdaman-gs.com.au",
   "recipient_sha256": "6a6681e3a742ab2947d2cc6058c1fa2f663ddce20b1fb7fae54208be6321d918",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-06T13:21:38+00:00",
+  "smtp_message_id": "<179129289879.2442.949100135650487428@icloud.com>",
+  "status": "sent",
   "subject_sha256": "dc3a9ac013342880c2bb87d7da878963e6821bd058405e064934c641fcbc9d67"
 }
