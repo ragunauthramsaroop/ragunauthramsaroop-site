@@ -12,6 +12,8 @@
   "recipient": "sarasceo@ceosearchglobal.com",
   "recipient_sha256": "07f3d0ab07bb67cc3f4b38d7413af9658537e37bba16e5436a13900ef7555d6f",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-06T15:03:03+00:00",
+  "smtp_message_id": "<179129898335.2435.13931721679741902168@icloud.com>",
+  "status": "sent",
   "subject_sha256": "41b9244b98f471f2f0031c9f6fe82e20d94408a90eb8bbd8f72e7fa8ed7f2e94"
 }
