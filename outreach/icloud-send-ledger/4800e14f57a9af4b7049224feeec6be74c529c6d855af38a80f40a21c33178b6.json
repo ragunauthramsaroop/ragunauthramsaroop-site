@@ -12,6 +12,8 @@
   "recipient": "careers@roshn.sa",
   "recipient_sha256": "4800e14f57a9af4b7049224feeec6be74c529c6d855af38a80f40a21c33178b6",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-06T04:22:06+00:00",
+  "smtp_message_id": "<179126052667.2623.2738974029535375593@icloud.com>",
+  "status": "sent",
   "subject_sha256": "cfe78c6921cc37d47fbd6c382c880b8ade1d947899c98bf029b96cd0e65dc05a"
 }
