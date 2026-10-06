@@ -1,0 +1,49 @@
+{
+  "approved": true,
+  "dry_run": false,
+  "campaign_type": "executive_company",
+  "batch_id": "adib-2026-10-06-lamia-hariz",
+  "messages": [{
+    "to": "lamia.hariz@adib.com",
+    "recipient_name": "Lamia Hariz",
+    "recipient_title": "Head of Corporate Communications, Marketing, ESG & Investor Relations",
+    "email_verified": true,
+    "email_verification_source": "ADIB official investor-relations material lists Lamia Hariz at lamia.hariz@adib.com: https://www.adib.ae/en/investor-relations/ir-contact",
+    "recipient_role_source_url": "https://www.adib.ae/en/investor-relations/ir-contact",
+    "subject": "Executive Value Proposition | ADIB | ESG, Government Relations & Strategic Partnerships",
+    "body": "Dear Ms. Hariz,\n\nI am sharing an executive value proposition prepared for Abu Dhabi Islamic Bank, together with my three-page executive CV. I currently serve as Liaison Director at AGM Inc., part of Zijin Mining Group, with responsibilities across government and regulatory relations, ESG, corporate affairs, social performance, strategic partnerships and executive advisory.\n\nADIB's Vision 2035 agenda, sustainable-finance growth and focus on embedding sustainability across the business align strongly with my background. My experience is relevant where ESG strategy, government and regulatory relationships, major-sector clients, corporate reputation and operating execution need to remain aligned.\n\nThe attached brief sets out practical areas where I could support ADIB and includes a 90-180 day action framework.\n\nI would value a confidential discussion regarding senior opportunities within ADIB. If another executive owns the closest mandate across ESG, Sustainability, Corporate Affairs, Strategic Partnerships or International Business, I would appreciate your guidance or referral.\n\nKind regards,\nRagunauth Ramsaroop\nLiaison Director | AGM Inc., Zijin Mining Group\n+592 608 4735\nragunauthramsaroop@icloud.com\nragunauthramsaroop.com\nlinkedin.com/in/ragunauth-ramsaroop"
+  }],
+  "strategic_brief": {
+    "company": "Abu Dhabi Islamic Bank",
+    "title": "Executive Value Proposition for Abu Dhabi Islamic Bank",
+    "prepared_for": "Lamia Hariz",
+    "prepared_for_title": "Head of Corporate Communications, Marketing, ESG & Investor Relations",
+    "executive_summary": "ADIB's growth agenda places ESG, institutional trust, sustainable finance and stakeholder execution close to the center of value creation. My proposition is to support the interface between those priorities and practical delivery. As Liaison Director at AGM Inc., part of Zijin Mining Group, I lead government and regulatory relations, ESG coordination, corporate affairs, stakeholder strategy and executive advisory in a regulated multinational environment.",
+    "company_context": "ADIB continues to expand sustainable finance while implementing Vision 2035 and strengthening its role in the UAE economy. This creates a need for disciplined stakeholder alignment, credible ESG evidence and executive coordination across regulators, clients, public institutions and operating teams.",
+    "opportunities": [
+      {"title": "ESG Governance and Evidence", "rationale": "Sustainable-finance growth requires credible implementation and reporting.", "how_i_can_help": "Link ESG commitments to operating evidence, accountable owners and concise executive reporting."},
+      {"title": "Government and Institutional Affairs", "rationale": "Strategic initiatives depend on effective relationships with regulators and public-sector stakeholders.", "how_i_can_help": "Build stakeholder maps, decision pathways, engagement plans and escalation protocols."},
+      {"title": "Strategic Partnerships", "rationale": "ADIB's growth agenda benefits from partnerships connecting finance, industry and national priorities.", "how_i_can_help": "Translate institutional priorities into structured partnership workstreams and measurable commitments."},
+      {"title": "Executive Reputation Readiness", "rationale": "High-exposure issues require fast factual alignment and coordinated response.", "how_i_can_help": "Develop executive briefs, evidence trackers and cross-functional issue-management routines."}
+    ],
+    "action_framework": {
+      "days_0_30": ["Map priority stakeholders and ESG dependencies.", "Review current reporting and escalation gaps."],
+      "days_31_60": ["Select priority pilots.", "Build integrated stakeholder and ESG action plans."],
+      "days_61_90": ["Launch pilots with executive sponsors.", "Connect commitments to evidence and ownership."],
+      "days_91_180": ["Scale effective practices.", "Measure stakeholder outcomes and decision-cycle improvement."]
+    },
+    "potential_impact": ["Stronger ESG accountability.", "Earlier visibility of institutional dependencies.", "Improved stakeholder confidence.", "Higher-quality executive decisions."],
+    "background_relevance": ["Current Liaison Director at AGM Inc., part of Zijin Mining Group.", "Government, regulatory, ESG, corporate affairs and executive advisory leadership.", "Renewable-energy stakeholder governance and carbon-data traceability experience.", "12+ years across multinational mining, regulated financial services and commercial operations."],
+    "sources": [
+      {"title": "ADIB Mobilises AED 20 Billion in Sustainable Finance in 2025", "published_at": "2026", "url": "https://www.adib.ae/en/news/2026/apr/adib-mobilises-aed-20-billion-in-sustainable-finance-in-2025"},
+      {"title": "ADIB Investor Relations Contact", "published_at": "Accessed 6 October 2026", "url": "https://www.adib.ae/en/investor-relations/ir-contact"}
+    ]
+  },
+  "cv_overlay": {
+    "company": "Abu Dhabi Islamic Bank",
+    "headline": "ESG & SUSTAINABILITY | GOVERNMENT RELATIONS | CORPORATE AFFAIRS | STRATEGIC PARTNERSHIPS",
+    "profile": "Director-level executive with 12+ years across multinational mining, regulated financial services and commercial operations. Current Liaison Director at AGM Inc., part of Zijin Mining Group, with country-facing leadership across government relations, ESG, corporate affairs, social responsibility, stakeholder strategy and executive advisory.",
+    "relevance": ["Government and institutional engagement.", "ESG and energy-transition execution.", "Cross-functional regulatory coordination.", "Executive stakeholder and reputation management."],
+    "capabilities": "ESG & Sustainability | Government Relations | Corporate Affairs | Strategic Partnerships | Regulatory Affairs | Executive Advisory | Energy Transition | Risk & Governance"
+  }
+}
