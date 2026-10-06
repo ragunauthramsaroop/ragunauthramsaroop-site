@@ -12,6 +12,8 @@
   "recipient": "info-me@trsstaffing.com",
   "recipient_sha256": "5655d6e729c4b655021d9ab0616fdade26bcc1fa7f478a2cd05c851c8c91e6ed",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-06T13:26:43+00:00",
+  "smtp_message_id": "<179129320323.2440.7800114511668278086@icloud.com>",
+  "status": "sent",
   "subject_sha256": "fefadecc5761add2e8641b27287d137e108c59807bc4291ca05d0f4364070fc3"
 }
