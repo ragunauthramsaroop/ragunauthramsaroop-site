@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "8e4b7b6a5e8312a3fd9e308148df26a1b5a1db81f660097b68804f7b724cc017",
+  "batch_id": "2026-10-06-recovery-a",
+  "body_sha256": "45d83a8ebccbee27a6df8720312596950018603ff2ed4950a1546a0b919f5a3f",
+  "created_at": "2026-10-06T10:45:09+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "37451810387",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/2026-10-06_recovery_batch_a.json",
+  "payload_sha256": "53e24c2813adff7a9f1ff3d64e28bac7fc5c9ff0b931aba9018b6bcf4e974a62",
+  "recipient": "info@emiratalent.com",
+  "recipient_sha256": "493c6a6ebe0bdb70b3d47d406740529b2e4dcb95c13238eb875ae18fb0bec2df",
+  "schema": 1,
+  "status": "pending",
+  "subject_sha256": "15d631b65d43b0a3aaeb112197866038f8bbfad475fd4a473d0d6db5c7085c74"
+}
