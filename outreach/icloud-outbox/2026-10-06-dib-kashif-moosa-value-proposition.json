@@ -1,0 +1,49 @@
+{
+  "approved": true,
+  "dry_run": false,
+  "campaign_type": "executive_company",
+  "batch_id": "dib-2026-10-06-kashif-moosa",
+  "messages": [{
+    "to": "kmoosa@dib.ae",
+    "recipient_name": "Kashif Moosa",
+    "recipient_title": "Senior Vice President, Head of Investor Relations & Strategic Communications",
+    "email_verified": true,
+    "email_verification_source": "Dubai Islamic Bank official results material: https://www.dib.ae/docs/default-source/ir/dib-pr-en-q4-2024.pdf?sfvrsn=53e12a3_1",
+    "recipient_role_source_url": "https://www.dib.ae/about-us/leadership-team/executive-management",
+    "subject": "Executive Value Proposition | DIB | ESG, Government Relations & Strategic Partnerships",
+    "body": "Dear Mr. Moosa,\n\nI am sharing an executive value proposition prepared for Dubai Islamic Bank, together with my three-page executive CV. I currently serve as Liaison Director at AGM Inc., part of Zijin Mining Group, with responsibilities across government and regulatory relations, ESG, corporate affairs, social performance, strategic partnerships and executive advisory.\n\nMy experience is relevant to DIB where sustainable finance, institutional stakeholders, ESG execution, reputation and regulated-sector delivery intersect. The attached brief sets out practical areas where I could support DIB and includes a 90-180 day action framework.\n\nI would value a confidential discussion regarding senior opportunities within DIB. If another executive owns the closest mandate across Sustainability, ESG, Corporate Affairs, Strategic Partnerships or International Business, I would appreciate your guidance or referral.\n\nKind regards,\nRagunauth Ramsaroop\nLiaison Director | AGM Inc., Zijin Mining Group\n+592 608 4735\nragunauthramsaroop@icloud.com\nragunauthramsaroop.com\nlinkedin.com/in/ragunauth-ramsaroop"
+  }],
+  "strategic_brief": {
+    "company": "Dubai Islamic Bank",
+    "title": "Executive Value Proposition for Dubai Islamic Bank",
+    "prepared_for": "Kashif Moosa",
+    "prepared_for_title": "Senior Vice President, Head of Investor Relations & Strategic Communications",
+    "executive_summary": "Dubai Islamic Bank is scaling sustainable finance, institutional positioning and international growth. My value proposition is to strengthen the interface between ESG commitments, government and regulatory stakeholders, strategic partnerships, reputation and operating execution. As Liaison Director at AGM Inc., part of Zijin Mining Group, I lead country-facing government relations, ESG coordination, corporate affairs, stakeholder strategy and executive advisory in a capital-intensive multinational environment.",
+    "company_context": "DIB entered 2026 with continued growth and a stronger sustainable-finance platform. Its strategy requires disciplined ESG evidence, stakeholder alignment and executive communication as the bank supports clients across sectors central to the UAE economy.",
+    "opportunities": [
+      {"title": "ESG Execution", "rationale": "Scaled sustainable finance depends on credible evidence and accountable implementation.", "how_i_can_help": "Connect commitments to operating data, action owners, stakeholder expectations and executive reporting."},
+      {"title": "Institutional Stakeholder Strategy", "rationale": "Strategic initiatives intersect with regulators, public entities and major corporate clients.", "how_i_can_help": "Map decision pathways, commitments, relationship ownership and escalation routes."},
+      {"title": "Sustainable Finance Client Enablement", "rationale": "Transition finance clients need practical regulatory, social and implementation readiness.", "how_i_can_help": "Bring an operator perspective from mining, renewable energy and regulated-project execution."},
+      {"title": "Executive Issues Management", "rationale": "Reputation-sensitive matters require fast facts, clear ownership and coordinated response.", "how_i_can_help": "Build concise decision briefs, evidence trackers and cross-functional escalation protocols."}
+    ],
+    "action_framework": {
+      "days_0_30": ["Map priority stakeholders, ESG dependencies and internal owners.", "Review evidence and escalation gaps."],
+      "days_31_60": ["Select priority pilots.", "Build integrated stakeholder and ESG action plans."],
+      "days_61_90": ["Launch pilots with executive sponsors.", "Connect commitments to operating evidence."],
+      "days_91_180": ["Scale effective practices.", "Measure stakeholder, evidence and decision-cycle outcomes."]
+    },
+    "potential_impact": ["Stronger ESG evidence and accountability.", "Earlier visibility of regulatory and stakeholder dependencies.", "Improved executive decision quality.", "Better transition readiness for selected client sectors."],
+    "background_relevance": ["Current Liaison Director at AGM Inc., part of Zijin Mining Group.", "Government, regulatory, ESG, corporate affairs and executive advisory leadership.", "Renewable-energy stakeholder governance and carbon-data traceability experience.", "12+ years across multinational mining, regulated financial services and commercial operations."],
+    "sources": [
+      {"title": "DIB H1 2026 Results", "published_at": "14 July 2026", "url": "https://www.dib.ae/about-us/news/2026/07/14/dib-posts-strong-h1-2026-results"},
+      {"title": "DIB Sustainable Finance Series", "published_at": "25 June 2026", "url": "https://www.dib.ae/about-us/news/2026/06/25/dib-launches-unlocking-sustainable-finance-series-to-accelerate-climate-transition-across-priority-sectors"}
+    ]
+  },
+  "cv_overlay": {
+    "company": "Dubai Islamic Bank",
+    "headline": "ESG & SUSTAINABILITY | GOVERNMENT RELATIONS | CORPORATE AFFAIRS | STRATEGIC PARTNERSHIPS",
+    "profile": "Director-level executive with 12+ years across multinational mining, regulated financial services and commercial operations. Current Liaison Director at AGM Inc., part of Zijin Mining Group, with country-facing leadership across government relations, ESG, corporate affairs, social responsibility, stakeholder strategy and executive advisory.",
+    "relevance": ["Government and institutional engagement.", "ESG and energy-transition execution.", "Cross-functional regulatory coordination.", "Executive stakeholder and reputation management."],
+    "capabilities": "ESG & Sustainability | Government Relations | Corporate Affairs | Strategic Partnerships | Regulatory Affairs | Executive Advisory | Energy Transition | Risk & Governance"
+  }
+}
