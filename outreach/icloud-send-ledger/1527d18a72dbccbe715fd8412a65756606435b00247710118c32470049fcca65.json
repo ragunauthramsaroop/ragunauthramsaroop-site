@@ -12,6 +12,8 @@
   "recipient": "ibrahims@emiratesnbd.com",
   "recipient_sha256": "1527d18a72dbccbe715fd8412a65756606435b00247710118c32470049fcca65",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-06T15:55:06+00:00",
+  "smtp_message_id": "<179130210624.2223.3355950192528151563@icloud.com>",
+  "status": "sent",
   "subject_sha256": "3f866dc4d3676ef9f9a1cf7a25700870d2e14e7691e3eea50b385245b2fbf09f"
 }
