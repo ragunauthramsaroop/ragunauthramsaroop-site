@@ -1,9 +1,9 @@
-name: Starnest browser recovery v2
+name: Starnest browser recovery v3
 
 on:
   push:
     paths:
-      - 'scripts/starnest_recovery_v2.mjs'
+      - 'scripts/starnest_recovery_v3.mjs'
       - '.github/workflows/starnest-recovery-v2.yml'
   workflow_dispatch:
 
@@ -23,18 +23,18 @@ jobs:
           npm init -y >/dev/null 2>&1
           npm install playwright@1.55.0
       - name: Run Starnest recovery
-        run: node scripts/starnest_recovery_v2.mjs
+        run: node scripts/starnest_recovery_v3.mjs
       - name: Show audited results
         if: always()
         run: |
-          find outreach/browser-recovery-results -type f -name 'starnest-v2-*.json' -maxdepth 1 -print -exec cat {} \; 2>/dev/null || true
+          find outreach/browser-recovery-results -type f -name 'starnest-v3-*.json' -maxdepth 1 -print -exec cat {} \; 2>/dev/null || true
       - name: Upload evidence
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: starnest-browser-recovery-v2-${{ github.run_id }}
+          name: starnest-browser-recovery-v3-${{ github.run_id }}
           path: |
-            outreach/browser-recovery-results/starnest-v2-*.json
-            recovery-starnest-v2-*.png
+            outreach/browser-recovery-results/starnest-v3-*.json
+            recovery-starnest-v3-*.png
           if-no-files-found: ignore
           retention-days: 14
