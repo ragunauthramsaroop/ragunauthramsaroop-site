@@ -12,6 +12,8 @@
   "recipient": "info@horizonglobalhires.com",
   "recipient_sha256": "8980bd2eee94f285d96e369a0d91c3a1c8b6dd93297a37c4021551dda8848fac",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-06T13:20:52+00:00",
+  "smtp_message_id": "<179129285214.2222.16298612636137407750@icloud.com>",
+  "status": "sent",
   "subject_sha256": "dc3a9ac013342880c2bb87d7da878963e6821bd058405e064934c641fcbc9d67"
 }
