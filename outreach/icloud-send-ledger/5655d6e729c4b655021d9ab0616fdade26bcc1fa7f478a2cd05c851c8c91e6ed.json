@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "34a5169360643ea3b8d3e9648ea8917302efe6cf97add5d3852238097ee0c30a",
+  "batch_id": "2026-10-06-recovery-g",
+  "body_sha256": "2e49dd8b8c89da47b746fb74729ebf9ad90a1528cec64a54480cc9662fcdb65d",
+  "created_at": "2026-10-06T13:26:41+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "37470800227",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/2026-10-06_recovery_batch_g.json",
+  "payload_sha256": "bb24e74e1368ce18190fb610878571c1fad4928c3a87c6dae1f726171df6a126",
+  "recipient": "info-me@trsstaffing.com",
+  "recipient_sha256": "5655d6e729c4b655021d9ab0616fdade26bcc1fa7f478a2cd05c851c8c91e6ed",
+  "schema": 1,
+  "status": "pending",
+  "subject_sha256": "fefadecc5761add2e8641b27287d137e108c59807bc4291ca05d0f4364070fc3"
+}
