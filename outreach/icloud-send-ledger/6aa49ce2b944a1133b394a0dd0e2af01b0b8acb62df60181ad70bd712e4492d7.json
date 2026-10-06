@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "cfacca0872f55c63f898475bd9fc579bd2b868fc30cd5b500073410b5b6f01b2",
+  "batch_id": "adports-executive-value-2026-10-06-marc-hammoud",
+  "body_sha256": "a703394372f8be62e3b6db4ef13983f7e6a96cd367343c03ea92078dce55f6fb",
+  "created_at": "2026-10-06T16:02:28+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "37492476045",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/2026-10-06-ad-ports-marc-hammoud-executive-value.json",
+  "payload_sha256": "1564dadc06040dfa9014c076233f426ecf4f2bf5849d5de0a926ec11b2bb23fa",
+  "recipient": "marc.hammoud@adports.ae",
+  "recipient_sha256": "6aa49ce2b944a1133b394a0dd0e2af01b0b8acb62df60181ad70bd712e4492d7",
+  "schema": 1,
+  "status": "pending",
+  "subject_sha256": "7ddcd2d6ed4e0637d8d78b796b46c6c2ecc46fd101d6ce5faecae5c664643d8f"
+}
