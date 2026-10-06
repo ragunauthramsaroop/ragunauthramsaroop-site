@@ -12,6 +12,8 @@
   "recipient": "production@knowlex.co.uk",
   "recipient_sha256": "871430f9aa720f959867d87560b14a04be368c3a900a7be4e0cdb3ec3a8d0b4d",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-06T13:27:26+00:00",
+  "smtp_message_id": "<179129324631.2434.10882156277121748951@icloud.com>",
+  "status": "sent",
   "subject_sha256": "7ed7d2648464be0e9e0d61ead880b43ef7bdc35a09d400f13a298cf94a956f3c"
 }
