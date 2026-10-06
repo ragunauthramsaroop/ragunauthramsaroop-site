@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "cfb4b8c1f85a09f897021eb4711961c9af96b590c0b872db5f38fa5ebe341717",
+  "batch_id": "2026-10-05-saudi-expansion-wave-02",
+  "body_sha256": "feb551966f542cc8de341cafb3a914101aacd08d309f0b0c2f2739edf28d75c6",
+  "created_at": "2026-10-06T04:23:49+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "37413486203",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/2026-10-05-saudi-expansion-wave-02.json",
+  "payload_sha256": "1d60ed550e517453782e293da74dbd915d8d592662bee3d65692144e31542231",
+  "recipient": "lijy@dss-hr.com",
+  "recipient_sha256": "cd68df17d54926b63726f239644adc8a6c549451329f9df7b211d905a3f20be1",
+  "schema": 1,
+  "status": "pending",
+  "subject_sha256": "d5fd5ca5a090a4862af4761ba346015e1b547f97a81b6af66225d31d90d7e671"
+}
