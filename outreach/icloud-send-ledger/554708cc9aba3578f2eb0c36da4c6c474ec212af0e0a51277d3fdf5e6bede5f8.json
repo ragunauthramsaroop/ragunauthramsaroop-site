@@ -12,6 +12,8 @@
   "recipient": "rhona.ritchie@zenith-energy.com",
   "recipient_sha256": "554708cc9aba3578f2eb0c36da4c6c474ec212af0e0a51277d3fdf5e6bede5f8",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-06T13:27:16+00:00",
+  "smtp_message_id": "<179129323596.2434.14947723455068727208@icloud.com>",
+  "status": "sent",
   "subject_sha256": "2a958701f030561c846ed5f57e861474e55ebe2cbcdfadc40fb89b20dc6e2dfa"
 }
