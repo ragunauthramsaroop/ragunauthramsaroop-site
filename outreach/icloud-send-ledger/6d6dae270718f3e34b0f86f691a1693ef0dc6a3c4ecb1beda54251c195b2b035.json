@@ -12,6 +12,8 @@
   "recipient": "recruit@asiapowerltd.com",
   "recipient_sha256": "6d6dae270718f3e34b0f86f691a1693ef0dc6a3c4ecb1beda54251c195b2b035",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-06T13:20:12+00:00",
+  "smtp_message_id": "<179129281236.2443.15907292713946941164@icloud.com>",
+  "status": "sent",
   "subject_sha256": "dc3a9ac013342880c2bb87d7da878963e6821bd058405e064934c641fcbc9d67"
 }
