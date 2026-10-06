@@ -12,6 +12,8 @@
   "recipient": "peter@amcde.com",
   "recipient_sha256": "e38b4dfeb7906584cb713aa59aa90af2da275f1d255c05c12ca376ad64341f23",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-06T04:26:31+00:00",
+  "smtp_message_id": "<179126079069.2237.10311545387009182255@icloud.com>",
+  "status": "sent",
   "subject_sha256": "36795a0eb63a00b4ea9330dcb41cd1225b47e42bc89e6bd644935bb45e617191"
 }
