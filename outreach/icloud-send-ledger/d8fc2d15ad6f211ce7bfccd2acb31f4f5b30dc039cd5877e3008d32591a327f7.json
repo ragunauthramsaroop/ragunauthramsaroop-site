@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "327ab97efc2c57e76d6274b851dd6cdce59b4ccd2d99b1fc5db4eb757e29755b",
+  "batch_id": "2026-10-05-saudi-priority-executives-01",
+  "body_sha256": "7eea8c55cc506d8d41429b1aae695e502ecd12b6db316e67efcc864cf9c83cfb",
+  "created_at": "2026-10-06T04:21:58+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "37413335376",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/2026-10-05-saudi-priority-executives-01.json",
+  "payload_sha256": "8d9c587620fb531b72ccf867cd51dbeab8f09cfac9e76587467be05a258f4157",
+  "recipient": "recruitment@sabic.com",
+  "recipient_sha256": "d8fc2d15ad6f211ce7bfccd2acb31f4f5b30dc039cd5877e3008d32591a327f7",
+  "schema": 1,
+  "status": "pending",
+  "subject_sha256": "ded63861048b89c469ca6d2382fbfa8cccdca10bd86cb5d80c0013e567c06dd1"
+}
