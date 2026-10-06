@@ -12,6 +12,8 @@
   "recipient": "careers@daralriyadh.com",
   "recipient_sha256": "05649e10ef36a2487c3ea0af88c0ecb0e0b01bbe73dff12f2cd0b97815461229",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-06T04:26:33+00:00",
+  "smtp_message_id": "<179126079294.2237.526255790895730242@icloud.com>",
+  "status": "sent",
   "subject_sha256": "0c7bb6f00b9723be6ae6b6b9322e87ed8bfec364785b0e5a6d7c2663845024c4"
 }
