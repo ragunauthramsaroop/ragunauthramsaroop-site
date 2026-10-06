@@ -1,0 +1,49 @@
+name: Browser outreach recovery
+
+on:
+  push:
+    paths:
+      - 'scripts/browser_outreach_recovery.mjs'
+      - '.github/workflows/browser-outreach-recovery.yml'
+  workflow_dispatch:
+    inputs:
+      targets:
+        description: 'Comma-separated target ids, blank for all configured targets'
+        required: false
+        default: ''
+
+permissions:
+  contents: read
+
+jobs:
+  recover:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    env:
+      TARGETS: ${{ github.event.inputs.targets || '' }}
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v6
+        with:
+          node-version: '22'
+      - name: Install browser runtime
+        run: |
+          npm init -y >/dev/null 2>&1
+          npm install playwright@1.55.0
+          npx playwright install --with-deps chromium
+      - name: Run recovery forms
+        run: node scripts/browser_outreach_recovery.mjs
+      - name: Show audited results
+        if: always()
+        run: |
+          find outreach/browser-recovery-results -type f -name '*.json' -maxdepth 1 -print -exec cat {} \; 2>/dev/null || true
+      - name: Upload evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: browser-recovery-evidence-${{ github.run_id }}
+          path: |
+            outreach/browser-recovery-results/*.json
+            recovery-*.png
+          if-no-files-found: ignore
+          retention-days: 14
