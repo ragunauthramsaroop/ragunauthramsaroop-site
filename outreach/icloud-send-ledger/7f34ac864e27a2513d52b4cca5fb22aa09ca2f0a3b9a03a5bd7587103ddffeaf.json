@@ -12,6 +12,8 @@
   "recipient": "apply@iontalentgroup.com",
   "recipient_sha256": "7f34ac864e27a2513d52b4cca5fb22aa09ca2f0a3b9a03a5bd7587103ddffeaf",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-06T04:23:23+00:00",
+  "smtp_message_id": "<179126060264.2464.14398428578911700025@icloud.com>",
+  "status": "sent",
   "subject_sha256": "9cb843dfb1e32fef3078b9d349516374d390ceca1cddbef145e152895a893758"
 }
