@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "35dcad84b9318bd979e6cb2c2d8ebdde002fc7c11d7924ca29c85b12dba38292",
+  "batch_id": "pif-executive-value-2026-10-06-rtrefgarne",
+  "body_sha256": "44d8a52cebdea218e63c41dc2b77c274816252ab296a53b78e94ddbc75d3bc02",
+  "created_at": "2026-10-06T15:25:36+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "37487365774",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/2026-10-06-pif-rupert-trefgarne-executive-value.json",
+  "payload_sha256": "035eab3061dc41428b048927dbd364e17e4c9d91c1e1000119467538c63f680f",
+  "recipient": "rtrefgarne@pif.gov.sa",
+  "recipient_sha256": "0f01f1c4679b8d9e1aae1536cda2f402591d6c2dc70fe1b0a1f462c986383060",
+  "schema": 1,
+  "status": "pending",
+  "subject_sha256": "65e0c8e1c99ee0b75a337db48c69c54e29e79142323e450458b01eee186bb401"
+}
