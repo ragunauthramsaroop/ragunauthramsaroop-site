@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "ac50585fa3b6ee016f705aa43d5bc4b5d6eadb75ea73b76d7fccc992fb270105",
+  "batch_id": "qiddiya-cv-resubmission-2026-10-06",
+  "body_sha256": "4aab639efd6fbdedaaa61e5e33b5e045014665b04b5e18d2d71ec8cd4524da00",
+  "created_at": "2026-10-06T11:58:51+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "37459991749",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/2026-10-06-qiddiya-cv-resubmission.json",
+  "payload_sha256": "5e7763e54e3b0dbc475e80e17f97bc1c63ca04dc03602150aca28b36f63d27ed",
+  "recipient": "qiddiya-investment-company-1@jobs.workablemail.com",
+  "recipient_sha256": "b2cd10fa7926058d4ccb1b9fe39e534662e5c699e6a34b0854931190c1ccdf85",
+  "schema": 1,
+  "status": "pending",
+  "subject_sha256": "3bb23512b791dc6e0a7cd9974d346735ec9b33c6092e8256e500fb48dd69331b"
+}
