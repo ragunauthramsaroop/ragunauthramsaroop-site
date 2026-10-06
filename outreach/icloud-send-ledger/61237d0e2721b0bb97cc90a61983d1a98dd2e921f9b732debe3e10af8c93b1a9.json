@@ -12,6 +12,8 @@
   "recipient": "cvtogpc@gmail.com",
   "recipient_sha256": "61237d0e2721b0bb97cc90a61983d1a98dd2e921f9b732debe3e10af8c93b1a9",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-06T13:19:43+00:00",
+  "smtp_message_id": "<179129278317.2406.4110186862930879498@icloud.com>",
+  "status": "sent",
   "subject_sha256": "dc3a9ac013342880c2bb87d7da878963e6821bd058405e064934c641fcbc9d67"
 }
