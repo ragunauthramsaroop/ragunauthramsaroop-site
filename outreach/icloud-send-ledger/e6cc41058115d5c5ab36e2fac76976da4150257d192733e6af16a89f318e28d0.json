@@ -12,6 +12,8 @@
   "recipient": "recruitment@globalplacementgulf.com",
   "recipient_sha256": "e6cc41058115d5c5ab36e2fac76976da4150257d192733e6af16a89f318e28d0",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-06T13:30:26+00:00",
+  "smtp_message_id": "<179129342630.2226.1921508932824445024@icloud.com>",
+  "status": "sent",
   "subject_sha256": "042970d9957343a4dc3428ffdadb7ffd88a76f35f280a926a14a054db8ffc8ca"
 }
