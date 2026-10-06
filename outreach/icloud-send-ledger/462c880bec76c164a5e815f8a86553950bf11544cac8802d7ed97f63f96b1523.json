@@ -12,6 +12,8 @@
   "recipient": "admin@platinaresources.com.au",
   "recipient_sha256": "462c880bec76c164a5e815f8a86553950bf11544cac8802d7ed97f63f96b1523",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-06T13:30:20+00:00",
+  "smtp_message_id": "<179129342005.2226.4614954815384201805@icloud.com>",
+  "status": "sent",
   "subject_sha256": "70837d2a8ad081e4dc699e25396a81ddf047a903c8fd28ca89ee695c3b3cebd3"
 }
