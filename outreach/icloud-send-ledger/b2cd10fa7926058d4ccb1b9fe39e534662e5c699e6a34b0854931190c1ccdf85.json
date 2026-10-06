@@ -12,6 +12,8 @@
   "recipient": "qiddiya-investment-company-1@jobs.workablemail.com",
   "recipient_sha256": "b2cd10fa7926058d4ccb1b9fe39e534662e5c699e6a34b0854931190c1ccdf85",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-06T11:58:53+00:00",
+  "smtp_message_id": "<179128793298.2517.2672472860077848819@icloud.com>",
+  "status": "sent",
   "subject_sha256": "3bb23512b791dc6e0a7cd9974d346735ec9b33c6092e8256e500fb48dd69331b"
 }
