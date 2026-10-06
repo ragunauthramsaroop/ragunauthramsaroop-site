@@ -12,6 +12,8 @@
   "recipient": "clients@ceosearchindia.in",
   "recipient_sha256": "ffbe42b2c5fb5974c341a5f7e90d1549114bb8e6473af198201f257f63482de3",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-06T13:18:47+00:00",
+  "smtp_message_id": "<179129272768.2504.2900533853779141867@icloud.com>",
+  "status": "sent",
   "subject_sha256": "dc3a9ac013342880c2bb87d7da878963e6821bd058405e064934c641fcbc9d67"
 }
