@@ -12,6 +12,8 @@
   "recipient": "info@auroracareers.co.nz",
   "recipient_sha256": "e0da9d5c2f915ab2e9b69557e784b58dc67b5d0c6bf918e751d9c64c30508435",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-06T13:18:41+00:00",
+  "smtp_message_id": "<179129272178.2504.45162797363937658@icloud.com>",
+  "status": "sent",
   "subject_sha256": "dc3a9ac013342880c2bb87d7da878963e6821bd058405e064934c641fcbc9d67"
 }
