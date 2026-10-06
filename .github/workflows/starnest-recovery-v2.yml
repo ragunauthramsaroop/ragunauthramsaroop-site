@@ -10,6 +10,10 @@ on:
 permissions:
   contents: read
 
+concurrency:
+  group: starnest-browser-recovery-v3-${{ github.ref }}
+  cancel-in-progress: true
+
 jobs:
   recover:
     runs-on: ubuntu-latest
@@ -30,7 +34,7 @@ jobs:
           find outreach/browser-recovery-results -type f -name 'starnest-v3-*.json' -maxdepth 1 -print -exec cat {} \; 2>/dev/null || true
       - name: Upload evidence
         if: always()
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: starnest-browser-recovery-v3-${{ github.run_id }}
           path: |
