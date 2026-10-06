@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "7952e97e9d2e6e3a2cf4d101ccf470aaa0a73bb19d4367401a88318a0cb8d509",
+  "batch_id": "dpworld-executive-value-2026-10-06-adal-mirza",
+  "body_sha256": "99f49eb0a291a8f6640592797f597d38ac0529040a99a65b3268185d29bdf274",
+  "created_at": "2026-10-06T15:31:59+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "37488276336",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/2026-10-06-dp-world-adal-mirza-executive-value.json",
+  "payload_sha256": "4f262e52773007c4545639dcccf346c4b86088ed7e4813ccc4cffaf455e46573",
+  "recipient": "adal.mirza@dpworld.com",
+  "recipient_sha256": "5a47f906ae0677581684f635a6d66092ae7a18b09b4672e987e195d69978f39d",
+  "schema": 1,
+  "status": "pending",
+  "subject_sha256": "f51410aa36f58bf5e2abfa7aa7cfb9c9fc0df65c5636ebe45339e137ccd0e0ce"
+}
