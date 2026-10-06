@@ -12,6 +12,8 @@
   "recipient": "sterlingtravel8@gmail.com",
   "recipient_sha256": "e60583c2a0a8ae2ce463981802ffa7a188c91ac6d19f432b5468c00924bd0b8d",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-06T13:19:38+00:00",
+  "smtp_message_id": "<179129277773.2406.1818670696474989687@icloud.com>",
+  "status": "sent",
   "subject_sha256": "dc3a9ac013342880c2bb87d7da878963e6821bd058405e064934c641fcbc9d67"
 }
