@@ -12,6 +12,8 @@
   "recipient": "info@gasandoilrecruitment.com",
   "recipient_sha256": "aaf8c3eb3db3aea6d7c68bfffa1048d771bfaf2cbc794abebb02600bfc8360de",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-06T10:45:01+00:00",
+  "smtp_message_id": "<179128350157.2221.7424733617152765428@icloud.com>",
+  "status": "sent",
   "subject_sha256": "9ce644e44989a992c04f3edd4303a5822c922d09d64cac5534a8ec95cff7677b"
 }
