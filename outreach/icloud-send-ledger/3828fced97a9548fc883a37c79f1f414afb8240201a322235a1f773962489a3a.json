@@ -12,6 +12,8 @@
   "recipient": "ali@grgmea.com",
   "recipient_sha256": "3828fced97a9548fc883a37c79f1f414afb8240201a322235a1f773962489a3a",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-06T04:23:25+00:00",
+  "smtp_message_id": "<179126060494.2464.9173544245419497977@icloud.com>",
+  "status": "sent",
   "subject_sha256": "64c88f38cd03d1e91f915f2fda5fc4897484ca59e7f65267a3b03048dce7af15"
 }
