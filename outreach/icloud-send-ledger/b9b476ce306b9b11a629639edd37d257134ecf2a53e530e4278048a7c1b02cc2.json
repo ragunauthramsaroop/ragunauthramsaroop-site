@@ -12,6 +12,8 @@
   "recipient": "trust@starnest.ai",
   "recipient_sha256": "b9b476ce306b9b11a629639edd37d257134ecf2a53e530e4278048a7c1b02cc2",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-06T14:58:32+00:00",
+  "smtp_message_id": "<179129871201.2242.10386545390903095645@icloud.com>",
+  "status": "sent",
   "subject_sha256": "5879cc5c70e14bc5b50bf44f4b646c7c99edfeea32e3f9780e66dfce995455d9"
 }
