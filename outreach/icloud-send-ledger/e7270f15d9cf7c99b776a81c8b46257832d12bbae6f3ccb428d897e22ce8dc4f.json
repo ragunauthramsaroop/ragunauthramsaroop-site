@@ -12,6 +12,8 @@
   "recipient": "jillian@glomo.com",
   "recipient_sha256": "e7270f15d9cf7c99b776a81c8b46257832d12bbae6f3ccb428d897e22ce8dc4f",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-06T13:19:35+00:00",
+  "smtp_message_id": "<179129277497.2406.625873523454972419@icloud.com>",
+  "status": "sent",
   "subject_sha256": "dc3a9ac013342880c2bb87d7da878963e6821bd058405e064934c641fcbc9d67"
 }
