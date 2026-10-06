@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "156432babc5148eb092460c6ffc72ed29056d4e2c8aa458e66a6ac0d85ed3d1b",
+  "batch_id": "2026-10-06-ceo-search-india-saraswathi-reroute",
+  "body_sha256": "b882a4f4fe2baf6c43d5a2e511c8fb637888d6899e04a0bd9579e62209d6f14b",
+  "created_at": "2026-10-06T15:03:01+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "37484058567",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/2026-10-06_ceo_search_india_saraswathi_reroute.json",
+  "payload_sha256": "ddc5033bf9740bf755436d1150723c8df75a4712e8cd32deeba22004935bfa27",
+  "recipient": "sarasceo@ceosearchglobal.com",
+  "recipient_sha256": "07f3d0ab07bb67cc3f4b38d7413af9658537e37bba16e5436a13900ef7555d6f",
+  "schema": 1,
+  "status": "pending",
+  "subject_sha256": "41b9244b98f471f2f0031c9f6fe82e20d94408a90eb8bbd8f72e7fa8ed7f2e94"
+}
