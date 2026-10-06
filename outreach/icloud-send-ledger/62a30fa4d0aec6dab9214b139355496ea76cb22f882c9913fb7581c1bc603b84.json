@@ -12,6 +12,8 @@
   "recipient": "carbon@tilad.com.sa",
   "recipient_sha256": "62a30fa4d0aec6dab9214b139355496ea76cb22f882c9913fb7581c1bc603b84",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-06T04:24:35+00:00",
+  "smtp_message_id": "<179126067511.2440.5005654812300537497@icloud.com>",
+  "status": "sent",
   "subject_sha256": "6bc819dcd16e8d791d077d465dcd9f70494e6fd280615e2d6823b024407a0378"
 }
