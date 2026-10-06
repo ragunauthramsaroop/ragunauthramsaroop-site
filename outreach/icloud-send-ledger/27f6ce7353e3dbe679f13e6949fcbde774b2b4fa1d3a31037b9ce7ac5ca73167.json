@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "550e711557622a79b5663c1c595cb2671960221e6602ea2d3b9f6319aaa11a9b",
+  "batch_id": "2026-10-06-recovery-i",
+  "body_sha256": "d51b8a45ca9bbfd29934d4bc048adff1c45af833af92be55ae393d93f50fd341",
+  "created_at": "2026-10-06T13:30:21+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "37471271823",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/2026-10-06_recovery_batch_i.json",
+  "payload_sha256": "bafd4d0aa9fb80c5d2b51bebe441802d5e2a085eecd6708ee9efa7fd151da436",
+  "recipient": "info@ramshainternational.com",
+  "recipient_sha256": "27f6ce7353e3dbe679f13e6949fcbde774b2b4fa1d3a31037b9ce7ac5ca73167",
+  "schema": 1,
+  "status": "pending",
+  "subject_sha256": "5a2be9ffce075ec9b1e46d2c0cb7f8e14241243cb6d891d3870e722c14f89ce2"
+}
