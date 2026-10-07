@@ -12,6 +12,8 @@
   "recipient": "a.pretswell@weconnectenergy.com",
   "recipient_sha256": "c103b49edd4594819cc1d9c22a1fd9b76d34e2664a8d038d6d43cd0e58d20817",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-07T23:50:51+00:00",
+  "smtp_message_id": "<179141705094.2225.10203493550224744176@icloud.com>",
+  "status": "sent",
   "subject_sha256": "ce5e4f51b253fe5cd4fcf8dd065b0eaabf980ac1b71a9c2d02f099669bb20669"
 }
