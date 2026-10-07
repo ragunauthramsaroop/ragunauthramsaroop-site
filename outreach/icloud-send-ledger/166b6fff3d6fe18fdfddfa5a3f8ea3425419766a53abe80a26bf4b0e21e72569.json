@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "da0975b247edc011d4faac634232351df9e67793a562a986388d7004b73fb6da",
+  "batch_id": "2026-10-07-gcc-bounce-recovery",
+  "body_sha256": "6dc39685b8f1d925da3c6aeee3f934684a02408edc5f5eb8e9370ecbb4e13673",
+  "created_at": "2026-10-07T23:12:03+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "37700844283",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-staged/2026-10-07-exergy-daley-watson.json",
+  "payload_sha256": "8ab0ec58542fb621039bd630b8dadcde46bc6f57369c8526402388adc8aaff51",
+  "recipient": "daley.watson@exergyconsult.com",
+  "recipient_sha256": "166b6fff3d6fe18fdfddfa5a3f8ea3425419766a53abe80a26bf4b0e21e72569",
+  "schema": 1,
+  "status": "pending",
+  "subject_sha256": "f6abebae43f75803e1195fa5840b019cef9b337de791105d81686e9c86a2c852"
+}
