@@ -12,6 +12,8 @@
   "recipient": "james@jmrconsulting.me",
   "recipient_sha256": "a9b36cc3116ecac1fc0efb86f0e031d5915bd683dd37b5d5a5078ae95987bbf6",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-07T23:48:38+00:00",
+  "smtp_message_id": "<179141691870.2218.4621587301333519614@icloud.com>",
+  "status": "sent",
   "subject_sha256": "eea1a141c3bd009c7de8c6b07e3cd7d5d264ee9555e7055b10a2af41bcd89ee8"
 }
