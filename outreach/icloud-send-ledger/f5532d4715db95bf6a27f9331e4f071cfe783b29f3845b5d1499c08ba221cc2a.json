@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "51f887531913ce7a961c9ce16b82c7bf478c5e90e1ba88fa95b51918a04c46f7",
+  "batch_id": "2026-10-07-gcc-bounce-recovery",
+  "body_sha256": "6d5f953f2d2a289547d275c4cb4aa6d1df44f1d4a7abc038013117ad0c3102da",
+  "created_at": "2026-10-07T23:12:06+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "37700844283",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-staged/2026-10-07-ma-partners-maira-azizi.json",
+  "payload_sha256": "2c0ce57c2f240041a14d5fb5aa456ceb4a1bd10d3f39751f9c4096b81ef99979",
+  "recipient": "maira.azizi@mapartners.co",
+  "recipient_sha256": "f5532d4715db95bf6a27f9331e4f071cfe783b29f3845b5d1499c08ba221cc2a",
+  "schema": 1,
+  "status": "pending",
+  "subject_sha256": "d3024c22cf555d596a2614d9e680472f19745a9e981ca1b550261d1496a17cf0"
+}
