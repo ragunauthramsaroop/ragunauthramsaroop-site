@@ -12,6 +12,8 @@
   "recipient": "neil.wilkie@whitecrowresearch.com",
   "recipient_sha256": "f7f52c2785ebc89e9feff3a26aaf4cdf86edc702fc9911ea3e6d9afa7e524599",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-07T23:50:53+00:00",
+  "smtp_message_id": "<179141705354.2225.3043743636107550746@icloud.com>",
+  "status": "sent",
   "subject_sha256": "22ac1afc2cb0573e2389f1d0f374b5a89c618347dfa348cf1b88c6fbe1485ca8"
 }
