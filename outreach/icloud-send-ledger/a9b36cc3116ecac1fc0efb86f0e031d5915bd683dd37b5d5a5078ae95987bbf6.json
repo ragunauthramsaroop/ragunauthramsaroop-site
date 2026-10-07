@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "47f1925e0cbaabab1c819c4b17ff1b5c8d9d0e39b74f56b5c992a40e5bd13164",
+  "batch_id": "2026-10-07-gcc-bounce-recovery-02",
+  "body_sha256": "a542fda618fd5edcf2a9913b573a64f1b247e0cff26c47eadfaf5d431c8b99cb",
+  "created_at": "2026-10-07T23:48:37+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "37704319592",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-staged/2026-10-07-tlh-james-radcliffe.json",
+  "payload_sha256": "65b19c5c296054a54266c2c71259206d7d85765772bcd9e8501f4a9ff5279be5",
+  "recipient": "james@jmrconsulting.me",
+  "recipient_sha256": "a9b36cc3116ecac1fc0efb86f0e031d5915bd683dd37b5d5a5078ae95987bbf6",
+  "schema": 1,
+  "status": "pending",
+  "subject_sha256": "eea1a141c3bd009c7de8c6b07e3cd7d5d264ee9555e7055b10a2af41bcd89ee8"
+}
