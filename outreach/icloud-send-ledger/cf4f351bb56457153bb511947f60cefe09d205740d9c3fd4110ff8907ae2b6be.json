@@ -12,6 +12,8 @@
   "recipient": "amira@synergimena.com",
   "recipient_sha256": "cf4f351bb56457153bb511947f60cefe09d205740d9c3fd4110ff8907ae2b6be",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-07T23:48:36+00:00",
+  "smtp_message_id": "<179141691617.2218.2412138600983692013@icloud.com>",
+  "status": "sent",
   "subject_sha256": "fc8faca651114f4692e373e6c77f44c85239b85a8465219cef9e80bcda10ddc8"
 }
