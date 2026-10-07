@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "c6c0875161a166b999b0b869c40351423783ef3eae80e8b61cff0d68cfba5948",
+  "batch_id": "2026-10-07-gcc-bounce-recovery-02",
+  "body_sha256": "23a903d424c0b84257e279290975605c2ab9ef5e9452f0e64497e42c185e1389",
+  "created_at": "2026-10-07T23:48:34+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "37704319592",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-staged/2026-10-07-synergi-amira.json",
+  "payload_sha256": "27128e156823ee5cf01df0b6e70d98f313ecbf2ef49856044250ad3e0a4e2963",
+  "recipient": "amira@synergimena.com",
+  "recipient_sha256": "cf4f351bb56457153bb511947f60cefe09d205740d9c3fd4110ff8907ae2b6be",
+  "schema": 1,
+  "status": "pending",
+  "subject_sha256": "fc8faca651114f4692e373e6c77f44c85239b85a8465219cef9e80bcda10ddc8"
+}
