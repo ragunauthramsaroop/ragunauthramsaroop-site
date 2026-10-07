@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "a4a10171c3dfd9106e88cd685d2eee1c61eaa6116980c87feef1581ac3a86a54",
+  "batch_id": "2026-10-07-gcc-bounce-recovery-03",
+  "body_sha256": "f13e33a56aac74a35f47ac860b3cbc38e1c38b925c607d6abb165fca1c011487",
+  "created_at": "2026-10-07T23:50:49+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "37704526142",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-staged/2026-10-07-weconnect-andrew-pretswell.json",
+  "payload_sha256": "8443f41adeea4dc58b31950747e407d123c5ffd6fede039424bb4b40c26b1084",
+  "recipient": "a.pretswell@weconnectenergy.com",
+  "recipient_sha256": "c103b49edd4594819cc1d9c22a1fd9b76d34e2664a8d038d6d43cd0e58d20817",
+  "schema": 1,
+  "status": "pending",
+  "subject_sha256": "ce5e4f51b253fe5cd4fcf8dd065b0eaabf980ac1b71a9c2d02f099669bb20669"
+}
