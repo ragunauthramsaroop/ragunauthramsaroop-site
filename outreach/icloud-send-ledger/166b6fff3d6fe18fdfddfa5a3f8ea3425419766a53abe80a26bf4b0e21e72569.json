@@ -12,6 +12,8 @@
   "recipient": "daley.watson@exergyconsult.com",
   "recipient_sha256": "166b6fff3d6fe18fdfddfa5a3f8ea3425419766a53abe80a26bf4b0e21e72569",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-07T23:12:04+00:00",
+  "smtp_message_id": "<179141472471.2227.14468059193582546901@icloud.com>",
+  "status": "sent",
   "subject_sha256": "f6abebae43f75803e1195fa5840b019cef9b337de791105d81686e9c86a2c852"
 }
