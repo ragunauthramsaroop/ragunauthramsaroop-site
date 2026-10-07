@@ -12,6 +12,8 @@
   "recipient": "maira.azizi@mapartners.co",
   "recipient_sha256": "f5532d4715db95bf6a27f9331e4f071cfe783b29f3845b5d1499c08ba221cc2a",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-07T23:12:07+00:00",
+  "smtp_message_id": "<179141472716.2227.12444945802528408243@icloud.com>",
+  "status": "sent",
   "subject_sha256": "d3024c22cf555d596a2614d9e680472f19745a9e981ca1b550261d1496a17cf0"
 }
