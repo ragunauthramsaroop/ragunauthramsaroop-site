@@ -12,6 +12,8 @@
   "recipient": "mgiusti@spencerstuart.com",
   "recipient_sha256": "debaf9f27f1cfb1b4e9ca95056891f7755552e311a0d55ca84867544fc95db39",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-08T19:55:31+00:00",
+  "smtp_message_id": "<179148933109.2449.416041029595987072@icloud.com>",
+  "status": "sent",
   "subject_sha256": "8ee02d7ab800014980a9e5e1da0c0f9e0887643d1c1ad8a752b530278fe48902"
 }
