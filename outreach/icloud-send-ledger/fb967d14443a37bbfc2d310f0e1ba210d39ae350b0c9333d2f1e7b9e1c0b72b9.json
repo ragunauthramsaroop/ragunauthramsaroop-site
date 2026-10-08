@@ -12,6 +12,8 @@
   "recipient": "cristina.postolache@amrop.com",
   "recipient_sha256": "fb967d14443a37bbfc2d310f0e1ba210d39ae350b0c9333d2f1e7b9e1c0b72b9",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-08T19:41:32+00:00",
+  "smtp_message_id": "<179148849248.2436.1118773704971817743@icloud.com>",
+  "status": "sent",
   "subject_sha256": "81f098266ef166e32b4106a6f1a78eb37eabb4ab6237060841a3562314f15330"
 }
