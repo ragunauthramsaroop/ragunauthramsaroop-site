@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "5a15967447ce63edc468fd20f91fc3b0111509edfdd06d66d60cfebbdcbdad65",
+  "batch_id": "2026-10-08-signium-jon-ashcroft-gcc-direct",
+  "body_sha256": "475196885f111817974e0ac689a4a997d0bbf93ecf6087c128e739ab4fdb615c",
+  "created_at": "2026-10-08T20:20:19+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "37838660850",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/2026-10-08-signium-jon-ashcroft-gcc-direct.json",
+  "payload_sha256": "0ce21c24b2214f89da50ce0b7606bbeae3e64089f8a1e7b337a6922c836c01d0",
+  "recipient": "contact@signium.me",
+  "recipient_sha256": "576a7ac0444a74f9f929d5f8a812c4763b48332e77ffc71a599babaee45a5262",
+  "schema": 1,
+  "status": "pending",
+  "subject_sha256": "701bc28fe01136f814ac092ffb929e876ae0823b6d0022b3a388b5a07714b074"
+}
