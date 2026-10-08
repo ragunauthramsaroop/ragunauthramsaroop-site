@@ -12,6 +12,8 @@
   "recipient": "chagoort@hagoort.com",
   "recipient_sha256": "c2d1afa556730ef107fc527744bc5cfca91663e01e71c3bbbc8ab140d62ca7b7",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-08T21:47:21+00:00",
+  "smtp_message_id": "<179149604076.2450.17980904082324748674@icloud.com>",
+  "status": "sent",
   "subject_sha256": "feb4f24251d3a4573c2dd9105876f633c9d13f1c67df8d6304842d3000dff02f"
 }
