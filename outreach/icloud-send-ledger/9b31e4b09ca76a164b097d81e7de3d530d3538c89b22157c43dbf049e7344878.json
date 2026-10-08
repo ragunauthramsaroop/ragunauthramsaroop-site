@@ -12,6 +12,8 @@
   "recipient": "jonathan.holmes@kornferry.com",
   "recipient_sha256": "9b31e4b09ca76a164b097d81e7de3d530d3538c89b22157c43dbf049e7344878",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-08T18:10:46+00:00",
+  "smtp_message_id": "<179148304663.2310.2484324856107749745@icloud.com>",
+  "status": "sent",
   "subject_sha256": "03252fd0be7720d81d23a85150da7d9962a0aef54ba1c7542bc28e4d4685a93e"
 }
