@@ -12,6 +12,8 @@
   "recipient": "info@consult-tdc.com",
   "recipient_sha256": "489607c0e6c5c5506280b207aa931c9768be6c400a84348da054b8b549f1a899",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-08T21:41:02+00:00",
+  "smtp_message_id": "<179149566276.2289.10731406831554830758@icloud.com>",
+  "status": "sent",
   "subject_sha256": "42b6f5ecf90d16b2d20570824798a1dfbec8b5a5a3ea0f2ef97fedbf9e50c04d"
 }
