@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "256b8111ac774e5e4ef062f6d7d51a5270fb6a6c590f27a413fd622be7e916d1",
+  "batch_id": "gcc-executive-recruiters-2026-10-08-b16",
+  "body_sha256": "654d0c2457cdb9b2821086c539471a413a01768da7357d078ccdc11c2804665b",
+  "created_at": "2026-10-08T20:44:13+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "37841631948",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/2026-10-08-gcc-executive-recruiters-batch-16.json",
+  "payload_sha256": "18c945c2ed0ebb303572f2a55a690ef6db7440c6ac62616447d1a2048bed8987",
+  "recipient": "info@sterlingbell.com",
+  "recipient_sha256": "35052bbd8441fff1ee7446a640b591dc2af998265baa75c3597023426022771a",
+  "schema": 1,
+  "status": "pending",
+  "subject_sha256": "72de3626e2f7ca46a8cf39a9c75a4adf07a3dc0e0e47b8558eee219405b08166"
+}
