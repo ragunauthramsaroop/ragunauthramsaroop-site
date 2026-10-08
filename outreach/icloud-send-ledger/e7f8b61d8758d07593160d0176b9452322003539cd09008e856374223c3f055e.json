@@ -12,6 +12,8 @@
   "recipient": "omer.zakaria@robertwalters.com",
   "recipient_sha256": "e7f8b61d8758d07593160d0176b9452322003539cd09008e856374223c3f055e",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-08T18:10:44+00:00",
+  "smtp_message_id": "<179148304373.2310.1539728165436195192@icloud.com>",
+  "status": "sent",
   "subject_sha256": "faffa1e8f80e5ca57e4548f3e324a45f7a05f508f0d321c1fcd50a3e32e47504"
 }
