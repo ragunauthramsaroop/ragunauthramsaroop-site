@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "batch_id": "2026-10-08-bounce-recovery-wave-01",
+  "body_sha256": "b66a6e7218373117ec2a8e9ce630689f8396e4c203c86cd9f3b0398ccb2c76c0",
+  "created_at": "2026-10-08T22:19:04+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "37852675188",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-recovery/2026-10-08-bounce-recovery-wave-01.json",
+  "payload_sha256": "d663e65f38bc3c797c063980d5a3c55ff9dbbfed1b7147d421dfc12320f0bb71",
+  "recipient": "chania.stempowski@odgers.com",
+  "recipient_sha256": "31dee45e548eb6a9e56337dd4272d0aa3fa1735c93722f7bed061d227848d9bd",
+  "schema": 1,
+  "status": "pending",
+  "subject_sha256": "b36da691ac7eb95bc940f42b268359db4f9f709e3a5994afed4fc89184c952e6"
+}
