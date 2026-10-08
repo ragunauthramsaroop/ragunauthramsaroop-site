@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "2ba286e29910f5e799302ae6bd6cef680fac29d912dc5a9c0b4e0f34fe6d60f0",
+  "batch_id": "2026-10-08-kestria-glenn-lesko-energy-resources-direct",
+  "body_sha256": "97027153a4d5637d4ea566a66fa94ebc73b445ba131265396357cada43afa5b8",
+  "created_at": "2026-10-08T22:03:04+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "37850935290",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/2026-10-08-kestria-glenn-lesko-energy-resources-direct.json",
+  "payload_sha256": "475c4d2e6540c7c24b370cb033d82be7f9e63b0a35df64855155c9a02337391e",
+  "recipient": "glenn.lesko@penderhowe.com",
+  "recipient_sha256": "8840405cd301fdfd6ff94782335d50b24b0a0c8fe2419693b9f92d55de8e2ae0",
+  "schema": 1,
+  "status": "pending",
+  "subject_sha256": "970341bf8e430df9656c5aeb78661fd315af2f9005ada0038e96b7aff4a67944"
+}
