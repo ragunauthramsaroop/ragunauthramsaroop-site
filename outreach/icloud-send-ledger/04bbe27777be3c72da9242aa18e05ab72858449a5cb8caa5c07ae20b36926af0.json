@@ -12,6 +12,8 @@
   "recipient": "sean.casey@penderhowe.com",
   "recipient_sha256": "04bbe27777be3c72da9242aa18e05ab72858449a5cb8caa5c07ae20b36926af0",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-08T22:04:35+00:00",
+  "smtp_message_id": "<179149707561.2452.18137715717132517658@icloud.com>",
+  "status": "sent",
   "subject_sha256": "84938e7358929ca02f0c6e350aa1c7916a86b9e98aea2675eaa989c7273cd7a8"
 }
