@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "fd5c4f5e0d3039cce941830a69789c5b72e9cfcdf9eca9ebd0293dd0cd139605",
+  "batch_id": "gcc-executive-recruiters-2026-10-08-b14",
+  "body_sha256": "8f61e19593c8658eee9f24444c84bb1f1f7d76a23e177c190526a1911597830d",
+  "created_at": "2026-10-08T20:36:52+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "37840730360",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/2026-10-08-gcc-executive-recruiters-batch-14.json",
+  "payload_sha256": "75e210bff07356e9b0e49414f62c32626b59f3c83b39ffccbeb359c17250adf4",
+  "recipient": "sandy.khara@talent-international.co.uk",
+  "recipient_sha256": "efd4c51aaa6714a7d33ec38d94ae9b2e697fdf6d8c29371499cdcf985a286ff4",
+  "schema": 1,
+  "status": "pending",
+  "subject_sha256": "53199ae84f5fd738637c06b492c449530a5828546c1dea38828d43f15b17801a"
+}
