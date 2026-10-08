@@ -12,6 +12,8 @@
   "recipient": "info@moatasim.com",
   "recipient_sha256": "7b7d6308db3c6c04fbca71d98b29a5f48aa1bd328f79940bb8acc383149b10d5",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-08T21:46:55+00:00",
+  "smtp_message_id": "<179149601531.2226.7830870701603096184@icloud.com>",
+  "status": "sent",
   "subject_sha256": "cf0d8f2e56bb9a4b182e364afc1b5866df533149f57686d822e896793bb7422e"
 }
