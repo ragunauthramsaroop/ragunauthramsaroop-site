@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "1ffba3036ec1a20d3bcbed59a107760bd15e15b7e8f265d54ac222696ce8b614",
+  "batch_id": "2026-10-08-edp-francisca-matos-recruitment-route",
+  "body_sha256": "ca4b30cdc7ff955c1e577750a3342715c71ed767e076627e133edaba70124569",
+  "created_at": "2026-10-08T19:17:45+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "37830843278",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/2026-10-08-edp-francisca-matos-recruitment-route.json",
+  "payload_sha256": "5e3639a5cda4b040823f2c0cfd1a363f03dd003c581c0085438b0ed3a3efbb49",
+  "recipient": "recruitment@edp.com",
+  "recipient_sha256": "094fe4d84de790d8df97ae62cec3a74edd3294d4c51a787dc6c5a5dfcc906794",
+  "schema": 1,
+  "status": "pending",
+  "subject_sha256": "30cc8fac8ceaaf6b7ed554385f6057ff802e3cf40e82486e0fd92cc8ead1d79d"
+}
