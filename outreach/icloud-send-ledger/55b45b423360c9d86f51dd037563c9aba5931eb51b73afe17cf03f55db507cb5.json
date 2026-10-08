@@ -12,6 +12,8 @@
   "recipient": "ionela.stancu@hidroelectrica.ro",
   "recipient_sha256": "55b45b423360c9d86f51dd037563c9aba5931eb51b73afe17cf03f55db507cb5",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-08T19:36:02+00:00",
+  "smtp_message_id": "<179148816234.2445.6253051465680965509@icloud.com>",
+  "status": "sent",
   "subject_sha256": "370de9e24d6387aa93391dcb7f90d3cfe8b034555e956484f139868a7c1d31ca"
 }
