@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "3c0d7054baafce25abb7323edfeeac8bdd5e09a1b13ec62023c6e733ddc9ad67",
+  "batch_id": "2026-10-08-ema-daniel-rezende-mining-industrial-direct",
+  "body_sha256": "999fee9d97e1e5c378ef0d458448f1ac256d31fd951c675e78d6964e1792554a",
+  "created_at": "2026-10-08T21:55:34+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "37850087686",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/2026-10-08-ema-daniel-rezende-mining-industrial-direct.json",
+  "payload_sha256": "df9f83fb59bf18deea5d81ca93024296591d3c4877357250be25b6d6e0135474",
+  "recipient": "d.rezende@ema-partners.com",
+  "recipient_sha256": "117d69a42feb3fbf91d035b540e304890102f716e22a3fc0621e703540ab6be4",
+  "schema": 1,
+  "status": "pending",
+  "subject_sha256": "8193c4aca762b9ff6f79f3c7e523a682884d9faeb79e4afe5a4feeef993d3073"
+}
