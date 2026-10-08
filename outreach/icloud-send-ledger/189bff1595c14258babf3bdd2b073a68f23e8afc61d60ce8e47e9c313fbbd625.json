@@ -12,6 +12,8 @@
   "recipient": "career@sopharma.bg",
   "recipient_sha256": "189bff1595c14258babf3bdd2b073a68f23e8afc61d60ce8e47e9c313fbbd625",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-08T19:29:37+00:00",
+  "smtp_message_id": "<179148777665.2231.2205548236819486998@icloud.com>",
+  "status": "sent",
   "subject_sha256": "da0f42081bf3c000d29c93d6604f56536c86e38c9768a6a8103919b846e02e30"
 }
