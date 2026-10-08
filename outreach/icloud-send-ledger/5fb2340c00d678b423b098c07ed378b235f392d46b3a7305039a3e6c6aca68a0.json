@@ -12,6 +12,8 @@
   "recipient": "sangeeta.lal@transearch.com",
   "recipient_sha256": "5fb2340c00d678b423b098c07ed378b235f392d46b3a7305039a3e6c6aca68a0",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-08T20:23:23+00:00",
+  "smtp_message_id": "<179149100359.2460.13601060405472902927@icloud.com>",
+  "status": "sent",
   "subject_sha256": "537c95515c93f1a0f70f39b58f22f8a9f9432fd2fad07e19ce308ef740ffe250"
 }
