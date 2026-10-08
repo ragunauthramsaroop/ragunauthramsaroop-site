@@ -12,6 +12,8 @@
   "recipient": "posao@unicreditgroup.zaba.hr",
   "recipient_sha256": "93af4ae7291f6afbd021df18a8d69a32e1e98c02331888203a26db5a2479278c",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-08T19:29:20+00:00",
+  "smtp_message_id": "<179148775991.2504.2643538589598829468@icloud.com>",
+  "status": "sent",
   "subject_sha256": "f1d4b0f3a7ca8088b9fcbc2c784219c575742ad33eb7937cc4f01edd2fc1c4b2"
 }
