@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "aab6fe09ed8de1446a8e6c0a46a54bab57578bdc35f7c5e388ded98138bb39e7",
+  "batch_id": "gcc-executive-search-fresh-2026-10-08-08",
+  "body_sha256": "61d529030e45d24af867bc4a5d8cc2f701dad8072e503e166afe1d69ff64ee7d",
+  "created_at": "2026-10-08T18:39:45+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "37825965423",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/2026-10-08-gcc-executive-search-fresh-08.json",
+  "payload_sha256": "7af9584ac71e5ab2b119bec237806f6e7d289b6e6a31e64bb28b1c767477a3e2",
+  "recipient": "talent@kinetic.ae",
+  "recipient_sha256": "dc96e254e6515c361f19a5eb1e200fd261f0b59b14667694c4b954d42fd5e83c",
+  "schema": 1,
+  "status": "pending",
+  "subject_sha256": "28cad78e7ad9ec28a723a62b540c2e4a476c5b41f632f7d61cd56c8a7c703d61"
+}
