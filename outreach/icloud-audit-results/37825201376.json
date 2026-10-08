@@ -1,0 +1,39 @@
+{
+  "audited_at": "2026-10-08T18:33:31+00:00",
+  "mailbox": "Sent Messages",
+  "recipients": [
+    {
+      "match_count": 0,
+      "matches": [],
+      "recipient": "info@harveychance.com",
+      "sent_header_match": false
+    },
+    {
+      "match_count": 0,
+      "matches": [],
+      "recipient": "contact@nadiaglobal.com",
+      "sent_header_match": false
+    },
+    {
+      "match_count": 0,
+      "matches": [],
+      "recipient": "talent@kinetic.ae",
+      "sent_header_match": false
+    },
+    {
+      "match_count": 0,
+      "matches": [],
+      "recipient": "anandh@gladwininternational.com",
+      "sent_header_match": false
+    },
+    {
+      "match_count": 0,
+      "matches": [],
+      "recipient": "contact@safpartners.ae",
+      "sent_header_match": false
+    }
+  ],
+  "request_file": "outreach/icloud-audit-requests/gcc-fresh-2026-10-08-06.json",
+  "request_id": "gcc-fresh-2026-10-08-06",
+  "schema": 1
+}
