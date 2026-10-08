@@ -12,6 +12,8 @@
   "recipient": "p.lawson@stantonchase.com",
   "recipient_sha256": "d1a66ddb80ed95b13959fb1dfff7e97adba0d65a1fbeb430f082396705f8a0a5",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-08T22:07:31+00:00",
+  "smtp_message_id": "<179149725153.2436.1852153681895329163@icloud.com>",
+  "status": "sent",
   "subject_sha256": "04178e17fffb2ebd5ee006e91d7928c6f5c6bc76686a9e311444a7e607d684b4"
 }
