@@ -12,6 +12,8 @@
   "recipient": "dubai@stantonchase.com",
   "recipient_sha256": "e2381760560dbca9e4ce1f1a3eb2195a38c71c8bf018c1aa1d1d94a83a9485bf",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-08T18:58:08+00:00",
+  "smtp_message_id": "<179148588868.2432.8834218679086979449@icloud.com>",
+  "status": "sent",
   "subject_sha256": "061823685adb16b93b2be6984a6df29e14c4912f79853faa5f338cab36957bbc"
 }
