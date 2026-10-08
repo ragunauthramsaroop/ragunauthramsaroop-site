@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "5687d2a7bbeabca1477a8fa2e256923cb74c2d76633089958dd11a3613adf79f",
+  "batch_id": "gcc-executive-recruiters-2026-10-08-b18",
+  "body_sha256": "6323565473f74594842233630432d99368cde4dc0b817d75d922c651dda22084",
+  "created_at": "2026-10-08T20:46:25+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "37841924426",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/2026-10-08-gcc-executive-recruiters-batch-18.json",
+  "payload_sha256": "f30004caa6beb9c370de498a3ec4469e96b0ddc9f9a74b4fd1ed095bc3ab5af3",
+  "recipient": "hello@vitale-consulting.com",
+  "recipient_sha256": "a0ce17e81bee4868fbbae2c3df486a2bbaaf39ca446d20b2060b0e3fe141dd86",
+  "schema": 1,
+  "status": "pending",
+  "subject_sha256": "fbbe63855af504cb4ad1af2bb2f48ebe2e177c70ed0b5eccfd2433123cf3e37e"
+}
