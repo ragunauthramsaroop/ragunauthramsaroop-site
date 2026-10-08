@@ -12,6 +12,8 @@
   "recipient": "contact@adroyts.com",
   "recipient_sha256": "418d529cf2e60ea9b182357f3a2c872f8c9299a4c8cc50232e3e0c49dc90ba92",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-08T20:46:30+00:00",
+  "smtp_message_id": "<179149239024.2360.8660516456643008201@icloud.com>",
+  "status": "sent",
   "subject_sha256": "00bbedc703614824777e49d4636aad5970d72abb74cb9c1b33a1ca72249a878d"
 }
