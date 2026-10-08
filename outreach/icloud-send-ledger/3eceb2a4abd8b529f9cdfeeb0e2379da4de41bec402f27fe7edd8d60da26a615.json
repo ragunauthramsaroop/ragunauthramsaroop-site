@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "52c396428461d066aa06a5579599dc4c22d2ce68ab2f96bb39cb52c51583dd07",
+  "batch_id": "2026-10-08-tm-partners-emma-hudson-direct",
+  "body_sha256": "325fd5af13948cfb6d20ef44b7100cf59a084b189ec35aaa530a7a9e895916e9",
+  "created_at": "2026-10-08T20:12:36+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "37837694213",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/2026-10-08-tm-partners-emma-hudson-direct.json",
+  "payload_sha256": "6865e53ce4d0db0362c6b29d8ed102dcf268099d72fa19973cb51db86a722a85",
+  "recipient": "emma@tmpartnersgroup.com",
+  "recipient_sha256": "3eceb2a4abd8b529f9cdfeeb0e2379da4de41bec402f27fe7edd8d60da26a615",
+  "schema": 1,
+  "status": "pending",
+  "subject_sha256": "880506918eb898125d61b8282e860e239b1fdaed0c04488dd001bbf9adb00894"
+}
