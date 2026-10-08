@@ -12,6 +12,8 @@
   "recipient": "dhall@dhrglobal.com",
   "recipient_sha256": "dd8fa834a70375751b8ff6d35b36c84908340f8c0000924e9d9f5193018e318b",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-08T19:16:56+00:00",
+  "smtp_message_id": "<179148701598.2415.8490128952191776678@icloud.com>",
+  "status": "sent",
   "subject_sha256": "5f0fba2712fe77f5ba88e26a243ff4c08553a501666c286e9c83e1db4e6ccf83"
 }
