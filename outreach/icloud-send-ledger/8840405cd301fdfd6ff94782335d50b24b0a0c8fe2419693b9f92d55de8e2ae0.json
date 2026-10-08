@@ -12,6 +12,8 @@
   "recipient": "glenn.lesko@penderhowe.com",
   "recipient_sha256": "8840405cd301fdfd6ff94782335d50b24b0a0c8fe2419693b9f92d55de8e2ae0",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-08T22:03:06+00:00",
+  "smtp_message_id": "<179149698602.2444.11962316799092126757@icloud.com>",
+  "status": "sent",
   "subject_sha256": "970341bf8e430df9656c5aeb78661fd315af2f9005ada0038e96b7aff4a67944"
 }
