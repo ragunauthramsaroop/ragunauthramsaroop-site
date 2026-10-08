@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "941ef0a4386526991bd6431c214d89a633f3337b68397226df17f22cfc303869",
+  "batch_id": "2026-10-08-kestria-thomas-suter-industrial-energy-direct",
+  "body_sha256": "93ea586f0d28cb5748876c26a4923a35a697b135a7b06756cac4d1d528c94944",
+  "created_at": "2026-10-08T21:57:12+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "37850271304",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/2026-10-08-kestria-thomas-suter-industrial-energy-direct.json",
+  "payload_sha256": "a311a3b52e421594f557841f71aaaf8ce2d3002fd0931e33867a70c14bc0b000",
+  "recipient": "thomas.suter@viavanta.ch",
+  "recipient_sha256": "513158e2501eefce39e74f4a43ea3efe8e13c4cb0071385d623bde53b3638c3f",
+  "schema": 1,
+  "status": "pending",
+  "subject_sha256": "97ccd839a2d8300de314b6c21f8a1f5cb3ad5d2c1a4ac295857afa9da874d1b9"
+}
