@@ -12,6 +12,8 @@
   "recipient": "sune.christiansen@pedersenandpartners.com",
   "recipient_sha256": "e5bf5588275527947e206a9c7413bbefd00ed3dcc2aa7aef56453cb79b6b7883",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-08T21:40:34+00:00",
+  "smtp_message_id": "<179149563390.2223.14513776897166221338@icloud.com>",
+  "status": "sent",
   "subject_sha256": "1f6d8ab730ac3577d5401018dc8643454c1388c7f5026b97f58dc1fa39aac81c"
 }
