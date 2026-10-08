@@ -12,6 +12,8 @@
   "recipient": "nadia.saeed@unitedyou.com",
   "recipient_sha256": "7aa3c5bde0790368cf5376e12ac48184f380bdfb7ec2d1da350e5d867b43b400",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-08T20:28:31+00:00",
+  "smtp_message_id": "<179149131136.2516.15003068997324797886@icloud.com>",
+  "status": "sent",
   "subject_sha256": "057c50f370d4eb06e3772a1b85ad6a18bf1986124017572c0b1ef3763961715e"
 }
