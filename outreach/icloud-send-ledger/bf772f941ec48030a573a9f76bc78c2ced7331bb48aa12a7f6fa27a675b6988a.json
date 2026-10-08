@@ -12,6 +12,8 @@
   "recipient": "wasif.naushad@nativeworld.ae",
   "recipient_sha256": "bf772f941ec48030a573a9f76bc78c2ced7331bb48aa12a7f6fa27a675b6988a",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-08T20:27:01+00:00",
+  "smtp_message_id": "<179149122097.2214.16765560367552758187@icloud.com>",
+  "status": "sent",
   "subject_sha256": "d623c3365effe016954a190bee45208d07d5aabe2ba856f70f8128642f0f964b"
 }
