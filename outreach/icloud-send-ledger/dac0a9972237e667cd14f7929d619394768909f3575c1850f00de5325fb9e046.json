@@ -12,6 +12,8 @@
   "recipient": "info@corverconsulting.com",
   "recipient_sha256": "dac0a9972237e667cd14f7929d619394768909f3575c1850f00de5325fb9e046",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-08T20:24:13+00:00",
+  "smtp_message_id": "<179149105280.2231.2135441293065184400@icloud.com>",
+  "status": "sent",
   "subject_sha256": "266819739830197708acb4eb1bc5bf1c4aace20faff943a8e030025f71e194c6"
 }
