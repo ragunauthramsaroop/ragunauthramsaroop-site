@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "0ebb1647f90ef6ab16fe4fb09b78202855a5c9465dd9ca538d7d6489097b535c",
+  "batch_id": "2026-10-08-cez-martin-klacian-direct",
+  "body_sha256": "526664a608e77af6889f2c07c05cf6fc8b3846c93adbe06dd196ba6e4dbe080d",
+  "created_at": "2026-10-08T19:25:46+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "37831811679",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/2026-10-08-cez-martin-klacian-direct.json",
+  "payload_sha256": "2b88ab55708b5d32398351ba3ea279b2b1ecaaa8ec671378d9d2a99da1516fec",
+  "recipient": "martin.klacian@cez.cz",
+  "recipient_sha256": "95e738cfd50dcaf763fa7b82e4013268f3a42a765f576062ac89de0b814f793a",
+  "schema": 1,
+  "status": "pending",
+  "subject_sha256": "a4b18cf85c4165f2bf75356858443a3ef38e811d8212227491a028af12a4b365"
+}
