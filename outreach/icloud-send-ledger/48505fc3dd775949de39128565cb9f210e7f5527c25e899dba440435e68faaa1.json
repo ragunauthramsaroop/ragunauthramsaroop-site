@@ -12,6 +12,8 @@
   "recipient": "info@managers.sa",
   "recipient_sha256": "48505fc3dd775949de39128565cb9f210e7f5527c25e899dba440435e68faaa1",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-08T21:38:31+00:00",
+  "smtp_message_id": "<179149551145.2218.2830736520914102298@icloud.com>",
+  "status": "sent",
   "subject_sha256": "6de80854edce09346b7ef848e2d4e6aa920c253a4abbd88235bb3c358580de1f"
 }
