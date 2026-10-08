@@ -12,6 +12,8 @@
   "recipient": "pierre.herve-bazin@odgers.com",
   "recipient_sha256": "fc883a456b2061baa3a53e3e96f627914798eb7c08f05dbaccc18e010edbe453",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-08T20:01:12+00:00",
+  "smtp_message_id": "<179148967286.2420.1362422378000883735@icloud.com>",
+  "status": "sent",
   "subject_sha256": "085ac6461364dcdc8fe6ca9c4105142dfcad22b260442f081908b3c885c042bd"
 }
