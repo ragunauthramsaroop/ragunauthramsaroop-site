@@ -12,6 +12,8 @@
   "recipient": "stelios-pigadiotis@cornerstone-group.com",
   "recipient_sha256": "fffde6b9de30f4a62c03a7c0f90d076dac2b1be4b25adc9ab1adfe657d5f542d",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-08T18:16:56+00:00",
+  "smtp_message_id": "<179148341608.2213.15434757763133045819@icloud.com>",
+  "status": "sent",
   "subject_sha256": "0059646cec0c76f13a3c79c4318a4c6a2ffa6e7606c843524cced7b2c0a69ff1"
 }
