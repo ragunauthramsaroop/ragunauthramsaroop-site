@@ -12,6 +12,8 @@
   "recipient": "m.guillot@ema-partners.com",
   "recipient_sha256": "869f75bb64d8b2864f375c5d8171cdd7c5af97a73e5122985485f7bbc81dcbad",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-08T21:50:34+00:00",
+  "smtp_message_id": "<179149623415.2229.14283932660786119234@icloud.com>",
+  "status": "sent",
   "subject_sha256": "43dab005ed2a5cada1a5d84c9ac0b610a7d2a58a2477769a6f4464ba3d30a2ee"
 }
