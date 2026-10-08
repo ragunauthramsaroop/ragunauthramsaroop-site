@@ -12,6 +12,8 @@
   "recipient": "can.onen@ngs-global.com",
   "recipient_sha256": "9cd719f4c0b569db9df4d1052a3bccd907ca9aceed822ff4646b2838d49a242f",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-08T22:35:48+00:00",
+  "smtp_message_id": "<179149894799.2835.9056272787945004906@icloud.com>",
+  "status": "sent",
   "subject_sha256": "158b53fd0b00ec27ce747a4279c5c2d30b8fb5d51febe265f535eb0257f615e4"
 }
