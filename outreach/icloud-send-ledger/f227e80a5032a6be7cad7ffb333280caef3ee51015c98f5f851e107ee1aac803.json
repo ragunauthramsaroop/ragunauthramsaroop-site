@@ -12,6 +12,8 @@
   "recipient": "gvital@groupefsc.com",
   "recipient_sha256": "f227e80a5032a6be7cad7ffb333280caef3ee51015c98f5f851e107ee1aac803",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-08T22:24:54+00:00",
+  "smtp_message_id": "<179149829370.2423.1843792047903084271@icloud.com>",
+  "status": "sent",
   "subject_sha256": "b36708e6d045b81f6da7cb8b50d7234f5c41438e8230db1f64721ba8be5b0cdb"
 }
