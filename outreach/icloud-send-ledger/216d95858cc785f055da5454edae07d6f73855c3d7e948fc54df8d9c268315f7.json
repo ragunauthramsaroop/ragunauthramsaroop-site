@@ -12,6 +12,8 @@
   "recipient": "selfarr@heidrick.com",
   "recipient_sha256": "216d95858cc785f055da5454edae07d6f73855c3d7e948fc54df8d9c268315f7",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-08T19:45:38+00:00",
+  "smtp_message_id": "<179148873840.2414.10068899056415518662@icloud.com>",
+  "status": "sent",
   "subject_sha256": "de06e597493031b5a87f62b9245933c8776656c46ba9e3a91e8ad840b0615ad7"
 }
