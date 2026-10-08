@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "427f22c801838d932b6e1e22beb3a0e6c9be5e0115f049f4c5d7dd835ffa9f2b",
+  "batch_id": "2026-10-08-infortar-kitty-novandi-direct",
+  "body_sha256": "5815fef5498fbda785f31dac8700450af56d230a7d4eda8f615d4759cc20522d",
+  "created_at": "2026-10-08T19:40:05+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "37833623178",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/2026-10-08-infortar-kitty-novandi-direct.json",
+  "payload_sha256": "9fcc953ddbcd71fa2ebf01388a37b7d958750fddea20c37d7ab14ab54bf0f3c7",
+  "recipient": "kitty.novandi@infortar.ee",
+  "recipient_sha256": "bced55bb1f8103d1528ff24c0ec4aae5f6d3df465e527e6c95bbaa7ffa7efae3",
+  "schema": 1,
+  "status": "pending",
+  "subject_sha256": "b17f6abe5fa68f71e99e9c5122b20455ea9ce607f71c44ba17bc9b4439764503"
+}
