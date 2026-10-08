@@ -12,6 +12,8 @@
   "recipient": "oumamasyassi@cartermurray.com",
   "recipient_sha256": "e6e24639e454c489b105e47ff80577317641f2b0668d106da5d3087dcca4c88b",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-08T19:22:22+00:00",
+  "smtp_message_id": "<179148734248.2214.8262495156667471437@icloud.com>",
+  "status": "sent",
   "subject_sha256": "622d471532c6d89e9064e8a6ccf9ca1a7c8072d055152c0c912f6122d27c6d34"
 }
