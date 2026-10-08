@@ -12,6 +12,8 @@
   "recipient": "david.joseph@kornferry.com",
   "recipient_sha256": "01c9b16f1f417b34127bdd0f8f7e7a20957bf6b16c6cba665943d7bc8a3c372f",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-08T18:41:07+00:00",
+  "smtp_message_id": "<179148486752.2497.4673244313341812513@icloud.com>",
+  "status": "sent",
   "subject_sha256": "4a56bc568d0d240b2c842133ad95632fd4286c7594b03186137a7eef34949c42"
 }
