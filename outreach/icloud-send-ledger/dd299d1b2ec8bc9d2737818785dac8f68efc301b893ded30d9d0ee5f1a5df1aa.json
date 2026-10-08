@@ -12,6 +12,8 @@
   "recipient": "info@peoplex.sa",
   "recipient_sha256": "dd299d1b2ec8bc9d2737818785dac8f68efc301b893ded30d9d0ee5f1a5df1aa",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-08T21:49:26+00:00",
+  "smtp_message_id": "<179149616653.2218.17551451397734194147@icloud.com>",
+  "status": "sent",
   "subject_sha256": "0b26038e26584807ae8279d48724b5a1b2ad86f17a93c41f4b49ca87b8f0d7bc"
 }
