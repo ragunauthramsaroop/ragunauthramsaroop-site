@@ -12,6 +12,8 @@
   "recipient": "dubai@emcommodities.com",
   "recipient_sha256": "66d837ecd298f60fd39e86c094a2a17870d2244f87d280f1a908b4425841f4d6",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-08T18:39:54+00:00",
+  "smtp_message_id": "<179148479476.2285.8242316373843311154@icloud.com>",
+  "status": "sent",
   "subject_sha256": "8803f0414e4fe0277ed755707b73497bc69d7e27eb1bed04413a2d464e62ed6c"
 }
