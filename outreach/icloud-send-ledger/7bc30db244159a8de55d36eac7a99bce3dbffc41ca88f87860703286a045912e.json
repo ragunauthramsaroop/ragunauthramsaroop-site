@@ -12,6 +12,8 @@
   "recipient": "info@ptalent.com",
   "recipient_sha256": "7bc30db244159a8de55d36eac7a99bce3dbffc41ca88f87860703286a045912e",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-08T22:25:21+00:00",
+  "smtp_message_id": "<179149832102.2384.10646349245032046851@icloud.com>",
+  "status": "sent",
   "subject_sha256": "d15f4fa889a2a73b7912f2fe45787466ec272efbc25d92f25afdac4751dde0c7"
 }
