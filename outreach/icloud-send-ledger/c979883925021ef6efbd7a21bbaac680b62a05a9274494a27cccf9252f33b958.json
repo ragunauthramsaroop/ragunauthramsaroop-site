@@ -12,6 +12,8 @@
   "recipient": "g.robinson@boydenme.com",
   "recipient_sha256": "c979883925021ef6efbd7a21bbaac680b62a05a9274494a27cccf9252f33b958",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-08T21:51:44+00:00",
+  "smtp_message_id": "<179149630469.2453.478691789573887868@icloud.com>",
+  "status": "sent",
   "subject_sha256": "a6f323e1336b13c27f2112259dc32cdd8f3505a3dba0370a93e6ac1f56c1ca4c"
 }
