@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "a6a27aeee79547de7fc347efb6a02b53796d1853e538be820a5e247672b7c458",
+  "batch_id": "gcc-executive-recruiters-2026-10-08-b17",
+  "body_sha256": "fb24962cb07a73bdfcc2dfc6f5c0ba6a5cd70bb56c5a7ab5808b639ace46d57d",
+  "created_at": "2026-10-08T20:45:20+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "37841769908",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/2026-10-08-gcc-executive-recruiters-batch-17.json",
+  "payload_sha256": "a1282bef1caad1cc420f3d4d448fc38dd4860f8d8dba57bb2abeb27731860497",
+  "recipient": "oliver.ansdell@pangea-resourcing.com",
+  "recipient_sha256": "517f54c248836288e47fde7120c1eaa578c33348c18d49b81c431b904c36871f",
+  "schema": 1,
+  "status": "pending",
+  "subject_sha256": "a1a8ebc700f5a61264088cb80b072587d0c43589b28e9d270928f43dd33d8346"
+}
