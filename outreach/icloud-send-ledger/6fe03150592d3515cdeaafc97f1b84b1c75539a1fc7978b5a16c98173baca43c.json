@@ -12,6 +12,8 @@
   "recipient": "zaposlitev@krka.biz",
   "recipient_sha256": "6fe03150592d3515cdeaafc97f1b84b1c75539a1fc7978b5a16c98173baca43c",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-08T19:25:29+00:00",
+  "smtp_message_id": "<179148752877.2437.2256955115316884710@icloud.com>",
+  "status": "sent",
   "subject_sha256": "9852c60f6172843eeceb34d8ddca2167d620fb57ddb669c9705c325fcb93e535"
 }
