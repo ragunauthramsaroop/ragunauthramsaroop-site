@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "debfe208ab172162edd9fda393c74dbda40d2b8acc9398e57d62e66648e6f7e9",
+  "batch_id": "2026-10-08-odgers-michael-patrick-gcc-direct",
+  "body_sha256": "2979461eb0735366e9296165cd71f26e186c627e17ed6c160c5a0ec3137fe082",
+  "created_at": "2026-10-08T19:59:18+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "37836012787",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/2026-10-08-odgers-michael-patrick-gcc-direct.json",
+  "payload_sha256": "76f01ab0bbf8e51d4833c43f43053931b9bb8a9f47356dded6316ba6738d1395",
+  "recipient": "michael.patrick@odgersberndtson.com",
+  "recipient_sha256": "7c172f0949c24f0eefc97776a0fe6a98f31477075462974245dc5fd42eab2fd3",
+  "schema": 1,
+  "status": "pending",
+  "subject_sha256": "ecb83407cc76b3c1bb9190255d48be92de9451cd2ff4ddb3ff0ec91d53c46257"
+}
