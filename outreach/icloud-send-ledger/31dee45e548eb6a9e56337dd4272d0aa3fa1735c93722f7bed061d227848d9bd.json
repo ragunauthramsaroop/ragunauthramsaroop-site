@@ -12,6 +12,8 @@
   "recipient": "chania.stempowski@odgers.com",
   "recipient_sha256": "31dee45e548eb6a9e56337dd4272d0aa3fa1735c93722f7bed061d227848d9bd",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-08T22:19:05+00:00",
+  "smtp_message_id": "<179149794562.2402.14783240628994113048@icloud.com>",
+  "status": "sent",
   "subject_sha256": "b36da691ac7eb95bc940f42b268359db4f9f709e3a5994afed4fc89184c952e6"
 }
