@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "8a6fca3282666560b926f5083eb14adce57d6a2fd1368bc9c59a68c232ef0d3d",
+  "batch_id": "gcc-executive-recruiters-2026-10-08-b24",
+  "body_sha256": "caebd6acd3fdc8d28659cb5908ed54a9c08eb0776fb0433ae9808d50dcddcf65",
+  "created_at": "2026-10-08T21:49:20+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "37849371459",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/2026-10-08-gcc-executive-recruiters-batch-24.json",
+  "payload_sha256": "fc18b6190fe66e3cfcccebc1b40f3e4269fb63d5dd77c33dbe38fb4fd36f176a",
+  "recipient": "info@candergroup.com",
+  "recipient_sha256": "cebffee0e4ce69d23acd0d3b8ff330ff860f5e4b2d1b744fe9cb97cfb1af7bd4",
+  "schema": 1,
+  "status": "pending",
+  "subject_sha256": "485493905231eb8935f9102e35b0869cebf3b4cea07d9873be6dd6cb00c22726"
+}
