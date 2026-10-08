@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "bd54175b5bcf821111936bb78581817f391b45584df6644f1515bf79e68b5385",
+  "batch_id": "2026-10-08-sheffield-haworth-abhishek-vats-direct",
+  "body_sha256": "fa8b01f1a2773ee64ef0b84cf8135d468425cfc322c9a8f39fc33192e57c3e1a",
+  "created_at": "2026-10-08T20:07:58+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "37837115965",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/2026-10-08-sheffield-haworth-abhishek-vats-direct.json",
+  "payload_sha256": "c8dd7a6be6513acfe36f6723d14d26fe18d4614fcaf7ba0ba32e9d3c7ee4156f",
+  "recipient": "a.vats@sheffieldhaworth.com",
+  "recipient_sha256": "e1614f5d7f1309dfbe30c5f1cf93624c383bd21d51306463e2f1decf20e4a40f",
+  "schema": 1,
+  "status": "pending",
+  "subject_sha256": "ead357757204886b1123681a362349126aa2aafe2b916d8143cbb53f021d8f62"
+}
