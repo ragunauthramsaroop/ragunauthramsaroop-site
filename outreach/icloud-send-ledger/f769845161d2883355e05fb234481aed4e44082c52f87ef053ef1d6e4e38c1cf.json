@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "fdb7799371e8893f2a8188d3e0abe2104e49a2cc4caeba92b6564245683c68ce",
+  "batch_id": "2026-10-08-intersearch-rony-nassar-saudi-direct",
+  "body_sha256": "e67e047477a7bff5a0a4dce8f0d5490f49e83e51223b5fea6bbe75dbda928faa",
+  "created_at": "2026-10-08T20:17:30+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "37838278200",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/2026-10-08-intersearch-rony-nassar-saudi-direct.json",
+  "payload_sha256": "c961ba7c6e3914de895ad4c1a3bdb9db2f62503c9d70d3944678d182e59078a8",
+  "recipient": "r.nassar@intersearch.org",
+  "recipient_sha256": "f769845161d2883355e05fb234481aed4e44082c52f87ef053ef1d6e4e38c1cf",
+  "schema": 1,
+  "status": "pending",
+  "subject_sha256": "f93ce0dbb62fa7da3049593e950c82ab853b53aa7c169e322c74fde5da9626f9"
+}
