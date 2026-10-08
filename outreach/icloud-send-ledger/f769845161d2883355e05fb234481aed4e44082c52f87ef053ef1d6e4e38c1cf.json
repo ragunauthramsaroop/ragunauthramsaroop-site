@@ -12,6 +12,8 @@
   "recipient": "r.nassar@intersearch.org",
   "recipient_sha256": "f769845161d2883355e05fb234481aed4e44082c52f87ef053ef1d6e4e38c1cf",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-08T20:17:31+00:00",
+  "smtp_message_id": "<179149065162.2443.6642432920210049099@icloud.com>",
+  "status": "sent",
   "subject_sha256": "f93ce0dbb62fa7da3049593e950c82ab853b53aa7c169e322c74fde5da9626f9"
 }
