@@ -1,0 +1,33 @@
+{
+  "audited_at": "2026-10-08T19:01:11+00:00",
+  "mailbox": "Sent Messages",
+  "recipients": [
+    {
+      "match_count": 0,
+      "matches": [],
+      "recipient": "d.amarjeet@ema-partners.com",
+      "sent_header_match": false
+    },
+    {
+      "match_count": 0,
+      "matches": [],
+      "recipient": "trobson@hiec.com",
+      "sent_header_match": false
+    },
+    {
+      "match_count": 0,
+      "matches": [],
+      "recipient": "dubai@transearch.com",
+      "sent_header_match": false
+    },
+    {
+      "match_count": 0,
+      "matches": [],
+      "recipient": "dubai@altopartners.com",
+      "sent_header_match": false
+    }
+  ],
+  "request_file": "outreach/icloud-audit-requests/gcc-fresh-2026-10-08-10.json",
+  "request_id": "gcc-fresh-2026-10-08-10",
+  "schema": 1
+}
