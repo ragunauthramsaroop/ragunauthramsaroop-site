@@ -12,6 +12,8 @@
   "recipient": "paula.elmore@ngs-global.com",
   "recipient_sha256": "88ce28dc5b357cfd2052c52ec28b4190ee00fd62d21cfded7fbc361e56190d91",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-08T22:19:03+00:00",
+  "smtp_message_id": "<179149794312.2402.17144383591943054736@icloud.com>",
+  "status": "sent",
   "subject_sha256": "a0f84fdb11eb0158b2d0aef5ed8262ac7516f6f0476362a4f9380773af5f446d"
 }
