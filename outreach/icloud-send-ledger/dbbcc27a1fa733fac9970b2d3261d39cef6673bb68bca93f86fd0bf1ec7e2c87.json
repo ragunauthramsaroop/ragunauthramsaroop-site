@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "a0ae9d4bf2d493ced979035267c1556003234ae5c002157a8c9edd14d0b7654c",
+  "batch_id": "2026-10-08-dhr-supriya-dikshit-industrial-energy-direct",
+  "body_sha256": "f18c4a6bdb3d96b268bd0b9305b6b71567642856393b3523e9c07a4151b7272c",
+  "created_at": "2026-10-08T20:24:35+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "37839146078",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/2026-10-08-dhr-supriya-dikshit-industrial-energy-direct.json",
+  "payload_sha256": "3da297af5783a5a8803ba1c47f0cbab4fc924ddbd07f2e32a71198d0f7173916",
+  "recipient": "sdikshit@dhrglobal.com",
+  "recipient_sha256": "dbbcc27a1fa733fac9970b2d3261d39cef6673bb68bca93f86fd0bf1ec7e2c87",
+  "schema": 1,
+  "status": "pending",
+  "subject_sha256": "7808f795b646a0290aef4d3841a62019a93aa18e6b9396e7278b742128cc05f5"
+}
