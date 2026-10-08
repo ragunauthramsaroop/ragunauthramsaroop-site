@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "177b1b23fe1f37a0eee4a469cbed7507f3594dbd3b280b7ce0e52c0363240063",
+  "batch_id": "2026-10-08-pedersen-sune-christiansen-industrial-direct",
+  "body_sha256": "43c02159a5f5767ab7fb2a6d10f0e0e55a953aec7c3ad68365a25e6fdba53ff3",
+  "created_at": "2026-10-08T21:40:32+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "37848412431",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/2026-10-08-pedersen-sune-christiansen-industrial-direct.json",
+  "payload_sha256": "e1cdf4e4548cd10ba5b281215bdcd516ed0bb3cd02651bcc1045955baafa5bf5",
+  "recipient": "sune.christiansen@pedersenandpartners.com",
+  "recipient_sha256": "e5bf5588275527947e206a9c7413bbefd00ed3dcc2aa7aef56453cb79b6b7883",
+  "schema": 1,
+  "status": "pending",
+  "subject_sha256": "1f6d8ab730ac3577d5401018dc8643454c1388c7f5026b97f58dc1fa39aac81c"
+}
