@@ -12,6 +12,8 @@
   "recipient": "w.karkabi@stantonchase.com",
   "recipient_sha256": "bd0c3cf0319a0f73c158910fd1cc20bb1952d91c5f19f943975235cb86a44715",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-08T22:05:49+00:00",
+  "smtp_message_id": "<179149714945.2218.9125603565372564695@icloud.com>",
+  "status": "sent",
   "subject_sha256": "d217309e074b181d2413d3ac2d377a1dc84239409ef166bf5815c8d6c68959a3"
 }
