@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "a253a755ac0da8adf817f9251ad9470c8698c322694097183acf5cd66704e50a",
+  "batch_id": "2026-10-08-eleving-monta-zake-direct",
+  "body_sha256": "1694b63205c9464b581f781ae5236ba28f35fec1c9e97f1210806c971d1f6a91",
+  "created_at": "2026-10-08T19:39:50+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "37833599693",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/2026-10-08-eleving-monta-zake-direct.json",
+  "payload_sha256": "a249db8f3bd79f4cf6aac61c219e81fe465a2aa46d0185df0dd06d2c88c0c1d3",
+  "recipient": "monta.zake@eleving.com",
+  "recipient_sha256": "57595527bd0a50be2c0cb5042c444e997a60cc9797e9efa0209b5d65c1dc1074",
+  "schema": 1,
+  "status": "pending",
+  "subject_sha256": "a3b707bddb1b370a5ba8f9851e895f8002bf25e41c9e236999f9b853b0756293"
+}
