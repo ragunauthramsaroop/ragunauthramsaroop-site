@@ -12,6 +12,8 @@
   "recipient": "gshora@synergyindia.com",
   "recipient_sha256": "cce1eef9e025c672f613b2121207dc3ee3fb4eda4f5a92aed3a1cf2c6711c34b",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-08T21:46:17+00:00",
+  "smtp_message_id": "<179149597718.2447.14094907192876038565@icloud.com>",
+  "status": "sent",
   "subject_sha256": "c1afb17b87ad716e1e9deef75ed09c8e33d9c5078d9907581f0eceeb7a018315"
 }
