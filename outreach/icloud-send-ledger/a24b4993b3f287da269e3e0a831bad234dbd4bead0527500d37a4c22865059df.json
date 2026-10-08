@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "57c78831e7c5873b071dd6b1ead4d4866ccbe93408d9b9ba76866c06825ee044",
+  "batch_id": "2026-10-08-sbm-recruitment-direct",
+  "body_sha256": "be8096930dc0c47f6bee3e549598f5372206aaf07db7d810dec3303212e17607",
+  "created_at": "2026-10-08T19:36:17+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "37833161497",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/2026-10-08-sbm-recruitment-direct.json",
+  "payload_sha256": "007a7468ea023d7bb3e0fa1a3d61a8a3b81633b6c50e5bc439224824c1928875",
+  "recipient": "recrutement@sbm.mc",
+  "recipient_sha256": "a24b4993b3f287da269e3e0a831bad234dbd4bead0527500d37a4c22865059df",
+  "schema": 1,
+  "status": "pending",
+  "subject_sha256": "e3bc504c551b23c21f036c4090fcfd51c8d4bcfd91da40b48fffb0cbc66f5f00"
+}
