@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "dadd2cbfa41f3499368ff2da03589a1bac94a9c5bf163bd49362c710e041d0a0",
+  "batch_id": "2026-10-07-gcc-bounce-recovery-04-maptalent",
+  "body_sha256": "a36caff85cf57f4f82256228141ec3733bb1cce6ccd3c1f9e71a368e16a34dc5",
+  "created_at": "2026-10-08T02:19:12+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "37717263922",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/2026-10-07-maptalent-zack-markham.full.json",
+  "payload_sha256": "7af714f483c422a5513b4f42f8f3d1ab09140f5a011ba1c8bb641f39b4096ef0",
+  "recipient": "zmarkham@maptalent.com",
+  "recipient_sha256": "e990ac0a6eb5382566184a7e57734a3c16175325454243cae0cf8c39db105e0c",
+  "schema": 1,
+  "status": "pending",
+  "subject_sha256": "72fd02b8976993094662c53fce33638d998b1da596aa09594df5c1f306a1a8c3"
+}
