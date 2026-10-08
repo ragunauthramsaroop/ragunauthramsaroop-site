@@ -12,6 +12,8 @@
   "recipient": "kaharuddin@swapac.com",
   "recipient_sha256": "1b3aa71b7db2778e0dc45fce5b599154e8f003f7a29892f64d70eb4667ffcbcc",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-08T21:34:42+00:00",
+  "smtp_message_id": "<179149528269.2442.6219449708303531357@icloud.com>",
+  "status": "sent",
   "subject_sha256": "f2d93af519df6beff8ad144bd86e56740ac94345256f87f78d50556e01d901a3"
 }
