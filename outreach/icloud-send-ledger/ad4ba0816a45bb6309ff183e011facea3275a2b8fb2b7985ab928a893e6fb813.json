@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "ba982813e063611eb22a4d03c42eb9fa6d4a235d7421e90c9d775e3838212023",
+  "batch_id": "gcc-executive-recruiters-2026-10-08-b04-r1",
+  "body_sha256": "fe2834e09ef10b6cebc8dda755146ec015c70466a89452e3bce565beeb50c807",
+  "created_at": "2026-10-08T20:12:54+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "37837729911",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/2026-10-08-gcc-executive-recruiters-batch-04.json",
+  "payload_sha256": "6912d75e10b445b004cb175dfb85a3bd6b20e1c59436adcb79fb8a91fc6c23a2",
+  "recipient": "consultant@jobskeysearch.com",
+  "recipient_sha256": "ad4ba0816a45bb6309ff183e011facea3275a2b8fb2b7985ab928a893e6fb813",
+  "schema": 1,
+  "status": "pending",
+  "subject_sha256": "f7e550fb215bc434574a8dfbd754c492d050cc9b6a9057beec35cece3d933919"
+}
