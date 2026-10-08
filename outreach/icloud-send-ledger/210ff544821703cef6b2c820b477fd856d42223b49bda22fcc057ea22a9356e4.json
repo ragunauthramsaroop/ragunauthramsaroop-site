@@ -12,6 +12,8 @@
   "recipient": "dkenny@cornerstoneglobalpartners.com",
   "recipient_sha256": "210ff544821703cef6b2c820b477fd856d42223b49bda22fcc057ea22a9356e4",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-08T20:05:43+00:00",
+  "smtp_message_id": "<179148994276.2454.18305116829813788039@icloud.com>",
+  "status": "sent",
   "subject_sha256": "f7e550fb215bc434574a8dfbd754c492d050cc9b6a9057beec35cece3d933919"
 }
