@@ -12,6 +12,8 @@
   "recipient": "rguest@heidrick.com",
   "recipient_sha256": "a857e1a9737ce8c3d8d96c14b8c85874ab41b873463a025d3faa9e914c9316f0",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-08T19:46:28+00:00",
+  "smtp_message_id": "<179148878840.2420.8195813195677229330@icloud.com>",
+  "status": "sent",
   "subject_sha256": "e0b998a2534e92f065500ef8ee8ebd8c50a91583c77e57d29058c694449187e3"
 }
