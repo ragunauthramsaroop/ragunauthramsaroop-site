@@ -12,6 +12,8 @@
   "recipient": "alex.w@ema-partners.com",
   "recipient_sha256": "28d46e0a0321374fdba3f799b1ea5e2519b741ab4e1687dbd91fe687ee4cf0b6",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-08T22:35:27+00:00",
+  "smtp_message_id": "<179149892777.2426.14765221633138962956@icloud.com>",
+  "status": "sent",
   "subject_sha256": "1808d7812353710f7d0be4208e5541f285a218ce7e948d312c944eea516aae5b"
 }
