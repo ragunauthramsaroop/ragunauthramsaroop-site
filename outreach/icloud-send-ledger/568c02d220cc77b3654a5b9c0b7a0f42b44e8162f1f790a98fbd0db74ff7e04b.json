@@ -12,6 +12,8 @@
   "recipient": "faye@edgexec.co.za",
   "recipient_sha256": "568c02d220cc77b3654a5b9c0b7a0f42b44e8162f1f790a98fbd0db74ff7e04b",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-08T22:24:56+00:00",
+  "smtp_message_id": "<179149829676.2423.5087697865493962042@icloud.com>",
+  "status": "sent",
   "subject_sha256": "48180f90cfe42283a1653418ac95c2274ffa6a892675183c26bfabdd9652c067"
 }
