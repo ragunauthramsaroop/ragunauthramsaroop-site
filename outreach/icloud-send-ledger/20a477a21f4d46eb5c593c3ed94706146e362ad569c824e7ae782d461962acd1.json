@@ -12,6 +12,8 @@
   "recipient": "frank.nederveen@transearch.com",
   "recipient_sha256": "20a477a21f4d46eb5c593c3ed94706146e362ad569c824e7ae782d461962acd1",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-08T21:45:34+00:00",
+  "smtp_message_id": "<179149593427.2252.13899571649417365138@icloud.com>",
+  "status": "sent",
   "subject_sha256": "7a95dcd9bff94848af9c25b77dc7d7a71d6eb68de13db146c88a136634b26407"
 }
