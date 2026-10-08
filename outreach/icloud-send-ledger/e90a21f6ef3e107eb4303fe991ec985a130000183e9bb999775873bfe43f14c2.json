@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "b6666a6a9a6a0cc10210a0998d3020155932047c27acd5ac12b7417f3adbffc3",
+  "batch_id": "2026-10-08-ema-adriana-prates-mining-energy-direct",
+  "body_sha256": "59e04581c3f906184c2d1ae5856cb358b545566eedf633693b3ec4fee4a04e14",
+  "created_at": "2026-10-08T21:51:08+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "37849603980",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/2026-10-08-ema-adriana-prates-mining-energy-direct.json",
+  "payload_sha256": "31379dbe347b78f915dd160e92d5e7e3af1a4eb23bd6160898fb5ddd307e936c",
+  "recipient": "a.prates@ema-partners.com",
+  "recipient_sha256": "e90a21f6ef3e107eb4303fe991ec985a130000183e9bb999775873bfe43f14c2",
+  "schema": 1,
+  "status": "pending",
+  "subject_sha256": "4c44b593e8686a98b7d973a41379205b13d3b5d0eca5da6cebf4df0b78f070c3"
+}
