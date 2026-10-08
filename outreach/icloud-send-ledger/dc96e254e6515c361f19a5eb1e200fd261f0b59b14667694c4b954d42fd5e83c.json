@@ -12,6 +12,8 @@
   "recipient": "talent@kinetic.ae",
   "recipient_sha256": "dc96e254e6515c361f19a5eb1e200fd261f0b59b14667694c4b954d42fd5e83c",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-08T18:39:46+00:00",
+  "smtp_message_id": "<179148478671.2285.9332235260408134128@icloud.com>",
+  "status": "sent",
   "subject_sha256": "28cad78e7ad9ec28a723a62b540c2e4a476c5b41f632f7d61cd56c8a7c703d61"
 }
