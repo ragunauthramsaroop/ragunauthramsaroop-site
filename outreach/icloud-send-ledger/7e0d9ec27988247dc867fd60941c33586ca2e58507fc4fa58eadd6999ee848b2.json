@@ -12,6 +12,8 @@
   "recipient": "xavier.ashurst@a2-talent.com",
   "recipient_sha256": "7e0d9ec27988247dc867fd60941c33586ca2e58507fc4fa58eadd6999ee848b2",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-08T19:26:44+00:00",
+  "smtp_message_id": "<179148760427.2449.12173371009547417068@icloud.com>",
+  "status": "sent",
   "subject_sha256": "075450030baa75d2adf60c66dde0f4860bef2bae0345b1806926df244342e525"
 }
