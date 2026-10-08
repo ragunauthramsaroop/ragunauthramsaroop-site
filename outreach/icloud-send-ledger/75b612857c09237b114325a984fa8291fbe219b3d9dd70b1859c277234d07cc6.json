@@ -12,6 +12,8 @@
   "recipient": "little.karna@cielhr.com",
   "recipient_sha256": "75b612857c09237b114325a984fa8291fbe219b3d9dd70b1859c277234d07cc6",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-08T02:20:31+00:00",
+  "smtp_message_id": "<179142603158.2452.14246893478303704090@icloud.com>",
+  "status": "sent",
   "subject_sha256": "41e86d3a91cfe445d2716bbff1232aeec9e4615b351f4aac2db0da047cc3e4e1"
 }
