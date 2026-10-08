@@ -12,6 +12,8 @@
   "recipient": "isri@novonordisk.com",
   "recipient_sha256": "dc6e1fe35d22cd836695d1b31ad1c3a888fce2447ca53d0da2a83b3a9908adb2",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-08T19:00:48+00:00",
+  "smtp_message_id": "<179148604835.2227.18435393781404334501@icloud.com>",
+  "status": "sent",
   "subject_sha256": "3e1f3ea320a6b0488e01ae8b7790a0af0e7b3d325460b5f7884c92b2e2851512"
 }
