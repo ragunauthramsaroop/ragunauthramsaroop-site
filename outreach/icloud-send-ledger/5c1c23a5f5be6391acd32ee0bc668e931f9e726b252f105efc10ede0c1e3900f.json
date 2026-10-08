@@ -12,6 +12,8 @@
   "recipient": "aaron.ashton@odgers.com",
   "recipient_sha256": "5c1c23a5f5be6391acd32ee0bc668e931f9e726b252f105efc10ede0c1e3900f",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-08T20:02:33+00:00",
+  "smtp_message_id": "<179148975291.2333.13928173624978838005@icloud.com>",
+  "status": "sent",
   "subject_sha256": "97b8b8fec3bce92e0430dc2a60e43c74daab7a58d98bb457f64f560d2db6c928"
 }
