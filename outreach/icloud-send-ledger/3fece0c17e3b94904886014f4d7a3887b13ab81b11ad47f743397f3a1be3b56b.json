@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "7ce9feb6a63a0f29f576e745959278ce14d80cb86a3c2119f3e07dca673f64ff",
+  "batch_id": "2026-10-08-pedersen-sanjay-ghosh-mining-energy-direct",
+  "body_sha256": "3ea170466de942cefc637e36bdc6d2c14b1010a36f7e330e518f4cfd01188a4c",
+  "created_at": "2026-10-08T21:39:59+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "37848342851",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/2026-10-08-pedersen-sanjay-ghosh-mining-energy-direct.json",
+  "payload_sha256": "45c8239c22e10ea1c833fa31c978ead3efe09652b5116e4e926afcf4dca7d39f",
+  "recipient": "sanjay.ghosh@pedersenandpartners.com",
+  "recipient_sha256": "3fece0c17e3b94904886014f4d7a3887b13ab81b11ad47f743397f3a1be3b56b",
+  "schema": 1,
+  "status": "pending",
+  "subject_sha256": "29843fbf3b6622121ae38dc3486071d357b418975a25f5539d32d81985eb71a5"
+}
