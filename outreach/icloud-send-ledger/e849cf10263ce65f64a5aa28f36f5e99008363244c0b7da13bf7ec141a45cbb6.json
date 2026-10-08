@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "b495dcdf230729fac5e2797718552879e45fd42ab5f0c36f367060ac64171ff5",
+  "batch_id": "gcc-executive-recruiters-2026-10-08-b20",
+  "body_sha256": "37082c1b0d550e93c6efdc76ae8a56caf251fe0abc4ef282ced0aa142556b236",
+  "created_at": "2026-10-08T21:34:39+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "37847729781",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/2026-10-08-gcc-executive-recruiters-batch-20.json",
+  "payload_sha256": "63f5b55bbe914afb9b25fad18ea62e819213a266ad61077eeee33fa18b61c16b",
+  "recipient": "amy@seekergroup.ae",
+  "recipient_sha256": "e849cf10263ce65f64a5aa28f36f5e99008363244c0b7da13bf7ec141a45cbb6",
+  "schema": 1,
+  "status": "pending",
+  "subject_sha256": "d6d5e97973ceeb0b4a5bd4529d05ea94300fc3b541dab8ceddd9e1a0cbc5c93e"
+}
