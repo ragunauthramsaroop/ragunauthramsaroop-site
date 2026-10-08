@@ -12,6 +12,8 @@
   "recipient": "ije.jidenma@kestria.com",
   "recipient_sha256": "dc7a5930ce047919ccdc0d601576a373862c3112e33b7927eaa24bba1548d37e",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-08T21:39:22+00:00",
+  "smtp_message_id": "<179149556216.2295.11071136730625895979@icloud.com>",
+  "status": "sent",
   "subject_sha256": "282d9873823b9ade1635726b333077bd40a1badc2593c73bb5c22fca6e4f53d3"
 }
