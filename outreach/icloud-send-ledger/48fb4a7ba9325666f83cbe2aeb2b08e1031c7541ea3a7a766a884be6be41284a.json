@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "e8a302fd8b26eb6ca2a2dd453a503da286378333d908ce5c8deff84b095f1409",
+  "batch_id": "gcc-executive-search-fresh-2026-10-08-09",
+  "body_sha256": "7407201d17403f7ffff9300087626ed5ccfe0ddfc3daf410b8c8bfb31991b6b4",
+  "created_at": "2026-10-08T18:58:12+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "37828338388",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/2026-10-08-gcc-executive-search-fresh-09.json",
+  "payload_sha256": "f3b175df72d27aaf358561dc952a203e33b875dcb5fdceb34a308747d9e75193",
+  "recipient": "info@markwilliams.ae",
+  "recipient_sha256": "48fb4a7ba9325666f83cbe2aeb2b08e1031c7541ea3a7a766a884be6be41284a",
+  "schema": 1,
+  "status": "pending",
+  "subject_sha256": "7b24bed58af6541596aef42c57263fa0d502d6a531a13f15637aa48731ab45eb"
+}
