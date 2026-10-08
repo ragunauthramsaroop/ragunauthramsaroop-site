@@ -12,6 +12,8 @@
   "recipient": "find@seekersgulf.com",
   "recipient_sha256": "ee94e54eab34803acce8e461e7dc4702383d788afe261a5f9f81ce1980b85c06",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-08T02:19:55+00:00",
+  "smtp_message_id": "<179142599534.2218.12748464943187815308@icloud.com>",
+  "status": "sent",
   "subject_sha256": "e2428ea961bbc25eb6c2d55fbb2de3b67c362f83778acecdc86b53d307acfae0"
 }
