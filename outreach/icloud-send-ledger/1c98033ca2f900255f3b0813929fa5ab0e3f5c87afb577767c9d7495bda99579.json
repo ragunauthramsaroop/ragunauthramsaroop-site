@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "a8c0c44eb74fc843c0d1f942e608ee9806e3f8f6db8e7a5984b0220ee7a60caf",
+  "batch_id": "2026-10-08-ignitis-morta-grigaliunaite-starke-direct",
+  "body_sha256": "be1708c7a9800b222ebecc021318617ea353c327c8fdf42dfc7be0ddf36edc52",
+  "created_at": "2026-10-08T19:35:45+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "37833107077",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/2026-10-08-ignitis-morta-grigaliunaite-starke-direct.json",
+  "payload_sha256": "f7affe261dfb989b5817a4a3d067c005296cecce2c6744d87ad90d5ee3f41958",
+  "recipient": "morta.grigaliunaite-starke@ignitis.lt",
+  "recipient_sha256": "1c98033ca2f900255f3b0813929fa5ab0e3f5c87afb577767c9d7495bda99579",
+  "schema": 1,
+  "status": "pending",
+  "subject_sha256": "9e8db0af2e2b923d33dfc862b70e58edaa0aaa41abace5d0fa73f5dfed912021"
+}
