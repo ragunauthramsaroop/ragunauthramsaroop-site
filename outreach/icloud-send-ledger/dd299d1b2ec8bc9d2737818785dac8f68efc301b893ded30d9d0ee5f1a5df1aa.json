@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "8a6fca3282666560b926f5083eb14adce57d6a2fd1368bc9c59a68c232ef0d3d",
+  "batch_id": "gcc-executive-recruiters-2026-10-08-b24",
+  "body_sha256": "e6e242516de14edd01ab01b43081851675322d6ec88c131105618d36b11209b2",
+  "created_at": "2026-10-08T21:49:25+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "37849371459",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/2026-10-08-gcc-executive-recruiters-batch-24.json",
+  "payload_sha256": "fc18b6190fe66e3cfcccebc1b40f3e4269fb63d5dd77c33dbe38fb4fd36f176a",
+  "recipient": "info@peoplex.sa",
+  "recipient_sha256": "dd299d1b2ec8bc9d2737818785dac8f68efc301b893ded30d9d0ee5f1a5df1aa",
+  "schema": 1,
+  "status": "pending",
+  "subject_sha256": "0b26038e26584807ae8279d48724b5a1b2ad86f17a93c41f4b49ca87b8f0d7bc"
+}
