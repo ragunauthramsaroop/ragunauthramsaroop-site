@@ -12,6 +12,8 @@
   "recipient": "trobson@hiec.com",
   "recipient_sha256": "8d4daf966ca60894eb1acccf763e589f895682845ab35a11541507fb83aa5a23",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-08T19:02:04+00:00",
+  "smtp_message_id": "<179148612438.2430.5048093738217227810@icloud.com>",
+  "status": "sent",
   "subject_sha256": "046703e9c52d1678fd4887ba397bf073445572c0208c3b858244b8c89a26f3b7"
 }
