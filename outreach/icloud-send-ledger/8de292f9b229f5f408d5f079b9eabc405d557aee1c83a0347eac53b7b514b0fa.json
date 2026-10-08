@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "40b03ae5e4b4e12d88b3edf9b5c172112b35216743206e414e11a606911ac5c1",
+  "batch_id": "2026-10-08-maib-human-resources-direct",
+  "body_sha256": "b1201040bb66bcd5b72d5eabc0f5e6f59d638522e1e17a2a7ea9eb17fbb37a49",
+  "created_at": "2026-10-08T19:41:57+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "37833861954",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/2026-10-08-maib-human-resources-direct.json",
+  "payload_sha256": "d39c67b088ef9aed4dc461f4279f2e4d5c9015d1ea6a55f722494d79862680c5",
+  "recipient": "resurseumane@maib.md",
+  "recipient_sha256": "8de292f9b229f5f408d5f079b9eabc405d557aee1c83a0347eac53b7b514b0fa",
+  "schema": 1,
+  "status": "pending",
+  "subject_sha256": "090c77397be9bcacf641d36e082c8eb5f072d8b15ccd05aac6d99b8b203fe930"
+}
