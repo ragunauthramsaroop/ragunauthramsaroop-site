@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "5a4e44978da3576b7086a6759633cca68e9a1c9ebba69879d2d42c847e592d65",
+  "batch_id": "2026-10-08-zagrebacka-banka-candidate-database-direct",
+  "body_sha256": "7a4c16da5087a094d731393ae8782ce80bbe73129c0fa666f1449cf62e00250b",
+  "created_at": "2026-10-08T19:29:18+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "37832289135",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/2026-10-08-zagrebacka-banka-candidate-database-direct.json",
+  "payload_sha256": "c50633a6901c7c1ea47c90f61af5ad3fef17c8a6ecb738e71c7e0748b4e80e9b",
+  "recipient": "posao@unicreditgroup.zaba.hr",
+  "recipient_sha256": "93af4ae7291f6afbd021df18a8d69a32e1e98c02331888203a26db5a2479278c",
+  "schema": 1,
+  "status": "pending",
+  "subject_sha256": "f1d4b0f3a7ca8088b9fcbc2c784219c575742ad33eb7937cc4f01edd2fc1c4b2"
+}
