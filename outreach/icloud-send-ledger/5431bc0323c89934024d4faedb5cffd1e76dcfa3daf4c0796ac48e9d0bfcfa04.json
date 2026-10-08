@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "618e8e313b739181edb5775b32cf87061305f6fb1b2b7cf4ab4387d956c7abb6",
+  "batch_id": "2026-10-08-investor-ab-lovisa-boestad-schon-direct",
+  "body_sha256": "20c7c7d02cd3d4d1c8f6cbc4354927410df62b5def2caec2d882bff8b29a133c",
+  "created_at": "2026-10-08T19:19:18+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "37831025063",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/2026-10-08-investor-ab-lovisa-boestad-schon-direct.json",
+  "payload_sha256": "27327d1c34ddaff8ff70cb34add3efeb98be55581df7043b53c96469fb23b1c7",
+  "recipient": "lovisa.boestadschon@investorab.com",
+  "recipient_sha256": "5431bc0323c89934024d4faedb5cffd1e76dcfa3daf4c0796ac48e9d0bfcfa04",
+  "schema": 1,
+  "status": "pending",
+  "subject_sha256": "36cec8c6e5285a230c5579b1376cc153a50e579df2a1ac9411de2acb07347deb"
+}
