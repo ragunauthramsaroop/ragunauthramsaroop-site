@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "35071fcc1b2396d8437c7bf77977be069dd00ab96f0fb2422419bd3a3abc5ce5",
+  "batch_id": "2026-10-08-europe-ceiling-recruiters-wave-02",
+  "body_sha256": "5a75aab14805313bbd80857d6717374a5125ec329045ebe0004095aac093e266",
+  "created_at": "2026-10-08T18:40:19+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "37825993660",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/2026-10-08-europe-ceiling-recruiters-wave-02.json",
+  "payload_sha256": "1328dadafcb6dc6bec487dc5242c6d48f25e153c7b23df97ea4efb5d76392bae",
+  "recipient": "raffaello.raimondi@kornferry.com",
+  "recipient_sha256": "a7fd8add54a9482d4e8c42b86164c19908a8e7a2ce7bf498dbb07dfe8b07c72e",
+  "schema": 1,
+  "status": "pending",
+  "subject_sha256": "407c5b61cd9c784c8694264ae13f632dfb1088bbb793fb053ac2babba370e394"
+}
