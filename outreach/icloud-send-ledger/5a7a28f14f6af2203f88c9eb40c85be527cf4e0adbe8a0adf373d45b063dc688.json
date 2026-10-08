@@ -12,6 +12,8 @@
   "recipient": "ceo@loyalpartners.com.sa",
   "recipient_sha256": "5a7a28f14f6af2203f88c9eb40c85be527cf4e0adbe8a0adf373d45b063dc688",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-08T21:41:00+00:00",
+  "smtp_message_id": "<179149566032.2289.12413742274225234102@icloud.com>",
+  "status": "sent",
   "subject_sha256": "d413918bf562a028093d0d341fba6e268391e88b6896f6cb5cf7f6cca9e01140"
 }
