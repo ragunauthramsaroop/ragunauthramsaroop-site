@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "d7b0d82ce47e1ecb2c0616d7c7f7339c74aa4873f992e0dc0cfe52bac75d0295",
+  "batch_id": "2026-10-08-asml-eu-recruitment-direct",
+  "body_sha256": "446423503b4f140465af1cd450b2cc9796743a88c1cfdae80205d9448de69fd2",
+  "created_at": "2026-10-08T19:27:20+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "37832027726",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/2026-10-08-asml-eu-recruitment-direct.json",
+  "payload_sha256": "9ce8aabdce49b9fb61fd512fc82e4e1a89af5526dd75320e6c5c6c071266f3a9",
+  "recipient": "hrrecruitmenteu@asml.com",
+  "recipient_sha256": "10aacf9ae1cc90f7f8b64bdd7fc6d72d5d57f6f904042c22fd5dd7fc62fb82fc",
+  "schema": 1,
+  "status": "pending",
+  "subject_sha256": "f2cf12ff6ad064e0dd2e1fc7d5c93cf7470c8e0deac1eae160786d8219d1860e"
+}
