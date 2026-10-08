@@ -12,6 +12,8 @@
   "recipient": "anca.a.popescu@hidroelectrica.ro",
   "recipient_sha256": "e3f93101f3261d282b4ca3540e6e8f974c4c193535b2a1957698d9ccbfecfcc1",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-08T22:19:08+00:00",
+  "smtp_message_id": "<179149794801.2402.180658826149335971@icloud.com>",
+  "status": "sent",
   "subject_sha256": "2549951383da7fd58d2b9f19ba14cfd6bdba1e1615972dee30fe4a566cbc4292"
 }
