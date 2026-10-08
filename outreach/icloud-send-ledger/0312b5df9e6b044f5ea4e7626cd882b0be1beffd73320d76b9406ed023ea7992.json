@@ -12,6 +12,8 @@
   "recipient": "skitchloo@heidrick.com",
   "recipient_sha256": "0312b5df9e6b044f5ea4e7626cd882b0be1beffd73320d76b9406ed023ea7992",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-08T18:39:27+00:00",
+  "smtp_message_id": "<179148476761.2223.8689899827382625591@icloud.com>",
+  "status": "sent",
   "subject_sha256": "0bc69b362abef1d1438d92307310ea9d5b8cec55bd949baabff3266cf22a4883"
 }
