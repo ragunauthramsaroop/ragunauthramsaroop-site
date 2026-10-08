@@ -12,6 +12,8 @@
   "recipient": "arron@venturesearch.com",
   "recipient_sha256": "e37a18519f3d00865f5a7449544468ce4e0204dd9c247a30b0349e73242352a6",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-08T18:39:49+00:00",
+  "smtp_message_id": "<179148478945.2285.1583824346950525014@icloud.com>",
+  "status": "sent",
   "subject_sha256": "13596662a360adbc4bee61bdb8f20f5b1fc3236675883768da26da2efbd7f5d5"
 }
