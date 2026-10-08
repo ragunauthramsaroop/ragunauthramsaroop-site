@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "f767a3e3832375c0fe540b1b3ecaf290c7a552da4e389575ae4c3e30c860bd29",
+  "batch_id": "2026-10-08-amrop-mansour-abdulghaffar-saudi-direct",
+  "body_sha256": "4d6effe13f7cac7b40b0a0ef879e67c7efde0ff40c5bd6e605389555fbba8e95",
+  "created_at": "2026-10-08T20:18:26+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "37838423469",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/2026-10-08-amrop-mansour-abdulghaffar-saudi-direct.json",
+  "payload_sha256": "dec74870b65384dae0501d733b151c57a4543ecbaea0642fe0839300a7679fbf",
+  "recipient": "mansour.ag@amrop.sa",
+  "recipient_sha256": "cbd722069af1f4529109842291ced1e182d8f91cf44e597a2316ec4d3a5bbec5",
+  "schema": 1,
+  "status": "pending",
+  "subject_sha256": "9bd6d3f906a29993710281be56e6b8584badb2ea7e1712eac147941d834fa54d"
+}
