@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "abb3d1608606787f8fd63098d95a72a5aaad5b7e6e169550bde11a23c026b527",
+  "batch_id": "2026-10-08-amrop-cristina-postolache-romania-direct",
+  "body_sha256": "838a8155437588fdc6b6c5d3757914b4dc6a521f32ec4c854d6444e70f3904e4",
+  "created_at": "2026-10-08T19:41:31+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "37833795570",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/2026-10-08-amrop-cristina-postolache-romania-direct.json",
+  "payload_sha256": "5aa613cb9063e6934259c47dab48732249c33a71d714a52c6da25cd741f9be70",
+  "recipient": "cristina.postolache@amrop.com",
+  "recipient_sha256": "fb967d14443a37bbfc2d310f0e1ba210d39ae350b0c9333d2f1e7b9e1c0b72b9",
+  "schema": 1,
+  "status": "pending",
+  "subject_sha256": "81f098266ef166e32b4106a6f1a78eb37eabb4ab6237060841a3562314f15330"
+}
