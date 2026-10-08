@@ -12,6 +12,8 @@
   "recipient": "mjilani@heidrick.com",
   "recipient_sha256": "e8997e5f764d230ddae876f5ffc393f9525079a48d76b76fb03c815a6d3b756a",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-08T19:49:28+00:00",
+  "smtp_message_id": "<179148896781.2209.6314176169112579318@icloud.com>",
+  "status": "sent",
   "subject_sha256": "a4544d8c83c2b019e01f49fa5f5e8637eb9c8ae80ef56398db8ad9d7e84648a4"
 }
