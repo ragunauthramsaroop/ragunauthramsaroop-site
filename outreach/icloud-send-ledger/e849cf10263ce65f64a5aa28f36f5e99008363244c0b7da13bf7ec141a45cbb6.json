@@ -12,6 +12,8 @@
   "recipient": "amy@seekergroup.ae",
   "recipient_sha256": "e849cf10263ce65f64a5aa28f36f5e99008363244c0b7da13bf7ec141a45cbb6",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-08T21:34:40+00:00",
+  "smtp_message_id": "<179149528051.2442.5881929565026579960@icloud.com>",
+  "status": "sent",
   "subject_sha256": "d6d5e97973ceeb0b4a5bd4529d05ea94300fc3b541dab8ceddd9e1a0cbc5c93e"
 }
