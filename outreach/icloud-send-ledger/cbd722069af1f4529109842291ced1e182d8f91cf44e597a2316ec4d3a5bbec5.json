@@ -12,6 +12,8 @@
   "recipient": "mansour.ag@amrop.sa",
   "recipient_sha256": "cbd722069af1f4529109842291ced1e182d8f91cf44e597a2316ec4d3a5bbec5",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-08T20:18:28+00:00",
+  "smtp_message_id": "<179149070794.2414.15087729420134406377@icloud.com>",
+  "status": "sent",
   "subject_sha256": "9bd6d3f906a29993710281be56e6b8584badb2ea7e1712eac147941d834fa54d"
 }
