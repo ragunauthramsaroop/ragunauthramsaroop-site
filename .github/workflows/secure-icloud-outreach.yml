@@ -1,0 +1,76 @@
+name: Secure iCloud executive outreach
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'outreach/secure-outbox/*.json'
+  workflow_dispatch:
+    inputs:
+      payload_file:
+        description: 'Encrypted payload under outreach/secure-outbox/'
+        required: true
+        type: string
+
+permissions:
+  contents: read
+
+concurrency:
+  group: secure-icloud-outreach
+  cancel-in-progress: false
+
+jobs:
+  send:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    env:
+      ICLOUD_APP_PASSWORD: ${{ secrets.ICLOUD_APP_PASSWORD }}
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          fetch-depth: 2
+
+      - uses: actions/setup-python@v7
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: python -m pip install --disable-pip-version-check 'reportlab==4.2.5' 'pypdf==6.1.1' cryptography
+
+      - name: Resolve encrypted payload
+        id: payload
+        shell: bash
+        run: |
+          set -euo pipefail
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            PAYLOAD="${{ inputs.payload_file }}"
+          else
+            PAYLOAD="$(git diff-tree --diff-filter=AM --no-commit-id --name-only -r "$GITHUB_SHA" | grep -E '^outreach/secure-outbox/[^/]+\.json$' | head -n 1 || true)"
+          fi
+          if [ -z "$PAYLOAD" ]; then
+            echo "No encrypted payload found in this change."
+            exit 0
+          fi
+          case "$PAYLOAD" in
+            outreach/secure-outbox/*.json) ;;
+            *) echo "Refusing payload outside secure outbox."; exit 1 ;;
+          esac
+          test -f "$PAYLOAD"
+          echo "payload=$PAYLOAD" >> "$GITHUB_OUTPUT"
+
+      - name: Verify iCloud credential
+        if: steps.payload.outputs.payload != ''
+        shell: bash
+        run: |
+          if [ -z "$ICLOUD_APP_PASSWORD" ]; then
+            echo "ICLOUD_APP_PASSWORD is not configured."
+            exit 1
+          fi
+
+      - name: Send encrypted executive outreach
+        if: steps.payload.outputs.payload != ''
+        shell: bash
+        run: |
+          set -euo pipefail
+          python scripts/secure_icloud_send.py "${{ steps.payload.outputs.payload }}"
