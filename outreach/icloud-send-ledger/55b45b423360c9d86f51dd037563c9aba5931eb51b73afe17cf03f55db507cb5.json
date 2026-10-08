@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "f81cc80114ac19cfb147a7151cd79bb99bda164980a525445721f343a40ca480",
+  "batch_id": "2026-10-08-hidroelectrica-ionela-stancu-direct",
+  "body_sha256": "edfde5fab0f27ab6beb6d5c7435ea8bfe787383dbb80dcc0e0bd0c57d709835e",
+  "created_at": "2026-10-08T19:36:01+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "37833131859",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/2026-10-08-hidroelectrica-ionela-stancu-direct.json",
+  "payload_sha256": "aa5e1ee170960a344e454ad218ef248043c27048ae74ed0d3f47f642badd8363",
+  "recipient": "ionela.stancu@hidroelectrica.ro",
+  "recipient_sha256": "55b45b423360c9d86f51dd037563c9aba5931eb51b73afe17cf03f55db507cb5",
+  "schema": 1,
+  "status": "pending",
+  "subject_sha256": "370de9e24d6387aa93391dcb7f90d3cfe8b034555e956484f139868a7c1d31ca"
+}
