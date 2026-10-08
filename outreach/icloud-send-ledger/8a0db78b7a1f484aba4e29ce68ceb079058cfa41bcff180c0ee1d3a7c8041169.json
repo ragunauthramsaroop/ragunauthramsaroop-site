@@ -12,6 +12,8 @@
   "recipient": "m.friedrichs@friedrichs-partner.com",
   "recipient_sha256": "8a0db78b7a1f484aba4e29ce68ceb079058cfa41bcff180c0ee1d3a7c8041169",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-08T21:53:22+00:00",
+  "smtp_message_id": "<179149640193.2440.18417360720936912799@icloud.com>",
+  "status": "sent",
   "subject_sha256": "138ce02f7843d62def7d419a9784ee55e2581db06008a9a1efd8ab512354f0b6"
 }
