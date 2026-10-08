@@ -11,6 +11,7 @@ import base64
 import hashlib
 import json
 import os
+import time
 import urllib.error
 import urllib.parse
 import urllib.request
@@ -21,6 +22,7 @@ from typing import Any
 
 LEDGER_ROOT = "outreach/icloud-send-ledger"
 API_VERSION = "2022-11-28"
+MAX_WRITE_ATTEMPTS = 4
 
 
 def utc_now() -> str:
@@ -79,6 +81,25 @@ def _request(method: str, path: str, payload: dict[str, Any] | None = None) -> d
         raise RuntimeError(f"GitHub ledger API {method} failed with HTTP {exc.code}: {detail[:800]}") from exc
 
 
+def _get_content(encoded_path: str) -> dict[str, Any] | None:
+    try:
+        return _request("GET", f"contents/{encoded_path}?ref={urllib.parse.quote(_branch(), safe='')}")
+    except RuntimeError as exc:
+        if "HTTP 404" in str(exc):
+            return None
+        raise
+
+
+def _decode_record(content_response: dict[str, Any]) -> dict[str, Any]:
+    raw = str(content_response.get("content") or "").replace("\n", "")
+    if not raw:
+        raise RuntimeError("Ledger content response did not include file content.")
+    try:
+        return json.loads(base64.b64decode(raw).decode("utf-8"))
+    except Exception as exc:
+        raise RuntimeError("Ledger content response could not be decoded safely.") from exc
+
+
 @dataclass
 class LedgerClaim:
     recipient: str
@@ -101,13 +122,8 @@ def claim_recipient(
     path = f"{LEDGER_ROOT}/{recipient_hash}.json"
     encoded_path = urllib.parse.quote(path, safe="/")
 
-    # Friendly pre-check. Atomic duplicate protection still comes from the create-only PUT below.
-    try:
-        existing = _request("GET", f"contents/{encoded_path}?ref={urllib.parse.quote(_branch(), safe='')}")
-    except RuntimeError as exc:
-        if "HTTP 404" not in str(exc):
-            raise
-    else:
+    existing = _get_content(encoded_path)
+    if existing is not None:
         existing_sha = existing.get("sha", "unknown")
         raise RuntimeError(
             f"DUPLICATE BLOCK: {normalized} already has ledger claim {path} ({existing_sha})."
@@ -138,13 +154,32 @@ def claim_recipient(
         "content": base64.b64encode(body_bytes).decode("ascii"),
         "branch": _branch(),
     }
-    try:
-        created = _request("PUT", f"contents/{encoded_path}", create_payload)
-    except RuntimeError as exc:
-        text = str(exc)
-        if "HTTP 409" in text or "HTTP 422" in text:
-            raise RuntimeError(f"DUPLICATE BLOCK: atomic claim failed for {normalized}; recipient is treated as already claimed.") from exc
-        raise
+
+    created: dict[str, Any] | None = None
+    for attempt in range(MAX_WRITE_ATTEMPTS):
+        try:
+            created = _request("PUT", f"contents/{encoded_path}", create_payload)
+            break
+        except RuntimeError as exc:
+            text = str(exc)
+            if "HTTP 409" not in text and "HTTP 422" not in text:
+                raise
+
+            existing = _get_content(encoded_path)
+            if existing is not None:
+                existing_sha = existing.get("sha", "unknown")
+                raise RuntimeError(
+                    f"DUPLICATE BLOCK: {normalized} already has ledger claim {path} ({existing_sha})."
+                ) from exc
+
+            if attempt + 1 >= MAX_WRITE_ATTEMPTS:
+                raise RuntimeError(
+                    f"Fail-closed ledger could not claim {normalized} after concurrent branch updates. No SMTP send is permitted."
+                ) from exc
+            time.sleep(0.6 * (attempt + 1))
+
+    if created is None:
+        raise RuntimeError(f"Fail-closed ledger did not create a claim for {normalized}.")
 
     content_sha = str((created.get("content") or {}).get("sha") or "")
     if not content_sha:
@@ -166,12 +201,69 @@ def mark_sent(claim: LedgerClaim, smtp_message_id: str) -> None:
         "sha": claim.content_sha,
         "branch": _branch(),
     }
-    updated = _request("PUT", f"contents/{encoded_path}", payload)
+
+    updated: dict[str, Any] | None = None
+    for attempt in range(MAX_WRITE_ATTEMPTS):
+        try:
+            updated = _request("PUT", f"contents/{encoded_path}", payload)
+            break
+        except RuntimeError as exc:
+            text = str(exc)
+            if "HTTP 409" not in text and "HTTP 422" not in text:
+                raise
+
+            current = _get_content(encoded_path)
+            if current is None:
+                raise RuntimeError(
+                    f"SMTP returned success for {claim.recipient}, but the ledger claim disappeared. Manual review is required."
+                ) from exc
+
+            current_record = _decode_record(current)
+            if (
+                current_record.get("recipient") != claim.recipient
+                or current_record.get("github_run_id") != claim.record.get("github_run_id")
+            ):
+                raise RuntimeError(
+                    f"SMTP returned success for {claim.recipient}, but the ledger claim no longer belongs to this run. Manual review is required."
+                ) from exc
+
+            if current_record.get("status") == "sent":
+                if current_record.get("smtp_message_id") == smtp_message_id:
+                    claim.content_sha = str(current.get("sha") or claim.content_sha)
+                    claim.record = current_record
+                    print(f"Ledger already marked sent for {claim.recipient}; Message-ID {smtp_message_id}")
+                    return
+                raise RuntimeError(
+                    f"SMTP returned success for {claim.recipient}, but the ledger is already marked sent with a different Message-ID. Manual review is required."
+                ) from exc
+
+            if current_record.get("status") != "pending":
+                raise RuntimeError(
+                    f"SMTP returned success for {claim.recipient}, but the ledger status is unexpected. Manual review is required."
+                ) from exc
+
+            current_sha = str(current.get("sha") or "")
+            if not current_sha:
+                raise RuntimeError(
+                    f"SMTP returned success for {claim.recipient}, but the current ledger SHA is unavailable. Manual review is required."
+                ) from exc
+            payload["sha"] = current_sha
+
+            if attempt + 1 >= MAX_WRITE_ATTEMPTS:
+                raise RuntimeError(
+                    f"SMTP returned success for {claim.recipient}, but ledger confirmation could not survive concurrent branch updates. The pending claim remains fail-closed."
+                ) from exc
+            time.sleep(0.6 * (attempt + 1))
+
+    if updated is None:
+        raise RuntimeError(
+            f"SMTP returned success for {claim.recipient}, but ledger confirmation did not complete. The pending claim remains fail-closed."
+        )
+
     new_sha = str((updated.get("content") or {}).get("sha") or "")
     if not new_sha:
         raise RuntimeError(
-            f"SMTP returned success for {claim.recipient}, but ledger confirmation failed. "
-            "The pending claim remains fail-closed and must be reviewed before any retry."
+            f"SMTP returned success for {claim.recipient}, but ledger confirmation failed. The pending claim remains fail-closed and must be reviewed before any retry."
         )
     claim.content_sha = new_sha
     claim.record = record
