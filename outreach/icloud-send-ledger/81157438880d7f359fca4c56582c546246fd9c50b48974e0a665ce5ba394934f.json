@@ -12,6 +12,8 @@
   "recipient": "info@somou.sa",
   "recipient_sha256": "81157438880d7f359fca4c56582c546246fd9c50b48974e0a665ce5ba394934f",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-08T21:40:58+00:00",
+  "smtp_message_id": "<179149565804.2289.8452101865915846069@icloud.com>",
+  "status": "sent",
   "subject_sha256": "6d5db262f039d66872e47d271391f546f1ba73fc7d9770aa75e1db2b1ac6ff16"
 }
