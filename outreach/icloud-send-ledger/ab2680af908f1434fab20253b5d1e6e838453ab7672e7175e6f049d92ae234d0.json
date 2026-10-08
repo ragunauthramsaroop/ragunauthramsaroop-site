@@ -12,6 +12,8 @@
   "recipient": "b.dalal@boydenme.com",
   "recipient_sha256": "ab2680af908f1434fab20253b5d1e6e838453ab7672e7175e6f049d92ae234d0",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-08T20:09:33+00:00",
+  "smtp_message_id": "<179149017337.2221.11350221717416036885@icloud.com>",
+  "status": "sent",
   "subject_sha256": "5929b97ddd1e19496efbd0ae07bc81f55859920959b45d3cd9703837790ce2e3"
 }
