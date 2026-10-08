@@ -12,6 +12,8 @@
   "recipient": "p.sharp@ema-partners.com",
   "recipient_sha256": "47d8a49a101138cee2404f7ef573a0a1ee6cb13ede0b3f1e0280f30dea2cdf9e",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-08T21:41:24+00:00",
+  "smtp_message_id": "<179149568452.2435.6693141905547876836@icloud.com>",
+  "status": "sent",
   "subject_sha256": "f6d4b21d6ac83b0b0d074d384594a28cc6b829d05bfac8777ceb629a18904e9c"
 }
