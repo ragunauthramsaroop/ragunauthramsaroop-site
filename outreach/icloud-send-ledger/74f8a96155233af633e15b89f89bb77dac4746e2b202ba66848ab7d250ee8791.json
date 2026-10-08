@@ -12,6 +12,8 @@
   "recipient": "m.kantel@friedrichs-partner.com",
   "recipient_sha256": "74f8a96155233af633e15b89f89bb77dac4746e2b202ba66848ab7d250ee8791",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-08T21:56:24+00:00",
+  "smtp_message_id": "<179149658422.2458.10048363063152563527@icloud.com>",
+  "status": "sent",
   "subject_sha256": "81ce6428a096c7da53dc8b43e58b36fc3465f5fda9e75b7a1016124e0aab7969"
 }
