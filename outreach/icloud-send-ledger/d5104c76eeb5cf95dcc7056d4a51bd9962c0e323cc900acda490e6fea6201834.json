@@ -12,6 +12,8 @@
   "recipient": "ryan.berrecloth@penderhowe.com",
   "recipient_sha256": "d5104c76eeb5cf95dcc7056d4a51bd9962c0e323cc900acda490e6fea6201834",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-08T22:03:58+00:00",
+  "smtp_message_id": "<179149703794.2471.8215358081246390507@icloud.com>",
+  "status": "sent",
   "subject_sha256": "daa4b03dfb0d18ccd6022351f7bb08049fe951e878e462758ac7a772f1f5ee50"
 }
