@@ -12,6 +12,8 @@
   "recipient": "danny.leinders@kornferry.com",
   "recipient_sha256": "dc07daa856e1dbd23e6e4e02a8ec86c79cc3deab303935d0336a3ab7298970c3",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-08T20:36:09+00:00",
+  "smtp_message_id": "<179149176914.2440.14672906813628873435@icloud.com>",
+  "status": "sent",
   "subject_sha256": "0e067a4a016284897ded4f121a69a16b6b5aa7d5fff0df95f81998f2018d6cdf"
 }
