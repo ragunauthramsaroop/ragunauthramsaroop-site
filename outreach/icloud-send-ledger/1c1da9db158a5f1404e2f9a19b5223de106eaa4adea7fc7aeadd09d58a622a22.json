@@ -12,6 +12,8 @@
   "recipient": "murat.ozturk@transearch.com",
   "recipient_sha256": "1c1da9db158a5f1404e2f9a19b5223de106eaa4adea7fc7aeadd09d58a622a22",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-08T21:44:58+00:00",
+  "smtp_message_id": "<179149589837.2462.4401351612089627849@icloud.com>",
+  "status": "sent",
   "subject_sha256": "aabef40184377731079197fd31c3393410754a21ddce9c3f1af5070ca7712c8d"
 }
