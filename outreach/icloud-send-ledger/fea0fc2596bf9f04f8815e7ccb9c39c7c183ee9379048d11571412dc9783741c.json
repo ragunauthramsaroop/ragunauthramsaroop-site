@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "ee63e9634e833074238198f36836772a75faa614ca2c817560db62e69210c498",
+  "batch_id": "2026-10-08-amrop-roland-theuws-energy-infrastructure-direct",
+  "body_sha256": "dde2d31dd451444114d9f657750a58ee0d6ed76b120be82a0aa2db62a1b68cf4",
+  "created_at": "2026-10-08T21:43:43+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "37848758821",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/2026-10-08-amrop-roland-theuws-energy-infrastructure-direct.json",
+  "payload_sha256": "e2ee777ea89cc8d5fa941a3b3982297a92564dbc075bdc63841905c1cf36bad3",
+  "recipient": "roland.theuws@amrop.nl",
+  "recipient_sha256": "fea0fc2596bf9f04f8815e7ccb9c39c7c183ee9379048d11571412dc9783741c",
+  "schema": 1,
+  "status": "pending",
+  "subject_sha256": "68ff17307c9a8aa4741aa225972591b9a417f0472e89a593ff6b6a0cdbfbc44f"
+}
