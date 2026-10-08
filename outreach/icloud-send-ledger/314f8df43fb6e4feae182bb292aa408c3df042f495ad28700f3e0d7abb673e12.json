@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "batch_id": "2026-10-08-bounce-recovery-wave-06",
+  "body_sha256": "dde08e3b0a41a3dbc09c94e8d698c45a5fd43b98ddb17ca7b61fd13564e18d7f",
+  "created_at": "2026-10-08T22:42:17+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "37855106462",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-recovery/2026-10-08-bounce-recovery-wave-06.json",
+  "payload_sha256": "841418a2cbe3153e7814b31b5a709fa6f55881a1579a4798c966aac84df605ec",
+  "recipient": "adina.andrei@hidroelectrica.ro",
+  "recipient_sha256": "314f8df43fb6e4feae182bb292aa408c3df042f495ad28700f3e0d7abb673e12",
+  "schema": 1,
+  "status": "pending",
+  "subject_sha256": "00ef454c9bbebd0f9a41f9cb1895c65654856c63a1c3448ea75bfbece6a939ef"
+}
