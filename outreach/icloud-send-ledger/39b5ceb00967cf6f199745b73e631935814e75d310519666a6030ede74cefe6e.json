@@ -12,6 +12,8 @@
   "recipient": "rita@crrp-emea.com",
   "recipient_sha256": "39b5ceb00967cf6f199745b73e631935814e75d310519666a6030ede74cefe6e",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-08T20:47:42+00:00",
+  "smtp_message_id": "<179149246285.2500.7766370077010393646@icloud.com>",
+  "status": "sent",
   "subject_sha256": "35fdf4588af65d7e17f5710d72683b08f31596fde05c47769150b49fa3122475"
 }
