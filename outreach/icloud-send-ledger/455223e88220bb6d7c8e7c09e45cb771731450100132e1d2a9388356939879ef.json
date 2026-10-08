@@ -12,6 +12,8 @@
   "recipient": "matthew.hesketh@hsbc.com",
   "recipient_sha256": "455223e88220bb6d7c8e7c09e45cb771731450100132e1d2a9388356939879ef",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-08T18:57:37+00:00",
+  "smtp_message_id": "<179148585761.2223.1989847886084417946@icloud.com>",
+  "status": "sent",
   "subject_sha256": "4bee296fd6ae3feaf92007e30791c6066ec580fa4c20453d34769b19ae777e19"
 }
