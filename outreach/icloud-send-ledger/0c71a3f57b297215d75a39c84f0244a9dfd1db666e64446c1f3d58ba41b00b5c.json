@@ -12,6 +12,8 @@
   "recipient": "info@hasscomsa.com",
   "recipient_sha256": "0c71a3f57b297215d75a39c84f0244a9dfd1db666e64446c1f3d58ba41b00b5c",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-08T21:49:24+00:00",
+  "smtp_message_id": "<179149616388.2218.8543194340962111828@icloud.com>",
+  "status": "sent",
   "subject_sha256": "f7d38c3713db617e7eed7961c042f33bfec9c8c668f95d04d70da0056c914718"
 }
