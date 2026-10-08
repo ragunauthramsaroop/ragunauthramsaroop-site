@@ -12,6 +12,8 @@
   "recipient": "max.levent@clear-er.com",
   "recipient_sha256": "57c1e251d0b9060e9ee4d55fa6d81b26161dbeecd84bfe613c1d8575a63161f8",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-08T18:39:52+00:00",
+  "smtp_message_id": "<179148479216.2285.11231423898207633219@icloud.com>",
+  "status": "sent",
   "subject_sha256": "4ebf0eb1bd39c03346a87f3cba2a3def53244f7033fa4fb214ccbc17330b4aca"
 }
