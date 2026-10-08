@@ -12,6 +12,8 @@
   "recipient": "hrrecruitmenteu@asml.com",
   "recipient_sha256": "10aacf9ae1cc90f7f8b64bdd7fc6d72d5d57f6f904042c22fd5dd7fc62fb82fc",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-08T19:27:21+00:00",
+  "smtp_message_id": "<179148764157.2439.12299629529462441068@icloud.com>",
+  "status": "sent",
   "subject_sha256": "f2cf12ff6ad064e0dd2e1fc7d5c93cf7470c8e0deac1eae160786d8219d1860e"
 }
