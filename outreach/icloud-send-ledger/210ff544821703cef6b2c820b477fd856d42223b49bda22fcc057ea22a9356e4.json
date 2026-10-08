@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "746084ecaea877dc7ce46b24964881cfde48c64bb476e7fdc6e8df06b83af7be",
+  "batch_id": "gcc-executive-recruiters-2026-10-08-b03",
+  "body_sha256": "80254e19c56fd95c944bff8360ba1f72201a142fdb207aaead753734a7c526fe",
+  "created_at": "2026-10-08T20:05:41+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "37836834474",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/2026-10-08-gcc-executive-recruiters-batch-03.json",
+  "payload_sha256": "d5cabc81bb4d2b46580d12a01ac57d59b5ec976f458a9c90182f7ed3b1702eb8",
+  "recipient": "dkenny@cornerstoneglobalpartners.com",
+  "recipient_sha256": "210ff544821703cef6b2c820b477fd856d42223b49bda22fcc057ea22a9356e4",
+  "schema": 1,
+  "status": "pending",
+  "subject_sha256": "f7e550fb215bc434574a8dfbd754c492d050cc9b6a9057beec35cece3d933919"
+}
