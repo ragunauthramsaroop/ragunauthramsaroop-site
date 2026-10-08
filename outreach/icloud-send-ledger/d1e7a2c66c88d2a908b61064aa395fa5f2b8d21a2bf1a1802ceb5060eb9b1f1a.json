@@ -12,6 +12,8 @@
   "recipient": "atif@gr8connect.com",
   "recipient_sha256": "d1e7a2c66c88d2a908b61064aa395fa5f2b8d21a2bf1a1802ceb5060eb9b1f1a",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-08T22:19:10+00:00",
+  "smtp_message_id": "<179149795026.2402.15204043013117509122@icloud.com>",
+  "status": "sent",
   "subject_sha256": "860584565d57cbf557d00dda46ffeeb6884724a5db2c96fb3e4300343b13c19b"
 }
