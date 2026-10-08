@@ -12,6 +12,8 @@
   "recipient": "info@rydequest.com",
   "recipient_sha256": "20f3a221ac5a1679ceb0d642943fe0a25f7bacefcfa243bcceb23fb33acd2e05",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-08T20:24:16+00:00",
+  "smtp_message_id": "<179149105584.2231.2835749754455295868@icloud.com>",
+  "status": "sent",
   "subject_sha256": "eae0c24eba0cfb31093b32058b07f2377e91e88b68f1c37758d7b98d4ca80013"
 }
