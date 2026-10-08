@@ -12,6 +12,8 @@
   "recipient": "h.karaolides@intersearchme.com",
   "recipient_sha256": "2a66bdcbd5881ef12035b9c5f954c4a4029babc3ded7c677d7bf5b96739da0a5",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-08T20:13:13+00:00",
+  "smtp_message_id": "<179149039372.2466.1551220635446574925@icloud.com>",
+  "status": "sent",
   "subject_sha256": "9d9fb61a2b2a071a962e899aecb50afbbcbfffbebc300fb2d2b39669b62635f7"
 }
