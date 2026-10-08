@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "44596273815e9c176bc60a257b033c1eaed86622424ca8ad495c63f24584ae1a",
+  "batch_id": "gcc-executive-search-fresh-2026-10-08-04",
+  "body_sha256": "7c3b2813cb82d2f4d5bded8af9f94f5e82b77f4276ecc58aa9a8c4b9235cb271",
+  "created_at": "2026-10-08T18:16:51+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "37823010991",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/2026-10-08-gcc-executive-search-fresh-04.json",
+  "payload_sha256": "9d1a73c49a88ea4f5ffb3d8e736aa3f28e5e71629b340fc44ea6f21905a88ad4",
+  "recipient": "sami.zouehid@wilton-bain.com",
+  "recipient_sha256": "b0c2c2489a8c2b006a64a14dbec6d350bf491e9d8bf969886df38001ef0c2fac",
+  "schema": 1,
+  "status": "pending",
+  "subject_sha256": "13faed38a10504fb64ffd9c006d1b0feba4d1e2e63214e682825865f068d9efa"
+}
