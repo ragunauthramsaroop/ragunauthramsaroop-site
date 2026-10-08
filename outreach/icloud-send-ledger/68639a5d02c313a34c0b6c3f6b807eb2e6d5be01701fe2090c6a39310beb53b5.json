@@ -12,6 +12,8 @@
   "recipient": "info@linumconsult.com",
   "recipient_sha256": "68639a5d02c313a34c0b6c3f6b807eb2e6d5be01701fe2090c6a39310beb53b5",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-08T17:51:24+00:00",
+  "smtp_message_id": "<179148188453.2412.4188781263865357495@icloud.com>",
+  "status": "sent",
   "subject_sha256": "c72d5995f653b82453c6a77beb1630497012ad509c6918dcf014b16694579f76"
 }
