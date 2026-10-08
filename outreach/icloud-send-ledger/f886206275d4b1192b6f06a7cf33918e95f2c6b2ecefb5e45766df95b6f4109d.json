@@ -12,6 +12,8 @@
   "recipient": "rbainbridge@spencerstuart.com",
   "recipient_sha256": "f886206275d4b1192b6f06a7cf33918e95f2c6b2ecefb5e45766df95b6f4109d",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-08T19:54:18+00:00",
+  "smtp_message_id": "<179148925853.2450.3795131771479194870@icloud.com>",
+  "status": "sent",
   "subject_sha256": "5f3916a476c5b930adf05f934cbd90ac7b2efa3f61b39a2125f5698cdbb7f121"
 }
