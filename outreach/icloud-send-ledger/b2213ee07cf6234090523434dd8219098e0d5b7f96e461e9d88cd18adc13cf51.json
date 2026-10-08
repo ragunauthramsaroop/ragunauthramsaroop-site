@@ -12,6 +12,8 @@
   "recipient": "lusungu.kayela@kestria.com",
   "recipient_sha256": "b2213ee07cf6234090523434dd8219098e0d5b7f96e461e9d88cd18adc13cf51",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-08T21:59:57+00:00",
+  "smtp_message_id": "<179149679743.2210.6942058220592987754@icloud.com>",
+  "status": "sent",
   "subject_sha256": "086d431b12e7b8b35d56519f8ad0b1304641e6de1f4ec041681b59721f5aa349"
 }
