@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "2f38023732b641429b29ba4660762ee4f34228c871d9c96be244fa102705335e",
+  "batch_id": "2026-10-08-kestria-ryan-berrecloth-energy-industrial-direct",
+  "body_sha256": "950286d2c0b07f6c0c31a6ed301a163d2dff71a8b1f6d8cc09daf92a975e8adc",
+  "created_at": "2026-10-08T22:03:56+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "37851031870",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/2026-10-08-kestria-ryan-berrecloth-energy-industrial-direct.json",
+  "payload_sha256": "edc679b049aa5b77da25808279d46e38ac2d4ac0ba134e1835a50922fc9a61a2",
+  "recipient": "ryan.berrecloth@penderhowe.com",
+  "recipient_sha256": "d5104c76eeb5cf95dcc7056d4a51bd9962c0e323cc900acda490e6fea6201834",
+  "schema": 1,
+  "status": "pending",
+  "subject_sha256": "daa4b03dfb0d18ccd6022351f7bb08049fe951e878e462758ac7a772f1f5ee50"
+}
