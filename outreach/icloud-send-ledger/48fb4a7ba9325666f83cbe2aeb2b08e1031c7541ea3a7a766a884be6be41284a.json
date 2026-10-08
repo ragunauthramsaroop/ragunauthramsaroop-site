@@ -12,6 +12,8 @@
   "recipient": "info@markwilliams.ae",
   "recipient_sha256": "48fb4a7ba9325666f83cbe2aeb2b08e1031c7541ea3a7a766a884be6be41284a",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-08T18:58:13+00:00",
+  "smtp_message_id": "<179148589317.2432.4746399519338419824@icloud.com>",
+  "status": "sent",
   "subject_sha256": "7b24bed58af6541596aef42c57263fa0d502d6a531a13f15637aa48731ab45eb"
 }
