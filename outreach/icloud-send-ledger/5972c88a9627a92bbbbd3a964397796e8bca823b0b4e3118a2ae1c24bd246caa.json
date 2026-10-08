@@ -12,6 +12,8 @@
   "recipient": "monicca@hrpartners.com",
   "recipient_sha256": "5972c88a9627a92bbbbd3a964397796e8bca823b0b4e3118a2ae1c24bd246caa",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-08T21:49:56+00:00",
+  "smtp_message_id": "<179149619666.2427.13081335144290864503@icloud.com>",
+  "status": "sent",
   "subject_sha256": "a382cfa0490accf624ccc4bb4014f448f914154c24930f2907b49e8fbba4564b"
 }
