@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "26e5d23f96aa94699f46ac41cb337e8291cc365c95910bc0a53784815ccc9b0b",
+  "batch_id": "2026-10-08-spencer-stuart-ryno-matthee-direct",
+  "body_sha256": "1c82248599bf716cb6df19670c522d715db70a7b3168fa8114d12f59eb5a7f3c",
+  "created_at": "2026-10-08T19:56:39+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "37835696936",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/2026-10-08-spencer-stuart-ryno-matthee-direct.json",
+  "payload_sha256": "b465e9e6486e3bc800b19fbd18e4a06b583a652a97d744ea527dc7d2ce038264",
+  "recipient": "rmatthee@spencerstuart.com",
+  "recipient_sha256": "ddbafc85bc22aee94fe1decdbe8c4b43af2e00b6dcc9d12572723df7ad18b7b9",
+  "schema": 1,
+  "status": "pending",
+  "subject_sha256": "0e241d3ab770c03afe3a473bc240b5401638c3ea48387a19a341ac5428600cf4"
+}
