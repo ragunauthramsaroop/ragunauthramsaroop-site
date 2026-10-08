@@ -12,6 +12,8 @@
   "recipient": "info@highest-talent.sa",
   "recipient_sha256": "9cb5fb9e677d2617706af38ef913c136e3d51f055367125505f66d6f7307f229",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-08T21:46:58+00:00",
+  "smtp_message_id": "<179149601794.2226.13006501116687000919@icloud.com>",
+  "status": "sent",
   "subject_sha256": "177d806b8eeb8c4e5d9b3444aba624fc02d1b32e7482f13bd3bdd2747f019a47"
 }
