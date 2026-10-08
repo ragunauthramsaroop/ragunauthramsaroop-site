@@ -12,6 +12,8 @@
   "recipient": "info@pixelpage.cc",
   "recipient_sha256": "705ef231dc88ee2ae871176998cdd2a6617451d4aa9937dbc02d9d2497f9c4d4",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-08T21:49:16+00:00",
+  "smtp_message_id": "<179149615617.2218.14823627910394503986@icloud.com>",
+  "status": "sent",
   "subject_sha256": "5599b8893a326e07eeb5c08a7ecc1d65029ec12cfb4272438c70cec534154541"
 }
