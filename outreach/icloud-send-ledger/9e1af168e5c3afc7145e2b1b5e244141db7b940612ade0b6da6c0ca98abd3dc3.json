@@ -12,6 +12,8 @@
   "recipient": "support@talentat.org",
   "recipient_sha256": "9e1af168e5c3afc7145e2b1b5e244141db7b940612ade0b6da6c0ca98abd3dc3",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-08T22:35:50+00:00",
+  "smtp_message_id": "<179149895069.2835.8153950404850706729@icloud.com>",
+  "status": "sent",
   "subject_sha256": "f92124579a0bf437684d7b603a93261f7fe6e697a5a36b57f9905f881d79e11d"
 }
