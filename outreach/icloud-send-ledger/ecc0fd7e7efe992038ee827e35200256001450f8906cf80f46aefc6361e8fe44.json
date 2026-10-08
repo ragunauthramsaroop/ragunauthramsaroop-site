@@ -12,6 +12,8 @@
   "recipient": "contact@thexenetwork.com",
   "recipient_sha256": "ecc0fd7e7efe992038ee827e35200256001450f8906cf80f46aefc6361e8fe44",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-08T21:38:23+00:00",
+  "smtp_message_id": "<179149550331.2218.3891626552356333224@icloud.com>",
+  "status": "sent",
   "subject_sha256": "d7c1606f198c162031301f39b6eacc0ce4c0a9793ecda8400a65043a6975987e"
 }
