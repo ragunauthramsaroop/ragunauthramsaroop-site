@@ -12,6 +12,8 @@
   "recipient": "d.rezende@ema-partners.com",
   "recipient_sha256": "117d69a42feb3fbf91d035b540e304890102f716e22a3fc0621e703540ab6be4",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-08T21:55:35+00:00",
+  "smtp_message_id": "<179149653524.2450.9730050592811650635@icloud.com>",
+  "status": "sent",
   "subject_sha256": "8193c4aca762b9ff6f79f3c7e523a682884d9faeb79e4afe5a4feeef993d3073"
 }
