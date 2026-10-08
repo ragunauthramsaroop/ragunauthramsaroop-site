@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "aab6fe09ed8de1446a8e6c0a46a54bab57578bdc35f7c5e388ded98138bb39e7",
+  "batch_id": "gcc-executive-search-fresh-2026-10-08-08",
+  "body_sha256": "0f9973a971e9ba649d19fabaa39cc32556e98a2c2c0f60f9c6b9234f70945f7a",
+  "created_at": "2026-10-08T18:39:53+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "37825965423",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/2026-10-08-gcc-executive-search-fresh-08.json",
+  "payload_sha256": "7af9584ac71e5ab2b119bec237806f6e7d289b6e6a31e64bb28b1c767477a3e2",
+  "recipient": "dubai@emcommodities.com",
+  "recipient_sha256": "66d837ecd298f60fd39e86c094a2a17870d2244f87d280f1a908b4425841f4d6",
+  "schema": 1,
+  "status": "pending",
+  "subject_sha256": "8803f0414e4fe0277ed755707b73497bc69d7e27eb1bed04413a2d464e62ed6c"
+}
