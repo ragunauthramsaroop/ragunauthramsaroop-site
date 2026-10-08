@@ -12,6 +12,8 @@
   "recipient": "resourcing@bov.com",
   "recipient_sha256": "e5d8951765211103d2f4b315f9aa3ae124e270d44b868650ab5c1599dfd935e4",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-08T19:27:01+00:00",
+  "smtp_message_id": "<179148762136.2216.5104832273639076146@icloud.com>",
+  "status": "sent",
   "subject_sha256": "0145ecab0b01824d9799d3853fb2a4b609e2d38d5c90534ced2ec9c518d89057"
 }
