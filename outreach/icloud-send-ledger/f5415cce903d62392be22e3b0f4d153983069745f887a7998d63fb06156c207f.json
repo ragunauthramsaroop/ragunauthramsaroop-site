@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "db17749331d7535afa882ec04ed19fbd2b9d136983c99553a092cbc1a3afc546",
+  "batch_id": "2026-10-08-kestria-katerina-meimaroglou-industrial-energy-direct",
+  "body_sha256": "037965ec4f3380e44a4425ee5a7524de5a56328c53df6db8d7577e2fb4be47dc",
+  "created_at": "2026-10-08T21:48:57+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "37849354690",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/2026-10-08-kestria-katerina-meimaroglou-industrial-energy-direct.json",
+  "payload_sha256": "77306cab80834f8f0708af6e0837cf107136529c1dde70414068c6cd1cfbbd5a",
+  "recipient": "katerina@meihunt.com",
+  "recipient_sha256": "f5415cce903d62392be22e3b0f4d153983069745f887a7998d63fb06156c207f",
+  "schema": 1,
+  "status": "pending",
+  "subject_sha256": "94298913eabb06c5d655aed1f5d3fd1683fa852c210da1f98d7311bde6e5250e"
+}
