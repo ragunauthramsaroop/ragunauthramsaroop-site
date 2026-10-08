@@ -12,6 +12,8 @@
   "recipient": "ritu.lal@amrop.in",
   "recipient_sha256": "9c4402d90b93958874caec79d3ad808b70b14620b098c2ae2133728c99ef5365",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-08T21:44:20+00:00",
+  "smtp_message_id": "<179149586012.2382.16135912543909123175@icloud.com>",
+  "status": "sent",
   "subject_sha256": "8bcfbf484899074484dec35458cc0244cd5e977c4aed7320f2305e3e1a46a0d8"
 }
