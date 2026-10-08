@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "b88133bb7bf79c791b993fcd0d805f147159ecaf385b36fe5d23e3386e10e09b",
+  "batch_id": "2026-10-08-eurobank-resourcing-direct",
+  "body_sha256": "eaea6fc72040594b2b588e161217cba2df14761ec4a2fd8245ff36b952a497d8",
+  "created_at": "2026-10-08T19:20:22+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "37831173490",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/2026-10-08-eurobank-resourcing-direct.json",
+  "payload_sha256": "50aa4c51021c35d73f46bb3d363c710dc459dcf587623afb83fe7b49791657b1",
+  "recipient": "comeonboard@eurobank.gr",
+  "recipient_sha256": "adf3ddc296b98c82f51da2280ff6ea70009ccff6460aa5a7704b24c6bc5cdcb0",
+  "schema": 1,
+  "status": "pending",
+  "subject_sha256": "23bb0c7a80531c9c4fd0c946c6a0d6e9c7c3cabd57ce9bd0c9eccc9220160e4e"
+}
