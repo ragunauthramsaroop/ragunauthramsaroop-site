@@ -1,0 +1,39 @@
+{
+  "audited_at": "2026-10-08T18:27:10+00:00",
+  "mailbox": "Sent Messages",
+  "recipients": [
+    {
+      "match_count": 0,
+      "matches": [],
+      "recipient": "info@madisonpearl.com",
+      "sent_header_match": false
+    },
+    {
+      "match_count": 0,
+      "matches": [],
+      "recipient": "zmarar@zrgpartners.com",
+      "sent_header_match": false
+    },
+    {
+      "match_count": 0,
+      "matches": [],
+      "recipient": "richard@fursa.om",
+      "sent_header_match": false
+    },
+    {
+      "match_count": 0,
+      "matches": [],
+      "recipient": "oman@goodmanmasson.com",
+      "sent_header_match": false
+    },
+    {
+      "match_count": 0,
+      "matches": [],
+      "recipient": "info@objectives.com.sa",
+      "sent_header_match": false
+    }
+  ],
+  "request_file": "outreach/icloud-audit-requests/gcc-fresh-2026-10-08-05.json",
+  "request_id": "gcc-fresh-2026-10-08-05",
+  "schema": 1
+}
