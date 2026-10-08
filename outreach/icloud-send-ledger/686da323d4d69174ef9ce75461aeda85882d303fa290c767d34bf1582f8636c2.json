@@ -12,6 +12,8 @@
   "recipient": "n.saade@human-valoris.com",
   "recipient_sha256": "686da323d4d69174ef9ce75461aeda85882d303fa290c767d34bf1582f8636c2",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-08T20:21:19+00:00",
+  "smtp_message_id": "<179149087861.2454.13099645223143344913@icloud.com>",
+  "status": "sent",
   "subject_sha256": "3245eb8f64ac2a4e3418299bde4a224b2207bb765f4edb703c666643cd212f16"
 }
