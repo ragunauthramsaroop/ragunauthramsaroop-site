@@ -12,6 +12,8 @@
   "recipient": "hello@gbktalentpartners.com",
   "recipient_sha256": "415cbb1df6e0d2b621d6efa1c59a9041c7bb752986b00a552d023340fc45db6b",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-08T20:20:58+00:00",
+  "smtp_message_id": "<179149085812.2447.12933193855887137360@icloud.com>",
+  "status": "sent",
   "subject_sha256": "e019ad17986f6144243e75c2c90800db20080a063fa255c881e323b9f5d46c93"
 }
