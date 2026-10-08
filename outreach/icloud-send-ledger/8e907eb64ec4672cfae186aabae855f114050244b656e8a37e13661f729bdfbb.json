@@ -12,6 +12,8 @@
   "recipient": "theo.gaultier@odgersberndtson.com",
   "recipient_sha256": "8e907eb64ec4672cfae186aabae855f114050244b656e8a37e13661f729bdfbb",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-08T19:57:48+00:00",
+  "smtp_message_id": "<179148946796.2434.8097317162493409629@icloud.com>",
+  "status": "sent",
   "subject_sha256": "07c504fdf4c6a34e4176aff8dfc943a6bd09b7a59b9794b884b8bf3e9868ae00"
 }
