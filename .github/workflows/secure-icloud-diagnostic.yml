@@ -1,0 +1,79 @@
+name: Secure iCloud outreach diagnostic
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'outreach/secure-diagnostics/*.txt'
+
+permissions:
+  contents: read
+
+jobs:
+  diagnose:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    env:
+      ICLOUD_APP_PASSWORD: ${{ secrets.ICLOUD_APP_PASSWORD }}
+    steps:
+      - uses: actions/checkout@v7
+
+      - uses: actions/setup-python@v7
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: python -m pip install --disable-pip-version-check 'reportlab==4.2.5' 'pypdf==6.1.1' cryptography
+
+      - name: Diagnose secure route without sending DATA
+        shell: bash
+        run: |
+          set +e
+          python - <<'PY' > diagnostic.txt 2>&1
+          import os, ssl, smtplib
+          from pathlib import Path
+          import scripts.secure_icloud_send as s
+
+          payload_path = Path('outreach/secure-outbox/recovery-2026-10-08-bounces-01.json')
+          password = os.environ.get('ICLOUD_APP_PASSWORD','').encode()
+          print('credential_present=' + ('yes' if password else 'no'))
+          if not password:
+              raise SystemExit(2)
+
+          private_key = s.unwrap_private(password)
+          print('private_key_unwrap=success')
+          payload = s.decrypt_payload(payload_path, private_key)
+          print('payload_decrypt=success')
+          print('message_count=' + str(len(payload['messages'])))
+
+          if not s.CV_PDF.exists():
+              s.build_cv_pdf(s.CV_SOURCE, s.CV_PDF)
+          print('cv_build=success')
+
+          ctx = ssl.create_default_context()
+          with smtplib.SMTP(s.SMTP_HOST, s.SMTP_PORT, timeout=30) as server:
+              server.ehlo()
+              server.starttls(context=ctx)
+              server.ehlo()
+              server.login(s.SENDER, password.decode())
+              print('smtp_login=success')
+              for idx, item in enumerate(payload['messages'], start=1):
+                  server.rset()
+                  mail_code, _ = server.mail(s.SENDER)
+                  rcpt_code, _ = server.rcpt(item['to'].strip())
+                  print(f'recipient_{idx}_mail_code={mail_code}')
+                  print(f'recipient_{idx}_rcpt_code={rcpt_code}')
+              server.rset()
+          print('diagnostic_complete=success')
+          PY
+          code=$?
+          echo "diagnostic_exit=$code" >> diagnostic.txt
+          exit 0
+
+      - name: Upload diagnostic
+        uses: actions/upload-artifact@v4
+        with:
+          name: secure-outreach-diagnostic
+          path: diagnostic.txt
+          retention-days: 1
