@@ -95,15 +95,21 @@ def exclude_existing_sent(candidates, sender: str, password: str):
 
 def send_one(server: smtplib.SMTP, sender: str, payload_path: str, candidate):
     to, subject, body, raw_bytes, batch_id = candidate
-    claim = claim_recipient(
-        recipient=to,
-        payload_path=payload_path,
-        payload_bytes=raw_bytes,
-        attachment=b"",
-        subject=subject,
-        body=body,
-        batch_id=batch_id,
-    )
+    try:
+        claim = claim_recipient(
+            recipient=to,
+            payload_path=payload_path,
+            payload_bytes=raw_bytes,
+            attachment=b"",
+            subject=subject,
+            body=body,
+            batch_id=batch_id,
+        )
+    except RuntimeError as exc:
+        if "DUPLICATE BLOCK" in str(exc):
+            print(f"Skipped ledger duplicate: {to}; {exc}")
+            return "skipped"
+        raise
 
     msg = EmailMessage()
     msg["From"] = formataddr((SENDER_NAME, sender))
@@ -120,6 +126,7 @@ def send_one(server: smtplib.SMTP, sender: str, payload_path: str, candidate):
 
     print(f"Sent text-only iCloud recovery outreach to {to}; Message-ID {message_id}")
     mark_sent(claim, message_id)
+    return "sent"
 
 
 def main():
@@ -143,6 +150,7 @@ def main():
         print("All recovery recipients were already present in iCloud Sent. No email was sent.")
         return
 
+    failures = []
     context = ssl.create_default_context()
     with smtplib.SMTP(SMTP_HOST, SMTP_PORT, timeout=30) as server:
         server.ehlo()
@@ -150,7 +158,16 @@ def main():
         server.ehlo()
         server.login(sender, password)
         for candidate in candidates:
-            send_one(server, sender, str(payload_path), candidate)
+            to = candidate[0]
+            try:
+                send_one(server, sender, str(payload_path), candidate)
+            except Exception as exc:
+                failures.append((to, str(exc)))
+                print(f"Recovery send failed for {to}: {exc}", file=sys.stderr)
+
+    if failures:
+        joined = "; ".join(f"{to}: {err}" for to, err in failures)
+        raise RuntimeError(f"One or more recovery sends failed after remaining recipients were processed: {joined}")
 
 
 if __name__ == "__main__":
