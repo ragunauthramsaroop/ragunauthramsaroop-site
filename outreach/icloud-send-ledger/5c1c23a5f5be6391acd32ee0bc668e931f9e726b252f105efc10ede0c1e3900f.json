@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "4fdecc3f7230b1e843b8c8e60b245b1871a2462064d2ce7043ec26dd1821bafd",
+  "batch_id": "2026-10-08-odgers-aaron-ashton-gcc-direct",
+  "body_sha256": "965ac586be37a4ba9cc160c2bab834f1b24b300909d84d23126b43fad6f7ae6f",
+  "created_at": "2026-10-08T20:02:31+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "37836434160",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/2026-10-08-odgers-aaron-ashton-gcc-direct.json",
+  "payload_sha256": "74ac1038fc47bdce32514f1741b47b47262e3111da6a033336471fed3ca69754",
+  "recipient": "aaron.ashton@odgers.com",
+  "recipient_sha256": "5c1c23a5f5be6391acd32ee0bc668e931f9e726b252f105efc10ede0c1e3900f",
+  "schema": 1,
+  "status": "pending",
+  "subject_sha256": "97b8b8fec3bce92e0430dc2a60e43c74daab7a58d98bb457f64f560d2db6c928"
+}
