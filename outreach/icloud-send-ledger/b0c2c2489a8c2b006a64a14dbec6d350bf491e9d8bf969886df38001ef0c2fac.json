@@ -12,6 +12,8 @@
   "recipient": "sami.zouehid@wilton-bain.com",
   "recipient_sha256": "b0c2c2489a8c2b006a64a14dbec6d350bf491e9d8bf969886df38001ef0c2fac",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-08T18:16:53+00:00",
+  "smtp_message_id": "<179148341310.2213.15995688467902632246@icloud.com>",
+  "status": "sent",
   "subject_sha256": "13faed38a10504fb64ffd9c006d1b0feba4d1e2e63214e682825865f068d9efa"
 }
