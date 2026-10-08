@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "6e41d1443a1eca67f4faaf953498555e09ef3cb8e3fd579eecaf2af772744eae",
+  "batch_id": "2026-10-08-ema-sanjeev-das-energy-natural-resources-direct",
+  "body_sha256": "3b012274fe9ab00b75fe1b02b224f05af89c209b3dd79320c7b611ffd35693e0",
+  "created_at": "2026-10-08T21:54:44+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "37849995077",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/2026-10-08-ema-sanjeev-das-energy-natural-resources-direct.json",
+  "payload_sha256": "9caa8e33a8ee5ed184494679c931cb5219e3507a0d5a3e256b13a38a3585bc49",
+  "recipient": "s.das@ema-partners.com",
+  "recipient_sha256": "d81cf4f26b8c887e9a704dc2733a30a284b7ba3b6ff06122c8663a1f0219e899",
+  "schema": 1,
+  "status": "pending",
+  "subject_sha256": "3dbb9fb779a26828dc243d9be0f347f5bf953d539ff6fefb5959627f0c5caf2d"
+}
