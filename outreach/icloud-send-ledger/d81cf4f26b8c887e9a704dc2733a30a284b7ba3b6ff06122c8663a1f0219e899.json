@@ -12,6 +12,8 @@
   "recipient": "s.das@ema-partners.com",
   "recipient_sha256": "d81cf4f26b8c887e9a704dc2733a30a284b7ba3b6ff06122c8663a1f0219e899",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-08T21:54:46+00:00",
+  "smtp_message_id": "<179149648604.2445.15979332847561495543@icloud.com>",
+  "status": "sent",
   "subject_sha256": "3dbb9fb779a26828dc243d9be0f347f5bf953d539ff6fefb5959627f0c5caf2d"
 }
