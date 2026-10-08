@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "0b5e58b454e0e62d9869e7c7a4172a583ded57cf8cc6aac792401bb71d7ec845",
+  "batch_id": "gcc-executive-search-fresh-2026-10-08-05",
+  "body_sha256": "565080ec7cf515ce1a2e399abd08f4128e9252728e7b2021a18a43f6e9772856",
+  "created_at": "2026-10-08T18:28:22+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "37824497432",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/2026-10-08-gcc-executive-search-fresh-05.json",
+  "payload_sha256": "71617cd318438c9a7433e0c4c6aeef46781999c87a4c38fe171245b1de2b7c95",
+  "recipient": "richard@fursa.om",
+  "recipient_sha256": "2d7cb0a880317562c877fad490c9968d1d982be30e8959a93f2f7ab2c984ad5c",
+  "schema": 1,
+  "status": "pending",
+  "subject_sha256": "e6671907aa5d810071304750598dbc129f793bab5130b5ac13bef7fd036032a5"
+}
