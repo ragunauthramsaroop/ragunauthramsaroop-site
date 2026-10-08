@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "2f807add8e3c3868cb036926a29cebd6638cbcbb58e4fefca97a85c16e4e2c4a",
+  "batch_id": "2026-10-08-stanton-chase-wassim-karkabi-dubai-direct",
+  "body_sha256": "a6e74234ba34f20694d43207f37f4aaa037f14db09382714b81612e9467411d0",
+  "created_at": "2026-10-08T22:05:48+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "37851237041",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/2026-10-08-stanton-chase-wassim-karkabi-dubai-direct.json",
+  "payload_sha256": "96ba83b8d0b4b46341c00d6b2f71ca2b9c024fa46462097c2a389ac6a52d6095",
+  "recipient": "w.karkabi@stantonchase.com",
+  "recipient_sha256": "bd0c3cf0319a0f73c158910fd1cc20bb1952d91c5f19f943975235cb86a44715",
+  "schema": 1,
+  "status": "pending",
+  "subject_sha256": "d217309e074b181d2413d3ac2d377a1dc84239409ef166bf5815c8d6c68959a3"
+}
