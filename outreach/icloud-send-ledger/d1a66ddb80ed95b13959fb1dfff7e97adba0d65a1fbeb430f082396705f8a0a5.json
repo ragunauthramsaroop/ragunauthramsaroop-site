@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "e0cda38aaebcad670629739cab708e7c2f4aaace3face8376d998899310fd876",
+  "batch_id": "2026-10-08-stanton-chase-peter-lawson-industrial-direct",
+  "body_sha256": "d55e5e0d78358bdb631d2ce43e7cbd8432fd6f095377cbf4835948e35dd61a5a",
+  "created_at": "2026-10-08T22:07:30+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "37851424046",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/2026-10-08-stanton-chase-peter-lawson-industrial-direct.json",
+  "payload_sha256": "af3378384bba932d13a223fb65576b9e88432b721beb3b1861c74793ff79c627",
+  "recipient": "p.lawson@stantonchase.com",
+  "recipient_sha256": "d1a66ddb80ed95b13959fb1dfff7e97adba0d65a1fbeb430f082396705f8a0a5",
+  "schema": 1,
+  "status": "pending",
+  "subject_sha256": "04178e17fffb2ebd5ee006e91d7928c6f5c6bc76686a9e311444a7e607d684b4"
+}
