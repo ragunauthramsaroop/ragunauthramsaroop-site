@@ -12,6 +12,8 @@
   "recipient": "comeonboard@eurobank.gr",
   "recipient_sha256": "adf3ddc296b98c82f51da2280ff6ea70009ccff6460aa5a7704b24c6bc5cdcb0",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-08T19:20:24+00:00",
+  "smtp_message_id": "<179148722395.2226.9865571300663751184@icloud.com>",
+  "status": "sent",
   "subject_sha256": "23bb0c7a80531c9c4fd0c946c6a0d6e9c7c3cabd57ce9bd0c9eccc9220160e4e"
 }
