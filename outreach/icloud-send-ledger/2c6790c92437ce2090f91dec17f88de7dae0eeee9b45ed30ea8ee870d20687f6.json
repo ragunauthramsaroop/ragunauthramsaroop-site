@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "9abc2ce61482f4f5b31fb6a6385a9adcc103b4a5761c41acae4a05bb76f1018f",
+  "batch_id": "2026-10-08-spencer-stuart-seb-stoove-direct",
+  "body_sha256": "94a1713f56b3504b7b89c3358d1a3f0f447a1671881c9808efeb89386b63b6e8",
+  "created_at": "2026-10-08T19:54:56+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "37835475728",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/2026-10-08-spencer-stuart-seb-stoove-direct.json",
+  "payload_sha256": "e92d26aa98dc6e08d708f9b4f79d092975759659a386f63a0cb4783fc6a9e756",
+  "recipient": "sstoove@spencerstuart.com",
+  "recipient_sha256": "2c6790c92437ce2090f91dec17f88de7dae0eeee9b45ed30ea8ee870d20687f6",
+  "schema": 1,
+  "status": "pending",
+  "subject_sha256": "6f6701999fd6102f5e1637c22dc92c6d272c4223f281ec6bfa08d97d388039d1"
+}
