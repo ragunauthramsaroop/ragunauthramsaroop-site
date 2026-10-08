@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "3060c0915b6f43b4a4e979d08dd5c0fd4d8c88d942e5b39a083a5bdb71df0e2f",
+  "batch_id": "2026-10-08-kestria-jens-hagedorn-industrial-energy-direct",
+  "body_sha256": "f4b00a265936c5e006bf7e2f30923d6d22d7a472ca679a34e9c085d4d2d6c585",
+  "created_at": "2026-10-08T21:58:56+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "37850473928",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/2026-10-08-kestria-jens-hagedorn-industrial-energy-direct.json",
+  "payload_sha256": "d9f6f6f3ed0611e8990f1cef2e2b36ffcfc7cb770d5d2940776a1a9739a19b87",
+  "recipient": "jens.hagedorn@ptalent.com",
+  "recipient_sha256": "04ed7d1cbff2a39b8aea930a43fdda99d34cd46eb057b7caf2ab1e1767300de0",
+  "schema": 1,
+  "status": "pending",
+  "subject_sha256": "e022696e86ba20639d3a9d2b31d24a5f82ab3fcbf937e6d0e3c9047766373954"
+}
