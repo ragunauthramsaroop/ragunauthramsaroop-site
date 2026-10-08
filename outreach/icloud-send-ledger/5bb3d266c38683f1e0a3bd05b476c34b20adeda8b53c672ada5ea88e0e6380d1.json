@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "7b25ff8bfea8fa547d26dbe84cac1757ed814d6a8046ca778b02263698b1003f",
+  "batch_id": "gcc-executive-recruiters-2026-10-08-b06",
+  "body_sha256": "272bae054b3e97143de3a588df620a57e9a158dcbd05ec5bb055d5e8a1725e25",
+  "created_at": "2026-10-08T20:17:50+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "37838295342",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/2026-10-08-gcc-executive-recruiters-batch-06.json",
+  "payload_sha256": "b6f8a221391a8f71fe47084adc887b92b1aef8cdc68e6325006844d43d9d7471",
+  "recipient": "info@talentat.org",
+  "recipient_sha256": "5bb3d266c38683f1e0a3bd05b476c34b20adeda8b53c672ada5ea88e0e6380d1",
+  "schema": 1,
+  "status": "pending",
+  "subject_sha256": "9f5cadac366326449b70e35d2158e97270e578ba9a0f41995ee410574708cc7d"
+}
