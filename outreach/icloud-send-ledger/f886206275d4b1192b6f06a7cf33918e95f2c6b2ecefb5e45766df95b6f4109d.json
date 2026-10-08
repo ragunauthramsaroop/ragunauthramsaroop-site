@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "4fb29a88d7add7a759a68ae793c0ba5a43470d2b689906ac7b6a66bae3b3a8ac",
+  "batch_id": "2026-10-08-spencer-stuart-rowen-bainbridge-direct",
+  "body_sha256": "a83cb84a45be53f3f591d21980362bbef7ab53fbaa665a4c529a61bd0baab36a",
+  "created_at": "2026-10-08T19:54:17+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "37835405042",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/2026-10-08-spencer-stuart-rowen-bainbridge-direct.json",
+  "payload_sha256": "b708a5b5eb9f4bcbb162ed15ed1c289cae0641acdc379d59e8d692566e3e55bb",
+  "recipient": "rbainbridge@spencerstuart.com",
+  "recipient_sha256": "f886206275d4b1192b6f06a7cf33918e95f2c6b2ecefb5e45766df95b6f4109d",
+  "schema": 1,
+  "status": "pending",
+  "subject_sha256": "5f3916a476c5b930adf05f934cbd90ac7b2efa3f61b39a2125f5698cdbb7f121"
+}
