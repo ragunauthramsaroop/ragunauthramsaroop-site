@@ -12,6 +12,8 @@
   "recipient": "matthew.donovan@mrgglobal.com",
   "recipient_sha256": "51ee8b8d08b83a3833731dfac21d2853ebc6f6683b73a837006a6f89bae4eac9",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-08T17:48:54+00:00",
+  "smtp_message_id": "<179148173450.2222.1803920865566232156@icloud.com>",
+  "status": "sent",
   "subject_sha256": "31fe4c1976d11a6661836932b563a4258a2de2c380bc7ade5624253a2dd81cc1"
 }
