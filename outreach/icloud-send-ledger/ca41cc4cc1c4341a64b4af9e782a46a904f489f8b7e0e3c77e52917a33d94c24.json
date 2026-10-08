@@ -12,6 +12,8 @@
   "recipient": "i.singh@progressivege.com",
   "recipient_sha256": "ca41cc4cc1c4341a64b4af9e782a46a904f489f8b7e0e3c77e52917a33d94c24",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-08T20:33:31+00:00",
+  "smtp_message_id": "<179149161165.2437.4566213187328098435@icloud.com>",
+  "status": "sent",
   "subject_sha256": "d1f9c413fbe0ef62ee422b936c684590465ae02bc798e9ac1c3e73d92200735d"
 }
