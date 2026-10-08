@@ -12,6 +12,8 @@
   "recipient": "richard@fursa.om",
   "recipient_sha256": "2d7cb0a880317562c877fad490c9968d1d982be30e8959a93f2f7ab2c984ad5c",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-08T18:28:24+00:00",
+  "smtp_message_id": "<179148410416.2227.16683820278967054233@icloud.com>",
+  "status": "sent",
   "subject_sha256": "e6671907aa5d810071304750598dbc129f793bab5130b5ac13bef7fd036032a5"
 }
