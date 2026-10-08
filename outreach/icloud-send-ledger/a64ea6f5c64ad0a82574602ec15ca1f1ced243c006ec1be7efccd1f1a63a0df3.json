@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "1863c19f85fd918f3fe120d15ab5acf4d67a7f03aa38e2606bb6821b48d6adcb",
+  "batch_id": "2026-10-08-aselsan-middle-east-careers-direct",
+  "body_sha256": "34a84afe13735974e6c458a85aa579cd085ac540576f0d24323814a463b3fbaa",
+  "created_at": "2026-10-08T19:36:33+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "37833188836",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/2026-10-08-aselsan-middle-east-careers-direct.json",
+  "payload_sha256": "d656e787bd62aa18c2ee6525eaabec6e2f0ddf84ecc46711dde8d0ff12ea0b90",
+  "recipient": "careers@aselsanmiddleeast.com",
+  "recipient_sha256": "a64ea6f5c64ad0a82574602ec15ca1f1ced243c006ec1be7efccd1f1a63a0df3",
+  "schema": 1,
+  "status": "pending",
+  "subject_sha256": "fefafe01fcb2a560cc927864437b0ea56da84d7bb609b4e0ec8143de9ced0864"
+}
