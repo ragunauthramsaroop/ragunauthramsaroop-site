@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "a74bcf9ebc4feaa4a28a18a1905f62516c92655388f089f66393f5d9a6edaffd",
+  "batch_id": "2026-10-08-transearch-sangeeta-lal-mining-energy-direct",
+  "body_sha256": "9d68b5137ee12eee8ed1e11dfab91603811350d1275dbe3755efd4b251e7ede1",
+  "created_at": "2026-10-08T20:23:21+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "37839039164",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/2026-10-08-transearch-sangeeta-lal-mining-energy-direct.json",
+  "payload_sha256": "3dc8450085ba3193cc9c0340957c3f1ed6c6764f4c1a0d8fcdae0b2d4897b85b",
+  "recipient": "sangeeta.lal@transearch.com",
+  "recipient_sha256": "5fb2340c00d678b423b098c07ed378b235f392d46b3a7305039a3e6c6aca68a0",
+  "schema": 1,
+  "status": "pending",
+  "subject_sha256": "537c95515c93f1a0f70f39b58f22f8a9f9432fd2fad07e19ce308ef740ffe250"
+}
