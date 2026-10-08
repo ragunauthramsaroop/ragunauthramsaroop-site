@@ -12,6 +12,8 @@
   "recipient": "oliver.ansdell@pangea-resourcing.com",
   "recipient_sha256": "517f54c248836288e47fde7120c1eaa578c33348c18d49b81c431b904c36871f",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-08T20:45:22+00:00",
+  "smtp_message_id": "<179149232181.2521.16463888436884625241@icloud.com>",
+  "status": "sent",
   "subject_sha256": "a1a8ebc700f5a61264088cb80b072587d0c43589b28e9d270928f43dd33d8346"
 }
