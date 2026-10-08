@@ -12,6 +12,8 @@
   "recipient": "careers@aselsanmiddleeast.com",
   "recipient_sha256": "a64ea6f5c64ad0a82574602ec15ca1f1ced243c006ec1be7efccd1f1a63a0df3",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-08T19:36:35+00:00",
+  "smtp_message_id": "<179148819473.2444.8261944596123295471@icloud.com>",
+  "status": "sent",
   "subject_sha256": "fefafe01fcb2a560cc927864437b0ea56da84d7bb609b4e0ec8143de9ced0864"
 }
