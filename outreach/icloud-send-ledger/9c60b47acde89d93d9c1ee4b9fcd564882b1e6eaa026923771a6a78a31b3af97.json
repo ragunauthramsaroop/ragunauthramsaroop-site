@@ -12,6 +12,8 @@
   "recipient": "secretariat.general@hidroelectrica.ro",
   "recipient_sha256": "9c60b47acde89d93d9c1ee4b9fcd564882b1e6eaa026923771a6a78a31b3af97",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-08T22:35:35+00:00",
+  "smtp_message_id": "<179149893546.2426.9954349956492131068@icloud.com>",
+  "status": "sent",
   "subject_sha256": "00ef454c9bbebd0f9a41f9cb1895c65654856c63a1c3448ea75bfbece6a939ef"
 }
