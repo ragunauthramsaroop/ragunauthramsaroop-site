@@ -12,6 +12,8 @@
   "recipient": "saudi@peoplegroup.com",
   "recipient_sha256": "f8f866595b724ce6829ac56fd1b7e98faa458473e24e40e1c38008a45a960a82",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-08T21:38:26+00:00",
+  "smtp_message_id": "<179149550589.2218.2068954984867899000@icloud.com>",
+  "status": "sent",
   "subject_sha256": "d2d209600878a5d7be2c059ee642a5b3dc7a347268c71da26a8c19f82fde0479"
 }
