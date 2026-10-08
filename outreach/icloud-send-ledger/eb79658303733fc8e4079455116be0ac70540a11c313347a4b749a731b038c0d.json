@@ -12,6 +12,8 @@
   "recipient": "raed.kanaan@egonzehnder.com",
   "recipient_sha256": "eb79658303733fc8e4079455116be0ac70540a11c313347a4b749a731b038c0d",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-08T19:46:43+00:00",
+  "smtp_message_id": "<179148880359.2452.16275161987577344488@icloud.com>",
+  "status": "sent",
   "subject_sha256": "9b1a6745916254ada37f0488d5a2500b5e267b325b04efb2817927c553b449b5"
 }
