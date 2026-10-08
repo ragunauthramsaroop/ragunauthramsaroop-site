@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "0bf01e26d2cc790ddbae6c0235ddb546144afa36a4b1fc2020ddffc80b60474b",
+  "batch_id": "2026-10-08-spencer-stuart-marco-giusti-direct",
+  "body_sha256": "149361f66ffdb24a62a4e455104b7fab2d29b1fa9eb4fdff356fad31e6e37291",
+  "created_at": "2026-10-08T19:55:29+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "37835549769",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/2026-10-08-spencer-stuart-marco-giusti-direct.json",
+  "payload_sha256": "895725ac6c32c789e3548e402c111187b79ed3eb5d41bc37fe6e1b4e9640a525",
+  "recipient": "mgiusti@spencerstuart.com",
+  "recipient_sha256": "debaf9f27f1cfb1b4e9ca95056891f7755552e311a0d55ca84867544fc95db39",
+  "schema": 1,
+  "status": "pending",
+  "subject_sha256": "8ee02d7ab800014980a9e5e1da0c0f9e0887643d1c1ad8a752b530278fe48902"
+}
