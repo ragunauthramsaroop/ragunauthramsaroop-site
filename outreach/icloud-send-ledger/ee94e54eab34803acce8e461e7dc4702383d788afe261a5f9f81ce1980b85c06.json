@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "664b191f2fa83d74c54abead955cca5eb247be46af9848a019e4f0942ccde712",
+  "batch_id": "2026-10-07-gcc-bounce-recovery-04-seekers",
+  "body_sha256": "a0b0a7f92054418851e225371590820d1c3e22182fc98f9177b9aedb5a175d1e",
+  "created_at": "2026-10-08T02:19:54+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "37717314313",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/2026-10-07-seekers-find.full.json",
+  "payload_sha256": "264ed08075b05b91f4cf34046b9654ca3e7bb3b55086cd5a7dc5ead6df6ee7ad",
+  "recipient": "find@seekersgulf.com",
+  "recipient_sha256": "ee94e54eab34803acce8e461e7dc4702383d788afe261a5f9f81ce1980b85c06",
+  "schema": 1,
+  "status": "pending",
+  "subject_sha256": "e2428ea961bbc25eb6c2d55fbb2de3b67c362f83778acecdc86b53d307acfae0"
+}
