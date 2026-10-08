@@ -12,6 +12,8 @@
   "recipient": "recruitment@edp.com",
   "recipient_sha256": "094fe4d84de790d8df97ae62cec3a74edd3294d4c51a787dc6c5a5dfcc906794",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-08T19:17:47+00:00",
+  "smtp_message_id": "<179148706695.2223.13116137596654957791@icloud.com>",
+  "status": "sent",
   "subject_sha256": "30cc8fac8ceaaf6b7ed554385f6057ff802e3cf40e82486e0fd92cc8ead1d79d"
 }
