@@ -12,6 +12,8 @@
   "recipient": "info@madisonpearl.com",
   "recipient_sha256": "cc2a0d9e0d7175b7921331e6a81239896aba2f3653c13da24bcfaab6e5be2bfe",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-08T18:28:18+00:00",
+  "smtp_message_id": "<179148409796.2227.4424119670419188280@icloud.com>",
+  "status": "sent",
   "subject_sha256": "faffa1e8f80e5ca57e4548f3e324a45f7a05f508f0d321c1fcd50a3e32e47504"
 }
