@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "41d6de1ee44e84aa8cc4f03f4a8882011f96cf873b596feef2b1f712e9bae720",
+  "batch_id": "2026-10-08-amrop-aiga-arste-baltics-direct",
+  "body_sha256": "f45652c33ca08715133d0d0367a9142c32a9f92ec8874649c954dd5bcfc8787b",
+  "created_at": "2026-10-08T19:41:10+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "37833767828",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/2026-10-08-amrop-aiga-arste-baltics-direct.json",
+  "payload_sha256": "8490dee8ec332e04494a6ca5277d458630926d8dbc49889d8c20d271c0795436",
+  "recipient": "aiga.arste@amrop.com",
+  "recipient_sha256": "4af324d9171e32111d24f6c15acbf02b0efb816113052240bde5553a23e935e9",
+  "schema": 1,
+  "status": "pending",
+  "subject_sha256": "59cbb13b4112def704e2a8248811dd8a7332362101c91ac7c4c9f6aa4bb2af9b"
+}
