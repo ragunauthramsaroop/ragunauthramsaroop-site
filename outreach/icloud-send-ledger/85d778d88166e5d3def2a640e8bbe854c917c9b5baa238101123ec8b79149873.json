@@ -12,6 +12,8 @@
   "recipient": "b.yamada@ema-partners.com",
   "recipient_sha256": "85d778d88166e5d3def2a640e8bbe854c917c9b5baa238101123ec8b79149873",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-08T21:58:14+00:00",
+  "smtp_message_id": "<179149669429.2432.10833268870640263005@icloud.com>",
+  "status": "sent",
   "subject_sha256": "eec6bfe8ddeb0fee5aa876f96b106e09ef483b9494bb0e2b49ec224cf24096a0"
 }
