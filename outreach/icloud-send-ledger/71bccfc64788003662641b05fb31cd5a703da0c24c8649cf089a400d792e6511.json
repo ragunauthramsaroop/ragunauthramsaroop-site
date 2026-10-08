@@ -12,6 +12,8 @@
   "recipient": "zeeshan.mehtab@cclglobal.com",
   "recipient_sha256": "71bccfc64788003662641b05fb31cd5a703da0c24c8649cf089a400d792e6511",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-08T20:19:10+00:00",
+  "smtp_message_id": "<179149075041.2428.4944439274323968531@icloud.com>",
+  "status": "sent",
   "subject_sha256": "920ccf39ecedc16c6cd7ffb855e5041b77815170a384cb545349b4a652e64482"
 }
