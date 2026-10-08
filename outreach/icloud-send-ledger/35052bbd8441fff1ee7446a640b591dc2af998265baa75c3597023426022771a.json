@@ -12,6 +12,8 @@
   "recipient": "info@sterlingbell.com",
   "recipient_sha256": "35052bbd8441fff1ee7446a640b591dc2af998265baa75c3597023426022771a",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-08T20:44:14+00:00",
+  "smtp_message_id": "<179149225440.2422.3588490367543437493@icloud.com>",
+  "status": "sent",
   "subject_sha256": "72de3626e2f7ca46a8cf39a9c75a4adf07a3dc0e0e47b8558eee219405b08166"
 }
