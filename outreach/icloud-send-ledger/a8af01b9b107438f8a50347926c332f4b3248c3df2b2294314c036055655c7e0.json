@@ -12,6 +12,8 @@
   "recipient": "dawn.gulanes@keplersearch.com",
   "recipient_sha256": "a8af01b9b107438f8a50347926c332f4b3248c3df2b2294314c036055655c7e0",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-08T20:33:28+00:00",
+  "smtp_message_id": "<179149160832.2437.1061610649099072718@icloud.com>",
+  "status": "sent",
   "subject_sha256": "794d258e68a469282588a1ce28bece6319cc61e8f7b6e994de99d5fe94691208"
 }
