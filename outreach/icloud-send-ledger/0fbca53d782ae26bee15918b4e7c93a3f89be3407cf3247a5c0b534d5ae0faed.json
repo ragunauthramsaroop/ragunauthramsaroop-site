@@ -12,6 +12,8 @@
   "recipient": "info@leadersscout.com",
   "recipient_sha256": "0fbca53d782ae26bee15918b4e7c93a3f89be3407cf3247a5c0b534d5ae0faed",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-08T21:38:34+00:00",
+  "smtp_message_id": "<179149551400.2218.3990106947440865502@icloud.com>",
+  "status": "sent",
   "subject_sha256": "e7d4217573f8325af31f5361705e508e236d9cf40356d9d7be339da8e4eff6ac"
 }
