@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Single guarded SMTP route for standard, batch, and secure iCloud outreach."""
 
+import imaplib
 import json
 import os
 import smtplib
@@ -10,6 +11,7 @@ from email.message import EmailMessage
 from email.utils import formataddr, make_msgid
 from pathlib import Path
 
+from audit_icloud_sent import IMAP_HOST, IMAP_PORT, find_sent_mailbox, search_recipient
 from icloud_send_ledger import claim_recipient, mark_sent
 from send_icloud_batch import attachment_for
 from send_icloud_smtp import CV_SOURCE, build_cv_pdf, load_payload
@@ -111,6 +113,39 @@ def load_candidates(payload_path: Path, password: str):
     return normalized
 
 
+def exclude_existing_icloud_sent(candidates, sender: str, password: str):
+    """Block any recipient already present in the iCloud Sent mailbox."""
+    conn = imaplib.IMAP4_SSL(IMAP_HOST, IMAP_PORT)
+    try:
+        conn.login(sender, password)
+        sent_box = find_sent_mailbox(conn)
+        status, _ = conn.select(f'"{sent_box}"', readonly=True)
+        if status != "OK":
+            status, _ = conn.select(sent_box, readonly=True)
+        if status != "OK":
+            raise RuntimeError(f"Unable to select Sent mailbox {sent_box!r}.")
+
+        fresh = []
+        for candidate in candidates:
+            to = candidate[3].lower()
+            matches = search_recipient(conn, to)
+            if matches:
+                print(f"Blocked duplicate recipient already present in iCloud Sent: {to}; matches={len(matches)}")
+                continue
+            print(f"iCloud Sent preflight clear: {to}")
+            fresh.append(candidate)
+        return fresh
+    finally:
+        try:
+            conn.close()
+        except Exception:
+            pass
+        try:
+            conn.logout()
+        except Exception:
+            pass
+
+
 def send_guarded(server: smtplib.SMTP, sender: str, candidate) -> None:
     raw, raw_bytes, batch_id, to, subject, body, attachment, filename = candidate
     claim = claim_recipient(
@@ -156,6 +191,11 @@ def main() -> None:
 
     candidates = load_candidates(payload_path, password)
     if not candidates:
+        return
+
+    candidates = exclude_existing_icloud_sent(candidates, sender, password)
+    if not candidates:
+        print("All recipients were already present in iCloud Sent. No email was sent.")
         return
 
     context = ssl.create_default_context()
