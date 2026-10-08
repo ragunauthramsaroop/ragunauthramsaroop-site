@@ -12,6 +12,8 @@
   "recipient": "ideasbureau@ib-bi.com",
   "recipient_sha256": "393afa6e3f41998fa76e85c3688fc0f527c33db60a4fb8095cf9d585f4beac13",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-08T21:38:28+00:00",
+  "smtp_message_id": "<179149550870.2218.13387657271273935825@icloud.com>",
+  "status": "sent",
   "subject_sha256": "b0e9cea40a761d0b5dfaf45d9eb996cc9dfaccb225306e5bac4c0c7e641ad9c6"
 }
