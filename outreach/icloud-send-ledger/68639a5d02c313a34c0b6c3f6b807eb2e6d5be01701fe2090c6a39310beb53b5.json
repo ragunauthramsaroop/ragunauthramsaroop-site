@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "18605861cbd7b4cfc9ebfc7b2508fed8432b59816fd0e24c54dac09ea0980e63",
+  "batch_id": "gcc-executive-recruiters-2026-10-08-b02",
+  "body_sha256": "6ec8249e9d800f4af36e671a9c1342efa080ab75a954bcfeb2e3706c60e3b4eb",
+  "created_at": "2026-10-08T17:51:23+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "37819745565",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/2026-10-08-gcc-executive-recruiters-batch-02.json",
+  "payload_sha256": "f3a1e2e88f04f1602ff2eee8caae9b4f4e18cc392e8b89de932c92979185008e",
+  "recipient": "info@linumconsult.com",
+  "recipient_sha256": "68639a5d02c313a34c0b6c3f6b807eb2e6d5be01701fe2090c6a39310beb53b5",
+  "schema": 1,
+  "status": "pending",
+  "subject_sha256": "c72d5995f653b82453c6a77beb1630497012ad509c6918dcf014b16694579f76"
+}
