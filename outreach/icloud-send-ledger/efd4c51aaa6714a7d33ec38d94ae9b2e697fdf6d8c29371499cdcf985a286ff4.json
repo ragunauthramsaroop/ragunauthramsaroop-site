@@ -12,6 +12,8 @@
   "recipient": "sandy.khara@talent-international.co.uk",
   "recipient_sha256": "efd4c51aaa6714a7d33ec38d94ae9b2e697fdf6d8c29371499cdcf985a286ff4",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-08T20:36:53+00:00",
+  "smtp_message_id": "<179149181322.2221.9491981757171439995@icloud.com>",
+  "status": "sent",
   "subject_sha256": "53199ae84f5fd738637c06b492c449530a5828546c1dea38828d43f15b17801a"
 }
