@@ -12,6 +12,8 @@
   "recipient": "oman@goodmanmasson.com",
   "recipient_sha256": "5bdbbae26b0f88ed1f6bffe7b7e22cd2e39484713428daf7cde7614096d0aece",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-08T18:28:27+00:00",
+  "smtp_message_id": "<179148410685.2227.18297671449429492586@icloud.com>",
+  "status": "sent",
   "subject_sha256": "6e905d497ecfc738ee47cffe694be9269735f808a0bb604506e8cd94e71dea7c"
 }
