@@ -12,6 +12,8 @@
   "recipient": "raniaabdalla@aspire-hr.com",
   "recipient_sha256": "0d110fda2ddedbde21f33756de206a14380a7e4ee112cb229d79a3c94b53441a",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-08T17:49:02+00:00",
+  "smtp_message_id": "<179148174243.2222.6188513016627435265@icloud.com>",
+  "status": "sent",
   "subject_sha256": "812fe708218ff2c529cb25b2d4c201b48f2d8b90e8bc2d05e593572f176b8638"
 }
