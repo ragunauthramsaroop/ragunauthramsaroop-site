@@ -12,6 +12,8 @@
   "recipient": "jon@italent-me.com",
   "recipient_sha256": "f174ba5ea78e5e393ff240ebc25e69f210d6efa4af1cdae80ec2632afae67865",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-08T21:34:38+00:00",
+  "smtp_message_id": "<179149527840.2442.18243752966022084971@icloud.com>",
+  "status": "sent",
   "subject_sha256": "e77e594bfe63cd9c235aae1bc74dc9cd8cf956ebe0210fd7b76aff18131cde26"
 }
