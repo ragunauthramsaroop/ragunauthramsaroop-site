@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "62f5f0e2937459bf4fdbd0d810973b634794f0949a769cf408a5adeaea079a21",
+  "batch_id": "2026-10-08-amrop-ritu-lal-energy-infrastructure-direct",
+  "body_sha256": "be94df7392f7a56cc3f8ba5e672b0c507cf19f7531fe04b87165d2e52acd4671",
+  "created_at": "2026-10-08T21:44:18+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "37848826466",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/2026-10-08-amrop-ritu-lal-energy-infrastructure-direct.json",
+  "payload_sha256": "c4eafa1821137893de7da30172b82fe4e1536aba02a0880391f026961dd6e517",
+  "recipient": "ritu.lal@amrop.in",
+  "recipient_sha256": "9c4402d90b93958874caec79d3ad808b70b14620b098c2ae2133728c99ef5365",
+  "schema": 1,
+  "status": "pending",
+  "subject_sha256": "8bcfbf484899074484dec35458cc0244cd5e977c4aed7320f2305e3e1a46a0d8"
+}
