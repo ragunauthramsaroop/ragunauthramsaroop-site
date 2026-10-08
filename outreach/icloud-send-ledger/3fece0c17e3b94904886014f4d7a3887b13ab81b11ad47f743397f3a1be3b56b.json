@@ -12,6 +12,8 @@
   "recipient": "sanjay.ghosh@pedersenandpartners.com",
   "recipient_sha256": "3fece0c17e3b94904886014f4d7a3887b13ab81b11ad47f743397f3a1be3b56b",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-08T21:40:00+00:00",
+  "smtp_message_id": "<179149560024.2310.12443781440935187704@icloud.com>",
+  "status": "sent",
   "subject_sha256": "29843fbf3b6622121ae38dc3486071d357b418975a25f5539d32d81985eb71a5"
 }
