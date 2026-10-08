@@ -12,6 +12,8 @@
   "recipient": "info@objectives.com.sa",
   "recipient_sha256": "1b529f0676b82abf64af905b3fd0fe2f000671e4243aad3adb7705f67c6aec6d",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-08T18:28:30+00:00",
+  "smtp_message_id": "<179148411004.2227.4302592005210477560@icloud.com>",
+  "status": "sent",
   "subject_sha256": "3905ffd9de68d7c66903de79c820fffd5652837dc46cd2103cd603ba8b576b40"
 }
