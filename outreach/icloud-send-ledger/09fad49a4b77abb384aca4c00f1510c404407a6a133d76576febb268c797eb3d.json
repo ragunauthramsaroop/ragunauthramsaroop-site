@@ -12,6 +12,8 @@
   "recipient": "recruitment@norlynx-group.com",
   "recipient_sha256": "09fad49a4b77abb384aca4c00f1510c404407a6a133d76576febb268c797eb3d",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-08T20:19:07+00:00",
+  "smtp_message_id": "<179149074739.2428.17442769390756419163@icloud.com>",
+  "status": "sent",
   "subject_sha256": "69622a3f39427dfe4105f711ac3cedeb6702e9664b3c818ea4ec262240b78f79"
 }
