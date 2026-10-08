@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "a65bdae03af67ab6f3b216162e094823ca863e6c0e2e8fee8e61c763ed9166c6",
+  "batch_id": "uae-top-executive-search-fresh-2026-10-08-03",
+  "body_sha256": "7e7a5e24a880fea5de9ca988a9b291b03a5135026f0931b80df3488ce29a2227",
+  "created_at": "2026-10-08T18:10:42+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "37822237006",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/2026-10-08-uae-top-executive-search-fresh-03.json",
+  "payload_sha256": "d95a6bed1a1bd33296287bcd5fc5a65ecb635388ee1ff5e692c5709d7d6b1104",
+  "recipient": "omer.zakaria@robertwalters.com",
+  "recipient_sha256": "e7f8b61d8758d07593160d0176b9452322003539cd09008e856374223c3f055e",
+  "schema": 1,
+  "status": "pending",
+  "subject_sha256": "faffa1e8f80e5ca57e4548f3e324a45f7a05f508f0d321c1fcd50a3e32e47504"
+}
