@@ -12,6 +12,8 @@
   "recipient": "raj@cnetg.com",
   "recipient_sha256": "d85b86a41223aa995b603c6fda98980562bfd05ba609b446d0ffae3589293277",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-08T20:05:45+00:00",
+  "smtp_message_id": "<179148994527.2454.1907488124066427474@icloud.com>",
+  "status": "sent",
   "subject_sha256": "535e6a92a466f012ec087d878d6799c87c4a5c54cb7116d17e78aff0a97174a6"
 }
