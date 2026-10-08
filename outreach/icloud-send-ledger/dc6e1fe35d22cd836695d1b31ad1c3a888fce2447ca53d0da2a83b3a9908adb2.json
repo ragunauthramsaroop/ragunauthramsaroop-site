@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "129c1435a26aea939416abc16193c6d63b96d031f64fc5099664a40243ffd45d",
+  "batch_id": "2026-10-08-novo-nordisk-isabella-rinder-direct",
+  "body_sha256": "32013e9163808ab608149bdee0a9e023857707eac163febe0ca66fbadd2dc311",
+  "created_at": "2026-10-08T19:00:46+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "2",
+  "github_run_id": "37828453676",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/2026-10-08-novo-nordisk-isabella-rinder-direct.json",
+  "payload_sha256": "5b266faa0e312f347c37e9c71cae5bf09aa4b55748e121738e848de7cd53cbda",
+  "recipient": "isri@novonordisk.com",
+  "recipient_sha256": "dc6e1fe35d22cd836695d1b31ad1c3a888fce2447ca53d0da2a83b3a9908adb2",
+  "schema": 1,
+  "status": "pending",
+  "subject_sha256": "3e1f3ea320a6b0488e01ae8b7790a0af0e7b3d325460b5f7884c92b2e2851512"
+}
