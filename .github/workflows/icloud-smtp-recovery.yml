@@ -1,15 +1,14 @@
 name: iCloud SMTP outreach recovery
 
 on:
-  push:
-    branches:
-      - main
-    paths:
-      - 'outreach/icloud-recovery/*.json'
   workflow_dispatch:
     inputs:
       payload_file:
         description: 'Approved recovery JSON under outreach/icloud-recovery/'
+        required: true
+        type: string
+      acknowledge_hm108_pause:
+        description: 'Type RESUME after the Apple HM108 sending issue is cleared'
         required: true
         type: string
 
@@ -31,6 +30,16 @@ jobs:
       ICLOUD_LEDGER_REPOSITORY: ${{ github.repository }}
       ICLOUD_LEDGER_BRANCH: main
     steps:
+      - name: Enforce HM108 safety pause
+        shell: bash
+        run: |
+          set -euo pipefail
+          if [ "${{ inputs.acknowledge_hm108_pause }}" != "RESUME" ]; then
+            echo "Automatic iCloud SMTP recovery is paused after repeated Apple HM108 local-policy rejections."
+            echo "Do not resume until the Apple/iCloud sending route is cleared or replaced."
+            exit 1
+          fi
+
       - uses: actions/checkout@v7
         with:
           persist-credentials: false
@@ -45,15 +54,7 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
-          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
-            PAYLOAD="${{ inputs.payload_file }}"
-          else
-            PAYLOAD="$(git diff-tree --diff-filter=AM --no-commit-id --name-only -r "$GITHUB_SHA" | grep -E '^outreach/icloud-recovery/[^/]+\.json$' | head -n 1 || true)"
-          fi
-          if [ -z "$PAYLOAD" ]; then
-            echo "No recovery payload found in this change."
-            exit 0
-          fi
+          PAYLOAD="${{ inputs.payload_file }}"
           case "$PAYLOAD" in
             outreach/icloud-recovery/*.json) ;;
             *) echo "Refusing payload outside recovery outbox."; exit 1 ;;
@@ -65,7 +66,6 @@ jobs:
           echo "payload=$PAYLOAD" >> "$GITHUB_OUTPUT"
 
       - name: Verify iCloud credential
-        if: steps.payload.outputs.payload != ''
         shell: bash
         run: |
           if [ -z "$ICLOUD_APP_PASSWORD" ]; then
@@ -74,7 +74,6 @@ jobs:
           fi
 
       - name: Send guarded text-only recovery outreach
-        if: steps.payload.outputs.payload != ''
         shell: bash
         run: |
           set -euo pipefail
