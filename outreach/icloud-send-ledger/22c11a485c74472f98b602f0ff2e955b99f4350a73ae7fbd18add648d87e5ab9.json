@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "7b052ab6acd600ebcd373120dc21f33762b1f68c53bf2a51f53d8aa2762df652",
+  "batch_id": "2026-10-08-europe-ceiling-recruiters-recovery-01",
+  "body_sha256": "fa0b5daf13de039b52bef9c7fd6cbdf8af74f5d786bc250c24894f655df3cfbc",
+  "created_at": "2026-10-08T18:41:08+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "37826156245",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/2026-10-08-europe-ceiling-recruiters-recovery-01.json",
+  "payload_sha256": "4bf2200d1d299b4a698e51b8241b0f2e33d70e91dd0a7f5da21124c493b64ed5",
+  "recipient": "andrew.lowe@kornferry.com",
+  "recipient_sha256": "22c11a485c74472f98b602f0ff2e955b99f4350a73ae7fbd18add648d87e5ab9",
+  "schema": 1,
+  "status": "pending",
+  "subject_sha256": "1514056b5ce039a305ff14a2c0814264da76f25e9a6ee24c057adf22a0860027"
+}
