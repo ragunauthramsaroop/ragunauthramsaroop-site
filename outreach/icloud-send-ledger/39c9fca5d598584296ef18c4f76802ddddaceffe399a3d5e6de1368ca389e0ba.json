@@ -12,6 +12,8 @@
   "recipient": "info@elevates.sa",
   "recipient_sha256": "39c9fca5d598584296ef18c4f76802ddddaceffe399a3d5e6de1368ca389e0ba",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-08T21:46:49+00:00",
+  "smtp_message_id": "<179149600969.2226.7043628973990971202@icloud.com>",
+  "status": "sent",
   "subject_sha256": "6d5db262f039d66872e47d271391f546f1ba73fc7d9770aa75e1db2b1ac6ff16"
 }
