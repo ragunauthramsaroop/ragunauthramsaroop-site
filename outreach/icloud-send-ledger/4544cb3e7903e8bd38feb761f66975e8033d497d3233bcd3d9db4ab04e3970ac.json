@@ -12,6 +12,8 @@
   "recipient": "christopher.bradley@russellreynolds.com",
   "recipient_sha256": "4544cb3e7903e8bd38feb761f66975e8033d497d3233bcd3d9db4ab04e3970ac",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-08T17:48:51+00:00",
+  "smtp_message_id": "<179148173174.2222.5482207570102683054@icloud.com>",
+  "status": "sent",
   "subject_sha256": "f2ca7ff77b022cb2ea5e2b81d1ae5f0594899ce570b9922c1ab8eddaf541607e"
 }
