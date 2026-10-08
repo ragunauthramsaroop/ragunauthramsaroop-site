@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "6955c7e9e73d2fe4f582eb02fec93a628f4221637c23cdfd609b424376205910",
+  "batch_id": "2026-10-08-arcelormittal-wendy-uchtmann-direct",
+  "body_sha256": "39fe52cf440ec59663756bb168b2f9f9cde4eaf22c84fd048d34dab169e16ff4",
+  "created_at": "2026-10-08T18:58:50+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "37828417080",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/2026-10-08-arcelormittal-wendy-uchtmann-direct.json",
+  "payload_sha256": "41eae763f66335e523283c1095ec7c2776828b0047de2457d6965bbe1d97db87",
+  "recipient": "wendy.uchtmann@arcelormittal.com",
+  "recipient_sha256": "47c7deb449f8fd7fab37bc1431cf652108f89b620890fa703aab67449f735604",
+  "schema": 1,
+  "status": "pending",
+  "subject_sha256": "d8464e6c2be2f02ade2e0df894b5dcdd8c707a68a8613cb0b94bac790daa1f8f"
+}
