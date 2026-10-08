@@ -12,6 +12,8 @@
   "recipient": "info@gr8connectservices.co.uk",
   "recipient_sha256": "5fe49c6f3de71e3d11e91aad4e3529887b1748fb56e612a5b64dc0d405af30b1",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-08T20:17:49+00:00",
+  "smtp_message_id": "<179149066928.2226.2852864261952427381@icloud.com>",
+  "status": "sent",
   "subject_sha256": "9f3f99d76ef0f7fe247fcd4a276589abd23cbc9cfd1ab1428bc6f0e615d743ed"
 }
