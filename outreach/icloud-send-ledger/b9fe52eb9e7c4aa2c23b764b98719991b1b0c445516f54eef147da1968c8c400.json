@@ -12,6 +12,8 @@
   "recipient": "hello@frater.consulting",
   "recipient_sha256": "b9fe52eb9e7c4aa2c23b764b98719991b1b0c445516f54eef147da1968c8c400",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-08T20:20:55+00:00",
+  "smtp_message_id": "<179149085547.2447.7195151865518484015@icloud.com>",
+  "status": "sent",
   "subject_sha256": "e82fa1b00dbfc242ad26024020e9cccf9906dbb55b7f1d83f97305025d7a59a8"
 }
