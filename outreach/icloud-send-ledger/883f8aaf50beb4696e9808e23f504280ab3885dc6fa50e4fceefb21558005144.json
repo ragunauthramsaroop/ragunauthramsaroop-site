@@ -12,6 +12,8 @@
   "recipient": "shayma.ibrahim@pedersenandpartners.com",
   "recipient_sha256": "883f8aaf50beb4696e9808e23f504280ab3885dc6fa50e4fceefb21558005144",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-08T20:10:57+00:00",
+  "smtp_message_id": "<179149025693.2449.11840004928384675776@icloud.com>",
+  "status": "sent",
   "subject_sha256": "bf3a6c03982dddc8afd0c5cc8bc2ca900cc53c9b4293ad2808f1085bb85180ef"
 }
