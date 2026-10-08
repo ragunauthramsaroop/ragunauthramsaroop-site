@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "7b9007c89c26e42a69c1bfff0769ed9cc9999bc978bd910e9741602c53d5756f",
+  "batch_id": "2026-10-08-kestria-michael-kantel-industrial-energy-direct",
+  "body_sha256": "4e7217442cc065c0448b3cad81e76a86ade789a32f788e25232ad9ca2a67aa9a",
+  "created_at": "2026-10-08T21:56:23+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "37850187848",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/2026-10-08-kestria-michael-kantel-industrial-energy-direct.json",
+  "payload_sha256": "079894479da0db996c66c91f31c03a8325a77f44308d18e1afad8d34bb548be5",
+  "recipient": "m.kantel@friedrichs-partner.com",
+  "recipient_sha256": "74f8a96155233af633e15b89f89bb77dac4746e2b202ba66848ab7d250ee8791",
+  "schema": 1,
+  "status": "pending",
+  "subject_sha256": "81ce6428a096c7da53dc8b43e58b36fc3465f5fda9e75b7a1016124e0aab7969"
+}
