@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "53e8cb1f24ecc6e0b4f19c131fcf216ac59e03dcfa0f6b39cc62033398f29846",
+  "batch_id": "2026-10-08-odgers-theo-gaultier-direct",
+  "body_sha256": "e72f14db0165605479784baadfe85b6229e702a95217ff9d68be23562003dc54",
+  "created_at": "2026-10-08T19:57:46+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "37835838031",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/2026-10-08-odgers-theo-gaultier-direct.json",
+  "payload_sha256": "85ff1d5c7a86137d30904f967cd881635eb6c42f47934cb7e1d6eae12d831d2c",
+  "recipient": "theo.gaultier@odgersberndtson.com",
+  "recipient_sha256": "8e907eb64ec4672cfae186aabae855f114050244b656e8a37e13661f729bdfbb",
+  "schema": 1,
+  "status": "pending",
+  "subject_sha256": "07c504fdf4c6a34e4176aff8dfc943a6bd09b7a59b9794b884b8bf3e9868ae00"
+}
