@@ -12,6 +12,8 @@
   "recipient": "michael.patrick@odgersberndtson.com",
   "recipient_sha256": "7c172f0949c24f0eefc97776a0fe6a98f31477075462974245dc5fd42eab2fd3",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-08T19:59:20+00:00",
+  "smtp_message_id": "<179148956028.2216.13981988529495263047@icloud.com>",
+  "status": "sent",
   "subject_sha256": "ecb83407cc76b3c1bb9190255d48be92de9451cd2ff4ddb3ff0ec91d53c46257"
 }
