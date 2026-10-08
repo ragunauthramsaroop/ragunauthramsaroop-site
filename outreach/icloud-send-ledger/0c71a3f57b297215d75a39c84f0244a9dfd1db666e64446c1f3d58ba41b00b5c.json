@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "8a6fca3282666560b926f5083eb14adce57d6a2fd1368bc9c59a68c232ef0d3d",
+  "batch_id": "gcc-executive-recruiters-2026-10-08-b24",
+  "body_sha256": "04073fab7d5b590557f670be34fcea5c5c06a212eb95fab9ceafdc2085bca8f2",
+  "created_at": "2026-10-08T21:49:22+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "37849371459",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/2026-10-08-gcc-executive-recruiters-batch-24.json",
+  "payload_sha256": "fc18b6190fe66e3cfcccebc1b40f3e4269fb63d5dd77c33dbe38fb4fd36f176a",
+  "recipient": "info@hasscomsa.com",
+  "recipient_sha256": "0c71a3f57b297215d75a39c84f0244a9dfd1db666e64446c1f3d58ba41b00b5c",
+  "schema": 1,
+  "status": "pending",
+  "subject_sha256": "f7d38c3713db617e7eed7961c042f33bfec9c8c668f95d04d70da0056c914718"
+}
