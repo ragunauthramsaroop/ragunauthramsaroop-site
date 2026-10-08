@@ -12,6 +12,8 @@
   "recipient": "p.zahr@alexanderhughes.com",
   "recipient_sha256": "adaa1fb751d76d6e37fa68662fe821f8a9f010e32765039db329f0a363c9a552",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-08T19:16:58+00:00",
+  "smtp_message_id": "<179148701879.2415.15772169698225369667@icloud.com>",
+  "status": "sent",
   "subject_sha256": "2a96386991827733a54c61bd1a991dd4546899a346cad52f17bd90989c09950c"
 }
