@@ -12,6 +12,8 @@
   "recipient": "resurseumane@maib.md",
   "recipient_sha256": "8de292f9b229f5f408d5f079b9eabc405d557aee1c83a0347eac53b7b514b0fa",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-08T19:41:59+00:00",
+  "smtp_message_id": "<179148851881.2373.2118930848443337701@icloud.com>",
+  "status": "sent",
   "subject_sha256": "090c77397be9bcacf641d36e082c8eb5f072d8b15ccd05aac6d99b8b203fe930"
 }
