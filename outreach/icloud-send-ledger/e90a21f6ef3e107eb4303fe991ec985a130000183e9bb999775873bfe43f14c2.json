@@ -12,6 +12,8 @@
   "recipient": "a.prates@ema-partners.com",
   "recipient_sha256": "e90a21f6ef3e107eb4303fe991ec985a130000183e9bb999775873bfe43f14c2",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-08T21:51:09+00:00",
+  "smtp_message_id": "<179149626970.2230.15626245614451849199@icloud.com>",
+  "status": "sent",
   "subject_sha256": "4c44b593e8686a98b7d973a41379205b13d3b5d0eca5da6cebf4df0b78f070c3"
 }
