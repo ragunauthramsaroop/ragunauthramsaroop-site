@@ -12,6 +12,8 @@
   "recipient": "jobs@neorecruits.com",
   "recipient_sha256": "a085b7313f1052161d31de62c4f7370ff8a38a59d09b16f15051a8d1fea28ad1",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-08T20:14:57+00:00",
+  "smtp_message_id": "<179149049737.2211.12350810361722106348@icloud.com>",
+  "status": "sent",
   "subject_sha256": "f7e550fb215bc434574a8dfbd754c492d050cc9b6a9057beec35cece3d933919"
 }
