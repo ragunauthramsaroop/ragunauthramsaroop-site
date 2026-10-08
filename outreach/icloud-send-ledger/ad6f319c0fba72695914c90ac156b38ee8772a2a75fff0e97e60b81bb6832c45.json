@@ -12,6 +12,8 @@
   "recipient": "gavincheadle@pageexecutive.com",
   "recipient_sha256": "ad6f319c0fba72695914c90ac156b38ee8772a2a75fff0e97e60b81bb6832c45",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-08T18:10:50+00:00",
+  "smtp_message_id": "<179148305003.2310.9052518550973513653@icloud.com>",
+  "status": "sent",
   "subject_sha256": "da976bf91ba93da95f95ba2a80b0f48799881952bba84a3d30d914fe8b3d4dcc"
 }
