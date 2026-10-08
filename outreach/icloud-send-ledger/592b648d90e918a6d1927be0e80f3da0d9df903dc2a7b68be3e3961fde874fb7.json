@@ -12,6 +12,8 @@
   "recipient": "m.elzein@boydenme.com",
   "recipient_sha256": "592b648d90e918a6d1927be0e80f3da0d9df903dc2a7b68be3e3961fde874fb7",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-08T22:25:01+00:00",
+  "smtp_message_id": "<179149830147.2423.16734142928451613367@icloud.com>",
+  "status": "sent",
   "subject_sha256": "b475cda4c61dfc96470d4e5f76d3f6b225587974acf0647c7bdab9d23defe369"
 }
