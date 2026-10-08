@@ -12,6 +12,8 @@
   "recipient": "a.vats@sheffieldhaworth.com",
   "recipient_sha256": "e1614f5d7f1309dfbe30c5f1cf93624c383bd21d51306463e2f1decf20e4a40f",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-08T20:08:00+00:00",
+  "smtp_message_id": "<179149007994.2436.10026591753304919747@icloud.com>",
+  "status": "sent",
   "subject_sha256": "ead357757204886b1123681a362349126aa2aafe2b916d8143cbb53f021d8f62"
 }
