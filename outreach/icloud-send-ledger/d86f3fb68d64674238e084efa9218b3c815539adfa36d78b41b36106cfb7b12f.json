@@ -12,6 +12,8 @@
   "recipient": "d.amarjeet@ema-partners.com",
   "recipient_sha256": "d86f3fb68d64674238e084efa9218b3c815539adfa36d78b41b36106cfb7b12f",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-08T19:02:01+00:00",
+  "smtp_message_id": "<179148612112.2430.5488072970760914028@icloud.com>",
+  "status": "sent",
   "subject_sha256": "89ea99374908e4cb1cf775fe7ed2a667843fe1263ebb562a6bf0ae9321c16bd7"
 }
