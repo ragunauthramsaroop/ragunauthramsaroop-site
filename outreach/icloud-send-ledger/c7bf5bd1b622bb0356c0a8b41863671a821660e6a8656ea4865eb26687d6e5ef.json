@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "48d7246477a6e666e76116b68b6b2b328da7f60afdd509db13996f4babf66c26",
+  "batch_id": "2026-10-08-santander-uk-resourcing-direct",
+  "body_sha256": "5352bdbbbff9bcbccb27c426ea3ec71d225c8e08608efd8109ad3578dde73a61",
+  "created_at": "2026-10-08T19:25:08+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "37831758216",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/2026-10-08-santander-uk-resourcing-direct.json",
+  "payload_sha256": "0d23ed6cd027edc0a40b65863ee051fad95cf0d17bb6597927d8d90dd98a199d",
+  "recipient": "resourcing@santander.co.uk",
+  "recipient_sha256": "c7bf5bd1b622bb0356c0a8b41863671a821660e6a8656ea4865eb26687d6e5ef",
+  "schema": 1,
+  "status": "pending",
+  "subject_sha256": "bef7eea49c26b1a2a2423af84d8fbfbf96bd396ab59b8cc042e95e661733d843"
+}
