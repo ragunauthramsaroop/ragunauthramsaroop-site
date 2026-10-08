@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "344a8baa9a0e0d31c8c5b00032ad618ff532ce60ffdbbc36d27e2d790ea0cd8f",
+  "batch_id": "2026-10-08-odgers-robert-quinn-mining-direct",
+  "body_sha256": "d46463b9a008613d67f862337d161cc9bca35945b95d36154fc6e74c0685f0a3",
+  "created_at": "2026-10-08T20:00:00+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "37836094984",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/2026-10-08-odgers-robert-quinn-mining-direct.json",
+  "payload_sha256": "adf575e3392b3b554693e9ae36f46f247c7be40767d6ceb6686d9f429ca4a957",
+  "recipient": "robert.quinn@odgers.com",
+  "recipient_sha256": "2fe08bc9442eacc47a3e913030bc7f39b7325e49f65e75462d70c9dd47dc2e64",
+  "schema": 1,
+  "status": "pending",
+  "subject_sha256": "2f055763d9e5933fde20c7e848e184e43c6e775e2eb9c4b35b311fb06add7ad4"
+}
