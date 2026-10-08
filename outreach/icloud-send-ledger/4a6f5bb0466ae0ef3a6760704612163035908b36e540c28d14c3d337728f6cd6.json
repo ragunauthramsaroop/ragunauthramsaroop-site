@@ -12,6 +12,8 @@
   "recipient": "kim.harris@hoffmannreed.com",
   "recipient_sha256": "4a6f5bb0466ae0ef3a6760704612163035908b36e540c28d14c3d337728f6cd6",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-08T20:24:09+00:00",
+  "smtp_message_id": "<179149104966.2231.16216551509995593197@icloud.com>",
+  "status": "sent",
   "subject_sha256": "b6b95e03c3328372ed3f4cf77cf9bfd39b345fc7521aa958437e3810c1db9975"
 }
