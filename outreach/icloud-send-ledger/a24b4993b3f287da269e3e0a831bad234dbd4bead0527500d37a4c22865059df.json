@@ -12,6 +12,8 @@
   "recipient": "recrutement@sbm.mc",
   "recipient_sha256": "a24b4993b3f287da269e3e0a831bad234dbd4bead0527500d37a4c22865059df",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-08T19:36:18+00:00",
+  "smtp_message_id": "<179148817808.2220.3057129287623047876@icloud.com>",
+  "status": "sent",
   "subject_sha256": "e3bc504c551b23c21f036c4090fcfd51c8d4bcfd91da40b48fffb0cbc66f5f00"
 }
