@@ -12,6 +12,8 @@
   "recipient": "info@candergroup.com",
   "recipient_sha256": "cebffee0e4ce69d23acd0d3b8ff330ff860f5e4b2d1b744fe9cb97cfb1af7bd4",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-08T21:49:21+00:00",
+  "smtp_message_id": "<179149616136.2218.6869151482514466407@icloud.com>",
+  "status": "sent",
   "subject_sha256": "485493905231eb8935f9102e35b0869cebf3b4cea07d9873be6dd6cb00c22726"
 }
