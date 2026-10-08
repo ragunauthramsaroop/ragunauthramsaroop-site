@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "d41003c638b9e1579f758e783cc6c34fa6377b28ed8b310a76915ea3fc49634a",
+  "batch_id": "2026-10-08-kestria-monicca-yan-industrial-energy-direct",
+  "body_sha256": "30b08bf559e2654e9fa6e009526d7576eb3ce86a9813c181aa09a7e93f445f61",
+  "created_at": "2026-10-08T21:49:55+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "37849466773",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/2026-10-08-kestria-monicca-yan-industrial-energy-direct.json",
+  "payload_sha256": "012fe69977eac2faf1f8621845d37e2e2352cfc113dd4c3e7ea9fbeff379a216",
+  "recipient": "monicca@hrpartners.com",
+  "recipient_sha256": "5972c88a9627a92bbbbd3a964397796e8bca823b0b4e3118a2ae1c24bd246caa",
+  "schema": 1,
+  "status": "pending",
+  "subject_sha256": "a382cfa0490accf624ccc4bb4014f448f914154c24930f2907b49e8fbba4564b"
+}
