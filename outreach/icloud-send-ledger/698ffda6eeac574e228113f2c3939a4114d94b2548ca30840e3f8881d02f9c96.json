@@ -12,6 +12,8 @@
   "recipient": "fhurst@spenglerfox.com",
   "recipient_sha256": "698ffda6eeac574e228113f2c3939a4114d94b2548ca30840e3f8881d02f9c96",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-08T18:58:15+00:00",
+  "smtp_message_id": "<179148589547.2432.15633062003285771640@icloud.com>",
+  "status": "sent",
   "subject_sha256": "ef741371ee36d49a0201417fd70d0cb1a2741b44b2683155a2a246ffa2c109aa"
 }
