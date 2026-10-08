@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "f503fd63593c5c59dae2d3c2ef14c5c2b231ced1291de1d16cf4278b55762e39",
+  "batch_id": "2026-10-08-ema-phil-sharp-energy-direct",
+  "body_sha256": "5f81352813f563a52b2df76f8c1db3db518a9bdec296f8e463eef79179911fff",
+  "created_at": "2026-10-08T21:41:23+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "37848479802",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/2026-10-08-ema-phil-sharp-energy-direct.json",
+  "payload_sha256": "cc7a962ac95064e58037c22478eda90566289bc0889440c1672bd19459317dfe",
+  "recipient": "p.sharp@ema-partners.com",
+  "recipient_sha256": "47d8a49a101138cee2404f7ef573a0a1ee6cb13ede0b3f1e0280f30dea2cdf9e",
+  "schema": 1,
+  "status": "pending",
+  "subject_sha256": "f6d4b21d6ac83b0b0d074d384594a28cc6b829d05bfac8777ceb629a18904e9c"
+}
