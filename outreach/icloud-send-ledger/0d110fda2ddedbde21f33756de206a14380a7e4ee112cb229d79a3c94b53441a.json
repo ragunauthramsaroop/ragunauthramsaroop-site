@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "15b4cdfa88fc1b6498fb09d1be74c467401e80b25d79d1370c23f723d28b3f5b",
+  "batch_id": "gcc-executive-recruiters-2026-10-08-b01",
+  "body_sha256": "2dc6592050aa1a9d1de13cc6b03e1654af44071f90c601331da6fef924b0a9b0",
+  "created_at": "2026-10-08T17:49:01+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "37819425552",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/2026-10-08-gcc-executive-recruiters-batch-01.json",
+  "payload_sha256": "f5fe03485c72124c8850b900eb02608dd2b3c4b60b049816b6474950e7523643",
+  "recipient": "raniaabdalla@aspire-hr.com",
+  "recipient_sha256": "0d110fda2ddedbde21f33756de206a14380a7e4ee112cb229d79a3c94b53441a",
+  "schema": 1,
+  "status": "pending",
+  "subject_sha256": "812fe708218ff2c529cb25b2d4c201b48f2d8b90e8bc2d05e593572f176b8638"
+}
