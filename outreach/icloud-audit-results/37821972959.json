@@ -1,0 +1,27 @@
+{
+  "audited_at": "2026-10-08T18:08:33+00:00",
+  "mailbox": "Sent Messages",
+  "recipients": [
+    {
+      "match_count": 0,
+      "matches": [],
+      "recipient": "omer.zakaria@robertwalters.com",
+      "sent_header_match": false
+    },
+    {
+      "match_count": 0,
+      "matches": [],
+      "recipient": "jonathan.holmes@kornferry.com",
+      "sent_header_match": false
+    },
+    {
+      "match_count": 0,
+      "matches": [],
+      "recipient": "gavincheadle@pageexecutive.com",
+      "sent_header_match": false
+    }
+  ],
+  "request_file": "outreach/icloud-audit-requests/uae-top-firms-fresh-2026-10-08-03.json",
+  "request_id": "uae-top-firms-fresh-2026-10-08-03",
+  "schema": 1
+}
