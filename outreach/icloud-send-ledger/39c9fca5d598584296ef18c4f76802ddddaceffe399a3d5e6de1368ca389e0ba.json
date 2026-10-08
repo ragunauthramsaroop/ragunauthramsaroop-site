@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "93b7ed471ce5f3e9323b4d80464ef2caefb59842d3e1419000902818e642eda7",
+  "batch_id": "gcc-executive-recruiters-2026-10-08-b23",
+  "body_sha256": "d9abcfffbc605cd6c1b234f8f13d9ee1735d726ac9461ede1d3a5c277a83eb5e",
+  "created_at": "2026-10-08T21:46:48+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "37849108981",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/2026-10-08-gcc-executive-recruiters-batch-23.json",
+  "payload_sha256": "0990c5abc3d2ca0a840a379d739beb7fe1cf0d8a9432ae6550c0c4bb0dafdbad",
+  "recipient": "info@elevates.sa",
+  "recipient_sha256": "39c9fca5d598584296ef18c4f76802ddddaceffe399a3d5e6de1368ca389e0ba",
+  "schema": 1,
+  "status": "pending",
+  "subject_sha256": "6d5db262f039d66872e47d271391f546f1ba73fc7d9770aa75e1db2b1ac6ff16"
+}
