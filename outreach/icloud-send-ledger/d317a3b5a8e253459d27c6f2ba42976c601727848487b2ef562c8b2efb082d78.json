@@ -12,6 +12,8 @@
   "recipient": "info@aquilaconsultingme.com",
   "recipient_sha256": "d317a3b5a8e253459d27c6f2ba42976c601727848487b2ef562c8b2efb082d78",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-08T17:51:22+00:00",
+  "smtp_message_id": "<179148188199.2412.15460330505877109312@icloud.com>",
+  "status": "sent",
   "subject_sha256": "d833bb69c9d892bd8db1ee56ef666f712e9d1e1fcad06bde27f4fd62d3ffc053"
 }
