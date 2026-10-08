@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "3c5df613813c2d882a53bf358297df7c84b840aa9d4acb0a9d1d75ec7c8af975",
+  "batch_id": "2026-10-08-kestria-mathias-friedrichs-industrial-energy-direct",
+  "body_sha256": "851c19dded06b09f502f03a8b17ae5005cf18c6edcf1bf86dfe1eb9f90496343",
+  "created_at": "2026-10-08T21:53:20+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "37849841755",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/2026-10-08-kestria-mathias-friedrichs-industrial-energy-direct.json",
+  "payload_sha256": "3a5684c50aec7322c2d579889f7da85a56c39eb361c9a7c31ef36dd0266bfe45",
+  "recipient": "m.friedrichs@friedrichs-partner.com",
+  "recipient_sha256": "8a0db78b7a1f484aba4e29ce68ceb079058cfa41bcff180c0ee1d3a7c8041169",
+  "schema": 1,
+  "status": "pending",
+  "subject_sha256": "138ce02f7843d62def7d419a9784ee55e2581db06008a9a1efd8ab512354f0b6"
+}
