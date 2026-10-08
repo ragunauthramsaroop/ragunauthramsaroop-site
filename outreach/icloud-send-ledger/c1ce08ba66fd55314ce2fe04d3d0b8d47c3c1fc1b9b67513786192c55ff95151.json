@@ -12,6 +12,8 @@
   "recipient": "matthijs.van_heusden@roche.com",
   "recipient_sha256": "c1ce08ba66fd55314ce2fe04d3d0b8d47c3c1fc1b9b67513786192c55ff95151",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-08T18:59:23+00:00",
+  "smtp_message_id": "<179148596351.2411.16684057776560406537@icloud.com>",
+  "status": "sent",
   "subject_sha256": "7ebe32f8351306cfed9ee0fd0fffd72e7362e73c1e3915a323d905ba6a680246"
 }
