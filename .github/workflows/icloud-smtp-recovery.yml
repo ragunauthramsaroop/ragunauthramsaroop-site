@@ -1,0 +1,81 @@
+name: iCloud SMTP outreach recovery
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'outreach/icloud-recovery/*.json'
+  workflow_dispatch:
+    inputs:
+      payload_file:
+        description: 'Approved recovery JSON under outreach/icloud-recovery/'
+        required: true
+        type: string
+
+permissions:
+  contents: write
+
+concurrency:
+  group: icloud-smtp-recovery
+  cancel-in-progress: false
+
+jobs:
+  send:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    env:
+      ICLOUD_SMTP_USER: ragunauthramsaroop@icloud.com
+      ICLOUD_APP_PASSWORD: ${{ secrets.ICLOUD_APP_PASSWORD }}
+      GITHUB_TOKEN: ${{ github.token }}
+      ICLOUD_LEDGER_REPOSITORY: ${{ github.repository }}
+      ICLOUD_LEDGER_BRANCH: main
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          persist-credentials: false
+          fetch-depth: 2
+
+      - uses: actions/setup-python@v7
+        with:
+          python-version: '3.12'
+
+      - name: Resolve approved recovery payload
+        id: payload
+        shell: bash
+        run: |
+          set -euo pipefail
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            PAYLOAD="${{ inputs.payload_file }}"
+          else
+            PAYLOAD="$(git diff-tree --diff-filter=AM --no-commit-id --name-only -r "$GITHUB_SHA" | grep -E '^outreach/icloud-recovery/[^/]+\.json$' | head -n 1 || true)"
+          fi
+          if [ -z "$PAYLOAD" ]; then
+            echo "No recovery payload found in this change."
+            exit 0
+          fi
+          case "$PAYLOAD" in
+            outreach/icloud-recovery/*.json) ;;
+            *) echo "Refusing payload outside recovery outbox."; exit 1 ;;
+          esac
+          if [ ! -f "$PAYLOAD" ]; then
+            echo "Payload file not found: $PAYLOAD"
+            exit 1
+          fi
+          echo "payload=$PAYLOAD" >> "$GITHUB_OUTPUT"
+
+      - name: Verify iCloud credential
+        if: steps.payload.outputs.payload != ''
+        shell: bash
+        run: |
+          if [ -z "$ICLOUD_APP_PASSWORD" ]; then
+            echo "ICLOUD_APP_PASSWORD is not configured."
+            exit 1
+          fi
+
+      - name: Send guarded text-only recovery outreach
+        if: steps.payload.outputs.payload != ''
+        shell: bash
+        run: |
+          set -euo pipefail
+          python scripts/send_icloud_recovery.py "${{ steps.payload.outputs.payload }}"
