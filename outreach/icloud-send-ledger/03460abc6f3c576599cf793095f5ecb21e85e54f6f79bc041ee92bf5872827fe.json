@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "b29bffc7798cd696add1aa16a2dc41c6fa9203cc004add47b95235ff9b12db71",
+  "batch_id": "gcc-executive-recruiters-2026-10-08-b10",
+  "body_sha256": "d1d42a05b612f6cb97fd4ee1e7255edb36e1f2614b230b70e8012ef03a3d7cad",
+  "created_at": "2026-10-08T20:27:02+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "37839490643",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/2026-10-08-gcc-executive-recruiters-batch-10.json",
+  "payload_sha256": "5f2369740f14f69ff06853416f295501245adc6df3dcddc92814985dece01306",
+  "recipient": "me@kitalent.com",
+  "recipient_sha256": "03460abc6f3c576599cf793095f5ecb21e85e54f6f79bc041ee92bf5872827fe",
+  "schema": 1,
+  "status": "pending",
+  "subject_sha256": "d86827d428924d874e48ddd7fbdecc9880273ed29521204fe95356bf79ce2063"
+}
