@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "0b5e58b454e0e62d9869e7c7a4172a583ded57cf8cc6aac792401bb71d7ec845",
+  "batch_id": "gcc-executive-search-fresh-2026-10-08-05",
+  "body_sha256": "e1406163b978d6bf73bbb21b12516ec6a9669834a4b8ebc8043e5ff74be6f7f5",
+  "created_at": "2026-10-08T18:28:16+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "37824497432",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/2026-10-08-gcc-executive-search-fresh-05.json",
+  "payload_sha256": "71617cd318438c9a7433e0c4c6aeef46781999c87a4c38fe171245b1de2b7c95",
+  "recipient": "info@madisonpearl.com",
+  "recipient_sha256": "cc2a0d9e0d7175b7921331e6a81239896aba2f3653c13da24bcfaab6e5be2bfe",
+  "schema": 1,
+  "status": "pending",
+  "subject_sha256": "faffa1e8f80e5ca57e4548f3e324a45f7a05f508f0d321c1fcd50a3e32e47504"
+}
