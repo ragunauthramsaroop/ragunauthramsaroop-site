@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "0d4aff332385a145510f48675bc871df87fcebf2701f2c355558c9a0115a2ede",
+  "batch_id": "2026-10-08-heidrick-maliha-jilani-direct",
+  "body_sha256": "003b8c0d422198fd88ec936f171885e3b59adb4b7d9d498799c7db111a67545c",
+  "created_at": "2026-10-08T19:49:26+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "37834798471",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/2026-10-08-heidrick-maliha-jilani-direct.json",
+  "payload_sha256": "6169b3d0a7928c69854ff54dc2b1c73d30e6d5370127696c6f1d971d8b9cb89d",
+  "recipient": "mjilani@heidrick.com",
+  "recipient_sha256": "e8997e5f764d230ddae876f5ffc393f9525079a48d76b76fb03c815a6d3b756a",
+  "schema": 1,
+  "status": "pending",
+  "subject_sha256": "a4544d8c83c2b019e01f49fa5f5e8637eb9c8ae80ef56398db8ad9d7e84648a4"
+}
