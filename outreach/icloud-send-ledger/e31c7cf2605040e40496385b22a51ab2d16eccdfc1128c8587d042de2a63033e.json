@@ -12,6 +12,8 @@
   "recipient": "julia.ruzak.ext@siemens-energy.com",
   "recipient_sha256": "e31c7cf2605040e40496385b22a51ab2d16eccdfc1128c8587d042de2a63033e",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-08T18:58:33+00:00",
+  "smtp_message_id": "<179148591325.2210.11622117242455662553@icloud.com>",
+  "status": "sent",
   "subject_sha256": "3e74eda005d9c32f4ae5976c7f389483822f6059cafc997e576c46d56d21b766"
 }
