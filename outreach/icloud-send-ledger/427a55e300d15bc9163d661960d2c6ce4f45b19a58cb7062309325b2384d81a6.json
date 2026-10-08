@@ -12,6 +12,8 @@
   "recipient": "lg@mhpartners.co",
   "recipient_sha256": "427a55e300d15bc9163d661960d2c6ce4f45b19a58cb7062309325b2384d81a6",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-08T18:16:59+00:00",
+  "smtp_message_id": "<179148341911.2213.251686834116600273@icloud.com>",
+  "status": "sent",
   "subject_sha256": "af7a8b8abcb35a999c11380c94af9538e47d770995398d62dc5df9514230c08e"
 }
