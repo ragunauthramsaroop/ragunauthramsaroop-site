@@ -12,6 +12,8 @@
   "recipient": "contact@signium.me",
   "recipient_sha256": "576a7ac0444a74f9f929d5f8a812c4763b48332e77ffc71a599babaee45a5262",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-08T20:20:20+00:00",
+  "smtp_message_id": "<179149082081.2453.13611965887529068209@icloud.com>",
+  "status": "sent",
   "subject_sha256": "701bc28fe01136f814ac092ffb929e876ae0823b6d0022b3a388b5a07714b074"
 }
