@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "95baf4734e58bac021ba2d077bb2a3c15c1473283177793acbdd257854d25289",
+  "batch_id": "gcc-executive-search-fresh-2026-10-08-12",
+  "body_sha256": "64b9ffa3777e1048cd5b3980481d5e9095484f5cff15febc350a44d9a49604e6",
+  "created_at": "2026-10-08T19:22:23+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "37831418954",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/2026-10-08-gcc-executive-search-fresh-12.json",
+  "payload_sha256": "02c4f17a3e81b79df2df5212863857ec5e13c98e95e9d7d54c44169d924953b7",
+  "recipient": "slathia@caldwell.com",
+  "recipient_sha256": "2c6913c4e4945b84361e8240f0c80bb54bcafb2bdb4dc28578780a792ad2add0",
+  "schema": 1,
+  "status": "pending",
+  "subject_sha256": "9b9d26a612ab362b045f8cfc4f3a995c3e1d0c60fe3a1794aa5b45dcb02709a4"
+}
