@@ -12,6 +12,8 @@
   "recipient": "info@guildhall.agency",
   "recipient_sha256": "056b3f30555bab470282ef82fed031159b15a6b845bd88c4ed708e7a2d988f92",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-08T18:58:10+00:00",
+  "smtp_message_id": "<179148589092.2432.7154195813914927088@icloud.com>",
+  "status": "sent",
   "subject_sha256": "e4ef6aafb089cd746baa18c8eee825f27f4ba9a481e7ce0c86d03d35ede12852"
 }
