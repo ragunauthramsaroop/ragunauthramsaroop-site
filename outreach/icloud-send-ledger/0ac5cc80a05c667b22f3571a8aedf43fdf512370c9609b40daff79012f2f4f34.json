@@ -12,6 +12,8 @@
   "recipient": "info@menatalents.com",
   "recipient_sha256": "0ac5cc80a05c667b22f3571a8aedf43fdf512370c9609b40daff79012f2f4f34",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-08T21:49:18+00:00",
+  "smtp_message_id": "<179149615878.2218.17126617832849936457@icloud.com>",
+  "status": "sent",
   "subject_sha256": "79cc7faeaff53e88d5ba8df97c928bfdfebf9c2fd134b2f9116f570e168bf0ee"
 }
