@@ -12,6 +12,8 @@
   "recipient": "zmarkham@maptalent.com",
   "recipient_sha256": "e990ac0a6eb5382566184a7e57734a3c16175325454243cae0cf8c39db105e0c",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-08T02:19:14+00:00",
+  "smtp_message_id": "<179142595379.2468.222498620194820065@icloud.com>",
+  "status": "sent",
   "subject_sha256": "72fd02b8976993094662c53fce33638d998b1da596aa09594df5c1f306a1a8c3"
 }
