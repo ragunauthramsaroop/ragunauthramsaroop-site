@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "1c5b20bf3baf3daa71e31d750c3779199a32dded52f395e6d64393dc77f8d14f",
+  "batch_id": "2026-10-08-intersearch-harris-karaolides-direct",
+  "body_sha256": "f417eeff2daecacfc07b38fa06fa112f666adc4e277cfa712e69862d0fcfee4f",
+  "created_at": "2026-10-08T20:13:12+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "37837764405",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/2026-10-08-intersearch-harris-karaolides-direct.json",
+  "payload_sha256": "7fa4def61c905eaf6aa7d5fec9c81bf419030a68f6b75b92874fcdcc96be2298",
+  "recipient": "h.karaolides@intersearchme.com",
+  "recipient_sha256": "2a66bdcbd5881ef12035b9c5f954c4a4029babc3ded7c677d7bf5b96739da0a5",
+  "schema": 1,
+  "status": "pending",
+  "subject_sha256": "9d9fb61a2b2a071a962e899aecb50afbbcbfffbebc300fb2d2b39669b62635f7"
+}
