@@ -12,6 +12,8 @@
   "recipient": "rithvik.p@tandemsearch.com",
   "recipient_sha256": "aae1b6ca7443c34c2505b2cfb4ad608634b2be033ca39583005873c0132ac487",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-08T20:44:12+00:00",
+  "smtp_message_id": "<179149225179.2422.9000410644382440322@icloud.com>",
+  "status": "sent",
   "subject_sha256": "3f38ad855844e0bb82f71c2ae2d29d6b4f38c42c08105fa9b2be93b4a71b6869"
 }
