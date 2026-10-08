@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "7b052ab6acd600ebcd373120dc21f33762b1f68c53bf2a51f53d8aa2762df652",
+  "batch_id": "2026-10-08-europe-ceiling-recruiters-recovery-01",
+  "body_sha256": "84319f1f30b01df35aea7a5d09b04ab348a0698c528dbc83d801e08748b2d5b7",
+  "created_at": "2026-10-08T18:41:11+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "37826156245",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/2026-10-08-europe-ceiling-recruiters-recovery-01.json",
+  "payload_sha256": "4bf2200d1d299b4a698e51b8241b0f2e33d70e91dd0a7f5da21124c493b64ed5",
+  "recipient": "dominik.bruelisauer@russellreynolds.com",
+  "recipient_sha256": "860478381bb75f5317a458c7603f9d6a33c21b638d355d14bca08ab7f9887526",
+  "schema": 1,
+  "status": "pending",
+  "subject_sha256": "942cb62f3b016653ff296a12abc9eeb555a553ea82f55b5ba87685a48a96beef"
+}
