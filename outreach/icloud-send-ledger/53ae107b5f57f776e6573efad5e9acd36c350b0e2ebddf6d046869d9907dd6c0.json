@@ -12,6 +12,8 @@
   "recipient": "info@talentsq.sa",
   "recipient_sha256": "53ae107b5f57f776e6573efad5e9acd36c350b0e2ebddf6d046869d9907dd6c0",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-08T21:46:52+00:00",
+  "smtp_message_id": "<179149601256.2226.11730813511298379976@icloud.com>",
+  "status": "sent",
   "subject_sha256": "ae1fcc3c3fbd96f16feabc7ef29b305aac054dc807f3f4d0f115a369e2d12527"
 }
