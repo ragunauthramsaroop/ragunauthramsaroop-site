@@ -12,6 +12,8 @@
   "recipient": "thomas.suter@viavanta.ch",
   "recipient_sha256": "513158e2501eefce39e74f4a43ea3efe8e13c4cb0071385d623bde53b3638c3f",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-08T21:57:14+00:00",
+  "smtp_message_id": "<179149663390.2446.13704603337315058924@icloud.com>",
+  "status": "sent",
   "subject_sha256": "97ccd839a2d8300de314b6c21f8a1f5cb3ad5d2c1a4ac295857afa9da874d1b9"
 }
