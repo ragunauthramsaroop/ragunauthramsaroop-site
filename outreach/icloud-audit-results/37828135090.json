@@ -1,0 +1,33 @@
+{
+  "audited_at": "2026-10-08T18:56:28+00:00",
+  "mailbox": "Sent Messages",
+  "recipients": [
+    {
+      "match_count": 0,
+      "matches": [],
+      "recipient": "dubai@stantonchase.com",
+      "sent_header_match": false
+    },
+    {
+      "match_count": 0,
+      "matches": [],
+      "recipient": "info@guildhall.agency",
+      "sent_header_match": false
+    },
+    {
+      "match_count": 0,
+      "matches": [],
+      "recipient": "info@markwilliams.ae",
+      "sent_header_match": false
+    },
+    {
+      "match_count": 0,
+      "matches": [],
+      "recipient": "fhurst@spenglerfox.com",
+      "sent_header_match": false
+    }
+  ],
+  "request_file": "outreach/icloud-audit-requests/gcc-fresh-2026-10-08-09.json",
+  "request_id": "gcc-fresh-2026-10-08-09",
+  "schema": 1
+}
