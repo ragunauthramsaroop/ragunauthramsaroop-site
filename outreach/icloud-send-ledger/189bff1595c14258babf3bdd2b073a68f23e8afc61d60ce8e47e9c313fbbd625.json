@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "acc75e74900a0e47afde7498c7c82e7d08b23e14279f895e93672132ff327ccb",
+  "batch_id": "2026-10-08-sopharma-careers-direct",
+  "body_sha256": "5ef491d255fa59018da2c74f77601d558c7f4d4a4bde6dff89582625ec52ab1c",
+  "created_at": "2026-10-08T19:29:35+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "37832313840",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/2026-10-08-sopharma-careers-direct.json",
+  "payload_sha256": "a12db204a6069d35115e0b6610eb7f1f54a6a9c48f554a300d1bafc36682c8b4",
+  "recipient": "career@sopharma.bg",
+  "recipient_sha256": "189bff1595c14258babf3bdd2b073a68f23e8afc61d60ce8e47e9c313fbbd625",
+  "schema": 1,
+  "status": "pending",
+  "subject_sha256": "da0f42081bf3c000d29c93d6604f56536c86e38c9768a6a8103919b846e02e30"
+}
