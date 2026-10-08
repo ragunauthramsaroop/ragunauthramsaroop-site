@@ -12,6 +12,8 @@
   "recipient": "dominik.bruelisauer@russellreynolds.com",
   "recipient_sha256": "860478381bb75f5317a458c7603f9d6a33c21b638d355d14bca08ab7f9887526",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-08T18:41:12+00:00",
+  "smtp_message_id": "<179148487278.2497.10123203744868348770@icloud.com>",
+  "status": "sent",
   "subject_sha256": "942cb62f3b016653ff296a12abc9eeb555a553ea82f55b5ba87685a48a96beef"
 }
