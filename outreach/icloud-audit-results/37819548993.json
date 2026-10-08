@@ -1,0 +1,21 @@
+{
+  "audited_at": "2026-10-08T17:49:42+00:00",
+  "mailbox": "Sent Messages",
+  "recipients": [
+    {
+      "match_count": 0,
+      "matches": [],
+      "recipient": "info@aquilaconsultingme.com",
+      "sent_header_match": false
+    },
+    {
+      "match_count": 0,
+      "matches": [],
+      "recipient": "info@linumconsult.com",
+      "sent_header_match": false
+    }
+  ],
+  "request_file": "outreach/icloud-audit-requests/gcc-fresh-batch2-2026-10-08-1349.json",
+  "request_id": "gcc-fresh-batch2-2026-10-08-1349",
+  "schema": 1
+}
