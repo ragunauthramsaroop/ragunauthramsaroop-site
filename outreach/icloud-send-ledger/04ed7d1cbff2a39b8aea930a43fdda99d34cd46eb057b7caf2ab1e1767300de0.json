@@ -12,6 +12,8 @@
   "recipient": "jens.hagedorn@ptalent.com",
   "recipient_sha256": "04ed7d1cbff2a39b8aea930a43fdda99d34cd46eb057b7caf2ab1e1767300de0",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-08T21:58:58+00:00",
+  "smtp_message_id": "<179149673795.2203.17649193149631042595@icloud.com>",
+  "status": "sent",
   "subject_sha256": "e022696e86ba20639d3a9d2b31d24a5f82ab3fcbf937e6d0e3c9047766373954"
 }
