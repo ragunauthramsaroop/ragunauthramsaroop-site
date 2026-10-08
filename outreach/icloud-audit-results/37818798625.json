@@ -1,0 +1,51 @@
+{
+  "audited_at": "2026-10-08T17:43:51+00:00",
+  "mailbox": "Sent Messages",
+  "recipients": [
+    {
+      "match_count": 0,
+      "matches": [],
+      "recipient": "matthew.donovan@mrgglobal.com",
+      "sent_header_match": false
+    },
+    {
+      "match_count": 0,
+      "matches": [],
+      "recipient": "karla.dorsch@ngs-global.com",
+      "sent_header_match": false
+    },
+    {
+      "match_count": 0,
+      "matches": [],
+      "recipient": "info@aquilaconsultingme.com",
+      "sent_header_match": false
+    },
+    {
+      "match_count": 0,
+      "matches": [],
+      "recipient": "raniaabdalla@aspire-hr.com",
+      "sent_header_match": false
+    },
+    {
+      "match_count": 0,
+      "matches": [],
+      "recipient": "theo.kitsos@aimsinternational.com",
+      "sent_header_match": false
+    },
+    {
+      "match_count": 0,
+      "matches": [],
+      "recipient": "christopher.bradley@russellreynolds.com",
+      "sent_header_match": false
+    },
+    {
+      "match_count": 0,
+      "matches": [],
+      "recipient": "recruitment@linumconsult.com",
+      "sent_header_match": false
+    }
+  ],
+  "request_file": "outreach/icloud-audit-requests/gcc-fresh-2026-10-08-1315.json",
+  "request_id": "gcc-fresh-2026-10-08-1315",
+  "schema": 1
+}
