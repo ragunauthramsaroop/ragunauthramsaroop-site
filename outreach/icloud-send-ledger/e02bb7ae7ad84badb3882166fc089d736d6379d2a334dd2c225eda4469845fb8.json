@@ -12,6 +12,8 @@
   "recipient": "info@aztech.com.sa",
   "recipient_sha256": "e02bb7ae7ad84badb3882166fc089d736d6379d2a334dd2c225eda4469845fb8",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-08T21:41:08+00:00",
+  "smtp_message_id": "<179149566804.2289.6959241880187239033@icloud.com>",
+  "status": "sent",
   "subject_sha256": "ae1008aa3bf2fe1cca90858f5fd12cbc716afda64799206a54dcc9fd81dabb6e"
 }
