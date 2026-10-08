@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "ebb7489c7803b669bccafe642d2249e1ebc3a7c2aca3cbe5bc2fdeafa8cd1a0c",
+  "batch_id": "2026-10-08-transearch-murat-ozturk-energy-mining-direct",
+  "body_sha256": "f522c613ad045676e747a05c4244d8e48178b62d4d445211657be1a4a29539ae",
+  "created_at": "2026-10-08T21:44:57+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "37848896762",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/2026-10-08-transearch-murat-ozturk-energy-mining-direct.json",
+  "payload_sha256": "c84501db9e4342b6bbe7e17e56f2bf0c08bf701a6eac7d4822936e80f9ef2706",
+  "recipient": "murat.ozturk@transearch.com",
+  "recipient_sha256": "1c1da9db158a5f1404e2f9a19b5223de106eaa4adea7fc7aeadd09d58a622a22",
+  "schema": 1,
+  "status": "pending",
+  "subject_sha256": "aabef40184377731079197fd31c3393410754a21ddce9c3f1af5070ca7712c8d"
+}
