@@ -12,6 +12,8 @@
   "recipient": "talent@aliqtidarglobal.com",
   "recipient_sha256": "b5232912a5fb7c6dcd4d6664528e1ea7a12da9f7f6be73ef9de78093ff0f985e",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-08T21:47:00+00:00",
+  "smtp_message_id": "<179149602053.2226.14588479973219318886@icloud.com>",
+  "status": "sent",
   "subject_sha256": "f37dabf72eef5b310af802d87bb459e9b7c11b9ccf897e1e80ae965a33085917"
 }
