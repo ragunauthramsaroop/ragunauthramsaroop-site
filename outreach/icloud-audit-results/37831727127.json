@@ -1,0 +1,33 @@
+{
+  "audited_at": "2026-10-08T19:24:45+00:00",
+  "mailbox": "Sent Messages",
+  "recipients": [
+    {
+      "match_count": 0,
+      "matches": [],
+      "recipient": "xavier.ashurst@a2-talent.com",
+      "sent_header_match": false
+    },
+    {
+      "match_count": 1,
+      "matches": [
+        {
+          "cc": [],
+          "date": "Wed, 16 Sep 2026 23:21:29 +0000",
+          "from": "Ragunauth Ramsaroop <ragunauthramsaroop@icloud.com>",
+          "imap_sequence": "1082",
+          "message_id": "<d5e967e4-ee76-6a33-0bdb-7964a34ea819@icloud.com>",
+          "subject": "Confidential Executive Introduction | Mining, ESG & External Affairs | Ragunauth Ramsaroop",
+          "to": [
+            "recruitment@futuretalentarabia.com"
+          ]
+        }
+      ],
+      "recipient": "recruitment@futuretalentarabia.com",
+      "sent_header_match": true
+    }
+  ],
+  "request_file": "outreach/icloud-audit-requests/gcc-fresh-2026-10-08-13.json",
+  "request_id": "gcc-fresh-2026-10-08-13",
+  "schema": 1
+}
