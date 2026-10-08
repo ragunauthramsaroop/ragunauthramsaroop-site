@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "a11e71bdb40595450802d53b3e05d0c06e1a61006e58debb8a207c5f8a3dcd69",
+  "batch_id": "2026-10-08-transearch-frank-nederveen-energy-direct",
+  "body_sha256": "62a3ae5b4bfd2a9e1586bafebb24ee54017f6f9a7a9ef3f9a3035a404c43e1c3",
+  "created_at": "2026-10-08T21:45:33+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "37848969911",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/2026-10-08-transearch-frank-nederveen-energy-direct.json",
+  "payload_sha256": "b134bf0be97bc1b43cbbaaf5d545843a29237b57b753449e183e03e087331f14",
+  "recipient": "frank.nederveen@transearch.com",
+  "recipient_sha256": "20a477a21f4d46eb5c593c3ed94706146e362ad569c824e7ae782d461962acd1",
+  "schema": 1,
+  "status": "pending",
+  "subject_sha256": "7a95dcd9bff94848af9c25b77dc7d7a71d6eb68de13db146c88a136634b26407"
+}
