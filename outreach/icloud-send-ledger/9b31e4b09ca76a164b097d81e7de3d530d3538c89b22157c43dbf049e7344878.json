@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "a65bdae03af67ab6f3b216162e094823ca863e6c0e2e8fee8e61c763ed9166c6",
+  "batch_id": "uae-top-executive-search-fresh-2026-10-08-03",
+  "body_sha256": "3761909434794896cde03f7179495aa2263190c5f506b9b7edd08de177128efe",
+  "created_at": "2026-10-08T18:10:45+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "37822237006",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/2026-10-08-uae-top-executive-search-fresh-03.json",
+  "payload_sha256": "d95a6bed1a1bd33296287bcd5fc5a65ecb635388ee1ff5e692c5709d7d6b1104",
+  "recipient": "jonathan.holmes@kornferry.com",
+  "recipient_sha256": "9b31e4b09ca76a164b097d81e7de3d530d3538c89b22157c43dbf049e7344878",
+  "schema": 1,
+  "status": "pending",
+  "subject_sha256": "03252fd0be7720d81d23a85150da7d9962a0aef54ba1c7542bc28e4d4685a93e"
+}
