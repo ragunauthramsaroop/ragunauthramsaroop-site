@@ -12,6 +12,8 @@
   "recipient": "guy.sloyan@gps-talent.com",
   "recipient_sha256": "c143b54caaaa7a4981df0fa6bf9309de955fc77a012ff2e4665a4c70d1dd563c",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-08T20:45:18+00:00",
+  "smtp_message_id": "<179149231860.2521.16553239398684985961@icloud.com>",
+  "status": "sent",
   "subject_sha256": "060d62cea148c5a260c816946306bfa433f3c0acec43b119b0f3b82db42babeb"
 }
