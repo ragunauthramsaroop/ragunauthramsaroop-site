@@ -3,6 +3,7 @@
   "dry_run": false,
   "campaign_type": "recruiter",
   "batch_id": "2026-10-08-heidrick-maliha-jilani-direct",
+  "retry_note": "ledger_race_retry_2026-10-08",
   "attachment_filename": "Ragunauth_Ramsaroop_GCC_Executive_CV_2026.pdf",
   "cv_overlay": {
     "company": "Heidrick & Struggles",
