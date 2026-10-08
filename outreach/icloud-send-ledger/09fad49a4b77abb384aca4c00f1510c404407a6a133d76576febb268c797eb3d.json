@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "5f7ea9432c70fae8f86997e95c8c48d1fb63596903d0bdb33a2c2baff9657055",
+  "batch_id": "gcc-executive-recruiters-2026-10-08-b07",
+  "body_sha256": "4f044a9e7287bec1ff3038a446b2f4ca34cbe92f35aa968838caf881e3b99af0",
+  "created_at": "2026-10-08T20:19:05+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "37838501010",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/2026-10-08-gcc-executive-recruiters-batch-07.json",
+  "payload_sha256": "baec1c50eb3cae561e05d9b3d23778e9a379cda2146d1ccf092fdb276b8aa765",
+  "recipient": "recruitment@norlynx-group.com",
+  "recipient_sha256": "09fad49a4b77abb384aca4c00f1510c404407a6a133d76576febb268c797eb3d",
+  "schema": 1,
+  "status": "pending",
+  "subject_sha256": "69622a3f39427dfe4105f711ac3cedeb6702e9664b3c818ea4ec262240b78f79"
+}
