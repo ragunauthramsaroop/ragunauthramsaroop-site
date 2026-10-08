@@ -12,6 +12,8 @@
   "recipient": "slathia@caldwell.com",
   "recipient_sha256": "2c6913c4e4945b84361e8240f0c80bb54bcafb2bdb4dc28578780a792ad2add0",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-08T19:22:25+00:00",
+  "smtp_message_id": "<179148734504.2214.2964963606291607503@icloud.com>",
+  "status": "sent",
   "subject_sha256": "9b9d26a612ab362b045f8cfc4f3a995c3e1d0c60fe3a1794aa5b45dcb02709a4"
 }
