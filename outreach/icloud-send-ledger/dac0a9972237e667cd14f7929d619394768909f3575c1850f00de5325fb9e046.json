@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "b2a9a582ef0a3f7dce03995c69d977d856c15f72c1080c8a51afee75cdcb1370",
+  "batch_id": "gcc-executive-recruiters-2026-10-08-b09",
+  "body_sha256": "fe2540e03a8dc955ed5f820c5d9c8d07d2e4df421f1dc7b6e13933574141e8cd",
+  "created_at": "2026-10-08T20:24:11+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "37839135422",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/2026-10-08-gcc-executive-recruiters-batch-09.json",
+  "payload_sha256": "66b3b089cc5dc1035d2fb274e91999e64521dfe3363f2542f5aaef66e35952ad",
+  "recipient": "info@corverconsulting.com",
+  "recipient_sha256": "dac0a9972237e667cd14f7929d619394768909f3575c1850f00de5325fb9e046",
+  "schema": 1,
+  "status": "pending",
+  "subject_sha256": "266819739830197708acb4eb1bc5bf1c4aace20faff943a8e030025f71e194c6"
+}
