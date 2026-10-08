@@ -12,6 +12,8 @@
   "recipient": "sstoove@spencerstuart.com",
   "recipient_sha256": "2c6790c92437ce2090f91dec17f88de7dae0eeee9b45ed30ea8ee870d20687f6",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-08T19:54:59+00:00",
+  "smtp_message_id": "<179148929861.2486.2059276134037729454@icloud.com>",
+  "status": "sent",
   "subject_sha256": "6f6701999fd6102f5e1637c22dc92c6d272c4223f281ec6bfa08d97d388039d1"
 }
