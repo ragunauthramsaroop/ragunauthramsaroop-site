@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "15e24e5d0cd24e93b7e42146485002850bde878fe62dca5f8a0de0c4d093f185",
+  "batch_id": "2026-10-08-kestria-ije-jidenma-energy-direct",
+  "body_sha256": "9b9a50e57ffe47b4354b80cf55a13e10bc1b68c05c3c5afa9cd130267e358adf",
+  "created_at": "2026-10-08T21:39:21+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "37848274639",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/2026-10-08-kestria-ije-jidenma-energy-direct.json",
+  "payload_sha256": "18e564baf989e75efc4714f826368fd17aa462c40b1c70285f2b64ef1865323b",
+  "recipient": "ije.jidenma@kestria.com",
+  "recipient_sha256": "dc7a5930ce047919ccdc0d601576a373862c3112e33b7927eaa24bba1548d37e",
+  "schema": 1,
+  "status": "pending",
+  "subject_sha256": "282d9873823b9ade1635726b333077bd40a1badc2593c73bb5c22fca6e4f53d3"
+}
