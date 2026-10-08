@@ -12,6 +12,8 @@
   "recipient": "terry@qsquest.co.uk",
   "recipient_sha256": "c2d5b0e86978d0f5e275f54903162ae16866eda11c193bed9fdf806cbc4c68b8",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-08T20:36:14+00:00",
+  "smtp_message_id": "<179149177395.2440.15777894459991360070@icloud.com>",
+  "status": "sent",
   "subject_sha256": "e52aa297ac5a078e16927e536dc25d9c64175ff1717b73377ddbb09be3c8791b"
 }
