@@ -12,6 +12,8 @@
   "recipient": "lovisa.boestadschon@investorab.com",
   "recipient_sha256": "5431bc0323c89934024d4faedb5cffd1e76dcfa3daf4c0796ac48e9d0bfcfa04",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-08T19:19:19+00:00",
+  "smtp_message_id": "<179148715928.2432.2960449639366924963@icloud.com>",
+  "status": "sent",
   "subject_sha256": "36cec8c6e5285a230c5579b1376cc153a50e579df2a1ac9411de2acb07347deb"
 }
