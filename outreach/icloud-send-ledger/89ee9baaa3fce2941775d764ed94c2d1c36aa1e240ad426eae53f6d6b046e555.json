@@ -12,6 +12,8 @@
   "recipient": "theo.kitsos@aimsinternational.com",
   "recipient_sha256": "89ee9baaa3fce2941775d764ed94c2d1c36aa1e240ad426eae53f6d6b046e555",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-08T17:48:59+00:00",
+  "smtp_message_id": "<179148173979.2222.865375104951040859@icloud.com>",
+  "status": "sent",
   "subject_sha256": "06171c7cf8c7c4c37f346f4386b3d86562bb6fd64272c49c3fa57907bb8aa206"
 }
