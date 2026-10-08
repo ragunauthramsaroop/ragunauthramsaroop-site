@@ -12,6 +12,8 @@
   "recipient": "lauren.vanhalderen@odgers.com",
   "recipient_sha256": "8b6c5adbba8581b340eba40299f8e9e28e998037a5e600d2a5b855d6cae076d8",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-08T22:35:25+00:00",
+  "smtp_message_id": "<179149892515.2426.11361437766537191361@icloud.com>",
+  "status": "sent",
   "subject_sha256": "c27295d8b895241cb7428d1fdcec16f3f31294250d3a780c094cb03adafebf49"
 }
