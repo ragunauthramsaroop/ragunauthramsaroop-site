@@ -12,6 +12,8 @@
   "recipient": "john.mensah@kornferry.com",
   "recipient_sha256": "f84d0aecb8ed55fe2777704492a71f44696080eeb5a5259de07c5ec915ef4ed4",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-08T18:40:17+00:00",
+  "smtp_message_id": "<179148481735.2235.8097011917213347840@icloud.com>",
+  "status": "sent",
   "subject_sha256": "a287550b232b04f696c46cd2e24dcda9db934bf6be97618899d518050d0ae0e4"
 }
