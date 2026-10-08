@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "8a6fca3282666560b926f5083eb14adce57d6a2fd1368bc9c59a68c232ef0d3d",
+  "batch_id": "gcc-executive-recruiters-2026-10-08-b24",
+  "body_sha256": "4af5c780b791ec37d38db14da68f21715a2403e10f2d45ff70a08c3d08c4cae6",
+  "created_at": "2026-10-08T21:49:17+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "37849371459",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/2026-10-08-gcc-executive-recruiters-batch-24.json",
+  "payload_sha256": "fc18b6190fe66e3cfcccebc1b40f3e4269fb63d5dd77c33dbe38fb4fd36f176a",
+  "recipient": "info@menatalents.com",
+  "recipient_sha256": "0ac5cc80a05c667b22f3571a8aedf43fdf512370c9609b40daff79012f2f4f34",
+  "schema": 1,
+  "status": "pending",
+  "subject_sha256": "79cc7faeaff53e88d5ba8df97c928bfdfebf9c2fd134b2f9116f570e168bf0ee"
+}
