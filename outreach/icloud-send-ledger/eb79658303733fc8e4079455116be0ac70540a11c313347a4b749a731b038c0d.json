@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "a38c2458efc06023d1ad774db764c1759ddf80ec74ea66b6984fd9d0051f5336",
+  "batch_id": "2026-10-08-egon-zehnder-raed-kanaan-direct",
+  "body_sha256": "2f91c2032fcacabfd5d9beb089474b5c67f7c62724e839e8cfa4c5af5043c115",
+  "created_at": "2026-10-08T19:46:42+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "37834424061",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/2026-10-08-egon-zehnder-raed-kanaan-direct.json",
+  "payload_sha256": "24664b716f3e1d7b45189d1b4cdeb50653f2d3a1528cec4575239d02107bbf06",
+  "recipient": "raed.kanaan@egonzehnder.com",
+  "recipient_sha256": "eb79658303733fc8e4079455116be0ac70540a11c313347a4b749a731b038c0d",
+  "schema": 1,
+  "status": "pending",
+  "subject_sha256": "9b1a6745916254ada37f0488d5a2500b5e267b325b04efb2817927c553b449b5"
+}
