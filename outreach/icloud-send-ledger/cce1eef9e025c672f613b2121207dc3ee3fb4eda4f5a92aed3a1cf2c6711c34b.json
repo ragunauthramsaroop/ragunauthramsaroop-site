@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "88d572fef06219147b1db72e96dbef18e1dcc598de1a95687f5e545bc09df66b",
+  "batch_id": "2026-10-08-kestria-gurdeep-hora-energy-resources-direct",
+  "body_sha256": "32d9d916cebdfc605ac03a86922315cb4332fd3f0cdf77ac06d536ea9c62edd8",
+  "created_at": "2026-10-08T21:46:16+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "37849045127",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/2026-10-08-kestria-gurdeep-hora-energy-resources-direct.json",
+  "payload_sha256": "02900d9e2bb90cec5835482691f591e1ec13fa0be0b12d02812c63dd4fb00dbe",
+  "recipient": "gshora@synergyindia.com",
+  "recipient_sha256": "cce1eef9e025c672f613b2121207dc3ee3fb4eda4f5a92aed3a1cf2c6711c34b",
+  "schema": 1,
+  "status": "pending",
+  "subject_sha256": "c1afb17b87ad716e1e9deef75ed09c8e33d9c5078d9907581f0eceeb7a018315"
+}
