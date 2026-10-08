@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "85c50f5c5d3aa4253f5021f2e6df03368965439342f27e2d4caf422dd7fba839",
+  "batch_id": "2026-10-08-europe-ceiling-recruiters-wave-01",
+  "body_sha256": "b42b92552d1db3b0eaba89be8736c0b21476498c73f2eb7cfd9cdd8222fd9f86",
+  "created_at": "2026-10-08T18:39:26+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "37825938802",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/2026-10-08-europe-ceiling-recruiters-wave-01.json",
+  "payload_sha256": "b3b58ae3fcfbfdc78f0ae077b59c6b86c8bc70cef3f3342389091818342b7821",
+  "recipient": "skitchloo@heidrick.com",
+  "recipient_sha256": "0312b5df9e6b044f5ea4e7626cd882b0be1beffd73320d76b9406ed023ea7992",
+  "schema": 1,
+  "status": "pending",
+  "subject_sha256": "0bc69b362abef1d1438d92307310ea9d5b8cec55bd949baabff3266cf22a4883"
+}
