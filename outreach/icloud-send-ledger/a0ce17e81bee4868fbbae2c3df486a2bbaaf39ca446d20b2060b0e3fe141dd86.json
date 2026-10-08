@@ -12,6 +12,8 @@
   "recipient": "hello@vitale-consulting.com",
   "recipient_sha256": "a0ce17e81bee4868fbbae2c3df486a2bbaaf39ca446d20b2060b0e3fe141dd86",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-08T20:46:27+00:00",
+  "smtp_message_id": "<179149238704.2360.13127610274869903837@icloud.com>",
+  "status": "sent",
   "subject_sha256": "fbbe63855af504cb4ad1af2bb2f48ebe2e177c70ed0b5eccfd2433123cf3e37e"
 }
