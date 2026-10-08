@@ -12,6 +12,8 @@
   "recipient": "robert.quinn@odgers.com",
   "recipient_sha256": "2fe08bc9442eacc47a3e913030bc7f39b7325e49f65e75462d70c9dd47dc2e64",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-08T20:00:01+00:00",
+  "smtp_message_id": "<179148960157.2224.11020088692797305134@icloud.com>",
+  "status": "sent",
   "subject_sha256": "2f055763d9e5933fde20c7e848e184e43c6e775e2eb9c4b35b311fb06add7ad4"
 }
