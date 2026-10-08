@@ -12,6 +12,8 @@
   "recipient": "wendy.uchtmann@arcelormittal.com",
   "recipient_sha256": "47c7deb449f8fd7fab37bc1431cf652108f89b620890fa703aab67449f735604",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-08T18:58:51+00:00",
+  "smtp_message_id": "<179148593188.2225.5225680709632366444@icloud.com>",
+  "status": "sent",
   "subject_sha256": "d8464e6c2be2f02ade2e0df894b5dcdd8c707a68a8613cb0b94bac790daa1f8f"
 }
