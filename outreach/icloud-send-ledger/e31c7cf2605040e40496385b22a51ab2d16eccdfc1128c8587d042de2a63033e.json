@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "a535b2427d8a8c1ebe25b1a3be563882961633342df0270ac0cd0cb496e1375f",
+  "batch_id": "2026-10-08-siemens-energy-julia-ruzak-direct",
+  "body_sha256": "435cca2ba368258773247d9179b98f96e7dfe596315fa6da16a91714aace7051",
+  "created_at": "2026-10-08T18:58:31+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "37828343965",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/2026-10-08-siemens-energy-julia-ruzak-direct.json",
+  "payload_sha256": "e6e7f19c532d9010fbc5d235f7ced850b8f8fe48ea6e5c26ea2a6861d1d65b1a",
+  "recipient": "julia.ruzak.ext@siemens-energy.com",
+  "recipient_sha256": "e31c7cf2605040e40496385b22a51ab2d16eccdfc1128c8587d042de2a63033e",
+  "schema": 1,
+  "status": "pending",
+  "subject_sha256": "3e74eda005d9c32f4ae5976c7f389483822f6059cafc997e576c46d56d21b766"
+}
