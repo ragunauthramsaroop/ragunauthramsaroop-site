@@ -12,6 +12,8 @@
   "recipient": "cswee@boyden.com",
   "recipient_sha256": "ec3e0439e0c995b2be2f5514eee1e31f9dbd3bcd05d9ed5719ddc9a02e98223e",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-08T22:42:14+00:00",
+  "smtp_message_id": "<179149933407.2428.17566340477437737910@icloud.com>",
+  "status": "sent",
   "subject_sha256": "14a8f6d7ca3e954412a4bc1d166e8e2e419aa4d3ac39e8c2cc9f926222bbaebb"
 }
