@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "e40d54ab2c5915c9f8d4a57bae3aedfec3a8bc474222d176a8049e51f8103941",
+  "batch_id": "2026-10-08-odgers-pierre-herve-bazin-europe-direct",
+  "body_sha256": "88913aa3a6059826696b8f709127bafa773e37fd1f4df51616bb1fa730fc5e1e",
+  "created_at": "2026-10-08T20:01:11+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "37836259816",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/2026-10-08-odgers-pierre-herve-bazin-europe-direct.json",
+  "payload_sha256": "dd1bdffa06abdba9d953892e1364b0814a993a9ece0074257135396e4c3b93de",
+  "recipient": "pierre.herve-bazin@odgers.com",
+  "recipient_sha256": "fc883a456b2061baa3a53e3e96f627914798eb7c08f05dbaccc18e010edbe453",
+  "schema": 1,
+  "status": "pending",
+  "subject_sha256": "085ac6461364dcdc8fe6ca9c4105142dfcad22b260442f081908b3c885c042bd"
+}
