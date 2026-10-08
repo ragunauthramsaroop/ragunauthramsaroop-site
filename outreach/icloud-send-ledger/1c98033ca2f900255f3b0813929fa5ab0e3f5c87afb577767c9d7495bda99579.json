@@ -12,6 +12,8 @@
   "recipient": "morta.grigaliunaite-starke@ignitis.lt",
   "recipient_sha256": "1c98033ca2f900255f3b0813929fa5ab0e3f5c87afb577767c9d7495bda99579",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-08T19:35:46+00:00",
+  "smtp_message_id": "<179148814647.2243.11200494844722613051@icloud.com>",
+  "status": "sent",
   "subject_sha256": "9e8db0af2e2b923d33dfc862b70e58edaa0aaa41abace5d0fa73f5dfed912021"
 }
