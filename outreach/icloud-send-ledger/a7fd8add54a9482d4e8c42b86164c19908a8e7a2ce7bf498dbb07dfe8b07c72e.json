@@ -12,6 +12,8 @@
   "recipient": "raffaello.raimondi@kornferry.com",
   "recipient_sha256": "a7fd8add54a9482d4e8c42b86164c19908a8e7a2ce7bf498dbb07dfe8b07c72e",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-08T18:40:20+00:00",
+  "smtp_message_id": "<179148482037.2235.10998509529485104891@icloud.com>",
+  "status": "sent",
   "subject_sha256": "407c5b61cd9c784c8694264ae13f632dfb1088bbb793fb053ac2babba370e394"
 }
