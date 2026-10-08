@@ -12,6 +12,8 @@
   "recipient": "karla.dorsch@ngs-global.com",
   "recipient_sha256": "2a92a309d418bfed1e1ca6752ce471078da76965bab63d696521692c11802a22",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-08T17:48:57+00:00",
+  "smtp_message_id": "<179148173717.2222.13128490850427855178@icloud.com>",
+  "status": "sent",
   "subject_sha256": "fba3df6887976fe6cf8792a53342dc831fa8821a0754d43d42e30061c06e9b24"
 }
