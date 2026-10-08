@@ -12,6 +12,8 @@
   "recipient": "monta.zake@eleving.com",
   "recipient_sha256": "57595527bd0a50be2c0cb5042c444e997a60cc9797e9efa0209b5d65c1dc1074",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-08T19:39:51+00:00",
+  "smtp_message_id": "<179148839151.2232.14150647384115611432@icloud.com>",
+  "status": "sent",
   "subject_sha256": "a3b707bddb1b370a5ba8f9851e895f8002bf25e41c9e236999f9b853b0756293"
 }
