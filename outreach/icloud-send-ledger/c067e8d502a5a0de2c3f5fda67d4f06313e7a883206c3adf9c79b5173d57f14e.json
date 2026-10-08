@@ -12,6 +12,8 @@
   "recipient": "k.rajguru@stantonchase.com",
   "recipient_sha256": "c067e8d502a5a0de2c3f5fda67d4f06313e7a883206c3adf9c79b5173d57f14e",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-08T22:06:36+00:00",
+  "smtp_message_id": "<179149719603.2216.10591548635101530729@icloud.com>",
+  "status": "sent",
   "subject_sha256": "f7f251dd10693fc080c58e1c95b18a61adb7e8a63255908536219990e917efcb"
 }
