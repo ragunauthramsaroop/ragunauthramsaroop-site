@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "c73359c4affa9c610ba098584ec3eefd5b36b7f740b9f1b35d33ef41393ab6af",
+  "batch_id": "2026-10-08-human-valoris-nazih-saade-direct",
+  "body_sha256": "8a1767b320f69d39ba32002614544826ffbf8295adb9d421ef491cf9d7b29e89",
+  "created_at": "2026-10-08T20:21:17+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "37838733771",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/2026-10-08-human-valoris-nazih-saade-direct.json",
+  "payload_sha256": "4eea6282fc04dfdf6c66ce8d67256478e7c012fc90feab327b117d1fc45b4e4a",
+  "recipient": "n.saade@human-valoris.com",
+  "recipient_sha256": "686da323d4d69174ef9ce75461aeda85882d303fa290c767d34bf1582f8636c2",
+  "schema": 1,
+  "status": "pending",
+  "subject_sha256": "3245eb8f64ac2a4e3418299bde4a224b2207bb765f4edb703c666643cd212f16"
+}
