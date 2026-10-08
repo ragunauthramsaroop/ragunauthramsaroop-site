@@ -12,6 +12,8 @@
   "recipient": "andrew.lowe@kornferry.com",
   "recipient_sha256": "22c11a485c74472f98b602f0ff2e955b99f4350a73ae7fbd18add648d87e5ab9",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-08T18:41:10+00:00",
+  "smtp_message_id": "<179148487025.2497.16532803046705491794@icloud.com>",
+  "status": "sent",
   "subject_sha256": "1514056b5ce039a305ff14a2c0814264da76f25e9a6ee24c057adf22a0860027"
 }
