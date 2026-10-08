@@ -12,6 +12,8 @@
   "recipient": "info@prcksa.com",
   "recipient_sha256": "201c6c60082ae942e21ca3f20888e42d00ee42ea50a16b7231480aba5f446588",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-08T21:41:05+00:00",
+  "smtp_message_id": "<179149566508.2289.15201077165606184839@icloud.com>",
+  "status": "sent",
   "subject_sha256": "069415f4e6e0a3f9138167379e7cad9a9feece0fba26342cd294e4a4cd8e7dde"
 }
