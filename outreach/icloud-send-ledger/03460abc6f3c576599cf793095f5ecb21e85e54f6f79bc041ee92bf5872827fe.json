@@ -12,6 +12,8 @@
   "recipient": "me@kitalent.com",
   "recipient_sha256": "03460abc6f3c576599cf793095f5ecb21e85e54f6f79bc041ee92bf5872827fe",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-08T20:27:03+00:00",
+  "smtp_message_id": "<179149122365.2214.14991832547877046483@icloud.com>",
+  "status": "sent",
   "subject_sha256": "d86827d428924d874e48ddd7fbdecc9880273ed29521204fe95356bf79ce2063"
 }
