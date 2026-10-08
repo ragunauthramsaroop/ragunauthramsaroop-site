@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "5b3b7790c4c1ef53b490f70e6e1af11b70c5466da39149d5ee9643d06732d7ca",
+  "batch_id": "2026-10-08-heidrick-shadi-el-farr-direct",
+  "body_sha256": "d3517dc8b37d5d75933616f692bd7b555976ac96fbb90f364384049a36023c12",
+  "created_at": "2026-10-08T19:45:36+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "37834324192",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/2026-10-08-heidrick-shadi-el-farr-direct.json",
+  "payload_sha256": "4702ce36b2c8e72f5eb60657550d7e6134b63890556f17eec4a55d11d1b82c92",
+  "recipient": "selfarr@heidrick.com",
+  "recipient_sha256": "216d95858cc785f055da5454edae07d6f73855c3d7e948fc54df8d9c268315f7",
+  "schema": 1,
+  "status": "pending",
+  "subject_sha256": "de06e597493031b5a87f62b9245933c8776656c46ba9e3a91e8ad840b0615ad7"
+}
