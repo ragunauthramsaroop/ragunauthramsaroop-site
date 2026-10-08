@@ -12,6 +12,8 @@
   "recipient": "martin.klacian@cez.cz",
   "recipient_sha256": "95e738cfd50dcaf763fa7b82e4013268f3a42a765f576062ac89de0b814f793a",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-08T19:25:48+00:00",
+  "smtp_message_id": "<179148754786.2223.2138374490416047348@icloud.com>",
+  "status": "sent",
   "subject_sha256": "a4b18cf85c4165f2bf75356858443a3ef38e811d8212227491a028af12a4b365"
 }
