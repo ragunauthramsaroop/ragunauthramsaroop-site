@@ -12,6 +12,8 @@
   "recipient": "mike.alnassir@pedersenandpartners.com",
   "recipient_sha256": "57422cf3fad048da17a27c15275133943643f4c1292cc3dfa6b617cd5b759c2f",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-08T18:17:03+00:00",
+  "smtp_message_id": "<179148342286.2213.11005189340808269374@icloud.com>",
+  "status": "sent",
   "subject_sha256": "4d2d78df24b978817d8cf495d80f635e3b986e958491f03ca1f3d76ae208aa2b"
 }
