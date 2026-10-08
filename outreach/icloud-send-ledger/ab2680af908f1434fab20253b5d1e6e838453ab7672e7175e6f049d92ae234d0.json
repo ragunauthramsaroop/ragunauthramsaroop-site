@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "1d6fa0de85bf7686f50286269b89d53cfd28c77484028a82fdb327a2bcf249dc",
+  "batch_id": "2026-10-08-boyden-bhavana-dalal-direct",
+  "body_sha256": "bd13f647ddc48752386baeb5a29a92ecbda80d07d2cf6e97d4bb170e5e70bcff",
+  "created_at": "2026-10-08T20:09:32+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "37837310614",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/2026-10-08-boyden-bhavana-dalal-direct.json",
+  "payload_sha256": "5978d6f2e30a1e96af8f32ff8262e50cb0868c951cdda8b2c044d345fd133a10",
+  "recipient": "b.dalal@boydenme.com",
+  "recipient_sha256": "ab2680af908f1434fab20253b5d1e6e838453ab7672e7175e6f049d92ae234d0",
+  "schema": 1,
+  "status": "pending",
+  "subject_sha256": "5929b97ddd1e19496efbd0ae07bc81f55859920959b45d3cd9703837790ce2e3"
+}
