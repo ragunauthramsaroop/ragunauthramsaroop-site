@@ -12,6 +12,8 @@
   "recipient": "zmarar@zrgpartners.com",
   "recipient_sha256": "85e6a8115bb1d9c5cf9f3b270f3d35baae4c72d7ad32cb0b722906505c862c99",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-08T18:28:21+00:00",
+  "smtp_message_id": "<179148410111.2227.13365446622771369984@icloud.com>",
+  "status": "sent",
   "subject_sha256": "03252fd0be7720d81d23a85150da7d9962a0aef54ba1c7542bc28e4d4685a93e"
 }
