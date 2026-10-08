@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "33f24efcca833013db25507a8e49172dd2f01d0248146cf47d1ce731f02ac465",
+  "batch_id": "2026-10-08-bov-resourcing-direct",
+  "body_sha256": "e90d4a4b000d4a1a767399f7d9cf8cdf71d8ec3db0408fbecce89ba5a7be6cc5",
+  "created_at": "2026-10-08T19:27:00+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "37831979553",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/2026-10-08-bov-resourcing-direct.json",
+  "payload_sha256": "6633eac29d7477a4fa07e6bbb3c4ab5bbacddf2a48c35e10bf08ccdeedbae543",
+  "recipient": "resourcing@bov.com",
+  "recipient_sha256": "e5d8951765211103d2f4b315f9aa3ae124e270d44b868650ab5c1599dfd935e4",
+  "schema": 1,
+  "status": "pending",
+  "subject_sha256": "0145ecab0b01824d9799d3853fb2a4b609e2d38d5c90534ced2ec9c518d89057"
+}
