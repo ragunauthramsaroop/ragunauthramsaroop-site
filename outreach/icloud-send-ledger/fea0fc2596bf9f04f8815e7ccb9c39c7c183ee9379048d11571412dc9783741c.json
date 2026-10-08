@@ -12,6 +12,8 @@
   "recipient": "roland.theuws@amrop.nl",
   "recipient_sha256": "fea0fc2596bf9f04f8815e7ccb9c39c7c183ee9379048d11571412dc9783741c",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-08T21:43:44+00:00",
+  "smtp_message_id": "<179149582436.2220.5277144750918569644@icloud.com>",
+  "status": "sent",
   "subject_sha256": "68ff17307c9a8aa4741aa225972591b9a417f0472e89a593ff6b6a0cdbfbc44f"
 }
