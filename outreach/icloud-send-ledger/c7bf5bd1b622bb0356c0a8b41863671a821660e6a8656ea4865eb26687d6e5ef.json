@@ -12,6 +12,8 @@
   "recipient": "resourcing@santander.co.uk",
   "recipient_sha256": "c7bf5bd1b622bb0356c0a8b41863671a821660e6a8656ea4865eb26687d6e5ef",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-08T19:25:09+00:00",
+  "smtp_message_id": "<179148750951.2442.8396143370654351119@icloud.com>",
+  "status": "sent",
   "subject_sha256": "bef7eea49c26b1a2a2423af84d8fbfbf96bd396ab59b8cc042e95e661733d843"
 }
