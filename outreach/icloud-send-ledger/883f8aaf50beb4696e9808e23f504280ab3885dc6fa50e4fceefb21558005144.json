@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "05b0fd7a382f19e47ce46ba5ef7bd0936f1052a8a30835ff24c58501bd0cc6f7",
+  "batch_id": "2026-10-08-pedersen-shayma-ibrahim-saudi-direct",
+  "body_sha256": "024dd454c8e00ea657cf12979315f29728825af879100d77f5e3af7e0ac4fbd4",
+  "created_at": "2026-10-08T20:10:55+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "37837487188",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/2026-10-08-pedersen-shayma-ibrahim-saudi-direct.json",
+  "payload_sha256": "c1f670757f11ef34c4c29118e617f454732db47940c9149a4be748a80bb47de0",
+  "recipient": "shayma.ibrahim@pedersenandpartners.com",
+  "recipient_sha256": "883f8aaf50beb4696e9808e23f504280ab3885dc6fa50e4fceefb21558005144",
+  "schema": 1,
+  "status": "pending",
+  "subject_sha256": "bf3a6c03982dddc8afd0c5cc8bc2ca900cc53c9b4293ad2808f1085bb85180ef"
+}
