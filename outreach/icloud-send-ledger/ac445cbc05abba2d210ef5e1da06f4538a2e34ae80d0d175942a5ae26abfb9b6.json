@@ -12,6 +12,8 @@
   "recipient": "dubai@transearch.com",
   "recipient_sha256": "ac445cbc05abba2d210ef5e1da06f4538a2e34ae80d0d175942a5ae26abfb9b6",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-08T19:02:07+00:00",
+  "smtp_message_id": "<179148612721.2430.9480658247127725315@icloud.com>",
+  "status": "sent",
   "subject_sha256": "466e1cca89d5da39755577de09649c7d291e54a8298b8a8ed0cc0486c7f06751"
 }
