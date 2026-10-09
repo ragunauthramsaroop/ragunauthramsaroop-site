@@ -12,6 +12,8 @@
   "recipient": "hello@amirihr.com",
   "recipient_sha256": "b08b809246a72b84632efe1b8c2677b776f256f5d69dcb28d6f16c4a6888f520",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-09T00:18:09+00:00",
+  "smtp_message_id": "<179150508959.2411.9727774778056816915@icloud.com>",
+  "status": "sent",
   "subject_sha256": "05fe97d11da11c8d7e2800463ff475866cc3c10754dd358b2904ed6ab28020a6"
 }
