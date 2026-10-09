@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "d1562ff47a3a6c3bbf0540e5f85db942a46aa88361e8a4faba35d66380aa412a",
+  "batch_id": "2026-10-08-top-global-search-firms-wave-04",
+  "body_sha256": "dc540527a46a41c4806aaa0f21440db49039c1375e588fc08e4f4fda8154a602",
+  "created_at": "2026-10-09T00:41:33+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "37866033635",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/2026-10-08-top-global-search-firms-wave-04.json",
+  "payload_sha256": "4e8e60bfbb1a8dedc4635e6f7d6e75c9cf5a6b96fd32f21a9031f0fff496f679",
+  "recipient": "chayward@iicpartners.com",
+  "recipient_sha256": "c3f66b85109af16528ff65db60f447938151cb6a0e5442c3c8fb0f0e05e53f14",
+  "schema": 1,
+  "status": "pending",
+  "subject_sha256": "e432aec0d434b6017c32352ac8dda5b29ee6088254d854808bda3a4f0298757f"
+}
