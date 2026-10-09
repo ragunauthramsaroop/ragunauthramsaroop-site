@@ -12,6 +12,8 @@
   "recipient": "marc@salamonepartners.com",
   "recipient_sha256": "e2a9d9d3af13373af15042a729a5652dea6bfa4b6c77318d00314597d9d84111",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-09T01:56:43+00:00",
+  "smtp_message_id": "<179151100342.2215.1569272457410964557@icloud.com>",
+  "status": "sent",
   "subject_sha256": "af868c8045745b8323e617c1fb1646955ccc27a16f47b4bc4c7f1da70042eccb"
 }
