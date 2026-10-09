@@ -12,6 +12,8 @@
   "recipient": "alana.bray-white@ivyandgecko.com.au",
   "recipient_sha256": "32b020d27fc57cba18e0fe8340e7b834489c276f25390a63c7cde86c5652d86d",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-09T01:52:17+00:00",
+  "smtp_message_id": "<179151073690.2216.12396551826941943524@icloud.com>",
+  "status": "sent",
   "subject_sha256": "030d3f1de3c9e98c253dddb2fb2aa59bb32d8c064494a29937231ea8c362265e"
 }
