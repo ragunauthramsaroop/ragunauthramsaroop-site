@@ -12,6 +12,8 @@
   "recipient": "christina.tp@csgtalent.com",
   "recipient_sha256": "aff928d88d336ead1e6c189b2f4ed95fe452da5df546b7ef2e073cbf69902c61",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-09T01:25:22+00:00",
+  "smtp_message_id": "<179150912197.2224.11300966074461546259@icloud.com>",
+  "status": "sent",
   "subject_sha256": "53c63a021d27284789c10a7087cf060011e27ce06e7431e342a9179357e37706"
 }
