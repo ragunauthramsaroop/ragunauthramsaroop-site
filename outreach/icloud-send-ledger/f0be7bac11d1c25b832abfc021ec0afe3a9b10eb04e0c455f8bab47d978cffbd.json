@@ -12,6 +12,8 @@
   "recipient": "kiera.oreilly@pangea-resourcing.com",
   "recipient_sha256": "f0be7bac11d1c25b832abfc021ec0afe3a9b10eb04e0c455f8bab47d978cffbd",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-09T01:51:44+00:00",
+  "smtp_message_id": "<179151070380.2494.2603791197013300871@icloud.com>",
+  "status": "sent",
   "subject_sha256": "4a83c83187a238dcf8ddc3a49a9809d33912afc2865e7d6102c02f9059be7c92"
 }
