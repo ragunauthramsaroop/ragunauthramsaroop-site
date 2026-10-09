@@ -12,6 +12,8 @@
   "recipient": "jschofield@zrgpartners.com",
   "recipient_sha256": "110916bc614c555a096a46570e18037a44a79fe50c1a744b7e011779fcdfcce5",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-09T00:38:27+00:00",
+  "smtp_message_id": "<179150630706.2430.3520983640516696242@icloud.com>",
+  "status": "sent",
   "subject_sha256": "c428e2df08284a907c923c6248eeba7d4586b92d8029d313e0a1459ef7d8991a"
 }
