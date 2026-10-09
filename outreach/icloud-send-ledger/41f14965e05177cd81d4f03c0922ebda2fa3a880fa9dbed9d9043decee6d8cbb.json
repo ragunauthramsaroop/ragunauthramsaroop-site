@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "3101618063f638b555b36fdbc6a5d0c8e675c271e00e17005fab2f575cf70b35",
+  "batch_id": "2026-10-08-top-global-search-firms-wave-03",
+  "body_sha256": "d9540f2fe68b5688f1d2cbb845a54c4f5ca7f308b9e19ea72355c7a95050bb6a",
+  "created_at": "2026-10-09T00:38:22+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "37865776735",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/2026-10-08-top-global-search-firms-wave-03.json",
+  "payload_sha256": "bbf12762f4fa5ddcb9a8d33d20050819a942b5fabd35b9c523b39a90e20d6efd",
+  "recipient": "southafricaoffice@aimsinternational.co.za",
+  "recipient_sha256": "41f14965e05177cd81d4f03c0922ebda2fa3a880fa9dbed9d9043decee6d8cbb",
+  "schema": 1,
+  "status": "pending",
+  "subject_sha256": "487b4ad9517c8364a4fedf96d60c1f63966a47995f77269fba15e1344118e7c1"
+}
