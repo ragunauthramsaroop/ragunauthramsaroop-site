@@ -12,6 +12,8 @@
   "recipient": "jgodbold@omerapartners.com",
   "recipient_sha256": "b46d86ac567672c4da45acb2de94aa0c5489ec53dafa507705788c5861bcb286",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-09T01:50:44+00:00",
+  "smtp_message_id": "<179151064427.2218.10397253944579494023@icloud.com>",
+  "status": "sent",
   "subject_sha256": "9a9b6ba7507e5d3c139c97fd63fdf2e691589faeba56a3be200635fe17a08532"
 }
