@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "0de3ceca4d5f582719fd48b1e0bb77ebc4aae89da389bb28d539ca8ea304e1ed",
+  "batch_id": "gcc-executive-recruiters-2026-10-08-b27",
+  "body_sha256": "cfa6f76f7df8d0942a975bb4a32062980b667ec5eeb55f88f74637abf93d771c",
+  "created_at": "2026-10-09T00:18:06+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "37864046640",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/2026-10-08-gcc-executive-recruiters-batch-27.json",
+  "payload_sha256": "dc857a6275418f2c31c364153942a0980a5b3a8392879257e85f3f9bbee26e22",
+  "recipient": "info@zynithtalent.com",
+  "recipient_sha256": "3ef59b848fd0e71865a1a905eb0d0efe0a9af1685ce368a59868d33aff82314b",
+  "schema": 1,
+  "status": "pending",
+  "subject_sha256": "5e39da1dc2983564bf1069d7fe35926a0c2a86a5924507d078fc3fc45afc9925"
+}
