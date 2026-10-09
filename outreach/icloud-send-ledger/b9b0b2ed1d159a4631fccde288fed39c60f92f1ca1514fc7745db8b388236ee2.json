@@ -12,6 +12,8 @@
   "recipient": "contact@xtravagroup.com",
   "recipient_sha256": "b9b0b2ed1d159a4631fccde288fed39c60f92f1ca1514fc7745db8b388236ee2",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-09T01:39:48+00:00",
+  "smtp_message_id": "<179150998847.2555.9643894200242322448@icloud.com>",
+  "status": "sent",
   "subject_sha256": "c1c0bf683bbbf280a042c358310030428ec5b8ea098179f3a3348d105afa3223"
 }
