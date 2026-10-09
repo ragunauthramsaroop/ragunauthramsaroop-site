@@ -12,6 +12,8 @@
   "recipient": "gregor@partnerexecutive.com.au",
   "recipient_sha256": "5922888138fb15c9ec556bcbbc64be8c09af7892c4d7ba5b9edba2381860e6b2",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-09T01:51:16+00:00",
+  "smtp_message_id": "<179151067664.2447.2692678489478563741@icloud.com>",
+  "status": "sent",
   "subject_sha256": "721e3ae051199c436628c2daedef3702d23de93eb8a1f06ea9456bf4dc2890ed"
 }
