@@ -12,6 +12,8 @@
   "recipient": "info@goldrickconsulting.com",
   "recipient_sha256": "4d7cea138de9b3f03bc6b2a0d0439b21d6931949158d0ac8295f2198ffcc1994",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-09T01:39:51+00:00",
+  "smtp_message_id": "<179150999121.2555.4940118923132036435@icloud.com>",
+  "status": "sent",
   "subject_sha256": "ce41eb1955cbd51825922b2dec9ca7ba1eb11404745633823ffe8cd82bc9761d"
 }
