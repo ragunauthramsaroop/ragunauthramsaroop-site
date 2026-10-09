@@ -12,6 +12,8 @@
   "recipient": "carina@whithamgroup.com",
   "recipient_sha256": "684dfb6a9c42b7932eebcb5b0e3c50a534241e491810948cdfd72fc64dd3b1a8",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-09T01:52:14+00:00",
+  "smtp_message_id": "<179151073440.2216.4912620648258781539@icloud.com>",
+  "status": "sent",
   "subject_sha256": "2de4d2a259ae56b5490221ebd8be8a0f241f013195841a94fedb6ce88d649fe1"
 }
