@@ -12,6 +12,8 @@
   "recipient": "stuart.grantham@globaledgegroup.com",
   "recipient_sha256": "6192f253bce88a33a1b1218e93bdbb383d0c07adfa2159ea887e2b48f2348c97",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-09T01:51:48+00:00",
+  "smtp_message_id": "<179151070843.2494.2319434298449802289@icloud.com>",
+  "status": "sent",
   "subject_sha256": "09272f83faafad459cc93bc487bf01e84ebab65ca8ad4af73d929fcd2d534653"
 }
