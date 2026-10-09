@@ -12,6 +12,8 @@
   "recipient": "n.semczuk@jn-recruitment.com",
   "recipient_sha256": "24b1b944cf89028f8cdee4c7452632616add8669db8d97032d2111935957eb4e",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-09T00:16:06+00:00",
+  "smtp_message_id": "<179150496645.2449.10427899529170308191@icloud.com>",
+  "status": "sent",
   "subject_sha256": "e66a6ec7de220fba56e8e65af362355d27ed8020dd47495dd9a05d456407294d"
 }
