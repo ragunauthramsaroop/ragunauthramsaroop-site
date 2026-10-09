@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "96a7fe2585fc57bfe18bb5d1ee1069de6d3115f4c46b0293bb6d5aad6d1445db",
+  "batch_id": "2026-10-08-next40-wave-09",
+  "body_sha256": "29b6f22988b28668b84c12edae7a01608d2f21343e8ab09737360c74e6dad1b9",
+  "created_at": "2026-10-09T01:53:08+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "37871873888",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/2026-10-08-next40-wave-09.json",
+  "payload_sha256": "d639921ceda09cb310fc5448a9f7fd9a160884ac208ea65562712404be0699ec",
+  "recipient": "info@hyreontalent.com",
+  "recipient_sha256": "74d768b8a7d10f417c36c5c7897619fd47363aa787146c0d449eb37a808e92bd",
+  "schema": 1,
+  "status": "pending",
+  "subject_sha256": "ad8e292d298cdc42f237bd4a9fe7a3b1c3ec448c47509bdfa734cca1d67abe7e"
+}
