@@ -12,6 +12,8 @@
   "recipient": "info@hrbsglobal.com",
   "recipient_sha256": "7fea618ef467677085bf1ee8037b8979f7b3f4ef844c9726afbf99c089ce7dd1",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-09T00:16:08+00:00",
+  "smtp_message_id": "<179150496846.2449.5753598496709624412@icloud.com>",
+  "status": "sent",
   "subject_sha256": "7d109728e0be97f4c326dfc0f6fc894fa074488865d5cc463ea8977ea224ee61"
 }
