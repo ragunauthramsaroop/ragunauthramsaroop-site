@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "2581853f6a09133986a521b6412c7703e4dd59ee9b4cbd9db5fb462ae2464b81",
+  "batch_id": "2026-10-08-next40-wave-03",
+  "body_sha256": "151a11345eed6752e0aa43fdf152d898f026932dbbf69c8101ea581800a4ce60",
+  "created_at": "2026-10-09T01:50:45+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "37871706273",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/2026-10-08-next40-wave-03.json",
+  "payload_sha256": "779a0a04b3c8c1f9af4e418be690483bfaf7999f064ba72283106b6e2121a29f",
+  "recipient": "mike.chilman@principalandpartners.sg",
+  "recipient_sha256": "f5233c5aecaa5d0b688018b3e21b872bd68e9416bd50cd27b4acba26824facb0",
+  "schema": 1,
+  "status": "pending",
+  "subject_sha256": "f3b4313119f174ca0be6f8d035cade49207fdd80a8dbd89bd4b9e3488218ae97"
+}
