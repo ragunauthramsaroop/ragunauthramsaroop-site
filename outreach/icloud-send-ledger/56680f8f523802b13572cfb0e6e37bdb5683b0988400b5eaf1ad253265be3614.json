@@ -12,6 +12,8 @@
   "recipient": "sbangs@srsme.com",
   "recipient_sha256": "56680f8f523802b13572cfb0e6e37bdb5683b0988400b5eaf1ad253265be3614",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-09T01:58:48+00:00",
+  "smtp_message_id": "<179151112772.2443.126229398068550130@icloud.com>",
+  "status": "sent",
   "subject_sha256": "931ae9620fc480f63a6f63800e006edfd6ed761886452688f79a09681959b482"
 }
