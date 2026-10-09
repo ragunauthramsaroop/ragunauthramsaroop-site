@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "cc39a8f70b8709a75c3d6403b4318d3aa39af122cabd5bdafcff24ecc0c54fc9",
+  "batch_id": "2026-10-08-next40-wave-08",
+  "body_sha256": "ef1851bbe267845b351e5f074d70497d95f9ac2c02131d44475229b49b4097d7",
+  "created_at": "2026-10-09T01:52:42+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "37871829467",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/2026-10-08-next40-wave-08.json",
+  "payload_sha256": "d66896c79b4776b0fb913fec9bbfd3c4ad1323f638a3457d0b40dcf9989cc34b",
+  "recipient": "hd@greensearchglobal.com",
+  "recipient_sha256": "71adaccbb8318f27a11c03cd8b390df568aec310592ad577386a06e5d71b8bf9",
+  "schema": 1,
+  "status": "pending",
+  "subject_sha256": "8de9669188aea7e96cf405de89c666cdd05700874e09df27b13cad1f7da11977"
+}
