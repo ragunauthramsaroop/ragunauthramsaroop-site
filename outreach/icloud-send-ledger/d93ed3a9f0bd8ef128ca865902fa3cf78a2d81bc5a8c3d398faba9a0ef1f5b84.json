@@ -12,6 +12,8 @@
   "recipient": "cstanley@futureboundconsultancy.com",
   "recipient_sha256": "d93ed3a9f0bd8ef128ca865902fa3cf78a2d81bc5a8c3d398faba9a0ef1f5b84",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-09T00:14:51+00:00",
+  "smtp_message_id": "<179150489114.2432.9522278941787759933@icloud.com>",
+  "status": "sent",
   "subject_sha256": "1bcc56f27d4cae34f684de4f606fa558d4b9cdb7cbb215c20627618a27941d2b"
 }
