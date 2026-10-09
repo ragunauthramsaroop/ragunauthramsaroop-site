@@ -12,6 +12,8 @@
   "recipient": "p.massu@glasford.com",
   "recipient_sha256": "30441dfbcaabd6206c53ac945c3baacfa282a7271be06ef24b45d1da896f4210",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-09T01:39:43+00:00",
+  "smtp_message_id": "<179150998308.2555.7217401518563946946@icloud.com>",
+  "status": "sent",
   "subject_sha256": "6847919a1bea3ad08696ffabf7120179902be9e8f0dd3657479f2bb96d147f3b"
 }
