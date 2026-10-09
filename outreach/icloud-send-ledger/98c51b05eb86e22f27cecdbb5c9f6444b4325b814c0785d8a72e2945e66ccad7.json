@@ -12,6 +12,8 @@
   "recipient": "hello@acaciaintl.com",
   "recipient_sha256": "98c51b05eb86e22f27cecdbb5c9f6444b4325b814c0785d8a72e2945e66ccad7",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-09T01:52:49+00:00",
+  "smtp_message_id": "<179151076895.2429.666422645523676331@icloud.com>",
+  "status": "sent",
   "subject_sha256": "e967c13cc42f4451c504ce35ad011c0bdd67fd5faa623b9c29547c985177678c"
 }
