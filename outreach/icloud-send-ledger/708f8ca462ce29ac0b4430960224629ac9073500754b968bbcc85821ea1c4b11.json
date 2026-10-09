@@ -12,6 +12,8 @@
   "recipient": "m.varela@n2growth.com",
   "recipient_sha256": "708f8ca462ce29ac0b4430960224629ac9073500754b968bbcc85821ea1c4b11",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-09T01:17:18+00:00",
+  "smtp_message_id": "<179150863842.2424.2012546648708919799@icloud.com>",
+  "status": "sent",
   "subject_sha256": "b6d758e7d82f26fc625e5d7c48d468c4d5ad03eceed6e44935c1296b86438445"
 }
