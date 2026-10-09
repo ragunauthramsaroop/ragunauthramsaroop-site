@@ -12,6 +12,8 @@
   "recipient": "tim@alexanderwhitehead.com",
   "recipient_sha256": "eee79f8a160504330db2b3330b1b2fbcfdbd0c2371252fb2dfca23c2a9ef0379",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-09T02:07:32+00:00",
+  "smtp_message_id": "<179151165251.2415.12448815032428620326@icloud.com>",
+  "status": "sent",
   "subject_sha256": "64a4637d5fd1b59e4bd0c5ef2ea8622a83a03983d70fb98e636baf95c48a7100"
 }
