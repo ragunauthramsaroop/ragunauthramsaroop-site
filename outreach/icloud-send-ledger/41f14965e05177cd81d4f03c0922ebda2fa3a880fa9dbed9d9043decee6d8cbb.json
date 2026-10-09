@@ -12,6 +12,8 @@
   "recipient": "southafricaoffice@aimsinternational.co.za",
   "recipient_sha256": "41f14965e05177cd81d4f03c0922ebda2fa3a880fa9dbed9d9043decee6d8cbb",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-09T00:38:24+00:00",
+  "smtp_message_id": "<179150630407.2430.5212665090358203828@icloud.com>",
+  "status": "sent",
   "subject_sha256": "487b4ad9517c8364a4fedf96d60c1f63966a47995f77269fba15e1344118e7c1"
 }
