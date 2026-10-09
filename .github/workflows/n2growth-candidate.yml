@@ -1,0 +1,45 @@
+name: N2Growth Candidate Route
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/n2growth-candidate.yml'
+      - 'scripts/n2growth_candidate_route.py'
+      - 'career-assets/Ragunauth_Ramsaroop_Executive_CV_2026.md'
+      - 'applications/n2growth/**'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  candidate-route:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 12
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v7
+
+      - name: Setup Python
+        uses: actions/setup-python@v7
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --disable-pip-version-check 'playwright==1.56.0' 'reportlab==4.2.5'
+          python -m playwright install --with-deps chromium
+
+      - name: Resolve mode
+        id: mode
+        shell: bash
+        run: |
+          if [ -f applications/n2growth/SUBMIT ]; then
+            echo 'mode=submit' >> "$GITHUB_OUTPUT"
+          else
+            echo 'mode=inspect' >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Inspect or submit candidate profile
+        run: python scripts/n2growth_candidate_route.py --mode '${{ steps.mode.outputs.mode }}'
