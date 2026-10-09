@@ -12,6 +12,8 @@
   "recipient": "info@cripps.global",
   "recipient_sha256": "47826258cfed26086f096e1cc707c9c981b6b3191fd43ff254d3ab34e708a393",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-09T00:23:27+00:00",
+  "smtp_message_id": "<179150540728.2236.14790570603599899226@icloud.com>",
+  "status": "sent",
   "subject_sha256": "2afdc515f154cbf1313a4d1e0dab215a82287f573ede621a37151496b43a232f"
 }
