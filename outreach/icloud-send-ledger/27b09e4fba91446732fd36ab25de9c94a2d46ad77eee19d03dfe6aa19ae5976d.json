@@ -12,6 +12,8 @@
   "recipient": "careers@marlinhawk.com",
   "recipient_sha256": "27b09e4fba91446732fd36ab25de9c94a2d46ad77eee19d03dfe6aa19ae5976d",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-09T00:21:28+00:00",
+  "smtp_message_id": "<179150528804.2482.7478336141935112921@icloud.com>",
+  "status": "sent",
   "subject_sha256": "eb9c2319bf4134345dfe0cce25574224a05c5f8546aac4db03e6ba07ab65cd02"
 }
