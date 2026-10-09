@@ -12,6 +12,8 @@
   "recipient": "info@firstaccess.sa",
   "recipient_sha256": "0a062a567ee9e31d7c151a496fd38b87f6a6d3f91e0e4946ead96ed3f01309ae",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-09T00:24:39+00:00",
+  "smtp_message_id": "<179150547954.2439.15343395522031715676@icloud.com>",
+  "status": "sent",
   "subject_sha256": "57dc21d744cbe55091688c07bf446eacd051d30a326a712588304f27bea6f7aa"
 }
