@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "14f213a920f034bad36544524b895141d76ed9dfac05984dca1ac6bfd17fa1c1",
+  "batch_id": "2026-10-08-next40-wave-06",
+  "body_sha256": "decc5b199fb0acdeacb99b8c8bff6eaec2c5dbb6335b5a264006ab071924a676",
+  "created_at": "2026-10-09T01:51:47+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "37871778173",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/2026-10-08-next40-wave-06.json",
+  "payload_sha256": "ee7d86e7ba67c7d70581f4fc607d12f2930366ccf6252b721554d199c30a68e1",
+  "recipient": "stuart.grantham@globaledgegroup.com",
+  "recipient_sha256": "6192f253bce88a33a1b1218e93bdbb383d0c07adfa2159ea887e2b48f2348c97",
+  "schema": 1,
+  "status": "pending",
+  "subject_sha256": "09272f83faafad459cc93bc487bf01e84ebab65ca8ad4af73d929fcd2d534653"
+}
