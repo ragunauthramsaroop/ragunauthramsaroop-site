@@ -11,9 +11,11 @@
   "payload_sha256": "f01e0c238b4f5f0dab9b7d06c564fde5facc057f2900596787f79c2b56b319ac",
   "recipient": "natasha.cheriton@hayburysearch.com",
   "recipient_sha256": "91b4de8c1990f4107fc9124b3d158ca6e31e658824da2d51b64d9002b12ef3d6",
-  "schema": 1,
+  "schema": 2,
   "sent_at": "2026-10-09T02:07:30+00:00",
+  "smtp_accepted_at": "2026-10-09T02:07:30+00:00",
   "smtp_message_id": "<179151164995.2415.606610224897359744@icloud.com>",
-  "status": "sent",
+  "status": "smtp_accepted",
+  "delivery_status": "pending_bounce_check",
   "subject_sha256": "6b180cad94474bd9bd1b18eb4d6bfd506a8ae627893506f7714dba90d41b2789"
 }
