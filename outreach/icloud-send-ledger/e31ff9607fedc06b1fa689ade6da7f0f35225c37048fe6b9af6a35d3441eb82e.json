@@ -12,6 +12,8 @@
   "recipient": "inquiry@weinrebgroup.com",
   "recipient_sha256": "e31ff9607fedc06b1fa689ade6da7f0f35225c37048fe6b9af6a35d3441eb82e",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-09T01:40:20+00:00",
+  "smtp_message_id": "<179151001992.2228.11881482979225297797@icloud.com>",
+  "status": "sent",
   "subject_sha256": "95bece6a7f172cd7b6a2ab5d1e3e104e2ad9916b1bfc47ec11125e915ad6ed76"
 }
