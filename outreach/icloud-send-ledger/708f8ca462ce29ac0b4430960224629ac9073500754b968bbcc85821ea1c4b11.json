@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "d7b10610441511b4e96c27057350036a9d2ef9c366718ff931ce0c82da9caef3",
+  "batch_id": "2026-10-08-n2growth-executive-introduction",
+  "body_sha256": "7f4877408c5afd7354854315cfaa91772492417dfb9d56a47646394b0bb13937",
+  "created_at": "2026-10-09T01:17:17+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "37869021499",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/2026-10-08-n2growth-executive-introduction.json",
+  "payload_sha256": "d8624a31338f26a30b0257face3d35ef80be8f9723ce508edfc0f0b2aaedb992",
+  "recipient": "m.varela@n2growth.com",
+  "recipient_sha256": "708f8ca462ce29ac0b4430960224629ac9073500754b968bbcc85821ea1c4b11",
+  "schema": 1,
+  "status": "pending",
+  "subject_sha256": "b6d758e7d82f26fc625e5d7c48d468c4d5ad03eceed6e44935c1296b86438445"
+}
