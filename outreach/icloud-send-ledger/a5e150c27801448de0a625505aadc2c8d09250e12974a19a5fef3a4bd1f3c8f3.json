@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "2581853f6a09133986a521b6412c7703e4dd59ee9b4cbd9db5fb462ae2464b81",
+  "batch_id": "2026-10-08-next40-wave-03",
+  "body_sha256": "80b8238f10e9a0c17c68e017ef9d28b631558c76e5e52ec8a192ae80247b5bfe",
+  "created_at": "2026-10-09T01:50:53+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "37871706273",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/2026-10-08-next40-wave-03.json",
+  "payload_sha256": "779a0a04b3c8c1f9af4e418be690483bfaf7999f064ba72283106b6e2121a29f",
+  "recipient": "maina.sahi@equitypurpose.com",
+  "recipient_sha256": "a5e150c27801448de0a625505aadc2c8d09250e12974a19a5fef3a4bd1f3c8f3",
+  "schema": 1,
+  "status": "pending",
+  "subject_sha256": "21a42f487414acdef181e97187d5f3bef0a8750cfce2e3580412e6c745f4504b"
+}
