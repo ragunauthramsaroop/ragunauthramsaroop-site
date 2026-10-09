@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "963d900ae1813fa69ae766187c8050799a81b8cb5249cb95248c7b988519a7f7",
+  "batch_id": "2026-10-08-next40-wave-02",
+  "body_sha256": "332b5b5c2ba5d8765e2ac962b4b2a331ca3a88ab1d175a58c2e65e5739ce0219",
+  "created_at": "2026-10-09T01:40:18+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "37870847364",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/2026-10-08-next40-wave-02.json",
+  "payload_sha256": "c6ca7abfb2eff53b9dae8455b2ed493c1ace094aea4012c93e81fc8efe6bc3cf",
+  "recipient": "inquiry@weinrebgroup.com",
+  "recipient_sha256": "e31ff9607fedc06b1fa689ade6da7f0f35225c37048fe6b9af6a35d3441eb82e",
+  "schema": 1,
+  "status": "pending",
+  "subject_sha256": "95bece6a7f172cd7b6a2ab5d1e3e104e2ad9916b1bfc47ec11125e915ad6ed76"
+}
