@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "ed52ce29221f3b45f82d81b0bb714e369feabe910babf0e6579c7b3aec08e7d3",
+  "batch_id": "2026-10-08-next40-final-replacements",
+  "body_sha256": "07ff4a62e1343acd384dfb7c6165aaabe391bebfa5814c51668c7e7da583042c",
+  "created_at": "2026-10-09T01:56:59+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "37872175042",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/2026-10-08-next40-final-replacements.json",
+  "payload_sha256": "4f4df190ae66f972f38d6442700fbebd4062903a805ef27ee2e2dc15d7482197",
+  "recipient": "info@zerocarbonassociates.com",
+  "recipient_sha256": "a01df06b4872d826a42f1deac9f890b0e7aae52eecb65af842a6721b3698cf79",
+  "schema": 1,
+  "status": "pending",
+  "subject_sha256": "36c6ab9fa3a96e970b2725464239a04b66dfecc82450e991e77ce34bfbefb6e9"
+}
