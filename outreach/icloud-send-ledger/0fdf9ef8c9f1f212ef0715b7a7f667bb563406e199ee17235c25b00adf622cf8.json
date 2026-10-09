@@ -12,6 +12,8 @@
   "recipient": "sarah@harringtonpartners.com.sa",
   "recipient_sha256": "0fdf9ef8c9f1f212ef0715b7a7f667bb563406e199ee17235c25b00adf622cf8",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-09T00:24:42+00:00",
+  "smtp_message_id": "<179150548227.2439.3588322015445523344@icloud.com>",
+  "status": "sent",
   "subject_sha256": "51ac13556bfea21b3e8853c513385675492f506ce39432eca81c0f5cd95a2478"
 }
