@@ -11,9 +11,11 @@
   "payload_sha256": "f01e0c238b4f5f0dab9b7d06c564fde5facc057f2900596787f79c2b56b319ac",
   "recipient": "recruitment@bavanapartners.com",
   "recipient_sha256": "e610e8dd087d2e7071dcf33a948e999e6589f1e52aef174a98cc1801edbeeee5",
-  "schema": 1,
+  "schema": 2,
   "sent_at": "2026-10-09T02:07:37+00:00",
+  "smtp_accepted_at": "2026-10-09T02:07:37+00:00",
   "smtp_message_id": "<179151165711.2415.17310772853613139552@icloud.com>",
-  "status": "sent",
+  "status": "smtp_accepted",
+  "delivery_status": "pending_bounce_check",
   "subject_sha256": "db099b0721457bae399748263b72f7d9a14ab9eece37f2b43189fa8d6c1054c6"
 }
