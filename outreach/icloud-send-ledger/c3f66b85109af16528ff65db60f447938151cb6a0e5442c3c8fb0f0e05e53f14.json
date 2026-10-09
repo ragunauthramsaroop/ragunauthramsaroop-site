@@ -12,6 +12,8 @@
   "recipient": "chayward@iicpartners.com",
   "recipient_sha256": "c3f66b85109af16528ff65db60f447938151cb6a0e5442c3c8fb0f0e05e53f14",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-09T00:41:34+00:00",
+  "smtp_message_id": "<179150649441.2373.5724915920394107249@icloud.com>",
+  "status": "sent",
   "subject_sha256": "e432aec0d434b6017c32352ac8dda5b29ee6088254d854808bda3a4f0298757f"
 }
