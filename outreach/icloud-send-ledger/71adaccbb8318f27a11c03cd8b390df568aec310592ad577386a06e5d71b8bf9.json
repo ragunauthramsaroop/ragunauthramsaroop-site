@@ -12,6 +12,8 @@
   "recipient": "hd@greensearchglobal.com",
   "recipient_sha256": "71adaccbb8318f27a11c03cd8b390df568aec310592ad577386a06e5d71b8bf9",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-09T01:52:44+00:00",
+  "smtp_message_id": "<179151076391.2429.1723315248107903660@icloud.com>",
+  "status": "sent",
   "subject_sha256": "8de9669188aea7e96cf405de89c666cdd05700874e09df27b13cad1f7da11977"
 }
