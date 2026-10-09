@@ -12,6 +12,8 @@
   "recipient": "hello@hyrd.digital",
   "recipient_sha256": "858e38bcc9e5a4015fec22262334fc0ba9cb7010791f90fc8f41027da0042b6b",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-09T00:14:53+00:00",
+  "smtp_message_id": "<179150489379.2432.10746352968455012227@icloud.com>",
+  "status": "sent",
   "subject_sha256": "a8ec88b1783d8d91d8ed76f8d2552c8bf94edf5c4b1bcceea75e11111ce127a1"
 }
