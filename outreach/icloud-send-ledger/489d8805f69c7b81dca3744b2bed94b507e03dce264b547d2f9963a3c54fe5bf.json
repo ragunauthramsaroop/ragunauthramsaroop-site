@@ -12,6 +12,8 @@
   "recipient": "info@ap-executivesearch.com",
   "recipient_sha256": "489d8805f69c7b81dca3744b2bed94b507e03dce264b547d2f9963a3c54fe5bf",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-09T01:52:19+00:00",
+  "smtp_message_id": "<179151073928.2216.16384606647561758255@icloud.com>",
+  "status": "sent",
   "subject_sha256": "544b08dc7614f3a747276df14eb341042f7a4b69f2c9e8e39d22dfe8e569004e"
 }
