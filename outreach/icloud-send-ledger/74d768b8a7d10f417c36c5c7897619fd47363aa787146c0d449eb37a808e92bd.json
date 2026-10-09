@@ -12,6 +12,8 @@
   "recipient": "info@hyreontalent.com",
   "recipient_sha256": "74d768b8a7d10f417c36c5c7897619fd47363aa787146c0d449eb37a808e92bd",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-09T01:53:09+00:00",
+  "smtp_message_id": "<179151078930.2209.13647862206809192080@icloud.com>",
+  "status": "sent",
   "subject_sha256": "ad8e292d298cdc42f237bd4a9fe7a3b1c3ec448c47509bdfa734cca1d67abe7e"
 }
