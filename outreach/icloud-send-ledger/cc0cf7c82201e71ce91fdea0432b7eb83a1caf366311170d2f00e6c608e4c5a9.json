@@ -12,6 +12,8 @@
   "recipient": "max.fronicke@metric-search.com",
   "recipient_sha256": "cc0cf7c82201e71ce91fdea0432b7eb83a1caf366311170d2f00e6c608e4c5a9",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-09T01:51:20+00:00",
+  "smtp_message_id": "<179151068050.2447.16663911412186141758@icloud.com>",
+  "status": "sent",
   "subject_sha256": "3ba424fff13485e589fd519df9b37efd52d18e1afb47bfdfee23fada51597868"
 }
