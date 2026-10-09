@@ -12,6 +12,8 @@
   "recipient": "info@zerocarbonassociates.com",
   "recipient_sha256": "a01df06b4872d826a42f1deac9f890b0e7aae52eecb65af842a6721b3698cf79",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-09T01:57:00+00:00",
+  "smtp_message_id": "<179151102019.2283.14792929315146379347@icloud.com>",
+  "status": "sent",
   "subject_sha256": "36c6ab9fa3a96e970b2725464239a04b66dfecc82450e991e77ce34bfbefb6e9"
 }
