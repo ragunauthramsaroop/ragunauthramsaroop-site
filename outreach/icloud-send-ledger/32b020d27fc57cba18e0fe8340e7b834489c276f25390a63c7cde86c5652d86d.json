@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "9bfe18dd667f13aa121bd4e1bb5453d1923ab9e4b94ca13731753cc10c553f6f",
+  "batch_id": "2026-10-08-next40-wave-07",
+  "body_sha256": "c1a811a8d9745ad0ec2e77ba79defd44e0574ae9d67320cfc54050fd2a4ba2e1",
+  "created_at": "2026-10-09T01:52:15+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "37871803631",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/2026-10-08-next40-wave-07.json",
+  "payload_sha256": "153c4f2ef7809896de5b7f7194d932cdc42fc3d4b405610846fe10183d487318",
+  "recipient": "alana.bray-white@ivyandgecko.com.au",
+  "recipient_sha256": "32b020d27fc57cba18e0fe8340e7b834489c276f25390a63c7cde86c5652d86d",
+  "schema": 1,
+  "status": "pending",
+  "subject_sha256": "030d3f1de3c9e98c253dddb2fb2aa59bb32d8c064494a29937231ea8c362265e"
+}
