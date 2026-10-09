@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "3596c684c1200f64d4359ddebd9c9e9639ff378424b294411a3736295ae32b79",
+  "batch_id": "2026-10-08-next40-wave-04",
+  "body_sha256": "ac3a7db6c65917bed77fecf1ab6fae503e7e1293c2352d3fbd5bb723a54dd1ff",
+  "created_at": "2026-10-09T01:51:19+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "37871728215",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/2026-10-08-next40-wave-04.json",
+  "payload_sha256": "ed5eaf9e7e62cb9b0a6e8387c62f8f8b7c8ddb9e8fe21b4730c6a2eb603c650a",
+  "recipient": "max.fronicke@metric-search.com",
+  "recipient_sha256": "cc0cf7c82201e71ce91fdea0432b7eb83a1caf366311170d2f00e6c608e4c5a9",
+  "schema": 1,
+  "status": "pending",
+  "subject_sha256": "3ba424fff13485e589fd519df9b37efd52d18e1afb47bfdfee23fada51597868"
+}
