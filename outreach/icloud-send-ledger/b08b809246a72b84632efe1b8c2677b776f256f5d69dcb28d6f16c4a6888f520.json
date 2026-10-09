@@ -14,6 +14,10 @@
   "schema": 1,
   "sent_at": "2026-10-09T00:18:09+00:00",
   "smtp_message_id": "<179150508959.2411.9727774778056816915@icloud.com>",
-  "status": "sent",
+  "status": "bounced",
+  "delivery_status": "bounced",
+  "previous_status": "sent",
+  "bounce_reason": "Address not found; recipient email account does not exist or cannot receive mail",
+  "bounce_evidence": "User-provided delivery-status notification",
   "subject_sha256": "05fe97d11da11c8d7e2800463ff475866cc3c10754dd358b2904ed6ab28020a6"
 }
