@@ -1,85 +1,106 @@
 # RAGUNAUTH RAMSAROOP
-SUBTITLE: GLOBAL EXECUTIVE | ESG | CORPORATE AFFAIRS | GOVERNMENT RELATIONS | SOCIAL PERFORMANCE
-Georgetown, Guyana | +592 608 4735 | ragunauthramsaroop@icloud.com | ragunauthramsaroop.com | linkedin.com/in/ragunauth-ramsaroop
+SUBTITLE: GOVERNMENT & EXTERNAL AFFAIRS | ESG & SOCIAL PERFORMANCE | MINING EXECUTIVE
+Georgetown, Guyana | +592 608 4735 | ragunauthramsaroop@icloud.com | ragunauthramsaroop.com | linkedin.com/in/ragunauth-ramsaroop | Guyanese citizen | Global mobility | 30-day notice period
 
 ## EXECUTIVE PROFILE
-Director-level leader with 12+ years of experience across multinational mining, regulated financial services and commercial operations. Currently Liaison Director, Social Responsibility Department at AGM Inc., part of Zijin Mining Group. Career scope spans government and regulatory relations, ESG, social performance, corporate affairs, compliance coordination, executive communications and strategic stakeholder engagement. Operates at the intersection of international investment, government, communities and large-scale resource development, translating external expectations into accountable internal action.
+Director-level executive with 12+ years across multinational mining, regulated financial services and commercial operations. Currently Liaison Director, Social Responsibility Department at AGM Inc., part of Zijin Mining Group. Leads country-facing government and regulatory relations, ESG, corporate affairs, social responsibility, stakeholder strategy and executive communications. Advises senior management on institutional relationships, regulatory expectations, community issues and reputation-sensitive matters, translating external requirements into accountable action.
 
-## EXECUTIVE VALUE
-- Country leadership and institutional access: senior engagement with ministries, regulators, industry bodies, communities and strategic partners in a complex operating environment.
-- Government and regulatory execution: coordination of permits, inspections, official visits, formal correspondence, evidence requirements, action owners and executive follow-through.
-- ESG and social performance: alignment of community engagement, social investment, workforce development, grievance follow-up and sustainability priorities with responsible internal teams.
-- Executive counsel: clear advice to senior management on institutional expectations, stakeholder risk, reputation-sensitive issues and response options.
-- Cross-functional delivery: coordination across operations, environment, HSE, legal, finance, HR, procurement, security, aviation and technical teams.
+## EXECUTIVE VALUE PROPOSITION
+- Government & regulatory leadership: senior engagement with ministries, regulators, public institutions and industry bodies across mining, environment, energy, aviation, labour, standards, taxation, investment facilitation and gold-sector administration.
+- ESG & social performance: governance support across community engagement, social investment, grievance management, sustainability reporting, responsible mining, climate action and evidence-based stakeholder commitments.
+- Corporate & external affairs: executive briefs, regulator-facing submissions, formal correspondence, stakeholder strategy, institutional positioning, issue management and senior external representation.
+- Cross-functional execution: coordinates Environment, HSE, Legal, Finance, Operations, Procurement, HR, Security, Aviation and technical teams around inspections, approvals, commitments, corrective actions and high-priority external issues.
+- Energy transition & carbon data: supports stakeholder governance around approximately 46-50 MWp of solar capacity and more than 80 MWh of battery storage, plus operational carbon-data traceability and review readiness.
 
-## CAREER HIGHLIGHTS
-- Progressed through broader AGM responsibilities from 2020 before appointment to a Director-level position in 2026, with increasing scope across liaison, corporate affairs, compliance and executive coordination.
-- Lead country-facing engagement for a major Guyanese gold-mining operation across mining, environment, energy, labour, aviation, standards, revenue and public-security interfaces.
-- Support external engagement around AGM's transition toward solar and battery storage, including approximately 46-50 MWp of solar capacity and more than 80 MWh of battery storage.
-- Coordinated carbon-data readiness for a third-party accounting and verification pilot using operational records across fuel, electricity, explosives, materials, production and refinery datasets.
+## CORE EXECUTIVE COMPETENCIES
+Government Relations | Regulatory Affairs | Corporate Affairs | External Affairs | ESG | Sustainability | Social Performance | Social Responsibility | Stakeholder Engagement | Community Relations | Strategic Partnerships | Public Affairs | Compliance | Risk & Governance | Executive Advisory | Executive Communications | Regulatory Inspections | Permitting Support | Grievance Management | Social Investment | Workforce Development | Climate & Carbon Data | Renewable Energy | Cross-Functional Leadership | Country-Facing Leadership
+
+## SELECTED LEADERSHIP EVIDENCE
+- Progressed through six successive AGM appointments since 2020, from Administration Secretary to Director-level leadership, with expanding responsibility across government relations, corporate affairs, compliance, ESG and social responsibility.
+- Achieved A+ performance in 2023 and A performance in 2024 and 2025, alongside two Zijin Mining Group-level Advanced Individual awards.
+- Selected for Zijin Mining Group's first non-Chinese employee training programme and the Management Reserve Program, reflecting sustained leadership development in a multinational operating environment.
+- Featured in 2026 by the Climate Leadership Research Centre, University of Oxford, for leadership spanning ESG, responsible mining, climate action and stakeholder engagement.
 
 ## PROFESSIONAL EXPERIENCE
-### AGM INC. | ZIJIN MINING GROUP | GUYANA | 2020-PRESENT
-Liaison Director, Social Responsibility Department | 2026-Present
+### Liaison Director, Social Responsibility Department | AGM Inc. (Zijin Mining Group) | Guyana | 2026-Present
+Large-scale gold mining | ESG, social responsibility, government relations, stakeholder strategy and corporate affairs
+- Lead country-facing coordination across ESG and social responsibility, government and regulatory relations, corporate affairs, stakeholder strategy, executive communications and reputation-sensitive matters for a major gold-mining operation.
+- Advise senior management on country context, regulator expectations, institutional relationships, community priorities, stakeholder risk, response strategy and formal executive positioning.
+- Maintain senior engagement with GGMC, EPA, GEA, GCAA, GPF, GNBS, GRA, GGB, Ministry of Natural Resources, Ministry of Home Affairs, Ministry of Labour, Ministry of Tourism, Industry and Commerce, GO-Invest and other public-sector interfaces.
+- Coordinate inspections, official visits, approvals, submissions, commitments and corrective actions across corporate and operating functions, with clear ownership, evidence, milestones and executive follow-up.
+- Support governance and stakeholder alignment around renewable energy, climate action, social investment, workforce development, community engagement, grievance management and ESG evidence.
 
-Director-level mandate covering ESG, social responsibility, government and regulatory engagement, corporate coordination, compliance and senior stakeholder strategy.
-- Government and stakeholder leadership: lead engagement with ministries, regulators, industry partners and strategic stakeholders on operational, regulatory, ESG and social-responsibility priorities.
-- Executive advisory: advise senior leadership on country context, institutional expectations, emerging stakeholder risks, community concerns and reputation-sensitive matters.
-- Regulatory coordination: manage submissions, permits, inspections, official visits, action tracking, supporting evidence and executive-level follow-through.
-- Social responsibility: connect community dialogue, education, social investment, local participation and grievance priorities with accountable internal owners.
-- Executive communications: prepare formal correspondence, decision briefs, stakeholder materials and management updates for complex institutional and operating matters.
-- Cross-functional governance: translate external requests and obligations into owners, timelines, evidence requirements and escalation paths across corporate and technical teams.
+[[PAGEBREAK]]
 
-Earlier AGM Leadership Scope | 2020-2025
-- Managed multi-agency engagement, regulatory documentation, official visits, operating approvals and stakeholder correspondence supporting continuity at a remote industrial operation.
-- Coordinated cross-department responses involving community matters, compliance, social responsibility, aviation and executive administration.
-- Strengthened reporting, escalation and follow-up disciplines across competing stakeholder, regulatory and operational priorities.
+## AGM LEADERSHIP PROGRESSION
+### Liaison Director, Corporate & Compliance | AGM Inc. (Zijin Mining Group) | Guyana | 2025-2026
+Corporate affairs | government relations | compliance | executive coordination
+- Directed corporate, compliance and government-relations coordination across regulators, ministries, internal functions and executive leadership.
+- Prepared senior correspondence, regulatory submissions, executive briefs, issue-response materials and stakeholder strategies for complex operating and reputation matters.
+- Coordinated public-sector engagement, inspections, official visits, aviation-related matters and cross-functional responses requiring disciplined follow-through.
 
-### TOUCAN LTD. | GUYANA
-Account Manager | Oct 2019-Aug 2020
-- Managed client relationships, digital strategy, advertising execution, campaign delivery and performance reporting across search and display channels.
-- Coordinated clients, production teams and daily execution, supporting service quality, account retention and repeat business.
+### Liaison Manager, Corporate & Compliance | AGM Inc. (Zijin Mining Group) | Guyana | 2024-2025
+- Managed government liaison, regulatory engagement, corporate coordination, compliance documentation and stakeholder follow-up across a complex operating environment.
+- Supported senior management with formal correspondence, presentations, regulator-facing materials, meeting records and institutional engagement.
 
-### SCOTIABANK GUYANA | GEORGETOWN, GUYANA
-Retail Banking Professional | Jun 2014-May 2019
-- Delivered client-focused retail banking services across savings, lending and investment products while maintaining compliance, operational controls and risk standards.
-- Supported branch operations, customer retention and service discipline. Mentored junior tellers on accuracy, compliance and client service.
-- Recognised for accuracy and professionalism, including Teller of the Month and promotion to Gold Line Teller.
+### Deputy Manager, Corporate & Compliance | AGM Inc. (Zijin Mining Group) | Guyana | 2023-2024
+- Expanded responsibility across government relations, compliance coordination, executive support, stakeholder engagement and cross-departmental issue resolution.
+- Supported regulatory actions, official visits, approvals, records, reporting and senior management coordination across multiple business functions.
 
-## STRATEGIC PORTFOLIO
-- Institutional relations: senior interfaces across mining, environment, energy, aviation, standards, revenue, labour, trade and investment institutions.
-- Responsible mining: stakeholder alignment around environmental, community, workforce and social-responsibility priorities.
-- Energy transition: external engagement supporting large-scale solar and battery storage integration into a remote mine-energy system.
-- Carbon governance: coordination of operating data and evidence for third-party carbon-accounting and verification work.
-- Issue management: structured response to regulator requests, official visits, inspections, commitments and reputation-sensitive matters.
-- Executive reporting: formal correspondence, briefs, submissions and management updates designed for clear decisions and documented closure.
+### Liaison Superintendent, Corporate & Compliance | AGM Inc. (Zijin Mining Group) | Guyana | 2021-2023
+- Coordinated liaison activities across government agencies, regulators, corporate functions and operational teams, supporting permits, inspections, stakeholder meetings and official correspondence.
+- Supported aviation and dispatch coordination, compliance follow-up and executive administration while building institutional relationships that supported later promotions.
+
+### Administration Secretary, General Administration | AGM Inc. (Zijin Mining Group) | Guyana | 2020-2021
+- Supported executive administration, records, correspondence, logistics and stakeholder communications within a remote, asset-intensive mining operation.
+- Built working knowledge of AGM's internal functions and external interfaces, forming the base for successive promotions into liaison, corporate, compliance and director-level responsibilities.
+
+## SELECTED MINING, ESG & STRATEGIC EXPOSURE
+- Responsible mining: regulatory engagement, ESG governance, community relations, social licence, operating continuity and national-development interfaces.
+- Energy transition: stakeholder coordination around industrial solar, battery storage, climate positioning and operational decarbonization initiatives.
+- Carbon data assurance: coordinated a physical-data proof of concept covering a 52.6 million-litre fuel baseline, 34 entities, 408 monthly entries and 592 equipment IDs, strengthening source ownership, traceability and review readiness.
+- Government & public affairs: executive-level coordination with regulators, ministries, public institutions, investment bodies, industry stakeholders and national agencies.
+- Executive communications: strategic submissions, regulator correspondence, decision briefs, presentations, meeting records, issue positioning and formal follow-up.
+
+[[PAGEBREAK]]
+
+## EARLIER PROFESSIONAL EXPERIENCE
+### Account Manager | Toucan Ltd. | Guyana | Oct 2019-Aug 2020
+- Managed client relationships, commercial strategy, reporting, performance analysis, communications and cross-functional service delivery across assigned accounts.
+- Supervised teams and strengthened service quality, issue resolution, client retention and repeat business.
+
+### Retail Banking Professional | Scotiabank Guyana | Georgetown, Guyana | Jun 2014-May 2019
+- Delivered financial solutions in a regulated banking environment while managing customer relationships, branch operations, compliance, risk controls and service performance.
+- Worked within strict accuracy, anti-money-laundering and operational-control standards, earning Teller of the Month recognition and promotion to Gold Line Teller.
 
 ## EDUCATION
 Master of Business Administration (MBA) | Southern New Hampshire University | 2017-2019
-BSc in Business Administration | Southern New Hampshire University | 2013-2017
+Bachelor of Science in Business Administration | Southern New Hampshire University | 2013-2017
 
 ## INTERNATIONAL EXECUTIVE DEVELOPMENT
-- 2026 | China: Development and Management of Mineral Resources, covering sustainability, governance and environmental protection.
-- 2025 | Dubai, UAE: Best Diplomats programme in negotiation, leadership and diplomatic simulation.
-- 2025 | China: Ministry of Commerce, P.R. China seminar on Belt and Road economic and trade cooperation.
-- 2023 | China: Zijin Mining Group First Non-Chinese Employee Training Programme, with executive and operational exposure linked to Xiamen University.
-
-## RECOGNITION
-- 2026 | Featured Climate Leader, Climate Leadership Research Centre, University of Oxford.
-- 2023 | Selected for Zijin Mining Group Management Reserve Program.
-- 2021 | Zijin Mining Group Best of Best Second Merit Award.
-- Scotiabank Guyana | Teller of the Month and promotion to Gold Line Teller.
+- 2026 | Development and Management of Mineral Resources | Nanchang, China | Green-mine standards, environmental protection, resource governance and sustainable development.
+- 2025 | Best Diplomats | Dubai, UAE | Negotiation, leadership and diplomatic simulation.
+- 2025 | Ministry of Commerce, P.R. China | Xiamen, China | Belt and Road Initiative economic and trade cooperation seminar.
+- 2023 | Zijin Mining Group First Non-Chinese Employee Training Programme | China | International corporate, operational and cultural development, with executive development exposure linked to Xiamen University.
 
 ## PROFESSIONAL DEVELOPMENT
-PRINCE2 Foundation | Anti-Money Laundering | ESG Fundamentals and Reporting | Corporate Governance and Ethics | Human Rights and Environment | Leadership and Management
+- PRINCE2 Foundation | Project management fundamentals and structured delivery.
+- Certificate of Achievement, Religion, Conflict and Peace | HarvardX / Harvard University via edX | 2019.
+- Additional learning: Human Rights & Environment | Anti-Money Laundering | ESG | Governance | Compliance.
 
-## INSTITUTIONAL AND REGULATORY INTERFACES
-Working interfaces include the Guyana Geology and Mines Commission, Environmental Protection Agency, Guyana Energy Agency, Guyana Civil Aviation Authority, Guyana Police Force, Guyana National Bureau of Standards, Guyana Revenue Authority, Guyana Gold Board, and ministries responsible for natural resources, home affairs, labour, trade and investment.
+## RECOGNITION & PERFORMANCE
+- Featured Climate Leader | Climate Leadership Research Centre, University of Oxford | 2026.
+- Management Reserve Program | Zijin Mining Group | 2023.
+- Advanced Individual, Group Level - Third Merit Award | Zijin Mining Group | 2023.
+- Best of Best Second Merit Award / Advanced Individual, Group Level - Second Merit Award | Zijin Mining Group | 2021.
+- Performance record: A+ in 2023 | A in 2024 | A in 2025.
 
-## CORE EXECUTIVE CAPABILITIES
-ESG and Sustainability Strategy | Government and Regulatory Relations | Corporate and External Affairs | Social Performance | Community and Stakeholder Engagement | Executive Communications | Compliance Coordination | Issue and Reputation Management | Cross-Functional Leadership | Strategic Partnerships | Responsible Mining | Institutional Engagement | Risk and Escalation Management | Public-Private Relations | International Stakeholder Strategy
+## INTERNATIONAL MOBILITY & TARGET MANDATES
+Guyanese citizen based in Georgetown. Open to international relocation, expatriate assignments and rotational leadership opportunities, subject to employer-supported work authorization where required. Professional working language: English.
+Target mandates: Government Relations | External & Corporate Affairs | ESG & Sustainability | Social Performance | Stakeholder Relations | Regulatory Affairs | Strategic Partnerships | Country Leadership | Country Director / Representative | Chief of Staff | Energy Transition | Mining & Resources Leadership.
 
-## EXECUTIVE PLACEMENT ALIGNMENT
-Target mandates: Director or Head of ESG and Sustainability | Corporate and External Affairs | Government Relations | Social Performance | Country Representative | Strategic Partnerships | Chief of Staff | Country Leadership
+## SELECTED INSTITUTIONAL INTERFACES
+GGMC | EPA | GEA | GCAA | GPF | GNBS | GRA | Guyana Gold Board | Ministry of Natural Resources | Ministry of Home Affairs | Ministry of Labour | Ministry of Tourism, Industry and Commerce | GO-Invest
 
-Sector alignment: mining, energy, oil and gas, industrial infrastructure, regulated industries and remote-site operations. Open to international, expatriate, residential and rotational assignments. 30-day notice period.
+## EXECUTIVE POSITIONING
+Brings a cross-sector profile combining multinational mining, regulated financial services, commercial client leadership and country-facing stakeholder execution. Strongest fit sits where business strategy depends on institutional trust, regulatory discipline, responsible development, executive communication and coordinated delivery across technical, corporate and public-sector stakeholders.
