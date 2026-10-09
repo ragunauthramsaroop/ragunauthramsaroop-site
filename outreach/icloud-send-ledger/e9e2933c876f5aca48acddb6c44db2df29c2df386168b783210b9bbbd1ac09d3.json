@@ -3,6 +3,7 @@
   "batch_id": "2026-10-09-maryland-dgs-director-energy-application",
   "body_sha256": "4d6c3d29a271ba98ad34b410e794e5f3e13dc51930a70767d3994c21d5ba3fc7",
   "created_at": "2026-10-09T13:48:42+00:00",
+  "delivery_status": "pending_bounce_check",
   "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
   "github_run_attempt": "1",
   "github_run_id": "37939498338",
@@ -12,6 +13,9 @@
   "recipient": "dgs.resumes@maryland.gov",
   "recipient_sha256": "e9e2933c876f5aca48acddb6c44db2df29c2df386168b783210b9bbbd1ac09d3",
   "schema": 2,
-  "status": "pending",
+  "sent_at": "2026-10-09T13:48:43+00:00",
+  "smtp_accepted_at": "2026-10-09T13:48:43+00:00",
+  "smtp_message_id": "<179155372346.2229.1342626614684639113@icloud.com>",
+  "status": "smtp_accepted",
   "subject_sha256": "f435fe0dc8a72954ea7fd2bd2e785f5becd82f5410312b8ef6a2f33ac7412bc2"
 }
