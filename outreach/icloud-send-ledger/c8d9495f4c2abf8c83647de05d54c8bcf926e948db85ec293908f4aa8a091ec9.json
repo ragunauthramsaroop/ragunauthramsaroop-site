@@ -12,6 +12,8 @@
   "recipient": "david@volttalentpartners.com.au",
   "recipient_sha256": "c8d9495f4c2abf8c83647de05d54c8bcf926e948db85ec293908f4aa8a091ec9",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-09T01:57:02+00:00",
+  "smtp_message_id": "<179151102268.2283.9400106120236438057@icloud.com>",
+  "status": "sent",
   "subject_sha256": "01f5dc11ff598fbcadce0ac19fdcb95534ec7fa43124cf6cded0f9d406a00db2"
 }
