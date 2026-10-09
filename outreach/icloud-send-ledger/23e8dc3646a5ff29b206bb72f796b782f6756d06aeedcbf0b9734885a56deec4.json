@@ -12,6 +12,8 @@
   "recipient": "admin@reaphr.com",
   "recipient_sha256": "23e8dc3646a5ff29b206bb72f796b782f6756d06aeedcbf0b9734885a56deec4",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-09T00:18:12+00:00",
+  "smtp_message_id": "<179150509205.2411.6229868459470627811@icloud.com>",
+  "status": "sent",
   "subject_sha256": "4fd4a0a04e4d06c0d5608cac3e38401928ca049c3e1e15a2300b9a6e5cc86c81"
 }
