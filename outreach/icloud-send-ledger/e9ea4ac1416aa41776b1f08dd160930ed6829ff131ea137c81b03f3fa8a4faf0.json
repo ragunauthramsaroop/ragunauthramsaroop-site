@@ -12,6 +12,8 @@
   "recipient": "ikram@imperiumexecsearch.co.uk",
   "recipient_sha256": "e9ea4ac1416aa41776b1f08dd160930ed6829ff131ea137c81b03f3fa8a4faf0",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-09T01:52:21+00:00",
+  "smtp_message_id": "<179151074153.2216.6445588180708401450@icloud.com>",
+  "status": "sent",
   "subject_sha256": "58765a834bcaaaf676f0aef55607027624472ab10af3696cc0a585172ad9aa73"
 }
