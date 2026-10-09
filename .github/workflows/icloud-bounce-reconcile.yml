@@ -1,0 +1,60 @@
+name: iCloud outreach bounce reconciliation
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '17 * * * *'
+  push:
+    branches:
+      - main
+    paths:
+      - 'scripts/reconcile_icloud_bounces.py'
+      - '.github/workflows/icloud-bounce-reconcile.yml'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: icloud-bounce-reconcile
+  cancel-in-progress: false
+
+jobs:
+  reconcile:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    env:
+      ICLOUD_SMTP_USER: ragunauthramsaroop@icloud.com
+      ICLOUD_APP_PASSWORD: ${{ secrets.ICLOUD_APP_PASSWORD }}
+      GITHUB_TOKEN: ${{ github.token }}
+      ICLOUD_LEDGER_REPOSITORY: ${{ github.repository }}
+      ICLOUD_LEDGER_BRANCH: main
+      BOUNCE_LOOKBACK_DAYS: '10'
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          persist-credentials: false
+          fetch-depth: 1
+
+      - uses: actions/setup-python@v7
+        with:
+          python-version: '3.12'
+
+      - name: Verify iCloud credential is configured
+        shell: bash
+        run: |
+          if [ -z "$ICLOUD_APP_PASSWORD" ]; then
+            echo "ICLOUD_APP_PASSWORD is not configured as a GitHub Actions secret."
+            exit 1
+          fi
+
+      - name: Reconcile iCloud delivery failures
+        shell: bash
+        run: |
+          set -euo pipefail
+          python scripts/reconcile_icloud_bounces.py
+
+      - name: Clarify delivery semantics
+        shell: bash
+        run: |
+          echo 'SMTP acceptance is not treated as proof of delivery.' >> "$GITHUB_STEP_SUMMARY"
+          echo 'This workflow marks ledger entries bounced only when an iCloud delivery-status notification can be tied to an existing recipient.' >> "$GITHUB_STEP_SUMMARY"
