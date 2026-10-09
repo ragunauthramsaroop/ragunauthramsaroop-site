@@ -12,6 +12,8 @@
   "recipient": "tobias@enable-recruitment.com",
   "recipient_sha256": "b699274e91b22ae253477190ae6566c0ae24073e71257723783d0da300915c93",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-09T00:21:31+00:00",
+  "smtp_message_id": "<179150529130.2482.2420501508021731488@icloud.com>",
+  "status": "sent",
   "subject_sha256": "832d771429bc0e2d8b6997aaca40f7f720f3300af7619c939661319ab5e3691b"
 }
