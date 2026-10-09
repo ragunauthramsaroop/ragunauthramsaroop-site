@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "96a7fe2585fc57bfe18bb5d1ee1069de6d3115f4c46b0293bb6d5aad6d1445db",
+  "batch_id": "2026-10-08-next40-wave-09",
+  "body_sha256": "73cbf6da37c4652509d44ba6173040e8ad34e10a988d2166474aeec5acf765ff",
+  "created_at": "2026-10-09T01:53:05+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "37871873888",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/2026-10-08-next40-wave-09.json",
+  "payload_sha256": "d639921ceda09cb310fc5448a9f7fd9a160884ac208ea65562712404be0699ec",
+  "recipient": "contact@alexanderwhitehead.com",
+  "recipient_sha256": "605ac480c4a87a48f1d916588ec0487d2624fdccd310adb56348e0d31550398d",
+  "schema": 1,
+  "status": "pending",
+  "subject_sha256": "95bb83db395d5fe9ec7a239eaa0e9c30b3ad0d6871d9364053260a8716143692"
+}
