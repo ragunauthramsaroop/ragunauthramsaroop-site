@@ -12,6 +12,8 @@
   "recipient": "mark.taylor@imperiumcs.com",
   "recipient_sha256": "a2f08e93d13b6be772dd144552e3a6d8bfb3b7d3379e13b5bfba6672bf13532a",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-09T01:51:14+00:00",
+  "smtp_message_id": "<179151067418.2447.8572055495719265850@icloud.com>",
+  "status": "sent",
   "subject_sha256": "94894b00f90b1fccf640e6add44cdb4619f6f1b1f6f0f09f436a461a3f644d8d"
 }
