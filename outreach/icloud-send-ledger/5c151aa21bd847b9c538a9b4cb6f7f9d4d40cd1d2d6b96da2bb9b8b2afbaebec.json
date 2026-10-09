@@ -12,6 +12,8 @@
   "recipient": "contact@tmpartnersgroup.com",
   "recipient_sha256": "5c151aa21bd847b9c538a9b4cb6f7f9d4d40cd1d2d6b96da2bb9b8b2afbaebec",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-09T01:39:38+00:00",
+  "smtp_message_id": "<179150997847.2555.9865441234559237457@icloud.com>",
+  "status": "sent",
   "subject_sha256": "0489ad099fad998a64afd92b2b790f3ea601ab1343f219ffa3ecfdace3623b9e"
 }
