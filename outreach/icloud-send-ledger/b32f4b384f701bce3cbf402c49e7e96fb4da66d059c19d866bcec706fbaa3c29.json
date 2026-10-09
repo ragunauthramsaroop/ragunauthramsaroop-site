@@ -12,6 +12,8 @@
   "recipient": "jack@viridian-energy.com",
   "recipient_sha256": "b32f4b384f701bce3cbf402c49e7e96fb4da66d059c19d866bcec706fbaa3c29",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-09T01:56:35+00:00",
+  "smtp_message_id": "<179151099571.2215.5103403976681907385@icloud.com>",
+  "status": "sent",
   "subject_sha256": "db099b0721457bae399748263b72f7d9a14ab9eece37f2b43189fa8d6c1054c6"
 }
