@@ -12,6 +12,8 @@
   "recipient": "asheley@plbsearch.com",
   "recipient_sha256": "3e6404ce12c3478aff0a9f823d8fed35e4e6893d2f63a26053be1efa02ca0b2b",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-09T01:50:50+00:00",
+  "smtp_message_id": "<179151064984.2218.13077638649002440426@icloud.com>",
+  "status": "sent",
   "subject_sha256": "ec96acbb5f1cc5f99e6d38c136cb765765a3ed5940c57e1e5621b9c9ac1584cd"
 }
