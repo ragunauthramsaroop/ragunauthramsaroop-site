@@ -2,9 +2,10 @@
 """Fail-closed recipient ledger for iCloud SMTP outreach.
 
 Each normalized recipient owns one immutable claim path keyed by SHA-256. A send must
-create the claim before SMTP. Existing claims block future sends. After SMTP reports
-success, the same claim is updated to status=sent. If execution stops between SMTP
-and the update, the pending claim remains and future sends stay blocked for review.
+create the claim before SMTP. Existing claims block future sends. After SMTP accepts
+the message, the same claim is updated to status=smtp_accepted. SMTP acceptance is
+not treated as proof of delivery; a separate bounce reconciler can later mark the
+record status=bounced when a delivery-status notification is observed.
 """
 
 import base64
@@ -59,7 +60,7 @@ def _token() -> str:
     return _required_env("GITHUB_TOKEN")
 
 
-def _request(method: str, path: str, payload: dict[str, Any] | None = None) -> dict[str, Any]:
+def _request(method: str, path: str, payload: dict[str, Any] | None = None) -> Any:
     url = f"https://api.github.com/repos/{_repo()}/{path.lstrip('/')}"
     data = None
     headers = {
@@ -132,7 +133,7 @@ def claim_recipient(
     run_id = os.environ.get("GITHUB_RUN_ID", "").strip() or "unknown"
     run_attempt = os.environ.get("GITHUB_RUN_ATTEMPT", "").strip() or "unknown"
     record: dict[str, Any] = {
-        "schema": 1,
+        "schema": 2,
         "status": "pending",
         "recipient": normalized,
         "recipient_sha256": recipient_hash,
@@ -189,14 +190,18 @@ def claim_recipient(
 
 
 def mark_sent(claim: LedgerClaim, smtp_message_id: str) -> None:
+    """Record SMTP acceptance without claiming downstream delivery."""
     record = dict(claim.record)
-    record["status"] = "sent"
+    accepted_at = utc_now()
+    record["status"] = "smtp_accepted"
+    record["delivery_status"] = "pending_bounce_check"
     record["smtp_message_id"] = smtp_message_id
-    record["sent_at"] = utc_now()
+    record["smtp_accepted_at"] = accepted_at
+    record["sent_at"] = accepted_at  # retained for backward-compatible reporting
     body_bytes = (json.dumps(record, indent=2, sort_keys=True) + "\n").encode("utf-8")
     encoded_path = urllib.parse.quote(claim.path, safe="/")
     payload = {
-        "message": f"Confirm iCloud outreach sent {record['recipient_sha256'][:12]}",
+        "message": f"Confirm iCloud outreach SMTP accepted {record['recipient_sha256'][:12]}",
         "content": base64.b64encode(body_bytes).decode("ascii"),
         "sha": claim.content_sha,
         "branch": _branch(),
@@ -227,14 +232,14 @@ def mark_sent(claim: LedgerClaim, smtp_message_id: str) -> None:
                     f"SMTP returned success for {claim.recipient}, but the ledger claim no longer belongs to this run. Manual review is required."
                 ) from exc
 
-            if current_record.get("status") == "sent":
+            if current_record.get("status") in {"sent", "smtp_accepted"}:
                 if current_record.get("smtp_message_id") == smtp_message_id:
                     claim.content_sha = str(current.get("sha") or claim.content_sha)
                     claim.record = current_record
-                    print(f"Ledger already marked sent for {claim.recipient}; Message-ID {smtp_message_id}")
+                    print(f"Ledger already records SMTP acceptance for {claim.recipient}; Message-ID {smtp_message_id}")
                     return
                 raise RuntimeError(
-                    f"SMTP returned success for {claim.recipient}, but the ledger is already marked sent with a different Message-ID. Manual review is required."
+                    f"SMTP returned success for {claim.recipient}, but the ledger already records a different Message-ID. Manual review is required."
                 ) from exc
 
             if current_record.get("status") != "pending":
@@ -267,7 +272,7 @@ def mark_sent(claim: LedgerClaim, smtp_message_id: str) -> None:
         )
     claim.content_sha = new_sha
     claim.record = record
-    print(f"Ledger marked sent for {claim.recipient}; Message-ID {smtp_message_id}")
+    print(f"Ledger marked SMTP accepted for {claim.recipient}; Message-ID {smtp_message_id}")
 
 
 def payload_bytes(path: str | Path) -> bytes:
