@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "14f213a920f034bad36544524b895141d76ed9dfac05984dca1ac6bfd17fa1c1",
+  "batch_id": "2026-10-08-next40-wave-06",
+  "body_sha256": "500f0a1cfe880a364a2fd78354690448240e7e04ac374e6213d104bf6511ff59",
+  "created_at": "2026-10-09T01:51:49+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "37871778173",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/2026-10-08-next40-wave-06.json",
+  "payload_sha256": "ee7d86e7ba67c7d70581f4fc607d12f2930366ccf6252b721554d199c30a68e1",
+  "recipient": "matt.abbott@boss-energy.co.uk",
+  "recipient_sha256": "65861493692a69c733a9405f68103109cf6037bc1dfd6b6d72637c4909d1c174",
+  "schema": 1,
+  "status": "pending",
+  "subject_sha256": "b261763095441ac9fb2e4bbd6c3c236550806239fb076c4c698c33edbb61017c"
+}
