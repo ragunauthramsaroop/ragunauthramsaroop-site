@@ -12,6 +12,8 @@
   "recipient": "matt.abbott@boss-energy.co.uk",
   "recipient_sha256": "65861493692a69c733a9405f68103109cf6037bc1dfd6b6d72637c4909d1c174",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-09T01:51:51+00:00",
+  "smtp_message_id": "<179151071118.2494.12986349688620098440@icloud.com>",
+  "status": "sent",
   "subject_sha256": "b261763095441ac9fb2e4bbd6c3c236550806239fb076c4c698c33edbb61017c"
 }
