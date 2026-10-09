@@ -12,6 +12,8 @@
   "recipient": "bmartin@opusexecutive.com",
   "recipient_sha256": "688326ef36436cca69fe9a6238a6db161ca98d2abdf93665e5b43515efcdf1f6",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-09T01:56:40+00:00",
+  "smtp_message_id": "<179151100072.2215.17998495171147210416@icloud.com>",
+  "status": "sent",
   "subject_sha256": "3a0d75c53dcf3c7796dd2f7bc83976c42e2bfdf17278bdb98ebd497c6ca7b74c"
 }
