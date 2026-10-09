@@ -12,6 +12,8 @@
   "recipient": "craig.milbourne@rockstarselection.com",
   "recipient_sha256": "cc528664aa3813cc6326b556414ca112e035284945a43d9d637bf3b7e64b5cdb",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-09T01:51:54+00:00",
+  "smtp_message_id": "<179151071396.2494.12037126062188654844@icloud.com>",
+  "status": "sent",
   "subject_sha256": "4828578cb882c6399e9cfe7c307858772960feb49448a4499d4113573077eb3f"
 }
