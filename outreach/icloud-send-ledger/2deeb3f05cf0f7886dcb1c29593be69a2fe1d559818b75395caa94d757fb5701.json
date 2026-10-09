@@ -12,6 +12,8 @@
   "recipient": "info@nizmara.com",
   "recipient_sha256": "2deeb3f05cf0f7886dcb1c29593be69a2fe1d559818b75395caa94d757fb5701",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-09T00:14:48+00:00",
+  "smtp_message_id": "<179150488856.2432.9842262512628603352@icloud.com>",
+  "status": "sent",
   "subject_sha256": "c283946bab6549f4c61459e786654b881a2b7230aa16ef30bfbd5283044f8f0e"
 }
