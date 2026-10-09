@@ -12,6 +12,8 @@
   "recipient": "da@gtlsearch.com",
   "recipient_sha256": "f0456fbe7f95b31ce7b27e3ae2ff9c450819081d4eefa819751817f49a4adcad",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-09T01:56:38+00:00",
+  "smtp_message_id": "<179151099824.2215.7141458139913814383@icloud.com>",
+  "status": "sent",
   "subject_sha256": "73399aab4b249036661c7ea4546afb8e2d4afa710aab3460a76b62de86e3696f"
 }
