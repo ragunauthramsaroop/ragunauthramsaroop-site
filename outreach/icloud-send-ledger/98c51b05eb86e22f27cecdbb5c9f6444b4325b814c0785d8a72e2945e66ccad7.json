@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "cc39a8f70b8709a75c3d6403b4318d3aa39af122cabd5bdafcff24ecc0c54fc9",
+  "batch_id": "2026-10-08-next40-wave-08",
+  "body_sha256": "9021d87a56863723b81a1bab26fc40e73852efed52b054486b6809bc5e6be3aa",
+  "created_at": "2026-10-09T01:52:47+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "37871829467",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/2026-10-08-next40-wave-08.json",
+  "payload_sha256": "d66896c79b4776b0fb913fec9bbfd3c4ad1323f638a3457d0b40dcf9989cc34b",
+  "recipient": "hello@acaciaintl.com",
+  "recipient_sha256": "98c51b05eb86e22f27cecdbb5c9f6444b4325b814c0785d8a72e2945e66ccad7",
+  "schema": 1,
+  "status": "pending",
+  "subject_sha256": "e967c13cc42f4451c504ce35ad011c0bdd67fd5faa623b9c29547c985177678c"
+}
