@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "bf5ac51405331ac0353b12f679459d920ec5efbd1fb147147b4dc5d06d8af0f9",
+  "batch_id": "gcc-executive-recruiters-2026-10-08-b28",
+  "body_sha256": "2eed0eb45bc13aed3f8ec3f868d2b5019752e7b34025324d1a53f52ca0e48837",
+  "created_at": "2026-10-09T00:21:26+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "37864331899",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/2026-10-08-gcc-executive-recruiters-batch-28.json",
+  "payload_sha256": "f321fa911a9b0c9d4f65d58a4029f60d07a6c95aa36604aaab0c7000f29ff17f",
+  "recipient": "careers@marlinhawk.com",
+  "recipient_sha256": "27b09e4fba91446732fd36ab25de9c94a2d46ad77eee19d03dfe6aa19ae5976d",
+  "schema": 1,
+  "status": "pending",
+  "subject_sha256": "eb9c2319bf4134345dfe0cce25574224a05c5f8546aac4db03e6ba07ab65cd02"
+}
