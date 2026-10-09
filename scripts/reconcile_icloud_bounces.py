@@ -29,7 +29,7 @@ from icloud_send_ledger import (
 
 IMAP_HOST = "imap.mail.me.com"
 IMAP_PORT = 993
-MAX_MESSAGES = 500
+MAX_MESSAGES = 300
 
 EMAIL_RE = re.compile(r"[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}", re.I)
 STATUS_RE = re.compile(r"\b(?:4|5)(?:\.\d+){1,2}\b|\b(?:4|5)\d\d\b")
@@ -63,33 +63,41 @@ def decoded_header(value: str | None) -> str:
         return value
 
 
+def decode_bytes(payload: bytes, charset: str | None) -> str:
+    encodings: list[str] = []
+    if charset:
+        encodings.append(charset)
+        if charset.lower().replace("_", "-") in {"windows-874", "windows874"}:
+            encodings.append("cp874")
+    encodings.extend(["utf-8", "cp1252", "latin-1"])
+    seen: set[str] = set()
+    for encoding in encodings:
+        if not encoding or encoding.lower() in seen:
+            continue
+        seen.add(encoding.lower())
+        try:
+            return payload.decode(encoding, errors="replace")
+        except (LookupError, UnicodeError):
+            continue
+    return payload.decode("utf-8", errors="replace")
+
+
 def part_text(message: email.message.EmailMessage) -> str:
     chunks: list[str] = []
-    if message.is_multipart():
-        for part in message.walk():
-            ctype = part.get_content_type()
-            if ctype not in {"text/plain", "text/html", "message/delivery-status"}:
-                continue
-            try:
-                content = part.get_content()
-            except Exception:
-                payload = part.get_payload(decode=True)
-                if isinstance(payload, bytes):
-                    content = payload.decode(part.get_content_charset() or "utf-8", errors="replace")
-                else:
-                    content = str(payload or "")
-            if isinstance(content, list):
-                for item in content:
-                    chunks.append(str(item))
-            else:
-                chunks.append(str(content))
-    else:
-        try:
-            chunks.append(str(message.get_content()))
-        except Exception:
-            payload = message.get_payload(decode=True)
-            if isinstance(payload, bytes):
-                chunks.append(payload.decode(message.get_content_charset() or "utf-8", errors="replace"))
+    parts = message.walk() if message.is_multipart() else [message]
+    for part in parts:
+        ctype = part.get_content_type()
+        if ctype not in {"text/plain", "text/html", "message/delivery-status"}:
+            continue
+        payload = part.get_payload(decode=True)
+        if isinstance(payload, bytes):
+            chunks.append(decode_bytes(payload, part.get_content_charset()))
+            continue
+        raw = part.get_payload()
+        if isinstance(raw, list):
+            chunks.extend(str(item) for item in raw)
+        elif raw is not None:
+            chunks.append(str(raw))
     return "\n".join(chunks)
 
 
@@ -219,7 +227,7 @@ def main() -> None:
         if status != "OK":
             raise RuntimeError("Unable to search iCloud INBOX.")
         message_ids = (data[0] or b"").split()[-MAX_MESSAGES:]
-        for imap_id in message_ids:
+        for imap_id in reversed(message_ids):
             status, payload = conn.fetch(imap_id, "(RFC822)")
             if status != "OK" or not payload:
                 continue
