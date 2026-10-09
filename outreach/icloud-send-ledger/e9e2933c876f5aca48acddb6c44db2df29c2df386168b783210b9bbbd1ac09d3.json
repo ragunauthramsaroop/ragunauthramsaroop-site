@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "20a5e3a09b3fe02372349406582cf6ea724f286b07fe34a7a06af49284a2fe35",
+  "batch_id": "2026-10-09-maryland-dgs-director-energy-application",
+  "body_sha256": "4d6c3d29a271ba98ad34b410e794e5f3e13dc51930a70767d3994c21d5ba3fc7",
+  "created_at": "2026-10-09T13:48:42+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "37939498338",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/2026-10-09-maryland-dgs-director-energy-application.json",
+  "payload_sha256": "8db34205f85bf6d981fa46a35dc34c17fdd7bb557159909d5152949942c9deef",
+  "recipient": "dgs.resumes@maryland.gov",
+  "recipient_sha256": "e9e2933c876f5aca48acddb6c44db2df29c2df386168b783210b9bbbd1ac09d3",
+  "schema": 2,
+  "status": "pending",
+  "subject_sha256": "f435fe0dc8a72954ea7fd2bd2e785f5becd82f5410312b8ef6a2f33ac7412bc2"
+}
