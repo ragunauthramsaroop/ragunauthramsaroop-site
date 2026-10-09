@@ -14,6 +14,12 @@
   "schema": 1,
   "sent_at": "2026-10-09T01:52:44+00:00",
   "smtp_message_id": "<179151076391.2429.1723315248107903660@icloud.com>",
-  "status": "sent",
+  "status": "bounced",
+  "delivery_status": "bounced",
+  "previous_status": "sent",
+  "bounced_at": "2026-10-09T01:59:17+00:00",
+  "bounce_smtp_status": "5.4.1",
+  "bounce_reason": "Recipient address rejected: Access denied; recipient address possibly incorrect",
+  "bounce_evidence": "User-provided delivery-status notification",
   "subject_sha256": "8de9669188aea7e96cf405de89c666cdd05700874e09df27b13cad1f7da11977"
 }
