@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "ed52ce29221f3b45f82d81b0bb714e369feabe910babf0e6579c7b3aec08e7d3",
+  "batch_id": "2026-10-08-next40-final-replacements",
+  "body_sha256": "2954b0fae7f44e940fc1cae110322c001fe388563fd18a75aebb42b0c4e08ecc",
+  "created_at": "2026-10-09T01:57:01+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "37872175042",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/2026-10-08-next40-final-replacements.json",
+  "payload_sha256": "4f4df190ae66f972f38d6442700fbebd4062903a805ef27ee2e2dc15d7482197",
+  "recipient": "david@volttalentpartners.com.au",
+  "recipient_sha256": "c8d9495f4c2abf8c83647de05d54c8bcf926e948db85ec293908f4aa8a091ec9",
+  "schema": 1,
+  "status": "pending",
+  "subject_sha256": "01f5dc11ff598fbcadce0ac19fdcb95534ec7fa43124cf6cded0f9d406a00db2"
+}
