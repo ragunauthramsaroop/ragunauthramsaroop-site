@@ -12,6 +12,8 @@
   "recipient": "sarita@maxima.com.sg",
   "recipient_sha256": "e0cd81f74dcf474b65ef18b531070c76b3705edc9f554521356e5e2bb532f9a9",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-09T01:51:12+00:00",
+  "smtp_message_id": "<179151067175.2447.9948462864153639389@icloud.com>",
+  "status": "sent",
   "subject_sha256": "830d8e6553075c2cd4023af32fc668864e22752d8c181009db62af62725caf39"
 }
