@@ -12,6 +12,8 @@
   "recipient": "dm@bavanapartners.com",
   "recipient_sha256": "22f04892d24f664e4f94a1480ec7d4dc96a1a6f6bb2f18ae26b466fc06c0e9eb",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-09T01:51:23+00:00",
+  "smtp_message_id": "<179151068328.2447.12915895386945202370@icloud.com>",
+  "status": "sent",
   "subject_sha256": "5e81b3d338bd861244330de0bf96b77b2e2eb3a47e53b97d1179977090411616"
 }
