@@ -12,6 +12,8 @@
   "recipient": "maina.sahi@equitypurpose.com",
   "recipient_sha256": "a5e150c27801448de0a625505aadc2c8d09250e12974a19a5fef3a4bd1f3c8f3",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-09T01:50:55+00:00",
+  "smtp_message_id": "<179151065513.2218.4195409143284679425@icloud.com>",
+  "status": "sent",
   "subject_sha256": "21a42f487414acdef181e97187d5f3bef0a8750cfce2e3580412e6c745f4504b"
 }
