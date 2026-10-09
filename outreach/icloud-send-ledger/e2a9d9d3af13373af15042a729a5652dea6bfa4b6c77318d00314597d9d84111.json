@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "b252c26f91ed9aadbf02366284d585e086e8f3c6e3181954312bf739cd4526af",
+  "batch_id": "2026-10-08-next40-wave-05-retry",
+  "body_sha256": "8e5f00cb572fb8c59caef431b9078406f4e0cb03b9a74a5ea40dde1522b77917",
+  "created_at": "2026-10-09T01:56:42+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "37872163017",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/2026-10-08-next40-wave-05-retry.json",
+  "payload_sha256": "1212d5bef2dd60fd9a001fb117d7cd158776676a0542fbfe3e34563c10efc226",
+  "recipient": "marc@salamonepartners.com",
+  "recipient_sha256": "e2a9d9d3af13373af15042a729a5652dea6bfa4b6c77318d00314597d9d84111",
+  "schema": 1,
+  "status": "pending",
+  "subject_sha256": "af868c8045745b8323e617c1fb1646955ccc27a16f47b4bc4c7f1da70042eccb"
+}
