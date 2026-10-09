@@ -12,6 +12,8 @@
   "recipient": "abigail.skerrett@russellreynolds.com",
   "recipient_sha256": "c9f52cfca98de5bdf88b76c559a34309ec71778f2d88e75d44ba537fbefceffd",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-09T00:33:16+00:00",
+  "smtp_message_id": "<179150599589.2421.14986426282484096843@icloud.com>",
+  "status": "sent",
   "subject_sha256": "df9a776cc89455bd94953ec75db069047d7cc4674d6c7cd14189216afe9f586c"
 }
