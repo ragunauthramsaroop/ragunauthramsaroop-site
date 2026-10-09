@@ -12,6 +12,8 @@
   "recipient": "kevin@talesca.com.au",
   "recipient_sha256": "b70b0e19ee7cb7184886e0e55e5711413d000f9758505e548a36b56ed1249d2f",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-09T01:52:46+00:00",
+  "smtp_message_id": "<179151076648.2429.12348635844686867971@icloud.com>",
+  "status": "sent",
   "subject_sha256": "69eeebbe0a0a47f737f4b26d66bdb8f9a3e8020644b79699d0dce3c37ef52dbd"
 }
