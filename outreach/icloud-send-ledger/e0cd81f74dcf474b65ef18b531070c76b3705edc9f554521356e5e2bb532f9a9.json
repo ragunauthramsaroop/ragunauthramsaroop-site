@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "3596c684c1200f64d4359ddebd9c9e9639ff378424b294411a3736295ae32b79",
+  "batch_id": "2026-10-08-next40-wave-04",
+  "body_sha256": "66e2857967211cee40b928a3e02b63caaf11ae1ab8a7783e36a30093ada9de70",
+  "created_at": "2026-10-09T01:51:10+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "37871728215",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/2026-10-08-next40-wave-04.json",
+  "payload_sha256": "ed5eaf9e7e62cb9b0a6e8387c62f8f8b7c8ddb9e8fe21b4730c6a2eb603c650a",
+  "recipient": "sarita@maxima.com.sg",
+  "recipient_sha256": "e0cd81f74dcf474b65ef18b531070c76b3705edc9f554521356e5e2bb532f9a9",
+  "schema": 1,
+  "status": "pending",
+  "subject_sha256": "830d8e6553075c2cd4023af32fc668864e22752d8c181009db62af62725caf39"
+}
