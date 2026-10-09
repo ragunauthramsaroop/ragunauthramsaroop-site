@@ -12,6 +12,8 @@
   "recipient": "dan.mccomb@ironcoveglobal.com",
   "recipient_sha256": "b2ec5cb8b2a6d969718111bc1ca5a9ccb6cbf7f391d8832255d3dd30872bbd64",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-09T01:39:46+00:00",
+  "smtp_message_id": "<179150998577.2555.17184335851265511596@icloud.com>",
+  "status": "sent",
   "subject_sha256": "014771dc340987b502c9691f80863f420d637ca77cad51b817932ac4bca30e0f"
 }
