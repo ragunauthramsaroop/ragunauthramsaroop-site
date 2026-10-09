@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "d1562ff47a3a6c3bbf0540e5f85db942a46aa88361e8a4faba35d66380aa412a",
+  "batch_id": "2026-10-08-top-global-search-firms-wave-04",
+  "body_sha256": "d001928508725aaf8a449587e0b16659a8963a7c44057ecbb5cd59d585985880",
+  "created_at": "2026-10-09T00:41:30+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "37866033635",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/2026-10-08-top-global-search-firms-wave-04.json",
+  "payload_sha256": "4e8e60bfbb1a8dedc4635e6f7d6e75c9cf5a6b96fd32f21a9031f0fff496f679",
+  "recipient": "gregory.nazaryan@ward-howell.com",
+  "recipient_sha256": "4673021ff15c65807334a88af288105617e37e6c9e0f7b44f89affbe82a9c3ae",
+  "schema": 1,
+  "status": "pending",
+  "subject_sha256": "635cf5827a3c7eda68a02409eceedf1e81aa4f0e8db44a319592af64e2d178a2"
+}
