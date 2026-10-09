@@ -12,6 +12,8 @@
   "recipient": "elliot.miles@twenty-future.com",
   "recipient_sha256": "e4133ccdf5de6eb0bf7a4830895dde9cbc051fcf37f2c361a765172ae15cbff5",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-09T01:51:56+00:00",
+  "smtp_message_id": "<179151071658.2494.9915303442610797384@icloud.com>",
+  "status": "sent",
   "subject_sha256": "544b08dc7614f3a747276df14eb341042f7a4b69f2c9e8e39d22dfe8e569004e"
 }
