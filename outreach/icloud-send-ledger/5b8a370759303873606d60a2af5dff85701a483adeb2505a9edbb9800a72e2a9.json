@@ -12,6 +12,8 @@
   "recipient": "anna.koj@mavence.com",
   "recipient_sha256": "5b8a370759303873606d60a2af5dff85701a483adeb2505a9edbb9800a72e2a9",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-09T01:50:52+00:00",
+  "smtp_message_id": "<179151065247.2218.8793422556063991401@icloud.com>",
+  "status": "sent",
   "subject_sha256": "33e07b9ac5ea81ad6a071c47d6a8209020b181f7330c55ddbcb4aa5223d4cfcf"
 }
