@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "cc39a8f70b8709a75c3d6403b4318d3aa39af122cabd5bdafcff24ecc0c54fc9",
+  "batch_id": "2026-10-08-next40-wave-08",
+  "body_sha256": "84a2b36e3b153367b3c074b104bfef08abd438aaec355552667f1d4ba709193e",
+  "created_at": "2026-10-09T01:52:45+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "37871829467",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/2026-10-08-next40-wave-08.json",
+  "payload_sha256": "d66896c79b4776b0fb913fec9bbfd3c4ad1323f638a3457d0b40dcf9989cc34b",
+  "recipient": "kevin@talesca.com.au",
+  "recipient_sha256": "b70b0e19ee7cb7184886e0e55e5711413d000f9758505e548a36b56ed1249d2f",
+  "schema": 1,
+  "status": "pending",
+  "subject_sha256": "69eeebbe0a0a47f737f4b26d66bdb8f9a3e8020644b79699d0dce3c37ef52dbd"
+}
