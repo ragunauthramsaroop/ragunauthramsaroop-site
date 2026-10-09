@@ -12,6 +12,8 @@
   "recipient": "tcmc@tcmc.ae",
   "recipient_sha256": "8530731a81bf4c52605058d09a1c5dc8a2a0527ceaf57035c78096867f1b2d22",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-09T01:40:14+00:00",
+  "smtp_message_id": "<179151001395.2228.14587226448088609109@icloud.com>",
+  "status": "sent",
   "subject_sha256": "7b24e9c5b00dc6df46529bf8251d425df28b4ebbd36f6b41a8253af060bf0793"
 }
