@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "18302611bd08402bdd129f3d390f2b85441941deb3d711099cb2dc3eac52b34a",
+  "batch_id": "2026-10-08-csg-talent-christina-final",
+  "body_sha256": "fd757a6cae75503f6e3bba56e5488fb32154a1e1e60716aef0eb30e62bd0ed46",
+  "created_at": "2026-10-09T01:25:20+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "37869677100",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/2026-10-08-csg-talent-christina-final.json",
+  "payload_sha256": "b80f68617735584aa2fe53567f7ec27e450c3dd62ef4daa71868fb22bcbbef17",
+  "recipient": "christina.tp@csgtalent.com",
+  "recipient_sha256": "aff928d88d336ead1e6c189b2f4ed95fe452da5df546b7ef2e073cbf69902c61",
+  "schema": 1,
+  "status": "pending",
+  "subject_sha256": "53c63a021d27284789c10a7087cf060011e27ce06e7431e342a9179357e37706"
+}
