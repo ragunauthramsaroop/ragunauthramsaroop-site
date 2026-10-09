@@ -12,6 +12,8 @@
   "recipient": "gregory.nazaryan@ward-howell.com",
   "recipient_sha256": "4673021ff15c65807334a88af288105617e37e6c9e0f7b44f89affbe82a9c3ae",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-09T00:41:32+00:00",
+  "smtp_message_id": "<179150649198.2373.14952085835186104604@icloud.com>",
+  "status": "sent",
   "subject_sha256": "635cf5827a3c7eda68a02409eceedf1e81aa4f0e8db44a319592af64e2d178a2"
 }
