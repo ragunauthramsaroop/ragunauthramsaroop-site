@@ -12,6 +12,8 @@
   "recipient": "mike.chilman@principalandpartners.sg",
   "recipient_sha256": "f5233c5aecaa5d0b688018b3e21b872bd68e9416bd50cd27b4acba26824facb0",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-09T01:50:47+00:00",
+  "smtp_message_id": "<179151064696.2218.9192020691144909109@icloud.com>",
+  "status": "sent",
   "subject_sha256": "f3b4313119f174ca0be6f8d035cade49207fdd80a8dbd89bd4b9e3488218ae97"
 }
