@@ -12,6 +12,8 @@
   "recipient": "info@zynithtalent.com",
   "recipient_sha256": "3ef59b848fd0e71865a1a905eb0d0efe0a9af1685ce368a59868d33aff82314b",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-09T00:18:07+00:00",
+  "smtp_message_id": "<179150508709.2411.13256036367041921332@icloud.com>",
+  "status": "sent",
   "subject_sha256": "5e39da1dc2983564bf1069d7fe35926a0c2a86a5924507d078fc3fc45afc9925"
 }
