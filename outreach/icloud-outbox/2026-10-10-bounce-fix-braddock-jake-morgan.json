@@ -1,0 +1,19 @@
+{
+  "approved": true,
+  "dry_run": false,
+  "campaign_type": "recruiter",
+  "batch_id": "2026-10-10-bounce-fix-braddock-jake-morgan",
+  "attachment_filename": "Ragunauth_Ramsaroop_ATS_Executive_Resume_Ceiling_2026.pdf",
+  "recipient_verification": {
+    "source": "https://www.groupbraddock.com/industry/braddock-energy-utilities/",
+    "verified_at": "2026-10-10",
+    "note": "Official Braddock Energy & Utilities page lists Jake Morgan, Head of Energy & Utilities, jm@groupbraddock.com."
+  },
+  "messages": [
+    {
+      "to": "jm@groupbraddock.com",
+      "subject": "Energy & Natural Resources Executive | ESG, External Affairs & Country Leadership",
+      "body": "Dear Mr. Morgan,\n\nYour leadership of Braddock's Energy & Utilities practice and senior search work across energy and natural resources make this a focused introduction. I serve as Liaison Director, Social Responsibility Department at AGM Inc., part of Zijin Mining Group, with responsibility spanning government and regulatory relations, ESG and social performance, corporate and external affairs, stakeholder strategy and strategic partnerships.\n\nI am targeting Director, VP, Country and Regional leadership mandates across mining, power, renewables and wider energy infrastructure. I am internationally mobile and open to expatriate assignments.\n\nMy executive CV is attached for confidential consideration.\n\nBest regards,\nRagunauth Ramsaroop\nragunauthramsaroop@icloud.com\nragunauthramsaroop.com"
+    }
+  ]
+}
