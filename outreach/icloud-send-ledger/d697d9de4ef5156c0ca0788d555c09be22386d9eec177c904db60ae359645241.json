@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "46f47c965b11b6eeeb3ac5b532e356396b326bace19e00a23fdbdb82fb1ddba3",
+  "batch_id": "2026-10-10-sixth40-r05-imsa-middle-east",
+  "body_sha256": "b7b620b1363671afeba2473a837960b8fa77c976a42096f5624ea0b76906bdc0",
+  "created_at": "2026-10-10T21:06:09+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "38086310874",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/2026-10-10-sixth40-r05-imsa-middle-east.json",
+  "payload_sha256": "a80764ef083e77f151aac9b53b76e26c12de05d614e41f45abebcdcd2d2806e1",
+  "recipient": "contact@aston-associates.com",
+  "recipient_sha256": "d697d9de4ef5156c0ca0788d555c09be22386d9eec177c904db60ae359645241",
+  "schema": 2,
+  "status": "pending",
+  "subject_sha256": "fe6435eae8f2f60062caeed8da6374f7212dc28d3624eea67b489c49b7144557"
+}
