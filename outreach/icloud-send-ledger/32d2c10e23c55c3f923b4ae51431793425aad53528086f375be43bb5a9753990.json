@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "a325885f85dc2fbb9a3fa71388b47db74fbeb9ab269b01eb1377590786bebb39",
+  "batch_id": "2026-10-10-sixth40-15-starboard-recruitment",
+  "body_sha256": "e17cc22a645effdc19109aad91fdff4f297d5e28c4868c10b8f0f713436c303f",
+  "created_at": "2026-10-10T19:57:22+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "38081800230",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/2026-10-10-sixth40-15-starboard-recruitment.json",
+  "payload_sha256": "ef821a593519588cefd4951701c2b1f27c21d2b23db8c780eb149ce368718771",
+  "recipient": "contact@starboardrecruitment.com",
+  "recipient_sha256": "32d2c10e23c55c3f923b4ae51431793425aad53528086f375be43bb5a9753990",
+  "schema": 2,
+  "status": "pending",
+  "subject_sha256": "3794f06c3472a6f1b9510fa6fa677578dc08656d8ac8daff1d5cdcba0b50ed43"
+}
