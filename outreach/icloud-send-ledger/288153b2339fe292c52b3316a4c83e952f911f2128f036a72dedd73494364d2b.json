@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "3bed07cf8f4111578d51ba9dc471f55e5c1034a03847608ebd05cd9358b024df",
+  "batch_id": "2026-10-10-fifth40-31-plbsearch",
+  "body_sha256": "8afbb4198178c51bbc3140055e46d8e40ed4edb94d4a37618004bd9bdd37483a",
+  "created_at": "2026-10-10T19:03:42+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "38078274720",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/2026-10-10-fifth40-31-plbsearch.json",
+  "payload_sha256": "bff254d954b5647f3db0b3974afa3aaf6a99a02876decd7bbbbedd92c4bccc9c",
+  "recipient": "info@plbsearch.com",
+  "recipient_sha256": "288153b2339fe292c52b3316a4c83e952f911f2128f036a72dedd73494364d2b",
+  "schema": 2,
+  "status": "pending",
+  "subject_sha256": "090f175244904eacab164779eed29beff35c6eb87da066f8b04442d211da601a"
+}
