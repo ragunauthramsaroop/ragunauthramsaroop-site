@@ -3,6 +3,7 @@
   "batch_id": "2026-10-10-fifth40-042-regenerate",
   "body_sha256": "997e34316bd87010448ad1917ee29882d1b5bfd53c9ff31d38e3904334fcea96",
   "created_at": "2026-10-10T18:22:00+00:00",
+  "delivery_status": "pending_bounce_check",
   "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
   "github_run_attempt": "1",
   "github_run_id": "38075454185",
@@ -12,6 +13,9 @@
   "recipient": "info@regeneratetalent.com",
   "recipient_sha256": "5247bafa890ad0d44f5c5184254d075bef5c209dd3fdff8d0b4e5d3ecf62e422",
   "schema": 2,
-  "status": "pending",
+  "sent_at": "2026-10-10T18:22:01+00:00",
+  "smtp_accepted_at": "2026-10-10T18:22:01+00:00",
+  "smtp_message_id": "<179165652135.2443.3091957919483073598@icloud.com>",
+  "status": "smtp_accepted",
   "subject_sha256": "633082b627c49ef33801501d7e8cd9c00a59933764f4de5e596838e3f9be3d88"
 }
