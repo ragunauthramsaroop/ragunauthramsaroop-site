@@ -3,6 +3,7 @@
   "batch_id": "2026-10-10-third40-wave-08",
   "body_sha256": "f38da0cd523ee5698e14df5831e88c3cee81f4f0942c5f8ab32118134ce02566",
   "created_at": "2026-10-10T14:02:00+00:00",
+  "delivery_status": "pending_bounce_check",
   "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
   "github_run_attempt": "1",
   "github_run_id": "38057994785",
@@ -12,6 +13,9 @@
   "recipient": "dk@cgptalent.com",
   "recipient_sha256": "ea373b938215c3d1203153329aa36476dd6085e05e306ddf3671528766a74092",
   "schema": 2,
-  "status": "pending",
+  "sent_at": "2026-10-10T14:02:01+00:00",
+  "smtp_accepted_at": "2026-10-10T14:02:01+00:00",
+  "smtp_message_id": "<179164092147.2446.11453704792145936508@icloud.com>",
+  "status": "smtp_accepted",
   "subject_sha256": "d6d4f16851f952f99cf1218ea1f112b2dc4123cf6e82c51ae82f95b86eafa180"
 }
