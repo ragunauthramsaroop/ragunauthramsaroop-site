@@ -3,6 +3,7 @@
   "batch_id": "2026-10-10-third40-wave-05",
   "body_sha256": "14be477acb19160f480eaaec392c5b73f50dbfc4a021d5cc5981096b86c390b2",
   "created_at": "2026-10-10T13:57:47+00:00",
+  "delivery_status": "pending_bounce_check",
   "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
   "github_run_attempt": "1",
   "github_run_id": "38057720235",
@@ -12,6 +13,9 @@
   "recipient": "rp@curzonexec.com",
   "recipient_sha256": "4c2860b3f711a2c600ea886048896a47208135c1f056ff959547125ef1d8d088",
   "schema": 2,
-  "status": "pending",
+  "sent_at": "2026-10-10T13:57:48+00:00",
+  "smtp_accepted_at": "2026-10-10T13:57:48+00:00",
+  "smtp_message_id": "<179164066812.2417.10787764358701929886@icloud.com>",
+  "status": "smtp_accepted",
   "subject_sha256": "1cb8b925bcb7351ae2e769732a6d9d9c83d292bf98703ee3ea415eda83e5bdb0"
 }
