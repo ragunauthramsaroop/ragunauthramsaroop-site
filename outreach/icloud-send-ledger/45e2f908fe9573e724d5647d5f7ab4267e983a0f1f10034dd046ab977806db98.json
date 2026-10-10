@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "7d17fc50b0e0254d3a96e01297060e097a91cb12964f175245f0ee3241b7eabb",
+  "batch_id": "2026-10-10-fifth40-063-iconsult",
+  "body_sha256": "b0a363e91fc734957de9ebd5bb0b1f9f1ea4207a4bcb46bae65bb89d3ebaf615",
+  "created_at": "2026-10-10T18:32:47+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "38076190498",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/2026-10-10-fifth40-063-iconsult.json",
+  "payload_sha256": "96d925b889e35c4353b5715b7126f173ee2771d39b293ea1d69c507bbf303e5a",
+  "recipient": "sam@iconsult-technical.com",
+  "recipient_sha256": "45e2f908fe9573e724d5647d5f7ab4267e983a0f1f10034dd046ab977806db98",
+  "schema": 2,
+  "status": "pending",
+  "subject_sha256": "b4d83c56ed9049d05259b6401d68d7a837bd3aa7392813850bba7a8c0188b8f3"
+}
