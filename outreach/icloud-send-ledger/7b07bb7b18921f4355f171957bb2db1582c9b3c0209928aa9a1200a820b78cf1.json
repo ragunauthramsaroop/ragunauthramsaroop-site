@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "4b97a5cbe3cfbfb7904ab4bc97c917eedb18f130873aa55a5fa7fb9bf1c7d031",
+  "batch_id": "2026-10-10-fifth40-015-pangea",
+  "body_sha256": "79187f894a6e6be3992b8ed4476c81ce8c778a074a959f1cb8d0b7cc39d7cce5",
+  "created_at": "2026-10-10T18:12:54+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "38074857033",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/2026-10-10-fifth40-015-pangea.json",
+  "payload_sha256": "ae804d98b2755feaab1ddcd4e3e97e369ad34965d505b2b4a77d582c5e40fa1d",
+  "recipient": "kiera.oreilly@pangea-ts.com",
+  "recipient_sha256": "7b07bb7b18921f4355f171957bb2db1582c9b3c0209928aa9a1200a820b78cf1",
+  "schema": 2,
+  "status": "pending",
+  "subject_sha256": "db099b0721457bae399748263b72f7d9a14ab9eece37f2b43189fa8d6c1054c6"
+}
