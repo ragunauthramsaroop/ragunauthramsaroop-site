@@ -3,6 +3,7 @@
   "batch_id": "2026-10-10-fourth40-wave-04",
   "body_sha256": "8acc3779bad7e08e87e9dc79a5a46b64ebacf38de4d8cf958362daa4a67b59fd",
   "created_at": "2026-10-10T15:12:52+00:00",
+  "delivery_status": "pending_bounce_check",
   "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
   "github_run_attempt": "1",
   "github_run_id": "38062678321",
@@ -12,6 +13,9 @@
   "recipient": "christa@cmtglobalconsulting.com",
   "recipient_sha256": "ebb8131237552df8cb53a6d76f29d778c3ac6d8dabd7fcc971edc2fc8b5400d4",
   "schema": 2,
-  "status": "pending",
+  "sent_at": "2026-10-10T15:12:53+00:00",
+  "smtp_accepted_at": "2026-10-10T15:12:53+00:00",
+  "smtp_message_id": "<179164517372.2204.4405416687116099798@icloud.com>",
+  "status": "smtp_accepted",
   "subject_sha256": "2acc250c6f6a876584ea53d17d4af8909f4891262b5d1bf05fb8738ccd8e2103"
 }
