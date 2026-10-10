@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "5a0e5502213f6193ce57bc2a7733ba3c018d79589f6b1a4719c43443d05f8bd0",
+  "batch_id": "2026-10-10-fourth40-wave-14",
+  "body_sha256": "9fad020220133369c79a29177676d9f6aefd6dc8ea7b6e79a44ca2bf896af908",
+  "created_at": "2026-10-10T15:28:53+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "38063763256",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/2026-10-10-fourth40-wave-14.json",
+  "payload_sha256": "5f26cd7b1dd11ffd2f2aeff3d69ad615b6a45421bdfdf0daeb7b15c489b7c195",
+  "recipient": "talent@renovahire.com.au",
+  "recipient_sha256": "bb8dfe6e5b70244d14d97b4b5121d0f0cb324f408c1ec4c0b0be2c1f56fd7323",
+  "schema": 2,
+  "status": "pending",
+  "subject_sha256": "f3df7f4a9095cb40fa5d9929df882c6f9048520a06b1cc78d0a8f05b47b0c67c"
+}
