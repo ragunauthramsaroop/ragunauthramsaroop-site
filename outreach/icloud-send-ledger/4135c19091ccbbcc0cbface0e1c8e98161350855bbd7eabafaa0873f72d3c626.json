@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "070cce646a333c68f25cfb58a9ca4c1bd20b2e3c8d77f5a0e3f4bc392470115d",
+  "batch_id": "2026-10-10-fourth40-wave-10",
+  "body_sha256": "c5147f84ee9e7806ef87c32ac7cb9f7665c2cac6630f76de9abd0bc22f997870",
+  "created_at": "2026-10-10T15:25:08+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "38063506009",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/2026-10-10-fourth40-wave-10.json",
+  "payload_sha256": "773bdd8d8e3249f4d33e63d203af3a192973de40925186289336a7641fba1e18",
+  "recipient": "info@mappedresourcing.com",
+  "recipient_sha256": "4135c19091ccbbcc0cbface0e1c8e98161350855bbd7eabafaa0873f72d3c626",
+  "schema": 2,
+  "status": "pending",
+  "subject_sha256": "754d3c3ef4646bb4acc054cfed9c8a35e6b9bcec1df5b57601510b162b352119"
+}
