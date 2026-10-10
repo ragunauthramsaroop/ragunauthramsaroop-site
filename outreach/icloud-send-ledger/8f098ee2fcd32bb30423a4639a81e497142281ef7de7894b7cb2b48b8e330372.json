@@ -3,6 +3,7 @@
   "batch_id": "2026-10-10-bounce-fix-mpowering-tom-henderson",
   "body_sha256": "cffe060673ff3c28d393ef8ebf44703f6f14ad0c8a7daf49e3b4c4ef807382f9",
   "created_at": "2026-10-10T19:01:53+00:00",
+  "delivery_status": "pending_bounce_check",
   "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
   "github_run_attempt": "1",
   "github_run_id": "38078135577",
@@ -12,6 +13,9 @@
   "recipient": "tom.henderson@mpowering-people.com",
   "recipient_sha256": "8f098ee2fcd32bb30423a4639a81e497142281ef7de7894b7cb2b48b8e330372",
   "schema": 2,
-  "status": "pending",
+  "sent_at": "2026-10-10T19:01:54+00:00",
+  "smtp_accepted_at": "2026-10-10T19:01:54+00:00",
+  "smtp_message_id": "<179165891482.2213.9725505317187919477@icloud.com>",
+  "status": "smtp_accepted",
   "subject_sha256": "db099b0721457bae399748263b72f7d9a14ab9eece37f2b43189fa8d6c1054c6"
 }
