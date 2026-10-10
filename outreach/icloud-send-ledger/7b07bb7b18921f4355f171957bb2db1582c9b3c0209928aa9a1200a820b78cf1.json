@@ -3,6 +3,7 @@
   "batch_id": "2026-10-10-fifth40-015-pangea",
   "body_sha256": "79187f894a6e6be3992b8ed4476c81ce8c778a074a959f1cb8d0b7cc39d7cce5",
   "created_at": "2026-10-10T18:12:54+00:00",
+  "delivery_status": "pending_bounce_check",
   "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
   "github_run_attempt": "1",
   "github_run_id": "38074857033",
@@ -12,6 +13,9 @@
   "recipient": "kiera.oreilly@pangea-ts.com",
   "recipient_sha256": "7b07bb7b18921f4355f171957bb2db1582c9b3c0209928aa9a1200a820b78cf1",
   "schema": 2,
-  "status": "pending",
+  "sent_at": "2026-10-10T18:12:56+00:00",
+  "smtp_accepted_at": "2026-10-10T18:12:56+00:00",
+  "smtp_message_id": "<179165597593.2430.15362438035283721363@icloud.com>",
+  "status": "smtp_accepted",
   "subject_sha256": "db099b0721457bae399748263b72f7d9a14ab9eece37f2b43189fa8d6c1054c6"
 }
