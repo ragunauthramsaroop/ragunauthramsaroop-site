@@ -3,6 +3,7 @@
   "batch_id": "2026-10-10-fifth40-046-caldwell",
   "body_sha256": "de97187fff8778e2c45a4d4a7cecfef9f7eb1308dbbc12f277e8ef483544adb9",
   "created_at": "2026-10-10T18:25:24+00:00",
+  "delivery_status": "pending_bounce_check",
   "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
   "github_run_attempt": "1",
   "github_run_id": "38075689223",
@@ -12,6 +13,9 @@
   "recipient": "kbaillie@caldwellpartners.com",
   "recipient_sha256": "aeda1a5c0d4ec6bf86a8b2e356a96f8b5c9cb1a7ae0cc359dfebeaa243538cbd",
   "schema": 2,
-  "status": "pending",
+  "sent_at": "2026-10-10T18:25:25+00:00",
+  "smtp_accepted_at": "2026-10-10T18:25:25+00:00",
+  "smtp_message_id": "<179165672568.2427.8480803136404081870@icloud.com>",
+  "status": "smtp_accepted",
   "subject_sha256": "91c60797aa5fa6a1bdea5e65da806b686da0696a9d2c4fb9d92636936e4ea7da"
 }
