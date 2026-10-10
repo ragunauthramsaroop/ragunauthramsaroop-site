@@ -3,6 +3,7 @@
   "batch_id": "2026-10-10-fifth40-18-moon",
   "body_sha256": "05a8c165ad567a6f6ff82ca7b4e92eb766e8ff9872056955432f690636da088a",
   "created_at": "2026-10-10T18:53:10+00:00",
+  "delivery_status": "pending_bounce_check",
   "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
   "github_run_attempt": "1",
   "github_run_id": "38077561050",
@@ -12,6 +13,9 @@
   "recipient": "welcome@moonexecsearch.com",
   "recipient_sha256": "1d379be8c7b5b5cad33850736d8315e8f25dce21fced72536b8c15598cb4dbc8",
   "schema": 2,
-  "status": "pending",
+  "sent_at": "2026-10-10T18:53:11+00:00",
+  "smtp_accepted_at": "2026-10-10T18:53:11+00:00",
+  "smtp_message_id": "<179165839136.2217.1119402929525423383@icloud.com>",
+  "status": "smtp_accepted",
   "subject_sha256": "b8f5118a8f59bf3c377974261f38b52036eb0f48c08bf8bca3f7008162b74624"
 }
