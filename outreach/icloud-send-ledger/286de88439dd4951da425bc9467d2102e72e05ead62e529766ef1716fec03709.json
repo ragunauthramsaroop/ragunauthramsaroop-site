@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "fd1dab02ba280d84c86c8e4e2a805a982c9400df714e36cc32fe7d46d9257653",
+  "batch_id": "2026-10-10-fourth40-wave-06",
+  "body_sha256": "0c78b2fd4f7a579c79d94d365922fc7dd4df53ac95cd64d83bda93b71dd1a4af",
+  "created_at": "2026-10-10T15:18:20+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "38063046053",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/2026-10-10-fourth40-wave-06.json",
+  "payload_sha256": "5d4b34828c5ac99c4478691c686ae50a7624a0d0fc04efeae1c7e45f01e1f26b",
+  "recipient": "info@bellcurveconsultancy.com",
+  "recipient_sha256": "286de88439dd4951da425bc9467d2102e72e05ead62e529766ef1716fec03709",
+  "schema": 2,
+  "status": "pending",
+  "subject_sha256": "a4b422b4f9ca594c693b7eee2bdbae67b836befb787b4058b8bc781263b58e71"
+}
