@@ -3,6 +3,7 @@
   "batch_id": "2026-10-10-fourth40-wave-03",
   "body_sha256": "cf9d788c64bcd8ad9a94fcc6bc18a8d2ca4d0a93c517e358a6b3880f1d1af35a",
   "created_at": "2026-10-10T15:12:04+00:00",
+  "delivery_status": "pending_bounce_check",
   "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
   "github_run_attempt": "1",
   "github_run_id": "38062621804",
@@ -12,6 +13,9 @@
   "recipient": "info@robbertmurray.com",
   "recipient_sha256": "9838905cfd92cbe95a6b59ad8c534a377f53ce7d02bd84cca9d75a162630445e",
   "schema": 2,
-  "status": "pending",
+  "sent_at": "2026-10-10T15:12:06+00:00",
+  "smtp_accepted_at": "2026-10-10T15:12:06+00:00",
+  "smtp_message_id": "<179164512638.2232.5427721783168813877@icloud.com>",
+  "status": "smtp_accepted",
   "subject_sha256": "3f3aa6d308666790e6e9b1ac7c8c3e120aac99c1086d3f856ca317e53ac2e907"
 }
