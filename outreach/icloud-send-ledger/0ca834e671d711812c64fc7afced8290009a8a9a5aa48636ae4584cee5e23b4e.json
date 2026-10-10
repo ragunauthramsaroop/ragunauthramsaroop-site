@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "bd589f67dbd2b089f3df28d7babc877b481caea686711d784224249c9335e23b",
+  "batch_id": "2026-10-10-fourth40-paragon",
+  "body_sha256": "c7448f2ab30b4c427aed396b0112d2bdfd6c290bc9da8cc7d50cf19e055df600",
+  "created_at": "2026-10-10T14:57:41+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "38061669921",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/2026-10-10-fourth40-paragon.json",
+  "payload_sha256": "df0aae14a3315d5e43018cf42719e34ee09d38c6908e180ed39df24b8ab46aed",
+  "recipient": "salem@paragon-ge.com",
+  "recipient_sha256": "0ca834e671d711812c64fc7afced8290009a8a9a5aa48636ae4584cee5e23b4e",
+  "schema": 2,
+  "status": "pending",
+  "subject_sha256": "486dd6bf245fa67dc89cb0aa8bbd984fa6e1aae2ab559a915c01ca92c406f899"
+}
