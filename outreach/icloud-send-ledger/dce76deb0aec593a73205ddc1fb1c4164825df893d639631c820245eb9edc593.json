@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "43d019704381f186d8c59e773d6ac354f8864c3d68f9dd2306331cef643aae32",
+  "batch_id": "2026-10-10-fifth40-16-fjorn",
+  "body_sha256": "94af0419c6936ce9137101848d23c9607d3c38f492bc36e04925b7b2e33c018e",
+  "created_at": "2026-10-10T18:52:36+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "38077532794",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/2026-10-10-fifth40-16-fjorn.json",
+  "payload_sha256": "5fbdd92b96e4264e9f63d6420d06f032c6d972f431494ab6898d7c1bd192cad9",
+  "recipient": "richard@fjornconsulting.com",
+  "recipient_sha256": "dce76deb0aec593a73205ddc1fb1c4164825df893d639631c820245eb9edc593",
+  "schema": 2,
+  "status": "pending",
+  "subject_sha256": "1bf5d88a8c69f1580a33771b05351e380f44efc3ce18885a4ce932aea447c579"
+}
