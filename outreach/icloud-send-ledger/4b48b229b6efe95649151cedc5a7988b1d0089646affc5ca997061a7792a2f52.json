@@ -3,6 +3,7 @@
   "batch_id": "2026-10-10-fifth40-034-mehr",
   "body_sha256": "3641c91a1b145db846764c9233c136bcaa94eb7ebfe9d2f7a8b1e982efe954db",
   "created_at": "2026-10-10T18:19:17+00:00",
+  "delivery_status": "pending_bounce_check",
   "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
   "github_run_attempt": "1",
   "github_run_id": "38075281231",
@@ -12,6 +13,9 @@
   "recipient": "shilpa@mehr-consulting.com",
   "recipient_sha256": "4b48b229b6efe95649151cedc5a7988b1d0089646affc5ca997061a7792a2f52",
   "schema": 2,
-  "status": "pending",
+  "sent_at": "2026-10-10T18:19:18+00:00",
+  "smtp_accepted_at": "2026-10-10T18:19:18+00:00",
+  "smtp_message_id": "<179165635831.2496.7532110014935267217@icloud.com>",
+  "status": "smtp_accepted",
   "subject_sha256": "23580544b49ae3804b487f0656b33dd2a656bdb1e8ea9edef7417d26f69ea078"
 }
