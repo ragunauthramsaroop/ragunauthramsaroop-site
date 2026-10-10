@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "9579eb907f8aaa6afac65f95327ce8f56ee52fb94d3bb2be72708aafd908cc7a",
+  "batch_id": "2026-10-10-fourth40-close-09-oxana",
+  "body_sha256": "e07cc513c2b1c76195ed3f64b19375ac238e4e051cb92576244ddcb2b8a1a1f7",
+  "created_at": "2026-10-10T15:34:53+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "38064177140",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/2026-10-10-fourth40-close-09-oxana.json",
+  "payload_sha256": "a35e25e008cafdad5c093e7ce6573ab5dfedc7ad5b7e0b1404dcbb8cecca2708",
+  "recipient": "contact@oxanabristowe.com",
+  "recipient_sha256": "e681e4b98f324a3872c703d4b7ae98cea35e449f85149f3fce0661afc71523f9",
+  "schema": 2,
+  "status": "pending",
+  "subject_sha256": "57405082456a127667062576f7fed308289bd6e3bed5043a24444afa0572ee84"
+}
