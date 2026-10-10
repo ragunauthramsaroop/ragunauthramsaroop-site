@@ -3,6 +3,7 @@
   "batch_id": "2026-10-10-fourth40-close-02-sama",
   "body_sha256": "a274e05b80aa9e297b2150c9a56c0380d108aa79ea293463de1f36cf56a7ece0",
   "created_at": "2026-10-10T15:32:23+00:00",
+  "delivery_status": "pending_bounce_check",
   "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
   "github_run_attempt": "1",
   "github_run_id": "38064001077",
@@ -12,6 +13,9 @@
   "recipient": "info@samarcc.com.sa",
   "recipient_sha256": "fca88965b3b282f67e70f1a6668605132c9b5b250dc8a32986a93e48d8261f59",
   "schema": 2,
-  "status": "pending",
+  "sent_at": "2026-10-10T15:32:24+00:00",
+  "smtp_accepted_at": "2026-10-10T15:32:24+00:00",
+  "smtp_message_id": "<179164634422.2442.6892586644532670893@icloud.com>",
+  "status": "smtp_accepted",
   "subject_sha256": "35a0b921755c003a2eaa333897d0aeaf05d3e362583812d881d2e0de0eeea85a"
 }
