@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "f6d249512e47fe7609a9ee6ab4050b9352d4150b5bba3365bc1817899668509c",
+  "batch_id": "2026-10-10-fourth40-abloom",
+  "body_sha256": "eca4458e0c2eadf1158325d01d5ed5f8e5d4cebac0a41b25925af6ae49ae21f9",
+  "created_at": "2026-10-10T14:57:04+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "38061629492",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/2026-10-10-fourth40-abloom.json",
+  "payload_sha256": "15dbf0de1228bbcce6081b6503915dcbb507835f94fae786fd158f017f9b7599",
+  "recipient": "ravindra@abloomglobal.in",
+  "recipient_sha256": "252b84df98c8b71c4198af84b85b36477b00d278617ddc2a39345c3dc64379e4",
+  "schema": 2,
+  "status": "pending",
+  "subject_sha256": "447d251bc20531e6c8b8da5845b008fb68958fc548d1928b01628b44ad3a7a13"
+}
