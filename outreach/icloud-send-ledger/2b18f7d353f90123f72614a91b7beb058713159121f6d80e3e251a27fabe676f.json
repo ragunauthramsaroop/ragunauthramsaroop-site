@@ -3,6 +3,7 @@
   "batch_id": "2026-10-10-fifth40-32-yukihr",
   "body_sha256": "eb928fa3ee2c45477949ab5f7a6e26a2ee3934b5c8a0bdb59f4388e0f831ec9f",
   "created_at": "2026-10-10T19:36:49+00:00",
+  "delivery_status": "pending_bounce_check",
   "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
   "github_run_attempt": "1",
   "github_run_id": "38080481545",
@@ -12,6 +13,9 @@
   "recipient": "stephanie@yukihr.com",
   "recipient_sha256": "2b18f7d353f90123f72614a91b7beb058713159121f6d80e3e251a27fabe676f",
   "schema": 2,
-  "status": "pending",
+  "sent_at": "2026-10-10T19:36:50+00:00",
+  "smtp_accepted_at": "2026-10-10T19:36:50+00:00",
+  "smtp_message_id": "<179166100997.2213.17940300014925119223@icloud.com>",
+  "status": "smtp_accepted",
   "subject_sha256": "cd1ed2f21f0ce0c9ca0780e455fa6479c2d26e5834dbaf401119844000e34f20"
 }
