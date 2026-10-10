@@ -3,6 +3,7 @@
   "batch_id": "2026-10-10-fourth40-wave-12",
   "body_sha256": "a96f096b1c832b96d48c590026ba721ad548f836d81d3d4eeae94c76c0ce8ba1",
   "created_at": "2026-10-10T15:26:59+00:00",
+  "delivery_status": "pending_bounce_check",
   "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
   "github_run_attempt": "1",
   "github_run_id": "38063639121",
@@ -12,6 +13,9 @@
   "recipient": "info@aliqtidarglobal.com",
   "recipient_sha256": "c3e680ff7aab8d3a87fc248c8ed0b85a14b7edbdafb31ce82d1037e0e8bd3e6f",
   "schema": 2,
-  "status": "pending",
+  "sent_at": "2026-10-10T15:27:01+00:00",
+  "smtp_accepted_at": "2026-10-10T15:27:01+00:00",
+  "smtp_message_id": "<179164602076.2400.13035282428574222434@icloud.com>",
+  "status": "smtp_accepted",
   "subject_sha256": "5641d027c0ebd67ebe2b834c8066c2b4dcb9753f94cb713757aadf5cf11a3881"
 }
