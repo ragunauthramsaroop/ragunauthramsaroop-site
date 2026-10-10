@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "dc9969c45aeaeb74f3ae10b38717f32e40833856c6b4408e72acb14c144d9ef6",
+  "batch_id": "2026-10-10-fourth40-venogy",
+  "body_sha256": "c8e72a1417b461601548f142d5d379f98e6b943fedb40efb4ca05dd1a6ec12d5",
+  "created_at": "2026-10-10T14:46:57+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "38060964640",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/2026-10-10-fourth40-venogy.json",
+  "payload_sha256": "c82f3724c4bb1ef1f53ac0526eef78db827f3b7dde869a2c8f3f34581880b5c8",
+  "recipient": "karam@venogytalent.com",
+  "recipient_sha256": "f9a44fea2fbaaa08cdcfe0b71ac666d2c118b17aed130e2addea3cc5fc35bfeb",
+  "schema": 2,
+  "status": "pending",
+  "subject_sha256": "db099b0721457bae399748263b72f7d9a14ab9eece37f2b43189fa8d6c1054c6"
+}
