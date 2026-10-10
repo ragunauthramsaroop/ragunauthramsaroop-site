@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "06766e41f86b80db3fd27b87eb13273c5132c9271d1f3b0dc1473d9fe049c53c",
+  "batch_id": "2026-10-10-bounce-fix-braddock-jake-morgan",
+  "body_sha256": "c07f8ba6827ea8a739f57f342f78b8bff19d5bf5be27b69906407f027453c4df",
+  "created_at": "2026-10-10T19:01:31+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "38078118021",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/2026-10-10-bounce-fix-braddock-jake-morgan.json",
+  "payload_sha256": "c81f6eff6ac11d31e9eba1f3c7e91c63c91d542bfc523f74d9e5999f7df7853b",
+  "recipient": "jm@groupbraddock.com",
+  "recipient_sha256": "7cb290f4a742a62e029096871dfcaac0fe4be322a906e2b304698e63635a4172",
+  "schema": 2,
+  "status": "pending",
+  "subject_sha256": "f494f2eb1df5046e80e3965fa908c8923959b01275de45651d650afca24f8224"
+}
