@@ -3,6 +3,7 @@
   "batch_id": "2026-10-10-fourth40-close-08-tura",
   "body_sha256": "9281ecd2baeec2877bd4a2c777553c33144af663a2ee0fd1433aa280a2e355f2",
   "created_at": "2026-10-10T15:33:57+00:00",
+  "delivery_status": "pending_bounce_check",
   "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
   "github_run_attempt": "1",
   "github_run_id": "38064105634",
@@ -12,6 +13,9 @@
   "recipient": "contact@tura-exec.com",
   "recipient_sha256": "201f234ed88f4737cefb40624065a166aa216e376703845ec87ba8f40a033b7b",
   "schema": 2,
-  "status": "pending",
+  "sent_at": "2026-10-10T15:33:58+00:00",
+  "smtp_accepted_at": "2026-10-10T15:33:58+00:00",
+  "smtp_message_id": "<179164643832.2207.4059886490708335554@icloud.com>",
+  "status": "smtp_accepted",
   "subject_sha256": "50ff307f3e461193f1eb3c07c48efb6f00ec51641bdc93804b71e008dd5b742b"
 }
