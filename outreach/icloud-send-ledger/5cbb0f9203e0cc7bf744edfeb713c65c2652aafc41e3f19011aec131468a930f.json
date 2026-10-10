@@ -3,6 +3,7 @@
   "batch_id": "2026-10-10-fifth40-061-kimmel",
   "body_sha256": "3ba1f7903237243a34d8f3718ec484ee8e42f3ca1dbc15d67388aed9d60c359c",
   "created_at": "2026-10-10T18:32:08+00:00",
+  "delivery_status": "pending_bounce_check",
   "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
   "github_run_attempt": "1",
   "github_run_id": "38076153145",
@@ -12,6 +13,9 @@
   "recipient": "kshope@kimmel.com",
   "recipient_sha256": "5cbb0f9203e0cc7bf744edfeb713c65c2652aafc41e3f19011aec131468a930f",
   "schema": 2,
-  "status": "pending",
+  "sent_at": "2026-10-10T18:32:10+00:00",
+  "smtp_accepted_at": "2026-10-10T18:32:10+00:00",
+  "smtp_message_id": "<179165712996.2452.13045597285708608275@icloud.com>",
+  "status": "smtp_accepted",
   "subject_sha256": "f3df7f4a9095cb40fa5d9929df882c6f9048520a06b1cc78d0a8f05b47b0c67c"
 }
