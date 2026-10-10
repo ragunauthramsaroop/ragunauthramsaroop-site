@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "06d71a9c6f71c1ea94033cdbee97593d57e690d364c76c3081447b5a6ee81045",
+  "batch_id": "2026-10-10-fifth40-40-hw-anderson",
+  "body_sha256": "1750ac836b688021e84ad69325d2915d8c2046cc02e213110c010f6ff31cc78d",
+  "created_at": "2026-10-10T19:38:45+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "38080588805",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/2026-10-10-fifth40-40-hw-anderson.json",
+  "payload_sha256": "57fce6d2885ca2eda2b4952d699fd6bf4c7e74da7dbfd4a9d7ee5e12bc581704",
+  "recipient": "joe.armstrong@hw-anderson.com",
+  "recipient_sha256": "7e9462003bac756b4fcdd43603435ffe98594e7a0c3e1d83322b122baf87400a",
+  "schema": 2,
+  "status": "pending",
+  "subject_sha256": "c0cea0498b3b338382ba151f53bb4eebb3b7f13263d76062544450dde074e955"
+}
