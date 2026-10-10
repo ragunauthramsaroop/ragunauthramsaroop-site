@@ -3,6 +3,7 @@
   "batch_id": "2026-10-10-fifth40-33-cooper-fitch",
   "body_sha256": "b093a6429a7af7df1ba48c447044b188f26acb724d874d4892bccc84c1167f00",
   "created_at": "2026-10-10T19:37:05+00:00",
+  "delivery_status": "pending_bounce_check",
   "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
   "github_run_attempt": "1",
   "github_run_id": "38080497949",
@@ -12,6 +13,9 @@
   "recipient": "talktous@cooperfitch.ae",
   "recipient_sha256": "61c563989aed94f54687a9015523bed20ec34182192694e68ec84facb1eaca81",
   "schema": 2,
-  "status": "pending",
+  "sent_at": "2026-10-10T19:37:06+00:00",
+  "smtp_accepted_at": "2026-10-10T19:37:06+00:00",
+  "smtp_message_id": "<179166102640.2462.16663888513376892089@icloud.com>",
+  "status": "smtp_accepted",
   "subject_sha256": "2db30abb1fb0826707f78e085879466be7182649dc1aa5c509e83d90798e7da5"
 }
