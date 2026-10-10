@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "09f0e496d403c73f8f98d00f0e7c35ca2840c51456a96a2ffa50973b6abb8411",
+  "batch_id": "2026-10-10-fourth40-searchtech",
+  "body_sha256": "8e76126ea3d846d28a6e40470e1ba8bc938a3b7f3071ad3f1eac361bdf6c2055",
+  "created_at": "2026-10-10T15:05:51+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "38062218287",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/2026-10-10-fourth40-searchtech.json",
+  "payload_sha256": "a48ba60d88ba124e4637151ce19d283ba10b3b20fb341e8086653a17316dcf32",
+  "recipient": "lester.lockyer@search-tech.co.uk",
+  "recipient_sha256": "55bd8607081e122dfa2a1537709360982145c386aed6ecda015cd8a070623f06",
+  "schema": 2,
+  "status": "pending",
+  "subject_sha256": "b4f7caf66b274494a968486653d51b300be2c8f26b19dafde2b7f461b399eef4"
+}
