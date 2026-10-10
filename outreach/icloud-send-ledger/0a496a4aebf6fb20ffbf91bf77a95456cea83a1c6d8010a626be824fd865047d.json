@@ -3,6 +3,7 @@
   "batch_id": "2026-10-10-fifth40-020-lewis-davey",
   "body_sha256": "054edf9e75e189ac6f15e2aeecd84890bbea8af780d87b321726c85f6ee55961",
   "created_at": "2026-10-10T18:14:32+00:00",
+  "delivery_status": "pending_bounce_check",
   "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
   "github_run_attempt": "1",
   "github_run_id": "38074956530",
@@ -12,6 +13,9 @@
   "recipient": "leanne.zahra@lewisdavey.com",
   "recipient_sha256": "0a496a4aebf6fb20ffbf91bf77a95456cea83a1c6d8010a626be824fd865047d",
   "schema": 2,
-  "status": "pending",
+  "sent_at": "2026-10-10T18:14:33+00:00",
+  "smtp_accepted_at": "2026-10-10T18:14:33+00:00",
+  "smtp_message_id": "<179165607309.2396.6752783981493855691@icloud.com>",
+  "status": "smtp_accepted",
   "subject_sha256": "8173889de5347339042bd1694cf339eb2d355c975992b9f75b8eed850a8660e5"
 }
