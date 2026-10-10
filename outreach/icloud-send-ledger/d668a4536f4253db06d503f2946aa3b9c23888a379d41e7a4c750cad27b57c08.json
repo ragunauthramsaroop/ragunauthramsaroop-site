@@ -3,6 +3,7 @@
   "batch_id": "2026-10-10-sixth40-19-true-method",
   "body_sha256": "03c047fa1a106971fba38774aa56d1bf0671a4da986a70516c17c2a12fe22e3e",
   "created_at": "2026-10-10T19:57:55+00:00",
+  "delivery_status": "pending_bounce_check",
   "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
   "github_run_attempt": "1",
   "github_run_id": "38081844209",
@@ -12,6 +13,9 @@
   "recipient": "aggie@truemethod.uk",
   "recipient_sha256": "d668a4536f4253db06d503f2946aa3b9c23888a379d41e7a4c750cad27b57c08",
   "schema": 2,
-  "status": "pending",
+  "sent_at": "2026-10-10T19:57:57+00:00",
+  "smtp_accepted_at": "2026-10-10T19:57:57+00:00",
+  "smtp_message_id": "<179166227688.2232.11594058776529148586@icloud.com>",
+  "status": "smtp_accepted",
   "subject_sha256": "6f85d5719827012391c892199902c1a4afacd0f92c9ce82bf46f6e582f5067ad"
 }
