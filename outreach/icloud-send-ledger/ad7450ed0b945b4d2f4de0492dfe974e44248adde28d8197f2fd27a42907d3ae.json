@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "037574c709e30af8e9e38a0d55c532dcfac89ae14c19e6be8b966a547f3581b3",
+  "batch_id": "2026-10-10-fifth40-27-mycelium",
+  "body_sha256": "8b710e11e57f7f84fe84d5b2c22b16d62210b6b6e40439fda5466b68bc527d3f",
+  "created_at": "2026-10-10T18:59:28+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "38077975000",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/2026-10-10-fifth40-27-mycelium.json",
+  "payload_sha256": "b5637ba283deb3bad741c6fff540976932df08134a99add5c073d5f1d3b49755",
+  "recipient": "hello@mycelium.ae",
+  "recipient_sha256": "ad7450ed0b945b4d2f4de0492dfe974e44248adde28d8197f2fd27a42907d3ae",
+  "schema": 2,
+  "status": "pending",
+  "subject_sha256": "34d420561c20af866be8fa449f08f2c6dd5b9a22de822c586b328b67a331b3fa"
+}
