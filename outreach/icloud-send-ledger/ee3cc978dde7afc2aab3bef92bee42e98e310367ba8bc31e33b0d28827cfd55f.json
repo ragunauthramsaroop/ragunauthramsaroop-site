@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "bdf56d970bde25738c8f8befef7590ce2dd8a7f256d2d0d2619c123c531c1469",
+  "batch_id": "2026-10-10-fifth40-013-scion",
+  "body_sha256": "9083266210269191f56df92bc649a6dcb21c41516f1758bbe41a9279cae56692",
+  "created_at": "2026-10-10T18:12:25+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "38074818025",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/2026-10-10-fifth40-013-scion.json",
+  "payload_sha256": "d8e5387d19b731f6fff8620a76ff7e41145a22e83091e5f94a091431d75062ca",
+  "recipient": "sales@scionstaffing.com",
+  "recipient_sha256": "ee3cc978dde7afc2aab3bef92bee42e98e310367ba8bc31e33b0d28827cfd55f",
+  "schema": 2,
+  "status": "pending",
+  "subject_sha256": "862046bb0c7a0eb3fe370c08fc9bd7eb1eb33b786feaef069bff7fb307accb48"
+}
