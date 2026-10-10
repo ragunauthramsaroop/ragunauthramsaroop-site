@@ -3,6 +3,7 @@
   "batch_id": "2026-10-10-third40-wave-02",
   "body_sha256": "664a257642dbf1643d503b3651c29e1c9b917a49104ef63b276f0ab6e7a0d1a0",
   "created_at": "2026-10-10T13:51:19+00:00",
+  "delivery_status": "pending_bounce_check",
   "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
   "github_run_attempt": "1",
   "github_run_id": "38057309618",
@@ -12,6 +13,9 @@
   "recipient": "info@clmsearch.com",
   "recipient_sha256": "6b5a6bd0e249680a22abe819f33d49ac88ebfc5f8ae765fce0efd45629bc12cf",
   "schema": 2,
-  "status": "pending",
+  "sent_at": "2026-10-10T13:51:20+00:00",
+  "smtp_accepted_at": "2026-10-10T13:51:20+00:00",
+  "smtp_message_id": "<179164028001.2231.11176543336012065046@icloud.com>",
+  "status": "smtp_accepted",
   "subject_sha256": "6eb2a0bb647ae58fb71f6b971bde657a81ee3ccfba6a339dcd470bb1bc3e63eb"
 }
