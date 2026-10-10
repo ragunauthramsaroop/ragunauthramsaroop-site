@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "c7a78446eb883968b8704e3455448915f8d43e722832bd6a27b3ff1eb54dd67d",
+  "batch_id": "2026-10-10-sixth40-05-lunar-recruitment",
+  "body_sha256": "9f45660104e54a82e92b42eea6706d9342320b983740312cde56020bde43565a",
+  "created_at": "2026-10-10T19:55:15+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "38081675206",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/2026-10-10-sixth40-05-lunar-recruitment.json",
+  "payload_sha256": "9e1348c0f41d4bcf4492937a3fcd938957d56b806df7d299e89318272b8b4a5a",
+  "recipient": "jesse@lunarrecruitment.com.au",
+  "recipient_sha256": "93804a13fddb52c33fb357429e458fd9c78e4068a4e0e56bbfcfe24e4abf6a9d",
+  "schema": 2,
+  "status": "pending",
+  "subject_sha256": "e072f57b16f9178cdef0becef3078b2bb16afd6ef1e37fb85ab572cce47d1a4d"
+}
