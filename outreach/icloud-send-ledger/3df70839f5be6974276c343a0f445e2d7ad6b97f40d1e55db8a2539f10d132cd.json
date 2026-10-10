@@ -3,6 +3,7 @@
   "batch_id": "2026-10-10-third40-wave-07",
   "body_sha256": "c34ec89785d67124dfbf0e17ce7f3b55167bce092939c94875bba793c6557250",
   "created_at": "2026-10-10T14:01:07+00:00",
+  "delivery_status": "pending_bounce_check",
   "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
   "github_run_attempt": "1",
   "github_run_id": "38057925288",
@@ -12,6 +13,9 @@
   "recipient": "admin@ajexecutivesearch.com",
   "recipient_sha256": "3df70839f5be6974276c343a0f445e2d7ad6b97f40d1e55db8a2539f10d132cd",
   "schema": 2,
-  "status": "pending",
+  "sent_at": "2026-10-10T14:01:09+00:00",
+  "smtp_accepted_at": "2026-10-10T14:01:09+00:00",
+  "smtp_message_id": "<179164086892.2218.4891240101249740662@icloud.com>",
+  "status": "smtp_accepted",
   "subject_sha256": "9a3abf9866a093ef8b81e6d7155d5efc11344f78e4c5c7b75ce6ca920eca42cc"
 }
