@@ -3,6 +3,7 @@
   "batch_id": "2026-10-10-third40-wave-10",
   "body_sha256": "1623c167b9f3125078c3383979f125357eee4b8671a8036d14d0b93607f8ff1a",
   "created_at": "2026-10-10T14:05:51+00:00",
+  "delivery_status": "pending_bounce_check",
   "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
   "github_run_attempt": "1",
   "github_run_id": "38058245171",
@@ -12,6 +13,9 @@
   "recipient": "jmoreno@stevendouglas.com",
   "recipient_sha256": "ff965214b0beb101bfcb92753bed77a56d298d7952b21040c367f980ee4f2250",
   "schema": 2,
-  "status": "pending",
+  "sent_at": "2026-10-10T14:05:52+00:00",
+  "smtp_accepted_at": "2026-10-10T14:05:52+00:00",
+  "smtp_message_id": "<179164115247.2427.4730751878622117634@icloud.com>",
+  "status": "smtp_accepted",
   "subject_sha256": "c3d5ef799d36e96bc9e5d8b410d2e8ade412934706f6e2b2f144592bd65221e0"
 }
