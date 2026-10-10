@@ -1,0 +1,25 @@
+{
+  "mode": "review_only_no_send",
+  "date": "2026-10-10",
+  "confirmed_overall_total": 219,
+  "sixth_batch_confirmed": 19,
+  "purpose": "Additional clean reserve routes after Gmail and GitHub duplicate checks. No dispatch from this file.",
+  "new_reserves": [
+    {"firm":"RydeQuest","recipient":"info@rydequest.com","fit":"Abu Dhabi based executive search across UAE, Saudi Arabia, Qatar and wider GCC; C-suite, VP, government, sovereign, energy and utilities","gmail_sent_match":false,"github_record_match":false},
+    {"firm":"NEORECRUITS","recipient":"info@neorecruits.com","fit":"Saudi Arabia / Al Jubail; executive search across oil and gas, power, EPC, renewables, industrial and construction","gmail_sent_match":false,"github_record_match":false},
+    {"firm":"Talent Arabia","recipient":"oman@talentarabia.com","fit":"Saudi executive search, Vision 2030, PIF gigaprojects, energy, petrochemicals, construction and government leadership","gmail_sent_match":false,"github_record_match":false,"note":"Official published group contact route; use only after final route review because mailbox is Oman-labelled."},
+    {"firm":"Bedford Group TRANSEARCH","recipient":"asandhu@bedfordgroup.com","fit":"clean tech, energy, construction, infrastructure and industrial technology executive search","gmail_sent_match":false,"github_record_match":false},
+    {"firm":"Omera Partners","recipient":"jtaylor@omerapartners.com","fit":"global energy, oil and gas, new energy and senior executive search with government-stakeholder relevance","gmail_sent_match":false,"github_record_match":false},
+    {"firm":"PARTNER Executive","recipient":"careers@partnerexecutive.com.au","fit":"mining, critical minerals, energy, infrastructure, engineering and board/C-suite search","gmail_sent_match":false,"github_record_match":false},
+    {"firm":"Samuel Royce","recipient":"reception@samuelroyce.com","fit":"leadership search in sustainability and renewable energy, including CEO and corporate leadership","gmail_sent_match":false,"github_record_match":false},
+    {"firm":"Laurence Executive Recruitment","recipient":"info@laurencerecruitment.com.au","fit":"critical infrastructure, utilities, energy, oil and gas, mining and resources executive recruitment","gmail_sent_match":false,"github_record_match":false}
+  ],
+  "excluded_from_this_sweep": [
+    {"firm":"Black Tie Consultancy","reason":"prior sent record found in Gmail"},
+    {"firm":"Acre","reason":"multiple prior sent records found in Gmail"},
+    {"firm":"Peergrowth","reason":"prior sent record found in Gmail"},
+    {"firm":"Extractive Search","reason":"prior sent record found in Gmail"},
+    {"firm":"Granger Reis","reason":"prior sent records found in Gmail"},
+    {"firm":"Talent Nation","reason":"prior sent record found in Gmail"}
+  ]
+}
