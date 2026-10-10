@@ -3,6 +3,7 @@
   "batch_id": "2026-10-10-fifth40-34-douglas-stuart",
   "body_sha256": "4aaccc52558d746d1aaa57e96dcb2ab1636ed3e167e30ccc3c3e8f8c11b71f4f",
   "created_at": "2026-10-10T19:37:20+00:00",
+  "delivery_status": "pending_bounce_check",
   "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
   "github_run_attempt": "1",
   "github_run_id": "38080512860",
@@ -12,6 +13,9 @@
   "recipient": "search@douglas-stuart.com",
   "recipient_sha256": "eb627e54d42f7b923955d7a5781e49a713bf1c048b74a430f4eab5f2ce9ae92e",
   "schema": 2,
-  "status": "pending",
+  "sent_at": "2026-10-10T19:37:22+00:00",
+  "smtp_accepted_at": "2026-10-10T19:37:22+00:00",
+  "smtp_message_id": "<179166104212.2239.3217331942586923049@icloud.com>",
+  "status": "smtp_accepted",
   "subject_sha256": "1bf5d88a8c69f1580a33771b05351e380f44efc3ce18885a4ce932aea447c579"
 }
