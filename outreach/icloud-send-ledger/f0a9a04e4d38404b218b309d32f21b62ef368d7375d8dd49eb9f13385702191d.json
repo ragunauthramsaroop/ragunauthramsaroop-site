@@ -3,6 +3,7 @@
   "batch_id": "2026-10-10-fourth40-sterling-rowe",
   "body_sha256": "f9b827aeeb6e5bd92f76e974655b1d5f1e225051db981cb6e38481abaf97ebcf",
   "created_at": "2026-10-10T14:56:24+00:00",
+  "delivery_status": "pending_bounce_check",
   "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
   "github_run_attempt": "1",
   "github_run_id": "38061586738",
@@ -12,6 +13,9 @@
   "recipient": "hello@sterlingnrowe.com",
   "recipient_sha256": "f0a9a04e4d38404b218b309d32f21b62ef368d7375d8dd49eb9f13385702191d",
   "schema": 2,
-  "status": "pending",
+  "sent_at": "2026-10-10T14:56:25+00:00",
+  "smtp_accepted_at": "2026-10-10T14:56:25+00:00",
+  "smtp_message_id": "<179164418539.2417.9507997227624685390@icloud.com>",
+  "status": "smtp_accepted",
   "subject_sha256": "7b24e9c5b00dc6df46529bf8251d425df28b4ebbd36f6b41a8253af060bf0793"
 }
