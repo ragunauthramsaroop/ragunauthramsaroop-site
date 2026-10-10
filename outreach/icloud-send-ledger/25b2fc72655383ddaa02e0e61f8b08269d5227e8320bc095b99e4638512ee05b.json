@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "7f9cf11797da174d5d93d6a14422400dc26cc0f20490f2232c8a45f6a3b79c58",
+  "batch_id": "2026-10-10-fourth40-arlow",
+  "body_sha256": "6d859ec4e8b64b644b0ee4bc9255253ab59de3323be1ce19dbbda3aa9c908d27",
+  "created_at": "2026-10-10T15:01:02+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "38061894751",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/2026-10-10-fourth40-arlow.json",
+  "payload_sha256": "baea3d8e89e0768c1cadfb3a8776e724877cde7f79bbae9ed7772ce7766dddb7",
+  "recipient": "nathan@arlowsearch.com",
+  "recipient_sha256": "25b2fc72655383ddaa02e0e61f8b08269d5227e8320bc095b99e4638512ee05b",
+  "schema": 2,
+  "status": "pending",
+  "subject_sha256": "2de4d2a259ae56b5490221ebd8be8a0f241f013195841a94fedb6ce88d649fe1"
+}
