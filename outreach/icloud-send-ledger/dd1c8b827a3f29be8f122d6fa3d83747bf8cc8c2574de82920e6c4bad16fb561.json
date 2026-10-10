@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "20f26373a5393edd8e29370e20a69f5b04a3e5f83839495f219e6cb8b40aff54",
+  "batch_id": "2026-10-10-fourth40-ascension-global",
+  "body_sha256": "dc3a9e427740177b42d6b34bc1a2c231c51449a01e544dcec289ad2a4aa8a924",
+  "created_at": "2026-10-10T14:41:19+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "38060587069",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/2026-10-10-fourth40-ascension-global.json",
+  "payload_sha256": "189f8de001acf10bc70eaec8f362f395591b4672682d304ab76f6537f58c66f8",
+  "recipient": "emma.clark@ascension-global.com.au",
+  "recipient_sha256": "dd1c8b827a3f29be8f122d6fa3d83747bf8cc8c2574de82920e6c4bad16fb561",
+  "schema": 2,
+  "status": "pending",
+  "subject_sha256": "8ce38a5a223408a3c2b0c1ea3c3f35bb0c9a42ea2f9bc8335cd4f99ff17a8eab"
+}
