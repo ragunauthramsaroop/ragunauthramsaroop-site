@@ -3,6 +3,7 @@
   "batch_id": "2026-10-10-fifth40-29-aep",
   "body_sha256": "59d47bbf73d1afcce0f2092720f8f0b1edc94d0a7ee0ec43aa3bdce95950a512",
   "created_at": "2026-10-10T19:00:56+00:00",
+  "delivery_status": "pending_bounce_check",
   "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
   "github_run_attempt": "1",
   "github_run_id": "38078068851",
@@ -12,6 +13,9 @@
   "recipient": "advantage@aep.global",
   "recipient_sha256": "e48cb1666f58a8c42bdd1734929564b605f74b8061e308c619a8f0f94da73177",
   "schema": 2,
-  "status": "pending",
+  "sent_at": "2026-10-10T19:00:57+00:00",
+  "smtp_accepted_at": "2026-10-10T19:00:57+00:00",
+  "smtp_message_id": "<179165885694.2455.2635191766414215122@icloud.com>",
+  "status": "smtp_accepted",
   "subject_sha256": "bda931090410bb6d06b4c487f74e4aeaa3e8108258024bf7c2d453b781881071"
 }
