@@ -48,7 +48,7 @@ export async function audit(){
     }catch(e){results.push({...record,name:queryName,present:false,error:String(e.message)})}
   }
   const protect={};
-  for(const [name,type] of [[domain,"A"],["www."+domain,"CNAME"],[domain,"NS"]]){
+  for(const [name,type] of [[domain,"A"],["www."+domain,"CNAME"],[domain,"NS"],[domain,"MX"]]){
     try{const r=await query(name,type);protect[name+" "+type]=r.answer.map(x=>x.data)}catch(e){protect[name+" "+type]={error:String(e.message)}}
   }
   const missing=results.filter(x=>!x.present);
@@ -63,9 +63,9 @@ function summary(report){
   s+="Checked: "+report.checkedAt+" | Provider: "+report.provider+"\n\n";
   s+="| Host | Type | Result |\n|---|---|---|\n";
   for(const r of report.results)s+="| "+safe(r.name)+" | "+r.type+" | "+(r.error?"CHECK ERROR":r.present?"Present":"Missing / mismatch")+" |\n";
-  s+="\nWebsite A, www CNAME and nameservers (read only):\n\n";
+  s+="\nWebsite and root mail DNS (read only):\n\n";
   for(const [k,v] of Object.entries(report.websiteDNS))s+="- "+safe(k)+": "+safe(JSON.stringify(v))+"\n";
-  s+="\nCorrect the missing records in Spaceship Advanced DNS. Do not change the working GitHub Pages records.\n";
+  s+="\nCorrect missing records in Spaceship Advanced DNS only after reviewing root MX for mail-provider conflicts. Do not change the working GitHub Pages records.\n";
   return s;
 }
 async function main(){
