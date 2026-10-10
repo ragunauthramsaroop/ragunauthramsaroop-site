@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "070cce646a333c68f25cfb58a9ca4c1bd20b2e3c8d77f5a0e3f4bc392470115d",
+  "batch_id": "2026-10-10-fourth40-wave-10",
+  "body_sha256": "c964ae759edab2c84df99258893262be74ea47eb6633e19f4481d1b69b5afce7",
+  "created_at": "2026-10-10T15:25:05+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "38063506009",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/2026-10-10-fourth40-wave-10.json",
+  "payload_sha256": "773bdd8d8e3249f4d33e63d203af3a192973de40925186289336a7641fba1e18",
+  "recipient": "info@oxwana.com",
+  "recipient_sha256": "5708e5ef3da499ab42800757179e928852f948da966fc219c502446501edd079",
+  "schema": 2,
+  "status": "pending",
+  "subject_sha256": "65fa673bf882dfdabb1a010639f809eae9a070ea2cf13738b49016f3d548496a"
+}
