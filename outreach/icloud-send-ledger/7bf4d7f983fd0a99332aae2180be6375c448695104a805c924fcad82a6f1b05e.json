@@ -3,6 +3,7 @@
   "batch_id": "2026-10-10-fifth40-26-bwp-dubai",
   "body_sha256": "61a151fc110bfd64f0dee1b00f2f3a7760cd1f9e3f4e8b4806cd2ac8573af8ba",
   "created_at": "2026-10-10T18:59:08+00:00",
+  "delivery_status": "pending_bounce_check",
   "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
   "github_run_attempt": "1",
   "github_run_id": "38077960984",
@@ -12,6 +13,9 @@
   "recipient": "dubai@bwpltd.com",
   "recipient_sha256": "7bf4d7f983fd0a99332aae2180be6375c448695104a805c924fcad82a6f1b05e",
   "schema": 2,
-  "status": "pending",
+  "sent_at": "2026-10-10T18:59:10+00:00",
+  "smtp_accepted_at": "2026-10-10T18:59:10+00:00",
+  "smtp_message_id": "<179165874988.2439.9733853548806814311@icloud.com>",
+  "status": "smtp_accepted",
   "subject_sha256": "1014b42162fc58693c0098bbea5de085b35ea5c255821dfc6996c439f3bc2b50"
 }
