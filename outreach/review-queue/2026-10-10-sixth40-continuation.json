@@ -26,6 +26,16 @@
     {"firm":"The Good Search","recipient":"info@tgsus.com","priority":"retained executive search","gmail_sent_match":false,"github_record_match":false},
     {"firm":"Kennedy Executive Search","recipient":"info@kennedyexecutive.com","priority":"international executive search","gmail_sent_match":false,"github_record_match":false},
     {"firm":"Hawthorn Blue","recipient":"victoria.storer@hawthornblue.co.uk","priority":"executive search","gmail_sent_match":false,"github_record_match":false},
-    {"firm":"Kingsley Gate","recipient":"mbergen@kingsleygate.com","priority":"global markets / industrial / cross-border","gmail_sent_match":false,"github_record_match":false}
+    {"firm":"Kingsley Gate","recipient":"mbergen@kingsleygate.com","priority":"global markets / industrial / cross-border","gmail_sent_match":false,"github_record_match":false},
+    {"firm":"Wilbury Stratton","recipient":"dc@wscl.com","priority":"executive search / talent intelligence","gmail_sent_match":false,"github_record_match":false},
+    {"firm":"Calibre One","recipient":"info@calibreone.com","priority":"global board and senior management search","gmail_sent_match":false,"github_record_match":false},
+    {"firm":"Renovata","recipient":"contact@renovata.com","priority":"international executive search","gmail_sent_match":false,"github_record_match":false},
+    {"firm":"Saxton Bampfylde","recipient":"contact@saxbam.com","priority":"global executive and board search","gmail_sent_match":false,"github_record_match":false},
+    {"firm":"Alumni Global","recipient":"info@alumniglobal.com","priority":"global executive search / industrial leadership","gmail_sent_match":false,"github_record_match":false}
+  ],
+  "portal_only_candidates": [
+    {"firm":"Erevena","route":"official next-role enquiry form","priority":"Dubai / global technology leadership"},
+    {"firm":"Coulter Partners","route":"official candidate application form","priority":"global executive search"},
+    {"firm":"Marlin Hawk","route":"official candidate enquiry route","priority":"Dubai / MENA / global executive search"}
   ]
 }
