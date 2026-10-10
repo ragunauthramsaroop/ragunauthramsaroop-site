@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "e7b71ed8a4d64311912c59e01ce4220e75a18fe0371c95c7c0528a65a6f01b66",
+  "batch_id": "2026-10-10-third40-wave-10",
+  "body_sha256": "479ab32c006f20751f9b4ddc364528b5c2973da10e06e189fd08c592d8dac107",
+  "created_at": "2026-10-10T14:05:53+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "38058245171",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/2026-10-10-third40-wave-10.json",
+  "payload_sha256": "9f13de4f4867de9737d6ec0858a59053616dd4d8c259d939aba1266102655a96",
+  "recipient": "todd@energysearchpartners.com",
+  "recipient_sha256": "dff98b111e313513303684c9836c6c7e80720b60e01aadfbc3aef30dcb669baa",
+  "schema": 2,
+  "status": "pending",
+  "subject_sha256": "6797b31aae787621631baa82b520b28fe9d95a671dcae38c1dc34d0bc7b7b7a9"
+}
