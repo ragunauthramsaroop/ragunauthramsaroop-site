@@ -3,6 +3,7 @@
   "batch_id": "2026-10-10-fifth40-060-wenham-carter",
   "body_sha256": "e17a9b99891a0c7e3a3bda36be2293416203cfd088e18e3005f1e280948a2e96",
   "created_at": "2026-10-10T18:31:52+00:00",
+  "delivery_status": "pending_bounce_check",
   "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
   "github_run_attempt": "1",
   "github_run_id": "38076137911",
@@ -12,6 +13,9 @@
   "recipient": "anouska.zvirbulis@wenhamcarter.com",
   "recipient_sha256": "52b8f5f4547a4f67598330eed74c1afb01da0fb369989978ffa630365e2751b5",
   "schema": 2,
-  "status": "pending",
+  "sent_at": "2026-10-10T18:31:54+00:00",
+  "smtp_accepted_at": "2026-10-10T18:31:54+00:00",
+  "smtp_message_id": "<179165711399.2414.5874676376762624857@icloud.com>",
+  "status": "smtp_accepted",
   "subject_sha256": "f54bd5487fd55afc56a7b511ec431c89f18a5345730977aed735e21d48919bd4"
 }
