@@ -1,0 +1,42 @@
+{
+  "mode": "review_only_no_send",
+  "date": "2026-10-10",
+  "objective": "Rank the strongest 21 clean replacement routes for the remaining sixth-batch slots.",
+  "confirmed_overall_total": 219,
+  "sixth_batch_confirmed": 19,
+  "remaining_slots": 21,
+  "ranking_basis": ["Saudi Arabia priority", "UAE/GCC coverage", "mining and natural resources", "energy and infrastructure", "senior executive-search fit", "international mobility"],
+  "ranked_targets": [
+    {"rank":1,"firm":"JobsKey Search & Selection","recipient":"contact@jobskeysearch.com","fit":"Saudi Arabia, Vision 2030, energy, infrastructure, senior appointments"},
+    {"rank":2,"firm":"Cooper Fitch","recipient":"jkhabbaz@cooperfitch.ae","fit":"GCC executive search, CEO/public-sector advisory, UAE and Saudi coverage"},
+    {"rank":3,"firm":"Flow Talent","recipient":"hello@flowtalent.ae","fit":"UAE and GCC executive recruitment"},
+    {"rank":4,"firm":"B7 Consultancy","recipient":"info@b7-group.com","fit":"Middle East executive search across energy, utilities, construction and government"},
+    {"rank":5,"firm":"Refined Global Recruitment","recipient":"hr@refinedglobalrecruitment.com","fit":"Dubai/GCC, metals, minerals, mining, energy and executive search"},
+    {"rank":6,"firm":"Maseer Talent","recipient":"info@maseergroup.com","fit":"UAE energy, industry, infrastructure and cross-border executive search"},
+    {"rank":7,"firm":"Black Gold Recruitment","recipient":"search@blackgoldrecruitment.com","fit":"global energy executive search with Dubai coverage"},
+    {"rank":8,"firm":"PMC","recipient":"candidates@pmc.company","fit":"UAE energy, executive search and direct-hire market"},
+    {"rank":9,"firm":"Big Fish Recruitment","recipient":"info@bigfishrecruitment.ae","fit":"UAE/MENA construction, infrastructure, QHSE and C-suite search"},
+    {"rank":10,"firm":"Astrus Talent","recipient":"info@astrustalent.com","fit":"Dubai/global infrastructure, sustainability, director, VP and C-suite search"},
+    {"rank":11,"firm":"MAKEEN Recruitment Consultants","recipient":"info@makeenuae.com","fit":"UAE executive search and leadership assessment"},
+    {"rank":12,"firm":"Norlynx Group","recipient":"recruitment@norlynx-group.com","fit":"Dubai energy, commodities and corporate functions"},
+    {"rank":13,"firm":"Lutech Resources","recipient":"Lutech.uk@LutechResources.com","fit":"energy, renewables, construction and global projects"},
+    {"rank":14,"firm":"Linum Consult","recipient":"info@linumconsult.com","fit":"mining, energy, construction and international recruitment"},
+    {"rank":15,"firm":"The Taplow Group","recipient":"mfirth@taplowgroup.com","fit":"industrial leadership, international expansion and Middle East search"},
+    {"rank":16,"firm":"Kingsley Gate","recipient":"mbergen@kingsleygate.com","fit":"global markets, industrial and cross-border executive search"},
+    {"rank":17,"firm":"Ropella 360","recipient":"info@ropella.com","fit":"industrial, materials and executive search"},
+    {"rank":18,"firm":"Beilby Downing Teal","recipient":"vvieilledent@beilbydt.com.au","fit":"mining, oil and gas and executive search"},
+    {"rank":19,"firm":"Derwent Search","recipient":"perth@derwentsearch.com.au","fit":"executive search with resources-market relevance"},
+    {"rank":20,"firm":"Alumni Global","recipient":"info@alumniglobal.com","fit":"global executive search and industrial leadership"},
+    {"rank":21,"firm":"Calibre One","recipient":"info@calibreone.com","fit":"global board and senior management search"}
+  ],
+  "reserve_email_routes": [
+    {"firm":"Kennedy Executive Search","recipient":"info@kennedyexecutive.com"},
+    {"firm":"Hawthorn Blue","recipient":"victoria.storer@hawthornblue.co.uk"},
+    {"firm":"The Good Search","recipient":"info@tgsus.com"},
+    {"firm":"Wilbury Stratton","recipient":"dc@wscl.com"},
+    {"firm":"Renovata","recipient":"contact@renovata.com"},
+    {"firm":"Saxton Bampfylde","recipient":"contact@saxbam.com"}
+  ],
+  "separate_retry_candidate": {"firm":"IRC Global Executive Search Partners","recipient":"info@ircsearchpartners.com","status":"prior workflow cancelled before execution"},
+  "portal_reserve": ["Erevena", "Coulter Partners", "Marlin Hawk"]
+}
