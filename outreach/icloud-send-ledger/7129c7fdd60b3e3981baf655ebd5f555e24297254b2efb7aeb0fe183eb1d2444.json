@@ -3,6 +3,7 @@
   "batch_id": "2026-10-10-fourth40-wave-04",
   "body_sha256": "4f731e752f31248b398e98b758f016ca4c5c54c1ce5e2b13a40dd0d813de85ee",
   "created_at": "2026-10-10T15:12:57+00:00",
+  "delivery_status": "pending_bounce_check",
   "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
   "github_run_attempt": "1",
   "github_run_id": "38062678321",
@@ -12,6 +13,9 @@
   "recipient": "enquiries@pmgrecruitment.com",
   "recipient_sha256": "7129c7fdd60b3e3981baf655ebd5f555e24297254b2efb7aeb0fe183eb1d2444",
   "schema": 2,
-  "status": "pending",
+  "sent_at": "2026-10-10T15:12:58+00:00",
+  "smtp_accepted_at": "2026-10-10T15:12:58+00:00",
+  "smtp_message_id": "<179164517811.2204.14086167301326861656@icloud.com>",
+  "status": "smtp_accepted",
   "subject_sha256": "29f26d5ff2d3612fc5fc22ba241f43dee0b73437d5195a1ac29cfa36f579e3bb"
 }
