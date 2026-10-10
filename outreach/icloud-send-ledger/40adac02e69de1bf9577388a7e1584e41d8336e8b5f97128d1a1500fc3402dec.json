@@ -3,6 +3,7 @@
   "batch_id": "2026-10-10-fourth40-pwts",
   "body_sha256": "f04ff5c04a64035377b134bd160a9163a49445f821f845e51e11cfa2c2686439",
   "created_at": "2026-10-10T14:58:56+00:00",
+  "delivery_status": "pending_bounce_check",
   "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
   "github_run_attempt": "1",
   "github_run_id": "38061747024",
@@ -12,6 +13,9 @@
   "recipient": "sunil@pwts.ae",
   "recipient_sha256": "40adac02e69de1bf9577388a7e1584e41d8336e8b5f97128d1a1500fc3402dec",
   "schema": 2,
-  "status": "pending",
+  "sent_at": "2026-10-10T14:58:58+00:00",
+  "smtp_accepted_at": "2026-10-10T14:58:58+00:00",
+  "smtp_message_id": "<179164433794.2452.6597212181437634045@icloud.com>",
+  "status": "smtp_accepted",
   "subject_sha256": "4e46c37dfe98ce537dabb1de6344732f75b4edf846952bd96b91d270ab1eb8d7"
 }
