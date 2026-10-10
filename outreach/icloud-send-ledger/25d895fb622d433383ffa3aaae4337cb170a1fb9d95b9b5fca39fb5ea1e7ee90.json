@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "1f8135572c9c488a47d7158a0412b7991e78783d89e688730b2d15c6ec4d64f6",
+  "batch_id": "2026-10-10-fourth40-wave-09",
+  "body_sha256": "acc37df41b79eb66b22c5ebaff0fe9165d8bd102e4f60519c19ef4d3e0aaed1e",
+  "created_at": "2026-10-10T15:24:01+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "38063428446",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/2026-10-10-fourth40-wave-09.json",
+  "payload_sha256": "14612f2ac42ceb17c2bee3fe62f8c32ffc21b458c19573b2816c01b5f9f49156",
+  "recipient": "info@roguerecruitment.co",
+  "recipient_sha256": "25d895fb622d433383ffa3aaae4337cb170a1fb9d95b9b5fca39fb5ea1e7ee90",
+  "schema": 2,
+  "status": "pending",
+  "subject_sha256": "6357c892a7d0c3e2575b561171682b1059c5a543ae9ce7bb07b8a95cfdf2874f"
+}
