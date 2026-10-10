@@ -3,6 +3,7 @@
   "batch_id": "2026-10-10-fourth40-falcon-brook",
   "body_sha256": "40010a7fe2e63eb413db9345981165f122e6ed62226b628d55ab2ed3bfb02b00",
   "created_at": "2026-10-10T15:03:29+00:00",
+  "delivery_status": "pending_bounce_check",
   "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
   "github_run_attempt": "1",
   "github_run_id": "38062054734",
@@ -12,6 +13,9 @@
   "recipient": "chantel@falconbrook.com",
   "recipient_sha256": "399eaf36f66b4d4404f0ff05ceb42308dc637440ac5a969af0928341d8a44180",
   "schema": 2,
-  "status": "pending",
+  "sent_at": "2026-10-10T15:03:30+00:00",
+  "smtp_accepted_at": "2026-10-10T15:03:30+00:00",
+  "smtp_message_id": "<179164461024.2422.10606459989311739031@icloud.com>",
+  "status": "smtp_accepted",
   "subject_sha256": "933c98845e733cace7bf3e4d463f5ba09d95e54d0f61610552d7b0cb68a97103"
 }
