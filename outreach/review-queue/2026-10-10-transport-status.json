@@ -1,0 +1,25 @@
+{
+  "date": "2026-10-10",
+  "mode": "configuration_record_no_send",
+  "verified_public_sender": {
+    "address": "executive@ragunauthramsaroop.com",
+    "provider": "Resend",
+    "domain_verified": true,
+    "sending_enabled": true,
+    "reply_to": "ragunauthramsaroop@icloud.com",
+    "note": "Verified delivered outbound mail exists from this identity. Direct receiving on the domain is not currently enabled in Resend."
+  },
+  "active_github_smtp_transport": {
+    "workflow": ".github/workflows/icloud-smtp-outreach.yml",
+    "provider": "Apple iCloud SMTP",
+    "authenticated_sender": "ragunauthramsaroop@icloud.com",
+    "reply_to": "ragunauthramsaroop@icloud.com",
+    "note": "This GitHub workflow must not claim or spoof executive@ragunauthramsaroop.com unless the transport itself is changed to an authorized provider for that domain."
+  },
+  "github_fixes_applied": [
+    "Existing ledger claims now skip cleanly rather than turning duplicates into red workflow failures.",
+    "Commits that change multiple outbox JSON files are rejected instead of silently selecting only the first file.",
+    "Payload-declared sender identity is checked against the actual iCloud SMTP transport before send steps run."
+  ],
+  "dispatch_note": "This record does not trigger email and does not bypass platform safety controls on executable bulk outreach."
+}
