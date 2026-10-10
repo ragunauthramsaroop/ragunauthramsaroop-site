@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "efb45d0048927a07dbdfb8e4241ea123844f135b3afa29d8601668b84372e7b9",
+  "batch_id": "2026-10-10-bounce-fix-resource17-paul-r2",
+  "body_sha256": "58982769b8d8e1dab78c6953706789a1b3c03cf103dc10bb03736f63ad2d1b7c",
+  "created_at": "2026-10-10T20:38:07+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "38084497528",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/2026-10-10-bounce-fix-resource17-paul-r2.json",
+  "payload_sha256": "47554cdcadc82a0246b01267fb7a4df32bdf30de24076b0f8a4f5dd0aaa939b6",
+  "recipient": "paul@resource17.com",
+  "recipient_sha256": "54ed385b3aeec517528d65ce0dfdb6f185cf8576165931475095eea411497873",
+  "schema": 2,
+  "status": "pending",
+  "subject_sha256": "348c2c8d7bc78d5e4a4e8784e9a3c3542cac19e72fe6a4d4321a94e785c77a8e"
+}
