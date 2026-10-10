@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "72f006eceaee71303e03c419793686345fd3ec3ed4d5ae3dd39e3cb9498a0514",
+  "batch_id": "2026-10-10-fourth40-impact-beyond",
+  "body_sha256": "96067cb47498d5c0589d4f1565875a5010c66cf0d74eaf177e2d39bd6e2b23c9",
+  "created_at": "2026-10-10T14:44:56+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "38060828981",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/2026-10-10-fourth40-impact-beyond.json",
+  "payload_sha256": "32e63a53c04f739000f686422e03691deafac30cfcda33e64d11b248ddf7a245",
+  "recipient": "karyn@impactbeyond.co.uk",
+  "recipient_sha256": "6c68a5ee89457ed7089f1d51bb83e429afcc82c913578f8cef3b43f7bff3005e",
+  "schema": 2,
+  "status": "pending",
+  "subject_sha256": "da925a0423d4339d91978184fae9df490cc9522640752d1d3f2445bfe29aa860"
+}
