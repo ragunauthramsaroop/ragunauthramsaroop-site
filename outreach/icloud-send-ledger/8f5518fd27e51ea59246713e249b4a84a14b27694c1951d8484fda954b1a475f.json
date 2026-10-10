@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "8b6c92818c532c2c0c7954ec9da58e394e9c2104eef2aa59d2b2fc2a02737d51",
+  "batch_id": "2026-10-10-fifth40-35-volta-executive",
+  "body_sha256": "ec1b4aa9c31f5c48d6a77c841be8477acbf1cb0f3673e3b6ad505d3d7e02b38b",
+  "created_at": "2026-10-10T19:37:37+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "38080527196",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/2026-10-10-fifth40-35-volta-executive.json",
+  "payload_sha256": "3b43e78531690b37993833790aa9c61536fd32a6fee13ee280abf642ff1f4a0b",
+  "recipient": "contact@volta-executive.com",
+  "recipient_sha256": "8f5518fd27e51ea59246713e249b4a84a14b27694c1951d8484fda954b1a475f",
+  "schema": 2,
+  "status": "pending",
+  "subject_sha256": "afb4de5a40f4a96644975222cd907bb41fd41f310a58014df977f181f4a0941b"
+}
