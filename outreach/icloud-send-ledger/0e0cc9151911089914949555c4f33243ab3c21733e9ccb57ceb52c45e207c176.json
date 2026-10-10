@@ -3,6 +3,7 @@
   "batch_id": "2026-10-10-fourth40-novare",
   "body_sha256": "5d073c23f089344b6bdb6bd137126d7742501e9b57b4e3d9927ec9b17d7a15d3",
   "created_at": "2026-10-10T14:53:29+00:00",
+  "delivery_status": "pending_bounce_check",
   "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
   "github_run_attempt": "1",
   "github_run_id": "38061393888",
@@ -12,6 +13,9 @@
   "recipient": "s.griffiths@novare.co.uk",
   "recipient_sha256": "0e0cc9151911089914949555c4f33243ab3c21733e9ccb57ceb52c45e207c176",
   "schema": 2,
-  "status": "pending",
+  "sent_at": "2026-10-10T14:53:31+00:00",
+  "smtp_accepted_at": "2026-10-10T14:53:31+00:00",
+  "smtp_message_id": "<179164401103.2413.4949526437145193834@icloud.com>",
+  "status": "smtp_accepted",
   "subject_sha256": "3834b22e00962c40920e459f8d4fe87bbcc6c696d048006b6693b12161704118"
 }
