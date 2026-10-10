@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "390ffbc1d772b640bcacf452725efc88d70d399b0116b7818982d513eaf69a98",
+  "batch_id": "2026-10-10-fourth40-close-03-andrews",
+  "body_sha256": "bd12a24f4f8bf272c04d12a081eac66de52ac390e135799933c1cda0edf7daa8",
+  "created_at": "2026-10-10T15:32:42+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "38064014903",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/2026-10-10-fourth40-close-03-andrews.json",
+  "payload_sha256": "f831faabdee1c9a68cbb6e92a3eed2b1399d0c176f2a1ddeccc3ebfbb252130c",
+  "recipient": "katrina@andrews-partnership.com",
+  "recipient_sha256": "cfefa0055eb17657c62005a7ae0b656f2f0adcb88cac3bd5bebb48a23d6d8a9b",
+  "schema": 2,
+  "status": "pending",
+  "subject_sha256": "9bb06e29d02ee8a447b1ad3da87a058ae0a0cd66bfb4d7e533ca1dcaa75ab5e3"
+}
