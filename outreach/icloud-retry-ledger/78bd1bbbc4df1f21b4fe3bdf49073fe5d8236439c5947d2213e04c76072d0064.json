@@ -1,0 +1,21 @@
+{
+  "attachment_sha256": "45eea127c6e202f030faf6198391ba20c9cc584d31d17e629110257537ecb799",
+  "batch_id": "2026-10-10-bounce-retry-sustii",
+  "body_sha256": "8961b21dbe11566f6baee21c9a97b6113a6c9708543984b1382fd73610c5d9c5",
+  "bounce_error": "server unavailable or unable to receive mail",
+  "created_at": "2026-10-10T18:57:40+00:00",
+  "evidence_source": "user_provided_delivery_status_notification",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "38077854406",
+  "original_ledger_path": "outreach/icloud-send-ledger/78bd1bbbc4df1f21b4fe3bdf49073fe5d8236439c5947d2213e04c76072d0064.json",
+  "original_smtp_message_id": "<179164006177.2439.14768031692904539534@icloud.com>",
+  "original_status": "smtp_accepted",
+  "payload_path": "outreach/icloud-bounce-retry/2026-10-10-sustii.json",
+  "payload_sha256": "7b482f5e9a63d137b90474bb5fcb67a5b81f0423adb3ba9208a0a34d921f7727",
+  "recipient": "hello@sustii.com",
+  "recipient_sha256": "78bd1bbbc4df1f21b4fe3bdf49073fe5d8236439c5947d2213e04c76072d0064",
+  "schema": 1,
+  "status": "pending",
+  "subject_sha256": "b89e3240e0788b842b3e2aa8feba6cd1d3a96ad85be97ff0c98270d9d41c932d"
+}
