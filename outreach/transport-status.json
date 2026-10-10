@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "updated": "2026-10-10",
+  "professional_identity": {
+    "from": "Ragunauth Ramsaroop <executive@ragunauthramsaroop.com>",
+    "reply_to": "ragunauthramsaroop@icloud.com"
+  },
+  "outbound": {
+    "provider": "Resend",
+    "domain": "ragunauthramsaroop.com",
+    "domain_verified": true,
+    "sending_enabled": true,
+    "status": "operational"
+  },
+  "inbound": {
+    "provider": "Resend Inboxes",
+    "address": "executive@ragunauthramsaroop.com",
+    "inbox_created": true,
+    "mode": "forwarding",
+    "private_receiving_endpoint_stored_in_repository": false,
+    "icloud_delivery": "pending_relay_authorization",
+    "status": "staged"
+  },
+  "relay": {
+    "platform": "Make",
+    "purpose": "Forward inbound executive mail into the iCloud inbox while preserving the professional public address.",
+    "authorization": "pending",
+    "activation": "blocked_until_authorized_and_tested"
+  },
+  "campaign_control": {
+    "system_of_record": "GitHub",
+    "review_queue": "outreach/review-queue",
+    "smtp_acceptance_ledger": "outreach/icloud-send-ledger",
+    "bounce_reconciliation": "outreach/icloud-bounce-retry",
+    "executable_bulk_dispatch_from_review_queue": false,
+    "count_as_sent_only_with_delivery_evidence": true
+  },
+  "security": {
+    "store_private_receiving_endpoint_in_repo": false,
+    "store_api_keys_in_repo": false,
+    "store_mail_passwords_in_repo": false,
+    "no_transport_spoofing": true,
+    "no_safety_bypass": true
+  }
+}
