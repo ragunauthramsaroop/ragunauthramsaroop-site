@@ -3,6 +3,7 @@
   "batch_id": "2026-10-10-third40-wave-11",
   "body_sha256": "d07f9017452a05bf05eefee01eebccf41e644f00a8ab4b90fd5d2ff1aa06fd49",
   "created_at": "2026-10-10T14:06:13+00:00",
+  "delivery_status": "pending_bounce_check",
   "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
   "github_run_attempt": "1",
   "github_run_id": "38058261872",
@@ -12,6 +13,9 @@
   "recipient": "david.beeston@hyperionsearch.com",
   "recipient_sha256": "9b93eef395c8c6aa44dd3df03c8397b0de76c2ba0486201363834794c943e387",
   "schema": 2,
-  "status": "pending",
+  "sent_at": "2026-10-10T14:06:14+00:00",
+  "smtp_accepted_at": "2026-10-10T14:06:14+00:00",
+  "smtp_message_id": "<179164117415.2442.12466226831385526868@icloud.com>",
+  "status": "smtp_accepted",
   "subject_sha256": "09de1a9486c7c05835fbf239025979e0dcf51f8ae5cc20672886d868c6bc8395"
 }
