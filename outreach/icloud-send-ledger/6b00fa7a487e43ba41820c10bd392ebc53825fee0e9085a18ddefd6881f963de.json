@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "549f1afe192fed9612487b4d43177a3cddb4db9e2883678a9e260680d1af969c",
+  "batch_id": "2026-10-10-fourth40-single-03-human-impact",
+  "body_sha256": "e8dadb60f813e8095e0549e8a9ccefee3f09fcabef14c5034a62a08ed52bdeaf",
+  "created_at": "2026-10-10T15:10:59+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "38062550877",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/2026-10-10-fourth40-single-03-human-impact.json",
+  "payload_sha256": "1b97b965f4d9c059dcf13a9be1bef06f57714dab961e7a31f62d3e2bf4d4768e",
+  "recipient": "connect@humanimpact.group",
+  "recipient_sha256": "6b00fa7a487e43ba41820c10bd392ebc53825fee0e9085a18ddefd6881f963de",
+  "schema": 2,
+  "status": "pending",
+  "subject_sha256": "736afe51ce56d67e4c6c8eb082980d33c159f9f4f75d1be586bf2474d48a2bb9"
+}
