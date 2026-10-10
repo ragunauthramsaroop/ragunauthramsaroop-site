@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "8bd9975bb54adf75e5ee1fcad087f34481f0b8cf1662fdbba86263f3c17934cc",
+  "batch_id": "2026-10-10-fifth40-29-aep",
+  "body_sha256": "59d47bbf73d1afcce0f2092720f8f0b1edc94d0a7ee0ec43aa3bdce95950a512",
+  "created_at": "2026-10-10T19:00:56+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "38078068851",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/2026-10-10-fifth40-29-aep.json",
+  "payload_sha256": "9808d000a815e2075d51d3aa4e709a3777d1486ca793ae352c9b118d5836538b",
+  "recipient": "advantage@aep.global",
+  "recipient_sha256": "e48cb1666f58a8c42bdd1734929564b605f74b8061e308c619a8f0f94da73177",
+  "schema": 2,
+  "status": "pending",
+  "subject_sha256": "bda931090410bb6d06b4c487f74e4aeaa3e8108258024bf7c2d453b781881071"
+}
