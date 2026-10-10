@@ -3,6 +3,7 @@
   "batch_id": "2026-10-10-global-executive-search-wave-05a",
   "body_sha256": "5fab4459f47a43dd769a30ad41ed92af611943ff21752cfe2c68361ab8347b27",
   "created_at": "2026-10-10T13:41:16+00:00",
+  "delivery_status": "pending_bounce_check",
   "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
   "github_run_attempt": "1",
   "github_run_id": "38056663510",
@@ -12,6 +13,9 @@
   "recipient": "matthew.riley@walterhewitt.com",
   "recipient_sha256": "5d75565c28a0513ce187777fd5f37cf26b8b0940b953fdef76cff74869f80ebb",
   "schema": 2,
-  "status": "pending",
+  "sent_at": "2026-10-10T13:41:17+00:00",
+  "smtp_accepted_at": "2026-10-10T13:41:17+00:00",
+  "smtp_message_id": "<179163967734.2452.8733343957892996975@icloud.com>",
+  "status": "smtp_accepted",
   "subject_sha256": "680d67355f713c8142c129dd62aa78f0fe591c7b68e68f82bfdd2cd4e259b4e4"
 }
