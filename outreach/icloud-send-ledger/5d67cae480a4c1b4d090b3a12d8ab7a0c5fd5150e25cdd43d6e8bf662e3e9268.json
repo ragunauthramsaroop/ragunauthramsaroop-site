@@ -3,6 +3,7 @@
   "batch_id": "2026-10-10-third40-wave-03",
   "body_sha256": "2bf66b15238b9987065b966d0b9a1c094dea9db94a630118e5d18e72edb2148e",
   "created_at": "2026-10-10T13:52:46+00:00",
+  "delivery_status": "pending_bounce_check",
   "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
   "github_run_attempt": "1",
   "github_run_id": "38057408671",
@@ -12,6 +13,9 @@
   "recipient": "ashley.williams@igloo3.com",
   "recipient_sha256": "5d67cae480a4c1b4d090b3a12d8ab7a0c5fd5150e25cdd43d6e8bf662e3e9268",
   "schema": 2,
-  "status": "pending",
+  "sent_at": "2026-10-10T13:52:48+00:00",
+  "smtp_accepted_at": "2026-10-10T13:52:48+00:00",
+  "smtp_message_id": "<179164036813.2427.16095257531908328358@icloud.com>",
+  "status": "smtp_accepted",
   "subject_sha256": "ee7689b7c7b559e8da4b42e81b56263c38a2ad69dbe9ce508d6a2b5651951316"
 }
