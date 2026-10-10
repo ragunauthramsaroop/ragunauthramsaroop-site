@@ -1,0 +1,17 @@
+{
+  "approved": true,
+  "dry_run": false,
+  "campaign_type": "recruiter",
+  "batch_id": "2026-10-10-bounce-fix-executive-search-africa-temitayo",
+  "attachment_filename": "Ragunauth_Ramsaroop_ATS_Executive_Resume_Ceiling_2026.pdf",
+  "recipient_verification": {
+    "source": "RiskTech & Advisory corporate profile",
+    "verified_at": "2026-10-10",
+    "note": "Temitayo Sogbola is the founder/CEO of Executive Search Africa. His verified direct corporate email is tsogbola@risktechadvisory.com."
+  },
+  "messages": [{
+    "to": "tsogbola@risktechadvisory.com",
+    "subject": "Confidential International Executive Profile | Mining, ESG, External Affairs & Country Leadership",
+    "body": "Dear Executive Search Africa Team,\n\nYour senior leadership search across African and international markets aligns closely with my mining, ESG and country-facing executive background. I serve as Liaison Director, Social Responsibility Department at AGM Inc., part of Zijin Mining Group, with leadership responsibilities spanning government and regulatory relations, ESG and social performance, corporate and external affairs, stakeholder strategy, strategic partnerships and executive communications. I am targeting Director, VP, Country and Regional leadership mandates where major investment, responsible development, institutional trust and cross-border execution intersect. Saudi Arabia and the UAE are priority markets, and I am internationally mobile.\n\nMy executive CV is attached for confidential consideration.\n\nBest regards,\nRagunauth Ramsaroop\nragunauthramsaroop@icloud.com\nragunauthramsaroop.com"
+  }]
+}
