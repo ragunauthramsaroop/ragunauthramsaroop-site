@@ -3,6 +3,7 @@
   "batch_id": "2026-10-10-fourth40-fraxim",
   "body_sha256": "39b9d0f5ad784fcc7a37983b8aecfff1c84f870d54ab2d78a4536f2b27a84129",
   "created_at": "2026-10-10T14:50:10+00:00",
+  "delivery_status": "pending_bounce_check",
   "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
   "github_run_attempt": "1",
   "github_run_id": "38061173764",
@@ -12,6 +13,9 @@
   "recipient": "jill@fraximsearch.com",
   "recipient_sha256": "71b30c77958bb05445747f3c9d74a1d5891c356182de5fca153a048dff051f80",
   "schema": 2,
-  "status": "pending",
+  "sent_at": "2026-10-10T14:50:11+00:00",
+  "smtp_accepted_at": "2026-10-10T14:50:11+00:00",
+  "smtp_message_id": "<179164381161.2443.14818296002751839174@icloud.com>",
+  "status": "smtp_accepted",
   "subject_sha256": "065ca8b0a4c493b1c1383b15baaa9374971217e456df821e43e9f8e0044c322e"
 }
