@@ -3,6 +3,7 @@
   "batch_id": "2026-10-10-fourth40-wave-15",
   "body_sha256": "0f615bd56e2a5ba03b2ca7c53ad435971ec720ece0afd1ab111bbf15172dcf18",
   "created_at": "2026-10-10T15:30:38+00:00",
+  "delivery_status": "pending_bounce_check",
   "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
   "github_run_attempt": "1",
   "github_run_id": "38063885878",
@@ -12,6 +13,9 @@
   "recipient": "info@thetalentguru.net",
   "recipient_sha256": "76be591f71c5ed1a92bf236de0904c208e5cbdc281a0e6a7664766eb2d083c72",
   "schema": 2,
-  "status": "pending",
+  "sent_at": "2026-10-10T15:30:39+00:00",
+  "smtp_accepted_at": "2026-10-10T15:30:39+00:00",
+  "smtp_message_id": "<179164623977.2452.10624248893562317314@icloud.com>",
+  "status": "smtp_accepted",
   "subject_sha256": "1524350e66cc0ed544b12f2b33e8f85bf16fec4bb78d90119fe3eb0b97fb9796"
 }
