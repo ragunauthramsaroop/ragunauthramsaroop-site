@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "4e42b7764dfeb020899146f73c04e359e3ea09d99d4dcfa03d98236299a87c9a",
+  "batch_id": "2026-10-10-fifth40-035-menasa",
+  "body_sha256": "545543de8d28c96e660c655c529aa82e245af34d9a320aab9d20c073efccae1e",
+  "created_at": "2026-10-10T18:19:35+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "38075295465",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/2026-10-10-fifth40-035-menasa.json",
+  "payload_sha256": "0206380a8fd00eedc932f38abe1703c69699fe95f820dbbfe0fcbf16b2f6f403",
+  "recipient": "myra@menasaandpartners.com",
+  "recipient_sha256": "340e367fa777f5155498ff12f97ff4a3f7521b14a4c18699e74964a67ec27da0",
+  "schema": 2,
+  "status": "pending",
+  "subject_sha256": "a9aae8d0376c59234190f6a32ca51f98ce3010987c2163ba07655623fcdb2a66"
+}
