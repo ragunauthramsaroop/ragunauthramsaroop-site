@@ -3,6 +3,7 @@
   "batch_id": "2026-10-10-n2growth-top40-completion",
   "body_sha256": "5463e200ad658808a99efd98a90a96f6c615b0ada809dc68710aff18d59feea0",
   "created_at": "2026-10-10T05:22:25+00:00",
+  "delivery_status": "pending_bounce_check",
   "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
   "github_run_attempt": "1",
   "github_run_id": "38027268403",
@@ -12,6 +13,9 @@
   "recipient": "r.pitsika@n2growth.com",
   "recipient_sha256": "4bad468101d339dd885093e7c187aa4fc710fd083040bdc841d1b9537d050698",
   "schema": 2,
-  "status": "pending",
+  "sent_at": "2026-10-10T05:22:26+00:00",
+  "smtp_accepted_at": "2026-10-10T05:22:26+00:00",
+  "smtp_message_id": "<179160974636.2455.1549746184898250958@icloud.com>",
+  "status": "smtp_accepted",
   "subject_sha256": "53c63a021d27284789c10a7087cf060011e27ce06e7431e342a9179357e37706"
 }
