@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "a680dfa7f168c2abafa3aa489fe6230356baf6303ccb3a204866309ad4d59639",
+  "batch_id": "2026-10-10-fourth40-taylor-birchwood",
+  "body_sha256": "bdd9ecd4a4d356998d951f300739e7f445546bd02d3e162a44043c98dedb449c",
+  "created_at": "2026-10-10T14:33:20+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "38060053338",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/2026-10-10-fourth40-taylor-birchwood.json",
+  "payload_sha256": "843bd57266d4c6b11409a7e2e273aa5f41ab6ef0636a1613b03904712c1bdfde",
+  "recipient": "lt@taylorbirchwood.com",
+  "recipient_sha256": "c0069ac53165b21e9df772878d965d1251ee6d4ddfda20bbe70cf62ec5a10a25",
+  "schema": 2,
+  "status": "pending",
+  "subject_sha256": "9218d003f45afed0ad5be585eb51f3fc8dbdfa86001711694c3b35a0a889a424"
+}
