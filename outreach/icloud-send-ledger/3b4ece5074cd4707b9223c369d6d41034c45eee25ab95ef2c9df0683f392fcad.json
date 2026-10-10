@@ -3,6 +3,7 @@
   "batch_id": "2026-10-10-fourth40-single-02-odm",
   "body_sha256": "92727235b8fb52e391091d46761b091c27173879cc76a63c9b8a4e93176ceb9d",
   "created_at": "2026-10-10T15:10:43+00:00",
+  "delivery_status": "pending_bounce_check",
   "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
   "github_run_attempt": "1",
   "github_run_id": "38062537558",
@@ -12,6 +13,9 @@
   "recipient": "info@odmpartners.com",
   "recipient_sha256": "3b4ece5074cd4707b9223c369d6d41034c45eee25ab95ef2c9df0683f392fcad",
   "schema": 2,
-  "status": "pending",
+  "sent_at": "2026-10-10T15:10:45+00:00",
+  "smtp_accepted_at": "2026-10-10T15:10:45+00:00",
+  "smtp_message_id": "<179164504471.2532.17487976905634599781@icloud.com>",
+  "status": "smtp_accepted",
   "subject_sha256": "0f37c0c2d1845ee1b867eec1b1de3d96a9a5e503c0a6e7dc7694db972007f562"
 }
