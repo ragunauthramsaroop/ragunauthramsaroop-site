@@ -3,6 +3,7 @@
   "batch_id": "2026-10-10-sixth40-31-resource17",
   "body_sha256": "58982769b8d8e1dab78c6953706789a1b3c03cf103dc10bb03736f63ad2d1b7c",
   "created_at": "2026-10-10T20:00:17+00:00",
+  "delivery_status": "pending_bounce_check",
   "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
   "github_run_attempt": "1",
   "github_run_id": "38081990098",
@@ -12,6 +13,9 @@
   "recipient": "info@resource17.com",
   "recipient_sha256": "6028a7ecf50bbe7039a55b19f0d33f39e9bd37ac1ab888efdd3e3baa6b409001",
   "schema": 2,
-  "status": "pending",
+  "sent_at": "2026-10-10T20:00:18+00:00",
+  "smtp_accepted_at": "2026-10-10T20:00:18+00:00",
+  "smtp_message_id": "<179166241840.2216.7949878427226316431@icloud.com>",
+  "status": "smtp_accepted",
   "subject_sha256": "348c2c8d7bc78d5e4a4e8784e9a3c3542cac19e72fe6a4d4321a94e785c77a8e"
 }
