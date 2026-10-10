@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "070cce646a333c68f25cfb58a9ca4c1bd20b2e3c8d77f5a0e3f4bc392470115d",
+  "batch_id": "2026-10-10-fourth40-wave-10",
+  "body_sha256": "fb06d86743f02df3b7d11f67dc2b0747cd8f10009397d28a7e347e7f4c6efbab",
+  "created_at": "2026-10-10T15:25:12+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "38063506009",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/2026-10-10-fourth40-wave-10.json",
+  "payload_sha256": "773bdd8d8e3249f4d33e63d203af3a192973de40925186289336a7641fba1e18",
+  "recipient": "info@sa-world.com",
+  "recipient_sha256": "d31db7f86276913593409c530b5d9cb5deff18f8663212d9725c2738e7c0178a",
+  "schema": 2,
+  "status": "pending",
+  "subject_sha256": "daee1ce77527d7901c2fa4ddd666f9d14df2b6d4c06648f41b1cd56e168d04b7"
+}
