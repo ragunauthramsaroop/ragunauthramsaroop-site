@@ -3,6 +3,7 @@
   "batch_id": "2026-10-10-fifth40-055-ruston-mcqueen",
   "body_sha256": "47c54f806e6e60e8afac9b2935cc53d740c5f0838d6ad8c6e586661e66918f4a",
   "created_at": "2026-10-10T18:29:52+00:00",
+  "delivery_status": "pending_bounce_check",
   "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
   "github_run_attempt": "1",
   "github_run_id": "38075984655",
@@ -12,6 +13,9 @@
   "recipient": "victoria@rustonmcqueen.com",
   "recipient_sha256": "b8bb67252f639c68b7e91a037ebe3f171e2aeba9e20d3cac955278329f0e0a8a",
   "schema": 2,
-  "status": "pending",
+  "sent_at": "2026-10-10T18:29:54+00:00",
+  "smtp_accepted_at": "2026-10-10T18:29:54+00:00",
+  "smtp_message_id": "<179165699385.2208.16225777259765133178@icloud.com>",
+  "status": "smtp_accepted",
   "subject_sha256": "7e758e32327e756b7efd8a6fc5665c9c2b946e83d3f95f10cc08a5a7c5b4efff"
 }
