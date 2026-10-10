@@ -1,0 +1,41 @@
+name: Gmail storage hygiene
+
+on:
+  schedule:
+    - cron: '17 7,19 * * *'
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths:
+      - 'scripts/gmail_hygiene.py'
+      - '.github/workflows/gmail-hygiene.yml'
+
+permissions:
+  contents: read
+
+concurrency:
+  group: gmail-storage-hygiene
+  cancel-in-progress: true
+
+jobs:
+  hygiene:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    env:
+      GMAIL_USER: ragunauth123456@gmail.com
+      GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
+      GMAIL_HYGIENE_MAX_PER_RULE: '5000'
+      GMAIL_HYGIENE_RECOVERY_DAYS: '7'
+    steps:
+      - uses: actions/checkout@v7
+
+      - uses: actions/setup-python@v7
+        with:
+          python-version: '3.12'
+
+      - name: Run conservative Gmail hygiene
+        shell: bash
+        run: |
+          set -euo pipefail
+          python scripts/gmail_hygiene.py
