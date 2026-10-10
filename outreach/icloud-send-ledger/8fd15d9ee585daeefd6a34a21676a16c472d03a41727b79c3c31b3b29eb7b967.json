@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "568bc58bb3fd50380b5513181669ccaa07e18e9a0ebdc8a8f39bcb594be6ad98",
+  "batch_id": "2026-10-10-bounce-fix-executive-search-africa-temitayo",
+  "body_sha256": "de931faf6125b5b0ff283f339bda5416bb88cb1c7fab4450450f30327a7659c6",
+  "created_at": "2026-10-10T20:37:00+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "38084429634",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/2026-10-10-bounce-fix-executive-search-africa-temitayo.json",
+  "payload_sha256": "a76f6959de9af21795ef7ef7d7fd732610d700a1ac67883537d832b5cff6bd43",
+  "recipient": "tsogbola@risktechadvisory.com",
+  "recipient_sha256": "8fd15d9ee585daeefd6a34a21676a16c472d03a41727b79c3c31b3b29eb7b967",
+  "schema": 2,
+  "status": "pending",
+  "subject_sha256": "370cc1c8e11edf4d728be147bcc73282d5b5502d80a7aec01544817151eb1f1a"
+}
