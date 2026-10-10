@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "1abbd316563aa781d99f12dc05b937d9b01dd1b3bcfd2b06e3808cf7b5fc9316",
+  "batch_id": "2026-10-10-fourth40-white-buffalo",
+  "body_sha256": "699989fa2678da7c422c8fd8430c2bc5664e42be9580e44895b8200d881f66ce",
+  "created_at": "2026-10-10T14:54:09+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "38061435651",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/2026-10-10-fourth40-white-buffalo.json",
+  "payload_sha256": "73591fd2c60f2e3b3fc6b6f467e96630d2dbbb6130ddb413f4e813b61a9b7d47",
+  "recipient": "james@whitebuffaloconsultants.com",
+  "recipient_sha256": "6499e931911786af6467b7667fab2478aad2b6846d5f99a19f5cb765f0e42d2c",
+  "schema": 2,
+  "status": "pending",
+  "subject_sha256": "73f2256501b35a91dc3c98fd120ced49499ff28fedbcee51f4e409f46d414ff1"
+}
