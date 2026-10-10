@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "4e7baa6f9c808d6a1e7d3579bca05d7b0dbe42bab224482d7d807f94245240ba",
+  "batch_id": "2026-10-10-fifth40-043-granger-reis",
+  "body_sha256": "41bcafa2c4d5a476717c338e347517d9f11f09e1b02dc36f9170c8497a0d5d5f",
+  "created_at": "2026-10-10T18:24:37+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "38075640088",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/2026-10-10-fifth40-043-granger-reis.json",
+  "payload_sha256": "e253a3db7f64af2bc514579cc0f9d8ddc96909d104aa0713c17e3bd89bd5f12c",
+  "recipient": "rphendler@grangerreis.ai",
+  "recipient_sha256": "c3a560ea8ece33252d8118af4e039840812ca073a42a40e2a4b5d413041537a5",
+  "schema": 2,
+  "status": "pending",
+  "subject_sha256": "75f28cf56db261dc04b01ede6bccdcfd7aa1d15e6c4048e47815a437e52244cb"
+}
