@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "8ff9cba9cdb4fb86c7f6d2d100ecc114eacc68cf185da962c4b346532df49016",
+  "batch_id": "2026-10-10-fourth40-levelup",
+  "body_sha256": "1f943f0739784506d119286715f4cd1b950abe5ca2f6f5bd55c2174752954e95",
+  "created_at": "2026-10-10T14:44:09+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "38060777748",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/2026-10-10-fourth40-levelup.json",
+  "payload_sha256": "d511d9c6504ef92d83c556a57b9e995d6c08dba468c1477bba744c7691a4144e",
+  "recipient": "dagmara@levelupsustainability.com",
+  "recipient_sha256": "3e819252d2f76bb2cb773fa52504ee54fc96df1f25e0617db07e7893069d0a38",
+  "schema": 2,
+  "status": "pending",
+  "subject_sha256": "b4f7caf66b274494a968486653d51b300be2c8f26b19dafde2b7f461b399eef4"
+}
