@@ -3,6 +3,7 @@
   "batch_id": "2026-10-10-fourth40-wave-03",
   "body_sha256": "eb9cbc7af46de582a22b9b880af6f18df69fe4e9aa0d7ae15c698328022cc18d",
   "created_at": "2026-10-10T15:12:07+00:00",
+  "delivery_status": "pending_bounce_check",
   "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
   "github_run_attempt": "1",
   "github_run_id": "38062621804",
@@ -12,6 +13,9 @@
   "recipient": "info@orionconsultingme.com",
   "recipient_sha256": "194636373b2d9336cb2b22bdcbd471102ee4f4aa23fdecc419fe9e5f1c1a7b7b",
   "schema": 2,
-  "status": "pending",
+  "sent_at": "2026-10-10T15:12:09+00:00",
+  "smtp_accepted_at": "2026-10-10T15:12:09+00:00",
+  "smtp_message_id": "<179164512882.2232.4512319596264580722@icloud.com>",
+  "status": "smtp_accepted",
   "subject_sha256": "855d20d828624ba588a8fcbc7c9c660d70ab5851e019a8b3fa5599edb342b5ac"
 }
