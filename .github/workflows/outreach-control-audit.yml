@@ -1,0 +1,34 @@
+name: Executive outreach control audit
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths:
+      - 'outreach/review-queue/**'
+      - 'outreach/icloud-send-ledger/**'
+      - 'outreach/transport-status.json'
+      - 'scripts/audit_outreach_control.py'
+      - '.github/workflows/outreach-control-audit.yml'
+  schedule:
+    - cron: '17 12 * * *'
+
+permissions:
+  contents: read
+
+concurrency:
+  group: executive-outreach-control-audit
+  cancel-in-progress: true
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v7
+        with:
+          python-version: '3.12'
+      - name: Audit transport, review queue and send ledger
+        run: python scripts/audit_outreach_control.py
