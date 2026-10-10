@@ -3,6 +3,7 @@
   "batch_id": "2026-10-10-fourth40-wave-04",
   "body_sha256": "60147c88a043f940482041c3ca1c0cbd2a9cdee64b2fd0577acf6bc9ad2fb2c4",
   "created_at": "2026-10-10T15:12:54+00:00",
+  "delivery_status": "pending_bounce_check",
   "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
   "github_run_attempt": "1",
   "github_run_id": "38062678321",
@@ -12,6 +13,9 @@
   "recipient": "careers@altgen.com",
   "recipient_sha256": "ea9d937d25aeaa37028c0ecf7b177fced4e3ee38419b05f1aa6477f54b8dc516",
   "schema": 2,
-  "status": "pending",
+  "sent_at": "2026-10-10T15:12:55+00:00",
+  "smtp_accepted_at": "2026-10-10T15:12:55+00:00",
+  "smtp_message_id": "<179164517591.2204.18366355859607060133@icloud.com>",
+  "status": "smtp_accepted",
   "subject_sha256": "7315fd4b5b2d03e8fd16fe6a71a1d2a57cd70f241e5bedc2296dce72d1fb8613"
 }
