@@ -3,6 +3,7 @@
   "batch_id": "2026-10-10-fifth40-23-tlr",
   "body_sha256": "0ac0cca992e7055e82a3ed3199bde960e09cd0087f5549fe04ba9c1fe77a578d",
   "created_at": "2026-10-10T18:56:12+00:00",
+  "delivery_status": "pending_bounce_check",
   "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
   "github_run_attempt": "1",
   "github_run_id": "38077768365",
@@ -12,6 +13,9 @@
   "recipient": "kwilson@talentlinkresources.com",
   "recipient_sha256": "58fa599850b2d9a666a5334bb5fdc4e4c4a624f3aac39ec80cede43e2867e8ba",
   "schema": 2,
-  "status": "pending",
+  "sent_at": "2026-10-10T18:56:14+00:00",
+  "smtp_accepted_at": "2026-10-10T18:56:14+00:00",
+  "smtp_message_id": "<179165857361.2429.2666064942758901556@icloud.com>",
+  "status": "smtp_accepted",
   "subject_sha256": "65474b63b01b0eaa976815e81aba28727fe3066da817bbf6f7836d5a7b511451"
 }
