@@ -3,6 +3,7 @@
   "batch_id": "2026-10-10-fourth40-wave-06",
   "body_sha256": "f32e805565c75f8b21a1c6c9f05b1413362c4a0b5951616a1e3f8d876a6f72fc",
   "created_at": "2026-10-10T15:18:23+00:00",
+  "delivery_status": "pending_bounce_check",
   "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
   "github_run_attempt": "1",
   "github_run_id": "38063046053",
@@ -12,6 +13,9 @@
   "recipient": "info@ramzconsultancy.com",
   "recipient_sha256": "031a3dd871d2604d9bc87e33c5b3aba6c68b1dd19b68b4079620cb1163c1a8b5",
   "schema": 2,
-  "status": "pending",
+  "sent_at": "2026-10-10T15:18:24+00:00",
+  "smtp_accepted_at": "2026-10-10T15:18:24+00:00",
+  "smtp_message_id": "<179164550434.2419.18289236515479835845@icloud.com>",
+  "status": "smtp_accepted",
   "subject_sha256": "b435a0287860e15cebe7c7b9b0334db71cea4cc6d819a1c65f2ba2514a214a7d"
 }
