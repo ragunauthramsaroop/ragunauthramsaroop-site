@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "5bbb52154926b970ee6beabe1fbb2270c542d0c3a848d2a3c029ea87bb61891f",
+  "batch_id": "2026-10-10-fourth40-close-06-rocco",
+  "body_sha256": "c002af01b7aa70c80255d918cf4a6c80af7487efa581a2d95fc7ee00932d2813",
+  "created_at": "2026-10-10T15:33:23+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "38064064308",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/2026-10-10-fourth40-close-06-rocco.json",
+  "payload_sha256": "d672a8a2fcf1a35603b4400fdd31ac2f84b805fa5fd63d810526abbfa404b138",
+  "recipient": "contact@roccomercier.com",
+  "recipient_sha256": "6ec39dd1345d34958b6cf0a3e4b5b6a2d203110867a7d80e45f73a996ac433c4",
+  "schema": 2,
+  "status": "pending",
+  "subject_sha256": "75f28cf56db261dc04b01ede6bccdcfd7aa1d15e6c4048e47815a437e52244cb"
+}
