@@ -3,6 +3,7 @@
   "batch_id": "2026-10-10-sixth40-15-starboard-recruitment",
   "body_sha256": "e17cc22a645effdc19109aad91fdff4f297d5e28c4868c10b8f0f713436c303f",
   "created_at": "2026-10-10T19:57:22+00:00",
+  "delivery_status": "pending_bounce_check",
   "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
   "github_run_attempt": "1",
   "github_run_id": "38081800230",
@@ -12,6 +13,9 @@
   "recipient": "contact@starboardrecruitment.com",
   "recipient_sha256": "32d2c10e23c55c3f923b4ae51431793425aad53528086f375be43bb5a9753990",
   "schema": 2,
-  "status": "pending",
+  "sent_at": "2026-10-10T19:57:23+00:00",
+  "smtp_accepted_at": "2026-10-10T19:57:23+00:00",
+  "smtp_message_id": "<179166224346.2458.13966777009438766167@icloud.com>",
+  "status": "smtp_accepted",
   "subject_sha256": "3794f06c3472a6f1b9510fa6fa677578dc08656d8ac8daff1d5cdcba0b50ed43"
 }
