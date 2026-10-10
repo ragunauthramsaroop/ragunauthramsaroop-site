@@ -3,6 +3,7 @@
   "batch_id": "2026-10-10-fifth40-28-avelor",
   "body_sha256": "3b34069c2c24868a8b34c1d3472de9cb9bf8c577709eda444898aafeaa297910",
   "created_at": "2026-10-10T19:00:37+00:00",
+  "delivery_status": "pending_bounce_check",
   "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
   "github_run_attempt": "1",
   "github_run_id": "38078054506",
@@ -12,6 +13,9 @@
   "recipient": "search@avelorpartners.com",
   "recipient_sha256": "d652981e9e452905d0f4afcee64c44525e7d2664ce00955f55167dc41d8a44a1",
   "schema": 2,
-  "status": "pending",
+  "sent_at": "2026-10-10T19:00:39+00:00",
+  "smtp_accepted_at": "2026-10-10T19:00:39+00:00",
+  "smtp_message_id": "<179165883894.2452.1316070673182983571@icloud.com>",
+  "status": "smtp_accepted",
   "subject_sha256": "9da3a40d6e0380aad00cee5fb9afd10fe181f6b4bc9ccc28be8926a5ad222298"
 }
