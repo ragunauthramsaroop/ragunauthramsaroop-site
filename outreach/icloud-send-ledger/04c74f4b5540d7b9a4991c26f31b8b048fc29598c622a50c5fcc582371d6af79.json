@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "66d968784c45d4a840be2feedde7bb287140df9fd7167771907c3fa9b1f5fa62",
+  "batch_id": "2026-10-10-fifth40-048-thomas-thor",
+  "body_sha256": "0cee346bdeb1feda77a630226dab3f219c7d149a8e8e15eb28a8bd7f083dcb08",
+  "created_at": "2026-10-10T18:27:09+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "38075805378",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/2026-10-10-fifth40-048-thomas-thor.json",
+  "payload_sha256": "b78683a4962da42a0ab3f58604f5d3bc648477a66488532d98707a3a23926322",
+  "recipient": "info@thomas-thor.com",
+  "recipient_sha256": "04c74f4b5540d7b9a4991c26f31b8b048fc29598c622a50c5fcc582371d6af79",
+  "schema": 2,
+  "status": "pending",
+  "subject_sha256": "7a9ecd197a2b70691b078ef69386205999c4d642d204a5060dcb71fcf2bf5958"
+}
