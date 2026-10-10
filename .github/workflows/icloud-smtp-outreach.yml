@@ -53,10 +53,20 @@ jobs:
           if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
             PAYLOAD="${{ inputs.payload_file }}"
           else
-            PAYLOAD="$(git diff-tree --diff-filter=AM --no-commit-id --name-only -r "$GITHUB_SHA" | grep -E '^outreach/icloud-outbox/[^/]+\.json$' | head -n 1 || true)"
+            mapfile -t MATCHES < <(git diff-tree --diff-filter=AM --no-commit-id --name-only -r "$GITHUB_SHA" | grep -E '^outreach/icloud-outbox/[^/]+\.json$' || true)
+            if [ "${#MATCHES[@]}" -eq 0 ]; then
+              echo "No outbox payload found in this change."
+              exit 0
+            fi
+            if [ "${#MATCHES[@]}" -gt 1 ]; then
+              echo "Multiple outbox payloads were changed in one commit (${#MATCHES[@]})."
+              echo "Refusing to silently select only the first file. Use one payload per commit or an approved .batch.json manifest."
+              exit 1
+            fi
+            PAYLOAD="${MATCHES[0]}"
           fi
           if [ -z "$PAYLOAD" ]; then
-            echo "No outbox payload found in this change."
+            echo "No outbox payload resolved."
             exit 0
           fi
           case "$PAYLOAD" in
@@ -68,6 +78,33 @@ jobs:
             exit 1
           fi
           echo "payload=$PAYLOAD" >> "$GITHUB_OUTPUT"
+
+      - name: Enforce iCloud transport identity
+        if: steps.payload.outputs.payload != ''
+        shell: bash
+        run: |
+          set -euo pipefail
+          python - "${{ steps.payload.outputs.payload }}" <<'PY'
+          import json
+          import os
+          import sys
+
+          path = sys.argv[1]
+          with open(path, "r", encoding="utf-8") as handle:
+              payload = json.load(handle)
+
+          smtp_user = os.environ["ICLOUD_SMTP_USER"].strip()
+          declared = str(payload.get("sender") or "").strip()
+          allowed = {smtp_user, f"Ragunauth Ramsaroop <{smtp_user}>"}
+
+          if declared and declared not in allowed:
+              raise SystemExit(
+                  f"Transport identity mismatch: payload declares {declared!r}, but this workflow authenticates and sends through iCloud as {smtp_user!r}. "
+                  "Do not spoof a verified-domain sender through the iCloud SMTP workflow."
+              )
+
+          print(f"Transport identity verified: iCloud SMTP sender {smtp_user}")
+          PY
 
       - name: Expand approved executive campaign
         id: expanded
