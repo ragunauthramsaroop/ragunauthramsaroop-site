@@ -3,6 +3,7 @@
   "batch_id": "2026-10-10-fourth40-wave-06",
   "body_sha256": "5c0116cb47486949fbd4b6155e8116a95cd999970295943309d9c8f9bfa43c85",
   "created_at": "2026-10-10T15:18:25+00:00",
+  "delivery_status": "pending_bounce_check",
   "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
   "github_run_attempt": "1",
   "github_run_id": "38063046053",
@@ -12,6 +13,9 @@
   "recipient": "recruitment@eramtalent.com",
   "recipient_sha256": "540197bd5fa02951e163750262ee2ba3bc08464da52735e9f8c1218c902db5ee",
   "schema": 2,
-  "status": "pending",
+  "sent_at": "2026-10-10T15:18:27+00:00",
+  "smtp_accepted_at": "2026-10-10T15:18:27+00:00",
+  "smtp_message_id": "<179164550691.2419.10821850120292685387@icloud.com>",
+  "status": "smtp_accepted",
   "subject_sha256": "0825493ba8138b13333837c6fe8afae667ab31a1aabc05bcc9b8d0c514004952"
 }
