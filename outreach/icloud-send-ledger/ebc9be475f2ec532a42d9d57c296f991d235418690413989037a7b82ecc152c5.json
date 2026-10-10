@@ -3,6 +3,7 @@
   "batch_id": "2026-10-10-fourth40-green-scout",
   "body_sha256": "33cbcb1ba0161ce29b34fcb1f751ad116455a6b5be8fc59db4bdd156dc3ac89c",
   "created_at": "2026-10-10T15:05:15+00:00",
+  "delivery_status": "pending_bounce_check",
   "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
   "github_run_attempt": "1",
   "github_run_id": "38062172947",
@@ -12,6 +13,9 @@
   "recipient": "dan@greenscout.co",
   "recipient_sha256": "ebc9be475f2ec532a42d9d57c296f991d235418690413989037a7b82ecc152c5",
   "schema": 2,
-  "status": "pending",
+  "sent_at": "2026-10-10T15:05:17+00:00",
+  "smtp_accepted_at": "2026-10-10T15:05:17+00:00",
+  "smtp_message_id": "<179164471717.2449.16807545955902027784@icloud.com>",
+  "status": "smtp_accepted",
   "subject_sha256": "cfbf87b5a26cd8ef9fbeef2754d5a804f5237a744a5fe5d93ccf7cb032b49c9c"
 }
