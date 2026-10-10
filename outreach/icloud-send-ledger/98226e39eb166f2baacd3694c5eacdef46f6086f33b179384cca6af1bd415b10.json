@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "24b93fe951d03e393dd45288b89933b23c32df94dad5261be20ce813ab90cf55",
+  "batch_id": "2026-10-10-fifth40-064-energists",
+  "body_sha256": "fda02b6faaf9032ff114596b092d2b6a99ac8341578977864e253ecbe9864119",
+  "created_at": "2026-10-10T18:35:22+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "38076374041",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/2026-10-10-fifth40-064-energists.json",
+  "payload_sha256": "d616ec3e2bada9ddfffe541d1668734283b0fbb63a82bbbc6d4bec73b761e6c5",
+  "recipient": "tom@energists.com",
+  "recipient_sha256": "98226e39eb166f2baacd3694c5eacdef46f6086f33b179384cca6af1bd415b10",
+  "schema": 2,
+  "status": "pending",
+  "subject_sha256": "4bc9a09fde3c98d8b6decb2658ec4b94c86f7fbfd29a940fabf2b46a902401b1"
+}
