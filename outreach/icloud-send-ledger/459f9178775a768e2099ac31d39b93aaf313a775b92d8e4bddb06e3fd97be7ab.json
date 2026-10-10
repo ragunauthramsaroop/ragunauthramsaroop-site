@@ -3,6 +3,7 @@
   "batch_id": "2026-10-10-fifth40-21-bip-search",
   "body_sha256": "135267490b65ae427c1918fd7ee99906d3ce3a32852d14bc0913ce6be635117c",
   "created_at": "2026-10-10T18:55:55+00:00",
+  "delivery_status": "pending_bounce_check",
   "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
   "github_run_attempt": "1",
   "github_run_id": "38077743043",
@@ -12,6 +13,9 @@
   "recipient": "solutions@bipsearch.com",
   "recipient_sha256": "459f9178775a768e2099ac31d39b93aaf313a775b92d8e4bddb06e3fd97be7ab",
   "schema": 2,
-  "status": "pending",
+  "sent_at": "2026-10-10T18:55:56+00:00",
+  "smtp_accepted_at": "2026-10-10T18:55:56+00:00",
+  "smtp_message_id": "<179165855631.2414.11500963035153570036@icloud.com>",
+  "status": "smtp_accepted",
   "subject_sha256": "4d6395eaba0870120a8455e396f91862cc27c58796a793b12042528d56afd1f6"
 }
