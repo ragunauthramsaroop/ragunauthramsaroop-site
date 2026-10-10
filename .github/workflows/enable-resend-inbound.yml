@@ -1,0 +1,35 @@
+name: Enable Resend inbound MX
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/enable-resend-inbound.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: enable-resend-inbound-mx
+  cancel-in-progress: false
+
+jobs:
+  apply:
+    runs-on: ubuntu-latest
+    timeout-minutes: 6
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v7
+        with:
+          node-version: '22'
+          package-manager-cache: false
+      - name: Test append-only DNS plan and apex conflict gate
+        run: node scripts/test_apply_spaceship_resend_dns.mjs
+      - name: Append approved Resend inbound MX only if conflict-free
+        env:
+          SPACESHIP_API_KEY: ${{ secrets.SPACESHIP_API_KEY }}
+          SPACESHIP_API_SECRET: ${{ secrets.SPACESHIP_API_SECRET }}
+        run: node scripts/apply_spaceship_resend_dns.mjs --apply
+      - name: Confirm website DNS remains intact
+        run: node scripts/check_resend_dns.mjs
