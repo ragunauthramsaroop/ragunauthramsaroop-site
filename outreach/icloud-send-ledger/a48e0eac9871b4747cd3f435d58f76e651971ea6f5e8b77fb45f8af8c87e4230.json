@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "19d1565c6ba0415be7d8c048d69b5b0786ed9ce57650c6390420269787a59e78",
+  "batch_id": "2026-10-10-fifth40-20-shaw-energy",
+  "body_sha256": "3d9d41fa1694dd7c4ec8c8a216d3b754d8f0385926e4af511674060ca20d409b",
+  "created_at": "2026-10-10T18:55:37+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "38077727783",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/2026-10-10-fifth40-20-shaw-energy.json",
+  "payload_sha256": "d0f41f039f46450842ee42e0397b51c7e789c9d3a4247c10262174177e529e8b",
+  "recipient": "questions@shawcv.com",
+  "recipient_sha256": "a48e0eac9871b4747cd3f435d58f76e651971ea6f5e8b77fb45f8af8c87e4230",
+  "schema": 2,
+  "status": "pending",
+  "subject_sha256": "0a9a4b7f0b7008bb345cfe5dea47df16b413571da15968985782d0c97af1d75d"
+}
