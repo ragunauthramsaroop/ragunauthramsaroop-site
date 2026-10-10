@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "86dfc907644eae3f4216fd1ef971153583b7152c92af8bff9c2764201ff9443d",
+  "batch_id": "2026-10-10-fifth40-062-gs2",
+  "body_sha256": "865bb393bb4170c8314e4b9f5e207af4e314a2210d3149c4501ca8bc88d4c54f",
+  "created_at": "2026-10-10T18:32:25+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "38076173688",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/2026-10-10-fifth40-062-gs2.json",
+  "payload_sha256": "c4ef1b1aaa95608a3d9697211bce641cf5310155917962c123f69c5eeb58b29f",
+  "recipient": "t.webb@gs2partnership.com",
+  "recipient_sha256": "9a00bceaf6c6b521ee0dd8cc8706a0093ee5da245044033b822e2fed847b92ad",
+  "schema": 2,
+  "status": "pending",
+  "subject_sha256": "8dd4bbf4747db2208ce07814b6fa08a243744a133b1535e6dbde9f2d3cfbb1e7"
+}
