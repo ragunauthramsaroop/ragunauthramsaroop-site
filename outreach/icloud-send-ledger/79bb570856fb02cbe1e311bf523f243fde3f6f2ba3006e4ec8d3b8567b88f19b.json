@@ -3,6 +3,7 @@
   "batch_id": "2026-10-10-fifth40-17-vanguard-energy",
   "body_sha256": "e27d01c3ee2f13bfd5d8dd1677178774398e7170d538f3f0ac9cdd8f69296f58",
   "created_at": "2026-10-10T18:52:53+00:00",
+  "delivery_status": "pending_bounce_check",
   "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
   "github_run_attempt": "1",
   "github_run_id": "38077548490",
@@ -12,6 +13,9 @@
   "recipient": "jake@vanguard-energypartners.com",
   "recipient_sha256": "79bb570856fb02cbe1e311bf523f243fde3f6f2ba3006e4ec8d3b8567b88f19b",
   "schema": 2,
-  "status": "pending",
+  "sent_at": "2026-10-10T18:52:54+00:00",
+  "smtp_accepted_at": "2026-10-10T18:52:54+00:00",
+  "smtp_message_id": "<179165837433.2472.3171628069756316063@icloud.com>",
+  "status": "smtp_accepted",
   "subject_sha256": "b09594bb2cea7f904a667d3bc152f50e724727336c2e861240cf989857b81fe9"
 }
