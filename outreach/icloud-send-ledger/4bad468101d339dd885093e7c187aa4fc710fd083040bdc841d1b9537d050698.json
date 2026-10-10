@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "a21ee68a6cf347a1b1ebee4234f8c11a54ea6f80cfbdf0f0269e3f965705cd62",
+  "batch_id": "2026-10-10-n2growth-top40-completion",
+  "body_sha256": "5463e200ad658808a99efd98a90a96f6c615b0ada809dc68710aff18d59feea0",
+  "created_at": "2026-10-10T05:22:25+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "38027268403",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/2026-10-10-n2growth-top40-completion.json",
+  "payload_sha256": "808524011957e77f82869ff39693e460baa494d27a1123b83400ebc207abae25",
+  "recipient": "r.pitsika@n2growth.com",
+  "recipient_sha256": "4bad468101d339dd885093e7c187aa4fc710fd083040bdc841d1b9537d050698",
+  "schema": 2,
+  "status": "pending",
+  "subject_sha256": "53c63a021d27284789c10a7087cf060011e27ce06e7431e342a9179357e37706"
+}
