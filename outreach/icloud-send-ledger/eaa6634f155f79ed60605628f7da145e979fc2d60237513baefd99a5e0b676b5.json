@@ -3,6 +3,7 @@
   "batch_id": "2026-10-10-fifth40-041-intelligent-employment",
   "body_sha256": "c6b21078a758068f034216d22c9b8e477a4e4a3f995cd50a62f96073fb0b243e",
   "created_at": "2026-10-10T18:21:45+00:00",
+  "delivery_status": "pending_bounce_check",
   "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
   "github_run_attempt": "1",
   "github_run_id": "38075441015",
@@ -12,6 +13,9 @@
   "recipient": "info@intelligentemployment.com",
   "recipient_sha256": "eaa6634f155f79ed60605628f7da145e979fc2d60237513baefd99a5e0b676b5",
   "schema": 2,
-  "status": "pending",
+  "sent_at": "2026-10-10T18:21:46+00:00",
+  "smtp_accepted_at": "2026-10-10T18:21:46+00:00",
+  "smtp_message_id": "<179165650653.2448.17095976579284312995@icloud.com>",
+  "status": "smtp_accepted",
   "subject_sha256": "66118796bddecfa6e432d758ec8a0ef69ee9f59523954075a2658333b13acf3b"
 }
