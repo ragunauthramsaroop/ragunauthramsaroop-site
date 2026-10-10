@@ -3,6 +3,7 @@
   "batch_id": "2026-10-10-sixth40-39-inzito-partnership",
   "body_sha256": "7aeb572854ee3dc306cfebb6e2817579deb2bbf18c5110ae361bbc7fe5b19123",
   "created_at": "2026-10-10T20:02:06+00:00",
+  "delivery_status": "pending_bounce_check",
   "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
   "github_run_attempt": "1",
   "github_run_id": "38082119798",
@@ -12,6 +13,9 @@
   "recipient": "carol.leonard@inzito.com",
   "recipient_sha256": "f0d8283d92028e2a5b873aee423a7a96124d8e02ad39415094c31700cd48059f",
   "schema": 2,
-  "status": "pending",
+  "sent_at": "2026-10-10T20:02:07+00:00",
+  "smtp_accepted_at": "2026-10-10T20:02:07+00:00",
+  "smtp_message_id": "<179166252725.2414.1152507671436266430@icloud.com>",
+  "status": "smtp_accepted",
   "subject_sha256": "10ec77aa7ace66ca04aa2cd2c3bb3a2f4f13362097a32b5fae6853f6f84f9436"
 }
