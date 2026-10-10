@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "b5da3c2812436ea104fba69eccbdbcde1471ae3a649848acc826c6fbd2e77528",
+  "batch_id": "2026-10-10-fourth40-wave-04",
+  "body_sha256": "2042fd963123d10c99fa92cd82039cf4276b34ba17f39cfe8bda35f4d6716600",
+  "created_at": "2026-10-10T15:12:50+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "38062678321",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/2026-10-10-fourth40-wave-04.json",
+  "payload_sha256": "c4a5cb01d2219a5872692cf46a6afddb301fd12df244dbc3a2ec452df0d4aaf0",
+  "recipient": "careers@partnerexecutive.com.au",
+  "recipient_sha256": "4c8065bcedffdccb8393a6f54694de04dbc769c693840655bd0baa5422daba8f",
+  "schema": 2,
+  "status": "pending",
+  "subject_sha256": "b0b7c73f6904c1370615e6ecfc7d92ebf93d0a7515e3baf1d26d273efa915910"
+}
