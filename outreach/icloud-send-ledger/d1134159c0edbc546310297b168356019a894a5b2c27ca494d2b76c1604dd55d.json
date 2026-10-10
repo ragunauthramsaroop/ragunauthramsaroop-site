@@ -3,6 +3,7 @@
   "batch_id": "2026-10-10-fourth40-wave-15",
   "body_sha256": "b207644fdc94e84446067cbaa8bb9dcff9f2114930421d66c9f9fca7aa97951b",
   "created_at": "2026-10-10T15:30:40+00:00",
+  "delivery_status": "pending_bounce_check",
   "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
   "github_run_attempt": "1",
   "github_run_id": "38063885878",
@@ -12,6 +13,9 @@
   "recipient": "info@digirecruitx.com",
   "recipient_sha256": "d1134159c0edbc546310297b168356019a894a5b2c27ca494d2b76c1604dd55d",
   "schema": 2,
-  "status": "pending",
+  "sent_at": "2026-10-10T15:30:42+00:00",
+  "smtp_accepted_at": "2026-10-10T15:30:42+00:00",
+  "smtp_message_id": "<179164624268.2452.7691639839310338543@icloud.com>",
+  "status": "smtp_accepted",
   "subject_sha256": "e5a20541e5709870c09d846135cf411864cf1eaded81372055883d4e1eb37ca3"
 }
