@@ -3,6 +3,7 @@
   "batch_id": "2026-10-10-fifth40-056-ktc",
   "body_sha256": "c4c5e682df29ae6dba694348fb0f13df576d18f17132b6258a3ade7711a43793",
   "created_at": "2026-10-10T18:30:09+00:00",
+  "delivery_status": "pending_bounce_check",
   "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
   "github_run_attempt": "1",
   "github_run_id": "38075996980",
@@ -12,6 +13,9 @@
   "recipient": "sales@ktcsearch.com",
   "recipient_sha256": "2c4bef1824faf5f62970c76495d298c472757151de9cbc36c05250e41fc6af87",
   "schema": 2,
-  "status": "pending",
+  "sent_at": "2026-10-10T18:30:12+00:00",
+  "smtp_accepted_at": "2026-10-10T18:30:12+00:00",
+  "smtp_message_id": "<179165701217.2440.15394381014196000437@icloud.com>",
+  "status": "smtp_accepted",
   "subject_sha256": "34d35a34dd66f13558cc9a01965b2429c2e926b1618ebdf3d4435d0bbfd82f76"
 }
