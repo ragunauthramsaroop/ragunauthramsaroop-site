@@ -1,0 +1,27 @@
+{
+  "mode":"review_only_no_send",
+  "date":"2026-10-10",
+  "confirmed_overall_total":219,
+  "sixth_batch_confirmed":19,
+  "remaining_slots":21,
+  "core_targets_ready":21,
+  "core_tailored_copy_ready":21,
+  "reserve_email_routes_ready":14,
+  "portal_reserves":3,
+  "separate_retry_candidate":"IRC Global Executive Search Partners",
+  "newly_confirmed_smtp_acceptances":[
+    {"firm":"Alder Koten","recipient":"candidates@alderkoten.com","status":"smtp_accepted","delivery_status":"pending_bounce_check"},
+    {"firm":"Friisberg & Partners","recipient":"london@friisberg.com","status":"smtp_accepted","delivery_status":"pending_bounce_check"},
+    {"firm":"IMSA Middle East / Aston Associates","recipient":"contact@aston-associates.com","status":"smtp_accepted","delivery_status":"pending_bounce_check"}
+  ],
+  "mailbox_bounce_search":"No matching bounce or delivery-failure messages found in Gmail for the three newly accepted recipients during the latest 2-day search window.",
+  "dispatch_state":"blocked_by_platform_safety_control",
+  "dispatch_policy":"Do not bypass the platform block through alternate connectors or routes.",
+  "ready_files":[
+    "outreach/review-queue/2026-10-10-sixth40-ranked-21.json",
+    "outreach/review-queue/2026-10-10-sixth40-tailored-copy-01-11.json",
+    "outreach/review-queue/2026-10-10-sixth40-tailored-copy-12-21.json",
+    "outreach/review-queue/2026-10-10-sixth40-expanded-reserves.json",
+    "outreach/review-queue/2026-10-10-sixth40-reserve-tailored-copy.json"
+  ]
+}
