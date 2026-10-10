@@ -3,6 +3,7 @@
   "batch_id": "2026-10-10-fifth40-27-mycelium",
   "body_sha256": "8b710e11e57f7f84fe84d5b2c22b16d62210b6b6e40439fda5466b68bc527d3f",
   "created_at": "2026-10-10T18:59:28+00:00",
+  "delivery_status": "pending_bounce_check",
   "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
   "github_run_attempt": "1",
   "github_run_id": "38077975000",
@@ -12,6 +13,9 @@
   "recipient": "hello@mycelium.ae",
   "recipient_sha256": "ad7450ed0b945b4d2f4de0492dfe974e44248adde28d8197f2fd27a42907d3ae",
   "schema": 2,
-  "status": "pending",
+  "sent_at": "2026-10-10T18:59:29+00:00",
+  "smtp_accepted_at": "2026-10-10T18:59:29+00:00",
+  "smtp_message_id": "<179165876953.2451.1158810417024361706@icloud.com>",
+  "status": "smtp_accepted",
   "subject_sha256": "34d420561c20af866be8fa449f08f2c6dd5b9a22de822c586b328b67a331b3fa"
 }
