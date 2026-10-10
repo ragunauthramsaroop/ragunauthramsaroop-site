@@ -3,6 +3,7 @@
   "batch_id": "2026-10-10-fifth40-02-tarka",
   "body_sha256": "211cc7ad170d2d739bb9b344800411436749051ad923c0adfed787f71319b073",
   "created_at": "2026-10-10T18:39:12+00:00",
+  "delivery_status": "pending_bounce_check",
   "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
   "github_run_attempt": "1",
   "github_run_id": "38076628863",
@@ -12,6 +13,9 @@
   "recipient": "contact@tarka-associates.com",
   "recipient_sha256": "15b53a6fcaa9adc3d2f57b4f9ab18c68b15f24785e31c32dd3d7a31f7e1cb9a5",
   "schema": 2,
-  "status": "pending",
+  "sent_at": "2026-10-10T18:39:14+00:00",
+  "smtp_accepted_at": "2026-10-10T18:39:14+00:00",
+  "smtp_message_id": "<179165755392.2537.15538104438024441650@icloud.com>",
+  "status": "smtp_accepted",
   "subject_sha256": "567a67a93c51e1cd7c57cacc3261e72f58c50915fa5c3a0170631362028ca012"
 }
