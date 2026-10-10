@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "f48300eab51558efaa8cda8be1f09b2ac64d7e1ff670c5116374ed5496024a7b",
+  "batch_id": "2026-10-10-third40-wave-07",
+  "body_sha256": "2cb9d66d326c6640f215e0e6b8a29aa0c278b91e8c4f118cd9d63ae6d2c9d3d4",
+  "created_at": "2026-10-10T14:01:05+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "38057925288",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/2026-10-10-third40-wave-07.json",
+  "payload_sha256": "bba69a1c2b14f3f6e4b1eb08322fa7c8313519d571a79e3649e0f048dcf70b9f",
+  "recipient": "helen@embstalent.co.uk",
+  "recipient_sha256": "80fa5467bc267ade4e133e841fd520c30ed24bf45ba365c7c50f0ee369430163",
+  "schema": 2,
+  "status": "pending",
+  "subject_sha256": "b1ae5987a6d3941e81742d4ac8ca4a14a9b4cb78405459c002d57ff79507d7b3"
+}
