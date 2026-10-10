@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "2c613f0016d80c9cfe1228f2b25e052c3b030d88c5fdfd936ca9c4bfd5fd27e2",
+  "batch_id": "2026-10-10-fifth40-021-heron",
+  "body_sha256": "46c1aaa948fa4cdac1a8ad5abc7f94d556185df3eb41e6d85e25e2348d7249cd",
+  "created_at": "2026-10-10T18:15:00+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "38074999567",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/2026-10-10-fifth40-021-heron.json",
+  "payload_sha256": "8f8f9929adf6f5599024c631c6bc3def009b6350580cd80998b65211c818c729",
+  "recipient": "thaddeustan@heron-search.com",
+  "recipient_sha256": "e90c4dc3b71ccc6db19e6164e754f2af07110ff577744fdb76e2b8e3a304c639",
+  "schema": 2,
+  "status": "pending",
+  "subject_sha256": "4e138f3699dea9179b1b0f2f8cf6350ca36cc5ea5fd81a7808a096b9bddc1860"
+}
