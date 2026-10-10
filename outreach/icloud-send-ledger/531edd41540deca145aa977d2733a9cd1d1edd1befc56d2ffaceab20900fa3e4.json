@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "0b6f3e85d115f0af8058beea2c7a2e5bd360a0a9d0937a33e39f5755c2a18530",
+  "batch_id": "2026-10-10-sixth40-29-drd-group",
+  "body_sha256": "b5d5284b17f5c0add4d55b2621dc2d5757ee85926ebb4fb4c700803b32fce4b7",
+  "created_at": "2026-10-10T20:00:01+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "38081970438",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/2026-10-10-sixth40-29-drd-group.json",
+  "payload_sha256": "5b146a5a7881390a687d93468fd57f5c17d8b85558bdfd82c4b6dded1b454ba7",
+  "recipient": "recruitment@drdgroup.com.au",
+  "recipient_sha256": "531edd41540deca145aa977d2733a9cd1d1edd1befc56d2ffaceab20900fa3e4",
+  "schema": 2,
+  "status": "pending",
+  "subject_sha256": "6158a927013fea566535a7f8a94ba198f58e0b6d9f03d5e2ed0eb9748cd65806"
+}
