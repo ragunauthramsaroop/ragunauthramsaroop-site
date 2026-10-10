@@ -3,6 +3,7 @@
   "batch_id": "2026-10-10-third40-wave-02",
   "body_sha256": "45a0bfb6df57b7bed09b4f00f0a6991c36e16839f82765bec1fa8ae9bd1baed8",
   "created_at": "2026-10-10T13:51:12+00:00",
+  "delivery_status": "pending_bounce_check",
   "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
   "github_run_attempt": "1",
   "github_run_id": "38057309618",
@@ -12,6 +13,9 @@
   "recipient": "hr@apgroupglobal.com",
   "recipient_sha256": "841deaeaaa491df5bff19767d4be9753fa55e61ec594aaa46e8550c312797ff9",
   "schema": 2,
-  "status": "pending",
+  "sent_at": "2026-10-10T13:51:13+00:00",
+  "smtp_accepted_at": "2026-10-10T13:51:13+00:00",
+  "smtp_message_id": "<179164027321.2231.18335635184709415704@icloud.com>",
+  "status": "smtp_accepted",
   "subject_sha256": "2f5e1fc255f645e44fccae604f9d3182493ffe802ed06f5629aac0b73f057b8d"
 }
