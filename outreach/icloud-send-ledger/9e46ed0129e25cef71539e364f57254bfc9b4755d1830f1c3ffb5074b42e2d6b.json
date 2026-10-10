@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "452ced3f34a2fe4871e6c4447c2839dded8dfbec55c91f231a45f78d5abd0756",
+  "batch_id": "2026-10-10-fourth40-verde",
+  "body_sha256": "929799684b8ea4cd7bffa6fde9033c1d880f5c7d9c694a56e3c13f21ec9082ef",
+  "created_at": "2026-10-10T14:46:16+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "38060922284",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/2026-10-10-fourth40-verde.json",
+  "payload_sha256": "9f4e444a3927e9bb8a33eb805d6f67193d8ff1dcba0a93f6cfed9e2364754dd5",
+  "recipient": "wayne.smith@vprec.com",
+  "recipient_sha256": "9e46ed0129e25cef71539e364f57254bfc9b4755d1830f1c3ffb5074b42e2d6b",
+  "schema": 2,
+  "status": "pending",
+  "subject_sha256": "b4b9d14b04c3a9d50b9bf0d7dfd2227cce04749c6cd52457eae44694fd0890b1"
+}
