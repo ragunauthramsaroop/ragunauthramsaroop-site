@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "470186dccd287ec3888cca7e3fe5d7ae875bf63d7c60c353a6be09bd293fca24",
+  "batch_id": "2026-10-10-third40-wave-01",
+  "body_sha256": "b3815b1075459c60727989fc770f47048701083034a7ff23805aa9009abe6ea7",
+  "created_at": "2026-10-10T13:47:40+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "38057079436",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/2026-10-10-third40-wave-01.json",
+  "payload_sha256": "5f60f24c3b0781f78b71c3f6d0a2b43dc2bd28cb5b0b6fe64dfa67b41e22b279",
+  "recipient": "hello@sustii.com",
+  "recipient_sha256": "78bd1bbbc4df1f21b4fe3bdf49073fe5d8236439c5947d2213e04c76072d0064",
+  "schema": 2,
+  "status": "pending",
+  "subject_sha256": "15a0cd30e4141f43f30f67baf12bace9e36d2f2b65a7fb04d96a8152afb974da"
+}
