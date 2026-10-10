@@ -3,6 +3,7 @@
   "batch_id": "2026-10-10-fifth40-35-volta-executive",
   "body_sha256": "ec1b4aa9c31f5c48d6a77c841be8477acbf1cb0f3673e3b6ad505d3d7e02b38b",
   "created_at": "2026-10-10T19:37:37+00:00",
+  "delivery_status": "pending_bounce_check",
   "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
   "github_run_attempt": "1",
   "github_run_id": "38080527196",
@@ -12,6 +13,9 @@
   "recipient": "contact@volta-executive.com",
   "recipient_sha256": "8f5518fd27e51ea59246713e249b4a84a14b27694c1951d8484fda954b1a475f",
   "schema": 2,
-  "status": "pending",
+  "sent_at": "2026-10-10T19:37:38+00:00",
+  "smtp_accepted_at": "2026-10-10T19:37:38+00:00",
+  "smtp_message_id": "<179166105821.2461.14275315850873370558@icloud.com>",
+  "status": "smtp_accepted",
   "subject_sha256": "afb4de5a40f4a96644975222cd907bb41fd41f310a58014df977f181f4a0941b"
 }
