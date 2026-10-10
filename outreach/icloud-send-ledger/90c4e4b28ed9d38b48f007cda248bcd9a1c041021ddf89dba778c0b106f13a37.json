@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "03e4fe6c58cfd602f7658e75595130d456851ddb9e533aca29a6f987afc20532",
+  "batch_id": "2026-10-10-sixth40-24-green-era-solutions",
+  "body_sha256": "56810b6898893b3b1e203ebdbf977fe68527cd9f6acb51b3472d6b55a039e6c5",
+  "created_at": "2026-10-10T19:58:58+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "38081905900",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/2026-10-10-sixth40-24-green-era-solutions.json",
+  "payload_sha256": "84988893505264bdd83cc7fff6ae59dac88bb6f429eab8442ac58dd1a382a204",
+  "recipient": "matthew@green-erasolutions.com",
+  "recipient_sha256": "90c4e4b28ed9d38b48f007cda248bcd9a1c041021ddf89dba778c0b106f13a37",
+  "schema": 2,
+  "status": "pending",
+  "subject_sha256": "d4071c323a8b83540c376b184190b9bd0e416519c7ac8c31c7ffbf35253aa8db"
+}
