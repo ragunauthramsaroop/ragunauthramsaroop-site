@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "9370a4c38fc30c08053c87d0e15c58b07df297eaec872089ed95603b25f4855f",
+  "batch_id": "2026-10-10-third40-wave-12",
+  "body_sha256": "80556feb9b4026407e28259909fe497d7064e688d742e72bdfa4b240d2bb4f68",
+  "created_at": "2026-10-10T14:08:20+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "38058411584",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/2026-10-10-third40-wave-12.json",
+  "payload_sha256": "7c35790c5fa14522ee42cb684c1d58a03439da61c54eece511aba8a19b4169df",
+  "recipient": "mahmood@ascendia-group.com",
+  "recipient_sha256": "4390bb5d14af910906998e24da983d7202e85966f9c3d109a764395bae8c8005",
+  "schema": 2,
+  "status": "pending",
+  "subject_sha256": "f91dc34d347c36abd2fa3daed357ae37166ea841b0bd9453cb420c2d280a1c5b"
+}
