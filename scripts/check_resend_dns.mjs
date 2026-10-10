@@ -10,8 +10,10 @@ export function cleanTXT(value){
   return String(value??"").replace(/"\s+"/g,"").replace(/^"|"$/g,"").replace(/\\"/g,'"').trim();
 }
 export function normalizedName(v){return String(v??"").trim().toLowerCase().replace(/\.$/,"")}
+export function recordFqdn(host){return host==="@"||host===""?domain:host+"."+domain}
 export function matchesRecord(record,answers){
-  const list=(answers??[]).filter(x=>normalizedName(x.name)===normalizedName(record.host+"."+domain));
+  const fqdn=recordFqdn(record.host);
+  const list=(answers??[]).filter(x=>normalizedName(x.name)===normalizedName(fqdn));
   if(record.type==="TXT")return list.some(x=>x.type===16&&cleanTXT(x.data)===record.value);
   if(record.type==="CNAME")return list.some(x=>x.type===5&&normalizedName(x.data)===normalizedName(record.value));
   if(record.type==="MX")return list.some(x=>{
@@ -41,7 +43,7 @@ async function query(name,type){
 export async function audit(){
   const results=[];
   for(const record of CONFIG.required){
-    const queryName=record.host+"."+domain;
+    const queryName=recordFqdn(record.host);
     try{
       const r=await query(queryName,record.type);
       results.push({...record,name:queryName,present:matchesRecord(record,r.answer),observed:r.answer.map(x=>({type:x.type,data:x.data})),resolver:r.source});
