@@ -1,0 +1,31 @@
+{
+  "mode": "review_only_no_send",
+  "date": "2026-10-10",
+  "confirmed_overall_total": 219,
+  "sixth_batch_confirmed": 19,
+  "notes": "Dispatch is intentionally disabled in this file. It is a research and duplicate-audit queue only.",
+  "confirmed_replacements": [
+    {"firm":"Alder Koten","recipient":"candidates@alderkoten.com","status":"smtp_accepted"},
+    {"firm":"Friisberg & Partners","recipient":"london@friisberg.com","status":"smtp_accepted"},
+    {"firm":"IMSA Middle East / Aston Associates","recipient":"contact@aston-associates.com","status":"smtp_accepted"}
+  ],
+  "excluded": [
+    {"firm":"Madison Pearl","recipient":"info@madisonpearl.com","reason":"existing GitHub send-ledger claim / duplicate block"},
+    {"firm":"Cornerstone International Group","recipient":"contactus@cornerstone-group.com","reason":"company-level prior sent record found in Gmail"},
+    {"firm":"Perrett Laver","recipient":"mail@perrettlaver.com","reason":"prior sent record found in Gmail"},
+    {"firm":"LHH Executive Search","reason":"prior sent record found in Gmail"}
+  ],
+  "unexecuted_retry_candidate": [
+    {"firm":"IRC Global Executive Search Partners","recipient":"info@ircsearchpartners.com","status":"original workflow cancelled before execution"}
+  ],
+  "fresh_audited_queue": [
+    {"firm":"Flow Talent","recipient":"hello@flowtalent.ae","priority":"GCC / UAE","gmail_sent_match":false,"github_record_match":false},
+    {"firm":"Lutech Resources","recipient":"Lutech.uk@LutechResources.com","priority":"energy / renewables / construction","gmail_sent_match":false,"github_record_match":false},
+    {"firm":"Ropella 360","recipient":"info@ropella.com","priority":"industrial / materials executive search","gmail_sent_match":false,"github_record_match":false},
+    {"firm":"The Taplow Group","recipient":"mfirth@taplowgroup.com","priority":"industrial / international expansion / Middle East","gmail_sent_match":false,"github_record_match":false},
+    {"firm":"The Good Search","recipient":"info@tgsus.com","priority":"retained executive search","gmail_sent_match":false,"github_record_match":false},
+    {"firm":"Kennedy Executive Search","recipient":"info@kennedyexecutive.com","priority":"international executive search","gmail_sent_match":false,"github_record_match":false},
+    {"firm":"Hawthorn Blue","recipient":"victoria.storer@hawthornblue.co.uk","priority":"executive search","gmail_sent_match":false,"github_record_match":false},
+    {"firm":"Kingsley Gate","recipient":"mbergen@kingsleygate.com","priority":"global markets / industrial / cross-border","gmail_sent_match":false,"github_record_match":false}
+  ]
+}
