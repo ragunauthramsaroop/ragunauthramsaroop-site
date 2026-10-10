@@ -3,6 +3,7 @@
   "batch_id": "2026-10-10-fifth40-047-miramar",
   "body_sha256": "17525dd3484ce5093348d6f0ec3df727a2e3bfb7f56fd405c47fd01c16a782d6",
   "created_at": "2026-10-10T18:26:53+00:00",
+  "delivery_status": "pending_bounce_check",
   "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
   "github_run_attempt": "1",
   "github_run_id": "38075792199",
@@ -12,6 +13,9 @@
   "recipient": "richard.pitts@miramar.global",
   "recipient_sha256": "b822adb12fe8ef257d62bb60280b6ba99c4d6a3d5e490bcfb8e5b8a86235c8a0",
   "schema": 2,
-  "status": "pending",
+  "sent_at": "2026-10-10T18:26:54+00:00",
+  "smtp_accepted_at": "2026-10-10T18:26:54+00:00",
+  "smtp_message_id": "<179165681423.2430.14527718102092644923@icloud.com>",
+  "status": "smtp_accepted",
   "subject_sha256": "91c60797aa5fa6a1bdea5e65da806b686da0696a9d2c4fb9d92636936e4ea7da"
 }
