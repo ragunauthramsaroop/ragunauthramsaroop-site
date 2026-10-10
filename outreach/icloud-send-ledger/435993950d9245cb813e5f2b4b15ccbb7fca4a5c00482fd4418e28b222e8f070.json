@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "765b4999778718633641f7fcaff90a411b787bd1273e5b2e3b5d11024bab2b15",
+  "batch_id": "2026-10-10-fifth40-025-selah",
+  "body_sha256": "e6c7a9513be7a38b310280df50a5cf40d72149c902e16a978a0bfd9acdf68051",
+  "created_at": "2026-10-10T18:15:57+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "38075056708",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/2026-10-10-fifth40-025-selah.json",
+  "payload_sha256": "f9bce7722c915b786d5b753275e688ad5bc475a2b74786a65b60d4fbfdb20e34",
+  "recipient": "hello@selahstrategic.com",
+  "recipient_sha256": "435993950d9245cb813e5f2b4b15ccbb7fca4a5c00482fd4418e28b222e8f070",
+  "schema": 2,
+  "status": "pending",
+  "subject_sha256": "6243fb5bbec5f9cd9765df04d8d1befa48b9e2f47a1c0e07a16abe11ca4f4c9a"
+}
