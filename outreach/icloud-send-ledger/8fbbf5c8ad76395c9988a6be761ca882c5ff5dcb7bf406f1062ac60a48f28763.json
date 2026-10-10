@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "beca578544ea9fcae5ec51f62670258306ce9a99dca7df3051165ba579f43529",
+  "batch_id": "2026-10-10-fifth40-016-mint",
+  "body_sha256": "5a6ea60fcaa8c9e1a797eff72bb1d4346353751f827b08a586fe1f8c1b9bf608",
+  "created_at": "2026-10-10T18:13:30+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "38074898148",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/2026-10-10-fifth40-016-mint.json",
+  "payload_sha256": "9ebfa2cde877e269297532a480fdec73af5ff2e37a05fc5f16b1cefbf0215079",
+  "recipient": "e.ireland@mintselection.com",
+  "recipient_sha256": "8fbbf5c8ad76395c9988a6be761ca882c5ff5dcb7bf406f1062ac60a48f28763",
+  "schema": 2,
+  "status": "pending",
+  "subject_sha256": "5198dabb8661ed83c14a26674e64944692ea41647aeaf833d322c5ef26bbb7d2"
+}
