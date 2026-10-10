@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "737ccd7d78181f2cfc7a70bf51146bd090529fada4c5722d71cac1a9c29345be",
+  "batch_id": "2026-10-10-fifth40-038-principal-search",
+  "body_sha256": "430710c9a1323c341393c4b446644f36575f3b31499067358ea66f44e1bf27a9",
+  "created_at": "2026-10-10T18:21:00+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "38075399779",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/2026-10-10-fifth40-038-principal-search.json",
+  "payload_sha256": "c63a765b74f6dc2bd5ecc7152294147cdf301715763c1c2ba56c484b9960e370",
+  "recipient": "psl@principalsearch.com",
+  "recipient_sha256": "70c86049f33fcbe2a496bbba682221c4b74ae0ad45771540c87e1a9d89833a3a",
+  "schema": 2,
+  "status": "pending",
+  "subject_sha256": "f494f2eb1df5046e80e3965fa908c8923959b01275de45651d650afca24f8224"
+}
