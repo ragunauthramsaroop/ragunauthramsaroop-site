@@ -1,0 +1,13 @@
+{
+  "mode":"review_only_no_send",
+  "date":"2026-10-10",
+  "purpose":"Standardize the professional sender identity for all unsent sixth-batch outreach without triggering dispatch.",
+  "from":"Ragunauth Ramsaroop <executive@ragunauthramsaroop.com>",
+  "reply_to":"ragunauthramsaroop@icloud.com",
+  "attachment_filename":"Ragunauth_Ramsaroop_ATS_Executive_Resume_Ceiling_2026.pdf",
+  "applies_to":"all 21 remaining ranked sixth-batch targets plus promoted clean reserves",
+  "body_signature_email":"executive@ragunauthramsaroop.com",
+  "counting_rule":"Count only confirmed SMTP acceptance as sent.",
+  "dispatch_state":"blocked_by_platform_safety_control",
+  "no_bypass":true
+}
