@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "7bc518295a9972b7b0632f46252c0aba80424a4c53ebfe51b4928f9151166186",
+  "batch_id": "2026-10-10-fourth40-sterling-rowe",
+  "body_sha256": "f9b827aeeb6e5bd92f76e974655b1d5f1e225051db981cb6e38481abaf97ebcf",
+  "created_at": "2026-10-10T14:56:24+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "38061586738",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/2026-10-10-fourth40-sterling-rowe.json",
+  "payload_sha256": "a8f38baede971d38f415cce115ec7c4b20947a409d22df9e7b734ae26a71a9f8",
+  "recipient": "hello@sterlingnrowe.com",
+  "recipient_sha256": "f0a9a04e4d38404b218b309d32f21b62ef368d7375d8dd49eb9f13385702191d",
+  "schema": 2,
+  "status": "pending",
+  "subject_sha256": "7b24e9c5b00dc6df46529bf8251d425df28b4ebbd36f6b41a8253af060bf0793"
+}
