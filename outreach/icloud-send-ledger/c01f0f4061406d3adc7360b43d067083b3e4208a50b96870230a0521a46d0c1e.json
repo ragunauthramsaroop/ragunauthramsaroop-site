@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "839c6bedd6d2e9448d65f4cdcac21350196fc2903205aceef70916795b898336",
+  "batch_id": "2026-10-10-fourth40-envirotech",
+  "body_sha256": "c4cc966cb1e43dc5e5247ac332a07f0ed1559cbadf0dd415f647b6cfa8f9c22b",
+  "created_at": "2026-10-10T14:51:04+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "38061232577",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/2026-10-10-fourth40-envirotech.json",
+  "payload_sha256": "b1fd01b35cdba2b17ccafe16233819e303d6e595083f0b574389d197b63fb2d1",
+  "recipient": "v.elliott@envirotechtalent.com",
+  "recipient_sha256": "c01f0f4061406d3adc7360b43d067083b3e4208a50b96870230a0521a46d0c1e",
+  "schema": 2,
+  "status": "pending",
+  "subject_sha256": "1d372256a0323ec46a5536a21e7c8322f4f646838b54c3382aabf130768f5136"
+}
