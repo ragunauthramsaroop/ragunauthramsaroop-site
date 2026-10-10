@@ -4,7 +4,8 @@
   "confirmed_overall_total": 219,
   "sixth_batch_confirmed": 19,
   "remaining_slots": 21,
-  "notes": "Dispatch is intentionally disabled in this file. It is a research and duplicate-audit queue only.",
+  "fresh_email_routes": 23,
+  "notes": "Dispatch remains disabled in this review manifest. It is a research, contact-verification and duplicate-audit queue only.",
   "confirmed_replacements": [
     {"firm":"Alder Koten","recipient":"candidates@alderkoten.com","status":"smtp_accepted"},
     {"firm":"Friisberg & Partners","recipient":"london@friisberg.com","status":"smtp_accepted"},
@@ -16,7 +17,19 @@
     {"firm":"Perrett Laver","recipient":"mail@perrettlaver.com","reason":"prior sent record found in Gmail"},
     {"firm":"LHH Executive Search","reason":"prior sent record found in Gmail"},
     {"firm":"Robert Walters","reason":"multiple prior sent records found in Gmail"},
-    {"firm":"Mackenzie Jones Middle East","recipient":"info@mackenziejones.com","reason":"prior sent record found in Gmail"}
+    {"firm":"Mackenzie Jones Middle East","recipient":"info@mackenziejones.com","reason":"prior sent record found in Gmail"},
+    {"firm":"Future Talent Arabia","recipient":"recruit@futuretalentarabia.com","reason":"prior sent record found in Gmail"},
+    {"firm":"ISG International Service Group","reason":"prior company-level sent record found in Gmail"},
+    {"firm":"BWP Ltd","reason":"prior company-level sent record found in Gmail"},
+    {"firm":"Wise&Miller","recipient":"info@wiseandmiller.com","reason":"prior sent record found in Gmail"},
+    {"firm":"Morgan Philips","recipient":"isli.benamar@morganphilips.com","reason":"prior sent record found in Gmail"},
+    {"firm":"LC Enera Talent","recipient":"contact@lcenera.com","reason":"prior sent record found in Gmail"},
+    {"firm":"Templeton Global Search","recipient":"paul@templetonglobalsearch.com","reason":"prior sent record found in Gmail"},
+    {"firm":"HC Group Dubai","recipient":"dubai@hcgroup.global","reason":"prior sent record found in Gmail"},
+    {"firm":"EWKP","recipient":"info@ewkp.net","reason":"prior sent record found in Gmail"},
+    {"firm":"GRG","recipient":"info@grgmea.com","reason":"prior sent record found in Gmail"},
+    {"firm":"Inter1 Resources","recipient":"info@inter1resources.com","reason":"multiple prior sent records found in Gmail"},
+    {"firm":"Global Human Capital Group","recipient":"info@globalhumancapitalgroup.com","reason":"prior sent record found in Gmail"}
   ],
   "unexecuted_retry_candidate": [
     {"firm":"IRC Global Executive Search Partners","recipient":"info@ircsearchpartners.com","status":"original workflow cancelled before execution"}
@@ -38,7 +51,13 @@
     {"firm":"Cooper Fitch","recipient":"jkhabbaz@cooperfitch.ae","priority":"GCC CEO / executive search / public sector advisory","gmail_sent_match":false,"github_record_match":false},
     {"firm":"Beilby Downing Teal","recipient":"vvieilledent@beilbydt.com.au","priority":"mining / oil and gas / executive search","gmail_sent_match":false,"github_record_match":false},
     {"firm":"Derwent Search","recipient":"perth@derwentsearch.com.au","priority":"executive search / Australia / resources market","gmail_sent_match":false,"github_record_match":false},
-    {"firm":"Linum Consult","recipient":"info@linumconsult.com","priority":"mining / energy / construction / international executive search","gmail_sent_match":false,"github_record_match":false}
+    {"firm":"Linum Consult","recipient":"info@linumconsult.com","priority":"mining / energy / construction / international executive search","gmail_sent_match":false,"github_record_match":false},
+    {"firm":"Black Gold Recruitment","recipient":"search@blackgoldrecruitment.com","priority":"global energy executive search / Dubai","gmail_sent_match":false,"github_record_match":false},
+    {"firm":"PMC","recipient":"candidates@pmc.company","priority":"UAE energy / executive search","gmail_sent_match":false,"github_record_match":false},
+    {"firm":"Refined Global Recruitment","recipient":"hr@refinedglobalrecruitment.com","priority":"Dubai / GCC / metals-mining / energy / executive search","gmail_sent_match":false,"github_record_match":false},
+    {"firm":"JobsKey Search & Selection","recipient":"contact@jobskeysearch.com","priority":"Saudi Arabia / Vision 2030 / energy / infrastructure / senior appointments","gmail_sent_match":false,"github_record_match":false},
+    {"firm":"Maseer Talent","recipient":"info@maseergroup.com","priority":"UAE / energy / industry / infrastructure / executive search","gmail_sent_match":false,"github_record_match":false},
+    {"firm":"Norlynx Group","recipient":"recruitment@norlynx-group.com","priority":"Dubai / energy / commodities / corporate functions","gmail_sent_match":false,"github_record_match":false}
   ],
   "portal_only_candidates": [
     {"firm":"Erevena","route":"official next-role enquiry form","priority":"Dubai / global leadership"},
