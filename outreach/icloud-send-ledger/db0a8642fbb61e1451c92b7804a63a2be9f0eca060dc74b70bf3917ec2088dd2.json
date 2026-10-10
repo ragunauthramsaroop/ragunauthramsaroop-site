@@ -3,6 +3,7 @@
   "batch_id": "2026-10-10-fourth40-mpowering-people",
   "body_sha256": "4372ce30c4d987e27ee46a5d3ea01478b25612dffaeeac57bccee4427a919906",
   "created_at": "2026-10-10T15:04:07+00:00",
+  "delivery_status": "pending_bounce_check",
   "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
   "github_run_attempt": "1",
   "github_run_id": "38062099354",
@@ -12,6 +13,9 @@
   "recipient": "nick@mpowering-people.com",
   "recipient_sha256": "db0a8642fbb61e1451c92b7804a63a2be9f0eca060dc74b70bf3917ec2088dd2",
   "schema": 2,
-  "status": "pending",
+  "sent_at": "2026-10-10T15:04:09+00:00",
+  "smtp_accepted_at": "2026-10-10T15:04:09+00:00",
+  "smtp_message_id": "<179164464875.2364.13853958082828008210@icloud.com>",
+  "status": "smtp_accepted",
   "subject_sha256": "db099b0721457bae399748263b72f7d9a14ab9eece37f2b43189fa8d6c1054c6"
 }
