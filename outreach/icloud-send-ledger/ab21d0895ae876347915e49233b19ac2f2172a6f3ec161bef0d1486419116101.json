@@ -3,6 +3,7 @@
   "batch_id": "2026-10-10-fifth40-011-zenith",
   "body_sha256": "cf5854d133b9b1dd115a57ee79686a906b044600f2f1ea7f7d243462c992e337",
   "created_at": "2026-10-10T18:11:54+00:00",
+  "delivery_status": "pending_bounce_check",
   "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
   "github_run_attempt": "1",
   "github_run_id": "38074791834",
@@ -12,6 +13,9 @@
   "recipient": "bernard@zenithsearch.com",
   "recipient_sha256": "ab21d0895ae876347915e49233b19ac2f2172a6f3ec161bef0d1486419116101",
   "schema": 2,
-  "status": "pending",
+  "sent_at": "2026-10-10T18:11:55+00:00",
+  "smtp_accepted_at": "2026-10-10T18:11:55+00:00",
+  "smtp_message_id": "<179165591575.2225.8716356218768984450@icloud.com>",
+  "status": "smtp_accepted",
   "subject_sha256": "721e3ae051199c436628c2daedef3702d23de93eb8a1f06ea9456bf4dc2890ed"
 }
