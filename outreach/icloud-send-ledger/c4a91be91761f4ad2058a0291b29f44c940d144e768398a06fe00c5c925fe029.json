@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "72d2df19ff46f0d672529f2eafda47eb9b49d102d8284fca2e745117f42dc616",
+  "batch_id": "2026-10-10-third40-wave-04",
+  "body_sha256": "d365e0b7d11c933ccaac5f020f7c2042cd883f9238d85fb47dcd7642ea007cf4",
+  "created_at": "2026-10-10T13:53:52+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "38057476079",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/2026-10-10-third40-wave-04.json",
+  "payload_sha256": "764507d7e8ac9bafcb99695a7c38e4554e8f8741dddfc150e2154298143de295",
+  "recipient": "lrowbottom@talentassociates.com.au",
+  "recipient_sha256": "c4a91be91761f4ad2058a0291b29f44c940d144e768398a06fe00c5c925fe029",
+  "schema": 2,
+  "status": "pending",
+  "subject_sha256": "a021746e1611d0b57571dab6aca6db9e1a85d6a34c74ca3583e22fcb8dc38bb8"
+}
