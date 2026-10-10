@@ -3,6 +3,7 @@
   "batch_id": "2026-10-10-fourth40-close-06-rocco",
   "body_sha256": "c002af01b7aa70c80255d918cf4a6c80af7487efa581a2d95fc7ee00932d2813",
   "created_at": "2026-10-10T15:33:23+00:00",
+  "delivery_status": "pending_bounce_check",
   "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
   "github_run_attempt": "1",
   "github_run_id": "38064064308",
@@ -12,6 +13,9 @@
   "recipient": "contact@roccomercier.com",
   "recipient_sha256": "6ec39dd1345d34958b6cf0a3e4b5b6a2d203110867a7d80e45f73a996ac433c4",
   "schema": 2,
-  "status": "pending",
+  "sent_at": "2026-10-10T15:33:24+00:00",
+  "smtp_accepted_at": "2026-10-10T15:33:24+00:00",
+  "smtp_message_id": "<179164640470.2471.2360530625255891175@icloud.com>",
+  "status": "smtp_accepted",
   "subject_sha256": "75f28cf56db261dc04b01ede6bccdcfd7aa1d15e6c4048e47815a437e52244cb"
 }
