@@ -3,6 +3,7 @@
   "batch_id": "2026-10-10-fourth40-green-executives",
   "body_sha256": "1937df6c3efc0b411648028afa4df37a9753b0bc7d063b67ee1779ce649add4e",
   "created_at": "2026-10-10T14:45:34+00:00",
+  "delivery_status": "pending_bounce_check",
   "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
   "github_run_attempt": "1",
   "github_run_id": "38060868847",
@@ -12,6 +13,9 @@
   "recipient": "j.hetherington@greenexecutives.com",
   "recipient_sha256": "597cb978006425e2738f857fd4e4027656d34469af505e10cf844c61525c6da9",
   "schema": 2,
-  "status": "pending",
+  "sent_at": "2026-10-10T14:45:35+00:00",
+  "smtp_accepted_at": "2026-10-10T14:45:35+00:00",
+  "smtp_message_id": "<179164353557.2547.12471899656923696423@icloud.com>",
+  "status": "smtp_accepted",
   "subject_sha256": "afea07b4e2aa9feeb5cdc6b13aa2facf9694fb236f05e623ed3cd566f7186371"
 }
