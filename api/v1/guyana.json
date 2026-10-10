@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-09T16:58:43+00:00",
+  "generated": "2026-10-10T15:51:50+00:00",
   "metrics": [
     {
       "label": "Population",
@@ -59,6 +59,14 @@
       "unit": "people",
       "source": "https://data.worldbank.org/country/guyana",
       "indicator": "SP.POP.TOTL"
+    },
+    {
+      "label": "World Bank GDP",
+      "value": 27097477218.2254,
+      "period": "2025",
+      "unit": "USD",
+      "source": "https://data.worldbank.org/country/guyana",
+      "indicator": "NY.GDP.MKTP.CD"
     }
   ]
 }
