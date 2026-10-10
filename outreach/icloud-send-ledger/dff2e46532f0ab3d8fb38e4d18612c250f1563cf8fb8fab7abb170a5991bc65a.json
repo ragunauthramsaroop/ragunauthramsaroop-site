@@ -3,6 +3,7 @@
   "batch_id": "2026-10-10-fourth40-energy-search-collective",
   "body_sha256": "c2c53c4ab71eb14190b8f5900b82a3966049dd9b12b830af9b875bd03b05b928",
   "created_at": "2026-10-10T14:49:13+00:00",
+  "delivery_status": "pending_bounce_check",
   "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
   "github_run_attempt": "1",
   "github_run_id": "38061084259",
@@ -12,6 +13,9 @@
   "recipient": "dh@energy-s-c.com",
   "recipient_sha256": "dff2e46532f0ab3d8fb38e4d18612c250f1563cf8fb8fab7abb170a5991bc65a",
   "schema": 2,
-  "status": "pending",
+  "sent_at": "2026-10-10T14:49:15+00:00",
+  "smtp_accepted_at": "2026-10-10T14:49:15+00:00",
+  "smtp_message_id": "<179164375494.2216.8980161127849133199@icloud.com>",
+  "status": "smtp_accepted",
   "subject_sha256": "91c60797aa5fa6a1bdea5e65da806b686da0696a9d2c4fb9d92636936e4ea7da"
 }
