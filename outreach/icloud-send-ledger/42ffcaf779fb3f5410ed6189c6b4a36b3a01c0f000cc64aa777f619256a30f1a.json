@@ -3,6 +3,7 @@
   "batch_id": "2026-10-10-fifth40-24-maxwell-drummond",
   "body_sha256": "373d59c9ee0721643f36225d78b641b2c19d08f384b79a955be7e2fffb030657",
   "created_at": "2026-10-10T18:56:53+00:00",
+  "delivery_status": "pending_bounce_check",
   "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
   "github_run_attempt": "1",
   "github_run_id": "38077801982",
@@ -12,6 +13,9 @@
   "recipient": "info@maxwelldrummond.com",
   "recipient_sha256": "42ffcaf779fb3f5410ed6189c6b4a36b3a01c0f000cc64aa777f619256a30f1a",
   "schema": 2,
-  "status": "pending",
+  "sent_at": "2026-10-10T18:56:55+00:00",
+  "smtp_accepted_at": "2026-10-10T18:56:55+00:00",
+  "smtp_message_id": "<179165861503.2361.10183218432952426344@icloud.com>",
+  "status": "smtp_accepted",
   "subject_sha256": "e90ea500e7460d7858a2e591db0e14349d6096038b59506547545861df4c80e0"
 }
