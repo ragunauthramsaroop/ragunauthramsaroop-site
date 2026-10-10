@@ -3,6 +3,7 @@
   "batch_id": "2026-10-10-bounce-fix-searchtech-info",
   "body_sha256": "5f76617b3856fcf9ec25f5a5bc5b626f048905c54d4b680ee091126aec3ec84e",
   "created_at": "2026-10-10T18:57:32+00:00",
+  "delivery_status": "pending_bounce_check",
   "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
   "github_run_attempt": "1",
   "github_run_id": "38077832690",
@@ -12,6 +13,9 @@
   "recipient": "info@search-tech.co.uk",
   "recipient_sha256": "5fb01b8de9215438b3e11303e93af696bf3237fc08fb2575d0f14e3829c47aed",
   "schema": 2,
-  "status": "pending",
+  "sent_at": "2026-10-10T18:57:34+00:00",
+  "smtp_accepted_at": "2026-10-10T18:57:34+00:00",
+  "smtp_message_id": "<179165865383.2220.10402624695286604444@icloud.com>",
+  "status": "smtp_accepted",
   "subject_sha256": "b4f7caf66b274494a968486653d51b300be2c8f26b19dafde2b7f461b399eef4"
 }
