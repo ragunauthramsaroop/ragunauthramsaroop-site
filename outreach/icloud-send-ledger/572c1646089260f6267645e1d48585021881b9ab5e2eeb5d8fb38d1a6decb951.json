@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "49f8cf27bdff3f83d9b0c555bf65999771973f2307d002db3f20f8437995f2e5",
+  "batch_id": "2026-10-10-third40-wave-06",
+  "body_sha256": "046ba4da65518dc8bc1a8894a0074e7a416027a7d4d825eecf92477004ee3ac0",
+  "created_at": "2026-10-10T13:59:39+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "38057837723",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/2026-10-10-third40-wave-06.json",
+  "payload_sha256": "5039bb77a5f351e3caa5de6cb82e2d7d00a5863ddc64b83f92dcd8d551b95fb7",
+  "recipient": "hello@ventus-international.com",
+  "recipient_sha256": "572c1646089260f6267645e1d48585021881b9ab5e2eeb5d8fb38d1a6decb951",
+  "schema": 2,
+  "status": "pending",
+  "subject_sha256": "1addfcb7963752de73e026c1a7b83e437f2ebfe2cfee338cc1be1de2991b9794"
+}
