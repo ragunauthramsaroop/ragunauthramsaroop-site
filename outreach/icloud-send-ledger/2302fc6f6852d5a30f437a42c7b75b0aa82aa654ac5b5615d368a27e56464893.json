@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "20a18bb50af51b164c83cbed233ae1c9ce76420dac24ac0c811c38dbeec4a618",
+  "batch_id": "2026-10-10-sixth40-17-mavence",
+  "body_sha256": "8f37c7763f3476182bbe09fa56a2472b73b96523b9e0a107144672ade02b5ffb",
+  "created_at": "2026-10-10T19:57:38+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "38081824673",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/2026-10-10-sixth40-17-mavence.json",
+  "payload_sha256": "43ce227b118be0102c3b3d742a0c10ceaa3b50549adc860ab496922d546bf4eb",
+  "recipient": "info@mavence.com",
+  "recipient_sha256": "2302fc6f6852d5a30f437a42c7b75b0aa82aa654ac5b5615d368a27e56464893",
+  "schema": 2,
+  "status": "pending",
+  "subject_sha256": "266d91b6b16f8ee894e455c944ff2fe2143c6024066f480f7e576e2e18932cb8"
+}
