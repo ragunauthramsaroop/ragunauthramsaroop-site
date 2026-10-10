@@ -3,6 +3,7 @@
   "batch_id": "2026-10-10-fifth40-37b-one-search-middle-east",
   "body_sha256": "d4dc9c9c1d89093e456202b97496b925e61a3bad746cda18a247d3aaba18a06f",
   "created_at": "2026-10-10T19:40:24+00:00",
+  "delivery_status": "pending_bounce_check",
   "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
   "github_run_attempt": "1",
   "github_run_id": "38080713084",
@@ -12,6 +13,9 @@
   "recipient": "middleeast@one-search.com",
   "recipient_sha256": "f23c240e87fc1ff8c69a762ca0858290c0f0f5699071c8de135c1e836d111e70",
   "schema": 2,
-  "status": "pending",
+  "sent_at": "2026-10-10T19:40:26+00:00",
+  "smtp_accepted_at": "2026-10-10T19:40:26+00:00",
+  "smtp_message_id": "<179166122593.2499.14553255454418266376@icloud.com>",
+  "status": "smtp_accepted",
   "subject_sha256": "ecd3407b58b33bb80a7e85ca58c9078743abe7c9423ee26a2f3a9648a4ea45c2"
 }
