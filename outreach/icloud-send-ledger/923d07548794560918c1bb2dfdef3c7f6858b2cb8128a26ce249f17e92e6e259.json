@@ -3,6 +3,7 @@
   "batch_id": "2026-10-10-fourth40-resourceful",
   "body_sha256": "fdedde77d6442d66c372146b15216f44214bb528575ad8d435eba81f2e1f0b4c",
   "created_at": "2026-10-10T15:07:07+00:00",
+  "delivery_status": "pending_bounce_check",
   "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
   "github_run_attempt": "1",
   "github_run_id": "38062302111",
@@ -12,6 +13,9 @@
   "recipient": "christian@resourcefulrecruitment.com.au",
   "recipient_sha256": "923d07548794560918c1bb2dfdef3c7f6858b2cb8128a26ce249f17e92e6e259",
   "schema": 2,
-  "status": "pending",
+  "sent_at": "2026-10-10T15:07:08+00:00",
+  "smtp_accepted_at": "2026-10-10T15:07:08+00:00",
+  "smtp_message_id": "<179164482866.2459.8595169461302659285@icloud.com>",
+  "status": "smtp_accepted",
   "subject_sha256": "b1fbb8def87dcde78f134df9c0ac14af3d29dcd6abc4401a1cff3eb5a3a09cf3"
 }
