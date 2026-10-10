@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "914a16702701df2c1fe98c2bcfd160c87f04ce5550cc06ff53b2e45d8c817023",
+  "batch_id": "2026-10-10-fourth40-wave-05",
+  "body_sha256": "b595bbf445d1295d22dcc70488e19df9a2982f09b4e6044ee89416676217079a",
+  "created_at": "2026-10-10T15:17:02+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "38062953063",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/2026-10-10-fourth40-wave-05.json",
+  "payload_sha256": "cb8e2ee82ad7ae5c28c0404584f2fcaef6570e440af4f1e8539bf6277ad15e94",
+  "recipient": "info@esc.energy",
+  "recipient_sha256": "ee5ace22787a5101ff80d69c19b7ad0ddfc186217d96aa99963281d2b5cd3807",
+  "schema": 2,
+  "status": "pending",
+  "subject_sha256": "544b08dc7614f3a747276df14eb341042f7a4b69f2c9e8e39d22dfe8e569004e"
+}
