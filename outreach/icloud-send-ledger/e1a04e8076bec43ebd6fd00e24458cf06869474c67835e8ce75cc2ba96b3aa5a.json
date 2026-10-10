@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "056f243a04dfd46345bf5b614073b6f7f88e5aa313d27bbceb6269f46c9f6a4d",
+  "batch_id": "2026-10-10-bounce-fix-mehr-shilpa",
+  "body_sha256": "3641c91a1b145db846764c9233c136bcaa94eb7ebfe9d2f7a8b1e982efe954db",
+  "created_at": "2026-10-10T19:02:09+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "38078152616",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/2026-10-10-bounce-fix-mehr-shilpa.json",
+  "payload_sha256": "540d5f73d03dbf450578aa9bc695a34e90a84c2b1385ddd209b2be328719849c",
+  "recipient": "shilpa@mehr-consultancy.com",
+  "recipient_sha256": "e1a04e8076bec43ebd6fd00e24458cf06869474c67835e8ce75cc2ba96b3aa5a",
+  "schema": 2,
+  "status": "pending",
+  "subject_sha256": "23580544b49ae3804b487f0656b33dd2a656bdb1e8ea9edef7417d26f69ea078"
+}
