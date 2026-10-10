@@ -3,6 +3,7 @@
   "batch_id": "2026-10-10-fourth40-wave-04",
   "body_sha256": "2042fd963123d10c99fa92cd82039cf4276b34ba17f39cfe8bda35f4d6716600",
   "created_at": "2026-10-10T15:12:50+00:00",
+  "delivery_status": "pending_bounce_check",
   "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
   "github_run_attempt": "1",
   "github_run_id": "38062678321",
@@ -12,6 +13,9 @@
   "recipient": "careers@partnerexecutive.com.au",
   "recipient_sha256": "4c8065bcedffdccb8393a6f54694de04dbc769c693840655bd0baa5422daba8f",
   "schema": 2,
-  "status": "pending",
+  "sent_at": "2026-10-10T15:12:51+00:00",
+  "smtp_accepted_at": "2026-10-10T15:12:51+00:00",
+  "smtp_message_id": "<179164517122.2204.17302332088292274800@icloud.com>",
+  "status": "smtp_accepted",
   "subject_sha256": "b0b7c73f6904c1370615e6ecfc7d92ebf93d0a7515e3baf1d26d273efa915910"
 }
