@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "07305dc9c19a5bb4b06a9a8db20aa345aafa33160e284177a0cf86a761d0000a",
+  "batch_id": "2026-10-10-fifth40-34-douglas-stuart",
+  "body_sha256": "4aaccc52558d746d1aaa57e96dcb2ab1636ed3e167e30ccc3c3e8f8c11b71f4f",
+  "created_at": "2026-10-10T19:37:20+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "38080512860",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/2026-10-10-fifth40-34-douglas-stuart.json",
+  "payload_sha256": "86219447657bca4b43271889fe6210d55a3bb36c0d1739d73c12d1a6a9b4a67d",
+  "recipient": "search@douglas-stuart.com",
+  "recipient_sha256": "eb627e54d42f7b923955d7a5781e49a713bf1c048b74a430f4eab5f2ce9ae92e",
+  "schema": 2,
+  "status": "pending",
+  "subject_sha256": "1bf5d88a8c69f1580a33771b05351e380f44efc3ce18885a4ce932aea447c579"
+}
