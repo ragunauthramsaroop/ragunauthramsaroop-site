@@ -3,6 +3,7 @@
   "batch_id": "2026-10-10-fifth40-39-ethovia-global",
   "body_sha256": "31be1fb7880e916aebdccc0e8d80e88b621074a45977271e8782980825b6a1fb",
   "created_at": "2026-10-10T19:38:29+00:00",
+  "delivery_status": "pending_bounce_check",
   "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
   "github_run_attempt": "1",
   "github_run_id": "38080576659",
@@ -12,6 +13,9 @@
   "recipient": "contact@ethoviaglobal.com",
   "recipient_sha256": "ab40bfb6b9108ab0bde75413593d5ac088b3e6d45ecea9979c019fbf20eeb997",
   "schema": 2,
-  "status": "pending",
+  "sent_at": "2026-10-10T19:38:30+00:00",
+  "smtp_accepted_at": "2026-10-10T19:38:30+00:00",
+  "smtp_message_id": "<179166111039.2496.8723348500337852686@icloud.com>",
+  "status": "smtp_accepted",
   "subject_sha256": "642b01507f5515c6accd122854d30becc5eac73c678400f739705844d9d134fa"
 }
