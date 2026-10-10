@@ -1,8 +1,8 @@
 {
   "domain": "ragunauthramsaroop.com",
   "dns_provider": "Spaceship",
-  "resend_domain_status_at_audit": "failed",
-  "audited": "2026-09-26",
+  "resend_domain_status_at_audit": "partially_verified",
+  "audited": "2026-10-10",
   "required": [
     {
       "host": "resend._domainkey",
@@ -24,6 +24,12 @@
       "host": "rsend",
       "type": "CNAME",
       "value": "send.forge.rmta.net"
+    },
+    {
+      "host": "@",
+      "type": "MX",
+      "priority": 10,
+      "value": "inbound-smtp.us-east-1.amazonaws.com"
     }
   ],
   "preserve": {
@@ -39,5 +45,5 @@
       "launch2.spaceship.net"
     ]
   },
-  "notes": "No private credentials here: the DKIM value is a public DNS verification key. Preserve the approved GitHub Pages A records, www CNAME, and nameservers."
+  "notes": "Approved public Resend DNS includes the apex inbound MX for receiving. Preserve GitHub Pages A records, www CNAME, nameservers, and fail closed if an unexpected apex MX exists."
 }
