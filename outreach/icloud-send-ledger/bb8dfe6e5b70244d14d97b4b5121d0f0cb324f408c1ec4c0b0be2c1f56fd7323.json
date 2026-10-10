@@ -3,6 +3,7 @@
   "batch_id": "2026-10-10-fourth40-wave-14",
   "body_sha256": "9fad020220133369c79a29177676d9f6aefd6dc8ea7b6e79a44ca2bf896af908",
   "created_at": "2026-10-10T15:28:53+00:00",
+  "delivery_status": "pending_bounce_check",
   "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
   "github_run_attempt": "1",
   "github_run_id": "38063763256",
@@ -12,6 +13,9 @@
   "recipient": "talent@renovahire.com.au",
   "recipient_sha256": "bb8dfe6e5b70244d14d97b4b5121d0f0cb324f408c1ec4c0b0be2c1f56fd7323",
   "schema": 2,
-  "status": "pending",
+  "sent_at": "2026-10-10T15:28:54+00:00",
+  "smtp_accepted_at": "2026-10-10T15:28:54+00:00",
+  "smtp_message_id": "<179164613464.2410.7045178946756547110@icloud.com>",
+  "status": "smtp_accepted",
   "subject_sha256": "f3df7f4a9095cb40fa5d9929df882c6f9048520a06b1cc78d0a8f05b47b0c67c"
 }
