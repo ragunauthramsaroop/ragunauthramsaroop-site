@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "a4312eb198d60d678c12c995dad175924239c5c7636c8a3b63bb76a5eac97e31",
+  "batch_id": "2026-10-10-fourth40-energy-transition-group",
+  "body_sha256": "738d7ef30f4d344f8b6a88040a889f0a0b4bb6bfb2d3b3dadf97921cec5e6aa7",
+  "created_at": "2026-10-10T15:02:50+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "38062016201",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/2026-10-10-fourth40-energy-transition-group.json",
+  "payload_sha256": "7c54273da05d4a6a51b6645a12a0085f73058f8ce247231846dcc34525b73a1e",
+  "recipient": "nadia@energytransition-group.com",
+  "recipient_sha256": "fe7caa01a91ceecc901c15ab5e92e632b8c51f441ea274341b525ced0c28a616",
+  "schema": 2,
+  "status": "pending",
+  "subject_sha256": "5198dabb8661ed83c14a26674e64944692ea41647aeaf833d322c5ef26bbb7d2"
+}
