@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "8eb7e3ae97bbd8ea6c6ddf5c1cc92911c3fd24cb9539d7d67467138f0bfcf0fe",
+  "batch_id": "2026-10-10-fourth40-absolute-mining",
+  "body_sha256": "66bdc365bc8c8922cbad123b785e21ec59ecaf1b698a3d271b92bf3bb1801f74",
+  "created_at": "2026-10-10T14:41:57+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "38060631443",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/2026-10-10-fourth40-absolute-mining.json",
+  "payload_sha256": "9da4793d99063a853008a0b53b1acfe4d1bf1f4754cc9995eb5ab63dce279d09",
+  "recipient": "nicola@miningeng.com",
+  "recipient_sha256": "55a7611f6aa605ede072e78950c947c388a7cf88e59cceaf93e8f53d32dbc421",
+  "schema": 2,
+  "status": "pending",
+  "subject_sha256": "075403d3b78268e43eae3617f129bbef26cf2860f9855a48721ed5d558a9ebb7"
+}
