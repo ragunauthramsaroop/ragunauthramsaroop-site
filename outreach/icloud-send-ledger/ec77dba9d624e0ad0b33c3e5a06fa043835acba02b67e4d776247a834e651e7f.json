@@ -3,6 +3,7 @@
   "batch_id": "2026-10-10-fifth40-36-rowland-sutton",
   "body_sha256": "fe4dfe7e95640ae8b377a534995c6fdebc678c2e684ca190535020f25c8085ec",
   "created_at": "2026-10-10T19:37:54+00:00",
+  "delivery_status": "pending_bounce_check",
   "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
   "github_run_attempt": "1",
   "github_run_id": "38080539608",
@@ -12,6 +13,9 @@
   "recipient": "contact@rowlandsutton.com",
   "recipient_sha256": "ec77dba9d624e0ad0b33c3e5a06fa043835acba02b67e4d776247a834e651e7f",
   "schema": 2,
-  "status": "pending",
+  "sent_at": "2026-10-10T19:37:55+00:00",
+  "smtp_accepted_at": "2026-10-10T19:37:55+00:00",
+  "smtp_message_id": "<179166107511.2421.6330723365007945313@icloud.com>",
+  "status": "smtp_accepted",
   "subject_sha256": "0cd1af8dda583aa92a3af04e72d68c3bceae2e5a282da7fb29b863c68f1ccb5b"
 }
