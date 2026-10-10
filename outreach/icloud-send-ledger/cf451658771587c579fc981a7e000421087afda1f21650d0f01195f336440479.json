@@ -3,6 +3,7 @@
   "batch_id": "2026-10-10-fifth40-018-fairmount",
   "body_sha256": "580df669a087adbd498fe081c3d1917762962bd639f97d7a795b3c5ffbfa8ae3",
   "created_at": "2026-10-10T18:14:00+00:00",
+  "delivery_status": "pending_bounce_check",
   "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
   "github_run_attempt": "1",
   "github_run_id": "38074930511",
@@ -12,6 +13,9 @@
   "recipient": "john@fairmountc.com",
   "recipient_sha256": "cf451658771587c579fc981a7e000421087afda1f21650d0f01195f336440479",
   "schema": 2,
-  "status": "pending",
+  "sent_at": "2026-10-10T18:14:01+00:00",
+  "smtp_accepted_at": "2026-10-10T18:14:01+00:00",
+  "smtp_message_id": "<179165604096.2222.12488585944021877627@icloud.com>",
+  "status": "smtp_accepted",
   "subject_sha256": "830d8e6553075c2cd4023af32fc668864e22752d8c181009db62af62725caf39"
 }
