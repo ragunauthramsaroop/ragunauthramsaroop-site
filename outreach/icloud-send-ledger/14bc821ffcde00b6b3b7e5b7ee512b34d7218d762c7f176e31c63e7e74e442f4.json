@@ -3,6 +3,7 @@
   "batch_id": "2026-10-10-fourth40-javelin",
   "body_sha256": "58c9d85e1b103d4945982a85035be8ffe2923dace669fd3f66a31fa0ce4714b7",
   "created_at": "2026-10-10T15:01:32+00:00",
+  "delivery_status": "pending_bounce_check",
   "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
   "github_run_attempt": "1",
   "github_run_id": "38061931010",
@@ -12,6 +13,9 @@
   "recipient": "maeva@javelintalent.com",
   "recipient_sha256": "14bc821ffcde00b6b3b7e5b7ee512b34d7218d762c7f176e31c63e7e74e442f4",
   "schema": 2,
-  "status": "pending",
+  "sent_at": "2026-10-10T15:01:33+00:00",
+  "smtp_accepted_at": "2026-10-10T15:01:33+00:00",
+  "smtp_message_id": "<179164449311.2436.12439690282885092971@icloud.com>",
+  "status": "smtp_accepted",
   "subject_sha256": "54dc71667a4db02f2e80b31f8b81b79b02f86348ab47cfd8ba2d1a92389593b2"
 }
