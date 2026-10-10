@@ -3,6 +3,7 @@
   "batch_id": "2026-10-10-bounce-fix-falcon-brook-chantel",
   "body_sha256": "40010a7fe2e63eb413db9345981165f122e6ed62226b628d55ab2ed3bfb02b00",
   "created_at": "2026-10-10T18:56:36+00:00",
+  "delivery_status": "pending_bounce_check",
   "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
   "github_run_attempt": "1",
   "github_run_id": "38077787755",
@@ -12,6 +13,9 @@
   "recipient": "chantel@falconbrooksearch.com",
   "recipient_sha256": "13ac6836e08e77ce2cb61e4de41d13138348b075a54b66fd95e2bce536b2cf49",
   "schema": 2,
-  "status": "pending",
+  "sent_at": "2026-10-10T18:56:37+00:00",
+  "smtp_accepted_at": "2026-10-10T18:56:37+00:00",
+  "smtp_message_id": "<179165859743.2220.11370299231523596879@icloud.com>",
+  "status": "smtp_accepted",
   "subject_sha256": "933c98845e733cace7bf3e4d463f5ba09d95e54d0f61610552d7b0cb68a97103"
 }
