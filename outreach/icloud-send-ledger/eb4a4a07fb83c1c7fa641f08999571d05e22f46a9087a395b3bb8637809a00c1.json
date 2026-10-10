@@ -3,6 +3,7 @@
   "batch_id": "2026-10-10-fifth40-049-green-recruitment",
   "body_sha256": "60a742c6bb48752535a975ad283f3470b1eb2f00e9734eaffb8c2e21c8b4cf1b",
   "created_at": "2026-10-10T18:27:26+00:00",
+  "delivery_status": "pending_bounce_check",
   "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
   "github_run_attempt": "1",
   "github_run_id": "38075823367",
@@ -12,6 +13,9 @@
   "recipient": "dominic@greenrecruitmentcompany.com",
   "recipient_sha256": "eb4a4a07fb83c1c7fa641f08999571d05e22f46a9087a395b3bb8637809a00c1",
   "schema": 2,
-  "status": "pending",
+  "sent_at": "2026-10-10T18:27:27+00:00",
+  "smtp_accepted_at": "2026-10-10T18:27:27+00:00",
+  "smtp_message_id": "<179165684750.2414.12937211866616720148@icloud.com>",
+  "status": "smtp_accepted",
   "subject_sha256": "6020abeb141a5e0b40e692f1afabd67d190a972a7898726d719f8c88477e889a"
 }
