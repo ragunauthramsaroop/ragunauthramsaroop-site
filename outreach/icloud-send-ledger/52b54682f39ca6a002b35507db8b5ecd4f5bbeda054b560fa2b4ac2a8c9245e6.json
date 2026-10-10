@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "a5c9295eab9f560c058f5750ada3a02e3a837cabbbc52aed972b2f3d4065fe59",
+  "batch_id": "2026-10-10-fifth40-30-gilbert-lennard",
+  "body_sha256": "461303baade2230f074183c271b4b59b09d4c73ba0b771424fed86e4f1fa8984",
+  "created_at": "2026-10-10T19:01:13+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "38078090836",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/2026-10-10-fifth40-30-gilbert-lennard.json",
+  "payload_sha256": "7ef8961c22a85efc4f3e74e85cc779e861f0268d82ae45a79c0ad417b55f1a40",
+  "recipient": "info@gilbertlennard.com",
+  "recipient_sha256": "52b54682f39ca6a002b35507db8b5ecd4f5bbeda054b560fa2b4ac2a8c9245e6",
+  "schema": 2,
+  "status": "pending",
+  "subject_sha256": "8ed44f0721f0df1d7796dd0bad1420133b93494e5c4cdec281f88de219512673"
+}
