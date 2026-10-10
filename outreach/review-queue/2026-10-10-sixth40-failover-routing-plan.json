@@ -5,7 +5,8 @@
   "confirmed_overall_total": 219,
   "sixth_batch_confirmed": 19,
   "remaining_slots": 21,
-  "sender": "ragunauthramsaroop@icloud.com",
+  "sender": "Ragunauth Ramsaroop <executive@ragunauthramsaroop.com>",
+  "reply_to": "ragunauthramsaroop@icloud.com",
   "attachment_filename": "Ragunauth_Ramsaroop_ATS_Executive_Resume_Ceiling_2026.pdf",
   "routing_rules": {
     "source_of_truth": "SMTP acceptance ledger only",
