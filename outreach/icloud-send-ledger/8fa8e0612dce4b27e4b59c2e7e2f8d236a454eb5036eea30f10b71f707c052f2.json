@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "8720a4ca62aa046c7769be4e44714255b1e32b87c7c6ce538f9b51b07b201854",
+  "batch_id": "2026-10-10-sixth40-r01-alder-koten",
+  "body_sha256": "88013f41d4270ad4fc66f3229bfd445fdc85d7906d6784e6160bee3640b69354",
+  "created_at": "2026-10-10T21:05:38+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "38086276154",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/2026-10-10-sixth40-r01-alder-koten.json",
+  "payload_sha256": "a516c2dbff76801ceea0378f0894e46f9e07511dfb113998ebc1fdf73a3d9910",
+  "recipient": "candidates@alderkoten.com",
+  "recipient_sha256": "8fa8e0612dce4b27e4b59c2e7e2f8d236a454eb5036eea30f10b71f707c052f2",
+  "schema": 2,
+  "status": "pending",
+  "subject_sha256": "6a653b718ef67e41d930792263edcd4a376f1bd41c6d82943c1fdc65b5b05b57"
+}
