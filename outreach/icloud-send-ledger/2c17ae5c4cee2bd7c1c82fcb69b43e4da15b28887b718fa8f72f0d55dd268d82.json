@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "4eacfae6c416d54e5b8f905234dca2b3dfd74690393f31e34e6372def917ce88",
+  "batch_id": "2026-10-10-sixth40-09-executive-search-africa",
+  "body_sha256": "de931faf6125b5b0ff283f339bda5416bb88cb1c7fab4450450f30327a7659c6",
+  "created_at": "2026-10-10T19:56:07+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "38081731619",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/2026-10-10-sixth40-09-executive-search-africa.json",
+  "payload_sha256": "8be428fac2d2e94b7ac1313f96d430d3a2438a817f49ede27a60ae8219142e1c",
+  "recipient": "enquiries@executivesearchafrica.io",
+  "recipient_sha256": "2c17ae5c4cee2bd7c1c82fcb69b43e4da15b28887b718fa8f72f0d55dd268d82",
+  "schema": 2,
+  "status": "pending",
+  "subject_sha256": "370cc1c8e11edf4d728be147bcc73282d5b5502d80a7aec01544817151eb1f1a"
+}
