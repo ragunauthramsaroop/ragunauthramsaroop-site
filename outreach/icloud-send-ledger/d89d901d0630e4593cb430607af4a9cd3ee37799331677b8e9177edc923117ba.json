@@ -3,6 +3,7 @@
   "batch_id": "2026-10-10-fourth40-single-06-cube",
   "body_sha256": "11c9a2e3dae9e4f90668eda187d76e9754eadd5a686f407451602b83d23cefe7",
   "created_at": "2026-10-10T15:19:55+00:00",
+  "delivery_status": "pending_bounce_check",
   "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
   "github_run_attempt": "1",
   "github_run_id": "38063150262",
@@ -12,6 +13,9 @@
   "recipient": "fahad.khalid@cubeconsult.co.uk",
   "recipient_sha256": "d89d901d0630e4593cb430607af4a9cd3ee37799331677b8e9177edc923117ba",
   "schema": 2,
-  "status": "pending",
+  "sent_at": "2026-10-10T15:19:56+00:00",
+  "smtp_accepted_at": "2026-10-10T15:19:56+00:00",
+  "smtp_message_id": "<179164559612.2447.545186875810317833@icloud.com>",
+  "status": "smtp_accepted",
   "subject_sha256": "02eecc5e6011aba90398e781c6dd2664f2197d020618288f2604500353229d6d"
 }
