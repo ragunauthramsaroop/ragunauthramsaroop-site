@@ -3,6 +3,7 @@
   "batch_id": "2026-10-10-sixth40-14-armstrong-appointments",
   "body_sha256": "93adf833de235cfdfeea8da0358468e7afd0eb61b8e73d5c6700c7203ee2e14c",
   "created_at": "2026-10-10T19:57:02+00:00",
+  "delivery_status": "pending_bounce_check",
   "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
   "github_run_attempt": "1",
   "github_run_id": "38081793679",
@@ -12,6 +13,9 @@
   "recipient": "executive@armstrongappointments.com",
   "recipient_sha256": "fb56065cfd28a804603e784d6910997889f3fdcc6a61cc0a62fc07e9d247d893",
   "schema": 2,
-  "status": "pending",
+  "sent_at": "2026-10-10T19:57:04+00:00",
+  "smtp_accepted_at": "2026-10-10T19:57:04+00:00",
+  "smtp_message_id": "<179166222386.2436.442369205457345400@icloud.com>",
+  "status": "smtp_accepted",
   "subject_sha256": "370cc1c8e11edf4d728be147bcc73282d5b5502d80a7aec01544817151eb1f1a"
 }
