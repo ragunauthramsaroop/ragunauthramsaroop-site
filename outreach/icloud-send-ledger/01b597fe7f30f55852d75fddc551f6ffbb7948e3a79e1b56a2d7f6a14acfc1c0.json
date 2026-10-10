@@ -3,6 +3,7 @@
   "batch_id": "2026-10-10-fourth40-navitas",
   "body_sha256": "80928468bbff1b78c95599accc0e1c7cd78fd456bf9fa17acbf743079cd4a919",
   "created_at": "2026-10-10T14:55:48+00:00",
+  "delivery_status": "pending_bounce_check",
   "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
   "github_run_attempt": "1",
   "github_run_id": "38061549099",
@@ -12,6 +13,9 @@
   "recipient": "sbarnes@navitas-nrg.com",
   "recipient_sha256": "01b597fe7f30f55852d75fddc551f6ffbb7948e3a79e1b56a2d7f6a14acfc1c0",
   "schema": 2,
-  "status": "pending",
+  "sent_at": "2026-10-10T14:55:49+00:00",
+  "smtp_accepted_at": "2026-10-10T14:55:49+00:00",
+  "smtp_message_id": "<179164414972.2521.12119223260111152510@icloud.com>",
+  "status": "smtp_accepted",
   "subject_sha256": "7636025cb65face254306c907e4c711884c97299c2f086efa6ad2763f2cc65a5"
 }
