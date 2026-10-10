@@ -3,6 +3,7 @@
   "batch_id": "2026-10-10-fifth40-022-projecttalent",
   "body_sha256": "ea2ad62c9312f90818779b5fb40acf209df96d823148fedc16d5667bca11d009",
   "created_at": "2026-10-10T18:15:17+00:00",
+  "delivery_status": "pending_bounce_check",
   "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
   "github_run_attempt": "1",
   "github_run_id": "38075011604",
@@ -12,6 +13,9 @@
   "recipient": "marcus@projecttalentpartners.com",
   "recipient_sha256": "3e29f0adf1734798c4986b272da5c08c3e71a370af460396719d7224ae2ba1b4",
   "schema": 2,
-  "status": "pending",
+  "sent_at": "2026-10-10T18:15:18+00:00",
+  "smtp_accepted_at": "2026-10-10T18:15:18+00:00",
+  "smtp_message_id": "<179165611814.2455.8517110344678347984@icloud.com>",
+  "status": "smtp_accepted",
   "subject_sha256": "4a83c83187a238dcf8ddc3a49a9809d33912afc2865e7d6102c02f9059be7c92"
 }
