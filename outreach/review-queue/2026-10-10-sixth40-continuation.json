@@ -4,7 +4,7 @@
   "confirmed_overall_total": 219,
   "sixth_batch_confirmed": 19,
   "remaining_slots": 21,
-  "fresh_email_routes": 23,
+  "fresh_email_routes": 27,
   "notes": "Dispatch remains disabled in this review manifest. It is a research, contact-verification and duplicate-audit queue only.",
   "confirmed_replacements": [
     {"firm":"Alder Koten","recipient":"candidates@alderkoten.com","status":"smtp_accepted"},
@@ -29,7 +29,10 @@
     {"firm":"EWKP","recipient":"info@ewkp.net","reason":"prior sent record found in Gmail"},
     {"firm":"GRG","recipient":"info@grgmea.com","reason":"prior sent record found in Gmail"},
     {"firm":"Inter1 Resources","recipient":"info@inter1resources.com","reason":"multiple prior sent records found in Gmail"},
-    {"firm":"Global Human Capital Group","recipient":"info@globalhumancapitalgroup.com","reason":"prior sent record found in Gmail"}
+    {"firm":"Global Human Capital Group","recipient":"info@globalhumancapitalgroup.com","reason":"prior sent record found in Gmail"},
+    {"firm":"Antons Recruitment","recipient":"info@antons.ae","reason":"prior sent record found in Gmail"},
+    {"firm":"Experts Plus Recruitment Services","recipient":"info@expertsrecruitment.com","reason":"prior sent record found in Gmail"},
+    {"firm":"Yeomans Executive","recipient":"info@yeomansexecutive.com","reason":"prior sent record found in Gmail"}
   ],
   "unexecuted_retry_candidate": [
     {"firm":"IRC Global Executive Search Partners","recipient":"info@ircsearchpartners.com","status":"original workflow cancelled before execution"}
@@ -57,7 +60,11 @@
     {"firm":"Refined Global Recruitment","recipient":"hr@refinedglobalrecruitment.com","priority":"Dubai / GCC / metals-mining / energy / executive search","gmail_sent_match":false,"github_record_match":false},
     {"firm":"JobsKey Search & Selection","recipient":"contact@jobskeysearch.com","priority":"Saudi Arabia / Vision 2030 / energy / infrastructure / senior appointments","gmail_sent_match":false,"github_record_match":false},
     {"firm":"Maseer Talent","recipient":"info@maseergroup.com","priority":"UAE / energy / industry / infrastructure / executive search","gmail_sent_match":false,"github_record_match":false},
-    {"firm":"Norlynx Group","recipient":"recruitment@norlynx-group.com","priority":"Dubai / energy / commodities / corporate functions","gmail_sent_match":false,"github_record_match":false}
+    {"firm":"Norlynx Group","recipient":"recruitment@norlynx-group.com","priority":"Dubai / energy / commodities / corporate functions","gmail_sent_match":false,"github_record_match":false},
+    {"firm":"Astrus Talent","recipient":"info@astrustalent.com","priority":"Dubai / global infrastructure / sustainability / director-VP-C-suite search","gmail_sent_match":false,"github_record_match":false},
+    {"firm":"B7 Consultancy","recipient":"info@b7-group.com","priority":"Middle East / energy / utilities / construction / government executive search","gmail_sent_match":false,"github_record_match":false},
+    {"firm":"Big Fish Recruitment","recipient":"info@bigfishrecruitment.ae","priority":"UAE / MENA / construction / infrastructure / QHSE / executive search","gmail_sent_match":false,"github_record_match":false},
+    {"firm":"MAKEEN Recruitment Consultants","recipient":"info@makeenuae.com","priority":"UAE executive search / leadership assessment","gmail_sent_match":false,"github_record_match":false}
   ],
   "portal_only_candidates": [
     {"firm":"Erevena","route":"official next-role enquiry form","priority":"Dubai / global leadership"},
