@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "f824aaf6dd01a22dcd5b45aca8a69fa4a6dbe7ccbc55c16c47e1aa3abdbb38df",
+  "batch_id": "2026-10-10-sixth40-r03-friisberg",
+  "body_sha256": "99597b5c397539ee45429e4b458ef0cf8e4322acecc60ed3962fccb3f332f6c1",
+  "created_at": "2026-10-10T21:05:55+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "38086292158",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/2026-10-10-sixth40-r03-friisberg.json",
+  "payload_sha256": "fc4fac0800bacfe8939fccea3548314051609a93efcf06bd8febfb947eb1cedc",
+  "recipient": "london@friisberg.com",
+  "recipient_sha256": "ab2cc037fd94787b287c0dea8c932da3ed9e5c5549e92b9c7355a21af3ba045b",
+  "schema": 2,
+  "status": "pending",
+  "subject_sha256": "370d18e4fa73efec28b425a9ee0664764e13c181904dee38a3c7a69758483ae5"
+}
