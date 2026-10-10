@@ -3,6 +3,7 @@
   "batch_id": "2026-10-10-sixth40-04-mine-talent",
   "body_sha256": "c1dc9296f52ff2208eb4d37335298706eaebaddaa1a693ce6d751d0287ab375f",
   "created_at": "2026-10-10T19:54:59+00:00",
+  "delivery_status": "pending_bounce_check",
   "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
   "github_run_attempt": "1",
   "github_run_id": "38081664333",
@@ -12,6 +13,9 @@
   "recipient": "nikki.frew@minetalent.com",
   "recipient_sha256": "f953100f96e1d2189acddcbb00553f5710cec10f46c7d1b5baa8afd82a8e4021",
   "schema": 2,
-  "status": "pending",
+  "sent_at": "2026-10-10T19:55:00+00:00",
+  "smtp_accepted_at": "2026-10-10T19:55:00+00:00",
+  "smtp_message_id": "<179166210022.2217.1869525021771756637@icloud.com>",
+  "status": "smtp_accepted",
   "subject_sha256": "3794f06c3472a6f1b9510fa6fa677578dc08656d8ac8daff1d5cdcba0b50ed43"
 }
