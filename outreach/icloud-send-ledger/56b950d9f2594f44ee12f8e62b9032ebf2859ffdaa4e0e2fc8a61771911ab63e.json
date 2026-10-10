@@ -3,6 +3,7 @@
   "batch_id": "2026-10-10-fifth40-027-geosearch",
   "body_sha256": "10397cce688c9daccce9b44e66b8505a263291fa04bee49b02caa7f9ac63afdc",
   "created_at": "2026-10-10T18:16:59+00:00",
+  "delivery_status": "pending_bounce_check",
   "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
   "github_run_attempt": "1",
   "github_run_id": "38075133473",
@@ -12,6 +13,9 @@
   "recipient": "jscrase@geosearch-consulting.com",
   "recipient_sha256": "56b950d9f2594f44ee12f8e62b9032ebf2859ffdaa4e0e2fc8a61771911ab63e",
   "schema": 2,
-  "status": "pending",
+  "sent_at": "2026-10-10T18:17:01+00:00",
+  "smtp_accepted_at": "2026-10-10T18:17:01+00:00",
+  "smtp_message_id": "<179165622101.2450.1111084084170300462@icloud.com>",
+  "status": "smtp_accepted",
   "subject_sha256": "75f28cf56db261dc04b01ede6bccdcfd7aa1d15e6c4048e47815a437e52244cb"
 }
