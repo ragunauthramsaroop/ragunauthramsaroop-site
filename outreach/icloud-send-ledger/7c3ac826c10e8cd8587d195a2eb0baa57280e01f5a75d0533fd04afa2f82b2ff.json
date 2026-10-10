@@ -3,6 +3,7 @@
   "batch_id": "2026-10-10-fifth40-14-b7",
   "body_sha256": "7b92b82b994d06ab495dadebfbaa1a5ed46344c46dc0a56602abd0529eebe275",
   "created_at": "2026-10-10T18:50:44+00:00",
+  "delivery_status": "pending_bounce_check",
   "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
   "github_run_attempt": "1",
   "github_run_id": "38077408934",
@@ -12,6 +13,9 @@
   "recipient": "info@b7-group.com",
   "recipient_sha256": "7c3ac826c10e8cd8587d195a2eb0baa57280e01f5a75d0533fd04afa2f82b2ff",
   "schema": 2,
-  "status": "pending",
+  "sent_at": "2026-10-10T18:50:46+00:00",
+  "smtp_accepted_at": "2026-10-10T18:50:46+00:00",
+  "smtp_message_id": "<179165824579.2435.3899574159920601010@icloud.com>",
+  "status": "smtp_accepted",
   "subject_sha256": "4059eab37dfe12a130c83ff018b2f2c62e4984727b4b5656106f9fc146ffbd50"
 }
