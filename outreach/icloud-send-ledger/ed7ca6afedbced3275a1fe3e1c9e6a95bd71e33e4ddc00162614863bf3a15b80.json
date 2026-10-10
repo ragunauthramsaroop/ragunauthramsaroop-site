@@ -3,6 +3,7 @@
   "batch_id": "2026-10-10-third40-wave-01",
   "body_sha256": "de81652aa9f6fb2002d14a9154997f3df0e38783e9dd2b4492c9f2fa0adbc534",
   "created_at": "2026-10-10T13:47:43+00:00",
+  "delivery_status": "pending_bounce_check",
   "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
   "github_run_attempt": "1",
   "github_run_id": "38057079436",
@@ -12,6 +13,9 @@
   "recipient": "olivier@vireonrg.com",
   "recipient_sha256": "ed7ca6afedbced3275a1fe3e1c9e6a95bd71e33e4ddc00162614863bf3a15b80",
   "schema": 2,
-  "status": "pending",
+  "sent_at": "2026-10-10T13:47:44+00:00",
+  "smtp_accepted_at": "2026-10-10T13:47:44+00:00",
+  "smtp_message_id": "<179164006430.2439.3853995478582899867@icloud.com>",
+  "status": "smtp_accepted",
   "subject_sha256": "4c50d1d6c5794cc2ab93402ab205c98d8eb11f15b0a2c369ffe5f27ac8421b23"
 }
