@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "d3f76ff38f9ed9944e59805dd68509e08371131f2cf23b9b363ecfd14776ff10",
+  "batch_id": "2026-10-10-sixth40-40-datapro-plus",
+  "body_sha256": "c2a764717348ef97391c0fa34eebd3b23a382885c6a61c40338c5efbcf06a289",
+  "created_at": "2026-10-10T20:02:28+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "38082129074",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/2026-10-10-sixth40-40-datapro-plus.json",
+  "payload_sha256": "9bf2e38f06e4037823c91c78821730afe88b2ddbc751fb5e2f47e9989428db8f",
+  "recipient": "richard@dataproplus.com",
+  "recipient_sha256": "d81b913cacdc1896a0bba1f76100e54098de60fc85ccbf012bc6aff0b7a3fcba",
+  "schema": 2,
+  "status": "pending",
+  "subject_sha256": "1a9584c42acab7fbde3e7817d058f81ca7dd8e87c08ca9708c3f3b1bdd124fa7"
+}
