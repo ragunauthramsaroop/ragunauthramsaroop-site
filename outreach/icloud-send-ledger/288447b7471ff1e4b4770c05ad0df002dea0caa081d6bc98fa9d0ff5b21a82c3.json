@@ -3,6 +3,7 @@
   "batch_id": "2026-10-10-third40-wave-08",
   "body_sha256": "bc51efe32a9484f05d129ba61463cd2a6e20cb8026b81ea53e6e9c2efd8cc77d",
   "created_at": "2026-10-10T14:01:57+00:00",
+  "delivery_status": "pending_bounce_check",
   "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
   "github_run_attempt": "1",
   "github_run_id": "38057994785",
@@ -12,6 +13,9 @@
   "recipient": "info@ospreyclarke.com",
   "recipient_sha256": "288447b7471ff1e4b4770c05ad0df002dea0caa081d6bc98fa9d0ff5b21a82c3",
   "schema": 2,
-  "status": "pending",
+  "sent_at": "2026-10-10T14:01:59+00:00",
+  "smtp_accepted_at": "2026-10-10T14:01:59+00:00",
+  "smtp_message_id": "<179164091910.2446.13032463475901869168@icloud.com>",
+  "status": "smtp_accepted",
   "subject_sha256": "5d3c59e220726a4e31af156104f4e45fac6749dd79e725f054999b4781c909c5"
 }
