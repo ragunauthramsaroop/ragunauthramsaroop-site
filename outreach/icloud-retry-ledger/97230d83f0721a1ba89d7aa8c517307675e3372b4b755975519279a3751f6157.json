@@ -1,0 +1,21 @@
+{
+  "attachment_sha256": "2c498315b586fbac930b25dae697010199a0394434815c7e99c66aaeecd18ec5",
+  "batch_id": "2026-10-10-bounce-retry-gaines-rob-walker",
+  "body_sha256": "2cbb28a384362e7bd217f788a2776c5aeeae94c8db55d9c45bf2a63a19d00e72",
+  "bounce_error": "unable to look up host gainesintl.com.2.0001.arsmtp.com: Name or service not known",
+  "created_at": "2026-10-10T18:57:24+00:00",
+  "evidence_source": "user_provided_delivery_status_notification",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "38077843292",
+  "original_ledger_path": "outreach/icloud-send-ledger/97230d83f0721a1ba89d7aa8c517307675e3372b4b755975519279a3751f6157.json",
+  "original_smtp_message_id": "<179164085722.2218.17626166271535955861@icloud.com>",
+  "original_status": "smtp_accepted",
+  "payload_path": "outreach/icloud-bounce-retry/2026-10-10-gaines-rob-walker.json",
+  "payload_sha256": "b77a465b0bd18c724fe64b0d4e9e9230e3b771460c752d4d971137b2fcd28b39",
+  "recipient": "rwalker@gainesintl.com",
+  "recipient_sha256": "97230d83f0721a1ba89d7aa8c517307675e3372b4b755975519279a3751f6157",
+  "schema": 1,
+  "status": "pending",
+  "subject_sha256": "1bbf9ebf7e8e2c8b741f0c0bdc553b06b4159b4e03104a4de281ce29f3758f00"
+}
