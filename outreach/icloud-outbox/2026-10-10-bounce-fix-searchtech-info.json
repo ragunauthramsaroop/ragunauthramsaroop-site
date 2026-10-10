@@ -1,0 +1,19 @@
+{
+  "approved": true,
+  "dry_run": false,
+  "campaign_type": "recruiter",
+  "batch_id": "2026-10-10-bounce-fix-searchtech-info",
+  "attachment_filename": "Ragunauth_Ramsaroop_ATS_Executive_Resume_Ceiling_2026.pdf",
+  "recipient_verification": {
+    "source": "https://search-tech.co.uk/contact-us/",
+    "verified_at": "2026-10-10",
+    "note": "Official SearchTech contact and candidate pages list info@search-tech.co.uk."
+  },
+  "messages": [
+    {
+      "to": "info@search-tech.co.uk",
+      "subject": "Sustainability Executive | ESG, External Affairs & Responsible Growth Leadership",
+      "body": "Dear SearchTech Team,\n\nSearchTech's work across sustainability, environment, energy and infrastructure makes this a relevant introduction for senior leadership mandates.\n\nI currently serve as Liaison Director, Social Responsibility Department at AGM Inc., part of Zijin Mining Group. My portfolio spans ESG and social performance, government and regulatory relations, corporate and external affairs, stakeholder strategy, strategic partnerships and executive communications within a major natural-resources operation.\n\nI am pursuing Director, VP, Country and Regional leadership appointments where sustainability strategy, regulatory credibility, stakeholder confidence and responsible growth must be managed together. Saudi Arabia is my first-priority market, followed by the UAE and wider GCC, while I remain internationally mobile for global opportunities.\n\nMy executive CV is attached for confidential consideration for appropriate current or future searches.\n\nBest regards,\nRagunauth Ramsaroop\nLiaison Director, Social Responsibility Department\nAGM Inc. | Zijin Mining Group\nGeorgetown, Guyana\nragunauthramsaroop@icloud.com\nragunauthramsaroop.com\nlinkedin.com/in/ragunauth-ramsaroop"
+    }
+  ]
+}
