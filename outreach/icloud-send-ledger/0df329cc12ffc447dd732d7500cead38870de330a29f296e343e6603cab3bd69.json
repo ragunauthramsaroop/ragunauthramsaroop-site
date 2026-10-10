@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "24f3de62abdfecf1ea9a9b6f9eca82cf7f8294105268f675aab2a113d1807e63",
+  "batch_id": "2026-10-10-fourth40-accurate-talent",
+  "body_sha256": "8b317561c494b013009bf5e1bce97e9ef469859e5f1b4187462d57dd0b658759",
+  "created_at": "2026-10-10T14:39:51+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "38060491384",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/2026-10-10-fourth40-accurate-talent.json",
+  "payload_sha256": "4461e0eaceab23ab0c793a9d6a98b6f65f3615be9f8c79650e8d1f028e7d01c3",
+  "recipient": "charles.matthews@accurategroup.co.za",
+  "recipient_sha256": "0df329cc12ffc447dd732d7500cead38870de330a29f296e343e6603cab3bd69",
+  "schema": 2,
+  "status": "pending",
+  "subject_sha256": "fd27da783f25b652f021130a2b2aa359850f6d9b100cff548d50e09899ee75dc"
+}
