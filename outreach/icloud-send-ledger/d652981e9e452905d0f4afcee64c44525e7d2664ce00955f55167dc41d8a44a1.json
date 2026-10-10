@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "8b58ba9737c9d2ad25be887f37336b2e5db5e0104b2151b6f5d7aa9c22c7734a",
+  "batch_id": "2026-10-10-fifth40-28-avelor",
+  "body_sha256": "3b34069c2c24868a8b34c1d3472de9cb9bf8c577709eda444898aafeaa297910",
+  "created_at": "2026-10-10T19:00:37+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "38078054506",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/2026-10-10-fifth40-28-avelor.json",
+  "payload_sha256": "4664f2a35e782cc4d235892a811690317b5a8126eefc63a37aca434af8058359",
+  "recipient": "search@avelorpartners.com",
+  "recipient_sha256": "d652981e9e452905d0f4afcee64c44525e7d2664ce00955f55167dc41d8a44a1",
+  "schema": 2,
+  "status": "pending",
+  "subject_sha256": "9da3a40d6e0380aad00cee5fb9afd10fe181f6b4bc9ccc28be8926a5ad222298"
+}
