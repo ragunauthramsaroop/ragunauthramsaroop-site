@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "914a16702701df2c1fe98c2bcfd160c87f04ce5550cc06ff53b2e45d8c817023",
+  "batch_id": "2026-10-10-fourth40-wave-05",
+  "body_sha256": "e1c671e2f7f30308d06958a956e1566650f2b4d7038997c12514f4c53d97c7ca",
+  "created_at": "2026-10-10T15:16:58+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "38062953063",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/2026-10-10-fourth40-wave-05.json",
+  "payload_sha256": "cb8e2ee82ad7ae5c28c0404584f2fcaef6570e440af4f1e8539bf6277ad15e94",
+  "recipient": "info@saxon-me.com",
+  "recipient_sha256": "09da352ed2062f95379d3b6d45a0e06e216796ecb900b5ffb92c69cf0b732450",
+  "schema": 2,
+  "status": "pending",
+  "subject_sha256": "646182e2b871bb028f5740dc1e6797ab357d898b0297d17f786190b289afda96"
+}
