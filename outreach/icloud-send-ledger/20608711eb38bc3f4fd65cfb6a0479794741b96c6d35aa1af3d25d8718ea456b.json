@@ -3,6 +3,7 @@
   "batch_id": "2026-10-10-fourth40-wave-03",
   "body_sha256": "5ec28539a8411422fa2edfc457500235171d14980fd6f2f638acba3aa10fd824",
   "created_at": "2026-10-10T15:12:10+00:00",
+  "delivery_status": "pending_bounce_check",
   "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
   "github_run_attempt": "1",
   "github_run_id": "38062621804",
@@ -12,6 +13,9 @@
   "recipient": "scott@enable-recruitment.com",
   "recipient_sha256": "20608711eb38bc3f4fd65cfb6a0479794741b96c6d35aa1af3d25d8718ea456b",
   "schema": 2,
-  "status": "pending",
+  "sent_at": "2026-10-10T15:12:11+00:00",
+  "smtp_accepted_at": "2026-10-10T15:12:11+00:00",
+  "smtp_message_id": "<179164513122.2232.2781898246565036963@icloud.com>",
+  "status": "smtp_accepted",
   "subject_sha256": "e791e9948fe36f143203fa03acc9b4b7f473345e6b5f94f8b3aa9ea0bdd9baa2"
 }
