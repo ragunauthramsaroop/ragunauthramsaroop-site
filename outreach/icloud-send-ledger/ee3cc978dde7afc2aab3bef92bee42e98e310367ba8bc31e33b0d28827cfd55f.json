@@ -3,6 +3,7 @@
   "batch_id": "2026-10-10-fifth40-013-scion",
   "body_sha256": "9083266210269191f56df92bc649a6dcb21c41516f1758bbe41a9279cae56692",
   "created_at": "2026-10-10T18:12:25+00:00",
+  "delivery_status": "pending_bounce_check",
   "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
   "github_run_attempt": "1",
   "github_run_id": "38074818025",
@@ -12,6 +13,9 @@
   "recipient": "sales@scionstaffing.com",
   "recipient_sha256": "ee3cc978dde7afc2aab3bef92bee42e98e310367ba8bc31e33b0d28827cfd55f",
   "schema": 2,
-  "status": "pending",
+  "sent_at": "2026-10-10T18:12:27+00:00",
+  "smtp_accepted_at": "2026-10-10T18:12:27+00:00",
+  "smtp_message_id": "<179165594674.2440.8492560160979063182@icloud.com>",
+  "status": "smtp_accepted",
   "subject_sha256": "862046bb0c7a0eb3fe370c08fc9bd7eb1eb33b786feaef069bff7fb307accb48"
 }
