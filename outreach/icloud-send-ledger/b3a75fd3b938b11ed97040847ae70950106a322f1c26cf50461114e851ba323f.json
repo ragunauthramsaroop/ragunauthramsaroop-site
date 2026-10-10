@@ -3,6 +3,7 @@
   "batch_id": "2026-10-10-third40-wave-04",
   "body_sha256": "e75c3d7bd8e1efbc9879ed1d9327f4f373b011f3d7d74d2f3c80b4bcf2152f84",
   "created_at": "2026-10-10T13:53:50+00:00",
+  "delivery_status": "pending_bounce_check",
   "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
   "github_run_attempt": "1",
   "github_run_id": "38057476079",
@@ -12,6 +13,9 @@
   "recipient": "contact@atgmining.com",
   "recipient_sha256": "b3a75fd3b938b11ed97040847ae70950106a322f1c26cf50461114e851ba323f",
   "schema": 2,
-  "status": "pending",
+  "sent_at": "2026-10-10T13:53:51+00:00",
+  "smtp_accepted_at": "2026-10-10T13:53:51+00:00",
+  "smtp_message_id": "<179164043103.2226.14999059494915469202@icloud.com>",
+  "status": "smtp_accepted",
   "subject_sha256": "a453423f9b116bd32f816ba1bc8598951f0b5a1c87d43abecb99d9b40ba8a3a1"
 }
