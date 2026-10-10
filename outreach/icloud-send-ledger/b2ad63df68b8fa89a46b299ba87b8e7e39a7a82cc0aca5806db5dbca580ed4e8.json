@@ -3,6 +3,7 @@
   "batch_id": "2026-10-10-fourth40-close-07-drakedarcy",
   "body_sha256": "2b6f55c2bb0ae8b6833a239c77b882304ad38af2e87a1091f09557b2ee9f4869",
   "created_at": "2026-10-10T15:33:40+00:00",
+  "delivery_status": "pending_bounce_check",
   "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
   "github_run_attempt": "1",
   "github_run_id": "38064077035",
@@ -12,6 +13,9 @@
   "recipient": "contact@drakedarcy.com",
   "recipient_sha256": "b2ad63df68b8fa89a46b299ba87b8e7e39a7a82cc0aca5806db5dbca580ed4e8",
   "schema": 2,
-  "status": "pending",
+  "sent_at": "2026-10-10T15:33:42+00:00",
+  "smtp_accepted_at": "2026-10-10T15:33:42+00:00",
+  "smtp_message_id": "<179164642167.2435.16831442028058356185@icloud.com>",
+  "status": "smtp_accepted",
   "subject_sha256": "1cb8b925bcb7351ae2e769732a6d9d9c83d292bf98703ee3ea415eda83e5bdb0"
 }
