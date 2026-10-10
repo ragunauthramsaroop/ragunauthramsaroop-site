@@ -3,6 +3,7 @@
   "batch_id": "2026-10-10-fourth40-wave-14",
   "body_sha256": "100575eb2da179be219a8b31c91dbc2913c70f92c8b4be8358e95c7d965b3cf6",
   "created_at": "2026-10-10T15:28:51+00:00",
+  "delivery_status": "pending_bounce_check",
   "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
   "github_run_attempt": "1",
   "github_run_id": "38063763256",
@@ -12,6 +13,9 @@
   "recipient": "info@talentnation.com.au",
   "recipient_sha256": "c88a8dfde1b579a20f30727b98d4ed4e94791841233e42341400102bf73e68f2",
   "schema": 2,
-  "status": "pending",
+  "sent_at": "2026-10-10T15:28:52+00:00",
+  "smtp_accepted_at": "2026-10-10T15:28:52+00:00",
+  "smtp_message_id": "<179164613255.2410.7407446393744045340@icloud.com>",
+  "status": "smtp_accepted",
   "subject_sha256": "91c82f0a4b2bd9394eeaf6dd245715baaaf6b688b16a9b4df3bb1c41b9051086"
 }
