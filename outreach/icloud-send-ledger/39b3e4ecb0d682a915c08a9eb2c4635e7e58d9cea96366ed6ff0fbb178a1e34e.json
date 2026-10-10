@@ -3,6 +3,7 @@
   "batch_id": "2026-10-10-fourth40-msi",
   "body_sha256": "edcbc49253bbd7c5e9652974700191e473879cb08a18c59e08592c30eed66ea3",
   "created_at": "2026-10-10T14:35:27+00:00",
+  "delivery_status": "pending_bounce_check",
   "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
   "github_run_attempt": "1",
   "github_run_id": "38060195677",
@@ -12,6 +13,9 @@
   "recipient": "shanawaz@themsigroup.com",
   "recipient_sha256": "39b3e4ecb0d682a915c08a9eb2c4635e7e58d9cea96366ed6ff0fbb178a1e34e",
   "schema": 2,
-  "status": "pending",
+  "sent_at": "2026-10-10T14:35:29+00:00",
+  "smtp_accepted_at": "2026-10-10T14:35:29+00:00",
+  "smtp_message_id": "<179164292887.2223.17542651174038653518@icloud.com>",
+  "status": "smtp_accepted",
   "subject_sha256": "bbb4b10b9653b960f87f23458d473b78a00ae53cce5509582cb3e29d6be4aa30"
 }
