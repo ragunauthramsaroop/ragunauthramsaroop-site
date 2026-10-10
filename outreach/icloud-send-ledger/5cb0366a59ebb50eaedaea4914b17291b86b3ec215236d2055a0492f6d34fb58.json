@@ -3,6 +3,7 @@
   "batch_id": "2026-10-10-fifth40-058-executive-integrity",
   "body_sha256": "e3133ef2e1fd28036c955e5bbcb7a02bb7f5cd4449072b265d0b6922a0e86fa4",
   "created_at": "2026-10-10T18:30:26+00:00",
+  "delivery_status": "pending_bounce_check",
   "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
   "github_run_attempt": "1",
   "github_run_id": "38076029427",
@@ -12,6 +13,9 @@
   "recipient": "simon.grant@executive-integrity.com",
   "recipient_sha256": "5cb0366a59ebb50eaedaea4914b17291b86b3ec215236d2055a0492f6d34fb58",
   "schema": 2,
-  "status": "pending",
+  "sent_at": "2026-10-10T18:30:28+00:00",
+  "smtp_accepted_at": "2026-10-10T18:30:28+00:00",
+  "smtp_message_id": "<179165702796.2215.551056908449340674@icloud.com>",
+  "status": "smtp_accepted",
   "subject_sha256": "10b46c155cd51abc126ae7b169868ffb114e344583e8251a3fa9a291a625ae84"
 }
