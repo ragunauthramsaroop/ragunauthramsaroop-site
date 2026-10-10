@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "892afbed00427a56afbb4da2eb3250390c208f08ab0ba6670fcb3b43b279460b",
+  "batch_id": "2026-10-10-third40-wave-02",
+  "body_sha256": "9305f1d34ba9a6ff8b42c6eb8fe9eee20a12085af69a315d4bca8c6c89f8d695",
+  "created_at": "2026-10-10T13:51:14+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "38057309618",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/2026-10-10-third40-wave-02.json",
+  "payload_sha256": "2af57c238c6fbeb7ff236bd5ebc53bb261e9b350c75ba4f41b879d6c345bb5ff",
+  "recipient": "enquiries@armstrongint.com",
+  "recipient_sha256": "4df2bf54295927fa3de18cbe5f38dacfc48b0e416d64eb43c9c9c563f2d8fdb3",
+  "schema": 2,
+  "status": "pending",
+  "subject_sha256": "6aaf5d926597e6c1d8ad8515bf67c3ffc857ec3d192a76da4ec3620151fe4f97"
+}
