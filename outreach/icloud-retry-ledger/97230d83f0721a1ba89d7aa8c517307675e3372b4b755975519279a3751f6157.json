@@ -4,6 +4,7 @@
   "body_sha256": "2cbb28a384362e7bd217f788a2776c5aeeae94c8db55d9c45bf2a63a19d00e72",
   "bounce_error": "unable to look up host gainesintl.com.2.0001.arsmtp.com: Name or service not known",
   "created_at": "2026-10-10T18:57:24+00:00",
+  "delivery_status": "pending_bounce_check",
   "evidence_source": "user_provided_delivery_status_notification",
   "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
   "github_run_attempt": "1",
@@ -16,6 +17,9 @@
   "recipient": "rwalker@gainesintl.com",
   "recipient_sha256": "97230d83f0721a1ba89d7aa8c517307675e3372b4b755975519279a3751f6157",
   "schema": 1,
-  "status": "pending",
+  "sent_at": "2026-10-10T18:57:26+00:00",
+  "smtp_accepted_at": "2026-10-10T18:57:26+00:00",
+  "smtp_message_id": "<179165864552.2426.7292042382037933814@icloud.com>",
+  "status": "smtp_accepted",
   "subject_sha256": "1bbf9ebf7e8e2c8b741f0c0bdc553b06b4159b4e03104a4de281ce29f3758f00"
 }
