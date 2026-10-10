@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "7975e614f63a3b012c0f2f34073e5b623612ec929628381f3ccfd01dee468e87",
+  "batch_id": "2026-10-10-fifth40-15-brightsmith",
+  "body_sha256": "6a775c1af74011129cb1936d8013f87c2c7fda6a166c5c7b28f6af8536f0906d",
+  "created_at": "2026-10-10T18:51:02+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "38077421930",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/2026-10-10-fifth40-15-brightsmith.json",
+  "payload_sha256": "80c7c97cbd061f9c7c3b44ced6785fa8673652c0613add798d38a9fc9818b7a6",
+  "recipient": "p.mazalov@brightsmithgroup.com",
+  "recipient_sha256": "5db3f43dc87911bae323b8df89aaaa2b9923a234c9ed59bf841e8c75b2ec9445",
+  "schema": 2,
+  "status": "pending",
+  "subject_sha256": "afb4de5a40f4a96644975222cd907bb41fd41f310a58014df977f181f4a0941b"
+}
