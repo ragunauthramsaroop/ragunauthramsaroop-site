@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "8a659f73f2758d5162f81edaee59e7b1586254f1f9b053a504d75c997e5497bd",
+  "batch_id": "2026-10-10-fourth40-vanguard-search",
+  "body_sha256": "d4929ae05f7582916130a60c2c9e41d35023badbec5e511ae24949623341de7d",
+  "created_at": "2026-10-10T15:04:39+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "38062137980",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/2026-10-10-fourth40-vanguard-search.json",
+  "payload_sha256": "52778b16ea4b22619b6278ee5186915815c528d9d4eae50ff1e6839f1b6a852e",
+  "recipient": "andy.peterson@vanguard-energypartners.com",
+  "recipient_sha256": "26332cfd370b2a5b7a7352e34429de5a40ff0fb8fef8080822cd9a33fa2052c1",
+  "schema": 2,
+  "status": "pending",
+  "subject_sha256": "2de4d2a259ae56b5490221ebd8be8a0f241f013195841a94fedb6ce88d649fe1"
+}
