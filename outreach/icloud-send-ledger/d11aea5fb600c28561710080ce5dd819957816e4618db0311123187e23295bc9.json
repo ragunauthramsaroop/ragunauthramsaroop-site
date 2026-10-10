@@ -3,6 +3,7 @@
   "batch_id": "2026-10-10-fifth40-067-andersen-steinberg",
   "body_sha256": "d198d46c6f672badcefd707ff3db194c4573f2d6baf82c927033cc4edb14d4c9",
   "created_at": "2026-10-10T18:37:02+00:00",
+  "delivery_status": "pending_bounce_check",
   "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
   "github_run_attempt": "1",
   "github_run_id": "38076484024",
@@ -12,6 +13,9 @@
   "recipient": "carrie.mullineaux@andersensteinberg.com",
   "recipient_sha256": "d11aea5fb600c28561710080ce5dd819957816e4618db0311123187e23295bc9",
   "schema": 2,
-  "status": "pending",
+  "sent_at": "2026-10-10T18:37:05+00:00",
+  "smtp_accepted_at": "2026-10-10T18:37:05+00:00",
+  "smtp_message_id": "<179165742552.2442.3082744295342872334@icloud.com>",
+  "status": "smtp_accepted",
   "subject_sha256": "89a861de148f2f732b348a877c878a5742aa0345da2ef1aa98cb72b6c20e95a7"
 }
