@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "e3638fa3372de7db9227d45092a467289ec91b4a2723628873556dd60d2b2a40",
+  "batch_id": "2026-10-10-fifth40-050-bricks",
+  "body_sha256": "2a8db99be6c98db409fb5dd7f86d6ecf836d9d44b9a47bf9359f2cc6be741959",
+  "created_at": "2026-10-10T18:27:44+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "38075836319",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/2026-10-10-fifth40-050-bricks.json",
+  "payload_sha256": "e1e6730b46c1937dc1a6a38002dae99f12a089cb8f9f17dbdb2c57654982a90f",
+  "recipient": "marium.dahar@bricksexecutivesearch.com",
+  "recipient_sha256": "2cd53c2c16291e587e699d84ba55f374e08533f96cf10e26637eda6b72875452",
+  "schema": 2,
+  "status": "pending",
+  "subject_sha256": "3818f21570b3e18ba11350dc3f7337733c4f47ed9218729479bedd9f3696f529"
+}
