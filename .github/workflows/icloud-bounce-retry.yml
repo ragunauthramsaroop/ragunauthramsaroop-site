@@ -1,0 +1,100 @@
+name: iCloud one-time bounce retry
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'outreach/icloud-bounce-retry/*.json'
+  workflow_dispatch:
+    inputs:
+      payload_file:
+        description: 'Path to one approved JSON payload under outreach/icloud-bounce-retry/'
+        required: true
+        type: string
+
+permissions:
+  contents: write
+
+concurrency:
+  group: icloud-bounce-retry
+  cancel-in-progress: false
+
+jobs:
+  retry:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    env:
+      ICLOUD_SMTP_USER: ragunauthramsaroop@icloud.com
+      ICLOUD_APP_PASSWORD: ${{ secrets.ICLOUD_APP_PASSWORD }}
+      GITHUB_TOKEN: ${{ github.token }}
+      ICLOUD_LEDGER_REPOSITORY: ${{ github.repository }}
+      ICLOUD_LEDGER_BRANCH: main
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          persist-credentials: false
+          fetch-depth: 2
+
+      - uses: actions/setup-python@v7
+        with:
+          python-version: '3.12'
+
+      - name: Install outreach dependencies
+        run: python -m pip install --disable-pip-version-check 'reportlab==4.2.5' 'pypdf==6.1.1' cryptography
+
+      - name: Resolve approved retry payload
+        id: payload
+        shell: bash
+        run: |
+          set -euo pipefail
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            PAYLOAD="${{ inputs.payload_file }}"
+          else
+            PAYLOAD="$(git diff-tree --diff-filter=AM --no-commit-id --name-only -r "$GITHUB_SHA" | grep -E '^outreach/icloud-bounce-retry/[^/]+\.json$' | head -n 1 || true)"
+          fi
+          if [ -z "$PAYLOAD" ]; then
+            echo "No bounce retry payload found in this change."
+            exit 0
+          fi
+          case "$PAYLOAD" in
+            outreach/icloud-bounce-retry/*.json) ;;
+            *) echo "Refusing payload outside approved bounce retry folder."; exit 1 ;;
+          esac
+          if [ ! -f "$PAYLOAD" ]; then
+            echo "Payload file not found: $PAYLOAD"
+            exit 1
+          fi
+          echo "payload=$PAYLOAD" >> "$GITHUB_OUTPUT"
+
+      - name: Enforce recruiter outreach policy
+        id: preflight
+        if: steps.payload.outputs.payload != ''
+        shell: bash
+        run: |
+          set -euo pipefail
+          python scripts/prepare_outreach_payload_exec.py "${{ steps.payload.outputs.payload }}"
+          echo "ready=true" >> "$GITHUB_OUTPUT"
+
+      - name: Verify iCloud credential is configured
+        if: steps.preflight.outputs.ready == 'true'
+        shell: bash
+        run: |
+          if [ -z "$ICLOUD_APP_PASSWORD" ]; then
+            echo "ICLOUD_APP_PASSWORD is not configured as a GitHub Actions secret."
+            exit 1
+          fi
+
+      - name: Send through one-time bounce retry route
+        if: steps.preflight.outputs.ready == 'true'
+        shell: bash
+        run: |
+          set -euo pipefail
+          python scripts/send_icloud_bounce_retry.py "${{ steps.payload.outputs.payload }}"
+
+      - name: Clarify retry semantics
+        if: steps.preflight.outputs.ready == 'true'
+        shell: bash
+        run: |
+          echo 'This route bypasses normal Sent-folder duplicate blocking only for one explicitly authorized bounced recipient.' >> "$GITHUB_STEP_SUMMARY"
+          echo 'A dedicated retry ledger prevents a second retry without manual review.' >> "$GITHUB_STEP_SUMMARY"
