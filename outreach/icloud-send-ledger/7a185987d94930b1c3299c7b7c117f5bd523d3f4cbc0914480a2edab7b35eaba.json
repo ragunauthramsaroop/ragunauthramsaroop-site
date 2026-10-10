@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "470186dccd287ec3888cca7e3fe5d7ae875bf63d7c60c353a6be09bd293fca24",
+  "batch_id": "2026-10-10-third40-wave-01",
+  "body_sha256": "e438e98af4588d7db16d1f1154c9dd456c161348dee4a9619624552fd6c9ea0f",
+  "created_at": "2026-10-10T13:47:45+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "38057079436",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/2026-10-10-third40-wave-01.json",
+  "payload_sha256": "5f60f24c3b0781f78b71c3f6d0a2b43dc2bd28cb5b0b6fe64dfa67b41e22b279",
+  "recipient": "europe@netzero-search.com",
+  "recipient_sha256": "7a185987d94930b1c3299c7b7c117f5bd523d3f4cbc0914480a2edab7b35eaba",
+  "schema": 2,
+  "status": "pending",
+  "subject_sha256": "508a69a776925fc68af8816de119d5553268ae6fdc1debabfb2ebc31fb591844"
+}
