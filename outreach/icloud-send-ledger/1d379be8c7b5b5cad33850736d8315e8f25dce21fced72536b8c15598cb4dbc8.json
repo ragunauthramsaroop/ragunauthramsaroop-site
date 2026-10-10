@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "5b67687513b2600551500158499e10f240e7903625e35a4007ddede664436c6e",
+  "batch_id": "2026-10-10-fifth40-18-moon",
+  "body_sha256": "05a8c165ad567a6f6ff82ca7b4e92eb766e8ff9872056955432f690636da088a",
+  "created_at": "2026-10-10T18:53:10+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "38077561050",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/2026-10-10-fifth40-18-moon.json",
+  "payload_sha256": "7e94abe79e5e1724a6063c5e8f32043fdce6a00b52f79a4f04fe39bc1b78a6c0",
+  "recipient": "welcome@moonexecsearch.com",
+  "recipient_sha256": "1d379be8c7b5b5cad33850736d8315e8f25dce21fced72536b8c15598cb4dbc8",
+  "schema": 2,
+  "status": "pending",
+  "subject_sha256": "b8f5118a8f59bf3c377974261f38b52036eb0f48c08bf8bca3f7008162b74624"
+}
