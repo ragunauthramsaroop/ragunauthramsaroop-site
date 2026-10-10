@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "dbcf95ce7b80c40a96339f9102e6a5cf0d2ab1cd3edacfde9943802b94c6442e",
+  "batch_id": "2026-10-10-fourth40-aurum-executive-search",
+  "body_sha256": "5bde903c8a249e55dde3a4be581d70c4f596a5afe9e35a428db816a7cc08db64",
+  "created_at": "2026-10-10T14:52:58+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "38061358801",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/2026-10-10-fourth40-aurum-executive-search.json",
+  "payload_sha256": "349b0662ab3c25c5f9767864d7f84c6116101a33dae33ef3ddf5bce31ff4b3a0",
+  "recipient": "cj.mckennitt@aesearch.co",
+  "recipient_sha256": "8d10acddac4fba47190456231425f6f8a15b83de8055fd50788e2495696e911b",
+  "schema": 2,
+  "status": "pending",
+  "subject_sha256": "447d251bc20531e6c8b8da5845b008fb68958fc548d1928b01628b44ad3a7a13"
+}
