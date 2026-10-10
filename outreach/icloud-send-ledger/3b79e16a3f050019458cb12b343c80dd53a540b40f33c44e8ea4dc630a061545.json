@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "2bfb429d24de1252045edbf733bb96dbf39da4759b49ea9a4ab19193595135b8",
+  "batch_id": "2026-10-10-fifth40-010-iron-cove",
+  "body_sha256": "8c79b85cb998daaf3a68ef071861f06cec0b588e55a96ad0d4ccc51fb27a8fff",
+  "created_at": "2026-10-10T18:10:12+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "38074666104",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/2026-10-10-fifth40-010-iron-cove.json",
+  "payload_sha256": "837b757e891caca86a1ab425eb54b2105c3fdfa4ac3c376513435261ae420d06",
+  "recipient": "info@ironcoveglobal.com",
+  "recipient_sha256": "3b79e16a3f050019458cb12b343c80dd53a540b40f33c44e8ea4dc630a061545",
+  "schema": 2,
+  "status": "pending",
+  "subject_sha256": "f9913f3778e3eaa7781426aad1687857eedba8ce3e5d58625c8d08a378484676"
+}
