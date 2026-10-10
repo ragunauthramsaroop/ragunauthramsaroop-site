@@ -4,6 +4,7 @@
   "campaign_type": "recruiter",
   "batch_id": "2026-10-10-bounce-fix-mpowering-tom-henderson",
   "attachment_filename": "Ragunauth_Ramsaroop_ATS_Executive_Resume_Ceiling_2026.pdf",
+  "resend_trigger": 1,
   "recipient_verification": {
     "source": "https://www.mpowering-people.com/copy-of-about",
     "verified_at": "2026-10-10",
