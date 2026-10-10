@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "393720cebac2acace51bac3bb5eec660cab3672929e6834c23d1f41738662f17",
+  "batch_id": "2026-10-10-bounce-fix-intelligent-employment-tony",
+  "body_sha256": "61e1bb313f3de8ed4647caa4ac2c28adf2a9516c3c3c61a2514bdcd2c26a8764",
+  "created_at": "2026-10-10T18:57:16+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "38077827285",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/2026-10-10-bounce-fix-intelligent-employment-tony.json",
+  "payload_sha256": "cc82e0ce44c5603590dede746c12711659e5dc43bd012adac0dd5dbe24eff76e",
+  "recipient": "tony@intelligentemployment.com",
+  "recipient_sha256": "4b3d9894096ec429eecf85f287d0ed3c6a9845fa598ac7b111be4e3aacbff938",
+  "schema": 2,
+  "status": "pending",
+  "subject_sha256": "66118796bddecfa6e432d758ec8a0ef69ee9f59523954075a2658333b13acf3b"
+}
