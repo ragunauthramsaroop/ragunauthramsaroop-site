@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "604ea34cadbbee331be957a4e259328b3d3bdffe78c3446764da5ef28753da30",
+  "batch_id": "2026-10-10-sixth40-03-cormac-consulting",
+  "body_sha256": "95f8554e9e7d0d45e93411a50256a143348408bf2d7a64988d622b418483e147",
+  "created_at": "2026-10-10T19:54:34+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "38081625170",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/2026-10-10-sixth40-03-cormac-consulting.json",
+  "payload_sha256": "cc6b32b13cf9fda8509ecbfd2fa5b378b615fadc51d0bbeb7f4383cca083bb5d",
+  "recipient": "info@cormacconsulting.com.au",
+  "recipient_sha256": "8c143e3b5a7d45ac2da804d92347ae88685c231681f75660601b933fe6349ba4",
+  "schema": 2,
+  "status": "pending",
+  "subject_sha256": "370cc1c8e11edf4d728be147bcc73282d5b5502d80a7aec01544817151eb1f1a"
+}
