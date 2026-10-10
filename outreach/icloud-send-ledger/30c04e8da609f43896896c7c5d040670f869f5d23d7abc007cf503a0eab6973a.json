@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "3e6e48cb0f7f69c018e80a3bf09d9fde4dab7573be05ffec9c2f75e433c4ce11",
+  "batch_id": "2026-10-10-fifth40-066-gerard-daniels",
+  "body_sha256": "27489d976c90507aa6026f0428bbe29b305da0fcd3143cb834d193e781dfac94",
+  "created_at": "2026-10-10T18:35:57+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "38076404975",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/2026-10-10-fifth40-066-gerard-daniels.json",
+  "payload_sha256": "3640e1b87afb0a841c0d7d2a531593d699a70689ef2f1b091ff03447e3e4e0c5",
+  "recipient": "jsimpson@gerard-daniels.com",
+  "recipient_sha256": "30c04e8da609f43896896c7c5d040670f869f5d23d7abc007cf503a0eab6973a",
+  "schema": 2,
+  "status": "pending",
+  "subject_sha256": "658acd6a0783857c4057f36a6d9fa6d353c1fd0d5fc7d1844afe5bcb37c008ed"
+}
