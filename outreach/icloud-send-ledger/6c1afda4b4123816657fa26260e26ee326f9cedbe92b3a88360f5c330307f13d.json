@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "fc02100e50617ecaff2122461d36b33ff18177cafd57698991926f2e001671dd",
+  "batch_id": "2026-10-10-fourth40-wave-15",
+  "body_sha256": "4620a896930d700604a30154c7c0e16e09fa363a82b2df537115f0707e84ca66",
+  "created_at": "2026-10-10T15:30:44+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "38063885878",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/2026-10-10-fourth40-wave-15.json",
+  "payload_sha256": "59d9391c990505afc0b5b0758cd226179038e9c2f4b252d7192bb7a6ed436dbc",
+  "recipient": "info@neorecruits.com",
+  "recipient_sha256": "6c1afda4b4123816657fa26260e26ee326f9cedbe92b3a88360f5c330307f13d",
+  "schema": 2,
+  "status": "pending",
+  "subject_sha256": "1e731bba1875cd35f932a046cca8b311551e3037828080f964ebbbfe8a1c6fdb"
+}
