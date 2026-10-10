@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "08d4a1dcf5cd650a26acc57cd39def678c9e4d52a76c83f62c18f7a0b9342e40",
+  "batch_id": "2026-10-10-fourth40-nts",
+  "body_sha256": "d6539ea161bd31b1092b36e5f1ffaf515a1b3b275f82088614359d307ea40c1d",
+  "created_at": "2026-10-10T14:35:12+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "38060172060",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/2026-10-10-fourth40-nts.json",
+  "payload_sha256": "7d6227532a505d6ad153e0f72eca6a4703f8849620aafcb6e4d06ac07e3ed532",
+  "recipient": "peter.norwell@ntsrecruitment.com",
+  "recipient_sha256": "b90ea7a7b8d0eadaf53e9bbace60f3b4eccc74ed130f35f2abae9bdf88b61f09",
+  "schema": 2,
+  "status": "pending",
+  "subject_sha256": "855d20d828624ba588a8fcbc7c9c660d70ab5851e019a8b3fa5599edb342b5ac"
+}
