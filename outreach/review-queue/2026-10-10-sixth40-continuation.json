@@ -3,6 +3,7 @@
   "date": "2026-10-10",
   "confirmed_overall_total": 219,
   "sixth_batch_confirmed": 19,
+  "remaining_slots": 21,
   "notes": "Dispatch is intentionally disabled in this file. It is a research and duplicate-audit queue only.",
   "confirmed_replacements": [
     {"firm":"Alder Koten","recipient":"candidates@alderkoten.com","status":"smtp_accepted"},
@@ -13,7 +14,9 @@
     {"firm":"Madison Pearl","recipient":"info@madisonpearl.com","reason":"existing GitHub send-ledger claim / duplicate block"},
     {"firm":"Cornerstone International Group","recipient":"contactus@cornerstone-group.com","reason":"company-level prior sent record found in Gmail"},
     {"firm":"Perrett Laver","recipient":"mail@perrettlaver.com","reason":"prior sent record found in Gmail"},
-    {"firm":"LHH Executive Search","reason":"prior sent record found in Gmail"}
+    {"firm":"LHH Executive Search","reason":"prior sent record found in Gmail"},
+    {"firm":"Robert Walters","reason":"multiple prior sent records found in Gmail"},
+    {"firm":"Mackenzie Jones Middle East","recipient":"info@mackenziejones.com","reason":"prior sent record found in Gmail"}
   ],
   "unexecuted_retry_candidate": [
     {"firm":"IRC Global Executive Search Partners","recipient":"info@ircsearchpartners.com","status":"original workflow cancelled before execution"}
@@ -31,10 +34,14 @@
     {"firm":"Calibre One","recipient":"info@calibreone.com","priority":"global board and senior management search","gmail_sent_match":false,"github_record_match":false},
     {"firm":"Renovata","recipient":"contact@renovata.com","priority":"international executive search","gmail_sent_match":false,"github_record_match":false},
     {"firm":"Saxton Bampfylde","recipient":"contact@saxbam.com","priority":"global executive and board search","gmail_sent_match":false,"github_record_match":false},
-    {"firm":"Alumni Global","recipient":"info@alumniglobal.com","priority":"global executive search / industrial leadership","gmail_sent_match":false,"github_record_match":false}
+    {"firm":"Alumni Global","recipient":"info@alumniglobal.com","priority":"global executive search / industrial leadership","gmail_sent_match":false,"github_record_match":false},
+    {"firm":"Cooper Fitch","recipient":"jkhabbaz@cooperfitch.ae","priority":"GCC CEO / executive search / public sector advisory","gmail_sent_match":false,"github_record_match":false},
+    {"firm":"Beilby Downing Teal","recipient":"vvieilledent@beilbydt.com.au","priority":"mining / oil and gas / executive search","gmail_sent_match":false,"github_record_match":false},
+    {"firm":"Derwent Search","recipient":"perth@derwentsearch.com.au","priority":"executive search / Australia / resources market","gmail_sent_match":false,"github_record_match":false},
+    {"firm":"Linum Consult","recipient":"info@linumconsult.com","priority":"mining / energy / construction / international executive search","gmail_sent_match":false,"github_record_match":false}
   ],
   "portal_only_candidates": [
-    {"firm":"Erevena","route":"official next-role enquiry form","priority":"Dubai / global technology leadership"},
+    {"firm":"Erevena","route":"official next-role enquiry form","priority":"Dubai / global leadership"},
     {"firm":"Coulter Partners","route":"official candidate application form","priority":"global executive search"},
     {"firm":"Marlin Hawk","route":"official candidate enquiry route","priority":"Dubai / MENA / global executive search"}
   ]
