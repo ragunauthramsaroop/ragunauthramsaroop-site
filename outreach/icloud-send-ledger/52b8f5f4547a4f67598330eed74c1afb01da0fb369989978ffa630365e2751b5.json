@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "7416b3fb03fc4e61d8561b532e48ed4d984658e74a0e945c784858119b2a290f",
+  "batch_id": "2026-10-10-fifth40-060-wenham-carter",
+  "body_sha256": "e17a9b99891a0c7e3a3bda36be2293416203cfd088e18e3005f1e280948a2e96",
+  "created_at": "2026-10-10T18:31:52+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "38076137911",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/2026-10-10-fifth40-060-wenham-carter.json",
+  "payload_sha256": "0aec28b0baece0ff6ae29e0fe5777e110e85027230cde43769fb8e4e7e57c0ea",
+  "recipient": "anouska.zvirbulis@wenhamcarter.com",
+  "recipient_sha256": "52b8f5f4547a4f67598330eed74c1afb01da0fb369989978ffa630365e2751b5",
+  "schema": 2,
+  "status": "pending",
+  "subject_sha256": "f54bd5487fd55afc56a7b511ec431c89f18a5345730977aed735e21d48919bd4"
+}
