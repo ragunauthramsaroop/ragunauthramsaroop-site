@@ -3,6 +3,7 @@
   "batch_id": "2026-10-10-fourth40-talentsphere",
   "body_sha256": "89b5861cf02c66cc749f825bb84a9a3ec4f303999cc54163c01fded48842874a",
   "created_at": "2026-10-10T14:59:37+00:00",
+  "delivery_status": "pending_bounce_check",
   "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
   "github_run_attempt": "1",
   "github_run_id": "38061792372",
@@ -12,6 +13,9 @@
   "recipient": "kbennett@talentsphere.ca",
   "recipient_sha256": "042b81304702af25d91909c02fe5ea9800ccaab58161eba5b9e9c795bf107c71",
   "schema": 2,
-  "status": "pending",
+  "sent_at": "2026-10-10T14:59:39+00:00",
+  "smtp_accepted_at": "2026-10-10T14:59:39+00:00",
+  "smtp_message_id": "<179164437884.2210.12491993272644168975@icloud.com>",
+  "status": "smtp_accepted",
   "subject_sha256": "e1028df50dfaa1396a4c583d65e12eff894051a71866f8d76dc9b33531c8fef5"
 }
