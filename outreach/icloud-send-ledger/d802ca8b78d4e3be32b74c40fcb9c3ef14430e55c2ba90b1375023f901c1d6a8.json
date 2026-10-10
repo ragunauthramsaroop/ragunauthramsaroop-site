@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "017fca703478c2043b2c1e27c1b7627aa729102934c5653d49df3a1bc7583bca",
+  "batch_id": "2026-10-10-fifth40-008-koncert",
+  "body_sha256": "f72cea60489896c8e9d2a0e967ec31a9c33ea374f6700776d9b9ad504ba89129",
+  "created_at": "2026-10-10T18:09:34+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "38074629267",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/2026-10-10-fifth40-008-koncert.json",
+  "payload_sha256": "3e6ed447d9c5bc99452491021debdcaf9f0dae82c57a2adefaada22030822393",
+  "recipient": "kevinleh@koncertrecruit.com",
+  "recipient_sha256": "d802ca8b78d4e3be32b74c40fcb9c3ef14430e55c2ba90b1375023f901c1d6a8",
+  "schema": 2,
+  "status": "pending",
+  "subject_sha256": "99926091390d56ddbe10d3e07eadb01167979d998bb5dfaef048082d8309ae57"
+}
