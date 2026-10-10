@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "90f579497bedd32ccf48deb457876923104158f94271112ce88c40dcc270d40a",
+  "batch_id": "2026-10-10-fourth40-edh-consult",
+  "body_sha256": "f2e1e188626f66653ed4995e8d0a60e37d1df4ce5bcfba9d3cdbe1816667f8e3",
+  "created_at": "2026-10-10T15:06:34+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "38062262643",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/2026-10-10-fourth40-edh-consult.json",
+  "payload_sha256": "1bd6a4cfe37e0fe882bab9d066c192b540eaacc0c5279440a2630be0f29b16c4",
+  "recipient": "edward@edwardedhconsult.com",
+  "recipient_sha256": "abc871385e47a942244c5ac77e1ba78c6af4d64e306d7268a71e22c3a2a8fdf9",
+  "schema": 2,
+  "status": "pending",
+  "subject_sha256": "544b08dc7614f3a747276df14eb341042f7a4b69f2c9e8e39d22dfe8e569004e"
+}
