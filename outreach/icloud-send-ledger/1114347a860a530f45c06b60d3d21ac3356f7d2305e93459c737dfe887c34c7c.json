@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "29294597405a2b07fcc5f9771d733777fa84cf68e1d536d1bde24b3aeacbdb65",
+  "batch_id": "2026-10-10-fourth40-oneira",
+  "body_sha256": "c11e733c1483b7fdbd7e9084fa6a9065b4fc15b48b73f54c8435aad41c629c71",
+  "created_at": "2026-10-10T14:34:55+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "38060161468",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/2026-10-10-fourth40-oneira.json",
+  "payload_sha256": "a9da36473addf0d63bfae1970c7b616c9e588a470a060fa7498a0fe156ccb63b",
+  "recipient": "contact@oneiratalent.com",
+  "recipient_sha256": "1114347a860a530f45c06b60d3d21ac3356f7d2305e93459c737dfe887c34c7c",
+  "schema": 2,
+  "status": "pending",
+  "subject_sha256": "1413681f5244ed816948d4f82ab196c581e3eddea853534066637de0f7b893b4"
+}
