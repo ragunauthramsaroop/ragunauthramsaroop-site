@@ -148,15 +148,21 @@ def exclude_existing_icloud_sent(candidates, sender: str, password: str):
 
 def send_guarded(server: smtplib.SMTP, sender: str, candidate) -> None:
     raw, raw_bytes, batch_id, to, subject, body, attachment, filename = candidate
-    claim = claim_recipient(
-        recipient=to,
-        payload_path=raw,
-        payload_bytes=raw_bytes,
-        attachment=attachment,
-        subject=subject,
-        body=body,
-        batch_id=batch_id,
-    )
+    try:
+        claim = claim_recipient(
+            recipient=to,
+            payload_path=raw,
+            payload_bytes=raw_bytes,
+            attachment=attachment,
+            subject=subject,
+            body=body,
+            batch_id=batch_id,
+        )
+    except RuntimeError as exc:
+        if str(exc).startswith("DUPLICATE BLOCK:"):
+            print(f"Ledger duplicate already claimed. Skipping without workflow failure: {to}")
+            return
+        raise
 
     msg = EmailMessage()
     msg["From"] = formataddr((SENDER_NAME, sender))
