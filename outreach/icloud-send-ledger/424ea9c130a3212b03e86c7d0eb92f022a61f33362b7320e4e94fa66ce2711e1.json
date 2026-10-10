@@ -3,6 +3,7 @@
   "batch_id": "2026-10-10-sixth40-38-greenstone-partnership",
   "body_sha256": "be02b513872a56f925c05c0abe77cd308240ebda97bf9d7a57d09b8e27632238",
   "created_at": "2026-10-10T20:01:48+00:00",
+  "delivery_status": "pending_bounce_check",
   "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
   "github_run_attempt": "1",
   "github_run_id": "38082107701",
@@ -12,6 +13,9 @@
   "recipient": "admin@greenstonepartnership.com",
   "recipient_sha256": "424ea9c130a3212b03e86c7d0eb92f022a61f33362b7320e4e94fa66ce2711e1",
   "schema": 2,
-  "status": "pending",
+  "sent_at": "2026-10-10T20:01:50+00:00",
+  "smtp_accepted_at": "2026-10-10T20:01:50+00:00",
+  "smtp_message_id": "<179166250989.2221.9307730586962127056@icloud.com>",
+  "status": "smtp_accepted",
   "subject_sha256": "3254a0c5b1de9885d5c36eb9ca25085f76b2921c836fbb4586459fa601acf44f"
 }
