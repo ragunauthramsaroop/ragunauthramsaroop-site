@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "a8af2c15e0b42af9bb2b4b5ce543ae24e00cf490d3eb756e73d22e11eb621ef9",
+  "batch_id": "2026-10-10-fifth40-11-spencer-riley",
+  "body_sha256": "18bda244236b426e600a1d54e926f2ab173a22bc711f849ce7b60b68af01cd94",
+  "created_at": "2026-10-10T18:46:09+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "38077100061",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/2026-10-10-fifth40-11-spencer-riley.json",
+  "payload_sha256": "d834e0552073bd05053528020f79cd788d63ab4ee3e63b829da788f32ed5f032",
+  "recipient": "contact@spencer-riley.com",
+  "recipient_sha256": "e73c432d665d4cb26749e61d51e8e27498e354126e3fa8e92db7c942a3357f78",
+  "schema": 2,
+  "status": "pending",
+  "subject_sha256": "dcbe0a6c76b4fd236da07cfc452dce20015a0d75f872e8568392655089447bba"
+}
