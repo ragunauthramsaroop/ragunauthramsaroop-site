@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "5649a23f6eb3102eea3bdb778f52f1a28f6cd73793e8a040b4fb0e2a29161fbf",
+  "batch_id": "2026-10-10-sixth40-39-inzito-partnership",
+  "body_sha256": "7aeb572854ee3dc306cfebb6e2817579deb2bbf18c5110ae361bbc7fe5b19123",
+  "created_at": "2026-10-10T20:02:06+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "38082119798",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/2026-10-10-sixth40-39-inzito-partnership.json",
+  "payload_sha256": "e2aa963f0d20b0f36b11ced031cce985472c63c980f87dfb26a8627c27fd387c",
+  "recipient": "carol.leonard@inzito.com",
+  "recipient_sha256": "f0d8283d92028e2a5b873aee423a7a96124d8e02ad39415094c31700cd48059f",
+  "schema": 2,
+  "status": "pending",
+  "subject_sha256": "10ec77aa7ace66ca04aa2cd2c3bb3a2f4f13362097a32b5fae6853f6f84f9436"
+}
