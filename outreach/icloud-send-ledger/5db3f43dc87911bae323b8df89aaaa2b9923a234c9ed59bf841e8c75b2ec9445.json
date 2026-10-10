@@ -3,6 +3,7 @@
   "batch_id": "2026-10-10-fifth40-15-brightsmith",
   "body_sha256": "6a775c1af74011129cb1936d8013f87c2c7fda6a166c5c7b28f6af8536f0906d",
   "created_at": "2026-10-10T18:51:02+00:00",
+  "delivery_status": "pending_bounce_check",
   "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
   "github_run_attempt": "1",
   "github_run_id": "38077421930",
@@ -12,6 +13,9 @@
   "recipient": "p.mazalov@brightsmithgroup.com",
   "recipient_sha256": "5db3f43dc87911bae323b8df89aaaa2b9923a234c9ed59bf841e8c75b2ec9445",
   "schema": 2,
-  "status": "pending",
+  "sent_at": "2026-10-10T18:51:04+00:00",
+  "smtp_accepted_at": "2026-10-10T18:51:04+00:00",
+  "smtp_message_id": "<179165826395.2405.8155677183657036625@icloud.com>",
+  "status": "smtp_accepted",
   "subject_sha256": "afb4de5a40f4a96644975222cd907bb41fd41f310a58014df977f181f4a0941b"
 }
