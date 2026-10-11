@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "updated": "2026-10-10",
   "professional_identity": {
     "from": "Ragunauth Ramsaroop <executive@ragunauthramsaroop.com>",
@@ -10,36 +10,26 @@
     "domain": "ragunauthramsaroop.com",
     "domain_verified": true,
     "sending_enabled": true,
+    "dns_mode": "outbound_only",
     "status": "operational"
   },
   "inbound": {
-    "provider": "Resend Inboxes",
+    "current_provider": "Resend Inboxes",
     "address": "executive@ragunauthramsaroop.com",
-    "domain_verified": true,
     "receiving_enabled": true,
-    "apex_mx_published": true,
     "external_test_received": true,
-    "private_receiving_endpoint_stored_in_repository": false,
-    "status": "operational"
+    "status": "operational_until_icloud_cutover"
   },
-  "icloud_forwarding": {
-    "destination": "ragunauthramsaroop@icloud.com",
-    "resend_agent": "forward_only",
-    "test_forward_draft_created": true,
-    "automatic_send": false,
-    "status": "pending_automatic_relay"
-  },
-  "relay": {
-    "preferred_platform": "Make",
-    "resend_authorization": "authorized",
-    "main_team_scenario": "staged_inactive",
-    "private_space_scenario": "staged_inactive",
-    "activation_blocker": "Make account active-scenario limit reached; existing PrismBay paid-order scenario left untouched",
-    "safe_next_actions": [
-      "free or add one Make active-scenario slot",
-      "use a dedicated restricted webhook relay",
-      "configure the domain directly as an iCloud custom email domain"
-    ]
+  "icloud_direct_mail_migration": {
+    "target_provider": "iCloud Mail Custom Email Domain",
+    "apple_spf_prestaged": true,
+    "apple_dkim_prestaged": true,
+    "prestage_workflow_passed": true,
+    "apple_verification_txt_captured": false,
+    "apple_mx_cutover_completed": false,
+    "cutover_workflow": ".github/workflows/icloud-domain-cutover.yml",
+    "rollback_available": true,
+    "status": "awaiting_apple_verification_value"
   },
   "campaign_control": {
     "system_of_record": "GitHub",
@@ -50,9 +40,11 @@
     "count_as_sent_only_with_delivery_evidence": true
   },
   "security": {
-    "store_private_receiving_endpoint_in_repo": false,
     "store_api_keys_in_repo": false,
     "store_mail_passwords_in_repo": false,
+    "resend_repair_may_modify_apex_mx": false,
+    "mx_cutover_requires_explicit_confirmation": true,
+    "website_dns_fail_closed": true,
     "no_transport_spoofing": true,
     "no_safety_bypass": true
   }
