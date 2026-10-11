@@ -1,0 +1,57 @@
+{
+  "domain": "ragunauthramsaroop.com",
+  "dns_provider": "Spaceship",
+  "audited": "2026-10-10",
+  "apple_verification_txt": null,
+  "prestage": [
+    {
+      "host": "@",
+      "type": "TXT",
+      "value": "v=spf1 include:icloud.com ~all"
+    },
+    {
+      "host": "sig1._domainkey",
+      "type": "CNAME",
+      "value": "sig1.dkim.ragunauthramsaroop.com.at.icloudmailadmin.com"
+    }
+  ],
+  "cutover_mx": [
+    {
+      "host": "@",
+      "type": "MX",
+      "priority": 10,
+      "value": "mx01.mail.icloud.com"
+    },
+    {
+      "host": "@",
+      "type": "MX",
+      "priority": 10,
+      "value": "mx02.mail.icloud.com"
+    }
+  ],
+  "current_resend_inbound_mx": {
+    "host": "@",
+    "type": "MX",
+    "priority": 10,
+    "value": "inbound-smtp.us-east-1.amazonaws.com"
+  },
+  "preserve": {
+    "root_A": [
+      "185.199.108.153",
+      "185.199.109.153",
+      "185.199.110.153",
+      "185.199.111.153"
+    ],
+    "www_CNAME": "ragunauthramsaroop.github.io",
+    "nameservers": [
+      "launch1.spaceship.net",
+      "launch2.spaceship.net"
+    ],
+    "resend_outbound_hosts": [
+      "resend._domainkey",
+      "send",
+      "rsend"
+    ]
+  },
+  "notes": "Two-phase migration. Prestage SPF and Apple DKIM safely while Resend remains inbound. Do not replace the apex MX until apple_verification_txt is copied exactly from the user's iCloud Custom Email Domain setup and the user is ready to finish setup in iCloud immediately after cutover."
+}
