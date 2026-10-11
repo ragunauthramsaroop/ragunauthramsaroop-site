@@ -1,7 +1,7 @@
 {
   "domain": "ragunauthramsaroop.com",
   "dns_provider": "Spaceship",
-  "resend_domain_status_at_audit": "partially_verified",
+  "resend_domain_status_at_audit": "verified",
   "audited": "2026-10-10",
   "required": [
     {
@@ -24,12 +24,6 @@
       "host": "rsend",
       "type": "CNAME",
       "value": "send.forge.rmta.net"
-    },
-    {
-      "host": "@",
-      "type": "MX",
-      "priority": 10,
-      "value": "inbound-smtp.us-east-1.amazonaws.com"
     }
   ],
   "preserve": {
@@ -45,5 +39,5 @@
       "launch2.spaceship.net"
     ]
   },
-  "notes": "Approved public Resend DNS includes the apex inbound MX for receiving. Preserve GitHub Pages A records, www CNAME, nameservers, and fail closed if an unexpected apex MX exists."
+  "notes": "Resend is the approved outbound provider only. Apex MX is intentionally excluded so an iCloud inbound migration cannot be undone by a Resend repair workflow. Preserve GitHub Pages A records, www CNAME, nameservers, and all four Resend sending/authentication records."
 }
