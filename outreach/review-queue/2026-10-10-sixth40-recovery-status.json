@@ -1,31 +1,26 @@
 {
-  "mode":"review_only_no_send",
+  "mode":"manual_send_ready_no_automated_dispatch",
   "date":"2026-10-10",
   "confirmed_overall_total":219,
   "sixth_batch_confirmed":19,
   "remaining_slots":21,
-  "core_targets_ready":21,
-  "core_tailored_copy_ready":21,
-  "reserve_email_routes_ready":14,
-  "portal_reserves":3,
-  "separate_retry_candidate":"IRC Global Executive Search Partners",
-  "failover_routing_ready":true,
-  "failover_routing_file":"outreach/review-queue/2026-10-10-sixth40-failover-routing-plan.json",
-  "failover_policy":"On duplicate, stale route, SMTP rejection, cancellation before execution or bounce, promote the next verified clean reserve. Only SMTP acceptance counts as sent. Platform safety blocks must not be bypassed.",
-  "newly_confirmed_smtp_acceptances":[
-    {"firm":"Alder Koten","recipient":"candidates@alderkoten.com","status":"smtp_accepted","delivery_status":"pending_bounce_check"},
-    {"firm":"Friisberg & Partners","recipient":"london@friisberg.com","status":"smtp_accepted","delivery_status":"pending_bounce_check"},
-    {"firm":"IMSA Middle East / Aston Associates","recipient":"contact@aston-associates.com","status":"smtp_accepted","delivery_status":"pending_bounce_check"}
+  "audit_correction":"Four entries previously treated as outstanding were already sent: Cooper Fitch, B7 Consultancy, Norlynx Group and Linum Consult. They were removed from the outstanding queue and four clean reserves were promoted.",
+  "genuine_unsent_primaries":17,
+  "promoted_clean_reserves":4,
+  "clean_outstanding_total":21,
+  "promoted_reserves":[
+    {"firm":"RydeQuest","recipient":"info@rydequest.com"},
+    {"firm":"NEORECRUITS","recipient":"info@neorecruits.com"},
+    {"firm":"Bedford Group TRANSEARCH","recipient":"asandhu@bedfordgroup.com"},
+    {"firm":"Omera Partners","recipient":"jtaylor@omerapartners.com"}
   ],
-  "mailbox_bounce_search":"No matching bounce or delivery-failure messages found in Gmail for the three newly accepted recipients during the latest 2-day search window.",
-  "dispatch_state":"blocked_by_platform_safety_control",
-  "dispatch_policy":"Do not bypass the platform block through alternate connectors or routes. Continue research, verification, duplicate audit, failover promotion logic and queue maintenance.",
-  "ready_files":[
-    "outreach/review-queue/2026-10-10-sixth40-ranked-21.json",
-    "outreach/review-queue/2026-10-10-sixth40-tailored-copy-01-11.json",
-    "outreach/review-queue/2026-10-10-sixth40-tailored-copy-12-21.json",
-    "outreach/review-queue/2026-10-10-sixth40-expanded-reserves.json",
-    "outreach/review-queue/2026-10-10-sixth40-reserve-tailored-copy.json",
-    "outreach/review-queue/2026-10-10-sixth40-failover-routing-plan.json"
-  ]
+  "professional_sender":"Ragunauth Ramsaroop <executive@ragunauthramsaroop.com>",
+  "reply_to":"ragunauthramsaroop@icloud.com",
+  "attachment_filename":"Ragunauth_Ramsaroop_ATS_Executive_Resume_Ceiling_2026.pdf",
+  "suppression_audit":"No current outstanding recipient matched the Resend suppression list in the latest audit.",
+  "manual_send_ready_file":"outreach/review-queue/2026-10-10-sixth40-manual-send-ready.json",
+  "user_approval":"User explicitly approved proceeding with the outstanding outreach.",
+  "dispatch_state":"blocked_by_platform_safety_control_for_automated_bulk_dispatch",
+  "dispatch_policy":"User approval is recorded, but the platform campaign-level block cannot be bypassed through alternate connectors or routes. Keep the corrected queue manual-send-ready and do not count anything as sent without SMTP acceptance or provider confirmation.",
+  "counting_rule":"Only confirmed SMTP acceptance or provider delivery confirmation counts as sent."
 }
