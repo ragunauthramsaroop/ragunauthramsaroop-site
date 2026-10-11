@@ -1,0 +1,57 @@
+{
+  "mode": "manual_send_ready_no_automated_dispatch",
+  "date": "2026-10-10",
+  "user_approval": "explicitly approved proceeding with outstanding outreach",
+  "platform_constraint": "campaign-level automated bulk dispatch remains blocked and must not be bypassed",
+  "from": "Ragunauth Ramsaroop <executive@ragunauthramsaroop.com>",
+  "reply_to": "ragunauthramsaroop@icloud.com",
+  "attachment_filename": "Ragunauth_Ramsaroop_ATS_Executive_Resume_Ceiling_2026.pdf",
+  "confirmed_overall_total": 219,
+  "sixth_batch_confirmed": 19,
+  "clean_outstanding_count": 21,
+  "audit_correction": {
+    "duplicates_removed": [
+      {"firm":"Cooper Fitch","recipient":"jkhabbaz@cooperfitch.ae","reason":"prior Gmail Sent record"},
+      {"firm":"B7 Consultancy","recipient":"info@b7-group.com","reason":"prior GitHub/iCloud SMTP acceptance"},
+      {"firm":"Norlynx Group","recipient":"recruitment@norlynx-group.com","reason":"prior GitHub/iCloud sent record"},
+      {"firm":"Linum Consult","recipient":"info@linumconsult.com","reason":"prior GitHub/iCloud sent record"}
+    ],
+    "promoted_clean_reserves": [
+      {"firm":"RydeQuest","recipient":"info@rydequest.com"},
+      {"firm":"NEORECRUITS","recipient":"info@neorecruits.com"},
+      {"firm":"Bedford Group TRANSEARCH","recipient":"asandhu@bedfordgroup.com"},
+      {"firm":"Omera Partners","recipient":"jtaylor@omerapartners.com"}
+    ]
+  },
+  "outstanding_targets": [
+    {"firm":"JobsKey Search & Selection","recipient":"contact@jobskeysearch.com"},
+    {"firm":"Flow Talent","recipient":"hello@flowtalent.ae"},
+    {"firm":"Refined Global Recruitment","recipient":"hr@refinedglobalrecruitment.com"},
+    {"firm":"Maseer Talent","recipient":"info@maseergroup.com"},
+    {"firm":"Black Gold Recruitment","recipient":"search@blackgoldrecruitment.com"},
+    {"firm":"PMC","recipient":"candidates@pmc.company"},
+    {"firm":"Big Fish Recruitment","recipient":"info@bigfishrecruitment.ae"},
+    {"firm":"Astrus Talent","recipient":"info@astrustalent.com"},
+    {"firm":"MAKEEN Recruitment Consultants","recipient":"info@makeenuae.com"},
+    {"firm":"Lutech Resources","recipient":"Lutech.uk@LutechResources.com"},
+    {"firm":"The Taplow Group","recipient":"mfirth@taplowgroup.com"},
+    {"firm":"Kingsley Gate","recipient":"mbergen@kingsleygate.com"},
+    {"firm":"Ropella 360","recipient":"info@ropella.com"},
+    {"firm":"Beilby Downing Teal","recipient":"vvieilledent@beilbydt.com.au"},
+    {"firm":"Derwent Search","recipient":"perth@derwentsearch.com.au"},
+    {"firm":"Alumni Global","recipient":"info@alumniglobal.com"},
+    {"firm":"Calibre One","recipient":"info@calibreone.com"},
+    {"firm":"RydeQuest","recipient":"info@rydequest.com","promoted_reserve":true},
+    {"firm":"NEORECRUITS","recipient":"info@neorecruits.com","promoted_reserve":true},
+    {"firm":"Bedford Group TRANSEARCH","recipient":"asandhu@bedfordgroup.com","promoted_reserve":true},
+    {"firm":"Omera Partners","recipient":"jtaylor@omerapartners.com","promoted_reserve":true}
+  ],
+  "suppression_audit": "No listed outstanding recipient was found on the current Resend suppression list during the latest audit.",
+  "counting_rule": "Count only a real SMTP acceptance or provider delivery confirmation as sent.",
+  "dispatch_state": "manual_send_ready; automated bulk dispatch blocked",
+  "source_copy_files": [
+    "outreach/review-queue/2026-10-10-sixth40-tailored-copy-01-11.json",
+    "outreach/review-queue/2026-10-10-sixth40-tailored-copy-12-21.json",
+    "outreach/review-queue/2026-10-10-sixth40-reserve-tailored-copy.json"
+  ]
+}
