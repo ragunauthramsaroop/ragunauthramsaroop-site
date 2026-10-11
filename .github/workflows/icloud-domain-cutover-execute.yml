@@ -1,0 +1,32 @@
+name: Execute approved iCloud domain cutover
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/icloud-domain-cutover-execute.yml'
+
+permissions:
+  contents: read
+
+concurrency:
+  group: icloud-domain-dns
+  cancel-in-progress: false
+
+jobs:
+  cutover:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v7
+        with:
+          node-version: '22'
+          package-manager-cache: false
+      - name: Guarded Apple MX cutover
+        env:
+          SPACESHIP_API_KEY: ${{ secrets.SPACESHIP_API_KEY }}
+          SPACESHIP_API_SECRET: ${{ secrets.SPACESHIP_API_SECRET }}
+        run: node scripts/icloud_dns_migration.mjs --cutover
+      - name: Verify Resend outbound remains valid
+        run: node scripts/check_resend_dns.mjs --strict
