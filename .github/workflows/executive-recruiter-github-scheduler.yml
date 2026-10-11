@@ -1,0 +1,92 @@
+name: Executive recruiter research scheduler
+
+on:
+  schedule:
+    # Guyana is UTC-4 year-round. 12:15 UTC = 08:15 Guyana time.
+    - cron: '15 12 * * 1-5'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: executive-recruiter-research-scheduler
+  cancel-in-progress: false
+
+jobs:
+  research-and-audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v7
+
+      - uses: actions/setup-python@v7
+        with:
+          python-version: '3.12'
+
+      - name: Verify outreach control remains fail-closed
+        run: python scripts/audit_outreach_control.py
+
+      - name: Run existing public executive-careers research
+        run: python scripts/executive_careers_worker.py
+
+      - name: Summarize approved recruiter research queue
+        shell: bash
+        run: |
+          set -euo pipefail
+          python - <<'PY'
+          import json
+          from pathlib import Path
+
+          root = Path('outreach/automation-approved')
+          files = sorted(root.glob('*.json'))
+          total_firms = 0
+          research_required = 0
+          auto_send_enabled = 0
+          approved_files = 0
+
+          for path in files:
+              data = json.loads(path.read_text(encoding='utf-8'))
+              if data.get('approved_for_automation') is True:
+                  approved_files += 1
+              if data.get('auto_send') is True:
+                  auto_send_enabled += 1
+              firms = data.get('firms')
+              if isinstance(firms, list):
+                  total_firms += len(firms)
+                  research_required += sum(
+                      1 for firm in firms
+                      if isinstance(firm, dict)
+                      and firm.get('recipient_status') == 'research_required_before_send'
+                  )
+
+          summary = [
+              '# Executive Recruiter Scheduler',
+              '',
+              '- Mode: research and audit only',
+              '- Email dispatch: disabled by design',
+              f'- Automation-approved queue files: {approved_files}',
+              f'- Firms in approved research queue: {total_firms}',
+              f'- Firms still requiring recipient research: {research_required}',
+              f'- Queue files with auto_send=true: {auto_send_enabled}',
+              '',
+              'This scheduler replaces a chat-task slot for recurring research and control checks.',
+              'It does not bypass provider limits, duplicate protections, outreach policy gates, or the repository no-safety-bypass control.',
+          ]
+          text = '\n'.join(summary) + '\n'
+          print(text)
+          Path('executive-careers-artifacts').mkdir(parents=True, exist_ok=True)
+          Path('executive-careers-artifacts/recruiter_scheduler_summary.md').write_text(text, encoding='utf-8')
+          with open(Path(__import__('os').environ['GITHUB_STEP_SUMMARY']), 'a', encoding='utf-8') as handle:
+              handle.write(text)
+          PY
+
+      - name: Upload research artifacts
+        uses: actions/upload-artifact@v7
+        with:
+          name: executive-recruiter-research
+          if-no-files-found: error
+          retention-days: 14
+          path: |
+            executive-careers-artifacts/public_research.json
+            executive-careers-artifacts/recruiter_scheduler_summary.md
