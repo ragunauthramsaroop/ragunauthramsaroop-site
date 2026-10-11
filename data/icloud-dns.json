@@ -2,7 +2,7 @@
   "domain": "ragunauthramsaroop.com",
   "dns_provider": "Spaceship",
   "audited": "2026-10-10",
-  "apple_verification_txt": null,
+  "apple_verification_txt": "apple-domain=jKDBqJ7M59VfoZWV",
   "prestage": [
     {
       "host": "@",
@@ -53,5 +53,5 @@
       "rsend"
     ]
   },
-  "notes": "Two-phase migration. Prestage SPF and Apple DKIM safely while Resend remains inbound. Do not replace the apex MX until apple_verification_txt is copied exactly from the user's iCloud Custom Email Domain setup and the user is ready to finish setup in iCloud immediately after cutover."
+  "notes": "Two-phase migration. Apple verification TXT copied exactly from the iCloud Custom Email Domain setup. Prestage SPF and Apple DKIM safely while Resend remains inbound. Cutover replaces only the approved Resend apex MX with Apple's two MX records, while preserving GitHub Pages and Resend outbound authentication."
 }
