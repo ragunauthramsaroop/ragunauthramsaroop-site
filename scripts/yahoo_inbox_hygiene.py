@@ -33,7 +33,7 @@ PROTECTED_WORDS = re.compile(
 
 PROTECTED_SENDERS = re.compile(
     r"(@icloud\.com|@guygold\.com|@zijinmining\.com|@google\.com|@apple\.com|"
-    r"@paypal\.com|@stripe\.com|@scotiabank\.com|@yahoo\.com)$",
+    r"@paypal\.com|@stripe\.com|@scotiabank\.com)$",
     re.I,
 )
 
@@ -64,14 +64,16 @@ def ensure_archive(imap: imaplib.IMAP4_SSL) -> str:
     typ, boxes = imap.list()
     if typ != "OK":
         raise RuntimeError("Unable to list Yahoo folders")
-    names = []
+    found = False
     for raw in boxes or []:
         text = raw.decode(errors="replace")
-        m = re.search(r'"?([^" ]+|[^\"]+)"?$', text)
-        if m:
-            names.append(m.group(1).strip('"'))
-    if ARCHIVE_FOLDER not in names:
-        imap.create(ARCHIVE_FOLDER)
+        if text.rstrip().endswith(f'"{ARCHIVE_FOLDER}"') or text.rstrip().endswith(ARCHIVE_FOLDER):
+            found = True
+            break
+    if not found:
+        typ, _ = imap.create(ARCHIVE_FOLDER)
+        if typ != "OK":
+            raise RuntimeError("Unable to create Yahoo Archive folder")
     return ARCHIVE_FOLDER
 
 
@@ -109,15 +111,19 @@ def classify(msg: email.message.Message) -> tuple[bool, str]:
     return False, "keep"
 
 
-def move_to_archive(imap: imaplib.IMAP4_SSL, uid: bytes, archive: str) -> None:
+def move_to_archive(imap: imaplib.IMAP4_SSL, uid: bytes, archive: str) -> bool:
+    """Move one message. Return True only when COPY+delete fallback was used."""
     uid_s = uid.decode()
     typ, _ = imap.uid("MOVE", uid_s, archive)
     if typ == "OK":
-        return
+        return False
     typ, _ = imap.uid("COPY", uid_s, archive)
     if typ != "OK":
         raise RuntimeError(f"Could not copy UID {uid_s} to Archive")
-    imap.uid("STORE", uid_s, "+FLAGS.SILENT", "(\\Deleted)")
+    typ, _ = imap.uid("STORE", uid_s, "+FLAGS.SILENT", "(\\Deleted)")
+    if typ != "OK":
+        raise RuntimeError(f"Could not remove Inbox copy for UID {uid_s}")
+    return True
 
 
 def main() -> int:
@@ -144,7 +150,7 @@ def main() -> int:
         if MAX_MESSAGES > 0:
             uids = uids[-MAX_MESSAGES:]
 
-        copied_fallback = False
+        used_copy_fallback = False
         for uid in uids:
             typ, fetched = imap.uid(
                 "FETCH", uid.decode(),
@@ -176,19 +182,12 @@ def main() -> int:
                     protected += 1
                 continue
 
-            before = imap.response("UID")
-            move_to_archive(imap, uid, archive)
+            used_copy_fallback = move_to_archive(imap, uid, archive) or used_copy_fallback
             moved += 1
-            # MOVE expunges automatically. COPY fallback leaves a Deleted flag;
-            # expunge once at the end so the source copy leaves Inbox only after
-            # the archive copy succeeded.
-            if before is not None:
-                copied_fallback = True
 
-        if copied_fallback:
+        if used_copy_fallback:
             imap.expunge()
         imap.close()
-        imap.logout()
 
     print(f"Yahoo Inbox hygiene complete: moved={moved}, kept={kept}, protected={protected}")
     for reason, count in sorted(reasons.items()):
