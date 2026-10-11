@@ -1,0 +1,35 @@
+name: Prestage iCloud custom domain DNS
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/icloud-domain-prestage.yml'
+      - 'data/icloud-dns.json'
+      - 'scripts/icloud_dns_migration.mjs'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: icloud-domain-dns
+  cancel-in-progress: false
+
+jobs:
+  prestage:
+    runs-on: ubuntu-latest
+    timeout-minutes: 6
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v7
+        with:
+          node-version: '22'
+          package-manager-cache: false
+      - name: Add only non-disruptive Apple SPF and DKIM records
+        env:
+          SPACESHIP_API_KEY: ${{ secrets.SPACESHIP_API_KEY }}
+          SPACESHIP_API_SECRET: ${{ secrets.SPACESHIP_API_SECRET }}
+        run: node scripts/icloud_dns_migration.mjs --prestage
+      - name: Confirm Resend outbound DNS remains valid
+        run: node scripts/check_resend_dns.mjs --strict
