@@ -1,0 +1,33 @@
+{
+  "mode": "prepared_unsent",
+  "date": "2026-10-10",
+  "mailbox": "executive@ragunauthramsaroop.com",
+  "prepared_count": 21,
+  "sent_count": 0,
+  "attachment_status": "CV not attached by tool; attach Ragunauth_Ramsaroop_ATS_Executive_Resume_Ceiling_2026.pdf before any manual send",
+  "bulk_dispatch_status": "blocked_by_platform_safety_control",
+  "notes": "Two unrelated older forwarding/verification drafts remain in the inbox and are excluded from this campaign count.",
+  "drafts": [
+    {"firm":"JobsKey Search & Selection","to":"contact@jobskeysearch.com","draft_id":"dca08490-1e35-4867-a18a-3eb97e974220"},
+    {"firm":"Flow Talent","to":"hello@flowtalent.ae","draft_id":"fb2afcf1-c7d7-41ad-942a-80d47a531df2"},
+    {"firm":"Refined Global Recruitment","to":"hr@refinedglobalrecruitment.com","draft_id":"08f71e56-3093-4d08-ba57-601a96b655fe"},
+    {"firm":"Maseer Talent","to":"info@maseergroup.com","draft_id":"5c50b817-d1d5-4b21-86b3-55a623a4e691"},
+    {"firm":"Black Gold Recruitment","to":"search@blackgoldrecruitment.com","draft_id":"0de402de-7c9b-40e6-8520-ae4ff795e778"},
+    {"firm":"PMC","to":"candidates@pmc.company","draft_id":"48e3134b-079d-4b68-8150-acd4a70016c2"},
+    {"firm":"Big Fish Recruitment","to":"info@bigfishrecruitment.ae","draft_id":"7c74f129-4523-43a6-8ed2-d88a4a53caf6"},
+    {"firm":"Astrus Talent","to":"info@astrustalent.com","draft_id":"fef2ac92-3341-48f7-9665-5c1b6007d5b0"},
+    {"firm":"MAKEEN Recruitment Consultants","to":"info@makeenuae.com","draft_id":"ce93165d-aa1c-4ede-a71c-af8c5d6b0cee"},
+    {"firm":"Lutech Resources","to":"Lutech.uk@LutechResources.com","draft_id":"751bf66d-2290-48b4-a33e-0fd6cc7af173"},
+    {"firm":"The Taplow Group","to":"mfirth@taplowgroup.com","draft_id":"92623062-450c-49f8-904e-8be54b6ed310"},
+    {"firm":"Kingsley Gate","to":"mbergen@kingsleygate.com","draft_id":"2220b1c2-8529-4e22-ba83-db62c6506bca"},
+    {"firm":"Ropella 360","to":"info@ropella.com","draft_id":"688f859f-ff0c-4d59-9fc6-56fd330a36ea"},
+    {"firm":"Beilby Downing Teal","to":"vvieilledent@beilbydt.com.au","draft_id":"475cb3a9-1874-4c9d-9036-35aa5d0ee5f9"},
+    {"firm":"Derwent Search","to":"perth@derwentsearch.com.au","draft_id":"e4ab9d87-a1f1-401f-bc33-b5d142c0d84a"},
+    {"firm":"Alumni Global","to":"info@alumniglobal.com","draft_id":"dfdab136-da56-40f9-8f98-286003fb944e"},
+    {"firm":"Calibre One","to":"info@calibreone.com","draft_id":"c6712c4d-7ebe-40b6-8ae4-0acc38d6dbab"},
+    {"firm":"RydeQuest","to":"info@rydequest.com","draft_id":"85e70636-4789-4cd2-ada5-b039f2641a9c"},
+    {"firm":"NEORECRUITS","to":"info@neorecruits.com","draft_id":"beb2661c-2b67-4a81-a4f3-f3dccdd64120"},
+    {"firm":"Bedford Group TRANSEARCH","to":"asandhu@bedfordgroup.com","draft_id":"e8cbd3b1-7665-4ca2-b934-954fca92d1c2"},
+    {"firm":"Omera Partners","to":"jtaylor@omerapartners.com","draft_id":"d4ffb370-06d8-47c0-a07c-f1241d55ed72"}
+  ]
+}
