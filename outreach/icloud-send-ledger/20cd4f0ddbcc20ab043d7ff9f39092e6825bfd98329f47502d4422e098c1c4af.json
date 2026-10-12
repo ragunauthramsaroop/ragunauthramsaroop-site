@@ -3,6 +3,7 @@
   "batch_id": "2026-10-12-saudi-hr-verified-wave-01",
   "body_sha256": "a53f407435590aa4f8e7571a782e0125e49b5f819ccbbad8222af25c5cee73ff",
   "created_at": "2026-10-12T19:32:44+00:00",
+  "delivery_status": "pending_bounce_check",
   "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
   "github_run_attempt": "1",
   "github_run_id": "38298319582",
@@ -12,6 +13,9 @@
   "recipient": "kbr-amcdehr@kbr.com",
   "recipient_sha256": "20cd4f0ddbcc20ab043d7ff9f39092e6825bfd98329f47502d4422e098c1c4af",
   "schema": 2,
-  "status": "pending",
+  "sent_at": "2026-10-12T19:32:46+00:00",
+  "smtp_accepted_at": "2026-10-12T19:32:46+00:00",
+  "smtp_message_id": "<179183356617.2690.823722228038905803@icloud.com>",
+  "status": "smtp_accepted",
   "subject_sha256": "c1bd076610a0f352b71d0d08208dfa148151bb2f41626e93aacb5b3a16896a51"
 }
