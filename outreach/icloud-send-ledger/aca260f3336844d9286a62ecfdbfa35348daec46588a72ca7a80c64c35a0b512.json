@@ -3,6 +3,7 @@
   "batch_id": "2026-10-12-saudi-hr-verified-wave-02",
   "body_sha256": "5a66caf3bc7e83c25bc05d830175021178928d256a644039455610f020493da2",
   "created_at": "2026-10-12T19:33:55+00:00",
+  "delivery_status": "pending_bounce_check",
   "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
   "github_run_attempt": "1",
   "github_run_id": "38298450066",
@@ -12,6 +13,9 @@
   "recipient": "career@mouwasat.com",
   "recipient_sha256": "aca260f3336844d9286a62ecfdbfa35348daec46588a72ca7a80c64c35a0b512",
   "schema": 2,
-  "status": "pending",
+  "sent_at": "2026-10-12T19:33:56+00:00",
+  "smtp_accepted_at": "2026-10-12T19:33:56+00:00",
+  "smtp_message_id": "<179183363680.2458.15496453156069231900@icloud.com>",
+  "status": "smtp_accepted",
   "subject_sha256": "b1e3504eb7d3d4f93e2ca18f63e9ebfa9cff52e5eb5e2c07a236c231d53cc194"
 }
