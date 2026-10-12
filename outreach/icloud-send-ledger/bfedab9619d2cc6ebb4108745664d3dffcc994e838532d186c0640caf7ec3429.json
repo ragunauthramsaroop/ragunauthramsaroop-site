@@ -3,6 +3,7 @@
   "batch_id": "2026-10-12-saudi-hr-verified-wave-04",
   "body_sha256": "5c6cae480616929a73652f6cc799e7fb4303ad9fe387916d142cdd0068fccbc8",
   "created_at": "2026-10-12T19:38:04+00:00",
+  "delivery_status": "pending_bounce_check",
   "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
   "github_run_attempt": "1",
   "github_run_id": "38298905389",
@@ -12,6 +13,9 @@
   "recipient": "career@shawarmer.com",
   "recipient_sha256": "bfedab9619d2cc6ebb4108745664d3dffcc994e838532d186c0640caf7ec3429",
   "schema": 2,
-  "status": "pending",
+  "sent_at": "2026-10-12T19:38:06+00:00",
+  "smtp_accepted_at": "2026-10-12T19:38:06+00:00",
+  "smtp_message_id": "<179183388609.2429.15420155503245386143@icloud.com>",
+  "status": "smtp_accepted",
   "subject_sha256": "b1e3504eb7d3d4f93e2ca18f63e9ebfa9cff52e5eb5e2c07a236c231d53cc194"
 }
