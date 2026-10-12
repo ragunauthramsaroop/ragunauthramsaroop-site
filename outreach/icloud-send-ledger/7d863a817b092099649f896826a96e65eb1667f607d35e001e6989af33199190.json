@@ -3,6 +3,7 @@
   "batch_id": "2026-10-12-saudi-hr-verified-wave-08",
   "body_sha256": "9b063b77ef4ffc3d9880d8aee5dd0fab3dca6f0505e2a50a4c0c163b9273535a",
   "created_at": "2026-10-12T20:00:00+00:00",
+  "delivery_status": "pending_bounce_check",
   "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
   "github_run_attempt": "1",
   "github_run_id": "38301293578",
@@ -12,6 +13,9 @@
   "recipient": "jobs@farm.com.sa",
   "recipient_sha256": "7d863a817b092099649f896826a96e65eb1667f607d35e001e6989af33199190",
   "schema": 2,
-  "status": "pending",
+  "sent_at": "2026-10-12T20:00:03+00:00",
+  "smtp_accepted_at": "2026-10-12T20:00:03+00:00",
+  "smtp_message_id": "<179183520304.2428.4209034268643669136@icloud.com>",
+  "status": "smtp_accepted",
   "subject_sha256": "b1e3504eb7d3d4f93e2ca18f63e9ebfa9cff52e5eb5e2c07a236c231d53cc194"
 }
