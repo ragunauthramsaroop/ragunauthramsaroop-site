@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "4e140b7f8f35eb40dcb7205d5748ce1a09101230cb3b9bb6fccc97f58a86b790",
+  "batch_id": "2026-10-12-saudi-hr-verified-wave-09",
+  "body_sha256": "e7ff2adb14fcfa75b16c4ac1ab81a41e2bb2c1b5e64ed00ec7520747bc2ce527",
+  "created_at": "2026-10-12T20:09:36+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "38302355484",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/2026-10-12-saudi-hr-verified-wave-09.json",
+  "payload_sha256": "808af733be6b2f9c26c2e758f88e0a5dca4250a04c19950c3f1ae87b30ed529e",
+  "recipient": "recruitment@darwaemaar.com",
+  "recipient_sha256": "a99d96295facd3389b7540f6554b065e9536b1845775d1425c4b1078fb59f549",
+  "schema": 2,
+  "status": "pending",
+  "subject_sha256": "c1bd076610a0f352b71d0d08208dfa148151bb2f41626e93aacb5b3a16896a51"
+}
