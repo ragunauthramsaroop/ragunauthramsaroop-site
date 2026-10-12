@@ -3,6 +3,7 @@
   "batch_id": "2026-10-12-saudi-hr-verified-wave-04",
   "body_sha256": "f5e256f942357eb5ed2c64db1a75d5ae1601ba2a574677a6f35cee9b4c7a364b",
   "created_at": "2026-10-12T19:38:02+00:00",
+  "delivery_status": "pending_bounce_check",
   "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
   "github_run_attempt": "1",
   "github_run_id": "38298905389",
@@ -12,6 +13,9 @@
   "recipient": "career@almanahospital.com.sa",
   "recipient_sha256": "4c1480dc4e8fecbf174fc782e4b3d6c9c7379f9b538fdd9db3f853e93a85a68f",
   "schema": 2,
-  "status": "pending",
+  "sent_at": "2026-10-12T19:38:03+00:00",
+  "smtp_accepted_at": "2026-10-12T19:38:03+00:00",
+  "smtp_message_id": "<179183388339.2429.9023682295070560688@icloud.com>",
+  "status": "smtp_accepted",
   "subject_sha256": "b1e3504eb7d3d4f93e2ca18f63e9ebfa9cff52e5eb5e2c07a236c231d53cc194"
 }
