@@ -3,6 +3,7 @@
   "batch_id": "2026-10-12-saudi-hr-verified-wave-03",
   "body_sha256": "defe9677e2d0492f6cc7e94eaba64aa182ca91752720f36311478635b5d45ecf",
   "created_at": "2026-10-12T19:36:56+00:00",
+  "delivery_status": "pending_bounce_check",
   "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
   "github_run_attempt": "1",
   "github_run_id": "38298789390",
@@ -12,6 +13,9 @@
   "recipient": "recruitment@batook.com",
   "recipient_sha256": "8ac801331730918b2c673fbfc2aae50434feae725c9ef605afcf2804878523e8",
   "schema": 2,
-  "status": "pending",
+  "sent_at": "2026-10-12T19:36:57+00:00",
+  "smtp_accepted_at": "2026-10-12T19:36:57+00:00",
+  "smtp_message_id": "<179183381747.2253.13263715486241481008@icloud.com>",
+  "status": "smtp_accepted",
   "subject_sha256": "b1e3504eb7d3d4f93e2ca18f63e9ebfa9cff52e5eb5e2c07a236c231d53cc194"
 }
