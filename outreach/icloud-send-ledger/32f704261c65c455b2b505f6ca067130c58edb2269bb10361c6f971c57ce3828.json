@@ -3,6 +3,7 @@
   "batch_id": "2026-10-12-saudi-hr-verified-wave-01",
   "body_sha256": "711f73b9be3e16e6f1ec1774da01ea864fc4b5fa817a1b223c7abeff240a8d3b",
   "created_at": "2026-10-12T19:32:42+00:00",
+  "delivery_status": "pending_bounce_check",
   "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
   "github_run_attempt": "1",
   "github_run_id": "38298319582",
@@ -12,6 +13,9 @@
   "recipient": "recruiting.ksa@mcdermott.com",
   "recipient_sha256": "32f704261c65c455b2b505f6ca067130c58edb2269bb10361c6f971c57ce3828",
   "schema": 2,
-  "status": "pending",
+  "sent_at": "2026-10-12T19:32:43+00:00",
+  "smtp_accepted_at": "2026-10-12T19:32:43+00:00",
+  "smtp_message_id": "<179183356350.2690.17137053577934884801@icloud.com>",
+  "status": "smtp_accepted",
   "subject_sha256": "c1bd076610a0f352b71d0d08208dfa148151bb2f41626e93aacb5b3a16896a51"
 }
