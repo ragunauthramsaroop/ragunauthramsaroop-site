@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "ea0d82e91bd2c47c7e95dec7a38577fb98da029f1ce282c263ef3a09bf7b0a7f",
+  "batch_id": "2026-10-12-saudi-hr-verified-wave-07",
+  "body_sha256": "6b43c0e7513a8843043fd00de48e79d1963d4bfcb97f0fa5c760486876a0e7b6",
+  "created_at": "2026-10-12T19:56:06+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "38300861270",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/2026-10-12-saudi-hr-verified-wave-07.json",
+  "payload_sha256": "d02cda14d2d71411dd137a990a1d100c88ba9dc90b556667d118a6293898e1db",
+  "recipient": "catcosa@catcosa.com",
+  "recipient_sha256": "9833f277a9b046ca55feb29f24a51bda3a705c9ad3f7ba47db7d6974ba4b0341",
+  "schema": 2,
+  "status": "pending",
+  "subject_sha256": "7d44fae60a3018267bd6d01b05d489067e69596d2845916f4cc6e451b6b5a695"
+}
