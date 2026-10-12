@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "946d670c0cf346f5dc021bbb9047ed5f705ea162832cc338ff689175ef0db865",
+  "batch_id": "2026-10-12-saudi-hr-verified-wave-05",
+  "body_sha256": "e03706569f90c70edbb972723e6852da7f4f85960a325a9abbe27919aff08a51",
+  "created_at": "2026-10-12T19:39:17+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "38299027467",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/2026-10-12-saudi-hr-verified-wave-05.json",
+  "payload_sha256": "e2da42499e977ce4d2d237a5a05fa6f2682b487d6b16f8b21b21c538ddaeb8ba",
+  "recipient": "careers@dnata.com",
+  "recipient_sha256": "f9524edfb2a1acd57a9730bfb516a13cdd9b4ab3a8e09d0fd1131c81ad763604",
+  "schema": 2,
+  "status": "pending",
+  "subject_sha256": "e09f916f9f4fd3b5bf6485b4b13cfeb1146b381cf1722e20da357429ebe610dc"
+}
