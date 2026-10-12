@@ -3,6 +3,7 @@
   "batch_id": "2026-10-12-saudi-hr-verified-wave-02",
   "body_sha256": "3fce2f8779381538ad4e49fe2439595f9dbbde8cd6888eb5f732c677bc04923b",
   "created_at": "2026-10-12T19:33:47+00:00",
+  "delivery_status": "pending_bounce_check",
   "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
   "github_run_attempt": "1",
   "github_run_id": "38298450066",
@@ -12,6 +13,9 @@
   "recipient": "career.dmm@sghgroup.net",
   "recipient_sha256": "90396d766d932624f43366ee36851183e2fc670e563b45121964e554a8afb960",
   "schema": 2,
-  "status": "pending",
+  "sent_at": "2026-10-12T19:33:49+00:00",
+  "smtp_accepted_at": "2026-10-12T19:33:49+00:00",
+  "smtp_message_id": "<179183362890.2458.6340148951362147760@icloud.com>",
+  "status": "smtp_accepted",
   "subject_sha256": "b1e3504eb7d3d4f93e2ca18f63e9ebfa9cff52e5eb5e2c07a236c231d53cc194"
 }
