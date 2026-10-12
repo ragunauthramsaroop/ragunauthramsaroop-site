@@ -3,6 +3,7 @@
   "batch_id": "2026-10-12-saudi-hr-verified-wave-08",
   "body_sha256": "ec5bb8622c97b51d0eb34ff58b7034da3103e035318cce3a30af300ef68b6c60",
   "created_at": "2026-10-12T20:00:04+00:00",
+  "delivery_status": "pending_bounce_check",
   "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
   "github_run_attempt": "1",
   "github_run_id": "38301293578",
@@ -12,6 +13,9 @@
   "recipient": "info@bonyan.sa",
   "recipient_sha256": "41656c0d44454d81b8047aa10aea7c0e08bf6e91e00b636198843e03d4656f09",
   "schema": 2,
-  "status": "pending",
+  "sent_at": "2026-10-12T20:00:06+00:00",
+  "smtp_accepted_at": "2026-10-12T20:00:06+00:00",
+  "smtp_message_id": "<179183520578.2428.13252665093540251715@icloud.com>",
+  "status": "smtp_accepted",
   "subject_sha256": "53408d136bfe3d25fdd5c0daaccd352958a60cf9454d157343c9a87c748d3ed4"
 }
