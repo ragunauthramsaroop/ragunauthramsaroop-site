@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "960879417c0e855bd397081d7ce20be6e692f2ce7910bbcf6d197599d5434c7c",
+  "batch_id": "2026-10-12-saudi-hr-verified-wave-06b",
+  "body_sha256": "2a339bdd69d5b0c83c222df38f0343105ada9eb7b6008711146ba63cfe2a092c",
+  "created_at": "2026-10-12T19:54:43+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "38300723729",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/2026-10-12-saudi-hr-verified-wave-06b.json",
+  "payload_sha256": "ca6a32aa479eac4a43b3954f25952710f7fddca517530d200d6e560fc9449de3",
+  "recipient": "career@sidco.com.sa",
+  "recipient_sha256": "26d01832c481803f1fd9802a41891dee07693654f9a251c16239bbd731298aaf",
+  "schema": 2,
+  "status": "pending",
+  "subject_sha256": "b1e3504eb7d3d4f93e2ca18f63e9ebfa9cff52e5eb5e2c07a236c231d53cc194"
+}
