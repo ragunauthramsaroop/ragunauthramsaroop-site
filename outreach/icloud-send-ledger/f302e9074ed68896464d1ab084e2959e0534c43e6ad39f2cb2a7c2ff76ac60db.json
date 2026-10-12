@@ -3,6 +3,7 @@
   "batch_id": "2026-10-12-saudi-hr-verified-wave-06b",
   "body_sha256": "f5b257587d7561a3c5063cafd9ec2f6e18d3713e491916748ff67030d686da1e",
   "created_at": "2026-10-12T19:54:45+00:00",
+  "delivery_status": "pending_bounce_check",
   "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
   "github_run_attempt": "1",
   "github_run_id": "38300723729",
@@ -12,6 +13,9 @@
   "recipient": "jobs@binajinah.com",
   "recipient_sha256": "f302e9074ed68896464d1ab084e2959e0534c43e6ad39f2cb2a7c2ff76ac60db",
   "schema": 2,
-  "status": "pending",
+  "sent_at": "2026-10-12T19:54:47+00:00",
+  "smtp_accepted_at": "2026-10-12T19:54:47+00:00",
+  "smtp_message_id": "<179183488668.2466.13147830411256014844@icloud.com>",
+  "status": "smtp_accepted",
   "subject_sha256": "7e135a6e4aa97f8d2d0f4a02c5ddb1559110a4ab7e66f52fe5cd83f8102be0a5"
 }
