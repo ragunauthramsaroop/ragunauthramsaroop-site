@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "7aeceac6675cb231ff0cb73dc95f4c33a29c68a9061ec8c1e6bb49f5ff7a6f97",
+  "batch_id": "2026-10-12-saudi-hr-verified-wave-02",
+  "body_sha256": "9f91adaf5694019ceff6a63ba0d54f35c557b81d7121fb27f6441ce59fa3e892",
+  "created_at": "2026-10-12T19:33:50+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "38298450066",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/2026-10-12-saudi-hr-verified-wave-02.json",
+  "payload_sha256": "29dc69f17b82f310acb4d706031ac588e5c3a72de21fd97d21a85eb23bc0522b",
+  "recipient": "recruitment@almoosahospital.com.sa",
+  "recipient_sha256": "969102afa18eb006129ab4a9e84efffc7b4cb8e7ec5fb341fbb8975be5808eb9",
+  "schema": 2,
+  "status": "pending",
+  "subject_sha256": "b1e3504eb7d3d4f93e2ca18f63e9ebfa9cff52e5eb5e2c07a236c231d53cc194"
+}
