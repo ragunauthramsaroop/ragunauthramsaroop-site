@@ -3,6 +3,7 @@
   "batch_id": "2026-10-12-saudi-hr-verified-wave-09",
   "body_sha256": "df73d92934674dd8fd8d01239de6a88a34eafb4263880ea8202b744dfd46de97",
   "created_at": "2026-10-12T20:09:42+00:00",
+  "delivery_status": "pending_bounce_check",
   "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
   "github_run_attempt": "1",
   "github_run_id": "38302355484",
@@ -12,6 +13,9 @@
   "recipient": "info@familycare.com.sa",
   "recipient_sha256": "e2c72a86379c2a176bae9fd44df56eeb1015511765492de3c01f8c7b97ffc3fd",
   "schema": 2,
-  "status": "pending",
+  "sent_at": "2026-10-12T20:09:44+00:00",
+  "smtp_accepted_at": "2026-10-12T20:09:44+00:00",
+  "smtp_message_id": "<179183578388.2520.11865138027455299918@icloud.com>",
+  "status": "smtp_accepted",
   "subject_sha256": "a8d733af9042f8f3f744d7dcf71bd3d1738aa589fda9621c51d4567410da3cb2"
 }
