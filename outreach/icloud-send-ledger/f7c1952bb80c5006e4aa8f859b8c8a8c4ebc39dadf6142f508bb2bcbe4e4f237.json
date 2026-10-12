@@ -3,6 +3,7 @@
   "batch_id": "2026-10-12-saudi-hr-verified-wave-09",
   "body_sha256": "6d9c6e651d0ef2257009cbcd417823a8d4a51a7f2f5a7014e32a7b13f5e32783",
   "created_at": "2026-10-12T20:09:45+00:00",
+  "delivery_status": "pending_bounce_check",
   "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
   "github_run_attempt": "1",
   "github_run_id": "38302355484",
@@ -12,6 +13,9 @@
   "recipient": "info@ramclinics.com",
   "recipient_sha256": "f7c1952bb80c5006e4aa8f859b8c8a8c4ebc39dadf6142f508bb2bcbe4e4f237",
   "schema": 2,
-  "status": "pending",
+  "sent_at": "2026-10-12T20:09:47+00:00",
+  "smtp_accepted_at": "2026-10-12T20:09:47+00:00",
+  "smtp_message_id": "<179183578683.2520.16995317126320168980@icloud.com>",
+  "status": "smtp_accepted",
   "subject_sha256": "b1e3504eb7d3d4f93e2ca18f63e9ebfa9cff52e5eb5e2c07a236c231d53cc194"
 }
