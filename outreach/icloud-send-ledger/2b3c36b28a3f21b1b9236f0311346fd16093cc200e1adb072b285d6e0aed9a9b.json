@@ -3,6 +3,7 @@
   "batch_id": "2026-10-12-saudi-hr-verified-wave-04",
   "body_sha256": "fa65eeb7ae6589765f15c5acba145cfa3f7ea7f00cce28e376733a2460c8b705",
   "created_at": "2026-10-12T19:37:57+00:00",
+  "delivery_status": "pending_bounce_check",
   "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
   "github_run_attempt": "1",
   "github_run_id": "38298905389",
@@ -12,6 +13,9 @@
   "recipient": "hr.phc@drsulaimanalhabib.com",
   "recipient_sha256": "2b3c36b28a3f21b1b9236f0311346fd16093cc200e1adb072b285d6e0aed9a9b",
   "schema": 2,
-  "status": "pending",
+  "sent_at": "2026-10-12T19:37:58+00:00",
+  "smtp_accepted_at": "2026-10-12T19:37:58+00:00",
+  "smtp_message_id": "<179183387836.2429.9506940191502179345@icloud.com>",
+  "status": "smtp_accepted",
   "subject_sha256": "b1e3504eb7d3d4f93e2ca18f63e9ebfa9cff52e5eb5e2c07a236c231d53cc194"
 }
