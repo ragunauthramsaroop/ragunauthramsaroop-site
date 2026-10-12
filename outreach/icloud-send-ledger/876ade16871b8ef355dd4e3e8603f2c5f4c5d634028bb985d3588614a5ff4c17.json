@@ -3,6 +3,7 @@
   "batch_id": "2026-10-12-saudi-hr-verified-wave-06b",
   "body_sha256": "3ba35820bd844279e8981bd2c3e2546c8fdc95ff11640829ead60b973f2a4b9b",
   "created_at": "2026-10-12T19:54:34+00:00",
+  "delivery_status": "pending_bounce_check",
   "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
   "github_run_attempt": "1",
   "github_run_id": "38300723729",
@@ -12,6 +13,9 @@
   "recipient": "hr@alesayi-motors.com",
   "recipient_sha256": "876ade16871b8ef355dd4e3e8603f2c5f4c5d634028bb985d3588614a5ff4c17",
   "schema": 2,
-  "status": "pending",
+  "sent_at": "2026-10-12T19:54:36+00:00",
+  "smtp_accepted_at": "2026-10-12T19:54:36+00:00",
+  "smtp_message_id": "<179183487601.2466.15056979861674265914@icloud.com>",
+  "status": "smtp_accepted",
   "subject_sha256": "e09f916f9f4fd3b5bf6485b4b13cfeb1146b381cf1722e20da357429ebe610dc"
 }
