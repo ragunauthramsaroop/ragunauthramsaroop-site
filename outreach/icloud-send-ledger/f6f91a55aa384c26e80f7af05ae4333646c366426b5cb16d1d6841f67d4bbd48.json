@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "9dc006727bfbd30b8ec1304e56cb60dc8ab41b3f79a9098d6f5530505f9e1918",
+  "batch_id": "2026-10-12-hays-middle-east-ben-godley",
+  "body_sha256": "49b040a51730d5a99c82ace016dbda8e69972fe705657b2892db1ca91c683b3d",
+  "created_at": "2026-10-12T12:17:47+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "38248120890",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/2026-10-12-hays-middle-east-ben-godley.json",
+  "payload_sha256": "f2c5178b4bf1d23d508e95c3002241533da25fae02525f7f20c20ee97aa94f60",
+  "recipient": "ben.godley@hays.com",
+  "recipient_sha256": "f6f91a55aa384c26e80f7af05ae4333646c366426b5cb16d1d6841f67d4bbd48",
+  "schema": 2,
+  "status": "pending",
+  "subject_sha256": "318c358fed1ce519dcc5fd1a177ed4723b20cac45706e1956580e3b5bef36a6a"
+}
