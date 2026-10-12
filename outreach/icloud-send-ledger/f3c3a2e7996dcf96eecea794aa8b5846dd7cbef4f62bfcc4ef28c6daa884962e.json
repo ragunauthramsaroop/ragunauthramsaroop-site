@@ -3,6 +3,7 @@
   "batch_id": "2026-10-12-saudi-hr-verified-wave-02",
   "body_sha256": "5509bae6362b09be0f8b4181381b7131296f29e0da31e6e9c2ce107ecdf5716e",
   "created_at": "2026-10-12T19:33:58+00:00",
+  "delivery_status": "pending_bounce_check",
   "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
   "github_run_attempt": "1",
   "github_run_id": "38298450066",
@@ -12,6 +13,9 @@
   "recipient": "careers@dallah-hospital.com",
   "recipient_sha256": "f3c3a2e7996dcf96eecea794aa8b5846dd7cbef4f62bfcc4ef28c6daa884962e",
   "schema": 2,
-  "status": "pending",
+  "sent_at": "2026-10-12T19:33:59+00:00",
+  "smtp_accepted_at": "2026-10-12T19:33:59+00:00",
+  "smtp_message_id": "<179183363934.2458.9585416934248487260@icloud.com>",
+  "status": "smtp_accepted",
   "subject_sha256": "b1e3504eb7d3d4f93e2ca18f63e9ebfa9cff52e5eb5e2c07a236c231d53cc194"
 }
