@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "54d9a72fa00641343417d63c9d0aa0ba8d9741d74c644870e862784c610f50a7",
+  "batch_id": "2026-10-12-saudi-hr-verified-wave-01",
+  "body_sha256": "c12fdefb7eeafcdab65a1daa3a4842fd5e13ccdcd8fa1db44fb210b7c5e8f302",
+  "created_at": "2026-10-12T19:32:39+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "38298319582",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/2026-10-12-saudi-hr-verified-wave-01.json",
+  "payload_sha256": "e55d74ce704f9fe6294164842b2667151f76d5f5c33c4399e3002da1e0f63a15",
+  "recipient": "recruitment@aytb.com",
+  "recipient_sha256": "db20fa958226e0a831c9e7cd85810a0cfc0e959e433565b58af482da80d472dd",
+  "schema": 2,
+  "status": "pending",
+  "subject_sha256": "c1bd076610a0f352b71d0d08208dfa148151bb2f41626e93aacb5b3a16896a51"
+}
