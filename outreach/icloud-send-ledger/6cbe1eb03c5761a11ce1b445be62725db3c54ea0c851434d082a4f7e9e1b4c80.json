@@ -3,6 +3,7 @@
   "batch_id": "2026-10-12-saudi-hr-verified-wave-01",
   "body_sha256": "ff8de7c0943a6992d80f57498d26f4a1dd28be12c9858608cb3d88ec0af86588",
   "created_at": "2026-10-12T19:32:47+00:00",
+  "delivery_status": "pending_bounce_check",
   "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
   "github_run_attempt": "1",
   "github_run_id": "38298319582",
@@ -12,6 +13,9 @@
   "recipient": "careers@nesr.com",
   "recipient_sha256": "6cbe1eb03c5761a11ce1b445be62725db3c54ea0c851434d082a4f7e9e1b4c80",
   "schema": 2,
-  "status": "pending",
+  "sent_at": "2026-10-12T19:32:49+00:00",
+  "smtp_accepted_at": "2026-10-12T19:32:49+00:00",
+  "smtp_message_id": "<179183356912.2690.14246503544524546273@icloud.com>",
+  "status": "smtp_accepted",
   "subject_sha256": "c1bd076610a0f352b71d0d08208dfa148151bb2f41626e93aacb5b3a16896a51"
 }
