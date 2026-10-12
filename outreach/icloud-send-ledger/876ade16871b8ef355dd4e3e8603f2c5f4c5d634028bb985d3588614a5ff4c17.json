@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "960879417c0e855bd397081d7ce20be6e692f2ce7910bbcf6d197599d5434c7c",
+  "batch_id": "2026-10-12-saudi-hr-verified-wave-06b",
+  "body_sha256": "3ba35820bd844279e8981bd2c3e2546c8fdc95ff11640829ead60b973f2a4b9b",
+  "created_at": "2026-10-12T19:54:34+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "38300723729",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/2026-10-12-saudi-hr-verified-wave-06b.json",
+  "payload_sha256": "ca6a32aa479eac4a43b3954f25952710f7fddca517530d200d6e560fc9449de3",
+  "recipient": "hr@alesayi-motors.com",
+  "recipient_sha256": "876ade16871b8ef355dd4e3e8603f2c5f4c5d634028bb985d3588614a5ff4c17",
+  "schema": 2,
+  "status": "pending",
+  "subject_sha256": "e09f916f9f4fd3b5bf6485b4b13cfeb1146b381cf1722e20da357429ebe610dc"
+}
