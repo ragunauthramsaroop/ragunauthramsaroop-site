@@ -3,6 +3,7 @@
   "batch_id": "2026-10-12-saudi-hr-verified-wave-07",
   "body_sha256": "0d4393b642db184aa5f1dd965f9e9160c6b464871c5f439c90fed0c820052d84",
   "created_at": "2026-10-12T19:56:01+00:00",
+  "delivery_status": "pending_bounce_check",
   "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
   "github_run_attempt": "1",
   "github_run_id": "38300861270",
@@ -12,6 +13,9 @@
   "recipient": "hr@alarayan.com",
   "recipient_sha256": "3ca8d96c9fddf047c346c027576ee49e35b69b9b7e6b3ef752613c536263cf64",
   "schema": 2,
-  "status": "pending",
+  "sent_at": "2026-10-12T19:56:02+00:00",
+  "smtp_accepted_at": "2026-10-12T19:56:02+00:00",
+  "smtp_message_id": "<179183496260.2231.13239753231798723712@icloud.com>",
+  "status": "smtp_accepted",
   "subject_sha256": "e09f916f9f4fd3b5bf6485b4b13cfeb1146b381cf1722e20da357429ebe610dc"
 }
