@@ -3,6 +3,7 @@
   "batch_id": "2026-10-12-michael-page-middle-east-jon-ede",
   "body_sha256": "51ead09186357625a35b1b3ad587cb408e36be22dc4cb34288156f2611e787fb",
   "created_at": "2026-10-12T12:18:06+00:00",
+  "delivery_status": "pending_bounce_check",
   "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
   "github_run_attempt": "1",
   "github_run_id": "38248138794",
@@ -12,6 +13,9 @@
   "recipient": "jonede@michaelpage.ae",
   "recipient_sha256": "7eeeb623d0b71b6bc780234dee930d13e660aabe06adf35f8b5a78780f843422",
   "schema": 2,
-  "status": "pending",
+  "sent_at": "2026-10-12T12:18:07+00:00",
+  "smtp_accepted_at": "2026-10-12T12:18:07+00:00",
+  "smtp_message_id": "<179180748768.2468.17646781461403669264@icloud.com>",
+  "status": "smtp_accepted",
   "subject_sha256": "318c358fed1ce519dcc5fd1a177ed4723b20cac45706e1956580e3b5bef36a6a"
 }
