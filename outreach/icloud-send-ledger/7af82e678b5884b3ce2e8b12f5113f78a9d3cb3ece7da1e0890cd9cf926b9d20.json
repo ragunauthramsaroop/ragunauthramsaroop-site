@@ -3,6 +3,7 @@
   "batch_id": "2026-10-12-saudi-hr-verified-wave-05",
   "body_sha256": "41a34f2c565272670f9d9689cf2a45a8f27bf51608ca5587209178a234e52d6e",
   "created_at": "2026-10-12T19:39:09+00:00",
+  "delivery_status": "pending_bounce_check",
   "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
   "github_run_attempt": "1",
   "github_run_id": "38299027467",
@@ -12,6 +13,9 @@
   "recipient": "rec@alojaimi.com",
   "recipient_sha256": "7af82e678b5884b3ce2e8b12f5113f78a9d3cb3ece7da1e0890cd9cf926b9d20",
   "schema": 2,
-  "status": "pending",
+  "sent_at": "2026-10-12T19:39:10+00:00",
+  "smtp_accepted_at": "2026-10-12T19:39:10+00:00",
+  "smtp_message_id": "<179183395026.2299.17665779815915656849@icloud.com>",
+  "status": "smtp_accepted",
   "subject_sha256": "c1bd076610a0f352b71d0d08208dfa148151bb2f41626e93aacb5b3a16896a51"
 }
