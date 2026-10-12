@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "27a8de4a5df4cc16abcecc8863974db1113ca5faaae9b574e25fab795268642c",
+  "batch_id": "2026-10-12-saudi-hr-verified-wave-04",
+  "body_sha256": "d98cb1520e07a968ccccb383af0cdbfc2c90756a135d68ad0578457426eab3da",
+  "created_at": "2026-10-12T19:37:59+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "38298905389",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/2026-10-12-saudi-hr-verified-wave-04.json",
+  "payload_sha256": "9cd3b17ef1ce18bcab69f1b3fda4e40b7d0de50edbb619b24cfe2d7008561e4a",
+  "recipient": "careers@jhah.com",
+  "recipient_sha256": "9c5f3d20d4df8c3ec67363d99d96f4197b2c2af2072fff1862ddda353180a4e7",
+  "schema": 2,
+  "status": "pending",
+  "subject_sha256": "b1e3504eb7d3d4f93e2ca18f63e9ebfa9cff52e5eb5e2c07a236c231d53cc194"
+}
