@@ -3,6 +3,7 @@
   "batch_id": "2026-10-12-saudi-hr-verified-wave-05",
   "body_sha256": "0b5ccaa53b8787022add67d92a3d87a26b9b141dce4eb6db55fc0366faf9acfb",
   "created_at": "2026-10-12T19:39:11+00:00",
+  "delivery_status": "pending_bounce_check",
   "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
   "github_run_attempt": "1",
   "github_run_id": "38299027467",
@@ -12,6 +13,9 @@
   "recipient": "wadaef@gtecorp.com",
   "recipient_sha256": "027a97c2c5c76ba5ea7bd865d180bd673579893b7339bbcc9ea3a0ca643ea886",
   "schema": 2,
-  "status": "pending",
+  "sent_at": "2026-10-12T19:39:13+00:00",
+  "smtp_accepted_at": "2026-10-12T19:39:13+00:00",
+  "smtp_message_id": "<179183395289.2299.9395871414841924377@icloud.com>",
+  "status": "smtp_accepted",
   "subject_sha256": "7e135a6e4aa97f8d2d0f4a02c5ddb1559110a4ab7e66f52fe5cd83f8102be0a5"
 }
