@@ -3,6 +3,7 @@
   "batch_id": "2026-10-12-saudi-hr-verified-wave-07",
   "body_sha256": "21f526af1b65b16be657678ae85e15770c1e287a310cb1d3edc056f29ec81bb4",
   "created_at": "2026-10-12T19:55:58+00:00",
+  "delivery_status": "pending_bounce_check",
   "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
   "github_run_attempt": "1",
   "github_run_id": "38300861270",
@@ -12,6 +13,9 @@
   "recipient": "cv@aldawaa.com.sa",
   "recipient_sha256": "334fbb1da33888b33738ec2166767e836f18ec38ceff203d4899354ab26b2929",
   "schema": 2,
-  "status": "pending",
+  "sent_at": "2026-10-12T19:56:00+00:00",
+  "smtp_accepted_at": "2026-10-12T19:56:00+00:00",
+  "smtp_message_id": "<179183495982.2231.14372582379949542628@icloud.com>",
+  "status": "smtp_accepted",
   "subject_sha256": "e09f916f9f4fd3b5bf6485b4b13cfeb1146b381cf1722e20da357429ebe610dc"
 }
