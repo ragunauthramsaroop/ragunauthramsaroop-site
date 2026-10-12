@@ -3,6 +3,7 @@
   "batch_id": "2026-10-12-saudi-hr-verified-wave-06b",
   "body_sha256": "415f82d5c6b09beb89531d513c2fd4e56f75c32b17e671a63e1b8afc3e033d00",
   "created_at": "2026-10-12T19:54:37+00:00",
+  "delivery_status": "pending_bounce_check",
   "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
   "github_run_attempt": "1",
   "github_run_id": "38300723729",
@@ -12,6 +13,9 @@
   "recipient": "career@nesma.com",
   "recipient_sha256": "b6ebc8001bbfc59b292eed64516bfdd3202a2dded91e5078e754fdab33bbf02b",
   "schema": 2,
-  "status": "pending",
+  "sent_at": "2026-10-12T19:54:39+00:00",
+  "smtp_accepted_at": "2026-10-12T19:54:39+00:00",
+  "smtp_message_id": "<179183487884.2466.7222071318148364618@icloud.com>",
+  "status": "smtp_accepted",
   "subject_sha256": "7d44fae60a3018267bd6d01b05d489067e69596d2845916f4cc6e451b6b5a695"
 }
