@@ -3,6 +3,7 @@
   "batch_id": "2026-10-12-saudi-hr-verified-wave-10",
   "body_sha256": "8d8e2b4f9df62bcd08daa783a3b254b491a113f81525476dc13b78b39ad40d3a",
   "created_at": "2026-10-13T00:40:42+00:00",
+  "delivery_status": "pending_bounce_check",
   "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
   "github_run_attempt": "1",
   "github_run_id": "38328398616",
@@ -12,6 +13,9 @@
   "recipient": "info@innovest.com.sa",
   "recipient_sha256": "e4ffe2e14037490b5b9bd48b8d38e5e2dae6a93f186e005f0381b7311bcd562f",
   "schema": 2,
-  "status": "pending",
+  "sent_at": "2026-10-13T00:40:44+00:00",
+  "smtp_accepted_at": "2026-10-13T00:40:44+00:00",
+  "smtp_message_id": "<179185204392.2529.2530152839298645194@icloud.com>",
+  "status": "smtp_accepted",
   "subject_sha256": "53408d136bfe3d25fdd5c0daaccd352958a60cf9454d157343c9a87c748d3ed4"
 }
