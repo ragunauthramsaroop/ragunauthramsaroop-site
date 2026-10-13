@@ -3,6 +3,7 @@
   "batch_id": "2026-10-12-saudi-hr-verified-wave-11a",
   "body_sha256": "3bc10e42d98f671306320bb781e391b2c087246992adc027b8c87fae9b85ecbb",
   "created_at": "2026-10-13T00:51:55+00:00",
+  "delivery_status": "pending_bounce_check",
   "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
   "github_run_attempt": "1",
   "github_run_id": "38329312391",
@@ -12,6 +13,9 @@
   "recipient": "admin@batinalard.com",
   "recipient_sha256": "d65140663d9f4776ad0de0a33262386e8b0ce7750c42f7a2c9058cb9e2e84f16",
   "schema": 2,
-  "status": "pending",
+  "sent_at": "2026-10-13T00:51:56+00:00",
+  "smtp_accepted_at": "2026-10-13T00:51:56+00:00",
+  "smtp_message_id": "<179185271679.2463.6869372569189133385@icloud.com>",
+  "status": "smtp_accepted",
   "subject_sha256": "607801cd0a1c60dfd0efbdc95ec7320a8fdcebeeeb2561583479912d80897986"
 }
