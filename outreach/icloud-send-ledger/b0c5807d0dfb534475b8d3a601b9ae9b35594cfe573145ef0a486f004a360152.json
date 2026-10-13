@@ -3,6 +3,7 @@
   "batch_id": "2026-10-12-saudi-hr-verified-wave-10",
   "body_sha256": "7995c8aa734c6bc1544836b870d4819a956a14c94aee9bf9e7cdde80c9838d78",
   "created_at": "2026-10-13T00:40:40+00:00",
+  "delivery_status": "pending_bounce_check",
   "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
   "github_run_attempt": "1",
   "github_run_id": "38328398616",
@@ -12,6 +13,9 @@
   "recipient": "recruitment@hanawater.com",
   "recipient_sha256": "b0c5807d0dfb534475b8d3a601b9ae9b35594cfe573145ef0a486f004a360152",
   "schema": 2,
-  "status": "pending",
+  "sent_at": "2026-10-13T00:40:41+00:00",
+  "smtp_accepted_at": "2026-10-13T00:40:41+00:00",
+  "smtp_message_id": "<179185204138.2529.8570240451301354462@icloud.com>",
+  "status": "smtp_accepted",
   "subject_sha256": "b1e3504eb7d3d4f93e2ca18f63e9ebfa9cff52e5eb5e2c07a236c231d53cc194"
 }
