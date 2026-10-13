@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "da1e6d3525ecbeb8a8e8067d8850ef6f46199c92a9c802f0df31488101cf6aa2",
+  "batch_id": "2026-10-12-saudi-hr-verified-wave-11a",
+  "body_sha256": "d04a884a62aaebb912ef33e756cdcd0e3953aac17806a8c8773971025e23e4bd",
+  "created_at": "2026-10-13T00:51:53+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "38329312391",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/2026-10-12-saudi-hr-verified-wave-11a.json",
+  "payload_sha256": "69fc19b6a59ef83603c4103e54d70a88167258825c2961562fa8ac31f2c425d2",
+  "recipient": "info@daralsalam-sa.com",
+  "recipient_sha256": "396ab1d4d63504989c15003112f6ca344c4d43567f71b65dad5f7650e48eeea3",
+  "schema": 2,
+  "status": "pending",
+  "subject_sha256": "bec385386d5aa05069ff3d1e0aeec0035eb8a297613aac0c0a396c50c7110269"
+}
