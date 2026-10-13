@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "da1e6d3525ecbeb8a8e8067d8850ef6f46199c92a9c802f0df31488101cf6aa2",
+  "batch_id": "2026-10-12-saudi-hr-verified-wave-11a",
+  "body_sha256": "338d2110a08037d39b17ce33cd05120952d28b92b38dcc8ab15809b2c9137c20",
+  "created_at": "2026-10-13T00:51:51+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "38329312391",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/2026-10-12-saudi-hr-verified-wave-11a.json",
+  "payload_sha256": "69fc19b6a59ef83603c4103e54d70a88167258825c2961562fa8ac31f2c425d2",
+  "recipient": "careers@sn-tec.com",
+  "recipient_sha256": "144d7761828a578fc0a63ebc786a1bc3a3733d3fdc319be5611d7732e4b58f6a",
+  "schema": 2,
+  "status": "pending",
+  "subject_sha256": "d7ab0b845f2789becb20102126580c9afc62d202e87c81d1d303d27fff6f75ba"
+}
