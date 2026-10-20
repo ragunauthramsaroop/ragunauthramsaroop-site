@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-19T16:58:31+00:00",
+  "generated": "2026-10-20T15:02:10+00:00",
   "metrics": [
     {
       "label": "Population",
@@ -35,6 +35,14 @@
       "period": "2025",
       "unit": "GYD",
       "source": "https://statisticsguyana.gov.gy/"
+    },
+    {
+      "label": "World Bank GDP growth",
+      "value": 19.3360097091818,
+      "period": "2025",
+      "unit": "%",
+      "source": "https://data.worldbank.org/country/guyana",
+      "indicator": "NY.GDP.MKTP.KD.ZG"
     },
     {
       "label": "World Bank inflation",
