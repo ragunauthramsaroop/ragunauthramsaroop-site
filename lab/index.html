@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#0d111b">
+<meta name="description" content="OpenLab is a free, browser-based coding workspace with a live preview, file manager, projects, and exports. No account required.">
+<title>OpenLab | Free Browser IDE</title>
+<link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+<div class="app" id="app">
+  <header class="topbar">
+    <a class="brand" href="./" aria-label="OpenLab home"><span class="brand-mark">⌘</span><span class="brand-name">open<span>lab</span></span><span class="brand-suffix">IDE</span></a>
+    <span class="top-divider"></span>
+    <button class="project-select" id="projectSelect" title="Switch project"><span class="project-avatar" id="projectAvatar">W</span><span class="project-select-name" id="projectName">Workspace</span><svg class="i" viewBox="0 0 24 24"><path d="m7 10 5 5 5-5"/></svg></button>
+    <span class="top-spacer"></span>
+    <span class="cloudless" title="Projects are stored in this browser. No server or subscription is required."><span class="online-dot"></span><span class="cloudless-text">Local workspace</span></span>
+    <button class="btn-icon top-utility" id="shortcutsBtn" title="Keyboard shortcuts" aria-label="Keyboard shortcuts"><svg class="i" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M7 9h.01M11 9h.01M15 9h.01M7 13h10"/></svg></button>
+    <button class="btn btn-quiet" id="exportBtn"><svg class="i" viewBox="0 0 24 24"><path d="M12 3v12m-4-4 4 4 4-4M4 17v3h16v-3"/></svg><span>Export</span></button>
+    <button class="btn btn-run" id="runBtn"><svg class="i fill" viewBox="0 0 24 24"><path d="m8 5 11 7-11 7z"/></svg><span>Run</span><kbd>⌘↵</kbd></button>
+  </header>
+  <div class="work-area">
+    <nav class="activity" aria-label="Workspace navigation">
+      <button class="activity-btn active" id="filesNav" aria-label="Files" title="Files"><svg class="i" viewBox="0 0 24 24"><path d="M3 7a2 2 0 0 1 2-2h5l2 2h7a2 2 0 0 1 2 2v10H3z"/></svg></button>
+      <button class="activity-btn" id="searchNav" aria-label="Search files" title="Search files"><svg class="i" viewBox="0 0 24 24"><circle cx="10.8" cy="10.8" r="6.8"/><path d="m16 16 5 5"/></svg></button>
+      <button class="activity-btn" id="projectsNav" aria-label="Projects" title="Projects"><svg class="i" viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg></button>
+      <div class="activity-spacer"></div>
+      <button class="activity-btn" id="settingsBtn" aria-label="Settings" title="Settings"><svg class="i" viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.7 1.7 0 0 0 .34 1.88l.08.08-2.12 2.12-.08-.08a1.7 1.7 0 0 0-1.88-.34 1.7 1.7 0 0 0-1.04 1.56V21h-3v-.13a1.7 1.7 0 0 0-1.04-1.56 1.7 1.7 0 0 0-1.88.34l-.08.08-2.12-2.12.08-.08A1.7 1.7 0 0 0 7 15.64a1.7 1.7 0 0 0-1.56-1.04H5v-3h.44A1.7 1.7 0 0 0 7 10.56a1.7 1.7 0 0 0-.34-1.88l-.08-.08 2.12-2.12.08.08A1.7 1.7 0 0 0 10.66 7a1.7 1.7 0 0 0 1.04-1.56V5h3v.44A1.7 1.7 0 0 0 15.74 7a1.7 1.7 0 0 0 1.88-.34l.08-.08 2.12 2.12-.08.08a1.7 1.7 0 0 0-.34 1.88 1.7 1.7 0 0 0 1.56 1.04H21v3h-.04A1.7 1.7 0 0 0 19.4 15z"/></svg></button>
+    </nav>
+    <aside class="sidebar" id="sidebar">
+      <div class="side-top"><span class="eyebrow" id="sidebarTitle">EXPLORER</span><button id="newFileBtn" class="bare-btn" title="New file" aria-label="New file"><svg class="i" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg></button></div>
+      <div class="side-label"><svg class="i" viewBox="0 0 24 24"><path d="m7 10 5 5 5-5"/></svg><span id="folderName">MY PROJECT</span><span class="file-count" id="fileCount">3</span></div>
+      <div id="fileTree" class="file-tree" role="tree"></div>
+      <div class="side-bottom">
+        <button class="side-secondary" id="addFileSide"><svg class="i" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg> New file</button>
+        <div class="side-hr"></div>
+        <div class="side-section-title">QUICK ACTIONS</div>
+        <button class="side-link" id="templatesBtn"><svg class="i" viewBox="0 0 24 24"><path d="m12 2 3 7 7 3-7 3-3 7-3-7-7-3 7-3z"/></svg> New from template <svg class="i icon-end" viewBox="0 0 24 24"><path d="m9 18 6-6-6-6"/></svg></button>
+        <button class="side-link" id="importBtn"><svg class="i" viewBox="0 0 24 24"><path d="M12 16V4m-4 4 4-4 4 4M4 17v3h16v-3"/></svg> Import project or file</button>
+        <button class="side-link" id="keyboardBtn"><svg class="i" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M7 9h.01M11 9h.01M15 9h.01M7 13h10"/></svg> Keyboard shortcuts</button>
+      </div>
+    </aside>
+    <main class="main">
+      <div class="mobile-switcher" id="mobileSwitcher"><button data-mobile="files">Files</button><button data-mobile="code" class="selected">Code</button><button data-mobile="preview">Preview</button></div>
+      <div class="editor-preview">
+        <section class="editor-column" id="editorColumn">
+          <div class="tabbar" id="tabbar" role="tablist"></div>
+          <div class="editor-actions"><div class="breadcrumb"><span id="breadcrumbProject">Workspace</span><span class="sep">/</span><strong id="breadcrumbFile">index.html</strong></div><div class="editor-action-buttons"><button class="small-button" id="findBtn" title="Find in file (Ctrl+F)"><svg class="i" viewBox="0 0 24 24"><circle cx="10.8" cy="10.8" r="6.8"/><path d="m16 16 5 5"/></svg></button><button class="small-button" id="copyBtn" title="Copy file to clipboard"><svg class="i" viewBox="0 0 24 24"><rect x="8" y="8" width="12" height="12" rx="2"/><path d="M16 8V6a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h2"/></svg></button><button class="small-button" id="renameBtn" title="Rename file"><svg class="i" viewBox="0 0 24 24"><path d="m12 20 9-9-5-5-9 9-2 7zM14 8l5 5"/></svg></button></div></div>
+          <div class="findbar hidden" id="findbar"><svg class="i" viewBox="0 0 24 24"><circle cx="10.8" cy="10.8" r="6.8"/><path d="m16 16 5 5"/></svg><input type="text" id="findInput" placeholder="Find in current file" aria-label="Find in file"><span id="findCounter">0 results</span><button class="small-button" id="findNext" aria-label="Find next">↵</button><button class="small-button" id="findClose" aria-label="Close search">×</button></div>
+          <div class="code-area" id="codeArea"><div class="line-numbers" id="lineNumbers" aria-hidden="true">1</div><textarea id="code" spellcheck="false" autocorrect="off" autocapitalize="off" autocomplete="off" wrap="off" aria-label="Code editor"></textarea></div>
+          <div class="editor-footer"><span id="cursorPos">Ln 1, Col 1</span><span id="fileLanguage">HTML</span><span>UTF-8</span><span class="autosaved" id="savedIndicator"><svg class="i" viewBox="0 0 24 24"><path d="m4 12 5 5L20 6"/></svg> Saved locally</span></div>
+        </section>
+        <div class="resize-handle" id="resizeHandle" title="Drag to resize panels"><span></span></div>
+        <section class="preview-column" id="previewColumn">
+          <div class="preview-top"><div class="preview-title"><svg class="i" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18"/></svg> Preview <span class="preview-live" id="previewLive">Live</span></div><div class="preview-toolbar"><button class="small-button" id="refreshBtn" title="Refresh preview"><svg class="i" viewBox="0 0 24 24"><path d="M20 11a8 8 0 1 0-2.3 6M20 4v7h-7"/></svg></button><button class="small-button" id="desktopBtn" title="Desktop preview"><svg class="i" viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="15" rx="2"/><path d="M8 22h8M12 18v4"/></svg></button><button class="small-button" id="mobileBtn" title="Mobile preview"><svg class="i" viewBox="0 0 24 24"><rect x="7" y="2" width="10" height="20" rx="2"/><path d="M11 18h2"/></svg></button><button class="small-button" id="fullscreenBtn" title="Open preview in new window"><svg class="i" viewBox="0 0 24 24"><path d="M14 4h6v6M20 4l-8 8M20 14v6h-6M4 10V4h6M4 4l8 8"/></svg></button></div></div>
+          <div class="preview-address"><svg class="i" viewBox="0 0 24 24"><path d="M10 13a5 5 0 0 0 7 .4l3-3a5 5 0 1 0-7.1-7.1l-1.7 1.7M14 11a5 5 0 0 0-7-.4l-3 3a5 5 0 0 0 7.1 7.1l1.7-1.7"/></svg><span>localhost / preview</span><span class="preview-secure">● sandboxed</span></div>
+          <div class="preview-viewport" id="previewViewport"><iframe id="preview" title="Live application preview" sandbox="allow-scripts allow-forms allow-modals"></iframe><div id="previewEmpty" class="preview-empty hidden"><span>⌘</span><h3>Ready to build?</h3><p>Open a web project and click Run to see your work.</p></div></div>
+          <div class="console-header"><button class="console-title" id="consoleToggle"><svg class="i" viewBox="0 0 24 24"><path d="m4 7 5 5-5 5M12 17h8"/></svg> Console <span class="console-count" id="consoleCount">0</span><svg class="i arrow-up" id="consoleChevron" viewBox="0 0 24 24"><path d="m6 15 6-6 6 6"/></svg></button><button class="console-clear" id="clearConsole">Clear</button></div>
+          <div class="console-output" id="consoleOutput" aria-live="polite"><div class="console-empty">Console output will appear here.</div></div>
+        </section>
+      </div>
+      <footer class="statusbar"><div class="status-left"><span class="status-status"><span class="online-dot"></span> Ready</span><span id="statusProject">Welcome Website</span></div><div class="status-right"><span class="status-hint">100% free · No account needed</span><button id="helpBtn">Help & shortcuts <span>?</span></button></div></footer>
+    </main>
+  </div>
+</div>
+<div class="modal-backdrop hidden" id="modalBackdrop"><div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle"><div class="modal-head"><div><span class="modal-kicker">OPENLAB IDE</span><h2 id="modalTitle">Create something</h2></div><button class="modal-close" id="modalClose" aria-label="Close">×</button></div><div class="modal-body" id="modalBody"></div><div class="modal-footer" id="modalFooter"></div></div></div>
+<div class="toast-stack" id="toasts" aria-live="polite"></div>
+<input type="file" id="importFileInput" accept=".json,.html,.htm,.css,.js,.mjs,.md,.txt" hidden>
+<script src="./app.js" defer></script>
+</body>
+</html>
