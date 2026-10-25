@@ -24,7 +24,7 @@ jobs:
         uses: actions/checkout@v4
         with:
           repository: ragunauthramsaroop/PrismBay
-          ref: a2f69b3371ed985b764490276f48d62f4c512df8
+          ref: dc750663a5bffd602a5ab7a0b422a5282b592202
           path: source
           persist-credentials: false
       - name: Setup Node
