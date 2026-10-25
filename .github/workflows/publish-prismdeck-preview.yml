@@ -1,0 +1,104 @@
+name: Publish PrismDeck preview
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/publish-prismdeck-preview.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: prismdeck-preview-publish
+  cancel-in-progress: false
+
+jobs:
+  build:
+    name: Build reviewed PrismDeck version
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Checkout pinned public PrismDeck source
+        uses: actions/checkout@v4
+        with:
+          repository: ragunauthramsaroop/PrismBay
+          ref: 2cc5be77f5d91ac2538e7c1ccf967cc444900a41
+          path: source
+          persist-credentials: false
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Install isolated frontend dependencies
+        working-directory: source/apps/prismdeck-studio
+        run: npm install --no-audit --no-fund
+      - name: Verify PowerPoint generation and source logic
+        working-directory: source/apps/prismdeck-studio
+        run: npm test
+      - name: Build subpath-compatible static website
+        working-directory: source/apps/prismdeck-studio
+        run: npm run build -- --base=/prismdeck/
+      - name: Add preview metadata and privacy notices
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          p=Path("source/apps/prismdeck-studio/dist/index.html")
+          s=p.read_text(encoding="utf-8")
+          assert "</head>" in s
+          addition = (
+            '<meta name="robots" content="noindex,nofollow"/>'
+            '<link rel="canonical" href="https://ragunauthramsaroop.com/prismdeck/"/>'
+            '<script defer src="/tools/assets/analytics-loader.js"></script>'
+          )
+          p.write_text(s.replace("</head>",addition+"</head>",1),encoding="utf-8")
+          PY
+          mkdir -p prismdeck-release
+          cp -a source/apps/prismdeck-studio/dist/. prismdeck-release/
+          test -s prismdeck-release/index.html
+          test -n "$(find prismdeck-release/assets -type f -name '*.js' -print -quit)"
+      - name: Upload audited preview bundle
+        uses: actions/upload-artifact@v4
+        with:
+          name: prismdeck-preview-static
+          path: prismdeck-release/
+          if-no-files-found: error
+          retention-days: 3
+
+  publish:
+    name: Release isolated GitHub Pages subpath
+    needs: build
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout published website
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - name: Download verified static bundle
+        uses: actions/download-artifact@v4
+        with:
+          name: prismdeck-preview-static
+          path: prismdeck/
+      - name: Confirm scope and integrity
+        run: |
+          test -s prismdeck/index.html
+          test -n "$(find prismdeck/assets -name '*.js' -print -quit)"
+          grep -q 'noindex,nofollow' prismdeck/index.html
+          grep -q '/prismdeck/assets/' prismdeck/index.html
+      - name: Publish only preview subpath
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A prismdeck/
+          if git diff --cached --quiet; then
+            echo "PrismDeck preview unchanged."
+            exit 0
+          fi
+          git commit -m "Publish PrismDeck preview from verified release"
+          git pull --rebase origin main
+          git push origin HEAD:main
