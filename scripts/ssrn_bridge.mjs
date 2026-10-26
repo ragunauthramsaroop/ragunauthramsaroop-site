@@ -51,14 +51,16 @@ async function myPapers(){
   for(let i=0;i<6;i++){if((await page.locator("body").innerText().catch(()=>"")).trim().length>50)break;await sleep(800);}
   const text=await page.locator("body").innerText().catch(()=>"");
   console.log("SSRN_DASHBOARD_STATE "+JSON.stringify({http:response?.status(),url:page.url().split("?")[0],title:await page.title(),textLength:text.length,htmlLength:(await page.content()).length}));
+  if(response?.status()===403||/just a moment|attention required/i.test(await page.title()))throw Error("SSRN access denied by Cloudflare (HTTP 403). GitHub Actions cannot access My Papers.");
   if(text.trim().length<50)throw Error("SSRN My Papers dashboard empty, page or access blocked");
   if(await firstVisible(page.locator('input[type="password"]')))throw Error("SSRN login required");
   return text;
 }
 async function login(){
-  await page.goto("https://hq.ssrn.com/submissions/MyPapers.cfm",{waitUntil:"domcontentloaded",timeout:60000});
+  const response=await page.goto("https://hq.ssrn.com/submissions/MyPapers.cfm",{waitUntil:"domcontentloaded",timeout:60000});
   await cookies();
   await sleep(1800);
+  if(response?.status()===403||/just a moment|attention required/i.test(await page.title()))throw Error("SSRN blocks the GitHub runner (HTTP 403). Use the signed-in browser submission assistant.");
   const password=await firstVisible(page.locator('input[type="password"]'));
   if(!password)return;
   const email=await firstVisible(page.locator('input[type="email"],input[placeholder*="Email" i],input[name*="email" i]'));
