@@ -1,0 +1,232 @@
+{
+  "schema": 1,
+  "author": "Ragunauth Ramsaroop",
+  "last_checked": "2026-10-26",
+  "license": "All Rights Reserved",
+  "notes": "The 20 known SSRN abstract IDs are never resubmitted. Staged PDFs remain unsubmitted until the SSRN dashboard confirms. The missing-source records require full manuscripts.",
+  "papers": [
+    {
+      "slug": "guyana-2040",
+      "title": "Guyana 2040: From Resource Wealth to Strategic Statecraft",
+      "ssrn_abstract_id": "7526419"
+    },
+    {
+      "slug": "guyana-power-demand-2030",
+      "title": "Guyana Power Demand 2030",
+      "ssrn_abstract_id": "7526458"
+    },
+    {
+      "slug": "critical-minerals-energy-security",
+      "title": "Critical Minerals Are the New Energy Security",
+      "ssrn_abstract_id": "7526438"
+    },
+    {
+      "slug": "guyana-economy-2030",
+      "title": "Guyana Economy 2030",
+      "ssrn_abstract_id": "7526478"
+    },
+    {
+      "slug": "new-geography-globalization",
+      "title": "The New Geography of Globalization",
+      "ssrn_abstract_id": "7526518"
+    },
+    {
+      "slug": "water-security-economic-security",
+      "title": "Water Security as Economic Security",
+      "ssrn_abstract_id": "7526538"
+    },
+    {
+      "slug": "guyana-lcds-2030",
+      "title": "Guyana's Low Carbon Development Strategy 2030",
+      "ssrn_abstract_id": "7526418"
+    },
+    {
+      "slug": "guyana-forest-carbon",
+      "title": "Guyana's Forest Carbon Economy",
+      "ssrn_abstract_id": "7526580"
+    },
+    {
+      "slug": "guyana-global-biodiversity-alliance",
+      "title": "Guyana's Global Biodiversity Alliance",
+      "ssrn_abstract_id": "7526599"
+    },
+    {
+      "slug": "who-pays-energy-transition",
+      "title": "Who Pays for the Energy Transition?",
+      "ssrn_abstract_id": "7526618"
+    },
+    {
+      "slug": "omai-gold-2026-pea",
+      "title": "Omai Gold 2026 PEA",
+      "ssrn_abstract_id": "7526619"
+    },
+    {
+      "slug": "physical-limits-artificial-intelligence",
+      "title": "The Physical Limits of Artificial Intelligence",
+      "ssrn_abstract_id": "7549278"
+    },
+    {
+      "slug": "from-ore-to-optionality",
+      "title": "From Ore to Optionality",
+      "ssrn_abstract_id": "7549359"
+    },
+    {
+      "slug": "fresh-water-strategic-commodity",
+      "title": "Fresh Water: The Next Strategic Commodity",
+      "ssrn_abstract_id": "7549578"
+    },
+    {
+      "slug": "beyond-employment",
+      "title": "Beyond Employment",
+      "ssrn_abstract_id": "7549598"
+    },
+    {
+      "slug": "karpowership-guyana-2035",
+      "title": "Karpowership Guyana 2035",
+      "ssrn_abstract_id": "7549618"
+    },
+    {
+      "slug": "geopolitics-gold",
+      "title": "The Geopolitics of Gold",
+      "ssrn_abstract_id": "7549638"
+    },
+    {
+      "slug": "guyana-development-bank",
+      "title": "Guyana Development Bank",
+      "ssrn_abstract_id": "7549619"
+    },
+    {
+      "slug": "sovereign-ai",
+      "title": "Sovereign AI",
+      "ssrn_abstract_id": "7549639"
+    },
+    {
+      "slug": "trust-deficit",
+      "title": "The Trust Deficit",
+      "ssrn_abstract_id": "7549678"
+    },
+    {
+      "slug": "rehabilitation-gap",
+      "title": "The Rehabilitation Gap: Mine Closure Liabilities, Financial Assurance and the Intergenerational Economics of Responsible Extraction",
+      "date": "2026-10-19",
+      "sha256": "63ae573fbed20ebd09c509a8478d82646af0b89658bff6e1f36841b16ec389f6",
+      "classification": "Environmental, Social & Governance (ESG) Research Alert",
+      "keywords": [
+        "mine closure",
+        "financial assurance",
+        "environmental liabilities",
+        "ESG"
+      ],
+      "abstract": "This independent research examines the discrepancy between the long-term costs of mine closure and the financial arrangements protecting communities, regulators and future generations. The paper analyses restoration, water treatment, tailings, regulatory security, accounting provisions and post-mining transitions through comparative evidence. It proposes a CLOSURE Integrity Framework as author analysis, not as a certified standard, and distinguishes dated regulatory observations from hypothetical financial scenarios.",
+      "pdf": "ssrn-bridge/pdfs/rehabilitation-gap.pdf",
+      "ai_disclosure": "Generative AI tools assisted with research organization, drafting and editing. The author reviewed the final manuscript and takes responsibility for factual verification, analysis, citations and conclusions.",
+      "conflict_of_interest": "The author works in the natural-resources industry. This independent research represents personal views, not official positions of AGM Inc. or any other organization. No direct research-related financial conflict is disclosed.",
+      "funder_statement": "This research was personally funded by the author. No external research grant or institutional funding was received.",
+      "ethics_approval": "Not applicable. Desk-based analysis of publicly available information; no primary research with human or animal subjects."
+    },
+    {
+      "slug": "water-allocation-economy",
+      "title": "The Water Allocation Economy: Mining, AI Infrastructure, Hydrogen and the Next Constraint on Industrial Growth",
+      "date": "2026-10-19",
+      "sha256": "9117aeece14feb52f3b7cca7b00931de60a915ef88560eb9bc4db228bb3e4669",
+      "classification": "Environmental Economics Alert",
+      "keywords": [
+        "water allocation",
+        "industrial water",
+        "AI infrastructure",
+        "mining",
+        "hydrogen"
+      ],
+      "abstract": "Dependable industrial growth requires lawful allocation of water of the right quality and quantity while preserving public services and ecosystems. This monograph studies the relationship between water, power, mining, data centres, semiconductors, hydrogen and basin governance. It introduces the author-developed BASIN Allocation Protocol, seven-ledger water accounting and governance controls. Institutional evidence, forward scenarios and analytical propositions are clearly distinguished.",
+      "pdf": "ssrn-bridge/pdfs/water-allocation-economy.pdf",
+      "ai_disclosure": "Generative AI tools assisted with research organization, drafting and editing. The author reviewed the final manuscript and takes responsibility for factual verification, analysis, citations and conclusions.",
+      "conflict_of_interest": "The author works in the natural-resources industry. This independent research represents personal views, not official positions of AGM Inc. or any other organization. No direct research-related financial conflict is disclosed.",
+      "funder_statement": "This research was personally funded by the author. No external research grant or institutional funding was received.",
+      "ethics_approval": "Not applicable. Desk-based analysis of publicly available information; no primary research with human or animal subjects."
+    },
+    {
+      "slug": "carbon-integrity-divide",
+      "title": "The Carbon Integrity Divide: Article 6, Industrial Carbon Accounting and the New Rules of Credible Climate Value",
+      "date": "2026-10-12",
+      "sha256": "463f1f36638b29e73ab8ee774ae64353ee897600288e58210223d65103b129f2",
+      "classification": "Environmental, Social & Governance (ESG) Research Alert",
+      "keywords": [
+        "Article 6",
+        "carbon markets",
+        "CBAM",
+        "carbon accounting",
+        "climate finance"
+      ],
+      "abstract": "A corporate greenhouse-gas inventory, carbon credit, Article 6 unit, product footprint and border-adjustment obligation are different instruments with different claims. This research reviews 2026 institutional developments in carbon markets, industrial carbon reporting and international transfers. The author proposes a Seven-Ledger Integrity Architecture and assurance controls to reconcile physical changes, legal rights, registries and public claims. The framework is original analysis rather than an external certification.",
+      "pdf": "ssrn-bridge/pdfs/carbon-integrity-divide.pdf",
+      "ai_disclosure": "Generative AI tools assisted with research organization, drafting and editing. The author reviewed the final manuscript and takes responsibility for factual verification, analysis, citations and conclusions.",
+      "conflict_of_interest": "The author works in the natural-resources industry. This independent research represents personal views, not official positions of AGM Inc. or any other organization. No direct research-related financial conflict is disclosed.",
+      "funder_statement": "This research was personally funded by the author. No external research grant or institutional funding was received.",
+      "ethics_approval": "Not applicable. Desk-based analysis of publicly available information; no primary research with human or animal subjects."
+    },
+    {
+      "slug": "chokepoint-economy",
+      "title": "The Chokepoint Economy: Critical Minerals, Export Controls and the New Architecture of Industrial Security",
+      "date": "2026-09-21",
+      "sha256": "f9663e6eb212489c4ac78ed0a084067073b405cb9d489df028930a08773611ad",
+      "classification": "Global Commodity Issues Alert",
+      "keywords": [
+        "critical minerals",
+        "export controls",
+        "refining",
+        "industrial security"
+      ],
+      "abstract": "The security of critical-mineral supply depends on more than domestic ore reserves. Processing capacity, trade restrictions, logistics, qualification and recycling affect whether material becomes available to industry. This study synthesizes institutional evidence and proposes a Source-Process-Route-Qualify-Recycle framework for assessing vulnerabilities and investment responses. It distinguishes supply-chain resilience from national mineral self-sufficiency.",
+      "pdf": "ssrn-bridge/pdfs/chokepoint-economy.pdf",
+      "ai_disclosure": "Generative AI tools assisted with research organization, drafting and editing. The author reviewed the final manuscript and takes responsibility for factual verification, analysis, citations and conclusions.",
+      "conflict_of_interest": "The author works in the natural-resources industry. This independent research represents personal views, not official positions of AGM Inc. or any other organization. No direct research-related financial conflict is disclosed.",
+      "funder_statement": "This research was personally funded by the author. No external research grant or institutional funding was received.",
+      "ethics_approval": "Not applicable. Desk-based analysis of publicly available information; no primary research with human or animal subjects."
+    },
+    {
+      "slug": "ai-assurance-guyana",
+      "title": "AI Assurance for Guyana's Extractive Sector: A Risk-Based Governance Blueprint for Mining, Environmental Compliance and Worker Protection",
+      "date": "2026-09-14",
+      "sha256": "1b80fe49f0d18e8f9658f481cf2dbd80facb8e831be335617cc354395a60d44a",
+      "classification": "Environmental, Social & Governance (ESG) Research Alert",
+      "keywords": [
+        "AI governance",
+        "Guyana",
+        "mining",
+        "environment",
+        "worker protection"
+      ],
+      "abstract": "Artificial intelligence offers applications in mining efficiency, hazard detection and environmental monitoring, but statutory accountability remains with identifiable decision makers. This paper proposes a consequence-based assurance framework for Guyana's extractive sector, covering risk classification, human oversight, data provenance, validation, explainability and incident escalation. It uses international frameworks as references while clearly separating recommendations from existing legal duties.",
+      "pdf": "ssrn-bridge/pdfs/ai-assurance-guyana.pdf",
+      "ai_disclosure": "Generative AI tools assisted with research organization, drafting and editing. The author reviewed the final manuscript and takes responsibility for factual verification, analysis, citations and conclusions.",
+      "conflict_of_interest": "The author works in the natural-resources industry. This independent research represents personal views, not official positions of AGM Inc. or any other organization. No direct research-related financial conflict is disclosed.",
+      "funder_statement": "This research was personally funded by the author. No external research grant or institutional funding was received.",
+      "ethics_approval": "Not applicable. Desk-based analysis of publicly available information; no primary research with human or animal subjects."
+    },
+    {
+      "slug": "the-90-day-nation",
+      "title": "The 90-Day Nation",
+      "source_missing": true
+    },
+    {
+      "slug": "new-resource-security-order",
+      "title": "The New Resource Security Order",
+      "source_missing": true
+    },
+    {
+      "slug": "standing-forests-measurable-outcomes",
+      "title": "Standing Forests, Measurable Outcomes",
+      "source_missing": true
+    },
+    {
+      "slug": "caricom-oecs-renewable-energy",
+      "title": "CARICOM and OECS Renewable Energy Strategic Investment",
+      "source_missing": true
+    },
+    {
+      "slug": "caribbean-energy-security-investment-compact",
+      "title": "Caribbean Energy Security Investment Compact",
+      "source_missing": true
+    }
+  ]
+}
