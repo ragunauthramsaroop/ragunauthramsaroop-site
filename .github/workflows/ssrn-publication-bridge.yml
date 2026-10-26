@@ -9,6 +9,12 @@ on:
           - audit
           - submit
         default: audit
+  pull_request:
+    paths:
+      - 'ssrn-bridge/**'
+      - 'scripts/ssrn_bridge.mjs'
+      - 'scripts/ssrn_prepare.py'
+      - '.github/workflows/ssrn-publication-bridge.yml'
   push:
     branches: [main]
     paths:
@@ -35,6 +41,10 @@ jobs:
         with:
           python-version: '3.12'
       - run: python -m pip install 'pypdf==6.1.1' 'reportlab==4.2.5'
+      - name: Validate bridge source syntax
+        run: |
+          node --check scripts/ssrn_bridge.mjs
+          python -m py_compile scripts/ssrn_prepare.py
       - name: Install SSRN browser for submissions
         if: env.SSRN_BRIDGE_MODE == 'submit'
         run: |
