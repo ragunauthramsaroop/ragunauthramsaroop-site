@@ -1,72 +1,71 @@
 name: SSRN Publication Bridge
+
+# This runner cannot sign in through SSRN's Cloudflare security checks.
+# Audit and stage materials only; actual submission is through the author's SSRN browser.
 on:
   workflow_dispatch:
-    inputs:
-      mode:
-        type: choice
-        description: Audit or submit staged manuscripts
-        options:
-          - audit
-          - submit
-        default: audit
   pull_request:
     paths:
       - 'ssrn-bridge/**'
       - 'scripts/ssrn_bridge.mjs'
       - 'scripts/ssrn_prepare.py'
+      - 'scripts/ssrn_submission_pack.py'
       - '.github/workflows/ssrn-publication-bridge.yml'
   push:
     branches: [main]
     paths:
-      - 'ssrn-bridge/manifest.json'
-      - 'ssrn-bridge/pdfs/**'
+      - 'ssrn-bridge/**'
       - 'scripts/ssrn_bridge.mjs'
       - 'scripts/ssrn_prepare.py'
+      - 'scripts/ssrn_submission_pack.py'
+      - '.github/workflows/ssrn-publication-bridge.yml'
+
 permissions:
   contents: read
+
+concurrency:
+  group: ssrn-publication-bridge-${{ github.ref }}
+  cancel-in-progress: true
+
 jobs:
-  bridge:
+  audit-and-package:
     runs-on: ubuntu-latest
-    timeout-minutes: 90
+    timeout-minutes: 25
     env:
-      SSRN_BRIDGE_MODE: ${{ github.event_name == 'workflow_dispatch' && inputs.mode || 'audit' }}
-      SSRN_EMAIL: ${{ secrets.SSRN_EMAIL }}
-      SSRN_PASSWORD: ${{ secrets.SSRN_PASSWORD }}
+      SSRN_BRIDGE_MODE: audit
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v7
         with:
           node-version: '22'
-      - uses: actions/setup-python@v5
+      - uses: actions/setup-python@v7
         with:
           python-version: '3.12'
-      - run: python -m pip install 'pypdf==6.1.1' 'reportlab==4.2.5'
-      - name: Validate bridge source syntax
+      - name: Install PDF tools
+        run: python -m pip install 'pypdf==6.1.1' 'reportlab==4.2.5'
+      - name: Validate bridge, package builder and author assistant syntax
         run: |
           node --check scripts/ssrn_bridge.mjs
-          python -m py_compile scripts/ssrn_prepare.py
-      - name: Validate five prepared deposit PDFs
-        run: |
-          python - <<'PY'
-          import json, subprocess,sys,os
-          m=json.load(open('ssrn-bridge/manifest.json'))
-          for p in m['papers']:
-              if not p.get('pdf'):continue
-              out='/tmp/ssrn-'+p['slug']+'.pdf'
-              subprocess.check_call([sys.executable,'scripts/ssrn_prepare.py',p['pdf'],out,json.dumps(p)])
-              assert os.stat(out).st_size>1000
-          PY
-      - name: Install SSRN browser for submissions
-        if: env.SSRN_BRIDGE_MODE == 'submit'
-        run: |
-          npm install --no-save playwright@1.55.0
-          npx playwright install --with-deps chromium
-      - name: Read public SSRN publication register
+          node --check ssrn-bridge/submission-assistant.js
+          python -m py_compile scripts/ssrn_prepare.py scripts/ssrn_submission_pack.py
+      - name: Produce checksum-verified prepared PDF and metadata ZIP
+        run: python scripts/ssrn_submission_pack.py
+      - name: Reconcile registered and pending papers (read-only)
         run: node scripts/ssrn_bridge.mjs
-      - name: Upload reconciliation report
+      - name: Upload author-ready submission package
+        uses: actions/upload-artifact@v7
+        with:
+          name: ssrn-author-upload-package
+          path: ssrn-bridge/run/ssrn-author-reviewed-submission-pack.zip
+          retention-days: 90
+          if-no-files-found: error
+      - name: Upload public-audit reconciliation report
         if: always()
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: ssrn-bridge-results
-          path: ssrn-bridge/run/
+          path: |
+            ssrn-bridge/run/results.json
+            ssrn-bridge/run/SUMMARY.md
+          retention-days: 90
           if-no-files-found: warn
