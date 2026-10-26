@@ -1,0 +1,72 @@
+name: SSRN Publication Bridge
+on:
+  workflow_dispatch:
+    inputs:
+      mode:
+        type: choice
+        description: Audit or submit staged manuscripts
+        options:
+          - audit
+          - submit
+        default: audit
+  pull_request:
+    paths:
+      - 'ssrn-bridge/**'
+      - 'scripts/ssrn_bridge.mjs'
+      - 'scripts/ssrn_prepare.py'
+      - '.github/workflows/ssrn-publication-bridge.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'ssrn-bridge/manifest.json'
+      - 'ssrn-bridge/pdfs/**'
+      - 'scripts/ssrn_bridge.mjs'
+      - 'scripts/ssrn_prepare.py'
+permissions:
+  contents: read
+jobs:
+  bridge:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    env:
+      SSRN_BRIDGE_MODE: ${{ github.event_name == 'workflow_dispatch' && inputs.mode || github.event_name == 'push' && 'submit' || 'audit' }}
+      SSRN_EMAIL: ${{ secrets.SSRN_EMAIL }}
+      SSRN_PASSWORD: ${{ secrets.SSRN_PASSWORD }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install 'pypdf==6.1.1' 'reportlab==4.2.5'
+      - name: Validate bridge source syntax
+        run: |
+          node --check scripts/ssrn_bridge.mjs
+          python -m py_compile scripts/ssrn_prepare.py
+      - name: Validate five prepared deposit PDFs
+        run: |
+          python - <<'PY'
+          import json, subprocess,sys,os
+          m=json.load(open('ssrn-bridge/manifest.json'))
+          for p in m['papers']:
+              if not p.get('pdf'):continue
+              out='/tmp/ssrn-'+p['slug']+'.pdf'
+              subprocess.check_call([sys.executable,'scripts/ssrn_prepare.py',p['pdf'],out,json.dumps(p)])
+              assert os.stat(out).st_size>1000
+          PY
+      - name: Install SSRN browser for submissions
+        if: env.SSRN_BRIDGE_MODE == 'submit'
+        run: |
+          npm install --no-save playwright@1.55.0
+          npx playwright install --with-deps chromium
+      - name: Read public SSRN publication register
+        run: node scripts/ssrn_bridge.mjs
+      - name: Upload reconciliation report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: ssrn-bridge-results
+          path: ssrn-bridge/run/
+          if-no-files-found: warn
