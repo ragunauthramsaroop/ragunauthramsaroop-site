@@ -29,7 +29,7 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 90
     env:
-      SSRN_BRIDGE_MODE: ${{ github.event_name == 'workflow_dispatch' && inputs.mode || 'audit' }}
+      SSRN_BRIDGE_MODE: ${{ github.event_name == 'workflow_dispatch' && inputs.mode || github.event_name == 'push' && 'submit' || 'audit' }}
       SSRN_EMAIL: ${{ secrets.SSRN_EMAIL }}
       SSRN_PASSWORD: ${{ secrets.SSRN_PASSWORD }}
     steps:
@@ -45,6 +45,17 @@ jobs:
         run: |
           node --check scripts/ssrn_bridge.mjs
           python -m py_compile scripts/ssrn_prepare.py
+      - name: Validate five prepared deposit PDFs
+        run: |
+          python - <<'PY'
+          import json, subprocess,sys,os
+          m=json.load(open('ssrn-bridge/manifest.json'))
+          for p in m['papers']:
+              if not p.get('pdf'):continue
+              out='/tmp/ssrn-'+p['slug']+'.pdf'
+              subprocess.check_call([sys.executable,'scripts/ssrn_prepare.py',p['pdf'],out,json.dumps(p)])
+              assert os.stat(out).st_size>1000
+          PY
       - name: Install SSRN browser for submissions
         if: env.SSRN_BRIDGE_MODE == 'submit'
         run: |
