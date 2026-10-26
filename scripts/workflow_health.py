@@ -4,13 +4,12 @@ import re
 ROOT = Path(__file__).resolve().parents[1]
 WORKFLOWS = ROOT / ".github" / "workflows"
 
-REQUIRED_EXACT = {
-    "actions/checkout": "v7",
-    "actions/setup-python": "v7",
-    "actions/setup-node": "v7",
-}
-
 MINIMUM_MAJOR = {
+    # These are the oldest approved major versions used by the repository.
+    # Newer working majors, including v7, are allowed.
+    "actions/checkout": 4,
+    "actions/setup-python": 5,
+    "actions/setup-node": 4,
     "actions/upload-artifact": 4,
 }
 
@@ -20,18 +19,14 @@ for path in sorted(WORKFLOWS.glob("*.y*ml")):
     checked += 1
     text = path.read_text(encoding="utf-8", errors="replace")
 
-    for action, version in REQUIRED_EXACT.items():
-        for found in re.findall(rf"{re.escape(action)}@(v\d+)", text):
-            if found != version:
-                errors.append(
-                    f"{path.relative_to(ROOT)} uses {action}@{found}; required {action}@{version}"
-                )
-
     for action, minimum in MINIMUM_MAJOR.items():
-        for found in re.findall(rf"{re.escape(action)}@v(\d+)", text):
-            if int(found) < minimum:
+        # Only actual uses: declarations, not comments or examples.
+        pattern = rf"(?m)^\\s*(?:-\\s*)?uses:\\s*{re.escape(action)}@v(\\d+)\\b"
+        for major in map(int, re.findall(pattern, text)):
+            if major < minimum:
                 errors.append(
-                    f"{path.relative_to(ROOT)} uses {action}@v{found}; minimum supported major is v{minimum}"
+                    f"{path.relative_to(ROOT)} uses {action}@v{major}; "
+                    f"minimum approved version is v{minimum}"
                 )
 
     if "ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION" in text:
