@@ -7,11 +7,12 @@
 <meta name="description" content="OpenLab is a free, browser-based coding workspace with a live preview, file manager, projects, and exports. No account required.">
 <title>OpenLab | Free Browser IDE</title>
 <link rel="stylesheet" href="./styles.css">
+<link rel="canonical" href="https://ragunauthramsaroop.com/lab/">
 </head>
 <body>
 <div class="app" id="app">
   <header class="topbar">
-    <a class="brand" href="./" aria-label="OpenLab home"><span class="brand-mark">⌘</span><span class="brand-name">open<span>lab</span></span><span class="brand-suffix">IDE</span></a>
+    <a class="brand" href="./" aria-label="OpenLab home"><span class="brand-mark">⌘</span><h1 class="brand-name">open<span>lab</span></h1><span class="brand-suffix">IDE</span></a>
     <span class="top-divider"></span>
     <button class="project-select" id="projectSelect" title="Switch project"><span class="project-avatar" id="projectAvatar">W</span><span class="project-select-name" id="projectName">Workspace</span><svg class="i" viewBox="0 0 24 24"><path d="m7 10 5 5 5-5"/></svg></button>
     <span class="top-spacer"></span>
@@ -66,7 +67,7 @@
 </div>
 <div class="modal-backdrop hidden" id="modalBackdrop"><div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle"><div class="modal-head"><div><span class="modal-kicker">OPENLAB IDE</span><h2 id="modalTitle">Create something</h2></div><button class="modal-close" id="modalClose" aria-label="Close">×</button></div><div class="modal-body" id="modalBody"></div><div class="modal-footer" id="modalFooter"></div></div></div>
 <div class="toast-stack" id="toasts" aria-live="polite"></div>
-<input type="file" id="importFileInput" accept=".json,.html,.htm,.css,.js,.mjs,.md,.txt" hidden>
+<input type="file" id="importFileInput" aria-label="Import a project or file" accept=".json,.html,.htm,.css,.js,.mjs,.md,.txt" hidden>
 <script src="./app.js" defer></script>
 <script src="/tools/assets/analytics-loader.js" defer></script>
 </body>
