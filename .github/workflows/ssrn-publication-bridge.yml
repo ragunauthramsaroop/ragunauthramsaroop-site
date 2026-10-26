@@ -29,7 +29,7 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 90
     env:
-      SSRN_BRIDGE_MODE: ${{ github.event_name == 'workflow_dispatch' && inputs.mode || github.event_name == 'push' && 'submit' || 'audit' }}
+      SSRN_BRIDGE_MODE: ${{ github.event_name == 'workflow_dispatch' && inputs.mode || 'audit' }}
       SSRN_EMAIL: ${{ secrets.SSRN_EMAIL }}
       SSRN_PASSWORD: ${{ secrets.SSRN_PASSWORD }}
     steps:
