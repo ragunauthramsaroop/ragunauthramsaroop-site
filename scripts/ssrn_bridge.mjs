@@ -79,8 +79,11 @@ async function createDraft(){
     const el=await firstVisible(loc).catch(()=>null);
     if(el){await el.click({force:true});await sleep(1600);return;}
   }
+  const links=await page.locator("a,button,[role=button]").evaluateAll(items=>items.map(el=>({text:(el.textContent||"").replace(/\\s+/g," ").trim().slice(0,90),url:(el.getAttribute("href")||"").split("?")[0].slice(0,200)})).filter(x=>/paper|submit|new|upload|add|start/i.test(x.text)).slice(0,45));
+  console.log("SSRN_NAV_LINKS "+JSON.stringify(links));
+  console.log("SSRN_MYPAPERS_URL "+page.url().split("?")[0]);
   await page.goto("https://hq.ssrn.com/submission.cfm",{waitUntil:"domcontentloaded",timeout:60000});
-  if(!normal(await page.locator("body").innerText()).includes("submission"))throw Error("New-submission route changed");
+  if(!normal(await page.locator("body").innerText()).includes("submission")){console.log("SSRN_FALLBACK_URL "+page.url().split("?")[0]);console.log("SSRN_FALLBACK_PAGE "+(await page.locator("body").innerText()).slice(0,1400));throw Error("New-submission route changed");}
 }
 async function stepOne(item,file){
   const input=page.locator('input[type="file"]').first();
@@ -99,7 +102,7 @@ async function stepOne(item,file){
 async function stepTwo(item){
   const title=page.locator("#title"),abstract=page.locator("#abstract");
   if(!await title.count()||!await abstract.count())throw Error("Title and abstract inputs unavailable");
-  await title.fill(item.title);await abstract.fill(item.abstract);
+  await title.fill(item.title);await abstract.fill(item.abstract+"\n\nAI assistance disclosure: "+item.ai_disclosure);
   const date=page.getByLabel("Date paper was written");
   if(await date.count())await date.fill(item.date.split("-").reverse().join("/"));
   const keywords=page.locator("#add-keyword");
