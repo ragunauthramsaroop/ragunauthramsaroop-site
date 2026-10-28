@@ -3,6 +3,7 @@
   "batch_id": "executive-outreach-wave-H-20261028",
   "body_sha256": "c41fef01a77ae1597e5d81714837d28da7fa393a3d1964e5d1d94211bf6149ce",
   "created_at": "2026-10-28T23:12:40+00:00",
+  "delivery_status": "pending_bounce_check",
   "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
   "github_run_attempt": "1",
   "github_run_id": "40785681688",
@@ -12,6 +13,9 @@
   "recipient": "j.caetanosilva@altopartners.com",
   "recipient_sha256": "8ebc4c11491b9e8ce216aad00de7b937cb0ea794bf20890734f512dd8dc8c042",
   "schema": 2,
-  "status": "pending",
+  "sent_at": "2026-10-28T23:12:41+00:00",
+  "smtp_accepted_at": "2026-10-28T23:12:41+00:00",
+  "smtp_message_id": "<179322916154.2432.17240364030967203164@icloud.com>",
+  "status": "smtp_accepted",
   "subject_sha256": "2e05075860e952287f4cd87ae1a5d17e0f69a31a884abcbac052cbae5dbaefaa"
 }
