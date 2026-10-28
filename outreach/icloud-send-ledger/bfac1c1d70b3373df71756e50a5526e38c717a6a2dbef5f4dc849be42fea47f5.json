@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "7f77c4a6b3105fef7315149f2cca6c1e79dd9ad44e096a9751a9a04f4ecb2c31",
+  "batch_id": "executive-outreach-wave-H-20261028",
+  "body_sha256": "3f74a4a046f2972c1fc86f0e11745f1bea9e0ace6586e56029d051d919b9f301",
+  "created_at": "2026-10-28T23:12:48+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "40785681688",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/executive-outreach-wave-H-20261028.secure.json",
+  "payload_sha256": "bb7454ab3a0e6f6734179fc5f9d0c3efa476835549b8b38889f92729872dec0b",
+  "recipient": "catherine.a@ellwoodatfield.com",
+  "recipient_sha256": "bfac1c1d70b3373df71756e50a5526e38c717a6a2dbef5f4dc849be42fea47f5",
+  "schema": 2,
+  "status": "pending",
+  "subject_sha256": "dbff771e80b8ba0ddc221a4721e47fc617bfc557a7b6ea6caac78d7d96bc78e9"
+}
