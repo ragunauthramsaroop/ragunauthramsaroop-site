@@ -3,6 +3,7 @@
   "batch_id": "global-executive-recruiters-20261028-waveG",
   "body_sha256": "5627dcc03a77f81a7e00eed28af9a47321c61483ff961805be17e9de70c48869",
   "created_at": "2026-10-28T13:11:13+00:00",
+  "delivery_status": "pending_bounce_check",
   "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
   "github_run_attempt": "1",
   "github_run_id": "40694075410",
@@ -12,6 +13,9 @@
   "recipient": "jsawyer@oxfordhr.com",
   "recipient_sha256": "9358959d42ae1f0d59c2f2049c1487a3b6d515cabec7af598887a65e1e8779d6",
   "schema": 2,
-  "status": "pending",
+  "sent_at": "2026-10-28T13:11:14+00:00",
+  "smtp_accepted_at": "2026-10-28T13:11:14+00:00",
+  "smtp_message_id": "<179319307458.2302.9508430015871557338@icloud.com>",
+  "status": "smtp_accepted",
   "subject_sha256": "ef77e79bb05d0a9ab02ed9eeccdfa924edfce8ea9cc9f0a36dc573bdd86e8783"
 }
