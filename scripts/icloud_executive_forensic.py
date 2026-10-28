@@ -41,7 +41,14 @@ AUTOREPLY_RE = re.compile(
     r"(?:automatic reply|auto.reply|out of office|delivery status notification|"
     r"undeliverable|could not be delivered|delivery failure)", re.I
 )
-OWN_DOMAINS = {"icloud.com", "me.com", "mac.com", "agentmail.to"}
+OWN_ADDRESSES = {
+    "ragunauthramsaroop@icloud.com",
+    "ragunauth123456@gmail.com",
+    "rragunauthramsaroop@gmail.com",
+    "executive@ragunauthramsaroop.com",
+    "ragunauth.ramsaroop@agentmail.to",
+    "randy-job-files@agentmail.to",
+}
 
 
 def decoded(value: str | None) -> str:
@@ -124,7 +131,8 @@ def scan_folder(
         to = addresses(msg, "To")
         cc = addresses(msg, "Cc")
         bcc = addresses(msg, "Bcc")
-        own_only = bool(to) and all(x.split("@")[-1] in OWN_DOMAINS for x in to)
+        recipients = to + cc + bcc
+        own_only = bool(recipients) and all(x in OWN_ADDRESSES for x in recipients)
         has_pdf, pdf_names = (False, [])
         cv_pdf_name = False
         if sent:
@@ -270,7 +278,7 @@ def main() -> None:
     print("Sent matched:", summary["outreach_header_matches"])
     print("Received matched:", summary["inbound_subject_matches_excluding_autoreplies"])
     print("PDF attachments indicated:", summary["pdf_attachment_indicated_on_outreach"])
-    print("Unique outbound contacts:", summary["unique_outreach_to_cc_addresses"])
+    print("Unique outbound contacts:", summary["unique_outreach_to_cc_bcc_addresses"])
     print("Scan capped:", any(
         summary[key]["truncated_to_most_recent"]
         for key in ("sent_scanned", "inbox_scanned")
