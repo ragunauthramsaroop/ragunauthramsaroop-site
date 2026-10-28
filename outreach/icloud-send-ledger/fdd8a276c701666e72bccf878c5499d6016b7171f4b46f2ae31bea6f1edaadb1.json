@@ -3,6 +3,7 @@
   "batch_id": "global-executive-recruiters-20261028-waveG",
   "body_sha256": "d7008dda6c873a185f4d7cca6448575240cc91c6d6f1a884911ce67bd6de03ef",
   "created_at": "2026-10-28T13:11:06+00:00",
+  "delivery_status": "pending_bounce_check",
   "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
   "github_run_attempt": "1",
   "github_run_id": "40694075410",
@@ -12,6 +13,9 @@
   "recipient": "m.kelly@tgrc.com",
   "recipient_sha256": "fdd8a276c701666e72bccf878c5499d6016b7171f4b46f2ae31bea6f1edaadb1",
   "schema": 2,
-  "status": "pending",
+  "sent_at": "2026-10-28T13:11:08+00:00",
+  "smtp_accepted_at": "2026-10-28T13:11:08+00:00",
+  "smtp_message_id": "<179319306833.2302.2005744710914606195@icloud.com>",
+  "status": "smtp_accepted",
   "subject_sha256": "aa8176c342d71b363d97ca293977d8cc97b48f4e2cf9ece04b5e6d46e723fc52"
 }
