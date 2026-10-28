@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "7f77c4a6b3105fef7315149f2cca6c1e79dd9ad44e096a9751a9a04f4ecb2c31",
+  "batch_id": "exec-recruiters-2026-10-28-new-waveF",
+  "body_sha256": "e017439c69a3da00d932a29fcbf9f29a33f8ac9ad49b1b2be44d4e8edbb2f766",
+  "created_at": "2026-10-28T12:08:09+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "40685312885",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/exec-recruiters-2026-10-28-new-waveF.secure.json",
+  "payload_sha256": "024647dd22832661255e1245e1085d36bd45181bd81f6c13d3e01a00f96fce01",
+  "recipient": "mmakhene@heidrick.com",
+  "recipient_sha256": "33a9bb9d984ca19177bc9f6d79c86dbcd9e67b5c7f8d82451b10d64cc00db5ea",
+  "schema": 2,
+  "status": "pending",
+  "subject_sha256": "818da55f2d0491044cb166a39ee92b658a86053f4813e1647ffb72a2dd3b9172"
+}
