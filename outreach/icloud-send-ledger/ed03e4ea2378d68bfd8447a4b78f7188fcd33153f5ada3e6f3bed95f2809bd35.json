@@ -3,6 +3,7 @@
   "batch_id": "executive-recruiter-20261028-waveH",
   "body_sha256": "8cdd2c5e3dfbdd007f8f879af626dd93ed1583e390ad87d288ab1c00a05fa044",
   "created_at": "2026-10-28T23:22:26+00:00",
+  "delivery_status": "pending_bounce_check",
   "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
   "github_run_attempt": "1",
   "github_run_id": "40786869245",
@@ -12,6 +13,9 @@
   "recipient": "tom.jeffes@millarcameron.com",
   "recipient_sha256": "ed03e4ea2378d68bfd8447a4b78f7188fcd33153f5ada3e6f3bed95f2809bd35",
   "schema": 2,
-  "status": "pending",
+  "sent_at": "2026-10-28T23:22:27+00:00",
+  "smtp_accepted_at": "2026-10-28T23:22:27+00:00",
+  "smtp_message_id": "<179322974774.2230.17521357025158906253@icloud.com>",
+  "status": "smtp_accepted",
   "subject_sha256": "a9e3f0891100c0877d0e7161322b9c4e6ba57c6614ddcfa37e8bcc8e45215e6f"
 }
