@@ -3,6 +3,7 @@
   "batch_id": "executive-outreach-wave-H-20261028",
   "body_sha256": "3f74a4a046f2972c1fc86f0e11745f1bea9e0ace6586e56029d051d919b9f301",
   "created_at": "2026-10-28T23:12:48+00:00",
+  "delivery_status": "pending_bounce_check",
   "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
   "github_run_attempt": "1",
   "github_run_id": "40785681688",
@@ -12,6 +13,9 @@
   "recipient": "catherine.a@ellwoodatfield.com",
   "recipient_sha256": "bfac1c1d70b3373df71756e50a5526e38c717a6a2dbef5f4dc849be42fea47f5",
   "schema": 2,
-  "status": "pending",
+  "sent_at": "2026-10-28T23:12:49+00:00",
+  "smtp_accepted_at": "2026-10-28T23:12:49+00:00",
+  "smtp_message_id": "<179322916910.2432.8760344400137520411@icloud.com>",
+  "status": "smtp_accepted",
   "subject_sha256": "dbff771e80b8ba0ddc221a4721e47fc617bfc557a7b6ea6caac78d7d96bc78e9"
 }
