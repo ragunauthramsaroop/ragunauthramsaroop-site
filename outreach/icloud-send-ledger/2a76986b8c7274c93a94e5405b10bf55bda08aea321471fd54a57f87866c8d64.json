@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "7f77c4a6b3105fef7315149f2cca6c1e79dd9ad44e096a9751a9a04f4ecb2c31",
+  "batch_id": "exec-recruiters-2026-10-28-waveA",
+  "body_sha256": "ed1e769db26fc62f1e34cd42fa71a35f423ec6e0ed3203e9802b07fd3eed273f",
+  "created_at": "2026-10-28T11:17:39+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "40678779683",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/exec-recruiters-2026-10-28-waveA.secure.json",
+  "payload_sha256": "a8be428426ca632cf8d1755c7f0263ce47f8f9ffe121282fb3c2b9581bca4961",
+  "recipient": "aw@futureselection.com",
+  "recipient_sha256": "2a76986b8c7274c93a94e5405b10bf55bda08aea321471fd54a57f87866c8d64",
+  "schema": 2,
+  "status": "pending",
+  "subject_sha256": "45d62c273d7e5572e43503492920cbce9372cc5db0efc9efb96b915ee783fdf8"
+}
