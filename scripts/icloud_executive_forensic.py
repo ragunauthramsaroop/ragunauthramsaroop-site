@@ -95,7 +95,8 @@ def attachment_hints(conn: imaplib.IMAP4_SSL, seq: bytes) -> tuple[bool, list[st
 def scan_folder(
     conn: imaplib.IMAP4_SSL, mailbox: str, since: str, sent: bool
 ) -> tuple[list[dict], dict]:
-    status, _ = conn.select(mailbox, readonly=True)
+    selected_mailbox = '"'+mailbox.replace('"', '\\\"')+'"' if " " in mailbox else mailbox
+    status, _ = conn.select(selected_mailbox, readonly=True)
     if status != "OK":
         raise RuntimeError("Unable to open the requested iCloud mailbox read-only")
     since_imap = datetime.strptime(since, "%Y-%m-%d").strftime("%d-%b-%Y")
