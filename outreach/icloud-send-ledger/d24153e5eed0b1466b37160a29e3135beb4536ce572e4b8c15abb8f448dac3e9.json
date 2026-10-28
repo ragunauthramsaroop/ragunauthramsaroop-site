@@ -3,6 +3,7 @@
   "batch_id": "executive-recruiter-20261028-waveI",
   "body_sha256": "654fcd59dc8e33a1b3016eedcda8a7c0b2ff3f8d482fcd44b3bbe52c98773b81",
   "created_at": "2026-10-28T23:23:03+00:00",
+  "delivery_status": "pending_bounce_check",
   "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
   "github_run_attempt": "1",
   "github_run_id": "40786945320",
@@ -12,6 +13,9 @@
   "recipient": "lizandravega@gaiahumancapital.com",
   "recipient_sha256": "d24153e5eed0b1466b37160a29e3135beb4536ce572e4b8c15abb8f448dac3e9",
   "schema": 2,
-  "status": "pending",
+  "sent_at": "2026-10-28T23:23:05+00:00",
+  "smtp_accepted_at": "2026-10-28T23:23:05+00:00",
+  "smtp_message_id": "<179322978470.2461.3802498480592029838@icloud.com>",
+  "status": "smtp_accepted",
   "subject_sha256": "9ce30595b9093d4164e0284b61bffb0b82a41980536d76f7925e72c887187c19"
 }
