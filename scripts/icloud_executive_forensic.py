@@ -93,7 +93,8 @@ def attachment_hints(conn: imaplib.IMAP4_SSL, seq: bytes) -> tuple[bool, list[st
 
 
 def scan_folder(
-    conn: imaplib.IMAP4_SSL, mailbox: str, since: str, sent: bool
+    conn: imaplib.IMAP4_SSL, mailbox: str, since: str, sent: bool,
+    known_contacts: set[str] | None = None,
 ) -> tuple[list[dict], dict]:
     selected_mailbox = '"'+mailbox.replace('"', '\\\"')+'"' if " " in mailbox else mailbox
     status, _ = conn.select(selected_mailbox, readonly=True)
@@ -110,7 +111,7 @@ def scan_folder(
     for seq in selected:
         status, result = conn.fetch(
             seq,
-            "(BODY.PEEK[HEADER.FIELDS (DATE FROM TO CC SUBJECT MESSAGE-ID)])",
+            "(BODY.PEEK[HEADER.FIELDS (DATE FROM TO CC BCC SUBJECT MESSAGE-ID)])",
         )
         if status != "OK":
             continue
@@ -122,13 +123,18 @@ def scan_folder(
         sender = addresses(msg, "From")
         to = addresses(msg, "To")
         cc = addresses(msg, "Cc")
+        bcc = addresses(msg, "Bcc")
         own_only = bool(to) and all(x.split("@")[-1] in OWN_DOMAINS for x in to)
+        has_pdf, pdf_names = (False, [])
+        cv_pdf_name = False
         if sent:
-            relevant = bool(OUTREACH_RE.search(subject)) and not own_only
+            has_pdf, pdf_names = attachment_hints(conn, seq)
+            cv_pdf_name = any(re.search(r"(?:cv|resume|ramsaroop)", n, re.I) for n in pdf_names)
+            relevant = (bool(OUTREACH_RE.search(subject)) or cv_pdf_name) and not own_only
         else:
-            relevant = bool(OUTREACH_RE.search(subject)) and not bool(
-                AUTOREPLY_RE.search(subject)
-            )
+            relevant = (bool(OUTREACH_RE.search(subject)) or bool(
+                set(sender).intersection(known_contacts or set())
+            )) and not bool(AUTOREPLY_RE.search(subject))
         if not relevant:
             continue
 
@@ -138,16 +144,13 @@ def scan_folder(
             "from": sender,
             "to": to,
             "cc": cc,
+            "bcc": bcc,
             "message_id": str(msg.get("Message-ID") or "")[:300],
         }
         if sent:
-            has_pdf, pdf_names = attachment_hints(conn, seq)
             row["pdf_attachment_indicated"] = has_pdf
             row["pdf_filenames_indicated"] = pdf_names
-            row["cv_pdf_name_indicated"] = any(
-                re.search(r"(?:cv|resume|ramsaroop)", n, re.I)
-                for n in pdf_names
-            )
+            row["cv_pdf_name_indicated"] = bool(cv_pdf_name)
         entries.append(row)
 
     return entries, {
@@ -162,8 +165,8 @@ def scan_folder(
 def build_report(conn: imaplib.IMAP4_SSL, since: str) -> dict:
     sent_name = find_sent_mailbox(conn)
     sent, sent_stats = scan_folder(conn, sent_name, since, True)
-    inbound, inbox_stats = scan_folder(conn, "INBOX", since, False)
-    recipient_set = {a for m in sent for a in m["to"] + m["cc"]}
+    recipient_set = {a for m in sent for a in m["to"] + m["cc"] + m["bcc"]}
+    inbound, inbox_stats = scan_folder(conn, "INBOX", since, False, recipient_set)
     monthly = Counter(m["date"][:7] for m in sent if len(m["date"]) >= 7)
     return {
         "schema": "icloud_executive_forensic_v1",
@@ -194,7 +197,7 @@ def build_report(conn: imaplib.IMAP4_SSL, since: str) -> dict:
             "cv_pdf_filename_indicated_on_outreach": sum(
                 bool(x["cv_pdf_name_indicated"]) for x in sent
             ),
-            "unique_outreach_to_cc_addresses": len(recipient_set),
+            "unique_outreach_to_cc_bcc_addresses": len(recipient_set),
             "outreach_by_month": dict(sorted(monthly.items())),
         },
         "outbound": sent,
@@ -218,7 +221,7 @@ def send_private_report(report: dict, recipient: str, sender: str, password: str
         f"Relevant sent headers: {summary['outreach_header_matches']}\n"
         f"Relevant received headers: {summary['inbound_subject_matches_excluding_autoreplies']}\n"
         f"Sent with PDF attachment indicator: {summary['pdf_attachment_indicated_on_outreach']}\n"
-        f"Unique To/Cc addresses: {summary['unique_outreach_to_cc_addresses']}\n\n"
+        f"Unique To/Cc/Bcc addresses: {summary['unique_outreach_to_cc_addresses']}\n\n"
         "Full message-header evidence is in the JSON attachment. "
         "This report excludes message bodies and attachment contents. "
         "A Sent record does not prove delivery.\n"
