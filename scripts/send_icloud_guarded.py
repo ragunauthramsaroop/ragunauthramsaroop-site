@@ -9,6 +9,7 @@ import os
 from io import BytesIO
 import smtplib
 import ssl
+import zlib
 import sys
 from email.message import EmailMessage
 from email.utils import formataddr, make_msgid
@@ -84,11 +85,18 @@ def load_candidates(payload_path: Path, password: str):
         payload = decrypt_payload(payload_path, private_key)
         # Recruiter-grade CV attachment is encrypted with the outreach message.
         # Never expose PDF bytes, cleartext message content, or addresses in the repository.
-        encoded_cv = payload.get("attachment_pdf_b64")
+        encoded_cv = payload.get("attachment_pdf_zlib_b64") or payload.get("attachment_pdf_b64")
         if encoded_cv is not None:
             if not isinstance(encoded_cv, str) or len(encoded_cv) > 2000000:
                 raise ValueError("Encrypted CV attachment is missing or oversized.")
-            attachment = base64.b64decode(encoded_cv, validate=True)
+            encoded_bytes = base64.b64decode(encoded_cv, validate=True)
+            if payload.get("attachment_pdf_zlib_b64") is not None:
+                decoder = zlib.decompressobj()
+                attachment = decoder.decompress(encoded_bytes, 1500001)
+                if not decoder.eof or decoder.unconsumed_tail or len(attachment) > 1500000:
+                    raise ValueError("Encrypted compressed CV exceeds safety bounds.")
+            else:
+                attachment = encoded_bytes
             if not attachment.startswith(b"%PDF-") or not (10000 <= len(attachment) <= 1500000):
                 raise ValueError("Encrypted CV attachment failed PDF/size validation.")
             expected_digest = str(payload.get("attachment_sha256") or "").lower()
