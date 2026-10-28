@@ -3,6 +3,7 @@
   "batch_id": "exec-recruiters-2026-10-28-waveC",
   "body_sha256": "944cdd275c724e2266b064c21f247fb12c316a671a3faf605c200f2aec423e84",
   "created_at": "2026-10-28T11:22:55+00:00",
+  "delivery_status": "pending_bounce_check",
   "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
   "github_run_attempt": "1",
   "github_run_id": "40679459711",
@@ -12,6 +13,9 @@
   "recipient": "r.souza@ema-partners.com",
   "recipient_sha256": "2721bfe7773e93f49d2ae7e5cf481d43a90681ca2b7c52ff0a386924e78b0191",
   "schema": 2,
-  "status": "pending",
+  "sent_at": "2026-10-28T11:22:56+00:00",
+  "smtp_accepted_at": "2026-10-28T11:22:56+00:00",
+  "smtp_message_id": "<179318657647.2433.10545387793087939127@icloud.com>",
+  "status": "smtp_accepted",
   "subject_sha256": "d3af1ae90ec8eaa9c31608ec1518fba725c9c0bc353c0736d18fca4e5818dd1a"
 }
