@@ -3,6 +3,7 @@
   "batch_id": "executive-recruiter-20261028-waveH",
   "body_sha256": "5d23d69ce3bf4e1b019bdb437db90a11b3e47ab77cb82f55c35f6a74d8d77867",
   "created_at": "2026-10-28T23:22:24+00:00",
+  "delivery_status": "pending_bounce_check",
   "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
   "github_run_attempt": "1",
   "github_run_id": "40786869245",
@@ -12,6 +13,9 @@
   "recipient": "pking@verrusgroup.com",
   "recipient_sha256": "6e0205d7c1e952698b9f32a34f91a8ac1b41d74ac734c27bd7bc0194ff0de880",
   "schema": 2,
-  "status": "pending",
+  "sent_at": "2026-10-28T23:22:25+00:00",
+  "smtp_accepted_at": "2026-10-28T23:22:25+00:00",
+  "smtp_message_id": "<179322974554.2230.9340072848873147815@icloud.com>",
+  "status": "smtp_accepted",
   "subject_sha256": "c3fb89a672cf6788ac8e4ceb578891daa4de8430c8ab26c294ea6644386efc1c"
 }
