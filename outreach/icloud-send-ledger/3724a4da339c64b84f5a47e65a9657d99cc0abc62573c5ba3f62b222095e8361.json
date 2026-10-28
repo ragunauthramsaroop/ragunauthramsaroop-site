@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "7f77c4a6b3105fef7315149f2cca6c1e79dd9ad44e096a9751a9a04f4ecb2c31",
+  "batch_id": "global-executive-recruiters-20261028-waveG",
+  "body_sha256": "6100a8a8b4c91b874eafd1f3364fa453207bb989a7c94b7b4e7ef383f3003e39",
+  "created_at": "2026-10-28T13:11:10+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "40694075410",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/global-executive-recruiters-20261028-waveG.secure.json",
+  "payload_sha256": "3c5f38a4962d44ec8a81e72159b168dd42e0de61ea3f17b94479d9d35f9a1226",
+  "recipient": "roystone.james@trssa.com",
+  "recipient_sha256": "3724a4da339c64b84f5a47e65a9657d99cc0abc62573c5ba3f62b222095e8361",
+  "schema": 2,
+  "status": "pending",
+  "subject_sha256": "9c0610f7802d2c3489631adb712ac02ec6eb96ed8abba666663193edd9bf160a"
+}
