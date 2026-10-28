@@ -1,0 +1,52 @@
+name: Private iCloud executive recruiter forensic audit
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/icloud_executive_forensic.py'
+      - '.github/workflows/icloud-executive-forensic.yml'
+  workflow_dispatch:
+    inputs:
+      since:
+        description: 'Audit mail from YYYY-MM-DD, inclusive'
+        required: true
+        default: '2026-08-01'
+        type: string
+
+permissions:
+  contents: read
+
+concurrency:
+  group: private-icloud-executive-forensic
+  cancel-in-progress: false
+
+jobs:
+  forensic:
+    if: github.repository_owner == 'ragunauthramsaroop'
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    env:
+      ICLOUD_SMTP_USER: ragunauthramsaroop@icloud.com
+      ICLOUD_APP_PASSWORD: ${{ secrets.ICLOUD_APP_PASSWORD }}
+      REPORT_TO: ragunauth123456@gmail.com
+      SINCE: ${{ inputs.since || '2026-08-01' }}
+    steps:
+      - name: Check out trusted source without write credentials
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Validate and compile the audit
+        run: |
+          python -m py_compile scripts/icloud_executive_forensic.py scripts/audit_icloud_sent.py
+      - name: Perform read-only iCloud recruiter audit
+        shell: bash
+        run: |
+          set -euo pipefail
+          python scripts/icloud_executive_forensic.py --since "$SINCE" --deliver
+          echo "Private report transferred only to the verified, connected personal Gmail account." >> "$GITHUB_STEP_SUMMARY"
+          echo "No mail headers, messages, passwords, or attachments were committed to GitHub." >> "$GITHUB_STEP_SUMMARY"
