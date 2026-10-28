@@ -3,6 +3,7 @@
   "batch_id": "exec-recruiters-2026-10-28-waveA",
   "body_sha256": "4fb1246f06f18e60ecbb244b51b3f90717854b5d40cfcaed688d3c9327cd6d7c",
   "created_at": "2026-10-28T11:17:36+00:00",
+  "delivery_status": "pending_bounce_check",
   "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
   "github_run_attempt": "1",
   "github_run_id": "40678779683",
@@ -12,6 +13,9 @@
   "recipient": "stephanie.engels@signium.ch",
   "recipient_sha256": "36f672f3d4be692c0e536fd8a8ca0fda9d0f92d7af51d0df398d2a57ea81f4b8",
   "schema": 2,
-  "status": "pending",
+  "sent_at": "2026-10-28T11:17:38+00:00",
+  "smtp_accepted_at": "2026-10-28T11:17:38+00:00",
+  "smtp_message_id": "<179318625837.2439.6826489199654368028@icloud.com>",
+  "status": "smtp_accepted",
   "subject_sha256": "2978e43734b8a75914ad008c2fdde9b1b7571441558091eddc13ae37a72a178d"
 }
