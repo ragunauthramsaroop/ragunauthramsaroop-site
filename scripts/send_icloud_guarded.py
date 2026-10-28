@@ -1,9 +1,12 @@
 #!/usr/bin/env python3
 """Single guarded SMTP route for standard, batch, and secure iCloud outreach."""
 
+import base64
+import hashlib
 import imaplib
 import json
 import os
+from io import BytesIO
 import smtplib
 import ssl
 import sys
@@ -79,7 +82,26 @@ def load_candidates(payload_path: Path, password: str):
     elif name.endswith(".secure.json"):
         private_key = unwrap_private(password.encode())
         payload = decrypt_payload(payload_path, private_key)
-        attachment, filename = baseline_cv()
+        # Recruiter-grade CV attachment is encrypted with the outreach message.
+        # Never expose PDF bytes, cleartext message content, or addresses in the repository.
+        encoded_cv = payload.get("attachment_pdf_b64")
+        if encoded_cv is not None:
+            if not isinstance(encoded_cv, str) or len(encoded_cv) > 2000000:
+                raise ValueError("Encrypted CV attachment is missing or oversized.")
+            attachment = base64.b64decode(encoded_cv, validate=True)
+            if not attachment.startswith(b"%PDF-") or not (10000 <= len(attachment) <= 1500000):
+                raise ValueError("Encrypted CV attachment failed PDF/size validation.")
+            expected_digest = str(payload.get("attachment_sha256") or "").lower()
+            if len(expected_digest) != 64 or hashlib.sha256(attachment).hexdigest() != expected_digest:
+                raise ValueError("Encrypted CV attachment checksum mismatch.")
+            from pypdf import PdfReader
+            if len(PdfReader(BytesIO(attachment)).pages) != 2:
+                raise ValueError("Encrypted recruiter CV must contain exactly two pages.")
+            filename = str(payload.get("attachment_filename") or "")
+            if not filename.endswith(".pdf") or "/" in filename or "\\" in filename or not filename.startswith("Ragunauth_Ramsaroop_"):
+                raise ValueError("Encrypted CV filename is invalid.")
+        else:
+            attachment, filename = baseline_cv()
         raw_bytes = payload_path.read_bytes()
         batch_id = str(payload.get("batch_id") or payload_path.stem)
         for item in payload["messages"]:
