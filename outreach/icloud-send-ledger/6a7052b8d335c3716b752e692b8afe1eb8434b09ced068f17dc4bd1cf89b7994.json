@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "7f77c4a6b3105fef7315149f2cca6c1e79dd9ad44e096a9751a9a04f4ecb2c31",
+  "batch_id": "exec-recruiters-2026-10-28-new-waveD",
+  "body_sha256": "d49bdcd7d5ced0bf0a46823b27f9bae66694a7f5ec5bc5fc25232b17f8042359",
+  "created_at": "2026-10-28T12:04:47+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "40684872574",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/exec-recruiters-2026-10-28-new-waveD.secure.json",
+  "payload_sha256": "337f83dfbd84fb13bfb2019e480a8862fa837c8bb7ea76b7f87a30ed3d06394e",
+  "recipient": "robert.anderson@azurasearch.com",
+  "recipient_sha256": "6a7052b8d335c3716b752e692b8afe1eb8434b09ced068f17dc4bd1cf89b7994",
+  "schema": 2,
+  "status": "pending",
+  "subject_sha256": "9fb4bdbb8aa0e74f375aca7cfcac80a0717de82b51925f72545907d20e8b30fd"
+}
