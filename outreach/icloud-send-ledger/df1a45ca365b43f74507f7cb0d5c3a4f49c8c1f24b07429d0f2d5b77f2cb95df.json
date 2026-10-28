@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "7f77c4a6b3105fef7315149f2cca6c1e79dd9ad44e096a9751a9a04f4ecb2c31",
+  "batch_id": "executive-recruiter-20261028-waveH",
+  "body_sha256": "3b35aaf1cd667677393c3c055a9110255022932f97eeb393064057537db2b612",
+  "created_at": "2026-10-28T23:22:30+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "40786869245",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/executive-recruiter-20261028-waveH.secure.json",
+  "payload_sha256": "6b086f591710816bfa80124540a839887fbdb214779508375686b936b3813c13",
+  "recipient": "lars@root-edge.com",
+  "recipient_sha256": "df1a45ca365b43f74507f7cb0d5c3a4f49c8c1f24b07429d0f2d5b77f2cb95df",
+  "schema": 2,
+  "status": "pending",
+  "subject_sha256": "3e1bece28541d3a7afe36d3c579adf32f15f165f2e441c28e1d03c7c5c999c49"
+}
