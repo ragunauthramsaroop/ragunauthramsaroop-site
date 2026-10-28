@@ -3,6 +3,7 @@
   "batch_id": "executive-outreach-wave-H-20261028",
   "body_sha256": "e3fbe5931217ce2b25d61e053f27f43d956e4aa0e1a4128985c999e80f2457a0",
   "created_at": "2026-10-28T23:12:45+00:00",
+  "delivery_status": "pending_bounce_check",
   "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
   "github_run_attempt": "1",
   "github_run_id": "40785681688",
@@ -12,6 +13,9 @@
   "recipient": "marcelo.braga@searchrh.com.br",
   "recipient_sha256": "af787c3f338eb6f4e7b2059d9a6839a84fbeb7092c427dda408e1eba596af10d",
   "schema": 2,
-  "status": "pending",
+  "sent_at": "2026-10-28T23:12:46+00:00",
+  "smtp_accepted_at": "2026-10-28T23:12:46+00:00",
+  "smtp_message_id": "<179322916649.2432.10685702234878073548@icloud.com>",
+  "status": "smtp_accepted",
   "subject_sha256": "613f330ff4ef57d859035cc7aae2cf6d9b703f20f073e09e41b05fd5cc59f743"
 }
