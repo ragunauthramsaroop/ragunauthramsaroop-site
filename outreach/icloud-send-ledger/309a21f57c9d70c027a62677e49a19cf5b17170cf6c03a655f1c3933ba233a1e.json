@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "7f77c4a6b3105fef7315149f2cca6c1e79dd9ad44e096a9751a9a04f4ecb2c31",
+  "batch_id": "exec-recruiters-2026-10-28-new-waveE",
+  "body_sha256": "cf5e57ac8827d2ccce1e6b50cdcdc05c8fd7eba356aa42cda5ea208ea8eea30d",
+  "created_at": "2026-10-28T12:05:13+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "40684931594",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/exec-recruiters-2026-10-28-new-waveE.secure.json",
+  "payload_sha256": "6675783854c700246a7e6e9cb5f9891250675edb4fc444fa815d22fd25390862",
+  "recipient": "derek@williamsmining.com",
+  "recipient_sha256": "309a21f57c9d70c027a62677e49a19cf5b17170cf6c03a655f1c3933ba233a1e",
+  "schema": 2,
+  "status": "pending",
+  "subject_sha256": "29517b8aa12e55c733ef4661afb6d671d0c4243489ba6b877e41083ba7eba93c"
+}
