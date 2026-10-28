@@ -3,6 +3,7 @@
   "batch_id": "executive-recruiter-20261028-waveH",
   "body_sha256": "3b35aaf1cd667677393c3c055a9110255022932f97eeb393064057537db2b612",
   "created_at": "2026-10-28T23:22:30+00:00",
+  "delivery_status": "pending_bounce_check",
   "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
   "github_run_attempt": "1",
   "github_run_id": "40786869245",
@@ -12,6 +13,9 @@
   "recipient": "lars@root-edge.com",
   "recipient_sha256": "df1a45ca365b43f74507f7cb0d5c3a4f49c8c1f24b07429d0f2d5b77f2cb95df",
   "schema": 2,
-  "status": "pending",
+  "sent_at": "2026-10-28T23:22:31+00:00",
+  "smtp_accepted_at": "2026-10-28T23:22:31+00:00",
+  "smtp_message_id": "<179322975168.2230.14117586720285675191@icloud.com>",
+  "status": "smtp_accepted",
   "subject_sha256": "3e1bece28541d3a7afe36d3c579adf32f15f165f2e441c28e1d03c7c5c999c49"
 }
