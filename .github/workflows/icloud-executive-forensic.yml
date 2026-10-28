@@ -5,6 +5,7 @@ on:
     branches: [main]
     paths:
       - 'scripts/icloud_executive_forensic.py'
+      - 'tests/test_icloud_executive_forensic.py'
       - '.github/workflows/icloud-executive-forensic.yml'
   workflow_dispatch:
     inputs:
@@ -43,6 +44,8 @@ jobs:
       - name: Validate and compile the audit
         run: |
           python -m py_compile scripts/icloud_executive_forensic.py scripts/audit_icloud_sent.py
+      - name: Run offline read-only and privacy unit tests
+        run: python -m unittest discover -s tests -p 'test_icloud_executive_forensic.py' -v
       - name: Perform read-only iCloud recruiter audit
         shell: bash
         run: |
