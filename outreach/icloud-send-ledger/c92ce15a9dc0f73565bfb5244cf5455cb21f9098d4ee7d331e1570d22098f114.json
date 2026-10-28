@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "7f77c4a6b3105fef7315149f2cca6c1e79dd9ad44e096a9751a9a04f4ecb2c31",
+  "batch_id": "exec-recruiters-2026-10-28-new-waveF",
+  "body_sha256": "24368ff7bedc6592accd999ad6d1fa1c123edd8e32908b5cc9ca87b8efba2148",
+  "created_at": "2026-10-28T12:08:12+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "40685312885",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/exec-recruiters-2026-10-28-new-waveF.secure.json",
+  "payload_sha256": "024647dd22832661255e1245e1085d36bd45181bd81f6c13d3e01a00f96fce01",
+  "recipient": "teresa.phiri@perrettlaver.com",
+  "recipient_sha256": "c92ce15a9dc0f73565bfb5244cf5455cb21f9098d4ee7d331e1570d22098f114",
+  "schema": 2,
+  "status": "pending",
+  "subject_sha256": "9ddb719d0fe038a6904ddcc02f9a62137c1fa56227e659872745fa3c8d4c6e9c"
+}
