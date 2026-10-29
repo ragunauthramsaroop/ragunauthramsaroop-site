@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "7f77c4a6b3105fef7315149f2cca6c1e79dd9ad44e096a9751a9a04f4ecb2c31",
+  "batch_id": "exec-recruiters-20261028-waveW",
+  "body_sha256": "d7788ba14702b38aa5f52144b7b42e70f5ff544d57ccaf52b919f62e4814883f",
+  "created_at": "2026-10-29T01:40:57+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "40801842167",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/exec-recruiters-20261028-waveW.secure.json",
+  "payload_sha256": "affdc2a7d64e9f562bc5750be882ff09c16201e181d83b9c79ff0b20803028d8",
+  "recipient": "roether@sunjobconsult.com",
+  "recipient_sha256": "2f3193245966c1e0cdda2da139f35f25cf6080008c4e812960442e7dbc93097b",
+  "schema": 2,
+  "status": "pending",
+  "subject_sha256": "a4d4d5f05703b382bbdec74816ce280297a4df443247558e2ddf8a4be775e1fd"
+}
