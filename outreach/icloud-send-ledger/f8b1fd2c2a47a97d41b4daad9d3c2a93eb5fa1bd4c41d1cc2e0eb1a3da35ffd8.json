@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "7f77c4a6b3105fef7315149f2cca6c1e79dd9ad44e096a9751a9a04f4ecb2c31",
+  "batch_id": "global-executive-recruiters-20261028-waveI",
+  "body_sha256": "131101da35c3f400537263be27643b0817412e0333a4da0c5c30ce266be87afc",
+  "created_at": "2026-10-29T00:07:41+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "40791937075",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/global-executive-recruiters-20261028-waveI.secure.json",
+  "payload_sha256": "8d9f64d706466b900f4bc4c90ad0f191056c92cc6cbf97372bfc7d0943749f09",
+  "recipient": "edri@humanainternational.com",
+  "recipient_sha256": "f8b1fd2c2a47a97d41b4daad9d3c2a93eb5fa1bd4c41d1cc2e0eb1a3da35ffd8",
+  "schema": 2,
+  "status": "pending",
+  "subject_sha256": "900fe40ffcf084f9a81d337cebe20853e0381a7eb4678e83ffe5b6f1874a7b27"
+}
