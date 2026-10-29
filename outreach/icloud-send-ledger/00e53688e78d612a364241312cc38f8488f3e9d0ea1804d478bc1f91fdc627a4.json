@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "7f77c4a6b3105fef7315149f2cca6c1e79dd9ad44e096a9751a9a04f4ecb2c31",
+  "batch_id": "exec-recruiters-20261028-waveV",
+  "body_sha256": "ee820fdb037b3cbddee4a80b29606968e08379d52c40ac29ad431d1d330c24e6",
+  "created_at": "2026-10-29T01:40:35+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "40801812776",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/exec-recruiters-20261028-waveV.secure.json",
+  "payload_sha256": "af61ba2b7b17ac2e59aa6e7b3fc5f65f2e7b5cebc544c938f64d25581a3bd7bf",
+  "recipient": "recruitment@sancroft.com",
+  "recipient_sha256": "00e53688e78d612a364241312cc38f8488f3e9d0ea1804d478bc1f91fdc627a4",
+  "schema": 2,
+  "status": "pending",
+  "subject_sha256": "a88ff6fc8dd10bede2f09789965138cd1b8cd154fc078e50d771fb1043ba0101"
+}
