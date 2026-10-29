@@ -3,6 +3,7 @@
   "batch_id": "exec-recruiters-20261028-waveX3",
   "body_sha256": "9cd7aeb9078b1954b27d5268f37bd53e08a59c6d701c3b26693d48a07fa49aa2",
   "created_at": "2026-10-29T03:46:40+00:00",
+  "delivery_status": "pending_bounce_check",
   "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
   "github_run_attempt": "1",
   "github_run_id": "40814005708",
@@ -12,6 +13,9 @@
   "recipient": "sam.wolfman@thebartonpartnership.com",
   "recipient_sha256": "a62062a4981af12f1e4bea91e3fa2acf7c0e6a9b1f743fbbbff2ef9cc25c9aa4",
   "schema": 2,
-  "status": "pending",
+  "sent_at": "2026-10-29T03:46:45+00:00",
+  "smtp_accepted_at": "2026-10-29T03:46:45+00:00",
+  "smtp_message_id": "<179324560478.2240.18422074043434811001@icloud.com>",
+  "status": "smtp_accepted",
   "subject_sha256": "6c4f1ea835db7323e2768d7dd70d099ca535611eff43c29b11c77d37fe37190a"
 }
