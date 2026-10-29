@@ -121,7 +121,57 @@
       "abstract_chars": 508,
       "metadata": "title, author, publication date and same-directory PDF",
       "crawl_ready": true
+    },
+    {
+      "slug": "nature-national-wealth",
+      "pdf_bytes": 4179437,
+      "source_sha256": "2da0a63002bcfd45c91e95be2c2c7125674a59680f4f3ef1abfbeea857fff9ff",
+      "abstract_chars": 229,
+      "metadata": "title, author, publication date and same-directory PDF",
+      "crawl_ready": true,
+      "scholar_size_limit_exceeded": false,
+      "original_pdf_unchanged": true
+    },
+    {
+      "slug": "guyana-uranium-opportunity",
+      "pdf_bytes": 10070638,
+      "source_sha256": "5bac5fc94497acd3c28be2204268263cb9e4884b4fc19ad892c8d369eea91003",
+      "abstract_chars": 295,
+      "metadata": "title, author, publication date and same-directory PDF",
+      "crawl_ready": false,
+      "scholar_size_limit_exceeded": true,
+      "original_pdf_unchanged": true
+    },
+    {
+      "slug": "standing-forests-measurable-outcomes",
+      "pdf_bytes": 1203140,
+      "source_sha256": "bdcb951abaeac4a3a528cd4b8c4ae86bb84c7b3015d996588ef03f7f2d6f5096",
+      "abstract_chars": 283,
+      "metadata": "title, author, publication date and same-directory PDF",
+      "crawl_ready": true,
+      "scholar_size_limit_exceeded": false,
+      "original_pdf_unchanged": true
+    },
+    {
+      "slug": "new-resource-security-order",
+      "pdf_bytes": 1311647,
+      "source_sha256": "7423d6b98da543186e621d4e09012c8db9b19321ecc69acd09d5180cc2f7fe1a",
+      "abstract_chars": 248,
+      "metadata": "title, author, publication date and same-directory PDF",
+      "crawl_ready": true,
+      "scholar_size_limit_exceeded": false,
+      "original_pdf_unchanged": true
+    },
+    {
+      "slug": "guyana-freshwater-security-2035",
+      "pdf_bytes": 1784106,
+      "source_sha256": "2865f72818b782a4499de5a2d873867e10fc176203e6ce307e89aad341d84412",
+      "abstract_chars": 284,
+      "metadata": "title, author, publication date and same-directory PDF",
+      "crawl_ready": true,
+      "scholar_size_limit_exceeded": false,
+      "original_pdf_unchanged": true
     }
   ],
-  "pdf_size_audit": "Sixteen linked scholarly PDFs are each under 5,000,000 bytes; automated site checks must pass before claiming indexing."
+  "pdf_size_audit": "20 editions are below 5,000,000 bytes. The unchanged full 10,070,638-byte Guyana Uranium Opportunity PDF exceeds that guideline; no shortened substitute is published."
 }
