@@ -3,6 +3,7 @@
   "batch_id": "executive-outreach-20261028-compact-waveR",
   "body_sha256": "01c739de4492698a58047e4131d64c7b1c22edb661b7fff4d9fe8dafbe28df84",
   "created_at": "2026-10-29T01:23:09+00:00",
+  "delivery_status": "pending_bounce_check",
   "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
   "github_run_attempt": "1",
   "github_run_id": "40800068529",
@@ -12,6 +13,9 @@
   "recipient": "james@zacharydaniels.co.uk",
   "recipient_sha256": "de5f71eba2cb8153bf5a4af6adfc6640163d0d4cef0804f1447d867d7b2ecf76",
   "schema": 2,
-  "status": "pending",
+  "sent_at": "2026-10-29T01:23:10+00:00",
+  "smtp_accepted_at": "2026-10-29T01:23:10+00:00",
+  "smtp_message_id": "<179323699004.2214.9417804622089211780@icloud.com>",
+  "status": "smtp_accepted",
   "subject_sha256": "859b8d3354a188551ff393550b067c22abea38cb29809d402834453251a1af93"
 }
