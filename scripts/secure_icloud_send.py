@@ -20,6 +20,14 @@ WRAPPED_KEY=Path("outreach/secure/wrapped_private_key.json")
 CV_PDF=Path("/tmp/Ragunauth_Ramsaroop_Executive_CV_2026.pdf")
 
 FIRMS={
+    "altiplanoheadhunters.com":("Altiplano Headhunters","retained senior executive search for mining, energy and heavy industry across Latin America","mining"),
+    "mhpartners.co":("MH Partners","Dubai-based executive search for natural resources, mining, energy and ESG leadership","mining"),
+    "corverconsulting.com":("Corver Consulting","UAE and Saudi Arabian executive search in clean energy, energy transition, utilities and government-linked infrastructure","energy"),
+    "jamesalexandersearch.com":("James Alexander Search","leadership recruitment across regulated industries, energy, utilities, financial services and public policy","executive"),
+    "public-affairs-network.com":("Public Affairs Network","Berlin-led executive search for government relations, policy and public affairs leadership","executive"),
+    "ooption.com.mx":("Outstanding Option","executive and senior management search in Mexico and Latin America","executive"),
+    "michaelpage.co.za":("Michael Page Africa","African and international senior leadership recruiting across industrial, infrastructure and corporate functions","mobility"),
+    "konsac.com":("Konsac","executive search for senior leadership appointments across Spain and international companies","executive"),
     "darwinhawkins.com":("Darwin Hawkins","senior Irish sustainability, ESG governance and policy recruitment","energy"),
     "zacharydaniels.co.uk":("Zachary Daniels","executive and senior sustainability recruitment led by James Parr","energy"),
     "pure-fuel.com":("PureFuel","climate, clean energy and sustainability leadership hiring across London and Dubai","energy"),
