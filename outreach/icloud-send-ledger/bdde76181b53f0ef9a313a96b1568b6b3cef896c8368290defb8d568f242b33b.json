@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "7f77c4a6b3105fef7315149f2cca6c1e79dd9ad44e096a9751a9a04f4ecb2c31",
+  "batch_id": "global-executive-recruiters-20261028-waveN",
+  "body_sha256": "369cba67cbc54f52363ddcc72eb72cfa89d32fb36f157375cc8617fc9c2ec43f",
+  "created_at": "2026-10-29T00:29:37+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "40794380453",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/global-executive-recruiters-20261028-waveN.secure.json",
+  "payload_sha256": "c905d11c47c6a150f447177f8070447f00c902340e948ea4e8fc5c9e51055e30",
+  "recipient": "info@sustainablemeans.com",
+  "recipient_sha256": "bdde76181b53f0ef9a313a96b1568b6b3cef896c8368290defb8d568f242b33b",
+  "schema": 2,
+  "status": "pending",
+  "subject_sha256": "babd5bd8f02facb4dce608cedffb3138f640d43b3bccb6be5ce43d0b227df96f"
+}
