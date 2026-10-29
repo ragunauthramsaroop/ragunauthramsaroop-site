@@ -3,6 +3,7 @@
   "batch_id": "exec-recruiters-20261028-waveT",
   "body_sha256": "ad2a42f020a25d26eedc5d3fad7e12fdc9fd05329ff6724fb1149af13164b0c5",
   "created_at": "2026-10-29T01:34:47+00:00",
+  "delivery_status": "pending_bounce_check",
   "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
   "github_run_attempt": "1",
   "github_run_id": "40801241387",
@@ -12,6 +13,9 @@
   "recipient": "lucero.delapuente@altiplanoheadhunters.com",
   "recipient_sha256": "74285c856506d6e867a65824cd9ebe8b527dafce24d07e7d3290095451d70e74",
   "schema": 2,
-  "status": "pending",
+  "sent_at": "2026-10-29T01:34:49+00:00",
+  "smtp_accepted_at": "2026-10-29T01:34:49+00:00",
+  "smtp_message_id": "<179323768907.2461.865213311606679282@icloud.com>",
+  "status": "smtp_accepted",
   "subject_sha256": "f4f5548d85ceab491d8f4c68fa37557edb0dc0c17f1bd9a2748a5f7b53c6c93a"
 }
