@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "7f77c4a6b3105fef7315149f2cca6c1e79dd9ad44e096a9751a9a04f4ecb2c31",
+  "batch_id": "global-executive-recruiters-20261028-waveH",
+  "body_sha256": "cabbe4a15ee2775a3d20953383d25a474cf440f598c2161061ef18378a84d159",
+  "created_at": "2026-10-29T00:07:17+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "40791912530",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/global-executive-recruiters-20261028-waveH.secure.json",
+  "payload_sha256": "bd8ff03ab65adfa64cd738d026971b50b779cb141a7a3586eba19b437efe226c",
+  "recipient": "info@peak2peaksearch.com",
+  "recipient_sha256": "34df06c23c2e22fce056b5b1d9d28ec45b71646c3b7c5f6dfedbf445f3a9e818",
+  "schema": 2,
+  "status": "pending",
+  "subject_sha256": "1d2b812e24f375128a7d344520a44c9de43b9cfbf7efdc5974cd08788117143f"
+}
