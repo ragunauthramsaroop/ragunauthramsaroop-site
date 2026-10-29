@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "7f77c4a6b3105fef7315149f2cca6c1e79dd9ad44e096a9751a9a04f4ecb2c31",
+  "batch_id": "exec-recruiters-20261028-waveX4",
+  "body_sha256": "24cde2092eca7b7a8fbaab7feba4c9dd6090058c1599416a104dd703d13e57e1",
+  "created_at": "2026-10-29T03:48:17+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "40814152473",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/exec-recruiters-20261028-waveX4.secure.json",
+  "payload_sha256": "7d02dd21c6b3cf8278ab6a6ce1e08bfcbf444cd88effcb94e6535a3b31fe9bb3",
+  "recipient": "apply@miningallianceptyltd.com",
+  "recipient_sha256": "e14d77f48fce84277cfd088584c1c874096018a0fe5ebd927f33af0ebb1a2742",
+  "schema": 2,
+  "status": "pending",
+  "subject_sha256": "91baeef24f332b8481eff2f0290539006efd11c5b3b89bc0c3259df238072911"
+}
