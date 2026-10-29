@@ -3,6 +3,7 @@
   "batch_id": "exec-recruiters-20261028-waveX4",
   "body_sha256": "f61e9577ac2ebdbb9f89a45ae1cd65adc9d147f0a0feeb05e2127a5a9ae00c6e",
   "created_at": "2026-10-29T03:48:15+00:00",
+  "delivery_status": "pending_bounce_check",
   "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
   "github_run_attempt": "1",
   "github_run_id": "40814152473",
@@ -12,6 +13,9 @@
   "recipient": "info@staffordinternational.ca",
   "recipient_sha256": "4d4c5377aca7fd12bb9481c692bb169363a89d0429f0267e465294da00955b6f",
   "schema": 2,
-  "status": "pending",
+  "sent_at": "2026-10-29T03:48:16+00:00",
+  "smtp_accepted_at": "2026-10-29T03:48:16+00:00",
+  "smtp_message_id": "<179324569602.2240.10241853701569711793@icloud.com>",
+  "status": "smtp_accepted",
   "subject_sha256": "f085cba63c75f0529c31ea673ef7e941537700a36b03fa1027b15fcc0fab2d36"
 }
