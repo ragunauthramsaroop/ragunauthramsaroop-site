@@ -3,6 +3,7 @@
   "batch_id": "exec-recruiters-20261028-waveT",
   "body_sha256": "8f18ffee7a6d142447109868f88010a5450b6ab994602d1365f07d2f5e4e771f",
   "created_at": "2026-10-29T01:34:50+00:00",
+  "delivery_status": "pending_bounce_check",
   "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
   "github_run_attempt": "1",
   "github_run_id": "40801241387",
@@ -12,6 +13,9 @@
   "recipient": "mail@jamesalexandersearch.com",
   "recipient_sha256": "bf86019eaca419e31d9d29d90b40e22fced93e3db41f3315fa9650fca3c50bbb",
   "schema": 2,
-  "status": "pending",
+  "sent_at": "2026-10-29T01:34:53+00:00",
+  "smtp_accepted_at": "2026-10-29T01:34:53+00:00",
+  "smtp_message_id": "<179323769336.2461.15777221334898768283@icloud.com>",
+  "status": "smtp_accepted",
   "subject_sha256": "12fc22cdea702dc0316ddb24769d9ef3254b3294f0e41bce03f70f7fbfd343fa"
 }
