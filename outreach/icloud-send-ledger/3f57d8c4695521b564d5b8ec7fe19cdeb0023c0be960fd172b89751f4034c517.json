@@ -3,6 +3,7 @@
   "batch_id": "executive-outreach-20261028-compact-waveS",
   "body_sha256": "c1aaaee8c0732df06bd1d32b59a72e1818567ae4c8645e6c475d991265452ade",
   "created_at": "2026-10-29T01:24:06+00:00",
+  "delivery_status": "pending_bounce_check",
   "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
   "github_run_attempt": "1",
   "github_run_id": "40800165566",
@@ -12,6 +13,9 @@
   "recipient": "careers@joveinternational.com",
   "recipient_sha256": "3f57d8c4695521b564d5b8ec7fe19cdeb0023c0be960fd172b89751f4034c517",
   "schema": 2,
-  "status": "pending",
+  "sent_at": "2026-10-29T01:24:07+00:00",
+  "smtp_accepted_at": "2026-10-29T01:24:07+00:00",
+  "smtp_message_id": "<179323704760.2422.213177363030087549@icloud.com>",
+  "status": "smtp_accepted",
   "subject_sha256": "6628a811efa417c0273887b17d0afee5f4934838cde9fa1c255a15a8f58143ce"
 }
