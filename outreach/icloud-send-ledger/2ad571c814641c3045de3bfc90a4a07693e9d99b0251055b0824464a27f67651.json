@@ -3,6 +3,7 @@
   "batch_id": "exec-recruiters-20261029-waveA",
   "body_sha256": "4ae341d80305e1299e4fbfc718e9f47be6d53f4504999f2f6f9321e8b2012ea7",
   "created_at": "2026-10-29T10:33:11+00:00",
+  "delivery_status": "pending_bounce_check",
   "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
   "github_run_attempt": "1",
   "github_run_id": "40858425721",
@@ -12,6 +13,9 @@
   "recipient": "isli.benamar@morganphilips.com",
   "recipient_sha256": "2ad571c814641c3045de3bfc90a4a07693e9d99b0251055b0824464a27f67651",
   "schema": 2,
-  "status": "pending",
+  "sent_at": "2026-10-29T10:33:12+00:00",
+  "smtp_accepted_at": "2026-10-29T10:33:12+00:00",
+  "smtp_message_id": "<179326999228.2433.13700550315864687283@icloud.com>",
+  "status": "smtp_accepted",
   "subject_sha256": "cbd5bb04a0a5f7b09f938f241465437c6feaca2ffcb84918bc33a3529912f9ad"
 }
