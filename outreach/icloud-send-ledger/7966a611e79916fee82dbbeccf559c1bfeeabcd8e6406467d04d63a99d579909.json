@@ -3,6 +3,7 @@
   "batch_id": "exec-recruiters-20261028-waveX2",
   "body_sha256": "010ea54465b410e8aab58482953c2c54d9e6d1fa77bc9b741c8a12c8038fb289",
   "created_at": "2026-10-29T03:44:56+00:00",
+  "delivery_status": "pending_bounce_check",
   "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
   "github_run_attempt": "1",
   "github_run_id": "40813855051",
@@ -12,6 +13,9 @@
   "recipient": "nicky.stubbs@stratum-int.com",
   "recipient_sha256": "7966a611e79916fee82dbbeccf559c1bfeeabcd8e6406467d04d63a99d579909",
   "schema": 2,
-  "status": "pending",
+  "sent_at": "2026-10-29T03:44:58+00:00",
+  "smtp_accepted_at": "2026-10-29T03:44:58+00:00",
+  "smtp_message_id": "<179324549780.2220.8613007359577119404@icloud.com>",
+  "status": "smtp_accepted",
   "subject_sha256": "1f4e777c6f4d4c1472c464a298db1389488ed71f8dbaf7022c3431a722cb90c6"
 }
