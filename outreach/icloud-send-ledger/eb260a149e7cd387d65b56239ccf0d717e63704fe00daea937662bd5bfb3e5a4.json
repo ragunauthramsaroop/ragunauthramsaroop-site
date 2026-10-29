@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "7f77c4a6b3105fef7315149f2cca6c1e79dd9ad44e096a9751a9a04f4ecb2c31",
+  "batch_id": "exec-recruiter-2026-10-28-waveK",
+  "body_sha256": "f9c3e7e5ad922a348241a7bfeed65af04f93ae8123b0ee176bc3b3c3e61d0072",
+  "created_at": "2026-10-29T00:18:28+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "40793146336",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/exec-recruiter-2026-10-28-waveK.secure.json",
+  "payload_sha256": "506da5729add3f425fd77a3a61ba604bfed524f2acc4e3dd97dee25460b1a840",
+  "recipient": "info@heymanassociates.com",
+  "recipient_sha256": "eb260a149e7cd387d65b56239ccf0d717e63704fe00daea937662bd5bfb3e5a4",
+  "schema": 2,
+  "status": "pending",
+  "subject_sha256": "c1b57cddfd17fc7be484ab47914bc455feb179ef760785bdb271b9600aa86f67"
+}
