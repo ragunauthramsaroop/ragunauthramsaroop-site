@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "7f77c4a6b3105fef7315149f2cca6c1e79dd9ad44e096a9751a9a04f4ecb2c31",
+  "batch_id": "executive-outreach-20261028-waveP",
+  "body_sha256": "ba9d47a4004bd00802ead17d380007f904e349aa0f9c27573fbe993f9e8fc7e0",
+  "created_at": "2026-10-29T00:35:40+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "40795025724",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/executive-outreach-20261028-waveP.secure.json",
+  "payload_sha256": "62381d722caec1def16a6221a900f94fcbb5953023dd0ad2dee4c9d1a4bd1eda",
+  "recipient": "cp@vantrelpartners.com",
+  "recipient_sha256": "ff36ea8e8d0c69392966066f2e5249b19be27d394d0ef694fac6baa4cef9907c",
+  "schema": 2,
+  "status": "pending",
+  "subject_sha256": "2ec52c8bdf958e4a4097ac1071e3e339941d51eb9d092d78b193fbcffeeb90e9"
+}
