@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "7f77c4a6b3105fef7315149f2cca6c1e79dd9ad44e096a9751a9a04f4ecb2c31",
+  "batch_id": "exec-recruiter-2026-10-28-waveK",
+  "body_sha256": "554b2ed3d28e4db51b176c14585b1511e2a5a1ec3d384abc299c5fd2151fab9e",
+  "created_at": "2026-10-29T00:18:31+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "40793146336",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/exec-recruiter-2026-10-28-waveK.secure.json",
+  "payload_sha256": "506da5729add3f425fd77a3a61ba604bfed524f2acc4e3dd97dee25460b1a840",
+  "recipient": "contact@tailorexec.com.au",
+  "recipient_sha256": "b2e982bff837c9efc5fbc38ee8404865a869a0a1142c96acf21730e012f1680f",
+  "schema": 2,
+  "status": "pending",
+  "subject_sha256": "d58428899a8264c0dbf0d51514a43f4a2f886e24278a3647c4b2a3c644314293"
+}
