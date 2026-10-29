@@ -20,6 +20,11 @@ WRAPPED_KEY=Path("outreach/secure/wrapped_private_key.json")
 CV_PDF=Path("/tmp/Ragunauth_Ramsaroop_Executive_CV_2026.pdf")
 
 FIRMS={
+    "allen-york.com":("Allen & York","specialist global sustainability, ESG, community affairs and regulatory leadership recruitment across mining and natural resources","mining"),
+    "ap-globalenergy.com":("AP GlobalEnergy","international ESG, sustainability, governance and energy-sector executive recruitment across Europe, the Gulf and Asia-Pacific","energy"),
+    "rppeople.eu":("RP People","European government relations, public affairs and strategic corporate communications executive search","executive"),
+    "lincolnstrategic.com":("Lincoln Strategic","global natural resources and mining executive search for corporate, country and senior management appointments","mining"),
+    "thebartonpartnership.com":("The Barton Partnership","global senior strategy, ESG and sustainability executive search across consulting and corporates","executive"),
     "templetonglobalsearch.com":("Templeton Global Search","global retained mining executive search across country leadership, ESG, government relations and mining company executive appointments","mining"),
     "climate17.com":("Climate17 Search","global senior sustainability, ESG, climate and energy-transition executive search","energy"),
     "hansonsearch.com":("Hanson Search","international corporate affairs, government relations, public affairs and communications executive search","executive"),
