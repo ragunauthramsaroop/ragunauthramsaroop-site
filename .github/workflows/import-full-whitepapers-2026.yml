@@ -1,0 +1,95 @@
+name: Import five complete verified research PDFs
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/import-full-whitepapers-2026.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: import-original-whitepaper-pdfs-2026
+  cancel-in-progress: false
+jobs:
+  import-verified-pdfs:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - name: Download and verify all five original PDFs
+        shell: bash
+        run: |
+          python3 - <<'PY'
+          import hashlib, pathlib, time, urllib.request
+          entries = [
+            {
+              "slug": "nature-national-wealth",
+              "url": "https://ragunauth-ramsaroop.floot.app/_cdn/static/b894ca6e-7ac2-48b4-9bae-0f1d37ea949b-Nature_as_National_Wealth_Executive_White_Paper_FULL_IMAGE_COVER_2026.pdf",
+              "sha256": "2da0a63002bcfd45c91e95be2c2c7125674a59680f4f3ef1abfbeea857fff9ff",
+              "bytes": 4179437
+            },
+            {
+              "slug": "guyana-uranium-opportunity",
+              "url": "https://ragunauth-ramsaroop.floot.app/_cdn/static/c966638f-f71b-4173-836e-e7922a41f419-Guyana_Uranium_Opportunity_White_Paper_2026_EXECUTIVE_FINAL.pdf",
+              "sha256": "5bac5fc94497acd3c28be2204268263cb9e4884b4fc19ad892c8d369eea91003",
+              "bytes": 10070638
+            },
+            {
+              "slug": "standing-forests-measurable-outcomes",
+              "url": "https://ragunauth-ramsaroop.floot.app/_cdn/static/a6aaf00a-afa0-41dc-8b19-f85c5f510799-Standing_Forests_Measurable_Outcomes_v2_2026.pdf",
+              "sha256": "bdcb951abaeac4a3a528cd4b8c4ae86bb84c7b3015d996588ef03f7f2d6f5096",
+              "bytes": 1203140
+            },
+            {
+              "slug": "new-resource-security-order",
+              "url": "https://ragunauth-ramsaroop.floot.app/_cdn/static/79246f85-88ed-435f-8c15-1dc5953c3f4d-The_New_Resource_Security_Order_Ragunauth_Ramsaroop_2026_Executive.pdf",
+              "sha256": "7423d6b98da543186e621d4e09012c8db9b19321ecc69acd09d5180cc2f7fe1a",
+              "bytes": 1311647
+            },
+            {
+              "slug": "guyana-freshwater-security-2035",
+              "url": "https://ragunauth-ramsaroop.floot.app/_cdn/static/1dec61cb-5f5d-46f3-9c07-4607aa0adab8-Guyana_Freshwater_Security_to_2035_Final_Publication.pdf",
+              "sha256": "2865f72818b782a4499de5a2d873867e10fc176203e6ce307e89aad341d84412",
+              "bytes": 1784106
+            }
+          ]
+          for p in entries:
+              dest = pathlib.Path("research-library") / p["slug"] / "full-text.pdf"
+              dest.parent.mkdir(parents=True, exist_ok=True)
+              if dest.exists() and dest.stat().st_size == p["bytes"] and hashlib.sha256(dest.read_bytes()).hexdigest() == p["sha256"]:
+                  print("Already verified", dest)
+                  continue
+              error = None
+              for attempt in range(1, 5):
+                  try:
+                      req = urllib.request.Request(p["url"], headers={"User-Agent":"AGM-independent-research-publication/1.0","Accept":"application/pdf"})
+                      with urllib.request.urlopen(req, timeout=150) as response:
+                          payload = response.read()
+                      digest = hashlib.sha256(payload).hexdigest()
+                      if len(payload) != p["bytes"] or digest != p["sha256"] or not payload.startswith(b"%PDF-"):
+                          raise ValueError(f"Integrity mismatch for {p['slug']} size={len(payload)} sha256={digest}")
+                      dest.write_bytes(payload)
+                      print(f"Verified full PDF {dest}: {len(payload)} bytes SHA256={digest}")
+                      error = None
+                      break
+                  except Exception as exc:
+                      error = exc
+                      print(f"Attempt {attempt} failed for {p['slug']}: {exc}", flush=True)
+                      if attempt < 4: time.sleep(7 * attempt)
+              if error: raise RuntimeError(f"Unable to import original {p['slug']}: {error}")
+          PY
+      - name: Commit complete original PDFs into site repository
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add research-library/nature-national-wealth/full-text.pdf research-library/guyana-uranium-opportunity/full-text.pdf research-library/standing-forests-measurable-outcomes/full-text.pdf research-library/new-resource-security-order/full-text.pdf research-library/guyana-freshwater-security-2035/full-text.pdf
+          if git diff --cached --quiet; then
+            echo "All five verified PDFs are already present."
+          else
+            git commit -m "Add five verified full-length original research PDFs"
+            git push origin HEAD:main
+          fi
