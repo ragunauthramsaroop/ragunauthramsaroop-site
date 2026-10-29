@@ -3,6 +3,7 @@
   "batch_id": "global-executive-recruiters-20261028-waveI",
   "body_sha256": "6c7e8f18ab528c866cb74e86c2cf8dcdef6b022a813f0d18b9f12572bafc6734",
   "created_at": "2026-10-29T00:07:43+00:00",
+  "delivery_status": "pending_bounce_check",
   "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
   "github_run_attempt": "1",
   "github_run_id": "40791937075",
@@ -12,6 +13,9 @@
   "recipient": "tr.straub@russellreynolds.com",
   "recipient_sha256": "00c9d16cf1d5335a4de10c8eaa68fe68f1bfe22a931ea7420c4c0a288d14d7db",
   "schema": 2,
-  "status": "pending",
+  "sent_at": "2026-10-29T00:07:45+00:00",
+  "smtp_accepted_at": "2026-10-29T00:07:45+00:00",
+  "smtp_message_id": "<179323246499.2484.14187484645372336407@icloud.com>",
+  "status": "smtp_accepted",
   "subject_sha256": "f4aed66469229c6953f22dc7f5caac8a99a57f5b7a3e19296b9fa2f1e9093443"
 }
