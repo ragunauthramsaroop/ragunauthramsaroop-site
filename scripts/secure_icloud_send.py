@@ -20,6 +20,11 @@ WRAPPED_KEY=Path("outreach/secure/wrapped_private_key.json")
 CV_PDF=Path("/tmp/Ragunauth_Ramsaroop_Executive_CV_2026.pdf")
 
 FIRMS={
+    "emerark.com":("Emerark Mining Global Talent","senior global mining and exploration executive recruitment across 28 countries, including international mobility","mining"),
+    "staffordinternational.ca":("Stafford International","Canada-based global mining executive and technical talent search and international leadership placements","mining"),
+    "miningallianceptyltd.com":("Mining Alliance","Australian mining corporate, senior executive and sustainability leadership recruitment","mining"),
+    "bedfordgroup.com":("Bedford Group","global mining and metals executive search including ESG and senior corporate leadership","mining"),
+    "plbsearch.com":("PLB Search","global corporate affairs, public affairs, sustainability and investor relations executive search","executive"),
     "allen-york.com":("Allen & York","specialist global sustainability, ESG, community affairs and regulatory leadership recruitment across mining and natural resources","mining"),
     "ap-globalenergy.com":("AP GlobalEnergy","international ESG, sustainability, governance and energy-sector executive recruitment across Europe, the Gulf and Asia-Pacific","energy"),
     "rppeople.eu":("RP People","European government relations, public affairs and strategic corporate communications executive search","executive"),
