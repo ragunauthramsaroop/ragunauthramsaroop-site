@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "7f77c4a6b3105fef7315149f2cca6c1e79dd9ad44e096a9751a9a04f4ecb2c31",
+  "batch_id": "global-executive-recruiters-20261028-waveI",
+  "body_sha256": "3bc6e5aeedcbf5d861e9cda57e135f78e6e09c6efa6fd2a0191cf8c20c3178c8",
+  "created_at": "2026-10-29T00:07:38+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "40791937075",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/global-executive-recruiters-20261028-waveI.secure.json",
+  "payload_sha256": "8d9f64d706466b900f4bc4c90ad0f191056c92cc6cbf97372bfc7d0943749f09",
+  "recipient": "contact@mercari-international.com",
+  "recipient_sha256": "304071e34c078cd22674b7027c4784cd3fc876c57f88b85aa5a851bbda8c4266",
+  "schema": 2,
+  "status": "pending",
+  "subject_sha256": "3093d6f2b6cc022b0aeec07cbd58aab11eca7415ae66f57a3ec9a76f19d0e96e"
+}
