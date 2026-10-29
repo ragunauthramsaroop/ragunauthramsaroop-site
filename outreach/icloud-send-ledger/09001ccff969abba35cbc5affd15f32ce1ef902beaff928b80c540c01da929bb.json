@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "7f77c4a6b3105fef7315149f2cca6c1e79dd9ad44e096a9751a9a04f4ecb2c31",
+  "batch_id": "exec-recruiters-20261028-waveU",
+  "body_sha256": "735950efec3998a500fa403c8452ac466d2bacd2e993156b8e1799ef05e1882d",
+  "created_at": "2026-10-29T01:35:16+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "40801272698",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/exec-recruiters-20261028-waveU.secure.json",
+  "payload_sha256": "671ad3ab3fc7179b247ceadad8b15f4e3f36b86ccacae8627651e3c2d3cfafd1",
+  "recipient": "konsac@konsac.com",
+  "recipient_sha256": "09001ccff969abba35cbc5affd15f32ce1ef902beaff928b80c540c01da929bb",
+  "schema": 2,
+  "status": "pending",
+  "subject_sha256": "f2e34e708818456424cb8ab4f4554baae9458aac197e6d4426607006777f2926"
+}
