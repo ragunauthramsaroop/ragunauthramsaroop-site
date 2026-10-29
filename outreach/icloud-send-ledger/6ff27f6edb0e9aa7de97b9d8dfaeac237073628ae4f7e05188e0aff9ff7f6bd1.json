@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "7f77c4a6b3105fef7315149f2cca6c1e79dd9ad44e096a9751a9a04f4ecb2c31",
+  "batch_id": "global-executive-recruiters-20261028-waveN",
+  "body_sha256": "6858d738a5914fa1342e56388cf3cb29bda4bdfc5f6a2d5e18e34978905e7df1",
+  "created_at": "2026-10-29T00:29:40+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "40794380453",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/global-executive-recruiters-20261028-waveN.secure.json",
+  "payload_sha256": "c905d11c47c6a150f447177f8070447f00c902340e948ea4e8fc5c9e51055e30",
+  "recipient": "execcandidate@mindseek.net",
+  "recipient_sha256": "6ff27f6edb0e9aa7de97b9d8dfaeac237073628ae4f7e05188e0aff9ff7f6bd1",
+  "schema": 2,
+  "status": "pending",
+  "subject_sha256": "603d14641dd98a08f76621ed4ab218055aeeb799f9a4296109d4dd60a7251ff6"
+}
