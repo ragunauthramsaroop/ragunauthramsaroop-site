@@ -3,6 +3,7 @@
   "batch_id": "exec-recruiter-2026-10-28-waveJ",
   "body_sha256": "5fb77005de86b28db138d4ea754731c247c4697ca5c8e411d2cc9994ea8d38ad",
   "created_at": "2026-10-29T00:18:05+00:00",
+  "delivery_status": "pending_bounce_check",
   "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
   "github_run_attempt": "1",
   "github_run_id": "40793119150",
@@ -12,6 +13,9 @@
   "recipient": "info@elvapartners.com",
   "recipient_sha256": "86e0e3af550b164d169f6ab148762fcaff41c6ea67a5463ea217e60e6d73115d",
   "schema": 2,
-  "status": "pending",
+  "sent_at": "2026-10-29T00:18:06+00:00",
+  "smtp_accepted_at": "2026-10-29T00:18:06+00:00",
+  "smtp_message_id": "<179323308608.2467.9850672688648668056@icloud.com>",
+  "status": "smtp_accepted",
   "subject_sha256": "3ebeedca2d1244b20cdffbc5450f283388d0c4bd96fb1fec39362053764149a5"
 }
