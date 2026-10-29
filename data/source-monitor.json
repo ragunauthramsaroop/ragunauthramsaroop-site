@@ -1,58 +1,60 @@
 {
-  "generated": "2026-10-28T16:36:28+00:00",
+  "generated": "2026-10-29T16:54:18+00:00",
   "sources": [
     {
       "name": "Guyana Bureau of Statistics",
       "url": "https://statisticsguyana.gov.gy/",
       "category": "economy",
       "note": "National statistics and headline indicators.",
-      "checked_at": "2026-10-28T16:36:28+00:00",
+      "checked_at": "2026-10-29T16:54:18+00:00",
       "status": "ok",
       "changed": false,
       "http_status": 200,
       "sha256": "ed6d55c434ef6c487bae4637184b40e39fe26d3e9fce0a065ef65a4264e05901",
-      "content_length": 116166
+      "content_length": 116342
     },
     {
       "name": "Guyana Geology and Mines Commission",
       "url": "https://www.ggmc.gov.gy/",
       "category": "mining",
       "note": "Mining regulation, geoscience and mineral data.",
-      "checked_at": "2026-10-28T16:36:28+00:00",
-      "status": "error",
+      "checked_at": "2026-10-29T16:54:18+00:00",
+      "status": "ok",
       "changed": false,
-      "error": "HTTPSConnectionPool(host='www.ggmc.gov.gy', port=443): Read timed out. (read timeout=25)"
+      "http_status": 200,
+      "sha256": "a92af9229a2de70da9a153074d31ffdb2d6c384a3641dea4ee6f752c77e4802e",
+      "content_length": 414332
     },
     {
       "name": "Guyana Energy Agency",
       "url": "https://gea.gov.gy/",
       "category": "energy",
       "note": "Energy policy, licensing, statistics and renewable-energy information.",
-      "checked_at": "2026-10-28T16:36:28+00:00",
+      "checked_at": "2026-10-29T16:54:18+00:00",
       "status": "ok",
       "changed": true,
       "http_status": 200,
-      "sha256": "a262d62e883eca0bccbd22addbd09b3553eafdea74d0768f5074cb24e67579f2",
-      "content_length": 142485
+      "sha256": "39305ba9bc2ee9d2b58195c7b1fda5e7c74af6f433f0aa2717070bb6fa922f1c",
+      "content_length": 142454
     },
     {
       "name": "Guyana Ministry of Finance",
       "url": "https://finance.gov.gy/",
       "category": "fiscal",
       "note": "Budget, mid-year reports and fiscal information.",
-      "checked_at": "2026-10-28T16:36:28+00:00",
+      "checked_at": "2026-10-29T16:54:18+00:00",
       "status": "ok",
       "changed": false,
       "http_status": 200,
       "sha256": "6edab4fb0b44d085f8dbc39c6b2c3ced83f2b470fb678dc4cefc0c460ac7d768",
-      "content_length": 115643
+      "content_length": 115819
     },
     {
       "name": "World Bank Guyana indicators",
       "url": "https://api.worldbank.org/v2/country/GUY?format=json",
       "category": "international-data",
       "note": "International development indicator source.",
-      "checked_at": "2026-10-28T16:36:28+00:00",
+      "checked_at": "2026-10-29T16:54:18+00:00",
       "status": "ok",
       "changed": false,
       "http_status": 200,
@@ -64,19 +66,19 @@
       "url": "https://epaguyana.org/",
       "category": "environment",
       "note": "Environmental authorization, assessment and compliance information.",
-      "checked_at": "2026-10-28T16:36:28+00:00",
+      "checked_at": "2026-10-29T16:54:18+00:00",
       "status": "ok",
-      "changed": false,
+      "changed": true,
       "http_status": 200,
-      "sha256": "ff75d0826d4cd528da05b3d036516583eb39528610abe8841d0dd5577b90533e",
-      "content_length": 1689357
+      "sha256": "1b7dd2d973ef5a885c43ba5ae79bb3eae54cd246d1ec2a3f1a6b1f4a718a772f",
+      "content_length": 1690370
     },
     {
       "name": "Guyana Power and Light",
       "url": "https://gplinc.com/",
       "category": "energy",
       "note": "Electricity utility, service and grid information.",
-      "checked_at": "2026-10-28T16:36:28+00:00",
+      "checked_at": "2026-10-29T16:54:18+00:00",
       "status": "ok",
       "changed": false,
       "http_status": 200,
@@ -88,7 +90,7 @@
       "url": "https://www.gra.gov.gy/",
       "category": "revenue",
       "note": "Taxation, customs and revenue administration information.",
-      "checked_at": "2026-10-28T16:36:28+00:00",
+      "checked_at": "2026-10-29T16:54:18+00:00",
       "status": "ok",
       "changed": false,
       "http_status": 200,
@@ -100,7 +102,7 @@
       "url": "https://gnbsgy.org/",
       "category": "standards",
       "note": "Standards, metrology and conformity services.",
-      "checked_at": "2026-10-28T16:36:28+00:00",
+      "checked_at": "2026-10-29T16:54:18+00:00",
       "status": "ok",
       "changed": false,
       "http_status": 200,
@@ -112,7 +114,7 @@
       "url": "https://gcaa-gy.org/",
       "category": "aviation",
       "note": "Civil aviation regulation and oversight information.",
-      "checked_at": "2026-10-28T16:36:28+00:00",
+      "checked_at": "2026-10-29T16:54:18+00:00",
       "status": "ok",
       "changed": false,
       "http_status": 200,
@@ -124,22 +126,22 @@
       "url": "https://mopw.gov.gy/",
       "category": "infrastructure",
       "note": "Public works and transport infrastructure information.",
-      "checked_at": "2026-10-28T16:36:28+00:00",
+      "checked_at": "2026-10-29T16:54:18+00:00",
       "status": "ok",
       "changed": false,
       "http_status": 200,
       "sha256": "df1a55289771f2d7e41bee1bf8a389843061e1edb41d764e9c6d3efafe824237",
-      "content_length": 72291
+      "content_length": 72467
     },
     {
       "name": "GO-Invest",
       "url": "https://goinvest.gov.gy/",
       "category": "investment",
       "note": "Investment facilitation and investor information.",
-      "checked_at": "2026-10-28T16:36:28+00:00",
+      "checked_at": "2026-10-29T16:54:18+00:00",
       "status": "error",
       "changed": false,
-      "error": "HTTPSConnectionPool(host='goinvest.gov.gy', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='goinvest.gov.gy', port=443) at 0x7efce8245490>, 'Connection to goinvest.gov.gy timed out. (connect"
+      "error": "HTTPSConnectionPool(host='goinvest.gov.gy', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='goinvest.gov.gy', port=443) at 0x7ff7e54998b0>, 'Connection to goinvest.gov.gy timed out. (connect"
     }
   ]
 }
