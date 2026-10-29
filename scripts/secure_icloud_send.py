@@ -20,6 +20,11 @@ WRAPPED_KEY=Path("outreach/secure/wrapped_private_key.json")
 CV_PDF=Path("/tmp/Ragunauth_Ramsaroop_Executive_CV_2026.pdf")
 
 FIRMS={
+    "templetonglobalsearch.com":("Templeton Global Search","global retained mining executive search across country leadership, ESG, government relations and mining company executive appointments","mining"),
+    "climate17.com":("Climate17 Search","global senior sustainability, ESG, climate and energy-transition executive search","energy"),
+    "hansonsearch.com":("Hanson Search","international corporate affairs, government relations, public affairs and communications executive search","executive"),
+    "ellwoodatfield.com":("Ellwood Atfield","senior public affairs, government relations, institutional leadership and executive search","executive"),
+    "stratum-int.com":("Stratum International","global senior mining and natural resources executive search for operational and corporate appointments","mining"),
     "renovosearch.com":("Renovo Search","Director and VP renewable energy executive search for utilities, developers, manufacturers and energy investors","energy"),
     "sancroft.com":("Sancroft","international sustainability advisory, ESG governance and strategic corporate responsibility leadership","energy"),
     "birdeo.com":("Birdeo","international sustainability, CSR and ESG leadership recruitment across Europe and the United Kingdom","energy"),
