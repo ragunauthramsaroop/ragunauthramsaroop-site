@@ -3,6 +3,7 @@
   "batch_id": "exec-recruiters-20261029-waveA",
   "body_sha256": "0906ee4ee7540a8270278da67398fb5e6c8aad6ec756f10231c18faf7901d778",
   "created_at": "2026-10-29T10:33:13+00:00",
+  "delivery_status": "pending_bounce_check",
   "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
   "github_run_attempt": "1",
   "github_run_id": "40858425721",
@@ -12,6 +13,9 @@
   "recipient": "michelle@kinexa.co.za",
   "recipient_sha256": "64d1e721f497db1d52a66ae862c4ca8a347eff4c464ddaf2b90ba1d3d435d28c",
   "schema": 2,
-  "status": "pending",
+  "sent_at": "2026-10-29T10:33:15+00:00",
+  "smtp_accepted_at": "2026-10-29T10:33:15+00:00",
+  "smtp_message_id": "<179326999507.2433.13705629750546950895@icloud.com>",
+  "status": "smtp_accepted",
   "subject_sha256": "294f727120d56d531ced3a938c7d0f1d91d5f445197657b8b280fa21f14c16ac"
 }
