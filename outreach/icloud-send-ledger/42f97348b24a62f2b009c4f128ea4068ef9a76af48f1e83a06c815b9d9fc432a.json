@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "7f77c4a6b3105fef7315149f2cca6c1e79dd9ad44e096a9751a9a04f4ecb2c31",
+  "batch_id": "executive-outreach-20261028-compact-waveS",
+  "body_sha256": "d06696e826f2f050c92fa2397ad6a9fdb53a6bf5c3a18aef4a70de4c6d3e1e78",
+  "created_at": "2026-10-29T01:24:09+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "40800165566",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/executive-outreach-20261028-compact-waveS.secure.json",
+  "payload_sha256": "99be18794550ce7d26357783d5dbe425cad4c9697916f392a4e7a673f29dc34e",
+  "recipient": "gary@casuntrans.com",
+  "recipient_sha256": "42f97348b24a62f2b009c4f128ea4068ef9a76af48f1e83a06c815b9d9fc432a",
+  "schema": 2,
+  "status": "pending",
+  "subject_sha256": "094c2ab41e705ac999bdfb3f7fae5ead12f7e121f61f11403e223fa503fbe897"
+}
