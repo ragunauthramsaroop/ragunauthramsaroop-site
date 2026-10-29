@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "7f77c4a6b3105fef7315149f2cca6c1e79dd9ad44e096a9751a9a04f4ecb2c31",
+  "batch_id": "executive-outreach-20261028-waveQ",
+  "body_sha256": "e0d8ed69e1b98fdcb8c19901c18426cea008501c1bca9cb8be606912f3c57965",
+  "created_at": "2026-10-29T00:36:03+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "40795056543",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/executive-outreach-20261028-waveQ.secure.json",
+  "payload_sha256": "cacc25680d8b1a0844757a509eee2f1d569dcb617209c35c1cdc59bcc42b3128",
+  "recipient": "hello@prcrowd.co.uk",
+  "recipient_sha256": "d767b8fe36c3f8dc30e5bd5edc33e40062ae2cc4099ea0505a716762740e2561",
+  "schema": 2,
+  "status": "pending",
+  "subject_sha256": "8e9ee11d8968fca3a0c4ac31bacb6343f68375ff4502cb34c52afd7c00ec3021"
+}
