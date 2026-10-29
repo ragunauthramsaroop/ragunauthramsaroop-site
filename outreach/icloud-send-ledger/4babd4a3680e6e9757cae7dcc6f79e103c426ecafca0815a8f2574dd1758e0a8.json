@@ -3,6 +3,7 @@
   "batch_id": "exec-recruiters-20261029-waveA",
   "body_sha256": "73c5bf89112dced9d7625e2ac774e85fc03d311b0ae9f408a812d01e556bd18a",
   "created_at": "2026-10-29T10:33:16+00:00",
+  "delivery_status": "pending_bounce_check",
   "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
   "github_run_attempt": "1",
   "github_run_id": "40858425721",
@@ -12,6 +13,9 @@
   "recipient": "odube@oxfordhr.com",
   "recipient_sha256": "4babd4a3680e6e9757cae7dcc6f79e103c426ecafca0815a8f2574dd1758e0a8",
   "schema": 2,
-  "status": "pending",
+  "sent_at": "2026-10-29T10:33:18+00:00",
+  "smtp_accepted_at": "2026-10-29T10:33:18+00:00",
+  "smtp_message_id": "<179326999809.2433.9000761454161940691@icloud.com>",
+  "status": "smtp_accepted",
   "subject_sha256": "e5237f41abe310e9194fe4fbeaabbbe9b144598b0effcb86d6bdc6c29258af70"
 }
