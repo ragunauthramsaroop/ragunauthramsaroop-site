@@ -83,6 +83,25 @@ def load_candidates(payload_path: Path, password: str):
     elif name.endswith(".secure.json"):
         private_key = unwrap_private(password.encode())
         payload = decrypt_payload(payload_path, private_key)
+        # Compact secured campaigns reuse the EXACT approved two-page CV from an
+        # earlier encrypted campaign, never a public repository CV or guessed asset.
+        if not payload.get("attachment_pdf_zlib_b64") and not payload.get("attachment_pdf_b64"):
+            approved_source = Path(
+                "outreach/icloud-outbox/exec-recruiters-2026-10-28-new-waveD.secure.json"
+            )
+            if not approved_source.is_file():
+                raise ValueError("Approved encrypted CV source is unavailable.")
+            approved = decrypt_payload(approved_source, private_key)
+            approved_sha = "7f77c4a6b3105fef7315149f2cca6c1e79dd9ad44e096a9751a9a04f4ecb2c31"
+            if (
+                approved.get("attachment_sha256") != approved_sha
+                or not approved.get("attachment_pdf_zlib_b64")
+                or approved.get("attachment_filename") != "Ragunauth_Ramsaroop_Global_Executive_Search_CV_Oct2026.pdf"
+            ):
+                raise ValueError("Approved encrypted CV source verification failed.")
+            payload["attachment_pdf_zlib_b64"] = approved["attachment_pdf_zlib_b64"]
+            payload["attachment_sha256"] = approved_sha
+            payload["attachment_filename"] = approved["attachment_filename"]
         # Recruiter-grade CV attachment is encrypted with the outreach message.
         # Never expose PDF bytes, cleartext message content, or addresses in the repository.
         encoded_cv = payload.get("attachment_pdf_zlib_b64") or payload.get("attachment_pdf_b64")
