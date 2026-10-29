@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "7f77c4a6b3105fef7315149f2cca6c1e79dd9ad44e096a9751a9a04f4ecb2c31",
+  "batch_id": "exec-recruiters-20261028-waveX3",
+  "body_sha256": "453b0c326f1ff30a82501ad70a4c5a07e638f68686684cd45fa2418f068107ec",
+  "created_at": "2026-10-29T03:46:37+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "40814005708",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/exec-recruiters-20261028-waveX3.secure.json",
+  "payload_sha256": "0b0c1bbffb7e8936fc4cac509f84ed54726a41ff1995129817a04e0fa61ac952",
+  "recipient": "ian.burns@rppeople.eu",
+  "recipient_sha256": "57fcf666ce2d83a18a2ba86e36f6273279361ec91379d90a977d51552aee7e98",
+  "schema": 2,
+  "status": "pending",
+  "subject_sha256": "11d9f010d613b6408b1de244a9b132f7afa94b2ad68db0ea175ece8bd66b6f4f"
+}
