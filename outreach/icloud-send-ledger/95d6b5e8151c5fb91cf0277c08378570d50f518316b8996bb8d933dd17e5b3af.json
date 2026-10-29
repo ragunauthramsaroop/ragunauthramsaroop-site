@@ -3,6 +3,7 @@
   "batch_id": "exec-recruiters-20261028-waveV",
   "body_sha256": "6e58924d707df4d59553a12f612d6ffce59a93d2ff356fb0086f9ad86a32685a",
   "created_at": "2026-10-29T01:40:33+00:00",
+  "delivery_status": "pending_bounce_check",
   "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
   "github_run_attempt": "1",
   "github_run_id": "40801812776",
@@ -12,6 +13,9 @@
   "recipient": "o.hallows@renovosearch.com",
   "recipient_sha256": "95d6b5e8151c5fb91cf0277c08378570d50f518316b8996bb8d933dd17e5b3af",
   "schema": 2,
-  "status": "pending",
+  "sent_at": "2026-10-29T01:40:34+00:00",
+  "smtp_accepted_at": "2026-10-29T01:40:34+00:00",
+  "smtp_message_id": "<179323803432.2238.9946721348956526898@icloud.com>",
+  "status": "smtp_accepted",
   "subject_sha256": "83c60661f561c4037133d07452aa0134ebff6e416c375c44f9947adf7adf4269"
 }
