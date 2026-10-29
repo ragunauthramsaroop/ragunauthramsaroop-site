@@ -8,7 +8,7 @@ LIB=ROOT/"research-library"
 LIMIT=5_000_000
 REG=json.loads((LIB/"publication-register.json").read_text(encoding="utf-8"))
 READY=json.loads((LIB/"scholar-readiness.json").read_text(encoding="utf-8"))
-assert len(REG["papers"])==len(READY["papers"])==11
+assert len(REG["papers"])==len(READY["papers"]) and len(REG["papers"])>=11, "Published PDFs and scholar readiness metadata disagree"
 sitemap={n.text for n in ET.parse(ROOT/"sitemap.xml").iter() if n.tag.endswith("}loc")}
 errors=[]
 for rec in REG["papers"]:

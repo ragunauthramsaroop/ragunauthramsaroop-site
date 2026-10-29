@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-26",
+  "updated": "2026-10-29",
   "disclosure": "Original documents belong to the published research library. Page extracts are created from publicly available PDFs and have been truncated for search preview.",
   "papers": [
     {
@@ -67,6 +67,36 @@
       "title": "Omai Gold PEA",
       "pdf": "/research-library/omai-gold-2026-pea/full-text.pdf",
       "description": "Published independent research. Open the original PDF for the full methodology and qualifications."
+    },
+    {
+      "slug": "rehabilitation-gap",
+      "title": "The Rehabilitation Gap: Mine Closure Liabilities, Financial Assurance and the Intergenerational Economics of Responsible Extraction",
+      "pdf": "/research-library/rehabilitation-gap/full-text.pdf",
+      "description": "This independent research examines the discrepancy between the long-term costs of mine closure and the financial arrangements protecting communities, regulators and future generations. The paper analyses restoration, water treatment, tailings, regulatory security, accounting provisions and post-mining transitions through comparative evidence. It proposes a CLOSURE Integrity Framework as author analysis, not as a certified standard, and distinguishes dated regulatory observations from hypothetical financial scenarios."
+    },
+    {
+      "slug": "water-allocation-economy",
+      "title": "The Water Allocation Economy: Mining, AI Infrastructure, Hydrogen and the Next Constraint on Industrial Growth",
+      "pdf": "/research-library/water-allocation-economy/full-text.pdf",
+      "description": "Dependable industrial growth requires lawful allocation of water of the right quality and quantity while preserving public services and ecosystems. This monograph studies the relationship between water, power, mining, data centres, semiconductors, hydrogen and basin governance. It introduces the author-developed BASIN Allocation Protocol, seven-ledger water accounting and governance controls. Institutional evidence, forward scenarios and analytical propositions are clearly distinguished."
+    },
+    {
+      "slug": "carbon-integrity-divide",
+      "title": "The Carbon Integrity Divide: Article 6, Industrial Carbon Accounting and the New Rules of Credible Climate Value",
+      "pdf": "/research-library/carbon-integrity-divide/full-text.pdf",
+      "description": "A corporate greenhouse-gas inventory, carbon credit, Article 6 unit, product footprint and border-adjustment obligation are different instruments with different claims. This research reviews 2026 institutional developments in carbon markets, industrial carbon reporting and international transfers. The author proposes a Seven-Ledger Integrity Architecture and assurance controls to reconcile physical changes, legal rights, registries and public claims. The framework is original analysis rather than an external certification."
+    },
+    {
+      "slug": "chokepoint-economy",
+      "title": "The Chokepoint Economy: Critical Minerals, Export Controls and the New Architecture of Industrial Security",
+      "pdf": "/research-library/chokepoint-economy/full-text.pdf",
+      "description": "The security of critical-mineral supply depends on more than domestic ore reserves. Processing capacity, trade restrictions, logistics, qualification and recycling affect whether material becomes available to industry. This study synthesizes institutional evidence and proposes a Source-Process-Route-Qualify-Recycle framework for assessing vulnerabilities and investment responses. It distinguishes supply-chain resilience from national mineral self-sufficiency."
+    },
+    {
+      "slug": "ai-assurance-guyana",
+      "title": "AI Assurance for Guyana's Extractive Sector: A Risk-Based Governance Blueprint for Mining, Environmental Compliance and Worker Protection",
+      "pdf": "/research-library/ai-assurance-guyana/full-text.pdf",
+      "description": "Artificial intelligence offers applications in mining efficiency, hazard detection and environmental monitoring, but statutory accountability remains with identifiable decision makers. This paper proposes a consequence-based assurance framework for Guyana's extractive sector, covering risk classification, human oversight, data provenance, validation, explainability and incident escalation. It uses international frameworks as references while clearly separating recommendations from existing legal duties."
     }
   ]
 }

@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-26",
+  "checked_at": "2026-10-29",
   "google_scholar_submission": "Automatic crawler only; no direct inclusion guarantee.",
   "scholar_indexing": "not independently verified",
   "robots": "public crawler allowed",
@@ -86,7 +86,42 @@
       "abstract_chars": 6404,
       "metadata": "title, author, publication date and same-directory PDF",
       "crawl_ready": true
+    },
+    {
+      "slug": "rehabilitation-gap",
+      "pdf_bytes": 1891034,
+      "abstract_chars": 522,
+      "metadata": "title, author, publication date and same-directory PDF",
+      "crawl_ready": true
+    },
+    {
+      "slug": "water-allocation-economy",
+      "pdf_bytes": 2023248,
+      "abstract_chars": 492,
+      "metadata": "title, author, publication date and same-directory PDF",
+      "crawl_ready": true
+    },
+    {
+      "slug": "carbon-integrity-divide",
+      "pdf_bytes": 1490693,
+      "abstract_chars": 528,
+      "metadata": "title, author, publication date and same-directory PDF",
+      "crawl_ready": true
+    },
+    {
+      "slug": "chokepoint-economy",
+      "pdf_bytes": 109246,
+      "abstract_chars": 463,
+      "metadata": "title, author, publication date and same-directory PDF",
+      "crawl_ready": true
+    },
+    {
+      "slug": "ai-assurance-guyana",
+      "pdf_bytes": 176608,
+      "abstract_chars": 508,
+      "metadata": "title, author, publication date and same-directory PDF",
+      "crawl_ready": true
     }
   ],
-  "pdf_size_audit": "All 11 linked scholarly PDFs are under 5,000,000 bytes."
+  "pdf_size_audit": "Sixteen linked scholarly PDFs are each under 5,000,000 bytes; automated site checks must pass before claiming indexing."
 }

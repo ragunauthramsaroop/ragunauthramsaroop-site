@@ -117,7 +117,8 @@ def main():
             results.append("PASS project calculator, local GeoJSON and JSON export")
 
             page.goto(base + "/research-explorer/", wait_until="domcontentloaded")
-            expect(page.locator("#research-list button")).to_have_count(11)
+            expected_papers = len(json.loads((ROOT / "data/research-papers.json").read_text(encoding="utf-8"))["papers"])
+            expect(page.locator("#research-list button")).to_have_count(expected_papers)
             expect(page.locator("#research-pdf")).to_have_attribute(
                 "href", "/research-library/guyana-2040/full-text.pdf"
             )
