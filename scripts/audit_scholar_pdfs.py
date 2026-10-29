@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Fail CI if scholarly PDFs exceed Google's 5 MB limit or lose citation metadata."""
+"""Verify full original scholarly PDF integrity, citation metadata and disclosed size limits."""
 from pathlib import Path
 import json,hashlib,re,sys,xml.etree.ElementTree as ET
 import pymupdf
@@ -17,7 +17,11 @@ for rec in REG["papers"]:
  page="https://ragunauthramsaroop.com/research-library/"+slug+"/"
  try:
   assert pdf.is_file() and html.is_file(), "Missing scholarly PDF or HTML"
-  assert 0<pdf.stat().st_size<LIMIT, "PDF >=5,000,000 bytes"
+  assert pdf.stat().st_size>0, "PDF is empty"
+  if pdf.stat().st_size>=LIMIT:
+   assert rec.get("scholar_status")=="full_original_exceeds_scholar_pdf_size_guideline", "Oversized original lacks Scholar limitation disclosure"
+   evidence=next(x for x in READY["papers"] if x["slug"]==slug)
+   assert evidence.get("crawl_ready") is False and evidence.get("original_pdf_unchanged"), "Oversized original cannot claim Scholar readiness"
   assert rec["scholar_pdf_url"]==expected, "PDF URL mismatch"
   assert page in sitemap and expected in sitemap, "Sitemap missing paper"
   source=html.read_text(encoding="utf-8")
