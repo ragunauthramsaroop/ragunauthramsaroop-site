@@ -20,6 +20,20 @@ WRAPPED_KEY=Path("outreach/secure/wrapped_private_key.json")
 CV_PDF=Path("/tmp/Ragunauth_Ramsaroop_Executive_CV_2026.pdf")
 
 FIRMS={
+    "altgen.com":("AltGen","African and UK executive search for renewable energy, sustainability and clean infrastructure leadership","energy"),
+    "morganphilips.com":("Morgan Philips Africa and Middle East","senior corporate functions, ESG, institutional leadership and cross-border executive recruitment across Africa and the Gulf","executive"),
+    "rmrecruiters.com":("Rocky Mountain Recruiters","international search across mining, financial services, corporate leadership and executive appointments","mining"),
+    "kinexa.co.za":("Kinexa Headhunting","global mining and manufacturing executive search across Africa, the Americas and international operations","mining"),
+    "oxfordhr.com":("Oxford HR","international impact-sector executive appointments across Africa, Asia, Europe and multilateral development institutions","executive"),
+    "saxbam.com":("Saxton Bampfylde","global executive search across public, private and non-profit organisations and institutional leadership","executive"),
+    "sri-executive.com":("SRI Executive","global executive recruitment for development finance, sustainability, international development and multilateral institutions","executive"),
+    "jobnetafrica.com":("JobnetAfrica","African expatriate and regional executive recruitment including country management and ESG leadership","mobility"),
+    "enable.green":("EnableGreen","ESG, sustainability and clean-energy executive search across London, Dubai, Paris and New York","energy"),
+    "therightethos.co.uk":("The Right Ethos","senior public affairs, external affairs and non-profit institutional leadership recruitment","executive"),
+    "ct-executive.com":("CT Executive Search","international country management and senior corporate appointments across Europe, Asia and the Middle East","executive"),
+    "jhammerglobal.com":("Jack Hammer Global","US and African executive search and confidential senior-level placements","executive"),
+    "qubevents.com":("QUBE Executive Search","international country, director and senior corporate leadership appointments across financial services and regulated industries","executive"),
+    "search-recruitment.co.uk":("Search2","specialist executive search for ESG, environment, HSEQ, risk, compliance and management-systems leadership","energy"),
     "emerark.com":("Emerark Mining Global Talent","senior global mining and exploration executive recruitment across 28 countries, including international mobility","mining"),
     "staffordinternational.ca":("Stafford International","Canada-based global mining executive and technical talent search and international leadership placements","mining"),
     "miningallianceptyltd.com":("Mining Alliance","Australian mining corporate, senior executive and sustainability leadership recruitment","mining"),
