@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "7f77c4a6b3105fef7315149f2cca6c1e79dd9ad44e096a9751a9a04f4ecb2c31",
+  "batch_id": "executive-outreach-20261028-compact-waveR",
+  "body_sha256": "1b2dc4a7e7065d072a9d6a32c69c2e26eba667b752af6377a464138642583269",
+  "created_at": "2026-10-29T01:23:11+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "40800068529",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/executive-outreach-20261028-compact-waveR.secure.json",
+  "payload_sha256": "43e2fb87f241e77af4ce861fc8179f5a25635cb722f8a30fb632a619b2b211ec",
+  "recipient": "dubai@pure-fuel.com",
+  "recipient_sha256": "3b6fe5c6fa77c49967082dfc95a7735ee1c226d8e468ec9445ea74d8a5efa16d",
+  "schema": 2,
+  "status": "pending",
+  "subject_sha256": "5751bb39f95d23317703062a2413f058853f4a143402f81dcbebf662070a1210"
+}
