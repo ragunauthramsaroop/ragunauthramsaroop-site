@@ -3,6 +3,7 @@
   "batch_id": "exec-recruiters-20261028-waveW",
   "body_sha256": "fc51e3ca41b141a517f321e934cac7928163935957e1bbb9824c93b2498bc6a6",
   "created_at": "2026-10-29T01:41:00+00:00",
+  "delivery_status": "pending_bounce_check",
   "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
   "github_run_attempt": "1",
   "github_run_id": "40801842167",
@@ -12,6 +13,9 @@
   "recipient": "ben.parsonson@voltsearchpartners.de",
   "recipient_sha256": "6aea72048a5a428d4145fd8022ec17d578e326b38e0beda82f80aa781d7f8ed9",
   "schema": 2,
-  "status": "pending",
+  "sent_at": "2026-10-29T01:41:01+00:00",
+  "smtp_accepted_at": "2026-10-29T01:41:01+00:00",
+  "smtp_message_id": "<179323806143.2458.9919547738005639361@icloud.com>",
+  "status": "smtp_accepted",
   "subject_sha256": "199f463123cfc1b043cf1467deb0da9b28f0ca04c00b2cbe68c931668900ae1e"
 }
