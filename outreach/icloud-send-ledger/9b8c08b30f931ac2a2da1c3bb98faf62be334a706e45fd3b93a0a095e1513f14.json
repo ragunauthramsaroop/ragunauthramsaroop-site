@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "7f77c4a6b3105fef7315149f2cca6c1e79dd9ad44e096a9751a9a04f4ecb2c31",
+  "batch_id": "executive-outreach-20261028-waveP",
+  "body_sha256": "26bda4c4d31b14653e58089504bb63991c793914bb0aab641afc2f4f46a85ab2",
+  "created_at": "2026-10-29T00:35:37+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "40795025724",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/executive-outreach-20261028-waveP.secure.json",
+  "payload_sha256": "62381d722caec1def16a6221a900f94fcbb5953023dd0ad2dee4c9d1a4bd1eda",
+  "recipient": "resume@ethoslinkadvisory.com",
+  "recipient_sha256": "9b8c08b30f931ac2a2da1c3bb98faf62be334a706e45fd3b93a0a095e1513f14",
+  "schema": 2,
+  "status": "pending",
+  "subject_sha256": "d84d9d869b02add22a7895e8c9735d2b98ce2e31936967cb19742f8c73286bd3"
+}
