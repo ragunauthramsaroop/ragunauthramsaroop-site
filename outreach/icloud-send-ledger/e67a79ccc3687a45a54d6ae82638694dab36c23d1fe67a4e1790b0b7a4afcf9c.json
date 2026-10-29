@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "7f77c4a6b3105fef7315149f2cca6c1e79dd9ad44e096a9751a9a04f4ecb2c31",
+  "batch_id": "exec-recruiters-20261028-waveU",
+  "body_sha256": "97e5049d9cd1ac86a8b668f36f16af2c855849cd1079bfa2e2747fc9d2233657",
+  "created_at": "2026-10-29T01:35:10+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "40801272698",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/exec-recruiters-20261028-waveU.secure.json",
+  "payload_sha256": "671ad3ab3fc7179b247ceadad8b15f4e3f36b86ccacae8627651e3c2d3cfafd1",
+  "recipient": "contact@ooption.com.mx",
+  "recipient_sha256": "e67a79ccc3687a45a54d6ae82638694dab36c23d1fe67a4e1790b0b7a4afcf9c",
+  "schema": 2,
+  "status": "pending",
+  "subject_sha256": "8366463b47306c2e25c52a7a39012bcd78adc5d5606044c9483922e08903884b"
+}
