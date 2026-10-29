@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "7f77c4a6b3105fef7315149f2cca6c1e79dd9ad44e096a9751a9a04f4ecb2c31",
+  "batch_id": "executive-outreach-20261028-waveP",
+  "body_sha256": "badc46e1c2d3b4682a75b1eee7b4d5c14103817586c2b8a95013ff23311ebfe2",
+  "created_at": "2026-10-29T00:35:35+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "40795025724",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/executive-outreach-20261028-waveP.secure.json",
+  "payload_sha256": "62381d722caec1def16a6221a900f94fcbb5953023dd0ad2dee4c9d1a4bd1eda",
+  "recipient": "info@door10.co.uk",
+  "recipient_sha256": "1102af53ea98625b36e25549f8a148ace0836ece19dc6ead99cef25dd108a031",
+  "schema": 2,
+  "status": "pending",
+  "subject_sha256": "1bdd267ee3ec75b9e38fa4e3623a369890ded8baba51953203c615233c6bbb01"
+}
