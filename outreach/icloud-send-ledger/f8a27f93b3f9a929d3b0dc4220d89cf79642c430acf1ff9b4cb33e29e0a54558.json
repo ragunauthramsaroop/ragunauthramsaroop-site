@@ -3,6 +3,7 @@
   "batch_id": "exec-recruiters-20261028-waveW",
   "body_sha256": "7b3a74e964c7c1f24d900fec6cb6fd06faac59301279edf283f9d47574426255",
   "created_at": "2026-10-29T01:41:03+00:00",
+  "delivery_status": "pending_bounce_check",
   "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
   "github_run_attempt": "1",
   "github_run_id": "40801842167",
@@ -12,6 +13,9 @@
   "recipient": "ruben@cleanpowerstaffing.com",
   "recipient_sha256": "f8a27f93b3f9a929d3b0dc4220d89cf79642c430acf1ff9b4cb33e29e0a54558",
   "schema": 2,
-  "status": "pending",
+  "sent_at": "2026-10-29T01:41:04+00:00",
+  "smtp_accepted_at": "2026-10-29T01:41:04+00:00",
+  "smtp_message_id": "<179323806409.2458.17263415576834022498@icloud.com>",
+  "status": "smtp_accepted",
   "subject_sha256": "f17c4e24027e26006b356531dfff530fe4ff62448aeb71288fb4264c41e771a1"
 }
