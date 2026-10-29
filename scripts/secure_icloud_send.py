@@ -20,6 +20,15 @@ WRAPPED_KEY=Path("outreach/secure/wrapped_private_key.json")
 CV_PDF=Path("/tmp/Ragunauth_Ramsaroop_Executive_CV_2026.pdf")
 
 FIRMS={
+    "darwinhawkins.com":("Darwin Hawkins","senior Irish sustainability, ESG governance and policy recruitment","energy"),
+    "zacharydaniels.co.uk":("Zachary Daniels","executive and senior sustainability recruitment led by James Parr","energy"),
+    "pure-fuel.com":("PureFuel","climate, clean energy and sustainability leadership hiring across London and Dubai","energy"),
+    "intoclimate.com":("Into Climate","international climate-tech, renewable energy and sustainability executive search","energy"),
+    "fletcher-jones.co.uk":("Fletcher Jones","retained senior appointments across governance, ESG and international institutional leadership","executive"),
+    "grs-ltd.com":("Globalized Recruitment Services","international and cross-border executive candidate recruitment","mobility"),
+    "joveinternational.com":("Jove International","confidential international executive search and corporate leadership mandates","executive"),
+    "casuntrans.com":("Suntrans","cross-border mining executive and resource sector talent placement","mining"),
+    "extractivesearch.com":("Extractive Search","global mining corporate, technical and ESG executive search","mining"),
     "faststream.com":("Faststream Recruitment","international executive search across maritime, shipping, infrastructure and globally mobile leadership","executive"),
     "trsstaffing.com":("TRS Staffing Solutions","global engineering, energy, infrastructure and project workforce recruitment","energy"),
     "leap29.com":("Leap29","international energy, renewables, technology and global mobility recruitment","energy"),
@@ -92,7 +101,7 @@ def build_campaign_message(to):
         "I would value consideration for senior non-technical assignments where institutional relationships, ESG credibility and disciplined operating execution materially influence business success."
     )
     profile=(
-        "I currently serve as Liaison Director, Social Responsibility Department at AGM Inc., part of Zijin Mining Group in Guyana. "
+        "I currently serve as Liaison Director, Social Responsibility Department at AGM Inc., part of Zijin Gold International in Guyana. "
         "Across more than 12 years in multinational mining, regulated financial services and commercial operations, I have built experience in government and regulatory engagement, ESG and social performance, executive advisory, formal external communications and cross-functional coordination. "
         "I also support stakeholder engagement around a major industrial solar-and-battery programme and coordinated a cross-functional carbon-data evidence pilot."
     )
