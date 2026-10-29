@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "7f77c4a6b3105fef7315149f2cca6c1e79dd9ad44e096a9751a9a04f4ecb2c31",
+  "batch_id": "executive-outreach-20261028-compact-waveS",
+  "body_sha256": "0cf8e97ba35ce0ec3677bf4d6cbf3329f45280b085ad6a8a0d13d7a090e586ce",
+  "created_at": "2026-10-29T01:24:03+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "40800165566",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/executive-outreach-20261028-compact-waveS.secure.json",
+  "payload_sha256": "99be18794550ce7d26357783d5dbe425cad4c9697916f392a4e7a673f29dc34e",
+  "recipient": "apply@grs-ltd.com",
+  "recipient_sha256": "d25ff245778da042f75d7cf72f8c53ad15167cfe57747a134aebc8f605d6ac30",
+  "schema": 2,
+  "status": "pending",
+  "subject_sha256": "1943aee80559ec04dd689c6945a6a9723ad7731a3c18b6bc5d04ab07664045e9"
+}
