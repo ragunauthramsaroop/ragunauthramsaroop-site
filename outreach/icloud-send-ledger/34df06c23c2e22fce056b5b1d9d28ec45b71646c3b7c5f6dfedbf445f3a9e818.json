@@ -3,6 +3,7 @@
   "batch_id": "global-executive-recruiters-20261028-waveH",
   "body_sha256": "cabbe4a15ee2775a3d20953383d25a474cf440f598c2161061ef18378a84d159",
   "created_at": "2026-10-29T00:07:17+00:00",
+  "delivery_status": "pending_bounce_check",
   "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
   "github_run_attempt": "1",
   "github_run_id": "40791912530",
@@ -12,6 +13,9 @@
   "recipient": "info@peak2peaksearch.com",
   "recipient_sha256": "34df06c23c2e22fce056b5b1d9d28ec45b71646c3b7c5f6dfedbf445f3a9e818",
   "schema": 2,
-  "status": "pending",
+  "sent_at": "2026-10-29T00:07:19+00:00",
+  "smtp_accepted_at": "2026-10-29T00:07:19+00:00",
+  "smtp_message_id": "<179323243880.2236.4450674952058289350@icloud.com>",
+  "status": "smtp_accepted",
   "subject_sha256": "1d2b812e24f375128a7d344520a44c9de43b9cfbf7efdc5974cd08788117143f"
 }
