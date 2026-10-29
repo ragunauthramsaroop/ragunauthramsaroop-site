@@ -20,6 +20,14 @@ WRAPPED_KEY=Path("outreach/secure/wrapped_private_key.json")
 CV_PDF=Path("/tmp/Ragunauth_Ramsaroop_Executive_CV_2026.pdf")
 
 FIRMS={
+    "renovosearch.com":("Renovo Search","Director and VP renewable energy executive search for utilities, developers, manufacturers and energy investors","energy"),
+    "sancroft.com":("Sancroft","international sustainability advisory, ESG governance and strategic corporate responsibility leadership","energy"),
+    "birdeo.com":("Birdeo","international sustainability, CSR and ESG leadership recruitment across Europe and the United Kingdom","energy"),
+    "karpelassoc.com":("Karpel Associates","senior renewable energy executive search across corporate leadership, business development and industry transformation","energy"),
+    "greenearthsearch.com":("Green Earth Search","renewable energy executive recruitment across solar, wind, battery storage and corporate leadership","energy"),
+    "sunjobconsult.com":("Sunjob CONSULT","German renewable energy executive recruitment and international energy-transition business leadership","energy"),
+    "voltsearchpartners.de":("Volt Search Partners","founder-led renewable energy executive search for German solar, wind, battery storage and investment platforms","energy"),
+    "cleanpowerstaffing.com":("Clean Power Staffing","US clean energy leadership and renewable power project recruitment across solar, storage and emerging technologies","energy"),
     "altiplanoheadhunters.com":("Altiplano Headhunters","retained senior executive search for mining, energy and heavy industry across Latin America","mining"),
     "mhpartners.co":("MH Partners","Dubai-based executive search for natural resources, mining, energy and ESG leadership","mining"),
     "corverconsulting.com":("Corver Consulting","UAE and Saudi Arabian executive search in clean energy, energy transition, utilities and government-linked infrastructure","energy"),
