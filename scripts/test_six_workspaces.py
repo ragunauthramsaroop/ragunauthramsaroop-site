@@ -48,7 +48,8 @@ for route, script in WORKSPACES.items():
 
 papers = json.loads((ROOT / "data/research-papers.json").read_text(encoding="utf-8"))
 pages = json.loads((ROOT / "data/research-pages.json").read_text(encoding="utf-8"))
-assert len(papers["papers"]) == 11, "Expected eleven public research documents"
+expected = len(json.loads((ROOT / "research-library/publication-register.json").read_text(encoding="utf-8"))["papers"])
+assert len(papers["papers"]) == expected, "Research paper index and publication register disagree"
 assert pages["papers"], "PDF index has no indexed papers"
 for paper in pages["papers"]:
     assert (ROOT / paper["pdf"].lstrip("/")).exists(), f"Missing public PDF: {paper['pdf']}"
@@ -69,6 +70,6 @@ script = (ROOT / "assets/subscribe.js").read_text(encoding="utf-8")
 assert "manual opt-in" in subscribe.lower() and "RSS" in subscribe, "Unverified automated email claim"
 assert "mailto:" in script and "api.resend.com" not in script, "Email requests must remain manual until verified"
 
-print("PASS six linked workspaces, canonical pages, sitemap, 11 source PDFs,",
+print("PASS six linked workspaces, canonical pages, sitemap,", expected, "source PDFs,",
       sum(len(p["pages"]) for p in pages["papers"]), "indexed pages,",
       "32 Academy questions and truthful subscription status")
