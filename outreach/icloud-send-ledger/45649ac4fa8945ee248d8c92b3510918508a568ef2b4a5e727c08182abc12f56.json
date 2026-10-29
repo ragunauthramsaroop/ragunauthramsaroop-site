@@ -1,0 +1,17 @@
+{
+  "attachment_sha256": "7f77c4a6b3105fef7315149f2cca6c1e79dd9ad44e096a9751a9a04f4ecb2c31",
+  "batch_id": "executive-outreach-20261028-waveQ",
+  "body_sha256": "ea2ecfd2dedcb4cd3fe7d8898fff7d4e44207f4b3d02edc325640537b0a8ceac",
+  "created_at": "2026-10-29T00:36:06+00:00",
+  "github_repository": "ragunauthramsaroop/ragunauthramsaroop-site",
+  "github_run_attempt": "1",
+  "github_run_id": "40795056543",
+  "ledger_branch": "main",
+  "payload_path": "outreach/icloud-outbox/executive-outreach-20261028-waveQ.secure.json",
+  "payload_sha256": "cacc25680d8b1a0844757a509eee2f1d569dcb617209c35c1cdc59bcc42b3128",
+  "recipient": "careers@esgglobal.com",
+  "recipient_sha256": "45649ac4fa8945ee248d8c92b3510918508a568ef2b4a5e727c08182abc12f56",
+  "schema": 2,
+  "status": "pending",
+  "subject_sha256": "17f26f7775b5e27f3cc49e72a482261c3723c4b73f006b29626bbacfef7020bc"
+}
