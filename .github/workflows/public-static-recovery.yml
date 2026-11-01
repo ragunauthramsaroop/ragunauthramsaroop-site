@@ -1,0 +1,49 @@
+name: Complete public static website snapshot
+
+on:
+  schedule:
+    - cron: '29 4 2 * *'
+  pull_request:
+    paths:
+      - 'scripts/create_public_static_archive.py'
+      - 'scripts/test_public_static_archive.py'
+      - '.github/workflows/public-static-recovery.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/create_public_static_archive.py'
+      - '.github/workflows/public-static-recovery.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  static-snapshot:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v7
+        with:
+          python-version: '3.12'
+      - name: Validate static output selection and privacy exclusions
+        run: python -m unittest discover -s scripts -p 'test_public_static_archive.py'
+      - name: Export all selected public static site files
+        run: python scripts/create_public_static_archive.py --output "$RUNNER_TEMP/site-snapshot"
+      - name: Verify complete public site ZIP and checksum
+        shell: bash
+        run: |
+          set -euo pipefail
+          file="$(find "$RUNNER_TEMP/site-snapshot" -maxdepth 1 -name 'rr-public-static-site-*.zip' -print -quit)"
+          test -n "$file"
+          python scripts/create_public_static_archive.py --verify "$file"
+      - uses: actions/upload-artifact@v7
+        if: success()
+        with:
+          name: public-static-site-${{ github.run_id }}
+          path: ${{ runner.temp }}/site-snapshot/
+          if-no-files-found: error
+          retention-days: 90
