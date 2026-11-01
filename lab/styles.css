@@ -6,3 +6,6 @@
 /* Mobile accessibility: maintain touch targets without losing IDE workspace width. */
 #projectSelect,#runBtn{min-height:44px}
 @media(max-width:700px){.mobile-switcher{height:52px}.mobile-switcher button{min-height:44px}.app.show-files .sidebar{top:107px}}
+
+/* Tab close controls are interactive. Give each a full finger-size target. */
+@media(max-width:700px){.tabbar{height:48px}.tab .tab-x{display:grid;place-items:center;flex:0 0 44px;width:44px;height:44px;padding:0}}

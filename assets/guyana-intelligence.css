@@ -149,3 +149,6 @@ button{cursor:pointer}
 }
 /* Mobile filter buttons must remain usable without precise taps. */
 .filter-row button{min-height:44px;padding:10px 14px;font-size:12px}
+
+/* Full accessibility control target for mobile intelligence visitors. */
+.rr-a11y-toggle{box-sizing:border-box!important;width:44px!important;height:44px!important;min-width:44px!important;min-height:44px!important}
