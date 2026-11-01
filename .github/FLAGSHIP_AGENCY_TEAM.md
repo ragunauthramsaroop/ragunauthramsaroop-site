@@ -42,3 +42,7 @@ P3: Improve research-platform findability based on measured audience use, not ar
 
 ## Limits
 The domain is served by GitHub Pages. Editing GitHub does not prove an immediate live deployment. A role file is not an autonomous running agent. The actual recurring code validations come from GitHub Actions.
+
+## Continuous monitor extension
+
+See docs/flagship-continuous-agents.md for the curated open-source repository review, limits, schedules and incident runbook. The Flagship SEO Sentinel and Flagship Intelligence Sentinel role files guide optional connected coding agents. The only continuously recurring execution is scheduled GitHub Actions; no LLM runs permanently or gains unattended publication authority.
