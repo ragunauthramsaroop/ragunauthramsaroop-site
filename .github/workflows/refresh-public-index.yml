@@ -2,9 +2,12 @@ name: Refresh public indexes
 on:
   push:
     branches: [main]
-    paths: ['**/*.html','data/public-profile.json']
+    paths: ['**/*.html','data/public-profile.json','scripts/refresh_provenance.py','.github/workflows/refresh-public-index.yml']
 permissions:
   contents: write
+concurrency:
+  group: public-provenance-publisher
+  cancel-in-progress: false
 jobs:
   refresh:
     runs-on: ubuntu-latest
@@ -18,8 +21,12 @@ jobs:
       - run: python scripts/compact_search_payload.py
       - run: npm run smart:index
       - run: python scripts/sync_sitemap.py
+      - name: Rebuild public SHA-256 provenance registry after indexes
+        run: |
+          python scripts/refresh_provenance.py --refresh
+          python scripts/refresh_provenance.py --check
       - run: |
-          git add assets/search-index.json assets/semantic-index.json pagefind sitemap.xml
+          git add assets/search-index.json assets/semantic-index.json pagefind sitemap.xml data/provenance.json api/v1/provenance.json
           git diff --cached --quiet && exit 0
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"

@@ -13,7 +13,7 @@ permissions:
   contents: write
 
 concurrency:
-  group: daily-guyana-intelligence-refresh
+  group: public-provenance-publisher
   cancel-in-progress: false
 
 jobs:
@@ -38,14 +38,24 @@ jobs:
           python -m json.tool data/guyana-live.json >/dev/null
           python -m json.tool api/v1/sources.json >/dev/null
           python -m json.tool api/v1/guyana.json >/dev/null
+      - name: Synchronise public SHA-256 registry with source snapshots
+        run: |
+          python scripts/refresh_provenance.py --refresh
+          python scripts/refresh_provenance.py --check
       - name: Commit refreshed public snapshots when changed
         run: |
-          git add data/source-monitor.json data/guyana-live.json api/v1/sources.json api/v1/guyana.json
+          git add data/source-monitor.json data/guyana-live.json api/v1/sources.json api/v1/guyana.json data/provenance.json api/v1/provenance.json
           if git diff --cached --quiet; then
             echo "No public snapshot changes to commit."
             exit 0
           fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git commit -m "Refresh daily Guyana public intelligence snapshots"
-          git push origin HEAD:main
+          git commit -m "Refresh daily Guyana public intelligence snapshots and integrity hashes"
+          for attempt in 1 2 3; do
+            if git push origin HEAD:main; then exit 0; fi
+            git fetch origin main
+            git rebase origin/main
+          done
+          echo "Public data ready but main advanced during provenance publication" >&2
+          exit 1
