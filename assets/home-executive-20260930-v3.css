@@ -397,3 +397,18 @@ img{display:block;max-width:100%}
   *,*::before,*::after{transition:none!important}
 }
 .research-grid .ask-research-card{grid-column:1/-1;min-height:240px}
+
+/* Independent company-level context. Never treat operating figures as personal accomplishments. */
+.mandate-context{padding:65px 0 70px}
+.mandate-context .section-heading{align-items:flex-end;margin-bottom:22px}
+.mandate-context .section-heading>div{max-width:850px}
+.mandate-context h2{margin:0;font:500 clamp(32px,4vw,50px)/1.08 var(--serif);letter-spacing:-.035em;text-wrap:balance}
+.context-lead{max-width:820px;margin:17px 0 0;color:var(--ink-soft);font-size:14px;line-height:1.75}
+.mandate-stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+.mandate-stats article{display:flex;flex-direction:column;min-width:0;padding:28px 26px;background:var(--surface);border:1px solid var(--line);border-radius:12px}
+.mandate-stats article>strong{font-family:var(--serif);font-size:clamp(34px,3.5vw,48px);line-height:1.1;font-weight:500;letter-spacing:-.04em;color:var(--forest)}
+.mandate-stats article>strong span{font-family:var(--sans);font-size:14px;letter-spacing:0;font-weight:650}
+.mandate-stats article>p{margin:16px 0 24px;font-size:13px;color:var(--ink-soft);line-height:1.65}
+.mandate-stats article>a{margin-top:auto;color:var(--forest);font-size:12px;font-weight:750;text-underline-offset:3px}
+.context-note{margin:16px 0 0;color:var(--muted);font-size:11px;line-height:1.6}
+@media(max-width:820px){.mandate-context{padding:52px 0 58px}.mandate-context .section-heading{display:block}.mandate-context .section-heading .text-link{margin-top:15px}.mandate-stats{grid-template-columns:1fr}.mandate-stats article{padding:22px 23px}.mandate-stats article>p{margin:9px 0 14px}}

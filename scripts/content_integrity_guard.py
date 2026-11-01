@@ -95,7 +95,7 @@ recognition = text("recognition-media/index.html")
 for needle in (
     "Best of Best Second Merit Award",
     "Management Reserve Program",
-    "Scheduled speaking engagement",
+    "CREF 2026 · Conference programme",
     "Company-level recognition",
     "not personal awards",
 ):
