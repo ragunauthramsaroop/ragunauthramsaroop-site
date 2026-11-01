@@ -50,6 +50,12 @@
         "summary": "Self-published, source-scoped portable executive record",
         "description": "Versioned first-party career record with external references and explicit attribution rules; not an independently issued verifiable credential."
       }
+    },
+    "/claim-graph.json": {
+      "get": {
+        "summary": "Self-published explicit executive claim-to-evidence graph",
+        "description": "Stable nodes and source links derived from the public record, with attribution limits; no credential verification or inferred endorsements."
+      }
     }
   }
 }

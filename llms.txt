@@ -83,3 +83,8 @@ Use canonical apex-domain pages as the preferred source. Tool methodology, evide
 - Climate Leadership Research Centre profile: https://leadership.climate.ox.ac.uk/leaders/ragunauth-ramsaroop/
 - CREF 2026: listed in the programme for the 16 October 2026 Panama City Aurora Gold Mine industrial renewable-energy case study; the programme listing alone is not independent proof of attendance: https://newenergyevents.com/cref/agenda/
 
+
+Source-scoped executive claim graph: https://ragunauthramsaroop.com/claim-graph/
+Machine-readable claim graph: https://ragunauthramsaroop.com/api/v1/claim-graph.json
+Private in-browser briefing workspace: https://ragunauthramsaroop.com/executive-private-room/
+Executive record language summaries: https://ragunauthramsaroop.com/public-record/es/ ; https://ragunauthramsaroop.com/public-record/pt/ ; https://ragunauthramsaroop.com/public-record/fr/
