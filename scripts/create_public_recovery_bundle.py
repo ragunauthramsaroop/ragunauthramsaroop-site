@@ -26,12 +26,14 @@ FILES=(
     "public-record/index.html","public-record/es/index.html",
     "public-record/pt/index.html","public-record/fr/index.html",
     "claim-graph/index.html","executive-private-room/index.html",
+    "credential-readiness/index.html","api/v1/credential-status.json",
     "api/v1/executive-record.json","api/v1/claim-graph.json",
     "api/v1/openapi.json","api/v1/provenance.json",
     "data/public-profile.json","data/provenance.json",
     "docs/public-record-continuity-2046.md",
     "docs/executive-knowledge-graph-and-languages.md",
     "docs/private-executive-room.md",
+    "docs/public-recovery-runbook.md",
 )
 README_TEXT="""PUBLIC-CORE RECOVERY BUNDLE
 This is a selected public professional record and its core support files.
