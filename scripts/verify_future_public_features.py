@@ -53,6 +53,11 @@ openapi=json.loads(read("api/v1/openapi.json"))
 check("/claim-graph.json" in openapi["paths"],"Claim graph not listed in OpenAPI")
 for path in ("claim-graph/","executive-private-room/","public-record/es/","public-record/pt/","public-record/fr/"):
     check(("https://ragunauthramsaroop.com/"+path) in {e.text for e in ET.parse(ROOT/"sitemap.xml").iter() if e.tag.rsplit("}",1)[-1]=="loc"},"Missing sitemap path: "+path)
+status=json.loads(read("api/v1/credential-status.json"))
+check(status["issuerCredentials"]==[] and status["status"]=="none_registered","Credential status must not imply issuer verification")
+credential_page=read("credential-readiness/index.html")
+check("No issuer-signed digital credentials registered" in credential_page,"Honest credential status missing")
+check("https://ragunauthramsaroop.com/credential-readiness/" in {e.text for e in ET.parse(ROOT/"sitemap.xml").iter() if e.tag.rsplit("}",1)[-1]=="loc"},"Credential readiness missing from sitemap")
 if errors:
     for error in errors:print("FAIL:",error)
     sys.exit(1)

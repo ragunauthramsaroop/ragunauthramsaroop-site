@@ -15,6 +15,7 @@ required={
     "/resume.html":0.90,
     "/public-record/":0.85,
     "/claim-graph/":0.80,
+    "/credential-readiness/":0.65,
     "/executive-private-room/":0.75,
     "/public-record/es/":0.55,
     "/public-record/pt/":0.55,
