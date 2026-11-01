@@ -1,0 +1,210 @@
+{
+  "format": "RR-Claim-Evidence-Graph",
+  "schemaVersion": "1.0.0",
+  "issuedAt": "2026-11-01",
+  "recordSource": "https://ragunauthramsaroop.com/api/v1/executive-record.json",
+  "subjectId": "https://ragunauthramsaroop.com/#person",
+  "purpose": "Explicit claim-to-source connections only. No inferred endorsements, credentials, or personally attributable company performance.",
+  "nodeCount": 13,
+  "edgeCount": 13,
+  "nodes": [
+    {
+      "id": "https://ragunauthramsaroop.com/#person",
+      "type": "Person",
+      "label": "Ragunauth Ramsaroop",
+      "source": "https://ragunauthramsaroop.com/api/v1/executive-record.json",
+      "verification": "self_published"
+    },
+    {
+      "id": "organization:AGM-Inc",
+      "type": "Organization",
+      "label": "AGM Inc.",
+      "verification": "company_operating_context"
+    },
+    {
+      "id": "claim:professional-role",
+      "type": "Claim",
+      "label": "Current professional appointment",
+      "value": "Liaison Director, Social Responsibility Department, AGM Inc.",
+      "classification": "first_party_career_record",
+      "effectiveFrom": "2025",
+      "scope": "Personal professional role",
+      "verification": "source_scoped_not_issuer_verified"
+    },
+    {
+      "id": "evidence:https://ragunauthramsaroop.com/resume.html",
+      "type": "EvidenceSource",
+      "label": "Public executive CV",
+      "url": "https://ragunauthramsaroop.com/resume.html",
+      "sourceType": "self_published",
+      "verification": "source_link_not_document_authentication"
+    },
+    {
+      "id": "evidence:https://leadership.climate.ox.ac.uk/leaders/ragunauth-ramsaroop/",
+      "type": "EvidenceSource",
+      "label": "External Oxford-domain professional profile",
+      "url": "https://leadership.climate.ox.ac.uk/leaders/ragunauth-ramsaroop/",
+      "sourceType": "external_profile",
+      "verification": "source_link_not_document_authentication"
+    },
+    {
+      "id": "claim:professional-tenure",
+      "type": "Claim",
+      "label": "AGM Inc. leadership tenure",
+      "value": "Employment tenure at AGM Inc. from 2020, with progressive responsibilities",
+      "classification": "first_party_career_record",
+      "effectiveFrom": "2020",
+      "scope": "Personal career chronology",
+      "verification": "source_scoped_not_issuer_verified"
+    },
+    {
+      "id": "evidence:https://ragunauthramsaroop.com/leadership/",
+      "type": "EvidenceSource",
+      "label": "Leadership history",
+      "url": "https://ragunauthramsaroop.com/leadership/",
+      "sourceType": "self_published",
+      "verification": "source_link_not_document_authentication"
+    },
+    {
+      "id": "claim:management-development",
+      "type": "Claim",
+      "label": "Group-level management development",
+      "value": "Selected for Zijin group-level headquarters training and Management Reserve Program during 2023",
+      "classification": "self_reported_professional_development",
+      "effectiveFrom": "2023",
+      "scope": "Personal career development",
+      "verification": "source_scoped_not_issuer_verified"
+    },
+    {
+      "id": "evidence:https://ragunauthramsaroop.com/recognition-media/",
+      "type": "EvidenceSource",
+      "label": "Recognition and development",
+      "url": "https://ragunauthramsaroop.com/recognition-media/",
+      "sourceType": "self_published",
+      "verification": "source_link_not_document_authentication"
+    },
+    {
+      "id": "claim:cref-programme",
+      "type": "Claim",
+      "label": "CREF 2026 conference programme listing",
+      "value": "Listed in the October 16, 2026 conference programme for the Aurora Gold Mine hybrid-power case study",
+      "classification": "external_event_programme",
+      "effectiveFrom": "2026-10-16",
+      "scope": "Programme-listed professional engagement, not independent evidence of attendance",
+      "verification": "source_scoped_not_issuer_verified"
+    },
+    {
+      "id": "evidence:https://newenergyevents.com/cref/agenda/",
+      "type": "EvidenceSource",
+      "label": "Organiser agenda",
+      "url": "https://newenergyevents.com/cref/agenda/",
+      "sourceType": "event_organiser",
+      "verification": "source_link_not_document_authentication"
+    },
+    {
+      "id": "claim:solar-context",
+      "type": "Claim",
+      "label": "Aurora industrial solar operating context",
+      "value": "49.4 MW of installed solar generating capacity reported April 2026",
+      "classification": "company_reported_operating_context",
+      "effectiveFrom": "2026-04",
+      "scope": "AGM Inc. organisational context, not an individual achievement",
+      "verification": "source_scoped_not_issuer_verified"
+    },
+    {
+      "id": "evidence:https://en.zijingoldintl.com/news/companynews-detail-410.htm",
+      "type": "EvidenceSource",
+      "label": "Zijin Gold International company news",
+      "url": "https://en.zijingoldintl.com/news/companynews-detail-410.htm",
+      "sourceType": "company_source",
+      "verification": "source_link_not_document_authentication"
+    }
+  ],
+  "edges": [
+    {
+      "from": "https://ragunauthramsaroop.com/#person",
+      "to": "organization:AGM-Inc",
+      "relation": "reports_employment_with",
+      "qualifier": "first-party employment record"
+    },
+    {
+      "from": "https://ragunauthramsaroop.com/#person",
+      "to": "claim:professional-role",
+      "relation": "publishes_claim",
+      "qualifier": "self-published"
+    },
+    {
+      "from": "claim:professional-role",
+      "to": "evidence:https://ragunauthramsaroop.com/resume.html",
+      "relation": "references",
+      "qualifier": "self_published"
+    },
+    {
+      "from": "claim:professional-role",
+      "to": "evidence:https://leadership.climate.ox.ac.uk/leaders/ragunauth-ramsaroop/",
+      "relation": "references",
+      "qualifier": "Supports current professional positioning, not independently the 2025 appointment date"
+    },
+    {
+      "from": "https://ragunauthramsaroop.com/#person",
+      "to": "claim:professional-tenure",
+      "relation": "publishes_claim",
+      "qualifier": "self-published"
+    },
+    {
+      "from": "claim:professional-tenure",
+      "to": "evidence:https://ragunauthramsaroop.com/leadership/",
+      "relation": "references",
+      "qualifier": "self_published"
+    },
+    {
+      "from": "https://ragunauthramsaroop.com/#person",
+      "to": "claim:management-development",
+      "relation": "publishes_claim",
+      "qualifier": "self-published"
+    },
+    {
+      "from": "claim:management-development",
+      "to": "evidence:https://ragunauthramsaroop.com/recognition-media/",
+      "relation": "references",
+      "qualifier": "self_published"
+    },
+    {
+      "from": "https://ragunauthramsaroop.com/#person",
+      "to": "claim:cref-programme",
+      "relation": "publishes_claim",
+      "qualifier": "self-published"
+    },
+    {
+      "from": "claim:cref-programme",
+      "to": "evidence:https://newenergyevents.com/cref/agenda/",
+      "relation": "references",
+      "qualifier": "event_organiser"
+    },
+    {
+      "from": "https://ragunauthramsaroop.com/#person",
+      "to": "claim:solar-context",
+      "relation": "publishes_claim",
+      "qualifier": "self-published"
+    },
+    {
+      "from": "claim:solar-context",
+      "to": "organization:AGM-Inc",
+      "relation": "describes_organization_not_personal_result",
+      "qualifier": "explicit non-attribution"
+    },
+    {
+      "from": "claim:solar-context",
+      "to": "evidence:https://en.zijingoldintl.com/news/companynews-detail-410.htm",
+      "relation": "references",
+      "qualifier": "company_source"
+    }
+  ],
+  "limitations": [
+    "Self-published career dates remain first-party statements unless corroborated by a relevant employer-issued record.",
+    "A separately published professional profile does not establish an academic appointment, a degree issuer relationship or independent verification of all career dates.",
+    "Conference programme listings are not equivalent to proof of attendance or delivery.",
+    "Organisational operating metrics are not attributed as personal accomplishments.",
+    "Hashes on files establish byte equality against a dated reference, not identity or factual validity. An unsigned JSON record is not a W3C Verifiable Credential."
+  ]
+}
