@@ -1,5 +1,5 @@
 /* Fast homepage shell with cache-first home navigation and background refresh. */
-const V="rr-public-v14";
+const V="rr-public-v15";
 const CORE=["/assets/home-runtime.js","/assets/accessibility.css","/favicon-96.png"];
 const STATIC_FIRST=new Set(["/assets/home-runtime.js","/assets/accessibility.css","/assets/preview.png","/favicon-96.png"]);
 const MAX_DYNAMIC_ENTRIES=60;
