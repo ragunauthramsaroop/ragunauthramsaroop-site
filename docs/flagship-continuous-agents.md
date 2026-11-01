@@ -29,7 +29,7 @@ These links identify candidates verified as existing public, non-archived GitHub
 | https://github.com/msitarzewski/agency-agents | MIT | Already adapted for role-based reviews; role files are prompts, not running workers |
 | https://github.com/Pagefind/pagefind | MIT | Already integrated for site search |
 | https://github.com/GoogleChrome/lighthouse-ci | Apache-2.0 | Lighthouse already integrated in GitHub Actions |
-| https://github.com/lycheeverse/lychee | Apache-2.0 / MIT | Strong candidate for scheduled bounded external-link auditing |
+| https://github.com/lycheeverse/lychee | Apache-2.0 / MIT | Now integrated via a bounded weekly GitHub Actions check; reviews required for 403/429 false positives |
 | https://github.com/pa11y/pa11y-ci | LGPL-3.0 | Optional deeper accessibility testing after evaluating output against existing Playwright audit |
 | https://github.com/sitespeedio/sitespeed.io | MIT | Optional browser-based performance profiling; heavier than existing Lighthouse |
 | https://github.com/dgtlmoon/changedetection.io | Apache-2.0 | Requires a persistent host; scheduled source monitor already covers official sources without one |
@@ -37,7 +37,7 @@ These links identify candidates verified as existing public, non-archived GitHub
 | https://github.com/gitleaks/gitleaks | MIT | Good candidate for repository secret-scanning |
 | https://github.com/aquasecurity/trivy | Apache-2.0 | Good candidate for dependencies, secrets and misconfiguration reviews |
 | https://github.com/tmolavi/siteprobe | MIT | Experimental SEO/GEO agent fixer; audit first, never enable unattended source mutation |
-| https://github.com/lycheeverse/lychee-action | Apache-2.0 | GitHub wrapper candidate, ideally pinned to reviewed SHA |
+| https://github.com/lycheeverse/lychee-action | Apache-2.0 | Integrated weekly, pinned to verified commit e7477775783ea5526144ba13e8db5eec57747ce8 |
 
 No unreviewed repositories have been cloned or granted credentials. Use a single dedicated workflow per needed capability and pin trusted third-party actions to immutable commit SHAs where feasible.
 
@@ -57,3 +57,7 @@ Technical crawlability and structured data do not prove search positions, traffi
 ## Operating constraints
 
 Read-only monitoring, no new paid dependencies, least privileges, rate-limited HTTP fetches with retries, no silent rewrites, no private data, no automatic publishing of unsourced facts, no autonomous sending of email or outreach. Preserve the current site architecture, PR review and source-provenance boundaries.
+
+## Weekly outbound-link research audit
+
+The separate workflow .github/workflows/flagship-outbound-links.yml uses the official Lychee action, pinned to the reviewed public commit SHA (v2) and lychee v0.24.2. Every Sunday at 04:11 UTC, the job reviews a bounded set of public executive, research and AI-readable source pages, with concurrency limited to three network requests, 15-second timeout and no automatic retry. The report is retained as a 30-day GitHub artifact. It is intentionally non-blocking because external servers frequently reject automated HEAD requests or return rate limits; the technical agent reviews the evidence before proposing an editorial correction. No issue creation, write permission, secrets, or public website changes are authorized in this job.
