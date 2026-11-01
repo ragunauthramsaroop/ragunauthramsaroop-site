@@ -135,3 +135,5 @@ button{cursor:pointer}
   .section{break-inside:avoid}
   .source-card,.indicator-card,.sector-card,.research-card,.summary-panel{box-shadow:none}
 }
+/* Preserve a full touch target for the accessibility toggle at mobile sizes. */
+.rr-a11y-toggle{box-sizing:border-box!important;width:44px!important;height:44px!important;min-width:44px!important;min-height:44px!important}
