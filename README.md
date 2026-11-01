@@ -28,3 +28,9 @@ python scripts/performance_budget.py
 ```
 
 Public pages are hosted on GitHub Pages with HTTPS enforced.
+
+## Flagship executive website agency team
+
+[Agency Agents operating model](.github/FLAGSHIP_AGENCY_TEAM.md) defines the dedicated brand, executive-search journey, evidence and search, design, performance and release roles. The model adapts the [Agency Agents](https://github.com/msitarzewski/agency-agents) role library to this existing GitHub Pages export. Agent profiles are instructions for a compatible connected coding agent, not continuously running bots. Site integrity and performance checks continue to run through GitHub Actions.
+
+The homepage executive journey includes direct routes to the CV, recruiter-mode brief, evidence examples and board/CEO briefing. `scripts/flagship_home_quality.py` guards the key entry points and dated conference-label semantics.
