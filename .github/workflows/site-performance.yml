@@ -90,6 +90,11 @@ jobs:
         run: python scripts/flagship_home_quality.py
       - name: Verify portable public executive record
         run: python scripts/verify_executive_record.py
+      - name: Verify reproducible provenance recalculation
+        run: |
+          python -m unittest discover -s scripts -p 'test_refresh_provenance.py'
+          python scripts/refresh_provenance.py --refresh
+          python scripts/refresh_provenance.py --check
       - name: Check browser script syntax
         run: |
           node --check service-worker.js
