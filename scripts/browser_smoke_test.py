@@ -123,6 +123,12 @@ def main():
             expect(page.locator("#research-pdf")).to_have_attribute(
                 "href", f"/research-library/{first_paper_slug}/full-text.pdf"
             )
+            # The new PDFs receive page extracts after the post-merge research indexing worker.
+            # Exercise a paper with an existing real page index during pull-request CI.
+            page.locator("#research-list button[data-slug=\"guyana-2040\"]").click()
+            expect(page.locator("#research-pdf")).to_have_attribute(
+                "href", "/research-library/guyana-2040/full-text.pdf"
+            )
             page.locator("#research-query").fill("Guyana")
             page.locator("#research-ask").click()
             expect(page.locator("#research-response article").first).to_be_visible(timeout=30000)
