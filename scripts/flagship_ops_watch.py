@@ -16,7 +16,7 @@ import xml.etree.ElementTree as ET
 
 ROOT=Path(__file__).resolve().parents[1]
 DOMAIN="https://ragunauthramsaroop.com"
-ROUTES=["/", "/executive-profile/", "/resume.html", "/recruiter-mode/", "/evidence/", "/research-library/", "/engage/", "/public-record/", "/claim-graph/", "/executive-private-room/", "/credential-readiness/", "/public-record/es/", "/public-record/pt/", "/public-record/fr/", "/research-library/guyana-biodiversity-investment-readiness/", "/research-library/building-for-generations-guyana/"]
+ROUTES=tuple(["/", "/executive-profile/", "/resume.html", "/recruiter-mode/", "/evidence/", "/research-library/", "/engage/", "/public-record/", "/claim-graph/", "/executive-private-room/", "/credential-readiness/", "/public-record/es/", "/public-record/pt/", "/public-record/fr/", "/research-library/guyana-biodiversity-investment-readiness/", "/research-library/building-for-generations-guyana/"])
 PUBLIC_PDFS=("/research-library/guyana-biodiversity-investment-readiness/full-text.pdf", "/research-library/building-for-generations-guyana/full-text.pdf")
 PUBLIC_APIS=("/api/v1/executive-record.json", "/api/v1/claim-graph.json", "/api/v1/credential-status.json", "/api/v1/provenance.json")
 NOW=datetime.now(timezone.utc)
