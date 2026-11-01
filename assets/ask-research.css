@@ -118,3 +118,6 @@ footer strong{color:var(--ink)}
 .research-actions a{min-height:42px;padding:0 15px;display:inline-flex;align-items:center;border-radius:999px;background:var(--forest);color:var(--white);text-decoration:none;font-size:11px;font-weight:820}
 .research-actions a+ a{background:transparent;color:var(--forest);border:1px solid var(--forest)}
 .research-actions p{margin:12px 0 0;color:var(--muted);font-size:10px;line-height:1.55}
+
+/* Preserve a full touch target for the accessibility toggle at mobile sizes. */
+.rr-a11y-toggle{box-sizing:border-box!important;width:44px!important;height:44px!important;min-width:44px!important;min-height:44px!important}

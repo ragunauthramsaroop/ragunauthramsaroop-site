@@ -147,3 +147,5 @@ button{cursor:pointer}
   .footer{flex-direction:column}
   .footer nav{justify-content:flex-start}
 }
+/* Mobile filter buttons must remain usable without precise taps. */
+.filter-row button{min-height:44px;padding:10px 14px;font-size:12px}
