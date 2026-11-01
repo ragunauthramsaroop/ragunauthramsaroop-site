@@ -1,0 +1,152 @@
+name: Flagship continuous SEO and intelligence watch
+
+on:
+  pull_request:
+    paths:
+      - 'llms.txt'
+      - 'data/public-profile.json'
+      - 'data/source-monitor.json'
+      - 'data/guyana-live.json'
+      - 'scripts/flagship_ops_watch.py'
+      - 'scripts/test_flagship_ops_watch.py'
+      - '.github/workflows/flagship-ops-watch.yml'
+  schedule:
+    - cron: '21 */2 * * *'
+    - cron: '47 */6 * * *'
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: Run the selected read-only monitor
+        type: choice
+        required: true
+        options: [seo, intelligence]
+        default: seo
+
+permissions:
+  contents: read
+
+concurrency:
+  group: flagship-watch-${{ github.event.schedule || github.event.inputs.mode || github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  regression:
+    if: github.event_name == 'pull_request'
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v7
+        with:
+          python-version: '3.12'
+      - name: Unit tests
+        run: python -m unittest discover -s scripts -p 'test_flagship_ops_watch.py'
+      - name: Static SEO and provenance checks
+        run: python scripts/flagship_ops_watch.py --mode static
+      - uses: actions/upload-artifact@v7
+        if: always()
+        with:
+          name: flagship-static-quality
+          path: audit/flagship-agents/
+          if-no-files-found: warn
+          retention-days: 14
+
+  seo:
+    if: (github.event_name == 'schedule' && github.event.schedule == '21 */2 * * *') || (github.event_name == 'workflow_dispatch' && inputs.mode == 'seo')
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: read
+      issues: write
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v7
+        with:
+          python-version: '3.12'
+      - name: Public technical SEO watch
+        run: python scripts/flagship_ops_watch.py --mode seo
+      - name: Deduplicated SEO incident
+        if: failure()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          title="[AUTO] Flagship SEO watch incident"
+          number="$(gh issue list --repo "$GITHUB_REPOSITORY" --state open --limit 200 --json title,number --jq '.[] | select(.title=="[AUTO] Flagship SEO watch incident") | .number' | head -1)"
+          if [ -z "$number" ]; then
+            printf '\nWorkflow: %s/%s/actions/runs/%s\n' "$GITHUB_SERVER_URL" "$GITHUB_REPOSITORY" "$GITHUB_RUN_ID" >> audit/flagship-agents/seo.md
+            gh issue create --repo "$GITHUB_REPOSITORY" --title "$title" --body-file audit/flagship-agents/seo.md
+          fi
+      - name: Close SEO incident after verified recovery
+        if: success()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          number="$(gh issue list --repo "$GITHUB_REPOSITORY" --state open --limit 200 --json title,number --jq '.[] | select(.title=="[AUTO] Flagship SEO watch incident") | .number' | head -1)"
+          if [ -n "$number" ]; then
+            gh issue comment "$number" --repo "$GITHUB_REPOSITORY" --body "Recovered in $GITHUB_SERVER_URL/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID"
+            gh issue close "$number" --repo "$GITHUB_REPOSITORY"
+          fi
+      - uses: actions/upload-artifact@v7
+        if: always()
+        with:
+          name: flagship-seo-evidence
+          path: audit/flagship-agents/
+          if-no-files-found: warn
+          retention-days: 14
+
+  intelligence:
+    if: (github.event_name == 'schedule' && github.event.schedule == '47 */6 * * *') || (github.event_name == 'workflow_dispatch' && inputs.mode == 'intelligence')
+    runs-on: ubuntu-latest
+    timeout-minutes: 7
+    permissions:
+      contents: read
+      issues: write
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v7
+        with:
+          python-version: '3.12'
+      - name: Public source freshness and provenance watch
+        run: python scripts/flagship_ops_watch.py --mode intelligence
+      - name: Deduplicated intelligence incident
+        if: failure()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          title="[AUTO] Flagship intelligence watch incident"
+          number="$(gh issue list --repo "$GITHUB_REPOSITORY" --state open --limit 200 --json title,number --jq '.[] | select(.title=="[AUTO] Flagship intelligence watch incident") | .number' | head -1)"
+          if [ -z "$number" ]; then
+            printf '\nWorkflow: %s/%s/actions/runs/%s\n' "$GITHUB_SERVER_URL" "$GITHUB_REPOSITORY" "$GITHUB_RUN_ID" >> audit/flagship-agents/intelligence.md
+            gh issue create --repo "$GITHUB_REPOSITORY" --title "$title" --body-file audit/flagship-agents/intelligence.md
+          fi
+      - name: Close intelligence incident after verified recovery
+        if: success()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          number="$(gh issue list --repo "$GITHUB_REPOSITORY" --state open --limit 200 --json title,number --jq '.[] | select(.title=="[AUTO] Flagship intelligence watch incident") | .number' | head -1)"
+          if [ -n "$number" ]; then
+            gh issue comment "$number" --repo "$GITHUB_REPOSITORY" --body "Recovered in $GITHUB_SERVER_URL/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID"
+            gh issue close "$number" --repo "$GITHUB_REPOSITORY"
+          fi
+      - uses: actions/upload-artifact@v7
+        if: always()
+        with:
+          name: flagship-intelligence-evidence
+          path: audit/flagship-agents/
+          if-no-files-found: warn
+          retention-days: 14
