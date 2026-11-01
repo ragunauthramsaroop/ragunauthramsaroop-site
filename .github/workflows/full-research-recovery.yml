@@ -1,0 +1,47 @@
+name: Complete public research preservation
+
+on:
+  pull_request:
+    paths:
+      - 'scripts/create_full_research_archive.py'
+      - 'scripts/test_full_research_archive.py'
+      - '.github/workflows/full-research-recovery.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/create_full_research_archive.py'
+      - '.github/workflows/full-research-recovery.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  research-preservation:
+    runs-on: ubuntu-latest
+    timeout-minutes: 22
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v7
+        with:
+          python-version: '3.12'
+      - name: Run research preservation tests
+        run: python -m unittest discover -s scripts -p 'test_full_research_archive.py'
+      - name: Assemble 23 original public research PDFs and publication pages
+        run: python scripts/create_full_research_archive.py --output "$RUNNER_TEMP/research-recovery"
+      - name: Verify archive byte-for-byte
+        shell: bash
+        run: |
+          set -euo pipefail
+          file="$(find "$RUNNER_TEMP/research-recovery" -maxdepth 1 -name 'rr-complete-public-research-*.zip' -print -quit)"
+          test -n "$file"
+          python scripts/create_full_research_archive.py --verify "$file"
+      - uses: actions/upload-artifact@v7
+        if: success()
+        with:
+          name: complete-public-research-${{ github.run_id }}
+          path: ${{ runner.temp }}/research-recovery/
+          if-no-files-found: error
+          retention-days: 90

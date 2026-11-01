@@ -1,0 +1,5 @@
+# Separate verified public research preservation
+
+The `.github/workflows/full-research-recovery.yml` workflow creates an original-byte archive covering every PDF registered in `research-library/publication-register.json`, each same-directory publication page, both page-level and publication-level research indexes, catalogue and citation metadata. It checks every file's SHA-256 digest and the original PDF signature, then publishes a 90-day GitHub Actions artifact including ZIP and external SHA-256 checksum. It excludes all private/outreach materials, Git credentials and unpublished drafts.
+
+GitHub retention is temporary. Download the verified ZIP and its checksum and retain a private copy with a separate storage provider under your control, then test restoration. This is a complete archive of *published PDF research*, not the full 3,400-file website. The public-core recovery workflow archives a separate subset of the executive site. The remaining website source and static assets should also be preserved independently through an owner-controlled repository export and domain/DNS recovery records.
