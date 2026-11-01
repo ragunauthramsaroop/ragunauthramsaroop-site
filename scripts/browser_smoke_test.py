@@ -119,8 +119,9 @@ def main():
             page.goto(base + "/research-explorer/", wait_until="domcontentloaded")
             expected_papers = len(json.loads((ROOT / "data/research-papers.json").read_text(encoding="utf-8"))["papers"])
             expect(page.locator("#research-list button")).to_have_count(expected_papers)
+            first_paper_slug = json.loads((ROOT / "data/research-papers.json").read_text(encoding="utf-8"))["papers"][0]["slug"]
             expect(page.locator("#research-pdf")).to_have_attribute(
-                "href", "/research-library/guyana-2040/full-text.pdf"
+                "href", f"/research-library/{first_paper_slug}/full-text.pdf"
             )
             page.locator("#research-query").fill("Guyana")
             page.locator("#research-ask").click()
