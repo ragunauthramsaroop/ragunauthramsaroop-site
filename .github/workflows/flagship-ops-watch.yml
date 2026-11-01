@@ -47,6 +47,8 @@ jobs:
         run: python scripts/flagship_ops_watch.py --mode static
       - name: Validate portable executive record
         run: python scripts/verify_executive_record.py
+      - name: Verify claim graph, language access and private session boundaries
+        run: python scripts/verify_future_public_features.py
       - uses: actions/upload-artifact@v7
         if: always()
         with:
