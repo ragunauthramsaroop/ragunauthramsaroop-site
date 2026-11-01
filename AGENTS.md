@@ -34,3 +34,7 @@ The site uses a role-based review structure inspired by the MIT-licensed [agency
 For website content and design work, use this review order: Executive Brand Guardian -> Search Journey Architect -> Evidence and Search Editor -> implementation -> UI Finish-Gate Reviewer -> Site Performance Engineer -> Release Steward. The Flagship Orchestrator coordinates the handoffs and documents pass/fail evidence. Prioritize live visitor paths over adding pages or features.
 
 No role is permitted to send email, publish third-party social posts, exaggerate education or awards, change employment facts without evidence, or publish through production without required checks and an explicit code review. Never imply Oxford employment or academic appointment from an external profile. Preserve the distinction between organisation outcomes and personal responsibilities.
+
+## Continuous zero-cost SEO and intelligence sentinel
+
+Read docs/flagship-continuous-agents.md before altering scheduled checks. The read-only Github Actions watchers run every two hours (technical SEO) and six hours (official-source freshness), in addition to existing five-minute uptime and daily source/data checks. They create deduplicated issues and 14-day run artifacts. These are scheduled deterministic scripts, not persistent autonomous AI models; never publish or write to the public site during a monitor run.
