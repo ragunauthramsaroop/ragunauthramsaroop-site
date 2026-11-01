@@ -1,168 +1,168 @@
 {
-  "generated": "23 September 2026",
+  "generated": "01 November 2026",
   "algorithm": "SHA-256",
   "resources": [
     {
       "path": "/white-papers/beyond-employment/index.html",
-      "sha256": "01de468a2218542b1647e7a3107804d828f6282b4028e4cb3e262e2bca39f8ea",
-      "bytes": 21137,
-      "generated": "23 September 2026"
+      "sha256": "67efd5c16e3cef812fc2bdab3727acaa0451ac7ac032e5e5e81cd15f8c25703f",
+      "bytes": 21067,
+      "generated": "01 November 2026"
     },
     {
       "path": "/white-papers/carolyn-rodrigues-birkett-unsg/index.html",
-      "sha256": "612423f8974067d3b8717985c17ad836369e07d9f53d773350976db86e189f5f",
-      "bytes": 11411,
-      "generated": "23 September 2026"
+      "sha256": "97139bd5baf06fd1cacf725555e03825c7e66e91944d9573e810ce22fce6c7ab",
+      "bytes": 11373,
+      "generated": "01 November 2026"
     },
     {
       "path": "/white-papers/critical-minerals-energy-security/index.html",
-      "sha256": "ff48aec52159cb63df60f78b9e28fde32cae2ef0cee79670f964b7f9beb0e838",
-      "bytes": 13215,
-      "generated": "23 September 2026"
+      "sha256": "dd69d5a51da79d59f02c41d0d49cc123d4c1db548b9ad2856674c627d3c51b94",
+      "bytes": 13946,
+      "generated": "01 November 2026"
     },
     {
       "path": "/white-papers/fresh-water-next-strategic-commodity/index.html",
-      "sha256": "df5610bd9e9177eabad3561c9dc51b6db1a97f7700edcc71ac81ff475d2b0947",
-      "bytes": 14101,
-      "generated": "23 September 2026"
+      "sha256": "5a01be37b9b2bcdeb9583db1ce88c87f7408ca83c835702dc94b656d2145c795",
+      "bytes": 14063,
+      "generated": "01 November 2026"
     },
     {
       "path": "/white-papers/geopolitics-of-gold/index.html",
-      "sha256": "869f622c3934b9c801fdf06bf4b0e08af07e20c0d067f4bea4471c71839639d1",
-      "bytes": 11788,
-      "generated": "23 September 2026"
+      "sha256": "0d4ac0fd178d7ebcef5b1b0ea3668ac684d20b288e05beb13c933ec17ba2388a",
+      "bytes": 11750,
+      "generated": "01 November 2026"
     },
     {
       "path": "/white-papers/guyana-2040/index.html",
-      "sha256": "004479377401929a6b9e9cfe9c28ec68e3df4dfae5bb45befb557dd40defd960",
-      "bytes": 21270,
-      "generated": "23 September 2026"
+      "sha256": "b1f45f7d5fd2f12d58f5375a07ea4e714dceeb88b8a4788c46246a7b3e6c0f99",
+      "bytes": 21975,
+      "generated": "01 November 2026"
     },
     {
       "path": "/white-papers/guyana-development-bank/index.html",
-      "sha256": "d208979476c1f6f02e04580012174924826837109eb4867fe0b1a66f8deddc7e",
-      "bytes": 12319,
-      "generated": "23 September 2026"
+      "sha256": "5e86d3a7d80127e0d321a2c06d6f553b89e3d5574676e14000fe13175963480d",
+      "bytes": 12281,
+      "generated": "01 November 2026"
     },
     {
       "path": "/white-papers/guyana-economy-2030/index.html",
-      "sha256": "5c156d9c3806884338c18797b41ce91e2b70309f5ad312592e1ae350105b4a8c",
-      "bytes": 11404,
-      "generated": "23 September 2026"
+      "sha256": "462e6aed144e724551f8c700b2c35436657726b9a218b66362298691b481cd48",
+      "bytes": 12055,
+      "generated": "01 November 2026"
     },
     {
       "path": "/white-papers/guyana-power-demand-2030/index.html",
-      "sha256": "41091a428a0c88c44993514ae707b7b22ef257cda326470feda73e8b1c46e928",
-      "bytes": 12459,
-      "generated": "23 September 2026"
+      "sha256": "6abe553aedbbf92e939d584186e8838f9dfc806b471056e967dee7e747448972",
+      "bytes": 13014,
+      "generated": "01 November 2026"
     },
     {
       "path": "/white-papers/karpowership-guyana-2035/index.html",
-      "sha256": "7861f7d34fdd1b34e4dd0ed68a6f7de42130d96da2e9f508942226d27a4b4073",
-      "bytes": 11783,
-      "generated": "23 September 2026"
+      "sha256": "2513626683fb52ccb9088ae2ec2dbaaf30e0fa2a74f097e80a703f6f305b453f",
+      "bytes": 11745,
+      "generated": "01 November 2026"
     },
     {
       "path": "/white-papers/new-geography-globalization/index.html",
-      "sha256": "27d0fa1aac7a7283cd8052e57bbd5803dffa90a5f4e2b328271f39c17e68e1de",
-      "bytes": 11688,
-      "generated": "23 September 2026"
+      "sha256": "e077733acb2875dfba9780027fd297196ca7a83efa5826016fd2736175efcade",
+      "bytes": 12385,
+      "generated": "01 November 2026"
     },
     {
       "path": "/white-papers/sovereign-ai/index.html",
-      "sha256": "7bfa8846eeffcd680b0664d90d1b037453fb27a8b2a85bad70f549fb451ec374",
-      "bytes": 11981,
-      "generated": "23 September 2026"
+      "sha256": "99b7e33b1991d8d8c4711702bf7bdb5e79a7d66bffaa2bdee657b1db0979cdd5",
+      "bytes": 11943,
+      "generated": "01 November 2026"
     },
     {
       "path": "/white-papers/trust-deficit/index.html",
-      "sha256": "be7d35545b4a4b59053b1ca5ff6fbe9e08c5ec657cd33eade05244605511133d",
-      "bytes": 11950,
-      "generated": "23 September 2026"
+      "sha256": "ae72c14894565d362eefa52a4c92969894ba3d2872ec250d21762b10eb99425e",
+      "bytes": 11912,
+      "generated": "01 November 2026"
     },
     {
       "path": "/white-papers/water-security-economic-security/index.html",
-      "sha256": "5681b071dbf67c249b9c632914527be1d24682dd2b36744acf7e43111505dbea",
-      "bytes": 11655,
-      "generated": "23 September 2026"
+      "sha256": "b3ba1e1cacfcc661685d77649254611bafe85bc76cdd444b754ae7643f9d31e2",
+      "bytes": 12364,
+      "generated": "01 November 2026"
     },
     {
       "path": "/methodology/index.html",
-      "sha256": "27061bdbbe45245685518677e8a9300bff2afe98ceac5d6c8347dd0b9c7bc6e7",
+      "sha256": "0e7e38ab1235b9f546f18033746901d6f646244d1ae121a499ee5a4dd9e16cc0",
       "bytes": 21026,
-      "generated": "23 September 2026"
+      "generated": "01 November 2026"
     },
     {
       "path": "/data/tool-catalog.csv",
-      "sha256": "9ae7e5db649edd8bd94a593b01e2a9149249f72e064a2aa642006bb42f01c4d5",
-      "bytes": 6641,
-      "generated": "23 September 2026"
+      "sha256": "f19e2bd8aff72ca70d1bb9767e372aa094d5bb65d011390c6bc209159177f209",
+      "bytes": 6614,
+      "generated": "01 November 2026"
     },
     {
       "path": "/data/tool-assumption-register.csv",
-      "sha256": "cf0dbe04b83caac6d4ba897cec3f1426f60bd36a1fda2950a5edb2f3fbfe2b3a",
-      "bytes": 909,
-      "generated": "23 September 2026"
+      "sha256": "3e282278b11094111ed4130e7978426e299538d0afad21a2f9c5571c30f8dcfc",
+      "bytes": 8980,
+      "generated": "01 November 2026"
     },
     {
       "path": "/data/methodology-register.csv",
-      "sha256": "438f848b1fae803da4dee5bfdd4ea094b73a252b445084bfad60f54684a35040",
-      "bytes": 3243,
-      "generated": "23 September 2026"
+      "sha256": "5b9aab39efd94f7b29c53aedefc424ccf33f3357f4fe6f493329ec0ad74d022a",
+      "bytes": 3216,
+      "generated": "01 November 2026"
     },
     {
       "path": "/data/guyana-live.json",
-      "sha256": "1d0b02f0bafabe6d000db240813abd663fbb488dea89c233a4594cc4471c9037",
-      "bytes": 986,
-      "generated": "23 September 2026"
+      "sha256": "8dd9d1dbf1bb6997cd534021fae7d5c949201daba90922bf6482bbe973cefd4c",
+      "bytes": 1907,
+      "generated": "01 November 2026"
     },
     {
       "path": "/data/source-sources.json",
-      "sha256": "45a290c7736616e6add48410931562f5ee514b4cf84557af2f72f6e60eff1af4",
-      "bytes": 1070,
-      "generated": "23 September 2026"
+      "sha256": "d468fd976e00d1b4af76e546b6d05e721df4630d5cade41335b1cad2b0f8db60",
+      "bytes": 2416,
+      "generated": "01 November 2026"
     },
     {
       "path": "/assets/resource-index.json",
-      "sha256": "ea964bdd5be1bf4cb08b116355d1b46292e8df4001cdb896b362340b0263a419",
-      "bytes": 21608,
-      "generated": "23 September 2026"
+      "sha256": "ee9f68d1a2fc78584613564558f7773ea579a9bed2d1f1c577a23fb011166e32",
+      "bytes": 24434,
+      "generated": "01 November 2026"
     },
     {
       "path": "/assets/search-index.json",
-      "sha256": "4ccfe6ba9bed66f1e6af26d30b67e138761bbd2e7c6c84cff7f3c9f24c8c2316",
-      "bytes": 344167,
-      "generated": "23 September 2026"
+      "sha256": "4dc2d0319da0729700ad016072b6f696448c05df8da234280d354843be46553b",
+      "bytes": 329551,
+      "generated": "01 November 2026"
     },
     {
       "path": "/api/v1/capabilities.json",
-      "sha256": "bdbb62521991508f4a99be749ae84887f9fa6c8b4ea8415c8dc027079339142f",
-      "bytes": 876,
-      "generated": "23 September 2026"
+      "sha256": "afc13ba9237c0a2a0e3c0aa2eb325b10d72886772e1dcb423788a96ab35ab00a",
+      "bytes": 838,
+      "generated": "01 November 2026"
     },
     {
       "path": "/api/v1/catalog.json",
-      "sha256": "0aa51a82934f7c3a468cf64faedf0785d67ded5252160a73dfbdf08f3d00a038",
-      "bytes": 9987,
-      "generated": "23 September 2026"
+      "sha256": "a68135d304a545cc90413aacaf1e48e6dfdf9fb53415d1b8dbf9e96b1b586239",
+      "bytes": 10315,
+      "generated": "01 November 2026"
     },
     {
       "path": "/api/v1/guyana.json",
-      "sha256": "1d0b02f0bafabe6d000db240813abd663fbb488dea89c233a4594cc4471c9037",
-      "bytes": 986,
-      "generated": "23 September 2026"
+      "sha256": "8dd9d1dbf1bb6997cd534021fae7d5c949201daba90922bf6482bbe973cefd4c",
+      "bytes": 1907,
+      "generated": "01 November 2026"
     },
     {
       "path": "/api/v1/methodology.json",
-      "sha256": "76f0c7f46d1c33de0ca6f95f23d8d081e56ef42a41c91c99d7bf65f42b7fed6b",
-      "bytes": 5943,
-      "generated": "23 September 2026"
+      "sha256": "a258739a4e9e8bffd55e3903c5c38dea4f34829f3cc6a4f0d10262d1bbb75b63",
+      "bytes": 5783,
+      "generated": "01 November 2026"
     },
     {
       "path": "/api/v1/openapi.json",
-      "sha256": "af52cfcefc3faef815cfdcffb435af658ebbbb4a8553471c2f259b44f8ce704e",
-      "bytes": 947,
-      "generated": "23 September 2026"
+      "sha256": "0f714debb6dbe33a48275778d3f3635705b855d46be849b548002dde96c03fe3",
+      "bytes": 1209,
+      "generated": "01 November 2026"
     },
     {
       "path": "/api/v1/research.json",
@@ -172,9 +172,45 @@
     },
     {
       "path": "/api/v1/sources.json",
-      "sha256": "2f52e8b0d2fbbe80efe0d131788e767b2bee656fd64b0e7ec3079379a5950411",
-      "bytes": 1219,
-      "generated": "23 September 2026"
+      "sha256": "ae18e5b670c82fcee46b3e5c143ae646933c005f873016a845868148163a0e3f",
+      "bytes": 5412,
+      "generated": "01 November 2026"
+    },
+    {
+      "path": "/index.html",
+      "sha256": "fce6da55882ae7c13aa1c26d2b5e543494e9e61991cf11184fce5bb18ae7b8ec",
+      "bytes": 19066,
+      "generated": "01 November 2026"
+    },
+    {
+      "path": "/resume.html",
+      "sha256": "00425dfb2ac43a8767c8d1fede79a85f7c6b133b89634a82ce7529ff2ced3e0f",
+      "bytes": 34367,
+      "generated": "01 November 2026"
+    },
+    {
+      "path": "/data/public-profile.json",
+      "sha256": "0607783b55986acd92ed59a5eea52af4f3af227f9095bdeb2d7bdff483316588",
+      "bytes": 1707,
+      "generated": "01 November 2026"
+    },
+    {
+      "path": "/data/source-monitor.json",
+      "sha256": "ae18e5b670c82fcee46b3e5c143ae646933c005f873016a845868148163a0e3f",
+      "bytes": 5412,
+      "generated": "01 November 2026"
+    },
+    {
+      "path": "/public-record/index.html",
+      "sha256": "c1956f50ebd8a67e1b8d193bee1cc2eed390b35477add7ec6eebcfd049f14fc0",
+      "bytes": 7129,
+      "generated": "01 November 2026"
+    },
+    {
+      "path": "/api/v1/executive-record.json",
+      "sha256": "e668d96e65036981aa81df236426444b19036a152c0d13aec8ccb806cdd238ea",
+      "bytes": 5551,
+      "generated": "01 November 2026"
     }
   ]
 }
