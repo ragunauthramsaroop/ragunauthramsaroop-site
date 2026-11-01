@@ -1,0 +1,67 @@
+name: Flagship outbound-link integrity (Lychee)
+
+on:
+  schedule:
+    - cron: '11 4 * * 0'
+  workflow_dispatch:
+  pull_request:
+    paths:
+      - '.github/workflows/flagship-outbound-links.yml'
+      - 'llms.txt'
+      - 'README.md'
+
+permissions:
+  contents: read
+
+concurrency:
+  group: flagship-link-intelligence-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  check-public-references:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          persist-credentials: false
+      - name: Audit selected external professional and research links
+        id: lychee
+        uses: lycheeverse/lychee-action@e7477775783ea5526144ba13e8db5eec57747ce8
+        with:
+          lycheeVersion: v0.24.2
+          fail: false
+          failIfEmpty: true
+          jobSummary: true
+          format: markdown
+          output: lychee/flagship-outbound-links.md
+          args: >-
+            --root-dir "$(pwd)"
+            --no-progress
+            --max-concurrency 3
+            --max-retries 0
+            --timeout 15
+            --scheme https
+            './index.html'
+            './resume.html'
+            './executive-profile/index.html'
+            './recognition-media/index.html'
+            './recruiter-mode/index.html'
+            './research-library/index.html'
+            './llms.txt'
+            './README.md'
+      - name: Record the non-blocking link-check result
+        if: always()
+        shell: bash
+        env:
+          EXIT_CODE: ${{ steps.lychee.outputs.exit_code }}
+        run: |
+          printf 'Lychee exit code: %s\n' "$EXIT_CODE" >> "$GITHUB_STEP_SUMMARY"
+          printf 'External links can return transient 403/429 statuses. Review the artifact before changing content or raising an incident.\n' >> "$GITHUB_STEP_SUMMARY"
+      - uses: actions/upload-artifact@v7
+        if: always()
+        with:
+          name: flagship-weekly-link-audit
+          path: lychee/flagship-outbound-links.md
+          if-no-files-found: warn
+          retention-days: 30
