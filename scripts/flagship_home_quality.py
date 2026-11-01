@@ -77,3 +77,20 @@ if additional:
     for error in additional: print("FAIL:",error)
     raise SystemExit(1)
 print("PASS: director start year, direct ownership, dated appearance and independently sourced company context")
+
+# Server-rendered export and client-side Next.js must agree after hydration.
+for bundle in (
+    "_next/static/chunks/pages/executive-profile-094a2ea3b0baded2.js",
+    "_next/static/chunks/pages/2126/timeline-fdebacbbe2a54c41.js",
+):
+    generated=(ROOT / bundle).read_text(encoding="utf-8")
+    if "2026–Present" in generated or "2025–Present" not in generated:
+        raise SystemExit(f"FAIL: prebuilt client bundle has stale director appointment: {bundle}")
+    if "Zijin Gold International" not in generated:
+        raise SystemExit(f"FAIL: prebuilt client bundle lacks current parent: {bundle}")
+recognition_bundle=(ROOT/"_next/static/chunks/pages/recognition-media-2ff639f29bacfe27.js").read_text(encoding="utf-8")
+if "CREF 2026 · Conference programme" not in recognition_bundle:
+    raise SystemExit("FAIL: prebuilt recognition page needs dated programme correction")
+if (ROOT/"service-worker.js").read_text(encoding="utf-8").count('const V="rr-public-v15"') != 1:
+    raise SystemExit("FAIL: service worker did not advance for refreshed cached Next.js chunks")
+print("PASS: generated client bundles and cache version aligned with published career record")
