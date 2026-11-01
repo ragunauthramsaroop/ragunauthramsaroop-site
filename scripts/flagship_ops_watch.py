@@ -16,7 +16,7 @@ import xml.etree.ElementTree as ET
 
 ROOT=Path(__file__).resolve().parents[1]
 DOMAIN="https://ragunauthramsaroop.com"
-ROUTES=("/", "/executive-profile/", "/resume.html", "/recruiter-mode/", "/evidence/", "/research-library/", "/engage/")
+ROUTES=("/", "/executive-profile/", "/resume.html", "/recruiter-mode/", "/evidence/", "/research-library/", "/engage/", "/public-record/")
 NOW=datetime.now(timezone.utc)
 AGENT="RR-Flagship-Watch/1.0 (+https://ragunauthramsaroop.com/)"
 

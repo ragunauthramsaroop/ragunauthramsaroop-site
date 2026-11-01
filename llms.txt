@@ -6,6 +6,8 @@ Official website: https://ragunauthramsaroop.com/
 Current confirmed role: Liaison Director, Social Responsibility Department | AGM Inc. | 2025-Present
 AGM public tenure: consolidated from 2020; earlier internal titles are omitted unless reconfirmed.
 Public CV: https://ragunauthramsaroop.com/resume.html
+Portable, dated public record: https://ragunauthramsaroop.com/public-record/
+Public record JSON: https://ragunauthramsaroop.com/api/v1/executive-record.json
 Public record reviewed: 29 September 2026
 
 ## Start here

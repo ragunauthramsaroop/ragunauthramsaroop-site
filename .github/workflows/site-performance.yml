@@ -88,6 +88,8 @@ jobs:
         run: python scripts/site_performance_guard.py
       - name: Verify flagship executive audience pathways
         run: python scripts/flagship_home_quality.py
+      - name: Verify portable public executive record
+        run: python scripts/verify_executive_record.py
       - name: Check browser script syntax
         run: |
           node --check service-worker.js

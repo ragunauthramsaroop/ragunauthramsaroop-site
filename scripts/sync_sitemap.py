@@ -13,6 +13,7 @@ xml=path.read_text(encoding="utf-8")
 required={
     "/":0.95,
     "/resume.html":0.90,
+    "/public-record/":0.85,
     "/executive-profile/":0.95,
     "/leadership/":0.80,
     "/recognition-media/":0.85,

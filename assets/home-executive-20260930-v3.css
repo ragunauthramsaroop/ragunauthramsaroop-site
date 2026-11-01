@@ -412,3 +412,7 @@ img{display:block;max-width:100%}
 .mandate-stats article>a{margin-top:auto;color:var(--forest);font-size:12px;font-weight:750;text-underline-offset:3px}
 .context-note{margin:16px 0 0;color:var(--muted);font-size:11px;line-height:1.6}
 @media(max-width:820px){.mandate-context{padding:52px 0 58px}.mandate-context .section-heading{display:block}.mandate-context .section-heading .text-link{margin-top:15px}.mandate-stats{grid-template-columns:1fr}.mandate-stats article{padding:22px 23px}.mandate-stats article>p{margin:9px 0 14px}}
+
+/* Portable executive record: a small trust affordance, not a new homepage application. */
+.record-note{margin:24px 0 0;padding:19px 22px;border:1px solid var(--line);border-radius:12px;background:var(--surface);font-size:13px;line-height:1.8;color:var(--ink-soft)}
+.record-note span{display:inline-block;margin-right:8px;color:var(--forest);font-weight:800}.record-note a{color:var(--forest);font-weight:800;text-underline-offset:3px}

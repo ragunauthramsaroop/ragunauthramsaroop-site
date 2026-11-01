@@ -1,0 +1,130 @@
+{
+  "format": "RR-Executive-Public-Record",
+  "schemaVersion": "1.0.0",
+  "canonicalUrl": "https://ragunauthramsaroop.com/public-record/",
+  "issuedAt": "2026-11-01",
+  "publisher": "Ragunauth Ramsaroop",
+  "publisherType": "self-published",
+  "status": "Public first-party statement with attributed external references; not an independently issued or cryptographically signed credential",
+  "subject": {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "@id": "https://ragunauthramsaroop.com/#person",
+    "name": "Ragunauth Ramsaroop",
+    "alternateName": "Randy Ramsaroop",
+    "url": "https://ragunauthramsaroop.com/",
+    "jobTitle": "Liaison Director, Social Responsibility Department",
+    "worksFor": {
+      "@type": "Organization",
+      "name": "AGM Inc."
+    },
+    "sameAs": [
+      "https://www.linkedin.com/in/ragunauth-ramsaroop/",
+      "https://leadership.climate.ox.ac.uk/leaders/ragunauth-ramsaroop/"
+    ]
+  },
+  "claims": [
+    {
+      "id": "professional-role",
+      "title": "Current professional appointment",
+      "value": "Liaison Director, Social Responsibility Department, AGM Inc.",
+      "effectiveFrom": "2025",
+      "classification": "first_party_career_record",
+      "scope": "Personal professional role",
+      "evidence": [
+        {
+          "label": "Public executive CV",
+          "url": "https://ragunauthramsaroop.com/resume.html",
+          "type": "self_published"
+        },
+        {
+          "label": "External Oxford-domain professional profile",
+          "url": "https://leadership.climate.ox.ac.uk/leaders/ragunauth-ramsaroop/",
+          "type": "external_profile",
+          "note": "Supports current professional positioning, not independently the 2025 appointment date"
+        }
+      ]
+    },
+    {
+      "id": "professional-tenure",
+      "title": "AGM Inc. leadership tenure",
+      "value": "Employment tenure at AGM Inc. from 2020, with progressive responsibilities",
+      "effectiveFrom": "2020",
+      "classification": "first_party_career_record",
+      "scope": "Personal career chronology",
+      "evidence": [
+        {
+          "label": "Leadership history",
+          "url": "https://ragunauthramsaroop.com/leadership/",
+          "type": "self_published"
+        }
+      ]
+    },
+    {
+      "id": "management-development",
+      "title": "Group-level management development",
+      "value": "Selected for Zijin group-level headquarters training and Management Reserve Program during 2023",
+      "effectiveFrom": "2023",
+      "classification": "self_reported_professional_development",
+      "scope": "Personal career development",
+      "evidence": [
+        {
+          "label": "Recognition and development",
+          "url": "https://ragunauthramsaroop.com/recognition-media/",
+          "type": "self_published"
+        }
+      ]
+    },
+    {
+      "id": "cref-programme",
+      "title": "CREF 2026 conference programme listing",
+      "value": "Listed in the October 16, 2026 conference programme for the Aurora Gold Mine hybrid-power case study",
+      "effectiveFrom": "2026-10-16",
+      "classification": "external_event_programme",
+      "scope": "Programme-listed professional engagement, not independent evidence of attendance",
+      "evidence": [
+        {
+          "label": "Organiser agenda",
+          "url": "https://newenergyevents.com/cref/agenda/",
+          "type": "event_organiser"
+        }
+      ]
+    },
+    {
+      "id": "solar-context",
+      "title": "Aurora industrial solar operating context",
+      "value": "49.4 MW of installed solar generating capacity reported April 2026",
+      "effectiveFrom": "2026-04",
+      "classification": "company_reported_operating_context",
+      "scope": "AGM Inc. organisational context, not an individual achievement",
+      "evidence": [
+        {
+          "label": "Zijin Gold International company news",
+          "url": "https://en.zijingoldintl.com/news/companynews-detail-410.htm",
+          "type": "company_source"
+        }
+      ]
+    }
+  ],
+  "interpretationRules": [
+    "Self-published career dates remain first-party statements unless corroborated by a relevant employer-issued record.",
+    "A separately published professional profile does not establish an academic appointment, a degree issuer relationship or independent verification of all career dates.",
+    "Conference programme listings are not equivalent to proof of attendance or delivery.",
+    "Organisational operating metrics are not attributed as personal accomplishments.",
+    "Hashes on files establish byte equality against a dated reference, not identity or factual validity. An unsigned JSON record is not a W3C Verifiable Credential."
+  ],
+  "references": {
+    "executiveProfile": "https://ragunauthramsaroop.com/executive-profile/",
+    "career": "https://ragunauthramsaroop.com/resume.html",
+    "evidence": "https://ragunauthramsaroop.com/evidence/",
+    "provenance": "https://ragunauthramsaroop.com/provenance/",
+    "research": "https://ragunauthramsaroop.com/research-library/",
+    "contact": "https://ragunauthramsaroop.com/engage/"
+  },
+  "maintenance": {
+    "latestReview": "2026-11-01",
+    "updatePolicy": "Explicitly revise the applicable claim, evidence link and date when the record changes. Retain older revisions in the public repository history.",
+    "repository": "https://github.com/ragunauthramsaroop/ragunauthramsaroop-site",
+    "archiveNote": "Repository history records changes but is not independently timestamped certification or third-party notarization."
+  }
+}

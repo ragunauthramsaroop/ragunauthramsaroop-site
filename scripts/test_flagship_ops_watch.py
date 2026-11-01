@@ -24,7 +24,7 @@ class WatchTests(unittest.TestCase):
         src='<title>Ragunauth Ramsaroop</title><meta name="description" content="'+("A"*65)+'"><link rel="canonical" href="/"><meta name="robots" content="noindex"><h1>A</h1>'
         self.assertIn("unexpected noindex",watch.inspect_page(src,watch.DOMAIN+"/"))
     def test_seven_flagship_routes(self):
-        self.assertEqual(len(watch.ROUTES),7)
+        self.assertEqual(len(watch.ROUTES),8)
     def test_static_watch_with_real_repo(self):
         report=[]
         watch.static_watch(watch.ROOT,lambda name,ok,msg:report.append((name,ok,msg)))

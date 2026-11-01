@@ -44,6 +44,12 @@
       "get": {
         "summary": "Platform capability discovery"
       }
+    },
+    "/executive-record.json": {
+      "get": {
+        "summary": "Self-published, source-scoped portable executive record",
+        "description": "Versioned first-party career record with external references and explicit attribution rules; not an independently issued verifiable credential."
+      }
     }
   }
 }
