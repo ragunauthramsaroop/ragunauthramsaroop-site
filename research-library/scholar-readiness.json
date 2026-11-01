@@ -1,10 +1,30 @@
 {
-  "checked_at": "2026-10-29",
+  "checked_at": "2026-11-01",
   "google_scholar_submission": "Automatic crawler only; no direct inclusion guarantee.",
   "scholar_indexing": "not independently verified",
   "robots": "public crawler allowed",
   "sitemap": "https://ragunauthramsaroop.com/sitemap.xml",
   "papers": [
+    {
+      "slug": "building-for-generations-guyana",
+      "pdf_bytes": 501601,
+      "source_sha256": "4853193bfaf3499ec923d2fd69c9cbaddaecc6b4f0dba8f5755b4b082c08b294",
+      "abstract_chars": 403,
+      "metadata": "title, author, publication date and same-directory PDF",
+      "crawl_ready": true,
+      "scholar_size_limit_exceeded": false,
+      "original_pdf_unchanged": true
+    },
+    {
+      "slug": "guyana-biodiversity-investment-readiness",
+      "pdf_bytes": 248486,
+      "source_sha256": "fcd423e929e5ee006b6502996e7c613ef5ad935574c314f1335eabd82805e893",
+      "abstract_chars": 407,
+      "metadata": "title, author, publication date and same-directory PDF",
+      "crawl_ready": true,
+      "scholar_size_limit_exceeded": false,
+      "original_pdf_unchanged": true
+    },
     {
       "slug": "guyana-2040",
       "pdf_bytes": 772942,
