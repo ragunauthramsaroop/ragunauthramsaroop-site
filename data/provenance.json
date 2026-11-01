@@ -130,8 +130,8 @@
     },
     {
       "path": "/assets/search-index.json",
-      "sha256": "2ffdf32488d633aed1ad68dc1328367730a815bd63932ca41d35cde029f8e3fe",
-      "bytes": 337995,
+      "sha256": "6b4ecaa9c3f7dfe13697c72dcc629b5960e33ac66462abd2cda9f436c466cd55",
+      "bytes": 339713,
       "generated": "01 November 2026"
     },
     {
@@ -160,8 +160,8 @@
     },
     {
       "path": "/api/v1/openapi.json",
-      "sha256": "918027ae061c7574de2a189b0df251ca75032aa9af93d989c5b07370b26642ed",
-      "bytes": 1511,
+      "sha256": "65fff95d5e5e034994d38f8301a8d6d9a1825ac1cd6f002dbd73abb9220064c9",
+      "bytes": 1820,
       "generated": "01 November 2026"
     },
     {
@@ -202,14 +202,44 @@
     },
     {
       "path": "/public-record/index.html",
-      "sha256": "49bd3d66f26fc9334bfd6e4205812d12b8eab5e5edf00875ac31f84dc5dfcc0c",
-      "bytes": 7707,
+      "sha256": "85b47f577c1f8b7105a49b41c43e1200be7bc058ff94c2c5f41ea2029684a92f",
+      "bytes": 7768,
       "generated": "01 November 2026"
     },
     {
       "path": "/api/v1/executive-record.json",
       "sha256": "e668d96e65036981aa81df236426444b19036a152c0d13aec8ccb806cdd238ea",
       "bytes": 5551,
+      "generated": "01 November 2026"
+    },
+    {
+      "path": "/api/v1/claim-graph.json",
+      "sha256": "cc4563ffc824dc62dae5312d378e735d2828853b10a626b81fd21be200d3716f",
+      "bytes": 8270,
+      "generated": "01 November 2026"
+    },
+    {
+      "path": "/claim-graph/index.html",
+      "sha256": "3aab978ba20610671ebb49c44bb5da70c04579d614b3484f9d38e9037e1ad1b3",
+      "bytes": 5742,
+      "generated": "01 November 2026"
+    },
+    {
+      "path": "/executive-private-room/index.html",
+      "sha256": "32a95b882e909fb7f0b07845a7ae172d958a77cd90857f341e7a4459e369142c",
+      "bytes": 6095,
+      "generated": "01 November 2026"
+    },
+    {
+      "path": "/credential-readiness/index.html",
+      "sha256": "b2b479e12b5794c12b3069e5424e20da933748aef9827c9cd75db0680244584c",
+      "bytes": 3343,
+      "generated": "01 November 2026"
+    },
+    {
+      "path": "/api/v1/credential-status.json",
+      "sha256": "23bf64114287166e6c234d66b58f274cff328cb8399a24ebe6a8258e62a2455b",
+      "bytes": 1232,
       "generated": "01 November 2026"
     }
   ]
