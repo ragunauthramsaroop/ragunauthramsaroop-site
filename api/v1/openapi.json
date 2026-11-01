@@ -56,6 +56,12 @@
         "summary": "Self-published explicit executive claim-to-evidence graph",
         "description": "Stable nodes and source links derived from the public record, with attribution limits; no credential verification or inferred endorsements."
       }
+    },
+    "/credential-status.json": {
+      "get": {
+        "summary": "Issuer credential registration status, not a credential",
+        "description": "Transparent first-party availability status. No employer, education or recognition issuer-signed digital credentials are currently registered."
+      }
     }
   }
 }

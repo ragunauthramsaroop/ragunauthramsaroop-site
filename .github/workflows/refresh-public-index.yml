@@ -2,7 +2,7 @@ name: Refresh public indexes
 on:
   push:
     branches: [main]
-    paths: ['**/*.html','data/public-profile.json','scripts/refresh_provenance.py','.github/workflows/refresh-public-index.yml']
+    paths: ['**/*.html','data/public-profile.json','api/v1/executive-record.json','scripts/build_executive_claim_graph.py','scripts/refresh_provenance.py','.github/workflows/refresh-public-index.yml']
 permissions:
   contents: write
 concurrency:
@@ -21,12 +21,16 @@ jobs:
       - run: python scripts/compact_search_payload.py
       - run: npm run smart:index
       - run: python scripts/sync_sitemap.py
+      - name: Rebuild explicit executive claim graph from public record
+        run: |
+          python scripts/build_executive_claim_graph.py --write
+          python scripts/build_executive_claim_graph.py --check
       - name: Rebuild public SHA-256 provenance registry after indexes
         run: |
           python scripts/refresh_provenance.py --refresh
           python scripts/refresh_provenance.py --check
       - run: |
-          git add assets/search-index.json assets/semantic-index.json pagefind sitemap.xml data/provenance.json api/v1/provenance.json
+          git add assets/search-index.json assets/semantic-index.json pagefind sitemap.xml api/v1/claim-graph.json data/provenance.json api/v1/provenance.json
           git diff --cached --quiet && exit 0
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"

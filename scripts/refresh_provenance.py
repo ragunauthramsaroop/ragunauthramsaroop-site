@@ -23,6 +23,11 @@ MUST_TRACK=(
     "/data/source-monitor.json",
     "/public-record/index.html",
     "/api/v1/executive-record.json",
+    "/api/v1/claim-graph.json",
+    "/claim-graph/index.html",
+    "/executive-private-room/index.html",
+    "/credential-readiness/index.html",
+    "/api/v1/credential-status.json",
 )
 
 def scan(root:Path):

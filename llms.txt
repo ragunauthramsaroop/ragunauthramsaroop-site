@@ -88,3 +88,6 @@ Source-scoped executive claim graph: https://ragunauthramsaroop.com/claim-graph/
 Machine-readable claim graph: https://ragunauthramsaroop.com/api/v1/claim-graph.json
 Private in-browser briefing workspace: https://ragunauthramsaroop.com/executive-private-room/
 Executive record language summaries: https://ragunauthramsaroop.com/public-record/es/ ; https://ragunauthramsaroop.com/public-record/pt/ ; https://ragunauthramsaroop.com/public-record/fr/
+
+Issuer credential status (none registered): https://ragunauthramsaroop.com/credential-readiness/
+Credential status JSON: https://ragunauthramsaroop.com/api/v1/credential-status.json

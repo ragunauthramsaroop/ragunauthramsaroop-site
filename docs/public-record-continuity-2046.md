@@ -32,3 +32,7 @@ The 2026-09-23 provenance registry contains hashes for files that have since cha
 ## Provenance auto-maintenance added 1 November 2026
 
 The historical hash registry is now rebuilt deterministically from file bytes after the existing public search-index build and after daily official-source snapshot refresh. `scripts/refresh_provenance.py --refresh` rebuilds hashes and adds the identity/record pages; `--check` performs a read-only consistency test. Both `data/provenance.json` and `api/v1/provenance.json` are kept identical. The two existing publishing workflows use one serialized GitHub concurrency group and bounded push retries to reduce conflicts. A matching SHA-256 value establishes byte-level integrity against a public snapshot, not third-party authorship or factual accuracy.
+
+## Long-term operationalization
+
+The executive graph is rebuilt deterministically from the canonical public claim record and checked by CI. A monthly GitHub Actions workflow creates a verified public-only core recovery ZIP, with a SHA-256 manifest and a time-limited 90-day artifact. See docs/public-recovery-runbook.md for downloading an independent copy, verification and restoration steps. Issuer status remains explicit at /credential-readiness/: no independently signed credentials registered. Neither self-published records nor hashes represent institutional signatures.

@@ -92,6 +92,10 @@ jobs:
         run: python scripts/verify_executive_record.py
       - name: Verify future public claim graph, language pages and private briefing
         run: python scripts/verify_future_public_features.py
+      - name: Verify reproducible executive graph
+        run: |
+          python -m unittest discover -s scripts -p 'test_build_executive_claim_graph.py'
+          python scripts/build_executive_claim_graph.py --check
       - name: Verify reproducible provenance recalculation
         run: |
           python -m unittest discover -s scripts -p 'test_refresh_provenance.py'
