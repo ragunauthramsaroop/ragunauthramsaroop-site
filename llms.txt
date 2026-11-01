@@ -91,3 +91,7 @@ Executive record language summaries: https://ragunauthramsaroop.com/public-recor
 
 Issuer credential status (none registered): https://ragunauthramsaroop.com/credential-readiness/
 Credential status JSON: https://ragunauthramsaroop.com/api/v1/credential-status.json
+
+## New independent PDFs published 1 November 2026
+- Guyana's Next Natural Capital Frontier: From Biodiversity Wealth to Global Conservation Finance: https://ragunauthramsaroop.com/research-library/guyana-biodiversity-investment-readiness/
+- Building for Generations: The King's Foundation and the Government of Guyana: https://ragunauthramsaroop.com/research-library/building-for-generations-guyana/

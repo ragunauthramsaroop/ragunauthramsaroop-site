@@ -1,7 +1,19 @@
 {
-  "updated": "2026-10-29",
+  "updated": "2026-11-01",
   "disclosure": "Original documents belong to the published research library. Page extracts are created from publicly available PDFs and have been truncated for search preview.",
   "papers": [
+    {
+      "slug": "building-for-generations-guyana",
+      "title": "Building for Generations: The King's Foundation and the Government of Guyana",
+      "pdf": "/research-library/building-for-generations-guyana/full-text.pdf",
+      "description": "An independently authored 35-page documentary white paper examining the published collaboration between The King's Foundation and the Government of Guyana, including the Georgetown Urban Framework Plan, urban heritage, sustainable development, nature, communities and seven announced demonstration initiatives. The report distinguishes announcements and works reported underway from verified completion."
+    },
+    {
+      "slug": "guyana-biodiversity-investment-readiness",
+      "title": "Guyana's Next Natural Capital Frontier: From Biodiversity Wealth to Global Conservation Finance",
+      "pdf": "/research-library/guyana-biodiversity-investment-readiness/full-text.pdf",
+      "description": "A 62-page independent investment and policy white paper proposing a Guyana Biodiversity Investment Readiness Framework. It examines ecological baselines, Indigenous and local rights, buyer validation, voluntary non-offset nature finance, project governance, independent assurance and a phased conservation-investment pipeline. Proposed models are author analysis, not government policy or a credit offering."
+    },
     {
       "slug": "guyana-2040",
       "title": "Guyana 2040: Strategic Development",
