@@ -124,14 +124,14 @@
     },
     {
       "path": "/assets/resource-index.json",
-      "sha256": "ee9f68d1a2fc78584613564558f7773ea579a9bed2d1f1c577a23fb011166e32",
-      "bytes": 24434,
+      "sha256": "d77a5a949da37d1bf4e68d7ee0ce15b2b3f117a418a0e860b44889bd412ce58c",
+      "bytes": 25143,
       "generated": "01 November 2026"
     },
     {
       "path": "/assets/search-index.json",
-      "sha256": "6b4ecaa9c3f7dfe13697c72dcc629b5960e33ac66462abd2cda9f436c466cd55",
-      "bytes": 339713,
+      "sha256": "96d115cfb4c8c9d098c88a37c2f792ad12851a7ed9b634b7ec52b01307c8a1b1",
+      "bytes": 343971,
       "generated": "01 November 2026"
     },
     {
