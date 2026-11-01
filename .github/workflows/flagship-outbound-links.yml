@@ -36,6 +36,7 @@ jobs:
           format: markdown
           output: lychee/flagship-outbound-links.md
           args: >-
+            --root-dir "$(pwd)"
             --no-progress
             --max-concurrency 3
             --max-retries 0
