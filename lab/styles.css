@@ -9,3 +9,6 @@
 
 /* Tab close controls are interactive. Give each a full finger-size target. */
 @media(max-width:700px){.tabbar{height:48px}.tab .tab-x{display:grid;place-items:center;flex:0 0 44px;width:44px;height:44px;padding:0}}
+
+/* Final touch target pass: editor action icons and status help. */
+@media(max-width:700px){.editor-actions{height:48px}.editor-action-buttons .small-button{width:44px;height:44px}.statusbar{height:48px}#helpBtn{min-width:44px;min-height:44px}.sidebar{bottom:48px}}
