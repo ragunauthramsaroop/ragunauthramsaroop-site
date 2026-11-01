@@ -1,0 +1,52 @@
+name: Public executive core recovery snapshot
+
+on:
+  schedule:
+    - cron: '13 3 1 * *'
+  workflow_dispatch:
+  pull_request:
+    paths:
+      - '.github/workflows/public-core-recovery.yml'
+      - 'scripts/create_public_recovery_bundle.py'
+      - 'scripts/test_public_recovery_bundle.py'
+      - 'docs/public-recovery-runbook.md'
+      - 'credential-readiness/**'
+      - 'api/v1/credential-status.json'
+
+permissions:
+  contents: read
+
+concurrency:
+  group: public-core-recovery-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  verify-and-export:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v7
+        with:
+          python-version: '3.12'
+      - name: Test recovery allowlist and checksum logic
+        run: python -m unittest discover -s scripts -p 'test_public_recovery_bundle.py'
+      - name: Create restricted public-core ZIP and SHA-256 sidecar
+        run: python scripts/create_public_recovery_bundle.py --output "$RUNNER_TEMP/recovery"
+      - name: Verify complete archive and file hashes
+        shell: bash
+        run: |
+          set -euo pipefail
+          file="$(find "$RUNNER_TEMP/recovery" -maxdepth 1 -type f -name 'rr-public-core-*.zip' -print -quit)"
+          test -n "$file"
+          python scripts/create_public_recovery_bundle.py --verify "$file"
+          echo "Public-core archive verified. This is not the full site or an independent off-provider backup." >> "$GITHUB_STEP_SUMMARY"
+      - uses: actions/upload-artifact@v7
+        if: success()
+        with:
+          name: public-core-recovery-${{ github.run_id }}
+          path: ${{ runner.temp }}/recovery/
+          if-no-files-found: error
+          retention-days: 90
