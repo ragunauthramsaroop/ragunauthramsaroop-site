@@ -16,7 +16,9 @@ import xml.etree.ElementTree as ET
 
 ROOT=Path(__file__).resolve().parents[1]
 DOMAIN="https://ragunauthramsaroop.com"
-ROUTES=("/", "/executive-profile/", "/resume.html", "/recruiter-mode/", "/evidence/", "/research-library/", "/engage/", "/public-record/")
+ROUTES=tuple(["/", "/executive-profile/", "/resume.html", "/recruiter-mode/", "/evidence/", "/research-library/", "/engage/", "/public-record/", "/claim-graph/", "/executive-private-room/", "/credential-readiness/", "/public-record/es/", "/public-record/pt/", "/public-record/fr/", "/research-library/guyana-biodiversity-investment-readiness/", "/research-library/building-for-generations-guyana/"])
+PUBLIC_PDFS=("/research-library/guyana-biodiversity-investment-readiness/full-text.pdf", "/research-library/building-for-generations-guyana/full-text.pdf")
+PUBLIC_APIS=("/api/v1/executive-record.json", "/api/v1/claim-graph.json", "/api/v1/credential-status.json", "/api/v1/provenance.json")
 NOW=datetime.now(timezone.utc)
 AGENT="RR-Flagship-Watch/1.0 (+https://ragunauthramsaroop.com/)"
 
@@ -74,6 +76,29 @@ def get(url):
             if attempt==0:time.sleep(3)
     raise RuntimeError(failure)
 
+
+def inspect_api(url,source):
+    """Validate essential *identity and scope*, not invented credentials or rankings."""
+    try:
+        doc=json.loads(source)
+        path=urlparse(url).path
+        if path=="/api/v1/executive-record.json":
+            return bool(doc.get("subject",{}).get("name")=="Ragunauth Ramsaroop" and len(doc.get("claims",[]))>=4 and doc.get("publisherType")=="self-published")
+        if path=="/api/v1/claim-graph.json":
+            return bool(doc.get("subjectId")==DOMAIN+"/#person" and doc.get("nodeCount")==len(doc.get("nodes",[])) and doc.get("edgeCount")==len(doc.get("edges",[])))
+        if path=="/api/v1/credential-status.json":
+            return doc.get("status")=="none_registered" and doc.get("issuerCredentials")==[]
+        if path=="/api/v1/provenance.json":
+            records=doc.get("resources",[])
+            return doc.get("algorithm")=="SHA-256" and len(records)>=30 and all(len(item.get("sha256",""))==64 for item in records)
+    except (ValueError,AttributeError,TypeError):
+        return False
+    return False
+
+def pdf_is_complete_header(source):
+    """An HTTP 200 HTML fallback must not count as a working PDF download."""
+    return source.startswith("%PDF-") and len(source)>10000
+
 def local_file(root,route):
     rel="index.html" if route=="/" else route.lstrip("/")
     if rel.endswith("/"):rel+="index.html"
@@ -92,10 +117,20 @@ def static_watch(root,add):
             add("route_"+route,False,"Local public page does not exist");continue
         problems=inspect_page(page.read_text(encoding="utf-8"),DOMAIN+route,route=="/")
         add("route_"+route,not problems,", ".join(problems) or "Canonical, title, H1, meta and indexability checked")
+    for route in PUBLIC_PDFS:
+        pdf=root/route.lstrip("/")
+        content=pdf.read_bytes() if pdf.is_file() else b""
+        add("pdf_"+route,content.startswith(b"%PDF-") and len(content)>10000,"Original PDF exists and has a valid document signature" if content.startswith(b"%PDF-") else "Missing or invalid original PDF")
+    for route in PUBLIC_APIS:
+        path=root/route.lstrip("/")
+        try:
+            okay=inspect_api(DOMAIN+route,path.read_text(encoding="utf-8"))
+        except (OSError,UnicodeError):okay=False
+        add("api_"+route,okay,"Structured public record schema and assertion boundaries valid" if okay else "Missing or invalid structured public record")
     try:
         xml=ET.parse(root/"sitemap.xml")
         loc={n.text for n in xml.iter() if n.tag.rsplit("}",1)[-1]=="loc"}
-        missing=[path for path in ROUTES if DOMAIN+path not in loc]
+        missing=[path for path in ROUTES+PUBLIC_PDFS if DOMAIN+path not in loc]
         add("sitemap",not missing,"Missing "+", ".join(missing) if missing else "All flagship routes listed")
     except (ET.ParseError,OSError) as exc:add("sitemap",False,str(exc)[:120])
 
@@ -106,6 +141,18 @@ def seo_watch(add):
             problems=inspect_page(content,DOMAIN+route,route=="/")
             add("live_"+route,not problems,", ".join(problems) or "HTTP 200, canonical/indexability and heading valid")
         except RuntimeError as exc:add("live_"+route,False,str(exc))
+    for route in PUBLIC_PDFS:
+        try:
+            source=get(DOMAIN+route)
+            ok=pdf_is_complete_header(source)
+            add("live_pdf_"+route,ok,"HTTP 200 with real PDF signature and nontrivial content" if ok else "HTTP 200 was not a valid PDF document")
+        except RuntimeError as exc:add("live_pdf_"+route,False,str(exc))
+    for route in PUBLIC_APIS:
+        try:
+            source=get(DOMAIN+route)
+            ok=inspect_api(DOMAIN+route,source)
+            add("live_api_"+route,ok,"Valid, source-bounded JSON public record" if ok else "JSON schema mismatch or unexpected credential claim")
+        except RuntimeError as exc:add("live_api_"+route,False,str(exc))
     try:
         robots=get(DOMAIN+"/robots.txt")
         ok="Sitemap:" in robots and not re.search(r"(?im)^Disallow:\s*/\s*$",robots)
@@ -114,7 +161,7 @@ def seo_watch(add):
     try:
         root=ET.fromstring(get(DOMAIN+"/sitemap.xml"))
         locs={n.text for n in root.iter() if n.tag.rsplit("}",1)[-1]=="loc"}
-        absent=[p for p in ROUTES if DOMAIN+p not in locs]
+        absent=[p for p in ROUTES+PUBLIC_PDFS if DOMAIN+p not in locs]
         add("sitemap",not absent,"Missing "+", ".join(absent) if absent else "All flagship routes indexed in sitemap")
     except (RuntimeError,ET.ParseError) as exc:add("sitemap",False,str(exc)[:130])
     try:

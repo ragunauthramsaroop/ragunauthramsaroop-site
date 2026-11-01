@@ -23,8 +23,17 @@ class WatchTests(unittest.TestCase):
     def test_noindex_is_an_error(self):
         src='<title>Ragunauth Ramsaroop</title><meta name="description" content="'+("A"*65)+'"><link rel="canonical" href="/"><meta name="robots" content="noindex"><h1>A</h1>'
         self.assertIn("unexpected noindex",watch.inspect_page(src,watch.DOMAIN+"/"))
-    def test_seven_flagship_routes(self):
-        self.assertEqual(len(watch.ROUTES),8)
+    def test_all_flagship_routes(self):
+        self.assertEqual(len(watch.ROUTES),16)
+        self.assertEqual(len(watch.PUBLIC_PDFS),2)
+        self.assertEqual(len(watch.PUBLIC_APIS),4)
+    def test_pdf_rejects_html_fallback(self):
+        self.assertFalse(watch.pdf_is_complete_header("<html>"+("A"*14000)))
+        self.assertTrue(watch.pdf_is_complete_header("%PDF-1.7\n"+("A"*14000)))
+    def test_api_rejects_fake_credentials(self):
+        route=watch.DOMAIN+"/api/v1/credential-status.json"
+        self.assertTrue(watch.inspect_api(route,'{"status":"none_registered","issuerCredentials":[]}'))
+        self.assertFalse(watch.inspect_api(route,'{"status":"verified","issuerCredentials":[{}]}'))
     def test_static_watch_with_real_repo(self):
         report=[]
         watch.static_watch(watch.ROOT,lambda name,ok,msg:report.append((name,ok,msg)))

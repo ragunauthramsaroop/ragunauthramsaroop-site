@@ -1,6 +1,11 @@
 name: Flagship continuous SEO and intelligence watch
 
 on:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/flagship_ops_watch.py'
+      - '.github/workflows/flagship-ops-watch.yml'
   pull_request:
     paths:
       - 'llms.txt'
@@ -60,7 +65,7 @@ jobs:
           retention-days: 14
 
   seo:
-    if: (github.event_name == 'schedule' && github.event.schedule == '21 */2 * * *') || (github.event_name == 'workflow_dispatch' && inputs.mode == 'seo')
+    if: github.event_name == 'push' || (github.event_name == 'schedule' && github.event.schedule == '21 */2 * * *') || (github.event_name == 'workflow_dispatch' && inputs.mode == 'seo')
     runs-on: ubuntu-latest
     timeout-minutes: 10
     permissions:
@@ -109,7 +114,7 @@ jobs:
           retention-days: 14
 
   intelligence:
-    if: (github.event_name == 'schedule' && github.event.schedule == '47 */6 * * *') || (github.event_name == 'workflow_dispatch' && inputs.mode == 'intelligence')
+    if: github.event_name == 'push' || (github.event_name == 'schedule' && github.event.schedule == '47 */6 * * *') || (github.event_name == 'workflow_dispatch' && inputs.mode == 'intelligence')
     runs-on: ubuntu-latest
     timeout-minutes: 7
     permissions:
