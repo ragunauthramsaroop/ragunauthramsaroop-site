@@ -70,7 +70,7 @@ assert 'class="flag-position__system"' in home and 'src="/assets/executive-leade
 assert 'alt="Three connected leadership disciplines: institutions, responsibility and execution"' in home
 assert "loading=\"lazy\"" in home and "width=\"600\"" in home, "Conceptual graphic needs intrinsic dimensions and lazy loading"
 assert "INSTITUTIONS" in system_art and "RESPONSIBILITY" in system_art and "EXECUTION" in system_art
-assert "<script" not in system_art and "http://" not in system_art and len(system_art.encode("utf-8"))<4000, "SVG must remain safe and lightweight"
+assert "<script" not in system_art and 'href="http' not in system_art and 'xlink:href="http' not in system_art and len(system_art.encode("utf-8"))<4000, "SVG must remain safe and lightweight"
 assert ".flag-position__system" in signature and "grid-template-columns:1fr" in signature, "Responsive concept graphic styling absent"
 
 assert '@media(max-width:530px)' in signature and '@media(prefers-reduced-motion:reduce)' in signature, "Signature mobile and reduced-motion safeguards absent"
