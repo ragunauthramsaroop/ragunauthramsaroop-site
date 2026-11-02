@@ -53,6 +53,9 @@ def main():
             delayed = page.evaluate("performance.getEntriesByType('resource').map(e => e.name)")
             assert any("/assets/accessibility.js" in url for url in delayed), delayed
             assert any("/tools/assets/analytics-loader.js" in url for url in delayed), delayed
+            # Every viewport keeps the privacy decision in flow after the page.
+            expect(page.locator("#rr-analytics-choice")).to_be_attached()
+            page.wait_for_function("getComputedStyle(document.querySelector('#rr-analytics-choice')).position === 'static'")
             page.set_viewport_size({"width": 390, "height": 844})
             # Optional analytics stays off until consent; on mobile the choice must not cover the hero.
             expect(page.locator("#rr-analytics-choice")).to_be_attached()
