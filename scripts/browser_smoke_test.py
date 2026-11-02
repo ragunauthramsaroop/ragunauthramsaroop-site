@@ -54,6 +54,12 @@ def main():
             assert any("/assets/accessibility.js" in url for url in delayed), delayed
             assert any("/tools/assets/analytics-loader.js" in url for url in delayed), delayed
             page.set_viewport_size({"width": 390, "height": 844})
+            # Optional analytics stays off until consent; on mobile the choice must not cover the hero.
+            expect(page.locator("#rr-analytics-choice")).to_be_attached()
+            page.wait_for_function("getComputedStyle(document.querySelector('#rr-analytics-choice')).position === 'static'")
+            assert page.locator("#rr-analytics-choice button[data-choice='denied']").count() == 1
+            assert page.locator("#rr-analytics-choice button[data-choice='granted']").count() == 1
+            assert page.locator('#rr-analytics-choice a[href="/tools/privacy/"]').count() == 1
             expect(page.locator(".mobile-nav")).to_be_visible()
             expect(page.locator(".nav-links")).to_be_hidden()
             page.locator(".mobile-nav summary").click()

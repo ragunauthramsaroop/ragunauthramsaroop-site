@@ -23,7 +23,7 @@ body{background:#f8f6ef;color:#172b29}
 .brand-mark{width:43px;height:43px;flex-basis:43px;position:relative;font:760 12px/1 var(--sans);letter-spacing:.09em;background:#0c302d;overflow:hidden}
 .brand-mark:after{content:"";position:absolute;width:60px;height:60px;border:1px solid rgba(239,212,159,.42);border-radius:50%;left:12px;top:-36px}
 .brand-text{font-size:15px;font-weight:750;letter-spacing:-.025em}
-.brand-text small{font-size:9px;letter-spacing:.155em;color:#857459}
+.brand-text small{font-size:9px;letter-spacing:.155em;color:#756144}
 .nav-links{gap:19px;font-size:11px}
 .nav-links a{position:relative}
 .nav-links a:not(.nav-cta):after{content:"";position:absolute;left:0;right:100%;height:1px;bottom:-5px;background:#ad8753;transition:right .22s}
@@ -99,7 +99,7 @@ body{background:#f8f6ef;color:#172b29}
 .flag-proof span{color:#c4d0c7;font-size:10px;margin-top:11px;letter-spacing:.07em;text-transform:uppercase}
 .flag-proof strong i{color:#d3ae70}
 .flag-pathways{padding:105px 0 112px;border-color:#d5d7cb}
-.flag-eyebrow{color:#917143;letter-spacing:.2em;font-size:10px}
+.flag-eyebrow{color:#775b34;letter-spacing:.2em;font-size:10px}
 .flag-pathways__top{align-items:end;margin-bottom:36px}
 .flag-pathways__top h2{font-size:clamp(43px,5.1vw,73px);letter-spacing:-.058em;line-height:1.05}
 .flag-pathways__top h2 em{color:#a58255}
@@ -110,7 +110,7 @@ body{background:#f8f6ef;color:#172b29}
 .flag-pathway--search{background:#0f2f2e;border:1px solid #0f2f2e;color:#f9f5e9}
 .flag-pathway:before{content:"";position:absolute;pointer-events:none;right:-127px;top:-137px;width:335px;height:335px;border:1px solid currentColor;opacity:.105;border-radius:50%;box-shadow:0 0 0 47px rgba(180,160,110,.12),0 0 0 92px rgba(180,160,110,.06)}
 .flag-pathway:after{content:"";position:absolute;width:44px;height:2px;top:94px;left:41px;background:#b69969}
-.flag-pathway__heading{position:relative;z-index:1;color:#8e7042}
+.flag-pathway__heading{position:relative;z-index:1;color:#755a35}
 .flag-pathway--search .flag-pathway__heading{color:#e7c990}
 .flag-pathway--search .flag-pathway__heading span:last-child{color:#f6deb1}
 .flag-pathway h3{position:relative;z-index:1;font-size:clamp(32px,3.5vw,49px);line-height:1.07;max-width:485px;margin:45px 0 17px;letter-spacing:-.05em}
@@ -140,8 +140,8 @@ body{background:#f8f6ef;color:#172b29}
 .flag-expertise__row:hover{background:#efeee6;padding-left:21px}
 .flag-expertise__row h3{font-size:clamp(30px,3.45vw,47px)}
 .flag-expertise__row p{max-width:650px;color:#5c6b64}
-.flag-index{color:#a27a4b;letter-spacing:.15em}
-.flag-expertise__tag{text-align:right}
+.flag-index{color:#75562f;letter-spacing:.15em}
+.flag-expertise__tag{text-align:right;color:#526354}
 .flag-evidence{background:#dae3dc;isolation:isolate}
 .flag-evidence:before{content:"";position:absolute;pointer-events:none;inset:0;z-index:-1;background:repeating-linear-gradient(0deg,transparent 0 84px,rgba(23,77,58,.055) 85px,transparent 86px)}
 .flag-evidence__inner{padding:110px 0 115px;gap:clamp(40px,7vw,120px)}
@@ -164,6 +164,7 @@ body{background:#f8f6ef;color:#172b29}
 .flag-research__feature strong{position:relative;z-index:1}
 .flag-research__motif{color:rgba(236,207,159,.23);font-size:clamp(200px,26vw,380px);right:10px;bottom:-40px;line-height:.9}
 .flag-research__side>a{border:1px solid #dbd7ca;background:#f0eee5;transition:background .15s}
+.flag-research__side>a>span{color:#745934}
 .flag-research__side>a:hover{background:#e7e4d8}
 .flag-close{position:relative;isolation:isolate;background:#0a2424;overflow:hidden}
 .flag-close:before{content:"";position:absolute;inset:0;z-index:-1;background:radial-gradient(ellipse at 78% 18%,rgba(225,191,132,.19),transparent 36%),linear-gradient(110deg,#081f22,#123733)}
@@ -171,6 +172,7 @@ body{background:#f8f6ef;color:#172b29}
 .flag-close__inner{position:relative;z-index:1;padding:110px 0 115px}
 .flag-close h2{font-size:clamp(42px,5.2vw,74px);letter-spacing:-.058em}
 .flag-close__actions{align-items:stretch;min-width:216px}
+.research-article-link{color:#566657}
 .footer{background:#f0eee6;border-top:1px solid #d7d1c3;gap:34px}
 .footer-brand strong{font-size:17px;color:#163831}
 .footer nav{gap:15px}
