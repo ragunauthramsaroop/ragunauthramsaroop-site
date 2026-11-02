@@ -25,6 +25,13 @@ for rec in REG["papers"]:
   assert rec["scholar_pdf_url"]==expected, "PDF URL mismatch"
   assert page in sitemap and expected in sitemap, "Sitemap missing paper"
   source=html.read_text(encoding="utf-8")
+  # Reject unresolved title placeholders before publishing or submitting metadata.
+  for tag in ("title", "h1"):
+   match=re.search(r"<"+tag+r"(?:\s[^>]*)?>(.*?)</"+tag+r">",source,re.I|re.S)
+   if match: assert "undefined" not in match.group(1).lower(), tag+" contains unresolved placeholder"
+  for field in ("citation_title", "og:title"):
+   match=re.search(r'<meta (?:name|property)="'+re.escape(field)+r'" content="([^"]*)"',source,re.I)
+   if match: assert "undefined" not in match.group(1).lower(), field+" contains unresolved placeholder"
   for field in ("citation_title","citation_author","citation_publication_date","citation_pdf_url"):
    assert re.search(r'<meta name="'+field+r'" content="[^"]+">',source),field+" missing"
   assert '<meta name="citation_pdf_url" content="'+expected+'">' in source, "citation_pdf_url mismatch"
