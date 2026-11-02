@@ -6,7 +6,7 @@ import xml.etree.ElementTree as ET
 ROOT=Path(__file__).resolve().parents[1]
 home=(ROOT/"index.html").read_text(encoding="utf-8")
 article=(ROOT/"insights/aurora-operating-context/index.html").read_text(encoding="utf-8")
-css=(ROOT/"assets/home-executive-20260930-v3.css").read_text(encoding="utf-8")
+css=(ROOT/"assets/home-flagship-editorial-2026.css").read_text(encoding="utf-8")
 assert 'class="mandate-stats"' not in home, "Corporate KPIs returned to personal homepage"
 assert 'class="mandate-context"' not in home, "Corporate KPI panel returned to personal homepage"
 assert all(v not in home for v in ("49.4 <span>MW", "10,000 <span>t/day", "89<span>%")), "Company numbers presented as personal homepage headlines"
