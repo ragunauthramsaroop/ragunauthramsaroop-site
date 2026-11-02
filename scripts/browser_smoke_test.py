@@ -31,7 +31,7 @@ def main():
             expect(page.locator('.nav-links a[href="/engage/"]')).to_be_visible()
             expect(page.locator('.flag-hero__links a[href="/resume.html"]')).to_be_visible()
             expect(page.locator("body")).to_contain_text("Liaison Director, Social Responsibility Department")
-            expect(page.locator("body")).to_contain_text("Evaluate leadership fit.")
+            expect(page.locator("#decision-paths")).to_contain_text("Two audiences.")
             assert "five role progressions" not in page.locator("body").inner_text().lower()
             expect(page.locator(".flag-hero__portrait-wrap img")).to_have_attribute("width", "800")
             expect(page.locator(".flag-hero__portrait-wrap img")).to_have_attribute("height", "1030")
