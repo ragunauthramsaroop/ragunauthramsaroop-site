@@ -43,8 +43,8 @@ if "mandate-fit-title" not in page.ids:
     errors.append("Missing audience evaluation heading")
 if "Scheduled · 16 October 2026" in html:
     errors.append("Expired CREF event label must not imply a future engagement")
-if "Conference programme · 16 October 2026" not in html:
-    errors.append("CREF programme date needs neutral, dated wording")
+if "CREF 2026 · Conference programme" not in (ROOT / "recognition-media/index.html").read_text(encoding="utf-8"):
+    errors.append("CREF programme source and neutral dated description must remain in the media record")
 if "https://ragunauthramsaroop.com/" not in html:
     errors.append("Missing canonical domain references")
 if errors:

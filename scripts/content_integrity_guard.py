@@ -41,14 +41,14 @@ for rel in required:
     text(rel)
 
 home = text("index.html")
+# Keep recognition and historical conference claims on the dated evidence page,
+# not as visually dominant employer/third-party cards on the executive homepage.
 for needle in (
     PROFILE["current_role"],
     "/resume.html",
     "/recognition-media/",
     "/media/",
     "/research-library/",
-    "CREF 2026",
-    "Company recognition, not personal awards",
 ):
     if needle not in home:
         fail(f"homepage missing canonical item: {needle}")
