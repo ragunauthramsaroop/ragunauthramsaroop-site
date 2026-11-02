@@ -66,17 +66,22 @@ for path in ("resume.html","executive-profile/index.html","2126/timeline/index.h
     if "Zijin Gold International" not in content: additional.append(f"Direct parent missing: {path}")
 recognition=(ROOT/"recognition-media/index.html").read_text(encoding="utf-8")
 if "This is a future engagement" in recognition or "Scheduled speaking engagement" in recognition: additional.append("Expired future speaking language")
+context_article=(ROOT/"insights/aurora-operating-context/index.html").read_text(encoding="utf-8")
 for number, source in (
     ("49.4","https://en.zijingoldintl.com/news/companynews-detail-410.htm"),
     ("10,000","https://en.zijingoldintl.com/global/saprogram-detail-71993.htm"),
     ("89","https://www.zijinmining.com/news/news-detail-122826.htm"),
 ):
-    if number not in html or source not in html: additional.append(f"Operating figure source missing: {number}")
-if "not results personally attributed to me" not in html: additional.append("Missing personal attribution boundary")
+    if number not in context_article or source not in context_article:
+        additional.append(f"Article operating figure source missing: {number}")
+if "Operating context is not personal credit." not in context_article:
+    additional.append("Article lacks corporate/personal attribution boundary")
+if 'class="mandate-stats"' in html or 'class="mandate-context"' in html:
+    additional.append("Corporate figures belong in contextual article, not homepage")
 if additional:
     for error in additional: print("FAIL:",error)
     raise SystemExit(1)
-print("PASS: director start year, direct ownership, dated appearance and independently sourced company context")
+print("PASS: director start year, direct ownership, dated appearance and company context correctly confined to source-led article")
 
 # Server-rendered export and client-side Next.js must agree after hydration.
 for bundle in (
