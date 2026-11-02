@@ -57,12 +57,13 @@ print(f"PASS: one H1, {len(required)} verified audience destinations, dated even
 import json
 profile = json.loads((ROOT / "data/public-profile.json").read_text(encoding="utf-8"))
 additional = []
-if profile.get("current_role_since") != "2025": additional.append("Director appointment must show 2025")
+if profile.get("current_role_since") != "2026": additional.append("Named Social Responsibility role should show 2026")
+if profile.get("director_level_since") != "2025": additional.append("Director-level appointment should show 2025")
 if profile.get("direct_parent") != "Zijin Gold International": additional.append("Direct corporate parent missing")
 if profile["scheduled_public_engagements"][0]["status"].startswith("Scheduled"): additional.append("Expired CREF programme status")
 for path in ("resume.html","executive-profile/index.html","2126/timeline/index.html"):
     content=(ROOT / path).read_text(encoding="utf-8")
-    if "2025–Present" not in content or "2026–Present" in content: additional.append(f"Inconsistent current-role dates: {path}")
+    if "2026–Present" not in content: additional.append(f"Inconsistent named current-role start year: {path}")
     if "Zijin Gold International" not in content: additional.append(f"Direct parent missing: {path}")
 recognition=(ROOT/"recognition-media/index.html").read_text(encoding="utf-8")
 if "This is a future engagement" in recognition or "Scheduled speaking engagement" in recognition: additional.append("Expired future speaking language")
@@ -81,7 +82,7 @@ if 'class="mandate-stats"' in html or 'class="mandate-context"' in html:
 if additional:
     for error in additional: print("FAIL:",error)
     raise SystemExit(1)
-print("PASS: director start year, direct ownership, dated appearance and company context correctly confined to source-led article")
+print("PASS: 2025 director-level appointment, 2026 named role, direct parent and attributable source boundaries")
 
 # Server-rendered export and client-side Next.js must agree after hydration.
 for bundle in (
@@ -89,7 +90,7 @@ for bundle in (
     "_next/static/chunks/pages/2126/timeline-fdebacbbe2a54c41.js",
 ):
     generated=(ROOT / bundle).read_text(encoding="utf-8")
-    if "2026–Present" in generated or "2025–Present" not in generated:
+    if "2026–Present" not in generated:
         raise SystemExit(f"FAIL: prebuilt client bundle has stale director appointment: {bundle}")
     if "Zijin Gold International" not in generated:
         raise SystemExit(f"FAIL: prebuilt client bundle lacks current parent: {bundle}")

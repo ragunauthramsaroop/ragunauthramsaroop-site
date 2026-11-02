@@ -107,9 +107,9 @@ def local_file(root,route):
 def static_watch(root,add):
     profile=json.loads((root/"data/public-profile.json").read_text(encoding="utf-8"))
     llms=(root/"llms.txt").read_text(encoding="utf-8")
-    add("role_date",profile.get("current_role_since")=="2025","Current director appointment starts 2025")
+    add("role_date",profile.get("current_role_since")=="2026" and profile.get("director_level_since")=="2025","Named role began 2026; director-level appointment 2025")
     add("parent_company",profile.get("direct_parent")=="Zijin Gold International","Current direct parent named")
-    add("llms_date","2025-Present" in llms and "2026-Present" not in llms,"AI-readable profile is aligned")
+    add("llms_date","2026-Present" in llms and "Director-level appointment: since 2025" in llms,"AI-readable profile is aligned")
     add("llms_event","scheduled speaker on 16 October 2026" not in llms.lower(),"Elapsed conference is not future-scheduled")
     for route in ROUTES:
         page=local_file(root,route)
@@ -166,8 +166,8 @@ def seo_watch(add):
     except (RuntimeError,ET.ParseError) as exc:add("sitemap",False,str(exc)[:130])
     try:
         txt=get(DOMAIN+"/llms.txt")
-        aligned="2025-Present" in txt and "2026-Present" not in txt
-        add("ai_record",aligned,"Published AI profile aligned" if aligned else "Outdated director appointment in live AI-readable record")
+        aligned="2026-Present" in txt and "Director-level appointment: since 2025" in txt
+        add("ai_record",aligned,"Published AI profile aligned" if aligned else "AI-readable role chronology inconsistent")
     except RuntimeError as exc:add("ai_record",False,str(exc))
 
 def intelligence_watch(root,add):
