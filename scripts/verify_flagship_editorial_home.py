@@ -60,7 +60,7 @@ for language in ("es","pt","fr"):
 # Signature design assets must stay first-party, light and responsive.
 signature=(ROOT/"assets/home-signature-2026.css").read_text(encoding="utf-8")
 art=(ROOT/"assets/executive-orbit-2026.svg").read_text(encoding="utf-8")
-assert '/assets/home-signature-2026.css?v=1' in home, "Signature stylesheet missing"
+assert '/assets/home-signature-2026.css?v=2' in home, "Signature stylesheet missing"
 assert 'class="flag-hero__orbit"' in home and '/assets/executive-orbit-2026.svg' in home, "Original portrait geometry missing"
 assert 'aria-hidden="true"' in home and 'alt=""' in home, "Decorative line art must remain hidden from screen readers"
 assert '<svg' in art and 'xmlns="http://www.w3.org/2000/svg"' in art, "Original artwork invalid"
