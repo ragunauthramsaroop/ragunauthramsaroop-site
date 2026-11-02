@@ -34,7 +34,7 @@ public_email="ragunauthramsaroop@icloud.com"
 assert f"mailto:{public_email}" in cv, "Homepage email must match the public CV"
 assert sum(link.startswith(f"mailto:{public_email}") for link in page.links if link)>=3, "Direct professional contact path lost"
 assert 'href="/engage/"' in home, "Detailed engagement pathway must remain available"
-assert "Director since 2025" in home and "2025–Present" in cv, "Director appointment should be consistent across home and CV"
+assert "Director since 2025" in home and "2026–Present" in cv, "Director-level appointment and named 2026 role should remain distinct"
 
 # The recruiter destination must use the lightweight editorial shell rather than a legacy hydrating bundle.
 toolkit=(ROOT/"recruiter-toolkit/index.html").read_text(encoding="utf-8")
@@ -56,6 +56,17 @@ assert "2026 onward" in public_record and "appointment began in 2025" in public_
 for language in ("es","pt","fr"):
     localized=(ROOT/"public-record"/language/"index.html").read_text(encoding="utf-8")
     assert "2025" in localized and "2026" in localized, "Role chronology missing in multilingual public record: "+language
+
+# Signature design assets must stay first-party, light and responsive.
+signature=(ROOT/"assets/home-signature-2026.css").read_text(encoding="utf-8")
+art=(ROOT/"assets/executive-orbit-2026.svg").read_text(encoding="utf-8")
+assert '/assets/home-signature-2026.css?v=1' in home, "Signature stylesheet missing"
+assert 'class="flag-hero__orbit"' in home and '/assets/executive-orbit-2026.svg' in home, "Original portrait geometry missing"
+assert 'aria-hidden="true"' in home and 'alt=""' in home, "Decorative line art must remain hidden from screen readers"
+assert '<svg' in art and 'xmlns="http://www.w3.org/2000/svg"' in art, "Original artwork invalid"
+assert '@media(max-width:530px)' in signature and '@media(prefers-reduced-motion:reduce)' in signature, "Signature mobile and reduced-motion safeguards absent"
+assert len(signature.encode("utf-8"))<20000 and len(art.encode("utf-8"))<4000, "Decorative layer exceeds lightweight design budget"
+assert 'http' not in signature and '@import' not in signature, "Signature styling must not load remote dependencies"
 
 assert "prefers-reduced-motion" in css and "@media(max-width:530px)" in css
 assert html_count(home, "<main")==1 and html_count(home, "</main>")==1
