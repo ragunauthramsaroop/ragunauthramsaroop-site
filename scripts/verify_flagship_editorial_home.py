@@ -64,6 +64,15 @@ assert '/assets/home-signature-2026.css?v=1' in home, "Signature stylesheet miss
 assert 'class="flag-hero__orbit"' in home and '/assets/executive-orbit-2026.svg' in home, "Original portrait geometry missing"
 assert 'aria-hidden="true"' in home and 'alt=""' in home, "Decorative line art must remain hidden from screen readers"
 assert '<svg' in art and 'xmlns="http://www.w3.org/2000/svg"' in art, "Original artwork invalid"
+
+system_art=(ROOT/"assets/executive-leadership-system.svg").read_text(encoding="utf-8")
+assert 'class="flag-position__system"' in home and 'src="/assets/executive-leadership-system.svg"' in home, "Leadership system graphic missing"
+assert 'alt="Three connected leadership disciplines: institutions, responsibility and execution"' in home
+assert "loading=\"lazy\"" in home and "width=\"600\"" in home, "Conceptual graphic needs intrinsic dimensions and lazy loading"
+assert "INSTITUTIONS" in system_art and "RESPONSIBILITY" in system_art and "EXECUTION" in system_art
+assert "<script" not in system_art and "http://" not in system_art and len(system_art.encode("utf-8"))<4000, "SVG must remain safe and lightweight"
+assert ".flag-position__system" in signature and "grid-template-columns:1fr" in signature, "Responsive concept graphic styling absent"
+
 assert '@media(max-width:530px)' in signature and '@media(prefers-reduced-motion:reduce)' in signature, "Signature mobile and reduced-motion safeguards absent"
 assert len(signature.encode("utf-8"))<20000 and len(art.encode("utf-8"))<4000, "Decorative layer exceeds lightweight design budget"
 assert 'http' not in signature and '@import' not in signature, "Signature styling must not load remote dependencies"
