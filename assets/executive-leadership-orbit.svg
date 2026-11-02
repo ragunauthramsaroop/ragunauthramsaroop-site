@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" role="img" aria-labelledby="title desc">
+<title id="title">Three connected dimensions of executive leadership</title>
+<desc id="desc">An editorial graphic linking institutional engagement, responsible business and coordinated execution around one leadership mandate.</desc>
+<defs><pattern id="micro" x="0" y="0" width="25" height="25" patternUnits="userSpaceOnUse"><circle cx="1.2" cy="1.2" r="1.1" fill="#a9b8aa" opacity=".45"/></pattern><linearGradient id="a" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#dfca9d"/><stop offset="1" stop-color="#8d7147"/></linearGradient></defs>
+<rect width="600" height="600" fill="none"/>
+<circle cx="300" cy="300" r="252" fill="url(#micro)" opacity=".55"/>
+<g fill="none"><circle cx="300" cy="300" r="242" stroke="#b5beb0" stroke-width="1"/><circle cx="300" cy="300" r="206" stroke="#ad9670" stroke-width="1.3"/><circle cx="300" cy="300" r="166" stroke="#d1c1a5" stroke-width="1" stroke-dasharray="2 8"/><circle cx="300" cy="300" r="113" stroke="#b7c9b9" stroke-width="1"/></g>
+<g stroke="#987e57" stroke-width="2" fill="none"><path d="M300 300 300 91"/><path d="M300 300 480 404"/><path d="M300 300 120 404"/></g>
+<path d="M300 91 A209 209 0 0 1 480 404 A209 209 0 0 1 120 404 A209 209 0 0 1 300 91" stroke="url(#a)" stroke-width="2.2" fill="none"/>
+<path d="M300 91 480 404 120 404 Z" stroke="#7c987f" stroke-width="1" fill="#dce7d8" fill-opacity=".26"/>
+<circle cx="300" cy="300" r="74" fill="#103a2d"/><circle cx="300" cy="300" r="69" fill="none" stroke="#d8bf8b" stroke-width="1.5"/>
+<text x="300" y="317" text-anchor="middle" font-family="Georgia,serif" font-size="53" fill="#f7f1e2" letter-spacing="-4">RR</text>
+<g fill="#faf7ee" stroke="#826a45" stroke-width="3"><circle cx="300" cy="91" r="27"/><circle cx="480" cy="404" r="27"/><circle cx="120" cy="404" r="27"/></g>
+<g fill="#245140" font-family="Arial,sans-serif" font-weight="700" font-size="16" text-anchor="middle"><text x="300" y="97">01</text><text x="480" y="410">02</text><text x="120" y="410">03</text></g>
+<g fill="#405b4c" font-family="Arial,sans-serif" letter-spacing="2.4" font-size="12" text-anchor="middle"><text x="300" y="37">INSTITUTIONS</text><text x="475" y="459">RESPONSIBILITY</text><text x="125" y="459">EXECUTION</text></g>
+<path d="M300 11v13M300 576v13M11 300h13M576 300h13" stroke="#987e57" stroke-width="1.5"/>
+</svg>
