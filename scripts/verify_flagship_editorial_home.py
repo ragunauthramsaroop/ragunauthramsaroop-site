@@ -36,6 +36,22 @@ assert sum(link.startswith(f"mailto:{public_email}") for link in page.links if l
 assert 'href="/engage/"' in home, "Detailed engagement pathway must remain available"
 assert "Director since 2025" in home and "2025–Present" in cv, "Director appointment should be consistent across home and CV"
 
+# The recruiter destination must use the lightweight editorial shell rather than a legacy hydrating bundle.
+toolkit=(ROOT/"recruiter-toolkit/index.html").read_text(encoding="utf-8")
+toolkit_css=(ROOT/"assets/executive-recruiter-2026.css").read_text(encoding="utf-8")
+toolkit_js=(ROOT/"assets/executive-recruiter-2026.js").read_text(encoding="utf-8")
+toolkit_page=Page();toolkit_page.feed(toolkit)
+assert toolkit_page.h1==1, "Recruiter toolkit must have a single page heading"
+assert all(x in toolkit_page.ids for x in ("main","mandates","career","interview","contact","rr-short-bio")), "Recruiter sections missing"
+assert all(x in toolkit_page.links for x in ("/resume.html","/public-record/","/proof-in-practice/","/board-ceo-mode/","/research-library/","/media/","/engage/")), "Recruiter evidence route missing"
+assert any((link or "").startswith("mailto:ragunauthramsaroop@icloud.com") for link in toolkit_page.links), "Recruiter must offer direct professional contact"
+assert "/assets/randy-portrait.jpg" in toolkit and 'alt="Professional portrait of Ragunauth Ramsaroop"' in toolkit
+assert "/assets/executive-recruiter-2026.css" in toolkit and "/assets/executive-recruiter-2026.js" in toolkit
+assert "_next/static" not in toolkit and 'id="__NEXT_DATA__"' not in toolkit, "Legacy client bundle must not hydrate replacement HTML"
+assert "navigator.clipboard.writeText" in toolkit_js and "window.print()" in toolkit_js, "Local print and biography copy actions missing"
+assert "@media print" in toolkit_css and "@media(max-width:530px)" in toolkit_css, "Missing mobile and print styles"
+assert "company-wide results" in toolkit.lower() and "first-party" in toolkit.lower(), "Evidence attribution safeguards missing"
+
 assert "prefers-reduced-motion" in css and "@media(max-width:530px)" in css
 assert html_count(home, "<main")==1 and html_count(home, "</main>")==1
 for resource in ("/board-ceo-mode/", "/executive-perspectives/", "/guyana-intelligence/", "/decision-room/", "/recruiter-toolkit/", "/observatory/"):
