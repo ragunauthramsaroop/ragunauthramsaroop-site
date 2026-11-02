@@ -254,3 +254,12 @@ body{background:#f8f6ef;color:#172b29}
   .flag-pathway--search .flag-pathway__links a{border-color:#f6f0e4}
   .flag-hero__topline,.flag-kicker,.flag-hero__statement span{color:#ffe0a8}
 }
+
+
+/* The leadership system is an accessible concept map, not a company KPI graphic. */
+.flag-position{grid-template-columns:minmax(235px,.39fr) minmax(0,1fr);gap:clamp(30px,6vw,85px)}
+.flag-position__meta{align-self:stretch;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:7px}
+.flag-position__meta .flag-eyebrow{align-self:start;margin:0}
+.flag-position__system{display:block;width:min(100%,306px);height:auto;max-height:310px;object-fit:contain;filter:drop-shadow(0 9px 13px rgba(24,57,43,.06))}
+@media(max-width:790px){.flag-position{grid-template-columns:1fr;gap:18px}.flag-position__meta{flex-direction:row;align-items:center;justify-content:space-between;min-height:0}.flag-position__system{width:min(43%,205px)}}
+@media(max-width:530px){.flag-position__meta{gap:10px}.flag-position__system{width:min(46%,155px)}}
