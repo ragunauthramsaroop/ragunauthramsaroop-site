@@ -1,0 +1,46 @@
+name: IndexNow changed-publication notifications
+
+on:
+  pull_request:
+    paths:
+      - 'scripts/indexnow_publication.py'
+      - 'scripts/test_indexnow_publication.py'
+      - '.github/workflows/indexnow-publication.yml'
+  push:
+    branches: [main]
+    paths:
+      - '**/*.html'
+      - 'research-library/**/full-text.pdf'
+      - 'scripts/indexnow_publication.py'
+      - '.github/workflows/indexnow-publication.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  indexnow:
+    runs-on: ubuntu-latest
+    timeout-minutes: 6
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+      - uses: actions/setup-python@v7
+        with:
+          python-version: '3.12'
+      - name: Validate public key and changed URL scope
+        run: python -m unittest discover -s scripts -p 'test_indexnow_publication.py'
+      - name: Notify participating IndexNow search engines
+        if: github.event_name != 'pull_request'
+        env:
+          INDEXNOW_BASE: ${{ github.event.before }}
+          INDEXNOW_HEAD: ${{ github.sha }}
+        run: python scripts/indexnow_publication.py --base-sha "$INDEXNOW_BASE" --head-sha "$INDEXNOW_HEAD"
+      - name: Review planned URLs without notifying external providers
+        if: github.event_name == 'pull_request'
+        env:
+          INDEXNOW_BASE: ${{ github.event.pull_request.base.sha }}
+          INDEXNOW_HEAD: ${{ github.event.pull_request.head.sha }}
+        run: python scripts/indexnow_publication.py --dry-run --base-sha "$INDEXNOW_BASE" --head-sha "$INDEXNOW_HEAD"
