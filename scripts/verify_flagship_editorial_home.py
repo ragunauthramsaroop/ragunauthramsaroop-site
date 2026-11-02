@@ -20,7 +20,7 @@ assert "hero-name" in page.ids and "mandate-fit-title" in page.ids
 assert all(f'flag-{name}' in home for name in ("hero","expertise","evidence","audiences","research","close"))
 assert "/assets/home-flagship-editorial-2026.css?v=1" in home
 assert len(home.encode("utf-8"))<25000
-for target in ("/resume.html","/executive-profile/","/recruiter-mode/","/recruiter-toolkit/","/board-ceo-mode/","/engage/","/proof-in-practice/","/media/","/public-record/","/research-library/","/insights/aurora-operating-context/"):
+for target in ("/resume.html","/executive-profile/","/recruiter-mode/","/recruiter-toolkit/","/board-ceo-mode/","/engage/","/proof-in-practice/","/media/","/public-record/","/research-library/","/guyana-intelligence/","/insights/aurora-operating-context/"):
     assert target in page.links, "Executive audience route omitted: "+target
 for fact in ("Director since 2025","12+","Financial services and natural resources","Ragunauth"):
     assert fact in home, "Personal career fact missing: "+fact
