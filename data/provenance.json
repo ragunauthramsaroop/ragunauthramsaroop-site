@@ -130,7 +130,7 @@
     },
     {
       "path": "/assets/search-index.json",
-      "sha256": "743a127d405623ac3ddb46191e43c7c6be3fac802aef99e3cc0a601f001ea2cd",
+      "sha256": "a035534053df1ddeccc402ecfa5a23467280587c453eac2c40421d54e38e20ed",
       "bytes": 346133,
       "generated": "02 November 2026"
     },
@@ -220,9 +220,9 @@
     },
     {
       "path": "/claim-graph/index.html",
-      "sha256": "3aab978ba20610671ebb49c44bb5da70c04579d614b3484f9d38e9037e1ad1b3",
-      "bytes": 5742,
-      "generated": "01 November 2026"
+      "sha256": "41c007effe8f672b30e00f6d2ba1131d2c6a5b8f24f436eb421ceca2b80a2c0b",
+      "bytes": 5916,
+      "generated": "02 November 2026"
     },
     {
       "path": "/executive-private-room/index.html",
