@@ -27,6 +27,18 @@ for claim in source["claims"]:
     check(len(matches)==len(claim["evidence"]),"Evidence edges mismatch for "+cid)
     if claim["classification"]=="company_reported_operating_context":
         check(any(e["from"]==cid and e["relation"]=="describes_organization_not_personal_result" for e in graph["edges"]),"Missing company attribution boundary")
+# Keep the human-readable claim graph synchronized with canonical machine-readable dates.
+# In particular, the named Social Responsibility mandate began in 2026, after
+# a separate director-level appointment in 2025.
+graph_html=read("claim-graph/index.html")
+for claim in source["claims"]:
+    pattern=(r'<article class="claim" id="'+re.escape(claim["id"])+
+             r'"><div class="claim-date">'+re.escape(claim["effectiveFrom"])+r'</div>')
+    check(len(re.findall(pattern,graph_html))==1,
+          "HTML claim date differs from canonical executive record: "+claim["id"])
+check("Named Social Responsibility role since 2026" in graph_html and
+      "Director-level appointment began in 2025" in graph_html,
+      "Claim graph must distinguish 2025 director level from 2026 named role")
 check("no inferred" in graph["purpose"].lower() or "no inferred" in " ".join(graph.get("limitations",[])).lower() or "no inferred" in read("docs/executive-knowledge-graph-and-languages.md").lower(),"Do not infer verification from graph links")
 class Page(HTMLParser):
     def __init__(self):super().__init__();self.h1=0;self.canonical="";self.tags=set()
