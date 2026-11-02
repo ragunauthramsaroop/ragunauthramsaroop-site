@@ -86,7 +86,7 @@ assert "CEO needs a clear strategic perspective" in home and "recruiter needs a 
 assert "confidential information" in home and "Not a claim of university employment" in home
 # Privacy UI must not obstruct first-screen navigation or mandate actions on mobile.
 consent=(ROOT/"tools/assets/analytics-consent.css").read_text(encoding="utf-8")
-assert "@media(max-width:640px)" in consent and "position:static" in consent, "Mobile consent must remain inline"
+assert "@media(max-width:760px)" in consent and "position:static" in consent and "grid-template-columns:minmax(0,1fr) auto" in consent, "Consent must remain non-obstructive on desktop and mobile"
 assert "min-height:44px" in consent and "#rr-analytics-choice" in consent, "Mobile opt-in touch controls must be accessible"
 
 assert "backdrop-filter" not in css and "url(http" not in css
