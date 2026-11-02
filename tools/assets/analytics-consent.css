@@ -1,5 +1,5 @@
-/* Consent first. On small screens the choice follows the page rather than covering the executive hero. */
-#rr-analytics-choice{position:fixed;left:50%;transform:translateX(-50%);bottom:20px;z-index:2147483600;width:min(470px,calc(100vw - 36px));background:#0d3029;color:#fffdf4;border:1px solid rgba(229,202,151,.4);border-left:3px solid #ddc18e;border-radius:4px;padding:18px 20px;box-shadow:0 20px 42px rgba(7,31,27,.22);font:13px/1.5 system-ui,-apple-system,"Segoe UI",sans-serif;display:grid;gap:11px}
+/* Privacy-first consent follows all content, without covering an executive portrait or primary call to action. */
+#rr-analytics-choice{position:static;left:auto;transform:none;bottom:auto;z-index:auto;box-sizing:border-box;width:100%;background:#0d3029;color:#fffdf4;border:0;border-top:1px solid #ddc18e;border-radius:0;padding:23px max(26px,calc((100vw - 1312px)/2));box-shadow:none;font:13px/1.5 system-ui,-apple-system,"Segoe UI",sans-serif;display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:center;gap:24px}
 #rr-analytics-choice strong{font-size:13px;letter-spacing:.015em;font-weight:760}
 #rr-analytics-choice p{margin:4px 0 0;color:#d4ded6;font-size:12px;line-height:1.55}
 #rr-analytics-choice .rr-analytics-actions{display:flex;gap:9px;align-items:center;flex-wrap:wrap}
@@ -7,9 +7,9 @@
 #rr-analytics-choice button.allow{background:#e7cea2;color:#14372b;border-color:#e7cea2}
 #rr-analytics-choice button:hover,#rr-analytics-choice a:hover{border-color:#f0d7a9}
 #rr-analytics-choice button:focus-visible,#rr-analytics-choice a:focus-visible{outline:3px solid #f5dfb2;outline-offset:3px}
-@media(max-width:640px){
-/* Mobile choice remains available at page end, never over first-screen text, controls or portrait. */
-#rr-analytics-choice{position:static;left:auto;bottom:auto;transform:none;margin:0;width:100%;padding:20px max(18px,calc((100vw - 500px)/2));border-left:0;border-right:0;border-bottom:0;border-radius:0;box-shadow:none;gap:9px}
+@media(max-width:760px){
+/* Mobile choice remains available at page end, with accessible touch controls. */
+#rr-analytics-choice{grid-template-columns:1fr;margin:0;padding:20px 18px;gap:9px}
 #rr-analytics-choice .rr-analytics-actions{gap:10px}
 #rr-analytics-choice button,#rr-analytics-choice a{min-height:44px;padding:10px 14px}
 }
