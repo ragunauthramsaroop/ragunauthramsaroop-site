@@ -27,7 +27,7 @@ for rec in REG["papers"]:
   source=html.read_text(encoding="utf-8")
   # Reject unresolved title placeholders before publishing or submitting metadata.
   for tag in ("title", "h1"):
-   match=re.search(r"<"+tag+r"(?:\\s[^>]*)?>(.*?)</"+tag+r">",source,re.I|re.S)
+   match=re.search(r"<"+tag+r"(?:\s[^>]*)?>(.*?)</"+tag+r">",source,re.I|re.S)
    if match: assert "undefined" not in match.group(1).lower(), tag+" contains unresolved placeholder"
   for field in ("citation_title", "og:title"):
    match=re.search(r'<meta (?:name|property)="'+re.escape(field)+r'" content="([^"]*)"',source,re.I)
