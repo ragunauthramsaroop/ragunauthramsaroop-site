@@ -64,7 +64,7 @@ def main():
             alignment_routes = [
                 "/", "/executive-profile/", "/leadership/", "/evidence/",
                 "/research-library/", "/media/", "/resume.html", "/engage/",
-                "/recruiter-mode/", "/board-ceo-mode/"
+                "/recruiter-mode/", "/recruiter-toolkit/", "/board-ceo-mode/"
             ]
             for width, height in ((1440, 1000), (1024, 900), (390, 844)):
                 page.set_viewport_size({"width": width, "height": height})
