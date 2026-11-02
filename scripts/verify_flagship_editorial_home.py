@@ -51,6 +51,11 @@ assert "_next/static" not in toolkit and 'id="__NEXT_DATA__"' not in toolkit, "L
 assert "navigator.clipboard.writeText" in toolkit_js and "window.print()" in toolkit_js, "Local print and biography copy actions missing"
 assert "@media print" in toolkit_css and "@media(max-width:530px)" in toolkit_css, "Missing mobile and print styles"
 assert "company-wide results" in toolkit.lower() and "first-party" in toolkit.lower(), "Evidence attribution safeguards missing"
+public_record=(ROOT/"public-record/index.html").read_text(encoding="utf-8")
+assert "2026 onward" in public_record and "appointment began in 2025" in public_record, "Public record current named role date has drifted"
+for language in ("es","pt","fr"):
+    localized=(ROOT/"public-record"/language/"index.html").read_text(encoding="utf-8")
+    assert "2025" in localized and "2026" in localized, "Role chronology missing in multilingual public record: "+language
 
 assert "prefers-reduced-motion" in css and "@media(max-width:530px)" in css
 assert html_count(home, "<main")==1 and html_count(home, "</main>")==1
