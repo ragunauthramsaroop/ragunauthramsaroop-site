@@ -28,6 +28,20 @@ for fact in ("Director since 2025","12+","Financial services and natural resourc
 assert "49.4" not in home and "10,000" not in home and "89%" not in home, "Employer operating metrics must stay off personal homepage"
 assert any(img.get("class")=="portrait" and img.get("fetchpriority")=="high" and img.get("alt") for img in page.images)
 assert "Oxford domain. Not a claim of university employment" in home
+
+# Independent graphic identity must be self-hosted, accessible and lightweight.
+art=(ROOT/"assets/home-editorial-atlas-2026.css").read_text(encoding="utf-8")
+orbit=(ROOT/"assets/executive-leadership-orbit.svg").read_text(encoding="utf-8")
+assert 'href="/assets/home-editorial-atlas-2026.css?v=1"' in home, "Art-direction stylesheet not linked"
+assert len(art.encode("utf-8"))<16500, "New homepage visual layer is too heavy"
+assert '<svg xmlns="http://www.w3.org/2000/svg"' in orbit and "viewBox=\"0 0 600 600\"" in orbit
+assert '<img class="flag-position__system"' in home and 'alt="Three connected executive disciplines:' in home
+assert 'src="/assets/executive-leadership-orbit.svg"' in home and 'loading="lazy"' in home
+assert "flag-hero__coordinates" in home and "flag-hero__image-index" in home
+assert ".flag-pathway--ceo" in art and ".flag-pathway--search" in art, "Both entry cards must have distinct visual treatments"
+assert "@media(max-width:530px)" in art and "@media(prefers-reduced-motion:reduce)" in art
+assert "https://" not in art and "http://" not in art, "New visual layer must not request third-party assets"
+
 # Direct mandate enquiries should not depend on a LinkedIn account or a third-party contact form.
 cv=(ROOT/"resume.html").read_text(encoding="utf-8")
 public_email="ragunauthramsaroop@icloud.com"
