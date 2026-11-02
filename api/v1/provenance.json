@@ -130,8 +130,8 @@
     },
     {
       "path": "/assets/search-index.json",
-      "sha256": "feec801674cf3e47e2e6ca1e27437218ec9904964a34ccd46a454952ab28cf30",
-      "bytes": 345780,
+      "sha256": "cecdc09c5b5d442014be631be4564bf30caa448f06654c704630183fc5a09469",
+      "bytes": 346135,
       "generated": "02 November 2026"
     },
     {
@@ -202,9 +202,9 @@
     },
     {
       "path": "/public-record/index.html",
-      "sha256": "85b47f577c1f8b7105a49b41c43e1200be7bc058ff94c2c5f41ea2029684a92f",
-      "bytes": 7768,
-      "generated": "01 November 2026"
+      "sha256": "8106aa3eb368b62df7f75eb7464e14a11c0ac29a354319519d3e4dec60b3da51",
+      "bytes": 7861,
+      "generated": "02 November 2026"
     },
     {
       "path": "/api/v1/executive-record.json",
