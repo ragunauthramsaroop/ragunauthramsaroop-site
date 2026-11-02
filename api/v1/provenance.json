@@ -1,5 +1,5 @@
 {
-  "generated": "01 November 2026",
+  "generated": "02 November 2026",
   "algorithm": "SHA-256",
   "resources": [
     {
@@ -130,9 +130,9 @@
     },
     {
       "path": "/assets/search-index.json",
-      "sha256": "96d115cfb4c8c9d098c88a37c2f792ad12851a7ed9b634b7ec52b01307c8a1b1",
-      "bytes": 343971,
-      "generated": "01 November 2026"
+      "sha256": "3b8e7878bc44ca16db988f1fecac9555c19d752abce8b45e55c573b9a818fe24",
+      "bytes": 343977,
+      "generated": "02 November 2026"
     },
     {
       "path": "/api/v1/capabilities.json",
