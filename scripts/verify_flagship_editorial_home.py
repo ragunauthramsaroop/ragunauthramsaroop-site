@@ -84,5 +84,10 @@ for resource in ("/board-ceo-mode/", "/executive-perspectives/", "/guyana-intell
 assert home.index('id="decision-paths"') < home.index('id="position-title"'), "Audience gateway must precede biography"
 assert "CEO needs a clear strategic perspective" in home and "recruiter needs a fast, credible evaluation" in home
 assert "confidential information" in home and "Not a claim of university employment" in home
+# Privacy UI must not obstruct first-screen navigation or mandate actions on mobile.
+consent=(ROOT/"tools/assets/analytics-consent.css").read_text(encoding="utf-8")
+assert "@media(max-width:640px)" in consent and "position:static" in consent, "Mobile consent must remain inline"
+assert "min-height:44px" in consent and "#rr-analytics-choice" in consent, "Mobile opt-in touch controls must be accessible"
+
 assert "backdrop-filter" not in css and "url(http" not in css
 print("PASS premium executive hierarchy, attributed evidence, source-bound claims, mobile responsiveness and key actions")
