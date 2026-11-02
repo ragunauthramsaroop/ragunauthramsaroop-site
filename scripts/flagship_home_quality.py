@@ -58,6 +58,17 @@ import json
 profile = json.loads((ROOT / "data/public-profile.json").read_text(encoding="utf-8"))
 additional = []
 if profile.get("current_role_since") != "2026": additional.append("Named Social Responsibility role should show 2026")
+cv=(ROOT/"resume.html").read_text(encoding="utf-8")
+if '<strong>2025</strong><span>Director-level appointment</span>' not in cv:
+    additional.append("CV must distinguish the 2025 director-level appointment from the named 2026 mandate")
+if '<strong>2025–Present</strong><span>Liaison Director, Social Responsibility Department</span>' in cv:
+    additional.append("CV metric incorrectly dates the named Social Responsibility role to 2025")
+if cv.count("Liaison Director, Social Responsibility Department · 2026–Present") != 2:
+    additional.append("Screen and print CV must agree on the 2026 named role")
+if "reaching director level in 2025 and assuming the named Social Responsibility mandate in 2026" not in cv:
+    additional.append("CV career progression does not distinguish director-level and named-role dates")
+if "Director-level responsibility from 2025, followed by the named Social Responsibility mandate in 2026" not in cv:
+    additional.append("Print CV career progression does not distinguish director-level and named-role dates")
 if profile.get("director_level_since") != "2025": additional.append("Director-level appointment should show 2025")
 if profile.get("direct_parent") != "Zijin Gold International": additional.append("Direct corporate parent missing")
 if profile["scheduled_public_engagements"][0]["status"].startswith("Scheduled"): additional.append("Expired CREF programme status")
