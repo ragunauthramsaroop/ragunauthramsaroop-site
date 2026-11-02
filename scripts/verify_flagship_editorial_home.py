@@ -28,6 +28,13 @@ for fact in ("Director since 2025","12+","Financial services and natural resourc
 assert "49.4" not in home and "10,000" not in home and "89%" not in home, "Employer operating metrics must stay off personal homepage"
 assert any(img.get("class")=="portrait" and img.get("fetchpriority")=="high" and img.get("alt") for img in page.images)
 assert "Oxford domain. Not a claim of university employment" in home
+# Direct mandate enquiries should not depend on a LinkedIn account or a third-party contact form.
+cv=(ROOT/"resume.html").read_text(encoding="utf-8")
+public_email="ragunauthramsaroop@icloud.com"
+assert f"mailto:{public_email}" in cv, "Homepage email must match the public CV"
+assert sum(link.startswith(f"mailto:{public_email}") for link in page.links if link)>=3, "Direct professional contact path lost"
+assert 'href="/engage/"' in home, "Detailed engagement pathway must remain available"
+assert "Director since 2025" in home and "2025–Present" in cv, "Director appointment should be consistent across home and CV"
 
 assert "prefers-reduced-motion" in css and "@media(max-width:530px)" in css
 assert html_count(home, "<main")==1 and html_count(home, "</main>")==1
