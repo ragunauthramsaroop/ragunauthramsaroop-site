@@ -142,6 +142,8 @@ jobs:
         run: python scripts/test_geolibre_integration.py
       - name: Verify six connected workspaces and evidence indexes
         run: python scripts/test_six_workspaces.py
+      - name: Ensure homepage promotes personal leadership, not employer-wide statistics
+        run: python scripts/verify_homepage_brand_focus.py
       - name: Guard canonical public profile content
         run: python scripts/content_integrity_guard.py
       - name: Check color uniformity
