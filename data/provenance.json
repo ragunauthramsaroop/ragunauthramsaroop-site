@@ -130,7 +130,7 @@
     },
     {
       "path": "/assets/search-index.json",
-      "sha256": "8f2d5b31b45b4d7c8257908ebc61865cd7245fc21ea21f0aded66416e249bbdb",
+      "sha256": "c3b3ce70191e099b59c090180081cb02dbde25b5bbc586d19a3d1bf333b6dab8",
       "bytes": 346133,
       "generated": "04 November 2026"
     },
@@ -178,8 +178,8 @@
     },
     {
       "path": "/index.html",
-      "sha256": "3ebc8af7152093a8c8bfa0872d893934d814229f8631e69c362ea26fa6f83291",
-      "bytes": 22537,
+      "sha256": "19980e60765370a507ae678c9ac93d4d8eaae78e05e7b7fc7f71834128f71e60",
+      "bytes": 23100,
       "generated": "04 November 2026"
     },
     {
