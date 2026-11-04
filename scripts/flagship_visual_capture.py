@@ -91,6 +91,8 @@ async def run():
                   viewport:innerWidth,
                   css:[...document.querySelectorAll('link[rel=stylesheet]')].some(e=>e.href.includes('flagship-system-2026.css')),
                   cssLoaded:[...document.styleSheets].some(e=>e.href&&e.href.includes('flagship-system-2026.css')),
+                  cssLocal:[...document.styleSheets].some(e=>e.href&&e.href.startsWith(location.origin+'/assets/flagship-system-2026.css')),
+                  baseURI:document.baseURI,
                   headerBackground:bg,
                   headerBrandFill:header?.querySelector('.brand>div')?getComputedStyle(header.querySelector('.brand>div')).webkitTextFillColor:null,
                   headerNavFill:header?.querySelector('.navlinks a')?getComputedStyle(header.querySelector('.navlinks a')).webkitTextFillColor:null,
@@ -114,7 +116,7 @@ async def run():
     finally:
       server.shutdown()
     (OUT/"observations.json").write_text(json.dumps(observations,indent=2),encoding="utf-8")
-    failures=[x for x in observations if x["status"]!=200 or len(x["h1"])!=1 or not x["css"] or not x["cssLoaded"] or x["badImages"] or x["scrollWidth"]>x["viewport"]+3 or (x["headerContrastMin"] is not None and x["headerContrastMin"]<4.5)]
+    failures=[x for x in observations if x["status"]!=200 or len(x["h1"])!=1 or not x["css"] or not x["cssLoaded"] or not x["cssLocal"] or x["badImages"] or x["scrollWidth"]>x["viewport"]+3 or (x["headerContrastMin"] is not None and x["headerContrastMin"]<4.5)]
     if failures:
        print("FAIL: rendered route(s) require correction",json.dumps(failures,indent=2))
        raise SystemExit(1)
