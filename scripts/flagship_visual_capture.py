@@ -70,8 +70,10 @@ async def run():
                   headerNavFill:header?.querySelector('.navlinks a')?getComputedStyle(header.querySelector('.navlinks a')).webkitTextFillColor:null,
                   bodyClass:document.body.className,
                   headerNavBackground:header?.querySelector('.nav')?getComputedStyle(header.querySelector('.nav')).backgroundColor:null,
+                  currentUrl:location.href,
+                  shellClass:document.querySelector('.shell')?.className||null,
                   headerTextColor:header?.querySelector('.brand>div')?getComputedStyle(header.querySelector('.brand>div')).color:null,
-                  loadedStylesheets:[...document.styleSheets].filter(x=>x.href&&x.href.includes('flagship-system-2026.css')).map(x=>({href:x.href,rules:x.cssRules.length})),
+                  loadedStylesheets:[...document.styleSheets].filter(x=>x.href&&x.href.includes('flagship-system-2026.css')).map(x=>({href:x.href})),
                   badImages:[...document.querySelectorAll('img')].filter(e=>e.complete && !e.naturalWidth).map(e=>e.getAttribute('src')),
                   headerContrastMin:contrastPairs.length?Math.min(...contrastPairs):null
                 };
