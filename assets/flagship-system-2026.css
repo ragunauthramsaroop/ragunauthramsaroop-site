@@ -311,6 +311,7 @@
 }
 .recruiter-redesign .rr-evidence-grid a:hover{border-color:#ab8855}
 .recruiter-redesign .rr-questions article{padding-top:35px;padding-bottom:35px}
+.recruiter-redesign .rr-copy{min-height:44px;display:inline-flex;align-items:center}
 .recruiter-redesign .rr-bio{background:#f6f3e9}
 .recruiter-redesign .rr-contact{background:#071e25}
 
