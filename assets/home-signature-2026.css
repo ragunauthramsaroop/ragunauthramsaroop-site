@@ -265,3 +265,115 @@ body{background:#f8f6ef;color:#172b29}
 .flag-position__system{display:block;width:min(100%,306px);height:auto;max-height:310px;object-fit:contain;filter:drop-shadow(0 9px 13px rgba(24,57,43,.06))}
 @media(max-width:790px){.flag-position{grid-template-columns:1fr;gap:18px}.flag-position__meta{flex-direction:row;align-items:center;justify-content:space-between;min-height:0}.flag-position__system{width:min(43%,205px)}}
 @media(max-width:530px){.flag-position__meta{gap:10px}.flag-position__system{width:min(46%,155px)}}
+
+/* EXECUTIVE EDITORIAL POLISH / 2026-11-04
+   First-party design refinement. No fonts, scripts, tracking or remote assets.
+   Inspired by the review discipline in msitarzewski/agency-agents (MIT).
+*/
+.site-header{
+  border-bottom-color:#d2d4c8;
+  box-shadow:0 12px 34px rgba(6,29,30,.055);
+}
+.brand-mark{border:1px solid rgba(213,190,140,.42)}
+.nav-links .nav-cta{box-shadow:inset 0 0 0 1px rgba(255,255,255,.1)}
+.nav-links .nav-cta:focus-visible,.flag-button:focus-visible,.flag-pathway__cta:focus-visible{
+  outline:3px solid #dcaf64;
+  outline-offset:4px;
+}
+.flag-hero__interior{gap:clamp(32px,5vw,85px)}
+.flag-hero__topline{display:flex;align-items:center;gap:12px}
+.flag-hero h1{text-wrap:balance}
+.flag-hero__summary{
+  border-left:2px solid rgba(225,192,129,.68);
+  padding-left:20px;
+  max-width:590px;
+}
+.flag-hero__disciplines{
+  display:flex;
+  flex-wrap:wrap;
+  gap:9px;
+  list-style:none;
+  padding:0;
+  margin:24px 0 0;
+  max-width:630px;
+}
+.flag-hero__disciplines li{
+  display:inline-flex;
+  align-items:center;
+  min-height:31px;
+  padding:6px 12px;
+  border:1px solid rgba(235,214,177,.34);
+  background:rgba(236,220,186,.045);
+  color:#e3e8dc;
+  font-size:10px;
+  font-weight:650;
+  line-height:1.35;
+  letter-spacing:.025em;
+}
+.flag-actions{margin-top:29px}
+.flag-hero__portrait-wrap{box-shadow:0 38px 100px rgba(0,13,15,.43)}
+.flag-hero__position{border-top:1px solid rgba(234,203,154,.28);margin-top:18px}
+.flag-hero__bottomline a{text-underline-offset:5px}
+.flag-proof>div{position:relative}
+.flag-proof>div:before{
+  content:"";position:absolute;
+  top:0;left:29px;width:25px;height:2px;
+  background:rgba(226,194,138,.73);
+}
+.flag-proof>div:first-child:before{left:0}
+.flag-proof strong{display:block}
+.flag-proof span{display:block;line-height:1.5;max-width:205px}
+.flag-pathways__top h2,.flag-section h2,.flag-evidence h2,.flag-close h2{text-wrap:balance}
+.flag-pathway{
+  transition:transform .22s ease,box-shadow .22s ease,background-color .22s ease;
+  box-shadow:0 18px 54px rgba(9,32,28,.07);
+}
+.flag-pathway--ceo{
+  background:linear-gradient(148deg,#edf2ea 0%,#e0e9df 100%);
+}
+.flag-pathway--search{
+  background:linear-gradient(154deg,#163d3b 0%,#0b282b 100%);
+  border-color:#1e4542;
+}
+.flag-pathway--search .flag-pathway__cta{
+  background:#e3c594;
+  color:#102822;
+}
+.flag-pathway--search .flag-pathway__links a{border-bottom-color:rgba(243,231,203,.21)}
+.flag-pathway--search .flag-pathway__links a:hover{color:#ffdf9f}
+.flag-pathway__cta{transition:background-color .2s ease,transform .2s ease}
+.flag-expertise__row{border-bottom-color:#d1d3c7}
+.flag-expertise__row h3{letter-spacing:-.048em}
+.flag-evidence__list a{transition:background-color .18s ease,padding-left .18s ease}
+.flag-research__feature{
+  background:radial-gradient(circle at 95% 0%,rgba(230,191,124,.23),transparent 48%),linear-gradient(145deg,#153e3c,#071d22 80%);
+}
+.flag-research__side>a{box-shadow:inset 0 2px 0 rgba(168,135,79,.21)}
+.flag-close__actions .flag-button{justify-content:space-between}
+.footer nav a{text-underline-offset:4px}
+@media(hover:hover) and (pointer:fine){
+  .flag-pathway:hover{transform:translateY(-4px);box-shadow:0 25px 60px rgba(8,29,26,.12)}
+  .flag-pathway__cta:hover{transform:translateY(-2px)}
+  .flag-evidence__list a:hover{padding-left:12px}
+}
+@media(max-width:790px){
+  .flag-hero__summary{padding-left:15px}
+  .flag-hero__disciplines{gap:8px}
+  .flag-proof>div:before{left:18px}
+  .flag-proof>div:first-child:before,.flag-proof>div:nth-child(3):before{left:0}
+}
+@media(max-width:530px){
+  .flag-hero__summary{padding-left:13px}
+  .flag-hero__disciplines{margin-top:20px}
+  .flag-hero__disciplines li{font-size:10px;min-height:29px;padding:6px 9px}
+  .flag-pathway{box-shadow:0 10px 35px rgba(9,32,28,.055)}
+  .flag-proof>div:before{left:9px}
+}
+@media(prefers-reduced-motion:reduce){
+  .flag-pathway,.flag-pathway__cta,.flag-evidence__list a{transition:none}
+  .flag-pathway:hover,.flag-pathway__cta:hover{transform:none}
+}
+@media(prefers-contrast:more){
+  .flag-hero__disciplines li{border-color:#eddfc6;color:#ffffff;background:#133a39}
+  .flag-hero__summary{border-left-color:#ffe1aa}
+}
