@@ -11,10 +11,11 @@ Make the existing public platform a decision-ready executive destination for (1)
 1. Flagship Orchestrator: sets a small scope, acceptance criteria and handoffs.
 2. Executive Brand Guardian: checks international director-level fit, brand consistency and personal-versus-organisational attribution.
 3. Executive Search Journey Architect: audits CV, Recruiter Mode, Board/CEO Mode and contact pathways for clarity.
-4. Executive Evidence and Search Editor: validates claims, SEO, source links, canonical tags and dated event references.
-5. Existing Site Performance Engineer: validates static technical behavior.
-6. Flagship UI Finish-Gate Reviewer: requires actual desktop/mobile visual evidence and an explicit PASS/HOLD.
-7. Flagship Release Steward: confirms CI, review and production deployment independently.
+4. Executive Art Director: directs the first-party visual hierarchy for boards, recruiters and institutions. See `.github/agents/executive-art-director.agent.md`.
+5. Executive Evidence and Search Editor: validates claims, SEO, source links, canonical tags and dated event references.
+6. Existing Site Performance Engineer: validates static technical behavior.
+7. Flagship UI Finish-Gate Reviewer: requires actual desktop/mobile visual evidence and an explicit PASS/HOLD.
+8. Flagship Release Steward: confirms CI, review and production deployment independently.
 
 GitHub Copilot-compatible role instructions live in `.github/agents/`. A person or connected coding agent must invoke them. The YAML/Markdown files do not themselves schedule, spawn or pay for autonomous model calls.
 
