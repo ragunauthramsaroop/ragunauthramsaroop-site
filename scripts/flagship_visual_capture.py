@@ -56,7 +56,7 @@ async def run():
                 };
                 const header=document.querySelector('.shell .topbar');
                 const bg=header?getComputedStyle(header).backgroundColor:null;
-                const entries=header?[header.querySelector('.brand > div'),...header.querySelectorAll('.navlinks a'),header.querySelector('.menu-button')]:[];
+                const entries=header?[header.querySelector('.brand > div'),...header.querySelectorAll('.navlinks a:not(.contact-chip)'),header.querySelector('.menu-button')]:[];
                 const contrastPairs=entries.filter(e=>e&&e.getClientRects().length).map(e=>contrast(getComputedStyle(e).color,bg)).filter(x=>x!==null);
                 return {
                   h1:[...document.querySelectorAll('h1')].map(e=>e.innerText.trim()),
