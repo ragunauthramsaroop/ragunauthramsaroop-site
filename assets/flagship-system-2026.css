@@ -498,7 +498,7 @@
 }
 .shell .topbar .navlinks a:hover,
 .shell .topbar .navlinks a[aria-current="page"]{
-  color:#966d37!important;
+  color:#80602d!important;
 }
 .shell .topbar .navlinks .contact-chip{
   color:#fff9ec!important;
