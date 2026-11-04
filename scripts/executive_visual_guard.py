@@ -53,6 +53,6 @@ for token in (".flag-hero__disciplines", ".flag-pathway", ":focus-visible",
     assert token in polish, f"Missing required responsive or accessible style: {token}"
 for forbidden in ("@import", "http://", "https://", "url(", "backdrop-filter"):
     assert forbidden not in polish, f"Unexpected external or expensive CSS usage: {forbidden}"
-assert len(CSS.encode("utf-8")) < 25_000, "Executive CSS should remain under 25 KB"
+assert len(CSS.encode("utf-8")) < 20_000, "Executive CSS should remain under 25 KB"
 assert len(HTML.encode("utf-8")) < 25_000, "Homepage must respect the 25 KB HTML budget"
 print("PASS: executive art-direction markup, routes, first-party assets and static safeguards")
