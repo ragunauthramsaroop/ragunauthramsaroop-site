@@ -479,6 +479,51 @@
   border-bottom:1px solid #d0d4cc;
 }
 
+
+/* Screenshot review fix: readable legacy navigation on the new paper header. */
+.shell .topbar .brand,
+.shell .topbar .brand>div{
+  color:#15343b!important;
+}
+.shell .topbar .brand>div small{
+  color:#81633e!important;
+}
+.shell .topbar .brand>span{
+  background:#0d3336!important;
+  color:#fff4df!important;
+  border-color:#0d3336!important;
+}
+.shell .topbar .navlinks a{
+  color:#18343c!important;
+}
+.shell .topbar .navlinks a:hover,
+.shell .topbar .navlinks a[aria-current="page"]{
+  color:#966d37!important;
+}
+.shell .topbar .navlinks .contact-chip{
+  color:#fff9ec!important;
+  background:#12343a!important;
+}
+.shell .topbar .menu-button,
+.shell .topbar .menu-button svg{
+  color:#12343a!important;
+  stroke:#12343a!important;
+}
+.shell .topbar .menu-button{
+  background:#fdfcf7!important;
+  border:1px solid #9aafa9!important;
+}
+.shell main .decision-mode-page .page-breadcrumb a,
+.shell main .decision-mode-page .page-breadcrumb span,
+.shell main .exec-profile-hero .page-breadcrumb a,
+.shell main .exec-profile-hero .page-breadcrumb span{
+  color:#dce8df!important;
+}
+.shell main .decision-mode-page .page-breadcrumb a:hover,
+.shell main .exec-profile-hero .page-breadcrumb a:hover{
+  color:#f5cf95!important;
+}
+
 @media(max-width:1100px){
   .flag-hero__interior{gap:30px;grid-template-columns:minmax(0,1.1fr) minmax(290px,.9fr)}
   .flag-editorial-note{grid-template-columns:170px minmax(0,1fr);gap:20px 35px}
