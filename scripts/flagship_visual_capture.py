@@ -57,12 +57,16 @@ async def run():
                 const header=document.querySelector('.shell .topbar');
                 const bg=header?getComputedStyle(header).backgroundColor:null;
                 const entries=header?[header.querySelector('.brand > div'),...header.querySelectorAll('.navlinks a:not(.contact-chip)'),header.querySelector('.menu-button')]:[];
-                const contrastPairs=entries.filter(e=>e&&e.getClientRects().length).map(e=>contrast(getComputedStyle(e).color,bg)).filter(x=>x!==null);
+                const contrastPairs=entries.filter(e=>e&&e.getClientRects().length).map(e=>contrast(getComputedStyle(e).webkitTextFillColor||getComputedStyle(e).color,bg)).filter(x=>x!==null);
                 return {
                   h1:[...document.querySelectorAll('h1')].map(e=>e.innerText.trim()),
                   scrollWidth:document.documentElement.scrollWidth,
                   viewport:innerWidth,
                   css:[...document.querySelectorAll('link[rel=stylesheet]')].some(e=>e.href.includes('flagship-system-2026.css')),
+                  cssLoaded:[...document.styleSheets].some(e=>e.href&&e.href.includes('flagship-system-2026.css')),
+                  headerBackground:bg,
+                  headerBrandFill:header?.querySelector('.brand>div')?getComputedStyle(header.querySelector('.brand>div')).webkitTextFillColor:null,
+                  headerNavFill:header?.querySelector('.navlinks a')?getComputedStyle(header.querySelector('.navlinks a')).webkitTextFillColor:null,
                   badImages:[...document.querySelectorAll('img')].filter(e=>e.complete && !e.naturalWidth).map(e=>e.getAttribute('src')),
                   headerContrastMin:contrastPairs.length?Math.min(...contrastPairs):null
                 };
@@ -77,7 +81,7 @@ async def run():
     finally:
       server.shutdown()
     (OUT/"observations.json").write_text(json.dumps(observations,indent=2),encoding="utf-8")
-    failures=[x for x in observations if x["status"]!=200 or len(x["h1"])!=1 or not x["css"] or x["badImages"] or x["scrollWidth"]>x["viewport"]+3 or (x["headerContrastMin"] is not None and x["headerContrastMin"]<4.5)]
+    failures=[x for x in observations if x["status"]!=200 or len(x["h1"])!=1 or not x["css"] or not x["cssLoaded"] or x["badImages"] or x["scrollWidth"]>x["viewport"]+3 or (x["headerContrastMin"] is not None and x["headerContrastMin"]<4.5)]
     if failures:
        print("FAIL: rendered route(s) require correction",json.dumps(failures,indent=2))
        raise SystemExit(1)
