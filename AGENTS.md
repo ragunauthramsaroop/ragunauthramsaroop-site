@@ -31,7 +31,7 @@ These instructions draw on the role-design approach in the MIT-licensed https://
 
 The site uses a role-based review structure inspired by the MIT-licensed [agency-agents](https://github.com/msitarzewski/agency-agents) project. See [Flagship Agency Team](.github/FLAGSHIP_AGENCY_TEAM.md) and the `.github/agents/` role profiles. These are Copilot-compatible role instructions, not independently running AI services. Existing GitHub Actions supply the actual scheduled and PR checks.
 
-For website content and design work, use this review order: Executive Brand Guardian -> Search Journey Architect -> Evidence and Search Editor -> implementation -> UI Finish-Gate Reviewer -> Site Performance Engineer -> Release Steward. The Flagship Orchestrator coordinates the handoffs and documents pass/fail evidence. Prioritize live visitor paths over adding pages or features.
+For website content and design work, use this review order: Executive Brand Guardian -> Search Journey Architect -> Executive Art Director -> Evidence and Search Editor -> implementation -> UI Finish-Gate Reviewer -> Site Performance Engineer -> Release Steward. The Flagship Orchestrator coordinates the handoffs and documents pass/fail evidence. Prioritize live visitor paths over adding pages or features.
 
 No role is permitted to send email, publish third-party social posts, exaggerate education or awards, change employment facts without evidence, or publish through production without required checks and an explicit code review. Never imply Oxford employment or academic appointment from an external profile. Preserve the distinction between organisation outcomes and personal responsibilities.
 
