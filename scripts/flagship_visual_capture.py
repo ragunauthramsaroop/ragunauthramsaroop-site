@@ -23,6 +23,32 @@ ROUTES={
 VIEWPORTS={"desktop":(1440,900),"mobile":(390,844)}
 
 class Quiet(SimpleHTTPRequestHandler):
+    """Rewrite only the three legacy exported base URLs for local previews.
+
+    The production HTML still points at the canonical public domain. Without
+    this preview-only rewrite, legacy <base> sends all CSS and JS to the live
+    website, so a local screenshot silently captures old production styling.
+    """
+    LEGACY={"/executive-profile/","/board-ceo-mode/","/recruiter-mode/"}
+
+    def do_GET(self):
+        route=self.path.split("?",1)[0]
+        if route in self.LEGACY:
+            source=(ROOT/route.lstrip("/")/"index.html").read_text(encoding="utf-8")
+            original='<base data-next-head="" href="https://ragunauthramsaroop.com/"/>'
+            if original not in source:
+                self.send_error(500,"Expected legacy base URL missing")
+                return
+            html=source.replace(original,'<base data-next-head="" href="/"/>',1)
+            data=html.encode("utf-8")
+            self.send_response(200)
+            self.send_header("Content-Type","text/html; charset=utf-8")
+            self.send_header("Content-Length",str(len(data)))
+            self.end_headers()
+            self.wfile.write(data)
+            return
+        return super().do_GET()
+
     def log_message(self,*args): pass
 
 async def run():
