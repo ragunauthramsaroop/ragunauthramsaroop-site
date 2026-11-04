@@ -42,13 +42,31 @@ async def run():
               page=await ctx.new_page()
               response=await page.goto(base+route,wait_until="domcontentloaded",timeout=25000)
               await page.wait_for_timeout(600)
-              measured=await page.evaluate("""() => ({
-                h1:[...document.querySelectorAll('h1')].map(e=>e.innerText.trim()),
-                scrollWidth:document.documentElement.scrollWidth,
-                viewport:innerWidth,
-                css:[...document.querySelectorAll('link[rel=stylesheet]')].some(e=>e.href.includes('flagship-system-2026.css')),
-                badImages:[...document.querySelectorAll('img')].filter(e=>e.complete && !e.naturalWidth).map(e=>e.getAttribute('src'))
-              })""")
+              measured=await page.evaluate("""() => {
+                const contrast=(foreground,background)=>{
+                  const lum=value=>{
+                    const numbers=value.match(/[0-9]+(?:\\.[0-9]+)?/g);
+                    if(!numbers||numbers.length<3)return null;
+                    const a=numbers.slice(0,3).map(v=>Number(v)/255).map(v=>v<=.04045?v/12.92:((v+.055)/1.055)**2.4);
+                    return .2126*a[0]+.7152*a[1]+.0722*a[2];
+                  };
+                  const x=lum(foreground),y=lum(background);
+                  if(x===null||y===null)return null;
+                  return Math.round(100*(Math.max(x,y)+.05)/(Math.min(x,y)+.05))/100;
+                };
+                const header=document.querySelector('.shell .topbar');
+                const bg=header?getComputedStyle(header).backgroundColor:null;
+                const entries=header?[header.querySelector('.brand > div'),...header.querySelectorAll('.navlinks a'),header.querySelector('.menu-button')]:[];
+                const contrastPairs=entries.filter(e=>e&&e.getClientRects().length).map(e=>contrast(getComputedStyle(e).color,bg)).filter(x=>x!==null);
+                return {
+                  h1:[...document.querySelectorAll('h1')].map(e=>e.innerText.trim()),
+                  scrollWidth:document.documentElement.scrollWidth,
+                  viewport:innerWidth,
+                  css:[...document.querySelectorAll('link[rel=stylesheet]')].some(e=>e.href.includes('flagship-system-2026.css')),
+                  badImages:[...document.querySelectorAll('img')].filter(e=>e.complete && !e.naturalWidth).map(e=>e.getAttribute('src')),
+                  headerContrastMin:contrastPairs.length?Math.min(...contrastPairs):null
+                };
+              }""")
               name=f"{key}-{device}"
               await page.screenshot(path=str(OUT/f"{name}.png"),animations="disabled",full_page=False)
               observation={"route":route,"device":device,"status":response.status if response else None,**measured}
@@ -59,7 +77,7 @@ async def run():
     finally:
       server.shutdown()
     (OUT/"observations.json").write_text(json.dumps(observations,indent=2),encoding="utf-8")
-    failures=[x for x in observations if x["status"]!=200 or len(x["h1"])!=1 or not x["css"] or x["badImages"] or x["scrollWidth"]>x["viewport"]+3]
+    failures=[x for x in observations if x["status"]!=200 or len(x["h1"])!=1 or not x["css"] or x["badImages"] or x["scrollWidth"]>x["viewport"]+3 or (x["headerContrastMin"] is not None and x["headerContrastMin"]<4.5)]
     if failures:
        print("FAIL: rendered route(s) require correction",json.dumps(failures,indent=2))
        raise SystemExit(1)
