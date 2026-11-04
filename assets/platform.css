@@ -268,3 +268,45 @@ body[data-tool]:not([data-tool=""]) .hero{
   .evidence-mobile-nav a{display:block;padding:10px 12px;border-radius:9px;color:var(--rr-ink)!important;text-decoration:none;font-size:13px;font-weight:750}
   .evidence-mobile-nav a:hover{background:var(--rr-paper-2)}
 }
+
+/* Flagship Edition 03: scoped legacy Next export header contrast, 2026-11-04.
+   Applied through the existing first-party stylesheet so hydration and
+   browser caching cannot leave white text on a pale navigation surface. */
+body.flagship-executive #__next .shell header.topbar{
+  background:#f8f7f1!important;
+  border-bottom:1px solid #d0d7ce!important;
+}
+body.flagship-executive #__next .shell header.topbar .brand,
+body.flagship-executive #__next .shell header.topbar .brand>div,
+body.flagship-executive #__next .shell header.topbar .navlinks>a:not(.contact-chip){
+  color:#18353b!important;
+  -webkit-text-fill-color:#18353b!important;
+}
+body.flagship-executive #__next .shell header.topbar .brand small{
+  color:#745b3c!important;
+  -webkit-text-fill-color:#745b3c!important;
+}
+body.flagship-executive #__next .shell header.topbar .brand>span{
+  background:#0e3339!important;
+  border-color:#0e3339!important;
+  color:#fff4dd!important;
+  -webkit-text-fill-color:#fff4dd!important;
+}
+body.flagship-executive #__next .shell header.topbar .navlinks>a.active:not(.contact-chip){
+  color:#765326!important;
+  -webkit-text-fill-color:#765326!important;
+}
+body.flagship-executive #__next .shell header.topbar .menu-button{
+  background:#fffdf8!important;
+  color:#15373a!important;
+  border:1px solid #9caeaa!important;
+  -webkit-text-fill-color:#15373a!important;
+}
+body.flagship-executive #__next .shell header.topbar .menu-button svg{
+  stroke:#15373a!important;
+}
+body.flagship-executive #__next .shell main .page-breadcrumb a,
+body.flagship-executive #__next .shell main .page-breadcrumb span{
+  color:#dce8df!important;
+  -webkit-text-fill-color:#dce8df!important;
+}
