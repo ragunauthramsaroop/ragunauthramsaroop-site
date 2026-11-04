@@ -45,9 +45,10 @@ async def run():
               measured=await page.evaluate("""() => {
                 const contrast=(foreground,background)=>{
                   const lum=value=>{
-                    const numbers=value.match(/[0-9]+(?:\\.[0-9]+)?/g);
+                    const numbers=value.match(/[0-9]*\\.?[0-9]+/g);
                     if(!numbers||numbers.length<3)return null;
-                    const a=numbers.slice(0,3).map(v=>Number(v)/255).map(v=>v<=.04045?v/12.92:((v+.055)/1.055)**2.4);
+                    const factor=value.trim().startsWith('color(srgb')?1:255;
+                    const a=numbers.slice(0,3).map(v=>Number(v)/factor).map(v=>v<=.04045?v/12.92:((v+.055)/1.055)**2.4);
                     return .2126*a[0]+.7152*a[1]+.0722*a[2];
                   };
                   const x=lum(foreground),y=lum(background);
@@ -67,6 +68,10 @@ async def run():
                   headerBackground:bg,
                   headerBrandFill:header?.querySelector('.brand>div')?getComputedStyle(header.querySelector('.brand>div')).webkitTextFillColor:null,
                   headerNavFill:header?.querySelector('.navlinks a')?getComputedStyle(header.querySelector('.navlinks a')).webkitTextFillColor:null,
+                  bodyClass:document.body.className,
+                  headerNavBackground:header?.querySelector('.nav')?getComputedStyle(header.querySelector('.nav')).backgroundColor:null,
+                  headerTextColor:header?.querySelector('.brand>div')?getComputedStyle(header.querySelector('.brand>div')).color:null,
+                  loadedStylesheets:[...document.styleSheets].filter(x=>x.href&&x.href.includes('flagship-system-2026.css')).map(x=>({href:x.href,rules:x.cssRules.length})),
                   badImages:[...document.querySelectorAll('img')].filter(e=>e.complete && !e.naturalWidth).map(e=>e.getAttribute('src')),
                   headerContrastMin:contrastPairs.length?Math.min(...contrastPairs):null
                 };
