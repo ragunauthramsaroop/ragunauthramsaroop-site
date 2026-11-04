@@ -1,5 +1,5 @@
 {
-  "generated": "03 November 2026",
+  "generated": "04 November 2026",
   "algorithm": "SHA-256",
   "resources": [
     {
@@ -130,9 +130,9 @@
     },
     {
       "path": "/assets/search-index.json",
-      "sha256": "a035534053df1ddeccc402ecfa5a23467280587c453eac2c40421d54e38e20ed",
+      "sha256": "8f2d5b31b45b4d7c8257908ebc61865cd7245fc21ea21f0aded66416e249bbdb",
       "bytes": 346133,
-      "generated": "02 November 2026"
+      "generated": "04 November 2026"
     },
     {
       "path": "/api/v1/capabilities.json",
@@ -178,9 +178,9 @@
     },
     {
       "path": "/index.html",
-      "sha256": "b5b450b2735a526fcdbadf3850f4aa2ff9ce96bcec3f4f9e4b3c9f5fa143e931",
-      "bytes": 22280,
-      "generated": "02 November 2026"
+      "sha256": "3ebc8af7152093a8c8bfa0872d893934d814229f8631e69c362ea26fa6f83291",
+      "bytes": 22537,
+      "generated": "04 November 2026"
     },
     {
       "path": "/resume.html",
