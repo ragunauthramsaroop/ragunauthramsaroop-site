@@ -40,6 +40,16 @@ jobs:
           python -m playwright install --with-deps chromium
       - name: Audit every page at desktop and mobile widths
         run: python scripts/visual_alignment_audit.py --strict
+      - name: Capture flagship desktop and mobile renderings
+        run: python scripts/flagship_visual_capture.py
+      - name: Upload flagship visual evidence
+        if: always()
+        uses: actions/upload-artifact@v7
+        with:
+          name: flagship-edition-03-visual-evidence
+          path: audit/flagship-edition-03/
+          if-no-files-found: warn
+          retention-days: 30
       - name: Upload forensic report
         if: always()
         uses: actions/upload-artifact@v7
