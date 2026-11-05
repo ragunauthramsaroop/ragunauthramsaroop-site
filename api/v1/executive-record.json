@@ -46,6 +46,21 @@
       ]
     },
     {
+      "id": "ungis-mcg-2026",
+      "title": "United Nations Group on the Information Society Multistakeholder Consultation Group membership",
+      "value": "Ragunauth Ramsaroop is listed as a Private Sector member, Liaison Director, AGM Inc., Guyana, in the 2026 UNGIS-MCG official directory",
+      "effectiveFrom": "2026",
+      "classification": "external_institutional_membership_directory",
+      "scope": "Membership of a multistakeholder consultation group, not UN staff employment or an appointment to a UN agency; designation and organisation as listed in the external directory.",
+      "evidence": [
+        {
+          "label": "Official UNGIS-MCG Member Directory (hosted by ITU)",
+          "url": "https://www.itu.int/net4/wsis/ungis/Home/MCG",
+          "type": "institutional_official_directory"
+        }
+      ]
+    },
+    {
       "id": "professional-tenure",
       "title": "AGM Inc. leadership tenure",
       "value": "Employment tenure at AGM Inc. from 2020, with progressive responsibilities",
@@ -122,7 +137,7 @@
     "contact": "https://ragunauthramsaroop.com/engage/"
   },
   "maintenance": {
-    "latestReview": "2026-11-01",
+    "latestReview": "2026-11-04",
     "updatePolicy": "Explicitly revise the applicable claim, evidence link and date when the record changes. Retain older revisions in the public repository history.",
     "repository": "https://github.com/ragunauthramsaroop/ragunauthramsaroop-site",
     "archiveNote": "Repository history records changes but is not independently timestamped certification or third-party notarization."
