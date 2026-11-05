@@ -310,3 +310,31 @@ body.flagship-executive #__next .shell main .page-breadcrumb span{
   color:#dce8df!important;
   -webkit-text-fill-color:#dce8df!important;
 }
+
+/* Evidence-based Lighthouse accessibility fixes, 2026-11-05.
+   Scoped to public search/tools and the three legacy executive pages. */
+body.rr-index-contrast > header.topbar .brand,
+body.rr-index-contrast > header.topbar .brand small,
+body.rr-index-contrast > header.topbar .nav a:not(.cta){
+  color:#163b30!important;
+  -webkit-text-fill-color:#163b30!important;
+  opacity:1!important;
+}
+body.rr-index-contrast > header.topbar .nav .cta{
+  background:#163b30!important;color:#ffffff!important;
+  -webkit-text-fill-color:#ffffff!important;
+}
+body.rr-index-contrast .resource-type,
+body.rr-index-contrast .rr-smart-kicker,
+body.rr-index-contrast .rr-smart-card>span,
+body.rr-index-contrast .card .tool-category,
+body.rr-index-contrast .card .num,
+body.rr-index-contrast .card .go,
+body.rr-index-contrast .card .tool-status{
+  color:#65451f!important;-webkit-text-fill-color:#65451f!important;
+}
+body.flagship-executive #__next .shell main .section .section-heading .eyebrow,
+body.flagship-executive #__next .shell main .section .mode-section-head .eyebrow,
+body.flagship-executive #__next .shell main .section .mode-path-grid a small{
+  color:#67471e!important;-webkit-text-fill-color:#67471e!important;
+}
