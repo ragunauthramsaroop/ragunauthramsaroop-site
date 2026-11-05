@@ -21,6 +21,8 @@ for route in ("executive-profile","board-ceo-mode","recruiter-mode"):
     p.feed(s)
     assert p.canonical==[f"{DOMAIN}/{route}/"], f"Absolute canonical missing: {route}"
     assert p.base==["/"], f"Legacy cross-origin base returned: {route}"
+    assert 'src="/_next/static/' not in s, f"Old hydration scripts reintroduced: {route}"
+    assert 'src="/assets/executive-static-nav.js"' in s, f"Static navigation missing: {route}"
 assert 'class="rr-index-contrast"' in (ROOT/"search/index.html").read_text(encoding="utf-8")
 assert 'class="rr-index-contrast"' in (ROOT/"tools/index.html").read_text(encoding="utf-8")
 assert 'Public platform overview</a>' in (ROOT/"search/index.html").read_text(encoding="utf-8")
