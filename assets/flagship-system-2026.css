@@ -19,7 +19,8 @@
   background:#f8f7f1;
   border-bottom:1px solid #d6d4c9;
 }
-.site-header .nav{max-width:1360px}
+.site-header .nav{max-width:1320px;min-height:76px;gap:20px}
+.site-header .nav-links{gap:17px;font-size:12.5px}
 .site-header .brand-mark{border-radius:0}
 .site-header .brand-text{letter-spacing:-.025em}
 .site-header .nav-links .nav-cta{
@@ -39,11 +40,11 @@
 }
 .flag-hero:after{opacity:.18}
 .flag-hero__interior{
-  width:min(calc(100% - 64px),1360px);
-  min-height:745px;
-  gap:clamp(44px,6vw,104px);
-  padding:72px 0 83px;
-  grid-template-columns:minmax(0,1.13fr) minmax(350px,.87fr);
+  width:min(calc(100% - 80px),1290px);
+  min-height:620px;
+  gap:clamp(38px,4vw,68px);
+  padding:52px 0 56px;
+  grid-template-columns:minmax(0,1.22fr) minmax(300px,.78fr);
 }
 .flag-hero__topline{
   display:inline-flex;
@@ -56,32 +57,34 @@
 }
 .flag-hero__topline span:last-child{letter-spacing:.17em}
 .flag-kicker{
-  margin-top:49px;
+  margin-top:25px;
   font-weight:750;
   letter-spacing:.2em;
   color:#e5c58f;
 }
 .flag-hero h1{
   font-family:var(--f3-serif);
-  font-size:clamp(67px,7.75vw,118px);
-  letter-spacing:-.069em;
-  line-height:.92;
-  text-wrap:balance;
+  font-size:clamp(56px,5.8vw,88px);
+  letter-spacing:-.058em;
+  line-height:1.01;
+  max-width:100%;
+  text-wrap:normal;
 }
+.flag-hero h1 em{display:block;white-space:nowrap;letter-spacing:-.064em}
 .flag-hero__statement{
-  font-size:clamp(29px,3vw,43px);
-  max-width:665px;
-  margin-top:31px;
-  line-height:1.17;
+  font-size:clamp(26px,2.35vw,36px);
+  max-width:680px;
+  margin-top:24px;
+  line-height:1.2;
 }
 .flag-hero__summary{
-  max-width:590px;
-  line-height:1.85;
-  font-size:14px;
+  max-width:570px;
+  line-height:1.72;
+  font-size:14.5px;
   color:#d4e0dc;
 }
 .flag-hero__disciplines{
-  margin-top:28px;
+  margin-top:23px;
   gap:8px;
 }
 .flag-hero__disciplines li{
@@ -92,15 +95,21 @@
   font-size:10px;
   letter-spacing:.055em;
 }
-.flag-button{min-height:55px;letter-spacing:.025em}
+.flag-actions{margin-top:26px}
+.flag-button{min-height:52px;letter-spacing:.015em;font-size:12.5px}
+.flag-hero__links{margin-top:17px;padding-top:17px}
 .flag-button--gold{background:#e6c995;color:#0c262d}
 .flag-button--gold:hover{background:#f5dcb0}
-.flag-hero__profile{max-width:490px}
+.flag-hero__profile{max-width:380px;padding:10px 0 0;margin:0 auto}
+.flag-hero__profile:after{display:none}
+.flag-hero__orbit{opacity:.13;filter:none;width:108%;left:-4%;top:-6%}
 .flag-hero__portrait-wrap{
-  border-radius:240px 240px 2px 2px;
-  box-shadow:0 36px 110px rgba(0,9,15,.56);
+  border-radius:6px;
+  aspect-ratio:4/4.35;
+  box-shadow:0 24px 65px rgba(0,9,15,.32);
 }
-.flag-hero .portrait{filter:saturate(.82) contrast(1.04)}
+.flag-hero__portrait-line{border-radius:3px;inset:10px}
+.flag-hero .portrait{filter:saturate(.94) contrast(1.015);object-position:center 18%}
 .flag-hero__image-caption{background:linear-gradient(90deg,rgba(0,16,19,.38),transparent);padding:4px 7px}
 .flag-hero__position{
   border-top-color:rgba(222,192,135,.4);
@@ -604,3 +613,8 @@
   .recruiter-redesign .rr-contact{padding:18px 0}
   .recruiter-redesign .rr-hero h1{font-size:35pt}
 }
+
+/* Executive first-screen fit. */
+@media(max-width:1250px){.site-header .nav-links{display:none}.site-header .mobile-nav{display:block}.flag-hero__interior{grid-template-columns:minmax(0,1.22fr) minmax(280px,.78fr);gap:34px}}
+@media(max-width:980px){.flag-hero__interior{grid-template-columns:1fr;min-height:0;gap:32px;width:min(calc(100% - 48px),760px);padding:51px 0 43px}.flag-hero__copy{width:100%;max-width:720px}.flag-hero h1{font-size:clamp(57px,7.6vw,79px)}.flag-hero__profile{max-width:340px;margin:0 auto;padding:0}}
+@media(max-width:530px){.flag-hero__interior{width:min(calc(100% - 36px),760px);padding:44px 0 35px}.flag-kicker{margin-top:23px;letter-spacing:.1em}.flag-hero h1{font-size:clamp(43px,12.5vw,61px);line-height:1.03;letter-spacing:-.051em}.flag-hero h1 em{letter-spacing:-.058em}.flag-hero__statement{font-size:clamp(25px,6.9vw,33px);margin-top:23px}.flag-hero__summary{font-size:13.5px;line-height:1.7}.flag-hero__profile{width:min(100%,305px);max-width:305px}.flag-hero__portrait-wrap{aspect-ratio:4/4.15}.flag-hero__links{gap:13px}}
