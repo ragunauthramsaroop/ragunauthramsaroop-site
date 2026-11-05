@@ -26,7 +26,8 @@ MEASURE = r"""() => {
              top: +r.top.toFixed(1), bottom: +r.bottom.toFixed(1),
              width: +r.width.toFixed(1) };
   };
-  const shown = e => !!e && getComputedStyle(e).display !== "none"
+  const shown = e => !!e && e.getClientRects().length > 0
+    && getComputedStyle(e).display !== "none"
     && getComputedStyle(e).visibility !== "hidden";
   const h1 = document.querySelector(".flag-hero h1");
   const nav = document.querySelector(".site-header .nav");
