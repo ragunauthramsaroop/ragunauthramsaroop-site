@@ -7,6 +7,7 @@ const source = fs.readFileSync("service-worker.js", "utf8");
 const listeners = {};
 const stores = new Map();
 let networkWorks = false;
+let networkResponseVersion = 0;
 
 function urlFor(req) {
   return new URL(typeof req === "string" ? req : req.url, "https://ragunauthramsaroop.com").href;
@@ -51,7 +52,7 @@ vm.runInNewContext(source, {
     if (!networkWorks) throw Error("Simulated TLS/network failure");
     const url = urlFor(req);
     const type = url.includes(".css") ? "text/css" : url.includes(".js") ? "application/javascript" : "text/html";
-    return new Response("Network response for " + url, {
+    return new Response("Network response version " + (++networkResponseVersion) + " for " + url, {
       headers: { "Content-Type": type }
     });
   }
@@ -72,8 +73,8 @@ async function eventFor(handler, request) {
 }
 
 (async () => {
-  assert.ok(source.includes('const V="rr-public-v15"'), "Version should be v15");
-  stores.set("rr-public-v14", new Map());
+  assert.ok(source.includes('const V="rr-public-v16"'), "Version should be v16");
+  stores.set("rr-public-v15", new Map());
   stores.set("some-other-app", new Map());
   const installWork = [];
   listeners.install({ waitUntil(p) { installWork.push(Promise.resolve(p)); } });
@@ -81,10 +82,10 @@ async function eventFor(handler, request) {
   const activateWork = [];
   listeners.activate({ waitUntil(p) { activateWork.push(Promise.resolve(p)); } });
   await Promise.all(activateWork);
-  assert.equal(stores.has("rr-public-v14"), false, "Retire prior RR cache on upgrade");
+  assert.equal(stores.has("rr-public-v15"), false, "Retire prior RR cache on upgrade");
   assert.equal(stores.has("some-other-app"), true, "Never delete unrelated caches");
 
-  const cache = await cacheAPI.open("rr-public-v15");
+  const cache = await cacheAPI.open("rr-public-v16");
   assert.equal(await cache.match("/"), undefined, "Homepage HTML should not inflate the eager install shell");
   assert.equal(await cache.match("/assets/home.css"), undefined, "Homepage CSS should load on demand instead of inflating the eager install shell");
   assert.ok(await cache.match("/assets/home-runtime.js"), "Homepage runtime should remain available offline");
@@ -103,9 +104,13 @@ async function eventFor(handler, request) {
   assert.equal(page.status, 200, "Online homepage navigation should return the requested page");
   assert.match(await page.text(), /Network response/);
   assert.ok(await cache.match("/"), "Successful homepage navigation should seed the canonical offline root cache");
+  const firstOnlineVersion = networkResponseVersion;
+  page = await eventFor(listeners.fetch, home);
+  assert.ok(networkResponseVersion > firstOnlineVersion, "Online repeat navigation must revalidate instead of serving stale cached home");
+  assert.match(await page.text(), /Network response version/);
 
   let homeCss = await eventFor(listeners.fetch, {
-    url: "https://ragunauthramsaroop.com/assets/home.css?v=compat",
+    url: "https://ragunauthramsaroop.com/assets/home-compiled-2026.css?v=1",
     mode: "same-origin", method: "GET"
   });
   assert.equal(homeCss.status, 200, "Homepage CSS should load on demand");
@@ -115,7 +120,7 @@ async function eventFor(handler, request) {
   assert.equal(page.status, 200, "A previously visited homepage should open from the exact cached route");
   assert.match(await page.text(), /Network response/);
   homeCss = await eventFor(listeners.fetch, {
-    url: "https://ragunauthramsaroop.com/assets/home.css?v=offline",
+    url: "https://ragunauthramsaroop.com/assets/home-compiled-2026.css?v=offline",
     mode: "same-origin", method: "GET"
   });
   assert.equal(homeCss.status, 200, "Previously fetched cache-busted homepage CSS should work offline");
@@ -157,5 +162,5 @@ async function eventFor(handler, request) {
   });
   assert.equal(css.status, 200, "Visited tool CSS should then work offline");
 
-  console.log("PASS: lean install shell, exact cached homepage after first visit, deferred assets, offline route integrity, cache migration");
+  console.log("PASS: lean install shell, fresh online homepage, exact cached offline route, deferred assets and cache migration");
 })().catch(err => { console.error(err); process.exitCode = 1; });
