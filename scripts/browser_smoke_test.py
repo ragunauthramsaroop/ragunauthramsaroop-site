@@ -36,7 +36,8 @@ def main():
             expect(page.locator(".flag-hero__portrait-wrap img")).to_have_attribute("width", "800")
             expect(page.locator(".flag-hero__portrait-wrap img")).to_have_attribute("height", "1030")
             expect(page.locator(".flag-hero__portrait-wrap img")).to_have_attribute("src", "/assets/randy-portrait.jpg")
-            assert page.locator('link[href^="/assets/home.css"]').count() == 1
+            assert page.locator('link[rel="stylesheet"][href^="/assets/home-compiled-2026.css"]').count() == 1
+            assert page.locator('link[rel="stylesheet"]').count() == 1
             assert page.locator('script[src]').count() == 1
             expect(page.locator('script[src]')).to_have_attribute("src", "/assets/home-runtime.js")
             assert page.locator('script[src^="/_next/static/"]').count() == 0
