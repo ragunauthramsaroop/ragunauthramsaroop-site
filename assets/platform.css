@@ -347,3 +347,6 @@ body.rr-index-contrast .rr-platform-nav a{
   display:inline-flex;align-items:center;min-height:36px;
   padding:7px 5px;
 }
+
+/* Respect hidden state of static executive mobile navigation. */
+body.flagship-executive #mobile-navigation[hidden]{display:none!important}

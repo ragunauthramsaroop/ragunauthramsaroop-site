@@ -52,8 +52,10 @@ for filename,markers in PAGES.items():
         assert "id=\"rr-print\"" in html and "data-copy-target=\"rr-short-bio\"" in html
         assert any((x or "").startswith("mailto:ragunauthramsaroop@icloud.com") for x in parser.links)
     if filename in ("executive-profile/index.html","board-ceo-mode/index.html","recruiter-mode/index.html"):
-        assert 'id="__NEXT_DATA__"' in html, "Pre-rendered hydration boundary must remain intact"
-        assert "/_next/static/" in html
+        assert 'id="__NEXT_DATA__"' in html, "Preserve serialized public route marker"
+        assert "/_next/static/css/" in html, "Preserve existing executive visual design"
+        assert 'src="/_next/static/' not in html, "Stale client hydration must not run"
+        assert 'src="/assets/executive-static-nav.js"' in html, "Accessible static mobile navigation missing"
 assert "Oxford domain. Not a claim of university employment" in (ROOT/"index.html").read_text(encoding="utf-8")
 assert "company-wide results" in (ROOT/"recruiter-toolkit/index.html").read_text(encoding="utf-8").lower()
 print("PASS: five cohesive executive routes, preserved hydration, first-party assets, evidence, budgets and responsive access")

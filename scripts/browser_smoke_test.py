@@ -98,6 +98,20 @@ def main():
                     assert metrics["mainLeft"] >= -2 and metrics["mainRight"] <= metrics["innerWidth"] + 2, (
                         f"Main content escapes viewport on {route} at {width}px: {metrics}"
                     )
+            # Pre-rendered executive pages must work without stale React hydration.
+            page.set_viewport_size({"width": 390, "height": 844})
+            for route in ("/executive-profile/", "/board-ceo-mode/", "/recruiter-mode/"):
+                page.goto(base + route, wait_until="load")
+                toggle = page.locator(".shell .menu-button")
+                expect(toggle).to_be_visible()
+                expect(toggle).to_have_attribute("aria-expanded", "false")
+                toggle.click()
+                expect(toggle).to_have_attribute("aria-expanded", "true")
+                expect(page.locator("#mobile-navigation a").first).to_be_visible()
+                page.keyboard.press("Escape")
+                expect(toggle).to_have_attribute("aria-expanded", "false")
+                expect(page.locator("#mobile-navigation")).to_be_hidden()
+            results.append("PASS static executive navigation: mobile menu, Escape, focus and public links")
             page.set_viewport_size({"width": 1280, "height": 900})
             results.append("PASS executive alignment: ten priority routes fit desktop, tablet and mobile viewports")
 
