@@ -130,8 +130,8 @@
     },
     {
       "path": "/assets/search-index.json",
-      "sha256": "f5af94cdc220517349c6d5744181bf77e30fb8384161d6a45043a161165b3bcd",
-      "bytes": 346133,
+      "sha256": "3f8f3bcd09cbde2c404b1fd36337c4a6e3d14bb3c79ccec3a781a618db08d7db",
+      "bytes": 346134,
       "generated": "05 November 2026"
     },
     {
@@ -184,8 +184,8 @@
     },
     {
       "path": "/resume.html",
-      "sha256": "1e26e85ee0ff2c7b090631455e8c0598f03662220da49e1b87a471b63841c268",
-      "bytes": 35137,
+      "sha256": "d9f85ef9554e3a90db8a88eb96b4c00b7259429156f550eaee6f2743fce289a0",
+      "bytes": 35135,
       "generated": "05 November 2026"
     },
     {
@@ -202,8 +202,8 @@
     },
     {
       "path": "/public-record/index.html",
-      "sha256": "7ed6286fe79f29c54a3578668173132bbd6c02a4f3038012d7ee70828f376f8e",
-      "bytes": 8488,
+      "sha256": "983fe9b87f07f6b1dca1c342435ff95879394c63576c289629beb14467e33952",
+      "bytes": 9098,
       "generated": "05 November 2026"
     },
     {
