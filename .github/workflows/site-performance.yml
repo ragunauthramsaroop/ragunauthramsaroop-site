@@ -111,6 +111,7 @@ jobs:
         run: |
           node --check service-worker.js
           node --check assets/home-runtime.js
+          node --check assets/executive-static-nav.js
           node --check assets/accessibility.js
           node --check assets/research-assistant.js
           node --check assets/ask-research-ui.js
