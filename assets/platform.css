@@ -338,3 +338,12 @@ body.flagship-executive #__next .shell main .section .mode-section-head .eyebrow
 body.flagship-executive #__next .shell main .section .mode-path-grid a small{
   color:#67471e!important;-webkit-text-fill-color:#67471e!important;
 }
+/* Lighthouse follow-through: accessible board captions and search touch targets. */
+body.flagship-executive #__next .shell main .section .eyebrow,
+body.flagship-executive #__next .shell main .section.mode-path-grid a small{
+  color:#67471e!important;-webkit-text-fill-color:#67471e!important;
+}
+body.rr-index-contrast .rr-platform-nav a{
+  display:inline-flex;align-items:center;min-height:36px;
+  padding:7px 5px;
+}
