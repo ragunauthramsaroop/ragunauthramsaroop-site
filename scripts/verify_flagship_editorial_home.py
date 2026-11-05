@@ -19,7 +19,7 @@ page=Page();page.feed(home)
 assert page.h1==1
 assert "hero-name" in page.ids and "mandate-fit-title" in page.ids and "executive-desk-title" in page.ids
 assert all(f'flag-{name}' in home for name in ("hero","pathways","expertise","evidence","audiences","research","close"))
-assert "/assets/home-flagship-editorial-2026.css?v=1" in home
+assert "/assets/home-compiled-2026.css?v=1" in home and "home-signature-2026.css?v=2" not in home
 assert len(home.encode("utf-8"))<25000
 for target in ("/resume.html","/executive-profile/","/recruiter-mode/","/recruiter-toolkit/","/board-ceo-mode/","/engage/","/proof-in-practice/","/media/","/public-record/","/research-library/","/guyana-intelligence/","/insights/aurora-operating-context/"):
     assert target in page.links, "Executive audience route omitted: "+target
@@ -71,7 +71,7 @@ for language in ("es","pt","fr"):
 # Signature design assets must stay first-party, light and responsive.
 signature=(ROOT/"assets/home-signature-2026.css").read_text(encoding="utf-8")
 art=(ROOT/"assets/executive-orbit-2026.svg").read_text(encoding="utf-8")
-assert '/assets/home-signature-2026.css?v=2' in home, "Signature stylesheet missing"
+assert "/assets/home-compiled-2026.css?v=1" in home, "Compiled editorial stylesheet missing"
 assert 'class="flag-hero__orbit"' in home and '/assets/executive-orbit-2026.svg' in home, "Original portrait geometry missing"
 assert 'aria-hidden="true"' in home and 'alt=""' in home, "Decorative line art must remain hidden from screen readers"
 assert '<svg' in art and 'xmlns="http://www.w3.org/2000/svg"' in art, "Original artwork invalid"
