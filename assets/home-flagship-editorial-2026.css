@@ -180,3 +180,13 @@ img{display:block;max-width:100%}a{color:inherit}button,input,textarea{font:inhe
 .flag-desk__end{margin-top:26px;display:flex;flex-wrap:wrap;justify-content:flex-start;gap:18px 33px}
 @media(max-width:790px){.flag-pathways{width:min(calc(100% - 36px),var(--max));padding:65px 0}.flag-pathways__top{align-items:start;flex-direction:column;gap:16px}.flag-pathways__top>p{max-width:590px}.flag-pathways__grid{grid-template-columns:1fr}.flag-pathway{padding:30px}.flag-pathway h3{margin-top:23px}.flag-desk__list>a{grid-template-columns:125px minmax(0,1fr) 20px;gap:15px}}
 @media(max-width:530px){.flag-pathways{padding:58px 0}.flag-pathways__top h2{font-size:clamp(34px,9.3vw,44px)}.flag-pathway{padding:26px 23px}.flag-pathway h3{font-size:32px}.flag-pathway__links a{font-size:11px}.flag-desk__list>a{grid-template-columns:1fr 20px;gap:8px;padding:25px 0}.flag-desk__list .flag-index{grid-column:1/-1}.flag-desk__list>a>div{grid-column:1}.flag-desk__list h3{font-size:26px}.flag-desk__list b{grid-column:2;grid-row:2}.flag-desk__end{flex-direction:column;align-items:start;gap:18px}}
+
+/* Compact professional affiliations below the home portrait, 2026-11-05. */
+.flag-hero__affiliations{display:grid;gap:13px;margin-top:19px;padding:19px 4px 1px;border-top:1px solid rgba(226,198,143,.38)}
+.flag-hero__affiliations-label{margin:0 0 2px;color:#e6c995;font:750 10px/1.4 var(--sans);letter-spacing:.15em;text-transform:uppercase}
+.flag-hero__affiliation{display:grid;gap:3px;padding-left:12px;border-left:2px solid rgba(226,198,143,.52);min-width:0}
+.flag-hero__affiliation strong{color:#fff9ed;font:680 12px/1.45 var(--sans);overflow-wrap:break-word}
+.flag-hero__affiliation small{color:#c8d9d4;font:400 10.5px/1.5 var(--sans)}
+.flag-hero__affiliation a{color:#e8cc99;text-decoration:underline;text-underline-offset:3px}
+.flag-hero__affiliation a:hover{color:#fff1ce}
+@media(max-width:530px){.flag-hero__affiliations{gap:12px;padding-top:17px}.flag-hero__affiliation strong{font-size:12.5px}}
