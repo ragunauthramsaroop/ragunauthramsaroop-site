@@ -36,10 +36,14 @@ class Quiet(SimpleHTTPRequestHandler):
         if route in self.LEGACY:
             source=(ROOT/route.lstrip("/")/"index.html").read_text(encoding="utf-8")
             original='<base data-next-head="" href="https://ragunauthramsaroop.com/"/>'
-            if original not in source:
-                self.send_error(500,"Expected legacy base URL missing")
+            local='<base data-next-head="" href="/"/>'
+            if local in source:
+                html=source
+            elif original in source:
+                html=source.replace(original,local,1)
+            else:
+                self.send_error(500,"Expected site base URL missing")
                 return
-            html=source.replace(original,'<base data-next-head="" href="/"/>',1)
             data=html.encode("utf-8")
             self.send_response(200)
             self.send_header("Content-Type","text/html; charset=utf-8")
