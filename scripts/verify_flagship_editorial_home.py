@@ -28,6 +28,15 @@ for fact in ("Director since 2025","12+","Financial services and natural resourc
 assert "49.4" not in home and "10,000" not in home and "89%" not in home, "Employer operating metrics must stay off personal homepage"
 assert any(img.get("class")=="portrait" and img.get("fetchpriority")=="high" and img.get("alt") for img in page.images)
 assert "Oxford domain. Not a claim of university employment" in home
+# The profile must differentiate an active professional appointment, two ambassador
+# records with different dates, and an independently published UNGIS membership.
+hero=home.split('<aside class="flag-hero__profile"',1)[1].split("</aside>",1)[0]
+assert 'Current appointment' in hero and 'Director since 2025' in hero
+assert 'International roles &amp; affiliations' in hero
+assert 'Member, UNGIS Multistakeholder Consultation Group' in hero
+assert 'Private Sector · 2026' in hero and 'https://www.itu.int/net4/wsis/ungis/Home/MCG' in hero
+assert 'Ambassador, International Organization of Youth' in hero and 'Guyana · 2026–2027' in hero
+assert 'Ambassador, Sustainable Procurement Pledge' in hero and '2019 · Historical appointment' in hero
 # Direct mandate enquiries should not depend on a LinkedIn account or a third-party contact form.
 cv=(ROOT/"resume.html").read_text(encoding="utf-8")
 public_email="ragunauthramsaroop@icloud.com"
