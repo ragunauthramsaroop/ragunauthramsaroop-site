@@ -38,14 +38,15 @@ for filename,markers in PAGES.items():
     html=(ROOT/filename).read_text(encoding="utf-8")
     parser=Scan();parser.feed(html)
     assert parser.h1==1, f"{filename} needs one H1"
-    assert "/assets/flagship-system-2026.css?v=1" in parser.styles, f"Unified theme missing: {filename}"
+    expected_css="/assets/home-compiled-2026.css?v=1" if filename=="index.html" else "/assets/flagship-system-2026.css?v=1"
+    assert expected_css in parser.styles, f"Unified theme missing: {filename}"
     assert all(m in html for m in markers), f"Executive pathway structure changed: {filename}"
-    assert "/assets/flagship-system-2026.css?v=1" in html
+    assert expected_css in html
     if filename=="index.html":
         assert len(html.encode("utf-8"))<=25_000
         assert any(img.get("class")=="portrait" and img.get("src")=="/assets/randy-portrait.jpg" for img in parser.images)
         assert all(x in parser.links for x in ("/board-ceo-mode/","/recruiter-toolkit/","/resume.html","/public-record/","/proof-in-practice/"))
-        assert "href=\"/assets/home.css?v=compat\"" in html
+        assert "href=\"/assets/home-compiled-2026.css?v=1\"" in html
         assert html.count("<main") ==1
     if filename.endswith("recruiter-toolkit/index.html"):
         assert "id=\"rr-print\"" in html and "data-copy-target=\"rr-short-bio\"" in html
