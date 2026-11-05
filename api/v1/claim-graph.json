@@ -5,8 +5,8 @@
   "recordSource": "https://ragunauthramsaroop.com/api/v1/executive-record.json",
   "subjectId": "https://ragunauthramsaroop.com/#person",
   "purpose": "Explicit claim-to-source connections only. No inferred endorsements, credentials, or personally attributable company performance.",
-  "nodeCount": 13,
-  "edgeCount": 13,
+  "nodeCount": 15,
+  "edgeCount": 15,
   "nodes": [
     {
       "id": "https://ragunauthramsaroop.com/#person",
@@ -45,6 +45,24 @@
       "label": "External Oxford-domain professional profile",
       "url": "https://leadership.climate.ox.ac.uk/leaders/ragunauth-ramsaroop/",
       "sourceType": "external_profile",
+      "verification": "source_link_not_document_authentication"
+    },
+    {
+      "id": "claim:ungis-mcg-2026",
+      "type": "Claim",
+      "label": "United Nations Group on the Information Society Multistakeholder Consultation Group membership",
+      "value": "Ragunauth Ramsaroop is listed as a Private Sector member, Liaison Director, AGM Inc., Guyana, in the 2026 UNGIS-MCG official directory",
+      "classification": "external_institutional_membership_directory",
+      "effectiveFrom": "2026",
+      "scope": "Membership of a multistakeholder consultation group, not UN staff employment or an appointment to a UN agency; designation and organisation as listed in the external directory.",
+      "verification": "source_scoped_not_issuer_verified"
+    },
+    {
+      "id": "evidence:https://www.itu.int/net4/wsis/ungis/Home/MCG",
+      "type": "EvidenceSource",
+      "label": "Official UNGIS-MCG Member Directory (hosted by ITU)",
+      "url": "https://www.itu.int/net4/wsis/ungis/Home/MCG",
+      "sourceType": "institutional_official_directory",
       "verification": "source_link_not_document_authentication"
     },
     {
@@ -144,6 +162,18 @@
       "to": "evidence:https://leadership.climate.ox.ac.uk/leaders/ragunauth-ramsaroop/",
       "relation": "references",
       "qualifier": "Supports current professional positioning, not independently the 2025 appointment date"
+    },
+    {
+      "from": "https://ragunauthramsaroop.com/#person",
+      "to": "claim:ungis-mcg-2026",
+      "relation": "publishes_claim",
+      "qualifier": "self-published"
+    },
+    {
+      "from": "claim:ungis-mcg-2026",
+      "to": "evidence:https://www.itu.int/net4/wsis/ungis/Home/MCG",
+      "relation": "references",
+      "qualifier": "institutional_official_directory"
     },
     {
       "from": "https://ragunauthramsaroop.com/#person",
