@@ -1,5 +1,5 @@
-/* Fast homepage shell with cache-first home navigation and background refresh. */
-const V="rr-public-v15";
+/* Fresh online navigation, exact-route offline cache and budgeted static asset caching. */
+const V="rr-public-v16";
 const CORE=["/assets/home-runtime.js","/assets/accessibility.css","/favicon-96.png"];
 const STATIC_FIRST=new Set(["/assets/home-runtime.js","/assets/accessibility.css","/assets/preview.png","/favicon-96.png"]);
 const MAX_DYNAMIC_ENTRIES=60;
@@ -52,14 +52,6 @@ async function navigation(request,event){
   const cache=await caches.open(V);
   const url=new URL(request.url);
   const isHome=url.pathname==="/"||url.pathname==="/index.html";
-
-  if(isHome){
-    const cached=await cache.match("/",{ignoreSearch:true});
-    if(cached){
-      event.waitUntil(fromNetwork(request,event,cache).catch(()=>null));
-      return cached;
-    }
-  }
 
   try{
     const fresh=await fromNetwork(request,event,cache);

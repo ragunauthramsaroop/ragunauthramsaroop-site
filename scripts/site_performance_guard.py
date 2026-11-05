@@ -45,8 +45,10 @@ check(any(x.get("rel") == "preload" and x.get("as") == "image" and x.get("href")
 check(any(x.get("class") == "portrait" and x.get("fetchpriority") == "high"
           and x.get("width") and x.get("height") for x in page.images),
       "Hero must reserve dimensions and load with high priority")
-check(any(x.get("rel") == "stylesheet" and str(x.get("href") or "").startswith("/assets/home.css") for x in page.links),
-      "Dedicated homepage stylesheet must be linked directly")
+check([x.get("href") for x in page.links if x.get("rel") == "stylesheet" and x.get("media") != "not all"] == ["/assets/home-compiled-2026.css?v=1"],
+      "Homepage must use one render-blocking consolidated stylesheet")
+check((ROOT / "assets/home-compiled-2026.css").exists() and (ROOT / "assets/home-compiled-2026.css").stat().st_size <= 75_000,
+      "Homepage consolidated stylesheet is missing or too large")
 
 sw = (ROOT / "service-worker.js").read_text(encoding="utf-8")
 match = re.search(r"const CORE=\[([\s\S]*?)\];", sw)
@@ -65,7 +67,7 @@ for url in urls:
 check(core_bytes <= 34_000, f"Service worker eager shell is {core_bytes/1024:.1f} KB; budget is 34 KB")
 check(not any("index.json" in u or u.endswith(".wasm") for u in urls),
       "Large indexes and model assets must be fetched on demand")
-check('const V="rr-public-v15"' in sw, "Service worker version must be v15")
+check('const V="rr-public-v16"' in sw, "Service worker version must be v16")
 check("/assets/accessibility.css" in urls, "Accessibility stylesheet must be available offline")
 check("/assets/home-runtime.js" in urls, "Homepage idle runtime must be available offline")
 check("const fresh=await fromNetwork(request,event,cache);" in sw
@@ -93,7 +95,7 @@ check(runtime.count("requestIdleCallback") >= 1, "Homepage runtime must defer no
 check("/assets/accessibility.js" in runtime and "/tools/assets/analytics-loader.js" in runtime,
       "Homepage runtime must idle-load accessibility and analytics")
 check('serviceWorker.register("/service-worker.js"' in runtime,
-      "Homepage runtime must register the fast cache immediately after load")
+      "Homepage runtime must register the cache without loading a new script")
 check((ROOT / "assets/home-runtime.js").stat().st_size <= 1_500, "Homepage runtime exceeded 1.5 KB")
 accessibility = (ROOT / "assets/accessibility.js").read_text(encoding="utf-8")
 check('createElement("style")' not in accessibility, "Accessibility helper must not inject inline style under strict CSP")
@@ -113,6 +115,24 @@ css = ROOT / "_next/static/css/5a81eca963785de4.css"
 check(css.exists() and css.stat().st_size <= 235_000, "Main CSS exceeded size baseline; review before shipping")
 search = ROOT / "assets/search-index.json"
 check(search.exists() and search.stat().st_size <= 400_000, "Search index exceeded size baseline")
+
+# Protect the compiled homepage against silent drift when source theme layers change.
+home_layers = (
+    "assets/home-flagship-editorial-2026.css",
+    "assets/home-signature-2026.css",
+    "assets/flagship-system-2026.css",
+)
+compiled_css = ROOT / "assets/home-compiled-2026.css"
+if compiled_css.exists():
+    expected_css = "\n\n".join(
+        f"/* Source layer {i}: {layer}; source files remain for maintenance */\n" +
+        (ROOT / layer).read_text(encoding="utf-8").strip()
+        for i, layer in enumerate(home_layers, 1)
+     ) + "\n"
+    check(compiled_css.read_text(encoding="utf-8") == expected_css,
+          "Compiled homepage theme is out of sync with its three source stylesheets")
+else:
+    check(False, "Compiled homepage theme missing")
 
 if errors:
     for error in errors:

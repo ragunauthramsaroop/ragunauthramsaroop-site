@@ -108,6 +108,6 @@ for bundle in (
 recognition_bundle=(ROOT/"_next/static/chunks/pages/recognition-media-2ff639f29bacfe27.js").read_text(encoding="utf-8")
 if "CREF 2026 · Conference programme" not in recognition_bundle:
     raise SystemExit("FAIL: prebuilt recognition page needs dated programme correction")
-if (ROOT/"service-worker.js").read_text(encoding="utf-8").count('const V="rr-public-v15"') != 1:
+if (ROOT/"service-worker.js").read_text(encoding="utf-8").count('const V="rr-public-v16"') != 1:
     raise SystemExit("FAIL: service worker did not advance for refreshed cached Next.js chunks")
 print("PASS: generated client bundles and cache version aligned with published career record")

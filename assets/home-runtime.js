@@ -15,7 +15,7 @@ if(mobileMenu){
   });
 }
 addEventListener("load",()=>{
-  if("serviceWorker" in navigator)navigator.serviceWorker.register("/service-worker.js",{updateViaCache:"none"}).catch(()=>{});
+  setTimeout(()=>idle(()=>{if("serviceWorker" in navigator)navigator.serviceWorker.register("/service-worker.js",{updateViaCache:"none"}).catch(()=>{});},5000),3500);
   setTimeout(()=>idle(()=>addScript("/assets/accessibility.js"),1200),700);
   setTimeout(()=>idle(()=>addScript("/tools/assets/analytics-loader.js"),1200),3000);
 },{once:true});

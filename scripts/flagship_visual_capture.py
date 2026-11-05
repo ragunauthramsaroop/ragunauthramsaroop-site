@@ -81,6 +81,7 @@ async def run():
                   if(x===null||y===null)return null;
                   return Math.round(100*(Math.max(x,y)+.05)/(Math.min(x,y)+.05))/100;
                 };
+                const theme=location.pathname==='/'?'home-compiled-2026.css':'flagship-system-2026.css';
                 const header=document.querySelector('.shell .topbar');
                 const bg=header?getComputedStyle(header).backgroundColor:null;
                 const entries=header?[header.querySelector('.brand > div'),...header.querySelectorAll('.navlinks a:not(.contact-chip)'),header.querySelector('.menu-button')]:[];
@@ -89,9 +90,9 @@ async def run():
                   h1:[...document.querySelectorAll('h1')].map(e=>e.innerText.trim()),
                   scrollWidth:document.documentElement.scrollWidth,
                   viewport:innerWidth,
-                  css:[...document.querySelectorAll('link[rel=stylesheet]')].some(e=>e.href.includes('flagship-system-2026.css')),
-                  cssLoaded:[...document.styleSheets].some(e=>e.href&&e.href.includes('flagship-system-2026.css')),
-                  cssLocal:[...document.styleSheets].some(e=>e.href&&e.href.startsWith(location.origin+'/assets/flagship-system-2026.css')),
+                  css:[...document.querySelectorAll('link[rel=stylesheet]')].some(e=>e.href.includes(theme)),
+                  cssLoaded:[...document.styleSheets].some(e=>e.href&&e.href.includes(theme)),
+                  cssLocal:[...document.styleSheets].some(e=>e.href&&e.href.startsWith(location.origin+'/assets/'+theme)),
                   baseURI:document.baseURI,
                   headerBackground:bg,
                   headerBrandFill:header?.querySelector('.brand>div')?getComputedStyle(header.querySelector('.brand>div')).webkitTextFillColor:null,
@@ -101,7 +102,7 @@ async def run():
                   currentUrl:location.href,
                   shellClass:document.querySelector('.shell')?.className||null,
                   headerTextColor:header?.querySelector('.brand>div')?getComputedStyle(header.querySelector('.brand>div')).color:null,
-                  loadedStylesheets:[...document.styleSheets].filter(x=>x.href&&x.href.includes('flagship-system-2026.css')).map(x=>({href:x.href})),
+                  loadedStylesheets:[...document.styleSheets].filter(x=>x.href&&x.href.includes(theme)).map(x=>({href:x.href})),
                   badImages:[...document.querySelectorAll('img')].filter(e=>e.complete && !e.naturalWidth).map(e=>e.getAttribute('src')),
                   headerContrastMin:contrastPairs.length?Math.min(...contrastPairs):null
                 };
