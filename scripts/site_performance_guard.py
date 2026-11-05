@@ -45,8 +45,10 @@ check(any(x.get("rel") == "preload" and x.get("as") == "image" and x.get("href")
 check(any(x.get("class") == "portrait" and x.get("fetchpriority") == "high"
           and x.get("width") and x.get("height") for x in page.images),
       "Hero must reserve dimensions and load with high priority")
-check(any(x.get("rel") == "stylesheet" and str(x.get("href") or "").startswith("/assets/home.css") for x in page.links),
-      "Dedicated homepage stylesheet must be linked directly")
+check([x.get("href") for x in page.links if x.get("rel") == "stylesheet" and x.get("media") != "not all"] == ["/assets/home-compiled-2026.css?v=1"],
+      "Homepage must use one render-blocking consolidated stylesheet")
+check((ROOT / "assets/home-compiled-2026.css").exists() and (ROOT / "assets/home-compiled-2026.css").stat().st_size <= 75_000,
+      "Homepage consolidated stylesheet is missing or too large")
 
 sw = (ROOT / "service-worker.js").read_text(encoding="utf-8")
 match = re.search(r"const CORE=\[([\s\S]*?)\];", sw)
@@ -93,7 +95,7 @@ check(runtime.count("requestIdleCallback") >= 1, "Homepage runtime must defer no
 check("/assets/accessibility.js" in runtime and "/tools/assets/analytics-loader.js" in runtime,
       "Homepage runtime must idle-load accessibility and analytics")
 check('serviceWorker.register("/service-worker.js"' in runtime,
-      "Homepage runtime must register the fast cache immediately after load")
+      "Homepage runtime must register the cache without loading a new script")
 check((ROOT / "assets/home-runtime.js").stat().st_size <= 1_500, "Homepage runtime exceeded 1.5 KB")
 accessibility = (ROOT / "assets/accessibility.js").read_text(encoding="utf-8")
 check('createElement("style")' not in accessibility, "Accessibility helper must not inject inline style under strict CSP")
