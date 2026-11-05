@@ -140,7 +140,7 @@ def static_audit(report_path:Path):
                 issues.append(("ERROR",rel,"Platform navigation chrome remains on executive page"))
             if "/tools/assets/launcher.js" in raw or "/tools/assets/launcher.css" in raw:
                 issues.append(("ERROR",rel,"Floating tools launcher remains on executive page"))
-            if rel in {"executive-profile/index.html","contact/index.html"} and "30 September 2026" not in raw:
+            if rel in {"executive-profile/index.html","contact/index.html"} and not re.search(r"Public record reviewed\s*·\s*\d{1,2} [A-Z][a-z]+ 20\d{2}", raw):
                 issues.append(("ERROR",rel,"Executive record review date not current"))
         if rel=="index.html":
             if "/assets/randy-portrait.jpg" not in raw: issues.append(("ERROR",rel,"Self-hosted executive portrait missing from homepage"))
