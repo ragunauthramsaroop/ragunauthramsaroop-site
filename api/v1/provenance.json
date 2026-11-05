@@ -1,5 +1,5 @@
 {
-  "generated": "04 November 2026",
+  "generated": "05 November 2026",
   "algorithm": "SHA-256",
   "resources": [
     {
@@ -130,9 +130,9 @@
     },
     {
       "path": "/assets/search-index.json",
-      "sha256": "c3b3ce70191e099b59c090180081cb02dbde25b5bbc586d19a3d1bf333b6dab8",
+      "sha256": "f5af94cdc220517349c6d5744181bf77e30fb8384161d6a45043a161165b3bcd",
       "bytes": 346133,
-      "generated": "04 November 2026"
+      "generated": "05 November 2026"
     },
     {
       "path": "/api/v1/capabilities.json",
@@ -178,15 +178,15 @@
     },
     {
       "path": "/index.html",
-      "sha256": "19980e60765370a507ae678c9ac93d4d8eaae78e05e7b7fc7f71834128f71e60",
-      "bytes": 23100,
-      "generated": "04 November 2026"
+      "sha256": "2218fb167c7f692812d9005437df4a6a49cac113ba974bd29db103cdc7d89d0b",
+      "bytes": 23495,
+      "generated": "05 November 2026"
     },
     {
       "path": "/resume.html",
-      "sha256": "917deb193cce564941c751a5d45cc4c0cfa4bbe2110a1ad8ecce30621a7de8b0",
-      "bytes": 34362,
-      "generated": "02 November 2026"
+      "sha256": "1e26e85ee0ff2c7b090631455e8c0598f03662220da49e1b87a471b63841c268",
+      "bytes": 35137,
+      "generated": "05 November 2026"
     },
     {
       "path": "/data/public-profile.json",
@@ -202,27 +202,27 @@
     },
     {
       "path": "/public-record/index.html",
-      "sha256": "8106aa3eb368b62df7f75eb7464e14a11c0ac29a354319519d3e4dec60b3da51",
-      "bytes": 7861,
-      "generated": "02 November 2026"
+      "sha256": "7ed6286fe79f29c54a3578668173132bbd6c02a4f3038012d7ee70828f376f8e",
+      "bytes": 8488,
+      "generated": "05 November 2026"
     },
     {
       "path": "/api/v1/executive-record.json",
-      "sha256": "db07dbb0c1185d66783d67e115b2d20ebe8c3b2ee10b78ed95a77f4ee82b7b49",
-      "bytes": 5690,
-      "generated": "02 November 2026"
+      "sha256": "9f1bc6d4eec4206f437f09ca3ef24e31a3f3d06d6365bb449e96b9eeca632ac4",
+      "bytes": 6536,
+      "generated": "05 November 2026"
     },
     {
       "path": "/api/v1/claim-graph.json",
-      "sha256": "b3622ab24552923ecc644cb6c5c39c1ccfce4296b83a62ef9acc91dbd4866df9",
-      "bytes": 8409,
-      "generated": "02 November 2026"
+      "sha256": "545e645c4e516e0b263f959b09b22f6edafaeaf777e08edfd7a5468a42285d4d",
+      "bytes": 9851,
+      "generated": "05 November 2026"
     },
     {
       "path": "/claim-graph/index.html",
-      "sha256": "41c007effe8f672b30e00f6d2ba1131d2c6a5b8f24f436eb421ceca2b80a2c0b",
-      "bytes": 5916,
-      "generated": "02 November 2026"
+      "sha256": "080a3ebffaf45855787fdf1971f5d9096dc71e81682fe2d712f75e36f3a7536a",
+      "bytes": 6588,
+      "generated": "05 November 2026"
     },
     {
       "path": "/executive-private-room/index.html",
