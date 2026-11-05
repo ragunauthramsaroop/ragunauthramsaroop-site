@@ -51,3 +51,21 @@
 @media(max-width:530px){.rr-hero__layout,.rr-shortcuts,.rr-section,.rr-band__inner,.rr-bio__inner{width:min(calc(100% - 32px),var(--max))}.rr-hero__layout{padding:50px 0}.rr-hero h1{font-size:clamp(43px,12vw,63px)}.rr-deck{font-size:23px}.rr-lead{font-size:13px}.rr-actions{flex-direction:column;align-items:stretch}.rr-actions .rr-btn{width:100%}.rr-profile{display:none}.rr-shortcuts a{padding:17px 9px;font-size:11px;gap:8px}.rr-section h2,.rr-band h2,.rr-bio h2,.rr-contact h2{font-size:clamp(38px,10vw,50px)}.rr-mandate-grid article{padding:26px;min-height:0}.rr-evidence-grid{grid-template-columns:1fr}.rr-evidence-grid a{min-height:0}.rr-bio__inner>div:last-child{padding-left:18px}.rr-contact{padding:60px 16px}.rr-questions h3{font-size:25px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.rr-btn{transition:none}}
 @media print{html,body{color:#172c24!important;background:#fff!important;font-size:10pt!important}.site-header,.skip-link,.mobile-nav,.nav-links,.rr-actions,.rr-shortcuts,.rr-copy,.rr-copy-status,.rr-contact__actions,.footer{display:none!important}.rr-hero{color:#172c24!important;background:#fff!important;break-after:avoid}.rr-hero:before{display:none}.rr-hero__layout{display:block;padding:0;margin:0}.rr-hero h1{font-size:35pt}.rr-hero h1 em,.rr-section h2 em,.rr-band h2 em,.rr-bio h2 em,.rr-contact h2 em{color:#5c5138!important}.rr-profile{display:none!important}.rr-deck,.rr-lead,.rr-hero__note{color:#333!important}.rr-section,.rr-band__inner,.rr-bio__inner{padding:22px 0}.rr-section h2,.rr-band h2,.rr-bio h2,.rr-contact h2{font-size:23pt}.rr-section__heading{display:block;margin-bottom:12px}.rr-section__heading>p:last-child{margin-top:8px}.rr-mandate-grid{gap:7px}.rr-mandate-grid article{min-height:0;padding:12px;border:1px solid #999}.rr-mandate-grid h3{font-size:16pt;margin:8px 0}.rr-mandate-grid p{margin-bottom:5px}.rr-mandate-grid article>a{display:none}.rr-band,.rr-bio,.rr-contact{background:#fff!important;color:#172c24!important}.rr-timeline{margin:12px 0}.rr-timeline div{padding:11px}.rr-timeline strong{font-size:18pt}.rr-evidence-grid{gap:6px}.rr-evidence-grid a{min-height:0;padding:10px}.rr-evidence-grid h3{font-size:17pt;margin:5px 0}.rr-evidence-grid strong{display:none}.rr-questions{gap:0 20px}.rr-questions article{padding:10px 0}.rr-questions h3{font-size:17pt}.rr-interview__link{display:none}.rr-bio__inner{display:block}.rr-bio__inner>div:last-child{margin-top:14px}.rr-bio__inner>div:last-child p{font-size:13pt}.rr-contact{display:block;padding:18px 0}.rr-contact p{color:#333!important}.rr-contact:after{content:"Professional enquiries: ragunauthramsaroop@icloud.com";display:block;margin-top:12px;font-size:11pt}a{text-decoration:none!important}article{break-inside:avoid}h2,h3{break-after:avoid}@page{size:A4;margin:15mm}}
+
+/* Readable gold typography on light executive recruiter panels. */
+.recruiter-redesign .rr-shortcuts a>span,
+.recruiter-redesign .rr-questions article>span,
+.recruiter-redesign .rr-section .rr-eyebrow,
+.recruiter-redesign .rr-band .rr-eyebrow,
+.recruiter-redesign .rr-bio .rr-eyebrow{
+  color:#69491f!important;-webkit-text-fill-color:#69491f!important;
+}
+.recruiter-redesign .rr-section h2 em,
+.recruiter-redesign .rr-band h2 em,
+.recruiter-redesign .rr-bio h2 em{
+  color:#6b4a23!important;-webkit-text-fill-color:#6b4a23!important;
+}
+.recruiter-redesign #rr-print{
+  background:#123b30!important;color:#ffffff!important;-webkit-text-fill-color:#ffffff!important;
+  border-color:#123b30!important;
+}
