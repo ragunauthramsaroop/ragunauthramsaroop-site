@@ -116,6 +116,24 @@ check(css.exists() and css.stat().st_size <= 235_000, "Main CSS exceeded size ba
 search = ROOT / "assets/search-index.json"
 check(search.exists() and search.stat().st_size <= 400_000, "Search index exceeded size baseline")
 
+# Protect the compiled homepage against silent drift when source theme layers change.
+home_layers = (
+    "assets/home-flagship-editorial-2026.css",
+    "assets/home-signature-2026.css",
+    "assets/flagship-system-2026.css",
+)
+compiled_css = ROOT / "assets/home-compiled-2026.css"
+if compiled_css.exists():
+    expected_css = "\n\n".join(
+        f"/* Source layer {i}: {layer}; source files remain for maintenance */\n" +
+        (ROOT / layer).read_text(encoding="utf-8").strip()
+        for i, layer in enumerate(home_layers, 1)
+     ) + "\n"
+    check(compiled_css.read_text(encoding="utf-8") == expected_css,
+          "Compiled homepage theme is out of sync with its three source stylesheets")
+else:
+    check(False, "Compiled homepage theme missing")
+
 if errors:
     for error in errors:
         print("FAIL", error)
