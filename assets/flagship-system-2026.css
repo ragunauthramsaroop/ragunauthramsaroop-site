@@ -618,20 +618,3 @@
 @media(max-width:1250px){.site-header .nav-links{display:none}.site-header .mobile-nav{display:block}.flag-hero__interior{grid-template-columns:minmax(0,1.22fr) minmax(280px,.78fr);gap:34px}}
 @media(max-width:980px){.flag-hero__interior{grid-template-columns:1fr;min-height:0;gap:32px;width:min(calc(100% - 48px),760px);padding:51px 0 43px}.flag-hero__copy{width:100%;max-width:720px}.flag-hero h1{font-size:clamp(57px,7.6vw,79px)}.flag-hero__profile{max-width:340px;margin:0 auto;padding:0}}
 @media(max-width:530px){.flag-hero__interior{width:min(calc(100% - 36px),760px);padding:44px 0 35px}.flag-kicker{margin-top:23px;letter-spacing:.1em}.flag-hero h1{font-size:clamp(43px,12.5vw,61px);line-height:1.03;letter-spacing:-.051em}.flag-hero h1 em{letter-spacing:-.058em}.flag-hero__statement{font-size:clamp(25px,6.9vw,33px);margin-top:23px}.flag-hero__summary{font-size:13.5px;line-height:1.7}.flag-hero__profile{width:min(100%,305px);max-width:305px}.flag-hero__portrait-wrap{aspect-ratio:4/4.15}.flag-hero__links{gap:13px}}
-
-/* November 2026: portrait identity and executive evidence discovery. */
-.site-header .brand-mark{border-radius:50%;overflow:hidden;border:1px solid #b89a6a;background:#173a34;box-shadow:0 0 0 3px #f8f6ef,0 0 0 4px #ded7c8}
-.site-header .brand-mark:after{display:none}
-.site-header .brand-mark img{width:100%;height:100%;object-fit:cover;object-position:center 17%;filter:saturate(.9)}
-.flag-home-search{margin:35px 0 25px;padding:26px 29px;display:grid;grid-template-columns:minmax(0,.88fr) minmax(0,1.12fr);align-items:center;gap:26px;background:#e7ece5;border:1px solid #c9d4ca;border-left:3px solid #a78352}
-.flag-home-search label{font:400 clamp(20px,2.2vw,28px)/1.19 var(--serif);letter-spacing:-.025em;color:#183c32}
-.flag-home-search>div{display:flex;align-items:stretch;min-width:0}
-.flag-home-search input{min-width:0;flex:1;border:1px solid #9fb5a5;border-right:0;border-radius:0;background:#fffcf5;color:#19392f;font-size:13px;padding:14px 15px}
-.flag-home-search input::placeholder{color:#66796e;opacity:1}
-.flag-home-search button{min-height:49px;border:1px solid #123b32;border-radius:0;padding:12px 18px;background:#123b32;color:#fff8e9;font-size:12px;font-weight:760;cursor:pointer;white-space:nowrap}
-.flag-home-search button:hover{background:#235244}
-.flag-home-search button:focus-visible,.flag-home-search input:focus-visible{outline:3px solid #a77e43;outline-offset:3px}
-.flag-expertise__row h3{max-width:720px}
-@media(max-width:790px){.flag-home-search{grid-template-columns:1fr;padding:23px;gap:15px}}
-@media(max-width:530px){.flag-home-search>div{flex-direction:column}.flag-home-search input{border-right:1px solid #9fb5a5;min-height:48px}.flag-home-search button{width:100%}.site-header .brand-mark{width:38px;height:38px;flex-basis:38px}}
-@media(prefers-reduced-motion:reduce){.flag-home-search button{transition:none}}
