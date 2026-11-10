@@ -16,7 +16,9 @@ jobs:
         with: {fetch-depth: 0}
       - uses: actions/setup-node@v7
         with: {node-version: '22', cache: npm}
-      - run: npm ci --no-audit --no-fund
+      # Static index generation needs no NVIDIA/CUDA package. Avoid the large
+      # optional Linux GPU download from NuGet during onnxruntime-node install.
+      - run: npm ci --no-audit --no-fund --onnxruntime-node-install=skip
       - run: npm run search:index
       - run: python scripts/compact_search_payload.py
       - run: npm run smart:index
