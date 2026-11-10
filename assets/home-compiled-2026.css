@@ -192,6 +192,23 @@ img{display:block;max-width:100%}a{color:inherit}button,input,textarea{font:inhe
 .flag-hero__affiliation a:hover{color:#fff1ce}
 @media(max-width:530px){.flag-hero__affiliations{gap:12px;padding-top:17px}.flag-hero__affiliation strong{font-size:12.5px}}
 
+/* November 2026: portrait identity and executive evidence discovery. */
+.site-header .brand-mark{border-radius:50%;overflow:hidden;border:1px solid #b89a6a;background:#173a34;box-shadow:0 0 0 3px #f8f6ef,0 0 0 4px #ded7c8}
+.site-header .brand-mark:after{display:none}
+.site-header .brand-mark img{width:100%;height:100%;object-fit:cover;object-position:center 17%;filter:saturate(.9)}
+.flag-home-search{margin:35px 0 25px;padding:26px 29px;display:grid;grid-template-columns:minmax(0,.88fr) minmax(0,1.12fr);align-items:center;gap:26px;background:#e7ece5;border:1px solid #c9d4ca;border-left:3px solid #a78352}
+.flag-home-search label{font:400 clamp(20px,2.2vw,28px)/1.19 var(--serif);letter-spacing:-.025em;color:#183c32}
+.flag-home-search>div{display:flex;align-items:stretch;min-width:0}
+.flag-home-search input{min-width:0;flex:1;border:1px solid #9fb5a5;border-right:0;border-radius:0;background:#fffcf5;color:#19392f;font-size:13px;padding:14px 15px}
+.flag-home-search input::placeholder{color:#66796e;opacity:1}
+.flag-home-search button{min-height:49px;border:1px solid #123b32;border-radius:0;padding:12px 18px;background:#123b32;color:#fff8e9;font-size:12px;font-weight:760;cursor:pointer;white-space:nowrap}
+.flag-home-search button:hover{background:#235244}
+.flag-home-search button:focus-visible,.flag-home-search input:focus-visible{outline:3px solid #a77e43;outline-offset:3px}
+.flag-expertise__row h3{max-width:720px}
+@media(max-width:790px){.flag-home-search{grid-template-columns:1fr;padding:23px;gap:15px}}
+@media(max-width:530px){.flag-home-search>div{flex-direction:column}.flag-home-search input{border-right:1px solid #9fb5a5;min-height:48px}.flag-home-search button{width:100%}.site-header .brand-mark{width:38px;height:38px;flex-basis:38px}}
+@media(prefers-reduced-motion:reduce){.flag-home-search button{transition:none}}
+
 /* Source layer 2: assets/home-signature-2026.css; source files remain for maintenance */
 /*
   RR EDITORIAL / VISUAL EDITION 02
