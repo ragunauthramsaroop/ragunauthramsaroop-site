@@ -288,7 +288,7 @@ body .site-header .mobile-nav{display:block}
 body .flag-hero__interior{grid-template-columns:minmax(0,1fr) minmax(285px,.84fr);gap:35px}
 body .flag-hero h1{font-size:clamp(57px,7.3vw,92px)}
 }
-@media(min-width:1400px){body .flag-hero__profile{transform:translateX(clamp(0px,calc((100vw - 1400px)*.17),90px))}}
+@media(min-width:1400px){body .flag-hero__profile{transform:translateX(clamp(0px,calc(17vw - 238px),90px))}}
 @media(max-width:980px){
 body .flag-hero:before{background:#f5f1e8}
 body .flag-hero:after{display:none}
