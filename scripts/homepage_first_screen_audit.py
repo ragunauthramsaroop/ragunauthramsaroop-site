@@ -87,6 +87,8 @@ async def run():
                     errors.append(f"{width}: desktop links outside viewport")
                 if r["actionCount"] < 2:
                     errors.append(f"{width}: primary executive actions missing")
+                if width == 390 and (not r["portrait"] or r["portrait"]["top"] > 850):
+                    errors.append("390: executive portrait starts below the mobile first screen")
                 if width in (390, 1597):
                     OUT.mkdir(parents=True, exist_ok=True)
                     await page.screenshot(
