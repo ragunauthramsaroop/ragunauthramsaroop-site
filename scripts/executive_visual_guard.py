@@ -38,9 +38,10 @@ page.feed(HTML)
 assert page.headings == 1, "Homepage needs one H1"
 assert len(page.focuses) == 4, "Four evidence-led executive disciplines expected"
 assert page.portrait, "The first-party executive portrait and descriptive alt text must remain"
+assert '.flag-honours__grid' in (ROOT / "assets/home-flagship-editorial-2026.css").read_text(encoding="utf-8"), "Source-linked recognition grid styling missing"
 for path in ("/board-ceo-mode/", "/recruiter-toolkit/", "/resume.html", "/public-record/"):
     assert path in page.links, f"Missing executive conversion path: {path}"
-for token in (".flag-expertise", ".flag-pathway", ":focus-visible",
+for token in (".flag-pathway", ":focus-visible",
               "prefers-reduced-motion:reduce", "prefers-contrast:more",
               "@media(max-width:530px)"):
     assert token in polish, f"Missing required responsive or accessible style: {token}"
