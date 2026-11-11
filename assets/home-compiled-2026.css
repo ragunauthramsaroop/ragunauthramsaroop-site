@@ -220,8 +220,8 @@ body .site-header .nav-links{gap:23px;font-size:12px}
 body .site-header .nav-links a{color:#26443b}
 body .site-header .nav-links .nav-cta{background:#103831;color:#fff7e9;border:1px solid #103831;padding:13px 21px}
 body .flag-hero{background:#f5f1e8;color:#173831;border:0}
-body .flag-hero:before{inset:0;opacity:1;background:linear-gradient(90deg,#f5f1e8 0 59%,#103536 59% 100%)}
-body .flag-hero:after{inset:0 0 0 59%;opacity:.36;mask-image:none;background:radial-gradient(circle at 49% 30%,rgba(224,189,130,.2),transparent 57%),repeating-linear-gradient(90deg,transparent 0 99px,rgba(238,225,199,.06) 100px,transparent 101px)}
+body .flag-hero:before{inset:0;opacity:1;background:linear-gradient(90deg,#f5f1e8 0 calc(50% + 72px),#103536 calc(50% + 72px) 100%)}
+body .flag-hero:after{inset:0 0 0 calc(50% + 72px);opacity:.36;mask-image:none;background:radial-gradient(circle at 49% 30%,rgba(224,189,130,.2),transparent 57%),repeating-linear-gradient(90deg,transparent 0 99px,rgba(238,225,199,.06) 100px,transparent 101px)}
 body .flag-hero__interior{width:min(calc(100% - 52px),1320px);grid-template-columns:minmax(0,1.11fr) minmax(370px,.84fr);gap:clamp(45px,6.5vw,108px);padding:67px 0 65px;min-height:700px;align-items:center}
 body .flag-hero__copy{align-self:center;padding:0}
 body .flag-hero__copy:before{top:-22px;background:#ae8555;width:50px;height:2px}
@@ -245,7 +245,7 @@ body .flag-hero__disciplines li{padding:0;min-height:0;background:transparent;bo
 body .flag-hero__disciplines li:not(:last-child):after{content:"/";color:#ac8a5d;margin-left:12px}
 body .flag-hero__links{margin-top:12px;padding-top:10px;border:0;gap:22px}
 body .flag-hero__links a{color:#174739;font-size:11px;font-weight:760;text-decoration-color:#b48d5b}
-body .flag-hero__profile{max-width:460px;margin-left:auto;padding:0;align-self:center}
+body .flag-hero__profile{max-width:484px;margin-left:auto;padding:26px 26px 30px;align-self:center;background:#103536;border:1px solid rgba(230,204,154,.24);box-shadow:0 22px 55px rgba(5,24,23,.11)}
 body .flag-hero__profile:after{inset:15px -15px -15px 20px;border-radius:0;border:1px solid rgba(219,190,137,.23)}
 body .flag-hero__orbit{opacity:.13;filter:none}
 body .flag-hero__portrait-wrap{aspect-ratio:4/3.87;border:7px solid #ece8db;border-radius:1px;background:#faf7ee;box-shadow:0 24px 58px rgba(0,15,16,.26)}
@@ -288,6 +288,7 @@ body .site-header .mobile-nav{display:block}
 body .flag-hero__interior{grid-template-columns:minmax(0,1fr) minmax(285px,.84fr);gap:35px}
 body .flag-hero h1{font-size:clamp(57px,7.3vw,92px)}
 }
+@media(min-width:1400px){body .flag-hero__profile{transform:translateX(clamp(0px,calc(17vw - 238px),90px))}}
 @media(max-width:980px){
 body .flag-hero:before{background:#f5f1e8}
 body .flag-hero:after{display:none}
