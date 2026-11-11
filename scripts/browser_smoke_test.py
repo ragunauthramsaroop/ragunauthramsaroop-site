@@ -29,7 +29,9 @@ def main():
             expect(page.locator("h1")).to_contain_text("Ragunauth")
             expect(page.locator(".nav-links")).to_be_visible()
             expect(page.locator('.nav-links a[href="/engage/"]')).to_be_visible()
-            expect(page.locator('.flag-hero__links a[href="/resume.html"]')).to_be_visible()
+            expect(page.locator('.nav-links a[href="/resume.html"]')).to_be_visible()
+            expect(page.locator("#honours-title")).to_contain_text("public record")
+            assert page.locator(".flag-honours__grid .flag-hero__affiliation").count() == 3
             expect(page.locator("body")).to_contain_text("Liaison Director, Social Responsibility Department")
             expect(page.locator("#decision-paths")).to_contain_text("Two audiences.")
             assert "five role progressions" not in page.locator("body").inner_text().lower()
