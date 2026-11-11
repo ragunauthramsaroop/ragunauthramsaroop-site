@@ -227,7 +227,7 @@ body .flag-hero__copy{align-self:center;padding:0}
 body .flag-hero__copy:before{top:-22px;background:#ae8555;width:50px;height:2px}
 body .flag-hero__topline{color:#866c49;font-size:10px;letter-spacing:.18em}
 body .flag-hero__topline .signal{background:#b28b58}
-body .flag-kicker{color:#476b5d;font-size:10px;letter-spacing:.14em;margin:33px 0 18px}
+body .flag-kicker{color:#476b5d;font-size:10px;letter-spacing:.14em;margin:28px 0 21px}
 body .flag-hero h1{color:#0e302c;font:400 clamp(66px,6.9vw,111px)/.91 "Iowan Old Style","Palatino Linotype",Georgia,serif;letter-spacing:-.073em;max-width:780px}
 body .flag-hero h1 em{color:#ad8350;letter-spacing:-.077em}
 body .flag-hero__statement{color:#1a4239;font-size:clamp(29px,2.85vw,44px);line-height:1.17;letter-spacing:-.039em;margin-top:29px;max-width:660px}
@@ -240,11 +240,6 @@ body .flag-button--gold{background:#123d35;color:#fff9ed;border:1px solid #123d3
 body .flag-button--gold:hover{background:#235649;color:#fff}
 body .flag-button--outline{background:transparent;border:1px solid #8da294;color:#153b34}
 body .flag-button--outline:hover{background:#e6ebe3;border-color:#496b5b;color:#143e35}
-body .flag-hero__disciplines{display:flex;flex-wrap:wrap;gap:15px;margin:29px 0 0;padding:16px 0 0;border-top:1px solid #d2d8cc}
-body .flag-hero__disciplines li{padding:0;min-height:0;background:transparent;border:0;font-size:10px;letter-spacing:.02em;color:#4b6d5e;line-height:1.6}
-body .flag-hero__disciplines li:not(:last-child):after{content:"/";color:#ac8a5d;margin-left:12px}
-body .flag-hero__links{margin-top:12px;padding-top:10px;border:0;gap:22px}
-body .flag-hero__links a{color:#174739;font-size:11px;font-weight:760;text-decoration-color:#b48d5b}
 body .flag-hero__profile{max-width:484px;margin-left:auto;padding:26px 26px 30px;align-self:center;background:#103536;border:1px solid rgba(230,204,154,.24);box-shadow:0 22px 55px rgba(5,24,23,.11)}
 body .flag-hero__profile:after{inset:15px -15px -15px 20px;border-radius:0;border:1px solid rgba(219,190,137,.23)}
 body .flag-hero__orbit{opacity:.13;filter:none}
@@ -257,18 +252,24 @@ body .flag-hero__position{padding:17px 0 0;margin:19px 0 0;border-top:1px solid 
 body .flag-hero__position span{color:#debd87;font-size:10px}
 body .flag-hero__position strong{color:#fff6e8;font-size:14px}
 body .flag-hero__position small{color:#c5d9cb}
-body .flag-hero__affiliations{margin:19px 0 0;padding:15px 0 0;border-top:1px solid rgba(235,221,193,.25);gap:10px}
-body .flag-hero__affiliations-label{color:#e3c794;font-size:10px}
-body .flag-hero__affiliation{padding:0 0 0 12px;border-left:1px solid #968d72}
-body .flag-hero__affiliation strong{color:#f7f1e4;font-size:11px;font-weight:640}
-body .flag-hero__affiliation small{color:#c3d4ca;font-size:10px}
-body .flag-hero__affiliation a{color:#e9cf9e}
 body .flag-hero__bottomline{width:100%;min-height:52px;margin:0;padding-inline:max(26px,calc((100vw - 1320px)/2));background:#e7ebe2;border:0;color:#60786c;font-size:10px}
 body .flag-hero__bottomline a{color:#174638}
 body .flag-proof{background:#103934;border:0;padding-inline:max(26px,calc((100vw - 1320px)/2))}
 body .flag-proof>div{padding:30px 23px;border-color:rgba(239,226,192,.24)}
 body .flag-proof strong{color:#f1d7a9;font-size:clamp(27px,2.95vw,39px)}
 body .flag-proof span{color:#d0dfd3;font-size:10px}
+/* Executive finish gate: evidence moves out of the first-screen portrait. */
+body .flag-honours{background:#faf9f4;border-bottom:1px solid #d9d9cf;padding:62px max(26px,calc((100vw - 1320px)/2));display:grid;grid-template-columns:minmax(200px,.78fr) minmax(0,2fr);gap:clamp(30px,5vw,70px);align-items:start}
+body .flag-honours__intro p{margin:0 0 12px;color:#8e693b;text-transform:uppercase;letter-spacing:.15em;font-size:10px;font-weight:800}
+body .flag-honours__intro h2{margin:0;color:#123c33;font:400 clamp(30px,3.3vw,46px)/1.09 "Iowan Old Style","Palatino Linotype",Georgia,serif;letter-spacing:-.05em}
+body .flag-honours__intro h2 em{color:#a47b47;font-weight:400}
+body .flag-honours__grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px}
+body .flag-honours .flag-hero__affiliation{display:flex;flex-direction:column;gap:8px;min-width:0;padding:0 0 0 16px;border-left:2px solid #b18a55}
+body .flag-honours .flag-hero__affiliation strong{font:400 19px/1.28 "Iowan Old Style","Palatino Linotype",Georgia,serif;color:#153d33}
+body .flag-honours .flag-hero__affiliation small{font-size:11px;line-height:1.6;color:#566d5f}
+body .flag-honours .flag-hero__affiliation a{color:#165548;text-underline-offset:3px}
+@media(max-width:980px){body .flag-honours{grid-template-columns:1fr;gap:28px;padding:45px 26px}body .flag-honours__grid{gap:24px}}
+@media(max-width:650px){body .flag-honours{padding:40px 20px}body .flag-honours__grid{grid-template-columns:1fr;gap:19px}body .flag-honours .flag-hero__affiliation{padding:0 0 0 14px}body .flag-honours__intro h2{font-size:35px}}
 body .flag-editorial-note{background:#fcfaf4;border-bottom:1px solid #dedbd0}
 body .flag-editorial-note>p{color:#25473a}
 body .flag-pathways{padding-top:110px;padding-bottom:112px}
@@ -297,7 +298,6 @@ body .flag-hero h1{font-size:clamp(64px,9vw,90px)}
 body .flag-hero__profile{background:#103536;max-width:none;width:100%;margin:0;padding:25px 25px 26px}
 body .flag-hero__profile:after,body .flag-hero__orbit{display:none}
 body .flag-hero__portrait-wrap{aspect-ratio:4/3.67;max-width:460px;margin:0 auto}
-body .flag-hero__position,body .flag-hero__affiliations{max-width:460px;margin-left:auto;margin-right:auto}
 body .flag-hero__bottomline{padding-inline:24px}
 }
 @media(max-width:530px){
@@ -311,9 +311,6 @@ body .flag-hero__statement{font-size:clamp(27px,7vw,34px);line-height:1.2;margin
 body .flag-hero__summary{font-size:13px;line-height:1.72;margin-top:22px}
 body .flag-actions{flex-direction:column;gap:9px;margin-top:25px}
 body .flag-actions .flag-button{width:100%;min-height:52px}
-body .flag-hero__disciplines{gap:7px 14px;margin-top:24px;padding-top:15px}
-body .flag-hero__disciplines li:not(:last-child):after{display:none}
-body .flag-hero__links{gap:13px}
 body .flag-hero__profile{padding:20px 17px 23px}
 body .flag-hero__portrait-wrap{aspect-ratio:4/3.94;border-width:5px}
 body .flag-hero__bottomline{padding:16px 18px}

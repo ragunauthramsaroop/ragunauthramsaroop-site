@@ -28,17 +28,21 @@ for fact in ("Director since 2025","12+","Financial services and natural resourc
 assert "49.4" not in home and "10,000" not in home and "89%" not in home, "Employer operating metrics must stay off personal homepage"
 assert any(img.get("class")=="portrait" and img.get("fetchpriority")=="high" and img.get("alt") for img in page.images)
 assert "Oxford domain. Not a claim of university employment" in home
-# The profile must differentiate an active professional appointment, two ambassador
-# records with different dates, and an independently published UNGIS membership.
+# Keep the portrait hero focused on the verified current appointment.
+# Preserve publicly attributed participation and recognition in a separate section.
 hero=home.split('<aside class="flag-hero__profile"',1)[1].split("</aside>",1)[0]
 assert 'Current appointment' in hero and 'Director since 2025' in hero
-assert 'International recognition &amp; participation' in hero
-assert 'Member, UNGIS Multistakeholder Consultation Group' in hero
-assert 'Private Sector · 2026' in hero and 'https://www.itu.int/net4/wsis/ungis/Home/MCG' in hero
-assert 'Ambassador, International Organization of Youth' in hero and 'Guyana · 2026–2027' in hero
-assert 'Featured Climate Leader' in hero and 'Climate Leadership Research Centre · Oxford · 2026' in hero
-assert 'https://leadership.climate.ox.ac.uk/leaders/ragunauth-ramsaroop/' in hero
-assert 'Sustainable Procurement Pledge' not in hero and 'Oxford Ambassador' not in hero
+assert 'International recognition &amp; participation' not in hero
+honours=home.split('<section class="flag-honours"',1)[1].split("</section>",1)[0]
+assert 'aria-labelledby="honours-title"' in home and 'id="honours-title"' in honours
+assert 'International recognition &amp; participation' in honours
+assert 'Member, UNGIS Multistakeholder Consultation Group' in honours
+assert 'Private Sector · 2026' in honours and 'https://www.itu.int/net4/wsis/ungis/Home/MCG' in honours
+assert 'Ambassador, International Organization of Youth' in honours and 'Guyana · 2026–2027' in honours
+assert 'Featured Climate Leader' in honours and 'Climate Leadership Research Centre · Oxford · 2026' in honours
+assert 'https://leadership.climate.ox.ac.uk/leaders/ragunauth-ramsaroop/' in honours
+assert 'Sustainable Procurement Pledge' not in honours and 'Oxford Ambassador' not in honours
+assert '<ul class="flag-hero__disciplines"' not in home and '<nav class="flag-hero__links"' not in home, "Duplicated links and disciplines returned to the first screen"
 # Direct mandate enquiries should not depend on a LinkedIn account or a third-party contact form.
 cv=(ROOT/"resume.html").read_text(encoding="utf-8")
 public_email="ragunauthramsaroop@icloud.com"
