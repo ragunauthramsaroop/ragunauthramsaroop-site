@@ -69,3 +69,57 @@
   background:#123b30!important;color:#ffffff!important;-webkit-text-fill-color:#ffffff!important;
   border-color:#123b30!important;
 }
+/* Edition 04: two-tone executive recruiter dossier, matched to the homepage. */
+body .recruiter-redesign{background:#f5f1e8}
+body .recruiter-redesign .rr-hero{background:#f5f1e8!important;color:#123b32!important}
+body .recruiter-redesign .rr-hero:before{background:linear-gradient(90deg,#f5f1e8 0 61%,#103b36 61% 100%)!important}
+body .recruiter-redesign .rr-hero__layout{width:min(calc(100% - 56px),1320px);grid-template-columns:minmax(0,1.14fr) minmax(300px,.69fr);gap:clamp(42px,6vw,95px);padding:75px 0 81px}
+body .recruiter-redesign .rr-hero .rr-eyebrow{color:#8e6c3e!important;letter-spacing:.17em}
+body .recruiter-redesign .rr-hero h1{color:#103b32!important;font:400 clamp(57px,6.7vw,98px)/.99 "Iowan Old Style","Palatino Linotype",Georgia,serif!important;letter-spacing:-.06em!important}
+body .recruiter-redesign .rr-hero h1 em{color:#a77d48!important}
+body .recruiter-redesign .rr-deck{font-family:"Iowan Old Style","Palatino Linotype",Georgia,serif;color:#2b5647!important;font-size:clamp(23px,2.7vw,36px);line-height:1.22}
+body .recruiter-redesign .rr-lead{color:#526b5d!important;font-size:14px;line-height:1.78}
+body .recruiter-redesign .rr-verification-bar{border-color:#d0d7ca!important;max-width:750px}
+body .recruiter-redesign .rr-verification-bar div{border-color:#d0d7ca!important}
+body .recruiter-redesign .rr-verification-bar strong{color:#164738!important}
+body .recruiter-redesign .rr-verification-bar span{color:#526a5c!important}
+body .recruiter-redesign .rr-hero .rr-actions{margin-top:33px}
+body .recruiter-redesign .rr-btn{border-radius:2px!important}
+body .recruiter-redesign .rr-btn--gold{background:#103d34!important;border-color:#103d34!important;color:#fff8e9!important}
+body .recruiter-redesign .rr-btn--line{background:transparent!important;border:1px solid #8da496!important;color:#153e34!important}
+body .recruiter-redesign .rr-hero__note{color:#5d7465!important}
+body .recruiter-redesign .rr-profile{background:#0d342f;padding:23px 23px 26px;max-width:430px}
+body .recruiter-redesign .rr-profile__image{border-radius:2px!important;border:6px solid #e7dfcc!important;padding:0!important;background:#e9e3d6!important}
+body .recruiter-redesign .rr-profile__image img{aspect-ratio:4/4.35!important;object-position:center 14%;filter:saturate(.87)}
+body .recruiter-redesign .rr-profile__details span{color:#dec394}
+body .recruiter-redesign .rr-profile__details strong{color:#fff7e9}
+body .recruiter-redesign .rr-profile__details small{color:#c5d6c8}
+body .recruiter-redesign .rr-shortcuts{max-width:1320px;background:#e7ebe1;border-bottom:1px solid #ccd6c8}
+body .recruiter-redesign .rr-shortcuts a{color:#254e3f}
+body .recruiter-redesign .rr-shortcuts span{color:#927043}
+body .recruiter-redesign .rr-section__heading h2{font-family:"Iowan Old Style",Georgia,serif;letter-spacing:-.052em}
+body .recruiter-redesign .rr-mandate-grid article{border:1px solid #d4dacd!important;border-top:2px solid #ad8855!important;border-radius:2px!important;background:#fffdf8!important;box-shadow:none!important}
+body .recruiter-redesign .rr-contact{background:#103831;color:#fffaf0}
+@media(max-width:1000px){
+ body .recruiter-redesign .rr-hero:before{background:#f5f1e8!important}
+ body .recruiter-redesign .rr-hero__layout{grid-template-columns:1fr;max-width:760px;padding:61px 0 57px;gap:33px}
+ body .recruiter-redesign .rr-profile{margin:0;width:min(100%,520px);max-width:520px}
+ body .recruiter-redesign .rr-profile__image img{aspect-ratio:4/3.8!important}
+ body .recruiter-redesign .rr-shortcuts{width:min(calc(100% - 36px),760px)}
+}
+@media(max-width:530px){
+ body .recruiter-redesign .rr-hero__layout{width:min(calc(100% - 36px),760px);padding:47px 0 45px}
+ body .recruiter-redesign .rr-hero h1{font-size:clamp(43px,11.65vw,59px)!important}
+ body .recruiter-redesign .rr-deck{font-size:25px}
+ body .recruiter-redesign .rr-verification-bar{max-width:none}
+ body .recruiter-redesign .rr-profile{padding:16px}
+ body .recruiter-redesign .rr-profile__image img{aspect-ratio:4/4.15!important}
+}
+@media print{
+ body .recruiter-redesign .rr-hero,
+ body .recruiter-redesign .rr-profile,
+ body .recruiter-redesign .rr-contact{background:#fff!important;color:#15372f!important}
+ body .recruiter-redesign .rr-hero:before{display:none!important}
+ body .recruiter-redesign .rr-hero h1,
+ body .recruiter-redesign .rr-profile__details strong{color:#15372f!important}
+}

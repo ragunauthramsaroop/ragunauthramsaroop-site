@@ -377,3 +377,38 @@ a{color:inherit}
   .print-mandate strong{display:block;font-size:7pt;line-height:1.45;color:#183b30}
   .print-mandate>p:last-child{margin:1.4mm 0 0;color:#66756e;font-size:6.4pt;line-height:1.35}
 }
+/* Edition 04: digital executive CV. Printing remains untouched. */
+@media screen {
+:root{--cv-paper:#f5f1e8;--cv-surface:#fffdf7;--cv-forest:#103b34;--cv-forest-2:#1a5545;--cv-ink:#163b31;--cv-ink-2:#405d4e;--cv-muted:#63766a;--cv-line:#d4d8cb;--cv-gold:#a47d49;--cv-serif:"Iowan Old Style","Palatino Linotype","Book Antiqua",Georgia,serif}
+body{background:#f5f1e8}
+.cv-header{background:#faf8f1;border-color:#d5dacc}
+.cv-header-inner{max-width:1320px;min-height:79px}
+.cv-brand{color:#153b32;font-size:16px;letter-spacing:-.03em}
+.cv-brand small{color:#88683f}
+.cv-nav a{font-size:12px}
+.cv-page{width:min(calc(100% - 48px),1310px);padding-top:76px}
+.cv-hero{grid-template-columns:minmax(0,1.18fr) minmax(235px,.48fr);gap:clamp(40px,6vw,100px);align-items:center;padding:30px 0 65px}
+.cv-kicker{letter-spacing:.17em;color:#916b3e}
+.cv-hero h1{font-family:var(--cv-serif);font-weight:400;font-size:clamp(59px,6.65vw,98px);line-height:.96;letter-spacing:-.064em;color:#103c32}
+.cv-role{color:#194b3c;font-size:19px;font-weight:640}
+.cv-focus{font-size:13px;color:#62786b}
+.cv-positioning{max-width:800px;font-family:var(--cv-serif);font-size:clamp(23px,2.75vw,32px);line-height:1.22;letter-spacing:-.027em;color:#916c43}
+.cv-btn{border-radius:2px;min-height:50px;background:#fffdf7}
+.cv-btn.primary{background:#103d34;color:#fff9ed;border-color:#103d34}
+.cv-portrait-wrap{width:min(100%,330px)}
+.cv-portrait-frame{border-radius:2px;box-shadow:0 25px 55px rgba(13,40,34,.16);border:7px solid #e9e4d5;aspect-ratio:4/4.95}
+.cv-portrait-frame img{filter:saturate(.87)}
+.cv-portrait-caption{color:#65796c;letter-spacing:.08em}
+.cv-metrics{background:#123d35;color:#fff8e9;border:0;margin:30px 0 0}
+.cv-metric{padding:25px 21px;border-right:1px solid rgba(234,212,170,.2)}
+.cv-metric:last-child{border-right:0}
+.cv-metric strong{color:#e8cf9b;font-size:clamp(23px,2.4vw,32px)}
+.cv-metric span{color:#d0dfd3}
+.cv-mandate-strip{border-radius:2px;box-shadow:none;background:#faf9f3;margin-top:24px}
+.cv-mandate-strip strong{color:#174439}
+.cv-section h2{font-family:var(--cv-serif);font-weight:400;letter-spacing:-.05em}
+.cv-side-card{border-radius:2px}
+.cv-footer{border-top-color:#d4dacc}
+@media(max-width:980px){.cv-hero{grid-template-columns:minmax(0,1fr) 215px;gap:28px}.cv-portrait-wrap{width:215px}}
+@media(max-width:760px){.cv-page{width:min(calc(100% - 36px),1310px);padding-top:39px}.cv-hero{grid-template-columns:1fr;gap:23px}.cv-portrait-wrap{width:min(100%,270px)}.cv-hero h1{font-size:clamp(49px,11.6vw,69px)}.cv-metric{padding:20px 15px}}
+}
