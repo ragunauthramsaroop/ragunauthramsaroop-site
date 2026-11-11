@@ -200,3 +200,47 @@ body[data-tool]:not([data-tool=""]) .hero{
   .evidence-mobile-nav a{display:block;padding:10px 12px;border-radius:9px;color:var(--rr-ink)!important;text-decoration:none;font-size:13px;font-weight:750}
   .evidence-mobile-nav a:hover{background:var(--rr-paper-2)}
 }
+/* Edition 04: premium editorial library, evidence, and utility surfaces. */
+:root{--rr-ink:#15372f;--rr-ink-soft:#37564a;--rr-muted:#586f60;--rr-forest:#103d34;--rr-forest-2:#1a5445;--rr-paper:#f5f1e8;--rr-paper-2:#e8e9dd;--rr-surface:#fffdf7;--rr-surface-soft:#faf8f0;--rr-line:#d6dacd;--rr-gold:#a47b48;--rr-gold-soft:#e2c895;--rr-focus:#a47b48}
+html,body{background:#f5f1e8;color:#15372f}
+body .mast{background:#faf8f1;border-bottom:1px solid #d5dacd;box-shadow:none}
+body .mast a:first-child{font-family:"Iowan Old Style","Palatino Linotype",Georgia,serif;letter-spacing:-.03em}
+body main.wrap{max-width:1260px;padding-top:86px}
+body main.wrap>h1{max-width:1050px;color:#103b32;font:400 clamp(52px,6.5vw,88px)/.98 "Iowan Old Style","Palatino Linotype",Georgia,serif;letter-spacing:-.052em;margin-top:22px}
+body main.wrap>.eyebrow{font-size:11px;color:#94703c!important;letter-spacing:.17em}
+body main.wrap>.lead{max-width:830px;color:#516a5d;font-size:18px;line-height:1.75}
+body main.wrap .library-stats{border-color:#d0d9c9;margin-top:48px;margin-bottom:48px;background:#e7eae0}
+body main.wrap .library-stats div{padding:24px 23px;border-color:#d0d9c9}
+body main.wrap .library-stats strong{color:#13443a;font:400 clamp(26px,2.9vw,38px)/1.03 "Iowan Old Style",Georgia,serif}
+body main.wrap .library-stats span{color:#516a5c}
+body main.wrap .library-section-head,body main.wrap .collection-heading{margin-top:72px;margin-bottom:27px}
+body main.wrap .library-section-head h2,body main.wrap .collection-heading h2{color:#133d33;font:400 clamp(37px,4.2vw,55px)/1.08 "Iowan Old Style","Palatino Linotype",Georgia,serif;letter-spacing:-.046em}
+body main.wrap .grid,body main.wrap .white-grid{gap:19px}
+body main.wrap .paper,body main.wrap .white-paper,
+body main.wrap .paper:nth-child(n),body main.wrap .white-paper:nth-child(n){
+ background:#fffdf8;border:1px solid #d5dacc;border-radius:2px;box-shadow:none;min-height:0;
+}
+body main.wrap .paper{padding:33px}
+body main.wrap .paper:before,body main.wrap .white-paper:before{height:2px;background:#b08b57}
+body main.wrap .paper h2{font:400 clamp(26px,2.7vw,35px)/1.14 "Iowan Old Style","Palatino Linotype",Georgia,serif;color:#153c33}
+body main.wrap .paper .cat{color:#89643a}
+body main.wrap .paper p,body main.wrap .white-paper p{color:#4e6559}
+body main.wrap .paper .btn,body main.wrap .white-paper .btn,body main.wrap .archive-link{border-radius:2px}
+body main.wrap .paper .btn:not(.alt),body main.wrap .white-paper .btn:not(.alt){background:#103c34;color:#fffaf0}
+body main.wrap .white-paper{padding:28px}
+body main.wrap .note{background:#ebede5;border-left:2px solid #aa8451;border-radius:0}
+body.evidence-page .hero{background:linear-gradient(125deg,#103b35,#1d4c41)!important}
+body.evidence-page .hero h1{font-family:"Iowan Old Style",Georgia,serif;letter-spacing:-.055em}
+body.evidence-page main .panel,body.evidence-page main .card{border-radius:2px!important;box-shadow:none!important}
+body.evidence-page .topbar{background:#faf8f1!important}
+@media(max-width:820px){
+ body main.wrap{padding:57px 20px 66px}
+ body main.wrap>h1{font-size:clamp(45px,10vw,65px)}
+ body main.wrap .library-stats div{padding:18px}
+ body main.wrap .library-section-head,body main.wrap .collection-heading{margin-top:48px}
+}
+@media(max-width:520px){
+ body main.wrap>h1{font-size:clamp(41px,11vw,53px)}
+ body main.wrap .paper{padding:25px}
+ body main.wrap .white-paper{padding:22px}
+}
