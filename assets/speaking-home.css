@@ -1,0 +1,32 @@
+/* Homepage speaking engagements. Scoped to avoid interference with the legacy export. */
+.flag-speaking{width:min(calc(100% - 56px),1240px);margin:38px auto 88px;padding:clamp(28px,4vw,58px);background:#10302c;color:#f8f5eb;border:1px solid #36554d;border-radius:4px;box-shadow:0 22px 55px rgba(10,35,30,.14);position:relative;overflow:hidden}
+.flag-speaking:before{content:"";position:absolute;right:-160px;top:-300px;width:580px;height:580px;border:1px solid rgba(219,189,142,.17);border-radius:50%;pointer-events:none}
+.flag-speaking__header{display:flex;justify-content:space-between;gap:30px;align-items:end;margin-bottom:31px;position:relative;z-index:1}
+.flag-speaking__eyebrow,.flag-speaking__next-heading{color:#d2b384;font-size:11px;font-weight:750;letter-spacing:.15em;text-transform:uppercase}
+.flag-speaking__eyebrow{margin:0 0 10px}
+.flag-speaking__header h2{font-family:Georgia,"Iowan Old Style",serif;font-weight:400;letter-spacing:-.045em;line-height:1.08;font-size:clamp(36px,4.4vw,59px);margin:0;max-width:760px;color:#faf7ee}
+.flag-speaking__header h2 em{font-weight:400;color:#d6b883}
+.flag-speaking__header>a{font-size:12px;font-weight:700;color:#e2d0ae;border-bottom:1px solid rgba(226,208,174,.6);padding-bottom:6px;white-space:nowrap}
+.flag-speaking__layout{display:grid;grid-template-columns:minmax(0,1.02fr) minmax(0,.98fr);gap:22px;align-items:stretch;position:relative;z-index:1}
+.flag-speaking__past{background:#f4f0e5;color:#15312a;overflow:hidden;border:1px solid rgba(214,184,131,.4)}
+.flag-speaking__photo{position:relative;overflow:hidden;background:#c8d1d0;aspect-ratio:3/1.52}
+.flag-speaking__photo img{display:block;width:100%;height:100%;object-fit:cover;object-position:center 38%;filter:saturate(.91) contrast(1.05)}
+.flag-speaking__photo:after{content:"";position:absolute;inset:auto 0 0;height:30%;background:linear-gradient(0deg,rgba(9,32,28,.22),transparent);pointer-events:none}
+.flag-speaking__past-body{padding:28px 30px 30px}
+.flag-speaking__status{display:inline-flex;align-items:center;gap:7px;font-size:10px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:#a8804c}
+.flag-speaking__status:before{content:"";width:7px;height:7px;background:currentColor;border-radius:50%}
+.flag-speaking__past h3{font-family:Georgia,"Iowan Old Style",serif;font-size:clamp(26px,2.5vw,34px);font-weight:400;line-height:1.13;letter-spacing:-.035em;margin:12px 0}
+.flag-speaking__past p{font-size:13px;line-height:1.7;color:#4e5e55;margin:0 0 17px}
+.flag-speaking__past a,.flag-speaking__talk a{display:inline-block;color:#7a582f;font-size:12px;font-weight:800;border-bottom:1px solid currentColor;padding-bottom:2px}
+.flag-speaking__next{display:flex;flex-direction:column;gap:13px}
+.flag-speaking__next-heading{margin:0}
+.flag-speaking__talk{flex:1;background:#f7f5ed;color:#15312a;padding:24px 26px 22px;border:1px solid rgba(218,193,144,.5);border-left:4px solid #c5a36b;display:flex;flex-direction:column}
+.flag-speaking__talk-meta{display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px;font-size:10px;letter-spacing:.075em;font-weight:800;text-transform:uppercase;color:#87693d}
+.flag-speaking__talk h3{font-family:Georgia,"Iowan Old Style",serif;font-weight:400;font-size:clamp(21px,2.25vw,29px);line-height:1.19;letter-spacing:-.035em;margin:15px 0 13px}
+.flag-speaking__talk p{font-size:12px;line-height:1.6;color:#526258;margin:0 0 18px}
+.flag-speaking__talk a{margin-top:auto;align-self:flex-start}
+.flag-speaking__foot{margin:22px 0 0;color:#d9dfd7;font-size:12px}
+.flag-speaking__foot a{color:#e1c38e;text-decoration:underline;text-underline-offset:3px}
+@media(max-width:880px){.flag-speaking{width:min(calc(100% - 36px),1240px);margin:24px auto 65px}.flag-speaking__layout{grid-template-columns:1fr}.flag-speaking__photo{aspect-ratio:1.75}.flag-speaking__next-heading{margin-top:14px}}
+@media(max-width:600px){.flag-speaking{width:min(calc(100% - 24px),1240px);padding:23px 18px;margin-bottom:55px}.flag-speaking__header{align-items:start;flex-direction:column;gap:15px;margin-bottom:22px}.flag-speaking__header h2{font-size:clamp(32px,10vw,47px)}.flag-speaking__photo{aspect-ratio:1.5}.flag-speaking__past-body{padding:22px 21px}.flag-speaking__talk{padding:21px 19px}.flag-speaking__talk h3{font-size:25px}}
+@media(prefers-reduced-motion:reduce){.flag-speaking *{scroll-behavior:auto}}
