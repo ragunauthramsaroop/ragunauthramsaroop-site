@@ -12,7 +12,7 @@
       const weekday=!['Sat','Sun'].includes(parts.weekday);
       const open=weekday&&((m>=570&&m<720)||(m>=780&&m<960));
       $('hk-clock').textContent='HKT '+parts.weekday.toUpperCase()+' '+parts.hour+':'+parts.minute;
-      $('market-status').textContent=open?'REGULAR HOURS*':'OUTSIDE HOURS';
+      $('market-status').textContent=open?'SCHEDULED HOURS*':'OUTSIDE SCHEDULE';
       $('market-status').title='Indicative regular trading hours only, not an official holiday, halt or entitlement calendar.';
     }catch(e){if($('hk-clock'))$('hk-clock').textContent='HKT CLOCK UNAVAILABLE';}
   }
@@ -48,13 +48,13 @@
     text('gross-spread',(spread<0?'−':'')+money(spread));
     text('share-value',money(gross));text('purchase-cost',money(purchase));
     text('cash-outcome',net<0?'SHORTFALL '+money(net):money(net));
-    const count=sale>0?Math.ceil(purchase/sale):Infinity;
+    const count=sale>0?Math.ceil((purchase+charges)/sale):Infinity;
     const feasible=Number.isFinite(count)&&count<=shares;
     text('shares-to-sell',feasible?whole(count)+' / '+whole(shares):'NOT FULLY FUNDED');
     text('remaining-shares',feasible?whole(shares-count):'0 / FUNDING GAP');
     if(sale<strike)text('model-message','At the selected price, selling all shares fails to cover the total purchase price. Exercising would be financially unattractive without further funding. Your grant terms and tax advice govern.');
     else if(net<0)text('model-message','The assumed taxes and charges exceed the positive spread. Your selection produces a funding shortfall.');
-    else text('model-message','Potential cash settlement only, assuming full vesting and execution at the selected price. The trustee determines actual settlement mechanics and fees. Purchase, taxation and clawback obligations remain subject to the grant.');
+    else text('model-message','Illustrative sell-to-cover quantity includes the purchase cost and entered taxes or fees, rounded up to whole shares. Trustee execution, withholding, applicable charges and vesting terms govern actual settlement.');
   }
   for(const input of Object.values(inputs)){input?.addEventListener('input',()=>{if(input===inputs.target)manuallyChosen=true;calculate();});}
   $('award-form')?.addEventListener('submit',e=>{e.preventDefault();calculate();});
