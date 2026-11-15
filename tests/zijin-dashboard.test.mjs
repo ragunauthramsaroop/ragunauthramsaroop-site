@@ -41,7 +41,7 @@ test('market bridge restricts symbols and never substitutes a different market',
 test('gold benchmark is transparently COMEX futures rather than spot XAUUSD',()=>{
   assert.match(html,/Gold futures benchmark/);
   assert.match(html,/COMEX gold futures \(GC=F\) are a proxy, NOT spot XAU\/USD/);
-  assert.match(markets,/gold","GC=F/);
+  assert.match(markets,/load\("GC=F","6mo"\)/);
   assert.match(api,/gold_futures/);
 });
 test('archived fallback is conspicuously dated and never presented as a live quote',()=>{
