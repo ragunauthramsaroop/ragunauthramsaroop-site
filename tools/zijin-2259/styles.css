@@ -33,3 +33,5 @@ main{max-width:1660px;margin:0 auto;padding:0 clamp(20px,3vw,56px) 50px}.section
 .issuer-news-item:hover strong{color:#efd49d}
 .news-empty{padding:17px;background:#162431;border:1px solid #364452;color:#b8c5ce;font-size:11px}
 @media(max-width:680px){.news-live{padding:10px}.news-stream-head .button{width:100%;margin-left:0}}
+.mini-hover{padding:8px 4px 1px;color:#a8c4d0;font-size:9px;font-weight:700;letter-spacing:.05em;line-height:1.6;min-height:24px;overflow-wrap:anywhere}
+.mini-native-chart [data-peer-hitbox]{cursor:crosshair}
