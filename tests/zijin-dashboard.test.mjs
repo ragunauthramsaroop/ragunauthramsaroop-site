@@ -1,0 +1,12 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import { readFileSync } from 'node:fs';
+const html=readFileSync('tools/zijin-2259/index.html','utf8');
+const js=readFileSync('tools/zijin-2259/app.js','utf8');
+const css=readFileSync('tools/zijin-2259/styles.css','utf8');
+test('references correct listing and parent benchmark',()=>{assert.match(html,/HKEX:2259/);assert.match(html,/HKEX:2899/);assert.match(html,/OANDA:XAUUSD/);});
+test('provider-hosted widgets identify their sources and delays',()=>{assert.match(html,/TradingView delivers the market widgets directly/);assert.match(html,/quotes may be delayed/);assert.match(html,/embed-widget-advanced-chart\.js/);assert.match(html,/embed-widget-symbol-info\.js/);assert.match(html,/embed-widget-timeline\.js/);});
+test('personal share quantity defaults empty and stays in browser memory',()=>{assert.match(html,/<input id="shares"[^>]*value=""/);assert.doesNotMatch(js,/localStorage|sessionStorage|indexedDB|fetch\(|XMLHttpRequest/);assert.match(js,/shareCount<=0/);});
+test('schematic share-price paths are clearly illustrative',()=>{assert.match(js,/values:\[95,88,80\]/);assert.match(js,/values:\[140,155,175\]/);assert.match(js,/values:\[185,230,275\]/);assert.match(html,/not analyst targets or probability-weighted forecasts/);});
+test('calculator accounts for negative spread, insufficient purchase funds and user charges',()=>{assert.match(js,/spread=value-cost/);assert.match(js,/net=spread-charges/);assert.match(js,/Math\.ceil\(cost\/price\)/);assert.match(js,/price<strike/);});
+test('responsive and accessible structure',()=>{assert.match(html,/<main id="main">/);assert.match(html,/class="skip-link"/);assert.match(css,/@media\(max-width:680px\)/);assert.match(css, /prefers-reduced-motion/);assert.match(html,/aria-labelledby="main-title"/);});
