@@ -83,8 +83,8 @@ test('projection year points and scenario cards are actionable',()=>{
 });
 test('scenario outputs stay qualified and contractual baselines stay separate',()=>{
  assert.match(html,/not analyst price targets/);
- assert.match(html,/Baseline production is 59\.2 tonnes/);
- assert.match(html,/historical reference assumptions/);
+ assert.match(html,/2026 target production is a company target of 59\.2 tonnes/);
+ assert.match(html,/AISC of US\$1,649\/oz/);
  assert.match(html,/2027 and 2028 are qualification years/);
 });
 test('employee incentive quantity is private-by-default and never sent to server',()=>{
@@ -118,4 +118,29 @@ test('responsive UI and keyboard accessible section navigation',()=>{
  assert.match(css,/prefers-reduced-motion/);
  assert.match(analytics,/node\.addEventListener\("keydown"/);
  assert.match(html,/data-compare-symbol="stock" aria-pressed="true"/);
+});
+
+test('probability lab, heatmap, financial evidence and local eligibility are visible',()=>{
+ const quant=readFileSync(root+'quant.js','utf8');
+ const quantUI=readFileSync(root+'quant-ui.js','utf8');
+ const decision=readFileSync(root+'decision-ui.js','utf8');
+ for(const id of ['risk-lab','quant-fan-chart','quant-histogram','quant-correlation','stress-heatmap','evidence','eligibility-result','data-ledger']){
+   assert.match(html,new RegExp('id="'+id+'"'));
+ }
+ for(const id of ['quant-drift','quant-vol','quant-block','quant-samples'])assert.match(html,new RegExp('id="'+id+'"'));
+ assert.match(quant,/bootstrappedFuture/);
+ assert.match(quant,/backtestCoverage/);
+ assert.match(quantUI,/zgi:quant/);
+ assert.match(decision,/sensitivityGrid/);
+ assert.match(decision,/actual scheme rules/i);
+ assert.match(html,/11 November 2029 falls on a Sunday/);
+});
+test('latest reported company baseline is not confused with 2026 target',()=>{
+ assert.match(html,/41 tonnes/);
+ assert.match(html,/US\$1,649\/oz/);
+ assert.match(html,/2026 target production is a company target/);
+ assert.match(analytics,/anchorGold-1649/);
+ assert.doesNotMatch(analytics,/anchorGold-1678/);
+ assert.match(html,/2026042902638\.pdf/);
+ assert.match(html,/2026101900165\.pdf/);
 });
