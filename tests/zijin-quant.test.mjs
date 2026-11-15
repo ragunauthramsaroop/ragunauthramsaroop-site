@@ -1,8 +1,10 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { createRequire } from 'node:module';
-const require=createRequire(import.meta.url);
-const Q=require('../tools/zijin-2259/quant.js');
+import { readFileSync } from 'node:fs';
+import vm from 'node:vm';
+const context={module:{exports:{}}};
+vm.runInNewContext(readFileSync('tools/zijin-2259/quant.js','utf8'),context);
+const Q=context.module.exports;
 const historical=(length=245)=>{
  const a=[],first=Date.parse('2025-11-01T08:00:00Z')/1000;
  for(let i=0;i<length;i++){
