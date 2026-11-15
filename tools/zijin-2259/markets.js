@@ -247,8 +247,24 @@ function miniChart(hostId,data,label,currency){
   svg+=svgLine(close,x,y,color,3);
   svg+='<circle cx="'+x(bars.length-1)+'" cy="'+y(close.at(-1))+'" r="5" fill="'+color+'"/>';
   svg+='<text x="'+l+'" y="'+(h-7)+'" fill="#8fa2b3" font-size="13">'+formatDate(bars[0].t)+'</text>';
-  svg+='<text x="'+(w-r)+'" y="'+(h-7)+'" text-anchor="end" fill="#8fa2b3" font-size="13">'+formatDate(bars.at(-1).t)+'</text></svg>';
+  svg+='<text x="'+(w-r)+'" y="'+(h-7)+'" text-anchor="end" fill="#8fa2b3" font-size="13">'+formatDate(bars.at(-1).t)+'</text>';
+  svg+='<rect data-peer-hitbox="1" x="'+l+'" y="'+t+'" width="'+(w-l-r)+'" height="'+(h-t-b)+'" fill="transparent" pointer-events="all"/></svg>';
   host.innerHTML=svg;
+  const readout=document.createElement("div");
+  readout.className="mini-hover";
+  readout.textContent="HOVER OR TAP FOR SOURCE DAILY PRICES";
+  host.append(readout);
+  const graph=host.querySelector("svg"),hit=host.querySelector("[data-peer-hitbox]");
+  const pick=(event)=>{
+    const rect=graph.getBoundingClientRect();
+    const local=(event.clientX-rect.left)/rect.width*w;
+    const idx=Math.min(bars.length-1,Math.max(0,Math.round((local-l)/(w-l-r)*(bars.length-1))));
+    const bar=bars[idx];
+    if(bar)readout.textContent=formatDate(bar.t)+" · "+label+" · "+(currency==="USD"?"US$":"HK$")+NUM.format(bar.c)+" · Vol "+INTEGER.format(bar.v||0);
+  };
+  hit?.addEventListener("pointermove",pick);
+  hit?.addEventListener("pointerdown",pick);
+  hit?.addEventListener("pointerleave",()=>{readout.textContent="HOVER OR TAP FOR SOURCE DAILY PRICES"});
 }
 function renderPeer(prefix,data){
   if(!data)return;
