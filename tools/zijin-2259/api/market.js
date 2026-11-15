@@ -41,6 +41,10 @@ export default async function handler(req,res){
         const actualSymbol=String(meta.symbol||"").toUpperCase();
         if(actualSymbol!==symbol.toUpperCase()){lastError="Provider symbol mismatch";continue}
         const selected=ALLOWED.get(symbol);
+        const returnedCurrency=String(meta.currency||"").toUpperCase();
+        if(returnedCurrency&&returnedCurrency!==selected.currency){lastError="Provider currency mismatch";continue}
+        const returnedExchange=String(meta.exchangeName||"").toUpperCase();
+        if(symbol.endsWith(".HK")&&returnedExchange&&!/(HK|HKG|SEHK)/.test(returnedExchange)){lastError="Provider exchange mismatch";continue}
         const quote=Number(meta.regularMarketPrice);
         const time=Number(meta.regularMarketTime);
         const ohlc=[];
@@ -57,12 +61,12 @@ export default async function handler(req,res){
         const marketTime=Number.isFinite(time)&&time>0?time:last.t;
         // For daily bars, use the preceding trading session. chartPreviousClose is often
         // the first close in the selected chart range, not the prior day's close.
-        const previousClose=Number(ohlc.length>=2?ohlc.at(-2).c:meta.previousClose);
+        const previousClose=Number(interval==="1d"&&ohlc.length>=2?ohlc.at(-2).c:meta.previousClose);
         const change=Number.isFinite(previousClose)&&previousClose>0?lastValidQuote-previousClose:null;
         const changePercent=change!==null?change/previousClose*100:null;
         return res.status(200).json({
           ok:true,symbol,displayName:selected.name,currency:selected.currency,kind:selected.kind,
-          provider:"Yahoo Finance chart (unofficial, delayed)",sourceSymbol:meta.symbol,
+          provider:"Yahoo Finance chart (unofficial, delayed)",sourceSymbol:meta.symbol,sourceCurrency:meta.currency||null,
           exchange:meta.exchangeName||null,exchangeTimezone:meta.exchangeTimezoneName||null,
           providerQuoteTime:new Date(marketTime*1000).toISOString(),
           latestBarTime:new Date(last.t*1000).toISOString(),
