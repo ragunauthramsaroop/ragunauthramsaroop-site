@@ -144,3 +144,26 @@ test('latest reported company baseline is not confused with 2026 target',()=>{
  assert.match(html,/2026042902638\.pdf/);
  assert.match(html,/2026101900165\.pdf/);
 });
+
+test('audited asset-level production includes nine mines and reconciles to 46.9 tonnes',()=>{
+ const portfolio=readFileSync(root+'portfolio.js','utf8');
+ const values=[...portfolio.matchAll(/v25:(\d+(?:\.\d+)?),v24:(?:null|\d+(?:\.\d+)?)/g)].map(x=>Number(x[1]));
+ assert.equal(values.length,9);
+ assert.ok(Math.abs(values.reduce((a,b)=>a+b,0)-46.9)<1e-8);
+ for(const name of ['Buriticá','Rosebel','Norton Gold Fields','Aurora','Akyem','Raygorodok','Porgera'])assert.ok(portfolio.includes(name));
+ assert.match(html,/id="mine-bars"/);
+ assert.match(html,/id="mine-donut"/);
+ assert.match(html,/audited FY2025 figures/i);
+ assert.match(portfolio,/FY2024 comparator/i);
+});
+test('award loss frequencies derive from private share count and exact model observations',()=>{
+ const risk=readFileSync(root+'risk-award.js','utf8');
+ const quant=readFileSync(root+'quant.js','utf8');
+ assert.match(html,/id="award-quant-chart"/);
+ assert.match(html,/id="award-quant-loss"/);
+ assert.match(quant,/nov2029Samples:buckets\[2\]\.slice\(\)/);
+ assert.match(risk,/samples\.map\(price=>\(price-strike\)\*shares\)/);
+ assert.match(risk,/payoffs\.filter\(x=>x<0\)/);
+ assert.doesNotMatch(risk,/fetch\(|localStorage|sessionStorage|XMLHttpRequest/);
+ assert.match(html,/<input id="shares"[^>]*value=""/);
+});
