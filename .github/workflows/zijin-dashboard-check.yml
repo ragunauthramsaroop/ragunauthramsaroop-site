@@ -33,6 +33,9 @@ jobs:
           node --check tools/zijin-2259/app.js
           node --check tools/zijin-2259/markets.js
           node --check tools/zijin-2259/api/market.js
+          node --check tools/zijin-2259/intelligence.js
+          node --check tools/zijin-2259/news.js
+          node --check tools/zijin-2259/api/news.js
       - name: Verify market sources, privacy and calculator rules
         run: node --test tests/zijin-dashboard.test.mjs
       - name: Verify HTTP-free static paths
@@ -42,4 +45,7 @@ jobs:
           test -s tools/zijin-2259/app.js
           test -s tools/zijin-2259/markets.js
           test -s tools/zijin-2259/api/market.js
+          test -s tools/zijin-2259/intelligence.js
+          test -s tools/zijin-2259/news.js
+          test -s tools/zijin-2259/api/news.js
           grep -q 'name="robots" content="noindex,nofollow"' tools/zijin-2259/index.html
