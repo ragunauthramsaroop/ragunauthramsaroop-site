@@ -14,6 +14,8 @@
   <script defer src="./markets.js"></script>
   <script defer src="./intelligence.js"></script>
   <script defer src="./news.js"></script>
+  <script defer src="./quant.js"></script>
+  <script defer src="./quant-ui.js"></script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -29,9 +31,11 @@
         <a href="#overview" class="nav-item is-active" data-nav="overview"><span class="nav-symbol">▦</span>Executive overview</a>
         <a href="#charting" class="nav-item" data-nav="charting"><span class="nav-symbol">⌁</span>Market charting</a>
         <a href="#technicals" class="nav-item" data-nav="technicals"><span class="nav-symbol">◷</span>Technical signals</a>
+        <a href="#risk-lab" class="nav-item" data-nav="risk-lab"><span class="nav-symbol">◇</span>Risk & probability lab</a>
         <a href="#scenarios" class="nav-item" data-nav="scenarios"><span class="nav-symbol">◈</span>2027–2029 scenarios</a>
         <a href="#settlement" class="nav-item" data-nav="settlement"><span class="nav-symbol">▤</span>Award modelling</a>
         <a href="#news" class="nav-item" data-nav="news"><span class="nav-symbol">▣</span>News & filings</a>
+        <a href="#evidence" class="nav-item" data-nav="evidence"><span class="nav-symbol">▥</span>Financial evidence room</a>
         <a href="#sources" class="nav-item" data-nav="sources"><span class="nav-symbol">◎</span>Sources & controls</a>
       </nav>
       <div class="sidebar-foot">
@@ -57,9 +61,9 @@
           <div class="section-topline"><span class="section-kicker">EQUITIES / HONG KONG</span><span class="edition">INSTITUTIONAL STYLE • INDEPENDENT RESEARCH</span></div>
           <div class="hero-heading">
             <div>
-              <p class="micro">HKEX: 2259 <span class="mid-dot">•</span> HKD DENOMINATED</p>
+              <p class="micro">HKEX: 2259 <span class="mid-dot">•</span> HKD DENOMINATED <span class="mid-dot">•</span> QUANT RESEARCH EDITION</p>
               <h1 id="main-title">Zijin Gold<br><em>International</em></h1>
-              <p class="hero-lead">A consolidated research desk for price action, gold exposure, financial signals, and long-horizon share-value scenarios.</p>
+              <p class="hero-lead">A source-verified decision room for Hong Kong equities, gold economics, historical risk, conditional 2029 value and private award settlement.</p>
             </div>
             <div class="gold-orbit" aria-hidden="true"><div class="orbit-ring"><span>2259</span><small>HKEX</small></div></div>
           </div>
@@ -168,8 +172,60 @@
           </div>
         </section>
 
-        <section id="scenarios" class="section" aria-labelledby="scenarios-heading">
-          <div class="section-head"><div><p class="section-kicker">03 / MARKET-LINKED ASSUMPTIONS LAB</p><h2 id="scenarios-heading">Dynamic valuation model, 2027–2029</h2><p>Market-anchored sensitivity estimates are recalculated as validated stock and gold observations refresh. Every forecast variable is interactive. These are not analyst price targets.</p></div><span class="section-index">03</span></div>
+        
+        <section id="risk-lab" class="section" aria-labelledby="risk-lab-heading">
+          <div class="section-head"><div><p class="section-kicker">03 / STATISTICAL RISK & ASSUMPTION TESTING</p><h2 id="risk-lab-heading">Probability & risk command center</h2><p>Historical resampling of 2259 price returns. The model reacts to source updates and adjustable assumptions. The resulting percentages are conditional simulation frequencies, not reliable real-world probabilities.</p></div><span class="section-index">03</span></div>
+          <div class="panel integrity-banner">
+            <div><span class="status-dot"></span><strong>Measured uncertainty</strong><p id="quant-data-integrity">Awaiting enough validated HKEX:2259 historical observations.</p></div>
+            <span id="quant-source-age" class="source-tag">SOURCE CHECK PENDING</span>
+          </div>
+          <div class="quant-kpis">
+            <article class="quant-kpi"><span>NOV 2029 · CONDITIONAL MEDIAN</span><strong id="quant-median-nov">—</strong><small id="quant-median-meta">Waiting for market history</small></article>
+            <article class="quant-kpi"><span>90% SIMULATED PRICE INTERVAL</span><strong id="quant-interval-nov">—</strong><small>5th to 95th percentile, November 2029</small></article>
+            <article class="quant-kpi"><span>ABOVE HK$87.48 · IF VESTED</span><strong id="quant-break-even">—</strong><small>Sampled market outcomes only, excluding taxes</small></article>
+            <article class="quant-kpi"><span>HISTORICAL BACKTEST COVERAGE</span><strong id="quant-backtest">—</strong><small>Empirical coverage of an 80% forecast interval</small></article>
+          </div>
+          <div class="quant-main">
+            <article class="panel quant-controls">
+              <div class="panel-heading"><div><p class="eyebrow">FORWARD DISTRIBUTION INPUTS</p><h3>Model your uncertainty</h3></div><button type="button" class="button button-subtle" id="quant-reset">RESET</button></div>
+              <div class="model-input"><label for="quant-drift"><span>Assumed annual log-return drift</span><strong id="quant-drift-value">8%</strong></label><input id="quant-drift" type="range" min="-30" max="40" step="1" value="8"><div class="input-limits"><span>−30%</span><span>+40%</span></div></div>
+              <div class="model-input"><label for="quant-vol"><span>Historical volatility multiplier</span><strong id="quant-vol-value">1.00×</strong></label><input id="quant-vol" type="range" min=".5" max="2.5" step=".05" value="1"><div class="input-limits"><span>0.5×</span><span>2.5×</span></div></div>
+              <div class="model-input"><label for="quant-block"><span>Return sampling block length</span><strong id="quant-block-value">5 trading days</strong></label><input id="quant-block" type="range" min="1" max="10" step="1" value="5"><div class="input-limits"><span>Independent days</span><span>Two-week blocks</span></div></div>
+              <label class="quant-selector-label" for="quant-samples">Simulation paths</label>
+              <select id="quant-samples" class="quant-select"><option value="1000">1,000, fast</option><option value="2000" selected>2,000, balanced</option><option value="4000">4,000, detailed</option></select>
+              <button type="button" class="button button-gold quant-recalc" id="quant-recalculate">RECALCULATE DISTRIBUTIONS ↻</button>
+              <p class="quant-footnote">Uses centred historical log returns and five-day block bootstrap by default. Results depend heavily on a short public trading history since September 2025. Annual drift is your assumption, not an inferred market consensus. Re-running with unchanged inputs produces identical results.</p>
+            </article>
+            <article class="panel quant-forecast">
+              <div class="panel-heading"><div><p class="eyebrow">DISTRIBUTION FAN</p><h3>2027–December 2029 price uncertainty</h3></div><button type="button" id="quant-export" class="button button-subtle">EXPORT RESEARCH CSV ↓</button></div>
+              <div id="quant-fan-chart" class="quant-visual" role="img" aria-label="Price probability bands for 2027, 2028, November 2029, December 2029">Waiting for validated daily stock return history.</div>
+              <div class="quant-highlight" id="quant-fan-readout">Select a forecast date to inspect simulated quantiles.</div>
+              <div class="quant-period-switch" role="group" aria-label="Statistical forecast checkpoint">
+                <button type="button" data-quant-date="2027-12-31">DEC 2027</button>
+                <button type="button" data-quant-date="2028-12-31">DEC 2028</button>
+                <button type="button" data-quant-date="2029-11-12" class="selected">NOV 2029</button>
+                <button type="button" data-quant-date="2029-12-31">DEC 2029</button>
+              </div>
+            </article>
+          </div>
+          <div class="quant-two">
+            <article class="panel">
+              <div class="panel-heading"><div><p class="eyebrow">SIMULATED END-PRICE DISTRIBUTION</p><h3>Probability mass by share-price band</h3></div><span class="source-tag">HISTORICAL BOOTSTRAP</span></div>
+              <div id="quant-histogram" class="quant-visual compact" role="img" aria-label="Bootstrap model histogram of possible future closing prices">Select market source data to compute.</div>
+              <div id="quant-thresholds" class="threshold-bars"></div>
+            </article>
+            <article class="panel">
+              <div class="panel-heading"><div><p class="eyebrow">MARKET RELATIONSHIPS</p><h3>Returns, correlation & model integrity</h3></div><span class="source-tag">DAILY CLOSE ANALYSIS</span></div>
+              <div class="quant-correlation" id="quant-correlation">Awaiting aligned history for 2259, parent and gold futures.</div>
+              <div class="quant-coverage" id="quant-coverage-detail">Historical coverage calculations unavailable.</div>
+              <p class="widget-disclaimer">Same UTC-date parent and previous-calendar-day gold futures correlations do not imply causality. Trading hours, exchange holidays and return lag conventions affect comparisons.</p>
+            </article>
+          </div>
+          <div class="panel quant-alert"><strong>Vesting date is not a trading date.</strong><p>11 November 2029 falls on a Sunday. The statistical November checkpoint uses 12 November 2029, the next possible weekday, without assuming an exchange holiday calendar or grant settlement permission. The 31 December 2029 checkpoint is separate. Share value requires confirmed vesting, award rights, charges and an executable sale.</p></div>
+        </section>
+
+<section id="scenarios" class="section" aria-labelledby="scenarios-heading">
+          <div class="section-head"><div><p class="section-kicker">04 / MARKET-LINKED ASSUMPTIONS LAB</p><h2 id="scenarios-heading">Dynamic valuation model, 2027–2029</h2><p>Market-anchored sensitivity estimates are recalculated as validated stock and gold observations refresh. Every forecast variable is interactive. These are not analyst price targets.</p></div><span class="section-index">03</span></div>
           <div class="dynamic-model-grid">
             <article class="panel model-controls">
               <div class="panel-heading"><div><p class="eyebrow">FORECAST INPUTS</p><h3>Scenario driver controls</h3></div><button type="button" id="reset-model-assumptions" class="button button-subtle">RESET</button></div>
@@ -198,7 +254,7 @@
         </section>
 
         <section id="settlement" class="section" aria-labelledby="settlement-heading">
-          <div class="section-head"><div><p class="section-kicker">04 / PRIVATE-IN-THIS-SESSION CALCULATOR</p><h2 id="settlement-heading">Award settlement laboratory</h2><p>Model a vested share award using the publicly disclosed HK$87.48 purchase price. Enter your own share count privately; nothing is saved or transmitted by this calculator.</p></div><span class="section-index">04</span></div>
+          <div class="section-head"><div><p class="section-kicker">05 / PRIVATE-IN-THIS-SESSION CALCULATOR</p><h2 id="settlement-heading">Award settlement laboratory</h2><p>Model a vested share award using the publicly disclosed HK$87.48 purchase price. Enter your own share count privately; nothing is saved or transmitted by this calculator.</p></div><span class="section-index">04</span></div>
           <div class="calculator-grid">
             <article class="panel calculator-inputs">
               <div class="panel-heading"><div><p class="eyebrow">PERSONAL INPUTS / LOCAL ONLY</p><h3>Define your position</h3></div><span class="privacy-tag">NO STORAGE</span></div>
@@ -229,7 +285,7 @@
         </section>
 
         <section id="news" class="section" aria-labelledby="news-heading">
-          <div class="section-head"><div><p class="section-kicker">05 / EVENTS & FILINGS</p><h2 id="news-heading">Research and disclosure flow</h2><p>Third-party issuer-related headlines refreshed by source RSS, with publication timestamps. Official HKEX filings remain the definitive corporate record.</p></div><span class="section-index">05</span></div>
+          <div class="section-head"><div><p class="section-kicker">06 / EVENTS & FILINGS</p><h2 id="news-heading">Research and disclosure flow</h2><p>Third-party issuer-related headlines refreshed by source RSS, with publication timestamps. Official HKEX filings remain the definitive corporate record.</p></div><span class="section-index">05</span></div>
           <div class="two-column">
             <article class="panel"><div class="panel-heading"><div><p class="eyebrow">SECURITY-RELATED NEWS</p><h3>Verified source channels</h3></div><span class="source-tag">OFFICIAL + INDEPENDENT</span></div>
               <div class="news-live"><div class="news-stream-head"><span class="status-dot"></span><span>REFRESHED ISSUER-RELATED HEADLINES</span><button type="button" id="refresh-news-now" class="button button-subtle">REFRESH NEWS ↻</button></div><p id="news-provider-status" class="news-feed-status">Connecting to Google News RSS, source dates are shown per article.</p><div id="issuer-news-feed" class="issuer-news-feed" aria-live="polite">Waiting for available news feed.</div></div>
@@ -252,8 +308,23 @@
           </div>
         </section>
 
-        <section id="sources" class="section" aria-labelledby="sources-heading">
-          <div class="section-head"><div><p class="section-kicker">06 / AUDIT TRAIL</p><h2 id="sources-heading">Data provenance & safeguards</h2><p>Market-source separation and modelling assumptions, visible by design.</p></div><span class="section-index">06</span></div>
+        
+        <section id="evidence" class="section" aria-labelledby="evidence-title">
+          <div class="section-head"><div><p class="section-kicker">07 / PUBLISHED COMPANY RECORD</p><h2 id="evidence-title">Fundamental evidence room</h2><p>Official dated financial information drives the model's baseline assumptions. Unlike exchange quotes, audited results change only when the company issues new reports. The figures below remain labelled by reporting period.</p></div><span class="section-index">07</span></div>
+          <div class="evidence-grid">
+            <article class="evidence-card"><span>FY 2025 · AUDITED ANNUAL REPORT</span><strong>47 tonnes</strong><small>2025 mined gold production</small><p>Published FY 2025 production, not a forward price signal.</p><a href="https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0429/2026042902638.pdf" target="_blank" rel="noopener noreferrer">2025 ANNUAL REPORT ↗</a></article>
+            <article class="evidence-card"><span>FY 2025 · AUDITED ANNUAL REPORT</span><strong>US$1,501/oz</strong><small>2025 disclosed AISC</small><p>Historical cost baseline from the company's annual report.</p><a href="https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0429/2026042902638.pdf" target="_blank" rel="noopener noreferrer">2025 ANNUAL REPORT ↗</a></article>
+            <article class="evidence-card"><span>JAN–SEP 2026 · UNAUDITED</span><strong>41 tonnes</strong><small>9-month mined gold output</small><p>Approximately 28% above the equivalent 2025 period.</p><a href="https://www.hkexnews.hk/listedco/listconews/sehk/2026/1019/2026101900165.pdf" target="_blank" rel="noopener noreferrer">9M 2026 RESULTS ↗</a></article>
+            <article class="evidence-card"><span>JAN–SEP 2026 · UNAUDITED</span><strong>US$1,649/oz</strong><small>9-month all-in sustaining cost</small><p>The latest published 2026 cost reference used in the scenario engine.</p><a href="https://www.hkexnews.hk/listedco/listconews/sehk/2026/1019/2026101900165.pdf" target="_blank" rel="noopener noreferrer">9M 2026 RESULTS ↗</a></article>
+          </div>
+          <article class="panel evidence-context">
+            <div><p class="eyebrow">SOURCE QUALITY</p><h3>What qualifies as live, reported or modelled?</h3><p>Quote values: exchange/provider delayed and time stamped. Audited and unaudited fundamentals: only update when formally reported. Model outputs: mathematical interpretations, recalculated from validated observations and editable assumptions. Third-party press: not regulatory evidence.</p></div>
+            <div class="evidence-stamp"><strong>FY 2025</strong><span>AUDITED FINANCIALS</span><strong>9M 2026</strong><span>UNAUDITED OPERATIONAL REPORT</span></div>
+          </article>
+        </section>
+
+<section id="sources" class="section" aria-labelledby="sources-heading">
+          <div class="section-head"><div><p class="section-kicker">08 / AUDIT TRAIL</p><h2 id="sources-heading">Data provenance & safeguards</h2><p>Market-source separation and modelling assumptions, visible by design.</p></div><span class="section-index">06</span></div>
           <div class="governance-grid">
             <article class="panel"><span class="governance-icon">01</span><h3>Market widgets</h3><p>Yahoo Finance OHLC history is retrieved by a read-only Vercel API with symbol verification and provider quote timestamp. Data availability, delay and downstream usage rights remain subject to Yahoo and HKEX terms. Chart computation runs locally.</p></article>
             <article class="panel"><span class="governance-icon">02</span><h3>Historical references</h3><p>Live-data-labelled KPIs use the newest available 2259.HK, 2899.HK and GC=F provider observations with timestamps. Historical published mining targets and incentive-plan prices are labelled reference assumptions, never live data.</p></article>
