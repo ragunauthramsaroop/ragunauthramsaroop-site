@@ -45,6 +45,8 @@ jobs:
           node --check tools/zijin-2259/decision-ui.js
           node --check tools/zijin-2259/licensed-ui.js
           node --check tools/zijin-2259/api/licensed-quote.js
+          node --check tools/zijin-2259/portfolio.js
+          node --check tools/zijin-2259/risk-award.js
       - name: Verify market sources, privacy and calculator rules
         run: node --test tests/zijin-dashboard.test.mjs tests/zijin-quant.test.mjs tests/zijin-licensed-feed.test.mjs
       - name: Verify HTTP-free static paths
@@ -62,4 +64,6 @@ jobs:
           test -s tools/zijin-2259/decision-ui.js
           test -s tools/zijin-2259/licensed-ui.js
           test -s tools/zijin-2259/api/licensed-quote.js
+          test -s tools/zijin-2259/portfolio.js
+          test -s tools/zijin-2259/risk-award.js
           grep -q 'name="robots" content="noindex,nofollow"' tools/zijin-2259/index.html
