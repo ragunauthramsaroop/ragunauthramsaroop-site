@@ -86,7 +86,7 @@ async function run(){
     assert.ok(Math.abs(measured-expected)<0.02,'net of purchase-price spread arithmetic must match');
     await page.locator('#charge').fill('100');
     const coverExpected=Math.ceil((100*87.48+100)/selectedPrice);
-    const coverDisplayed=parseInt((await page.locator('#shares-to-sell').textContent()).replace(/[^0-9]/g,''),10);
+    const coverDisplayed=parseInt((await page.locator('#shares-to-sell').textContent()).split('/')[0].replace(/,/g,'').trim(),10);
     assert.equal(coverDisplayed,coverExpected,'whole share sales must fund entered fees as well as purchase');
     await page.locator('#charge').fill('0');
   });
