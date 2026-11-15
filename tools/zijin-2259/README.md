@@ -93,3 +93,21 @@ Vendor relay response schema: `{"symbol":"2259.HK","currency":"HKD","exchange":"
 Provider onboarding reference: HKEX Information Vendors List, BMP guiding notes and marketdata@hkex.com.hk. An issuer-owned public investor-relations website might qualify for a listed-company BMP third-party service, while an independent individual research dashboard requires its own permitted use and vendor terms.
 
 The on-site adapter does not silently overwrite the delayed daily OHLC history. Valuation and backtesting continue to identify their delayed-source timestamps unless market-data and derived-data entitlements explicitly permit using licensed quotes for calculations.
+
+
+## Flagship evidence and payoff upgrade
+
+The portfolio explorer lists all nine operating groups disclosed in the 2025 annual report. Total mined gold reconciles to 46.9 tonnes. Company comparable FY2024 mined gold was 39.0 tonnes. Users can filter or sort producing mines, inspect 2024 comparators when available, and see top-three production concentration. 2025 new acquisitions have missing, NOT zero, 2024 comparable production. All asset data are explicitly marked audited and historical.
+
+The 2029 award distribution widget consumes the model's exact November 2029 share-price bootstrap samples. Only after a user enters a personal share count and purchase price does it compute the simulated median gross spread, 5th–95th percentile spread and gross loss frequency. The display assumes full vesting and excludes personal taxes, fees and employer/trustee outcomes. Nothing in the award calculator is transmitted to a server or persisted.
+
+A standalone GitHub Actions Chromium end-to-end workflow tests the actual rendered frontend with controlled market-data fixtures, covering security-specific charts, technical/model reactions, ROE screening, the share-award arithmetic, responsive navigation and licensing fail-closed behavior. Mocked market-data fixtures validate the interface, not the accuracy or legal entitlement of a third-party quote feed. This avoids reliance on external paid browser credits.
+
+Reports and source links:
+- FY2025 annual report: https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0429/2026042902638.pdf
+- Nine-month 2026 unaudited operational performance: https://www.hkexnews.hk/listedco/listconews/sehk/2026/1019/2026101900165.pdf
+- Market data entitlement: https://www.hkex.com.hk/Services/Market-Data-Services/Real-Time-Data-Services/Data-Licensing/HKEX-IS/Market-Data-Vendor-Licence/Basic-Market-Prices-%28BMP%29-Service/Notes-to-Listed-Companies-for-enabling-BMP-Service-on-their-Corporate-Website?sc_lang=en
+
+### What is still outside the application
+
+A licensed redistributable HKEX real-time stock quote feed remains unavailable without a contract and vendor credentials. Free BMP snapshots work only on an authorised provider's website, not as an unrestricted streaming data API. No institutional DCF accuracy claim, calibrated 2029 probability, complete mine-by-mine cost history or audited future outcome is represented as finished.
