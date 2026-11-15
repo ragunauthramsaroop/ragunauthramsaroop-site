@@ -8,6 +8,7 @@
  * ZGI_HKEX_VENDOR_API_KEY: secret
  * ZGI_HKEX_VENDOR_NAME: public vendor attribution
  * ZGI_HKEX_PUBLIC_DISPLAY_AUTHORIZED=true
+ * ZGI_HKEX_AUTOMATIC_REFRESH_AUTHORIZED=true (optional, only full streaming right)
  *
  * Relay must return: symbol, currency, price, quoteTimestamp,
  * previousClose, optional bid, ask, volume, exchange.
@@ -73,7 +74,7 @@ export default async function handler(req,res){
    change:Number.isFinite(prev)&&prev>0?price-prev:null,
    changePercent:Number.isFinite(prev)&&prev>0?(price/prev-1)*100:null,
    quoteTimestamp:t.toISOString(),provider:String(process.env.ZGI_HKEX_VENDOR_NAME).slice(0,70),
-   exchange,licensedDisplay:true,currentExchangeSessionSnapshot:current,
+   exchange,licensedDisplay:true,automaticRefreshLicensed:process.env.ZGI_HKEX_AUTOMATIC_REFRESH_AUTHORIZED==="true",currentExchangeSessionSnapshot:current,
    status:current?"licensed_recent_snapshot":"licensed_last_observation",
    dataDelay:current?"Vendor-authorised recent exchange observation":"Vendor-licensed prior exchange observation. Not a current tick.",
    fetchedAt:new Date().toISOString()};
