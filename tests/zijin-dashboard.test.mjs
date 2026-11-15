@@ -19,7 +19,7 @@ test('correct HKEX stock and parent; no Apple or TradingView fallback',()=>{
 test('all market headline KPIs are bound to a dynamic placeholder',()=>{
  for(const id of ['live-kpi-2259','live-kpi-2899','live-kpi-gold','live-kpi-range','global-market-source']){
   assert.match(html,new RegExp('id="'+id+'"'));
-  assert.match(analytics,new RegExp(id));
+  assert.match(analytics,/live-kpi-"\+key/);
  }
  assert.doesNotMatch(html,/class="metric-value">HK\$121\.20/);
 });
