@@ -84,6 +84,11 @@ async function run(){
     const measured=Number(displayed.replace(/[^0-9.-]/g,''));
     const expected=Number(((selectedPrice-87.48)*100).toFixed(2));
     assert.ok(Math.abs(measured-expected)<0.02,'net of purchase-price spread arithmetic must match');
+    await page.locator('#charge').fill('100');
+    const coverExpected=Math.ceil((100*87.48+100)/selectedPrice);
+    const coverDisplayed=parseInt((await page.locator('#shares-to-sell').textContent()).replace(/[^0-9]/g,''),10);
+    assert.equal(coverDisplayed,coverExpected,'whole share sales must fund entered fees as well as purchase');
+    await page.locator('#charge').fill('0');
   });
   await check('Private eligibility screening responds to ROE and employment conditions',async()=>{
     await page.locator('#elig-roe-2026').fill('15');
@@ -114,9 +119,20 @@ async function run(){
     assert.equal(await button.isVisible(),true);
     await button.click();
     assert.equal(await button.getAttribute('aria-expanded'),'true');
+    await button.click();
+    assert.equal(await button.getAttribute('aria-expanded'),'false','the toggle should close the mobile drawer without pointer interception');
+    await button.click();
+    assert.equal(await button.getAttribute('aria-expanded'),'true');
     await page.locator('.side-nav a[href="#mines"]').click();
     assert.equal(await button.getAttribute('aria-expanded'),'false');
     assert.equal(await page.locator('#mines').isVisible(),true);
+  });
+  await check('Section markers align with numbered labels',async()=>{
+    const rows=await page.evaluate(()=>[...document.querySelectorAll('main>.section')].filter(s=>s.id!=='overview').map(s=>({
+      label:s.querySelector('.section-kicker')?.textContent?.slice(0,2),
+      marker:s.querySelector('.section-head>.section-index')?.textContent?.trim()
+    })));
+    for(const item of rows)assert.equal(item.label,item.marker,'section index must match heading');
   });
   await check('No runtime exceptions',async()=>{assert.deepEqual(errors,[])});
  }finally{await browser.close()}
