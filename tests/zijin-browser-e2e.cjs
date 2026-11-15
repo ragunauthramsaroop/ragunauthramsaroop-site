@@ -79,6 +79,23 @@ async function run(){
     assert.notEqual(text,'—');
     assert.match(await page.locator('#gross-spread').textContent(),/HK\$/);
     assert.match(await page.locator('#award-quant-source').textContent(),/100 shares/);
+    const selectedPrice=Number(await page.locator('#target').inputValue());
+    const displayed=await page.locator('#gross-spread').textContent();
+    const measured=Number(displayed.replace(/[^0-9.-]/g,''));
+    const expected=Number(((selectedPrice-87.48)*100).toFixed(2));
+    assert.ok(Math.abs(measured-expected)<0.02,'net of purchase-price spread arithmetic must match');
+  });
+  await check('Private eligibility screening responds to ROE and employment conditions',async()=>{
+    await page.locator('#elig-roe-2026').fill('15');
+    await page.locator('#elig-roe-2027').fill('15');
+    await page.locator('#elig-roe-2028').fill('15');
+    await page.locator('#elig-performance').selectOption('pass');
+    await page.locator('#elig-employment').selectOption('pass');
+    assert.match(await page.locator('#eligibility-result').textContent(),/SCREENING THRESHOLDS MET/);
+    await page.locator('#elig-roe-2027').fill('5');
+    assert.match(await page.locator('#eligibility-result').textContent(),/CONDITIONS NOT MET/);
+    await page.locator('#eligibility-reset').click();
+    assert.match(await page.locator('#eligibility-result').textContent(),/NOT YET DETERMINED/);
   });
   await check('Audited asset bar chart and issuer 2025 totals',async()=>{
     assert.equal(await page.locator('#mine-bars button.mine-row').count(),9);
