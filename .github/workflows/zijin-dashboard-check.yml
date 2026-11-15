@@ -29,7 +29,10 @@ jobs:
         with:
           node-version: '22'
       - name: Verify JavaScript syntax
-        run: node --check tools/zijin-2259/app.js
+        run: |
+          node --check tools/zijin-2259/app.js
+          node --check tools/zijin-2259/markets.js
+          node --check tools/zijin-2259/api/market.js
       - name: Verify market sources, privacy and calculator rules
         run: node --test tests/zijin-dashboard.test.mjs
       - name: Verify HTTP-free static paths
@@ -37,4 +40,6 @@ jobs:
           test -s tools/zijin-2259/index.html
           test -s tools/zijin-2259/styles.css
           test -s tools/zijin-2259/app.js
+          test -s tools/zijin-2259/markets.js
+          test -s tools/zijin-2259/api/market.js
           grep -q 'name="robots" content="noindex,nofollow"' tools/zijin-2259/index.html
