@@ -1,57 +1,46 @@
 # ZGI Intelligence | HKEX 2259
 
-An independent, browser-first market intelligence interface for Zijin Gold International, stock code HKEX:2259.
+An independent stock-market intelligence dashboard for Zijin Gold International (HKEX:2259), with Hong Kong stock and parent-company charts, gold futures, and a private-by-default settlement model.
 
-## Live market data and provenance
+## Correct price feeds, without unrelated security substitution
 
-The dashboard embeds official TradingView widgets for:
-- HKEX:2259 symbol information and advanced interactive charts (candlesticks, volume, RSI, MACD).
-- HKEX:2259 technical ratings across time frames.
-- HKEX:2899 parent-company mini chart.
-- OANDA:XAUUSD gold spot reference.
-- HKEX:2259 market news timeline.
+TradingView's free embed widgets did not correctly display HKEX 2259 on the original implementation and could revert to the US stock AAPL. All affected widgets were removed.
 
-These external widgets run under TradingView's own quote licensing, market hours, entitlements and time delay. **The website itself does not operate an exchange-licensed real-time feed, fetch raw quotes, claim every quote is real-time, or create price alerts.** If any widget is blocked by network or provider access, its content may remain unavailable. Users should follow the provider or HKEX directly.
+The replacement native charts retrieve data from a read-only Vercel API route at `/api/market`, using Yahoo Finance's public chart data endpoint. Only three identifiers are authorized:
+- `2259.HK`: Zijin Gold International, HKD
+- `2899.HK`: Zijin Mining Group, HKD
+- `GC=F`: COMEX gold futures, USD/oz. Gold futures are not spot gold.
 
-The top-row HK$121.20 close and HK$174.48 InvestingPro fair-value benchmark are **historical screenshots** dated November 2026, not automatically refreshed. 2027-2029 prices are **hypothetical sensitivity scenarios**, not consensus forecasts.
+The backend checks the source's returned symbol, quotes, OHLC bars, source timestamp, exchange/currency and data availability. For daily OHLC, the session price change is computed against the **previous trading day's close**, not Yahoo's chart-range baseline. No alternate ticker is silently substituted. Caching uses a 180-second revalidation period, but **the data is exchange/provider delayed, not a licensed real-time HKEX feed**. Upstream access is unofficial and might be blocked or discontinued. Live trading and quote entitlements require a licensed exchange vendor.
 
-## Optional award model and confidentiality
+If Yahoo's chart data is unavailable, the 2259 chart shows an explicitly archived November 2026 daily sample. Parent and gold charts display **unavailable**, with trusted external quote links. The dashboard never displays old observations as current. Source links: [Yahoo 2259.HK](https://finance.yahoo.com/quote/2259.HK/), [Google Finance 2259:HKG](https://www.google.com/finance/quote/2259:HKG), [Yahoo parent 2899.HK](https://finance.yahoo.com/quote/2899.HK/), [Yahoo gold futures GC=F](https://finance.yahoo.com/quote/GC=F/).
 
-The calculator is generic. No individual grant share quantity is embedded in public source code. The input is blank by default. The HK$87.48 scheme purchase price is disclosed in the public shareholder circular dated 15 October 2026; this is the published base price and may be adjusted under the scheme.
+## Visual features
 
-No calculator input is saved locally or remotely, and no calculator data is sent to TradingView or any other provider. Third-party widgets make their own requests; review their policies.
+1. Native SVG candlestick and line views, 1M/3M/6M/1Y ranges, daily volume and exact bar OHLC hover details.
+2. Local calculation of RSI(14), MACD(12,26,9), 20-day and 50-day simple moving averages using actual delayed daily prices.
+3. Separate HKEX 2899 parent-company and COMEX gold futures history, with independent source checks.
+4. 2027–2029 hypothetical bear/base/bull scenario chart and CSV export.
+5. Local-only conditional award calculator with user-supplied share count, the publicly disclosed HK$87.48 base purchase price, and optional charges.
+6. Official HKEX issuer-disclosure and external market-news links.
 
-The calculator assumes full vesting, whole shares and a single illustrative sale price. It shows:
-- Gross sale value and purchase cost.
-- Gross spread, which can be negative.
-- Illustrative cash spread after user-provided taxes and charges.
-- Approximate number of whole shares necessary to fund the scheme purchase price.
+## Privacy and boundaries
 
-It does not determine tax liabilities, actual settlement prices or eligibility. The employee's individual grant letter and trustee vesting notice prevail. If the sale price is below the purchase price, selling all shares would not cover the purchase cost.
+The generic award model does not contain personal grant quantities. The share-count box starts empty. The calculator does not send inputs to the server or write to browser storage. The read-only quote API accepts only the permitted public symbols. Market-data services receive their own quote requests, not grant data.
 
-## Access
+Historic reference HK$121.20 on 13 November 2026 and InvestingPro HK$174.48 fair-value estimate remain labelled **NOT LIVE**. Scenario paths are independent sensitivity examples, not analyst consensus, investment advice, or guarantees.
 
-- Static GitHub Pages route: /tools/zijin-2259/
-- No API credentials or backend.
-- No automatic reports, trading orders, alerts or external trade execution.
-- Page is marked noindex to reduce accidental search exposure, but it remains public.
-- The interface is independent of Zijin Gold International, Zijin Mining Group, HKEX and TradingView.
+## Running locally
 
-## Sources
+The static files `index.html`, `styles.css`, `app.js` and `markets.js` work in a web server. Without a Vercel API, a Github Pages version requests the separately deployed Vercel quote bridge. The backend is `api/market.js` and must be hosted in a serverless-compatible Node.js runtime.
 
-1. HKEX: Zijin Gold International, Stock Code 2259, 15 Oct 2026 "Proposed Adoption of the 2026 Employee Share Incentive Scheme" circular, including published HK$87.48 purchase price and 2029 vesting eligibility mechanics.
-2. Zijin Gold International corporate announcements and 2025 annual report for forward-looking production ambitions.
-3. User-supplied Investing.com snapshots from 13-14 November 2026 for the historical HK$121.20 close and HK$174.48 third-party fair-value reference.
-4. TradingView embeds for provider-hosted charting, technical readings and timely news.
-
-## Validation
-
-From repository root:
+Tests:
 
     node --check tools/zijin-2259/app.js
+    node --check tools/zijin-2259/markets.js
+    node --check tools/zijin-2259/api/market.js
     node --test tests/zijin-dashboard.test.mjs
-    python scripts/validate_site.py
-    python scripts/accessibility_audit.py
-    python scripts/performance_budget.py
 
-No personally identifiable information, API key or paid subscription is required. A paid exchange-licensed real-time HKEX feed would require a separate provider integration, permission review and key configuration.
+Production endpoint: https://zijin-2259-intelligence.vercel.app/
+
+Deployment is independent of the executive website; the changes are in a reviewable GitHub PR. This is not an official product of Zijin Gold International, Zijin Mining, HKEX or Yahoo Finance.
