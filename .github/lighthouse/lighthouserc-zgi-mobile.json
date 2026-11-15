@@ -1,0 +1,47 @@
+{
+  "ci": {
+    "collect": {
+      "staticDistDir": "./",
+      "url": [
+        "http://localhost/tools/zijin-2259/"
+      ],
+      "numberOfRuns": 1,
+      "settings": {
+        "onlyCategories": [
+          "performance",
+          "accessibility",
+          "best-practices"
+        ],
+        "chromeFlags": "--no-sandbox --disable-dev-shm-usage"
+      }
+    },
+    "assert": {
+      "assertions": {
+        "categories:performance": [
+          "warn",
+          {
+            "minScore": 0.75
+          }
+        ],
+        "categories:accessibility": [
+          "error",
+          {
+            "minScore": 0.85
+          }
+        ],
+        "categories:best-practices": [
+          "warn",
+          {
+            "minScore": 0.85
+          }
+        ],
+        "cumulative-layout-shift": [
+          "error",
+          {
+            "maxNumericValue": 0.15
+          }
+        ]
+      }
+    }
+  }
+}
