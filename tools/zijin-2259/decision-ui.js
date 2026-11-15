@@ -45,14 +45,14 @@ function renderStress(){
  const cfg=readAssumptions();
  const matrix=Q.sensitivityGrid(stock.regularMarketPrice,gold.regularMarketPrice,cfg);
  const vals=matrix.values.flat().filter(Number.isFinite),lo=Math.min(...vals),hi=Math.max(...vals),span=hi-lo;
- const header=makeEl("div","stress-corner","PRODUCTION ↘ / GOLD →");header.setAttribute("role","columnheader");root.append(header);
- for(const g of matrix.goldInputs){const el=makeEl("div","stress-head","US$"+(g/1000).toFixed(0)+"k");el.setAttribute("role","columnheader");root.append(el);}
+ const header=makeEl("div","stress-corner","PRODUCTION ↘ / GOLD →");header.setAttribute("role","note");root.append(header);
+ for(const g of matrix.goldInputs){const el=makeEl("div","stress-head","US$"+(g/1000).toFixed(0)+"k");root.append(el);}
  matrix.productionInputs.forEach((p,i)=>{
-  const label=makeEl("div","stress-rowlabel",p+" tonnes");label.setAttribute("role","rowheader");root.append(label);
+  const label=makeEl("div","stress-rowlabel",p+" tonnes");root.append(label);
   matrix.goldInputs.forEach((g,j)=>{
     const v=matrix.values[i][j],ratio=span>0?(v-lo)/span:.5,level=Math.min(4,Math.max(0,Math.floor(ratio*5)));
     const button=makeEl("button","stress-cell heat-"+level,Number.isFinite(v)?"HK$"+Math.round(v).toLocaleString("en-HK"):"UNAVAILABLE");
-    button.type="button";button.setAttribute("role","gridcell");button.setAttribute("aria-label","Gold "+g+" US dollars, output "+p+" tonnes, hypothetical HKD share price "+round(v));
+    button.type="button";button.setAttribute("aria-label","Gold "+g+" US dollars, output "+p+" tonnes, hypothetical HKD share price "+round(v));
     button.disabled=!Number.isFinite(v);
     if(selectedCell&&selectedCell.g===g&&selectedCell.p===p)button.classList.add("selected");
     button.addEventListener("click",()=>{
