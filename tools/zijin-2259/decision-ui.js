@@ -60,8 +60,8 @@ function renderStress(){
       $("model-gold").value=String(g);$("model-production").value=String(p);
       $("model-gold").dispatchEvent(new Event("input",{bubbles:true}));
       $("model-production").dispatchEvent(new Event("input",{bubbles:true}));
-      set("stress-readout","Selected "+p+" tonnes and US$"+g.toLocaleString("en-HK")+" gold futures assumption → conditional price HK$"+round(v)+". Values recalculated from latest delayed stock price HK$"+round(stock.regularMarketPrice)+".");
       renderStress();
+      set("stress-readout","Selected "+p+" tonnes and US$"+g.toLocaleString("en-HK")+" gold futures assumption → conditional price HK$"+round(v)+". Values recalculated from latest delayed stock price HK$"+round(stock.regularMarketPrice)+".");
     });
     root.append(button);
   });
