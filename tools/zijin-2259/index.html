@@ -226,7 +226,7 @@
             </article>
             <article class="panel quant-forecast">
               <div class="panel-heading"><div><p class="eyebrow">DISTRIBUTION FAN</p><h3>2027–December 2029 price uncertainty</h3></div><button type="button" id="quant-export" class="button button-subtle">EXPORT RESEARCH CSV ↓</button></div>
-              <div id="quant-fan-chart" class="quant-visual" role="img" aria-label="Price probability bands for 2027, 2028, November 2029, December 2029">Waiting for validated daily stock return history.</div>
+              <div id="quant-fan-chart" class="quant-visual" role="group" aria-label="Price percentile bands for 2027, 2028, November 2029, December 2029, with selectable points">Waiting for validated daily stock return history.</div>
               <div class="quant-highlight" id="quant-fan-readout">Select a forecast date to inspect simulated quantiles.</div>
               <div class="quant-period-switch" role="group" aria-label="Statistical forecast checkpoint">
                 <button type="button" data-quant-date="2027-12-31">DEC 2027</button>
@@ -280,7 +280,7 @@
           </div>
           <article class="panel stress-panel">
             <div class="panel-heading"><div><p class="eyebrow">INSTITUTIONAL SENSITIVITY MATRIX</p><h3>Gold price × 2029 production</h3><p class="comparison-intro">Each cell represents a hypothetical equity price. The grid updates with verified stock and gold anchors and your valuation, AISC and dilution assumptions. Select a cell to test its inputs.</p></div><span class="source-tag">INTERACTIVE MODEL · NOT ANALYST TARGETS</span></div>
-            <div class="stress-grid-scroll"><div id="stress-heatmap" class="stress-heatmap" role="grid" aria-label="Illustrative 2029 equity price surface by gold price and production tonnes">Waiting for validated 2259 and gold futures data.</div></div>
+            <div class="stress-grid-scroll"><div id="stress-heatmap" class="stress-heatmap" role="group" aria-label="Illustrative 2029 share-price sensitivity, select a price cell by gold-price assumption and annual output">Waiting for validated 2259 and gold futures data.</div></div>
             <div class="stress-legend"><span>LOWER HYPOTHETICAL VALUE</span><div></div><span>HIGHER HYPOTHETICAL VALUE</span></div>
             <div class="stress-readout" id="stress-readout">Select a heatmap cell to update the gold and production controls.</div>
             <p class="widget-disclaimer">Reference data: 2026 target production 59.2 tonnes, not an audited outcome. 9M 2026 unaudited all-in sustaining cost was US$1,649/oz. Simplified operating-margin scaling omits cash taxes, sustaining capital reinvestment, asset transactions and the difference between gold futures and realized gold prices.</p>
@@ -386,7 +386,7 @@
             <article class="panel">
               <div class="panel-heading"><div><p class="eyebrow">FY2025 OUTPUT MIX · TONNES</p><h3>Asset contribution to total mine production</h3></div><span class="source-tag">2025 ANNUAL REPORT · AUDITED</span></div>
               <div class="mine-controls"><label for="mine-sort">ORDER BY</label><select id="mine-sort"><option value="production">PRODUCTION DESCENDING</option><option value="country">COUNTRY A–Z</option><option value="name">MINE NAME A–Z</option></select><label for="mine-filter">SHOW</label><select id="mine-filter"><option value="all">ALL NINE OPERATIONS</option><option value="legacy">WITH FY2024 COMPARATORS</option><option value="new">NEW 2025 ENTRIES</option></select></div>
-              <div class="mine-bars" id="mine-bars" role="img" aria-label="FY2025 mining operations production quantities and share of total">Loading audited production data.</div>
+              <div class="mine-bars" id="mine-bars" role="group" aria-label="Select a mine to inspect FY2025 production and share of total">Loading audited production data.</div>
               <div class="mine-selection" id="mine-selection">Select an operation to compare the mine's 2025 performance with any available FY2024 comparator.</div>
             </article>
             <article class="panel">
