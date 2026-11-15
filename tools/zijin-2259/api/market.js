@@ -55,7 +55,9 @@ export default async function handler(req,res){
         const last=ohlc.at(-1);
         const lastValidQuote=Number.isFinite(quote)&&quote>0?quote:last.c;
         const marketTime=Number.isFinite(time)&&time>0?time:last.t;
-        const previousClose=Number(meta.chartPreviousClose??meta.previousClose);
+        // For daily bars, use the preceding trading session. chartPreviousClose is often
+        // the first close in the selected chart range, not the prior day's close.
+        const previousClose=Number(ohlc.length>=2?ohlc.at(-2).c:meta.previousClose);
         const change=Number.isFinite(previousClose)&&previousClose>0?lastValidQuote-previousClose:null;
         const changePercent=change!==null?change/previousClose*100:null;
         return res.status(200).json({
