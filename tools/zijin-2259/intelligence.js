@@ -93,8 +93,8 @@ function estimate(anchorStock,anchorGold,assumptions,scenario,year){
   const hypotheticalGold=anchorGold+(assumptions.gold*v.gold-anchorGold)*fraction;
   const hypotheticalProd=59.2+(assumptions.production*v.production-59.2)*fraction;
   const escalation=Math.max(0,assumptions.cost+v.cost);
-  const aisc=1678*Math.pow(1+escalation/100,step);
-  const baseGrossMargin=anchorGold-1678;
+  const aisc=1649*Math.pow(1+escalation/100,step);
+  const baseGrossMargin=anchorGold-1649;
   if(baseGrossMargin<=0)return null;
   const futureGrossMargin=hypotheticalGold-aisc;
   if(futureGrossMargin<=0)return 0;
@@ -119,7 +119,7 @@ function buildProjections(){
   const sourceState=market.fresh?.stock&&market.fresh?.gold?"PROVIDER-DELAYED SOURCE OBSERVATIONS":"REFRESH FAILED FOR ONE OR MORE INSTRUMENTS; PREVIOUS VALIDATED OBSERVATIONS";
   const status=sourceState+": 2259 "+clock(stock.providerQuoteTime)+" | GC=F "+clock(gold.providerQuoteTime)+".";
   set("model-data-status",status+" Calculations rerun on feed updates and control changes. No model outcome is a live stock quote.");
-  set("model-basis","Anchor: HK$"+number(stockPrice)+" on 2259.HK, US$"+number(goldPrice)+" on GC=F gold futures. Assumed 2026 production 59.2t and cost US$1,678/oz. These historical baselines are fixed assumptions; change 2029 assumptions above.");
+  set("model-basis","Anchor: HK$"+number(stockPrice)+" on 2259.HK, US$"+number(goldPrice)+" on GC=F gold futures. Assumed 2026 target production 59.2t and 9M 2026 AISC US$1,649/oz. These historical baselines are fixed assumptions; change 2029 assumptions above.");
   set("model-last-update","VALUATION UPDATED FROM "+clock(stock.providerQuoteTime)+" AND "+clock(gold.providerQuoteTime));
   const values={};
   for(const key of Object.keys(variants)){
