@@ -282,7 +282,7 @@ let loading=false;
 async function refresh(){
   if(loading)return;loading=true;
   try {
-    const [stock,gold,parent]=await Promise.allSettled([load("2259.HK","1y"),load("GC=F","6mo"),load("2899.HK","6mo")]);
+    const [stock,gold,parent]=await Promise.allSettled([load("2259.HK","1y"),load("GC=F","1y"),load("2899.HK","1y")]);
     if(stock.status==="fulfilled"){state.stock=stock.value;state.liveQuote=true}
     else if(!state.stock){state.stock=archiveStock();state.liveQuote=false}
     else if(state.liveQuote){const s=byId("stock-feed-state");if(s){s.className="feed-state archived";s.textContent="PREVIOUS PROVIDER RESPONSE • LATEST REFRESH FAILED";}}
@@ -291,6 +291,11 @@ async function refresh(){
     renderQuote();renderMain();technicals(state.stock);
     if(state.gold)renderPeer("gold",state.gold);else errorPeer("gold","GC=F");
     if(state.parent)renderPeer("parent",state.parent);else errorPeer("parent","2899.HK");
+    document.dispatchEvent(new CustomEvent("zgi:market",{detail:{
+      stock:state.stock,gold:state.gold,parent:state.parent,
+      fresh:{stock:stock.status==="fulfilled",gold:gold.status==="fulfilled",parent:parent.status==="fulfilled"},
+      refreshedAt:new Date().toISOString()
+    }}));
   }finally{loading=false}
 }
 activateControls();
@@ -298,4 +303,5 @@ refresh();
 // Only re-check at a measured interval; publisher timestamps determine quote freshness.
 setInterval(()=>{if(document.visibilityState==="visible")refresh();},180000);
 document.addEventListener("visibilitychange",()=>{if(document.visibilityState==="visible")refresh();});
+document.getElementById("refresh-market-now")?.addEventListener("click",refresh);
 })();
