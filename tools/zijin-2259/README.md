@@ -1,46 +1,57 @@
 # ZGI Intelligence | HKEX 2259
 
-An independent stock-market intelligence dashboard for Zijin Gold International (HKEX:2259), with Hong Kong stock and parent-company charts, gold futures, and a private-by-default settlement model.
+Independent and mobile-responsive Hong Kong gold equity intelligence at https://zijin-2259-intelligence.vercel.app/.
 
-## Correct price feeds, without unrelated security substitution
+## Market data
 
-TradingView's free embed widgets did not correctly display HKEX 2259 on the original implementation and could revert to the US stock AAPL. All affected widgets were removed.
+Native SVG charts use a public Yahoo Finance chart endpoint via a Vercel GET-only serverless bridge. Only these instruments are permitted:
 
-The replacement native charts retrieve data from a read-only Vercel API route at `/api/market`, using Yahoo Finance's public chart data endpoint. Only three identifiers are authorized:
-- `2259.HK`: Zijin Gold International, HKD
-- `2899.HK`: Zijin Mining Group, HKD
-- `GC=F`: COMEX gold futures, USD/oz. Gold futures are not spot gold.
+- 2259.HK, Zijin Gold International, HKD
+- 2899.HK, Zijin Mining Group, HKD
+- GC=F, COMEX gold futures, USD/oz, NOT spot gold
 
-The backend checks the source's returned symbol, quotes, OHLC bars, source timestamp, exchange/currency and data availability. For daily OHLC, the session price change is computed against the **previous trading day's close**, not Yahoo's chart-range baseline. No alternate ticker is silently substituted. Caching uses a 180-second revalidation period, but **the data is exchange/provider delayed, not a licensed real-time HKEX feed**. Upstream access is unofficial and might be blocked or discontinued. Live trading and quote entitlements require a licensed exchange vendor.
+The bridge checks upstream symbol identity, currency, OHLC plausibility, market timestamp and availability. Historical bars and snapshots are provider-delayed and remain subject to entitlement and reliability constraints. The application refreshes eligible observations at a three-minute interval while visible. It does not claim licensed real-time HKEX trading data. If an instrument is unavailable, no unrelated security is silently substituted. A stock-only archive fallback explicitly states its November 2026 date. Do not build a trading strategy on these delayed quotes.
 
-If Yahoo's chart data is unavailable, the 2259 chart shows an explicitly archived November 2026 daily sample. Parent and gold charts display **unavailable**, with trusted external quote links. The dashboard never displays old observations as current. Source links: [Yahoo 2259.HK](https://finance.yahoo.com/quote/2259.HK/), [Google Finance 2259:HKG](https://www.google.com/finance/quote/2259:HKG), [Yahoo parent 2899.HK](https://finance.yahoo.com/quote/2899.HK/), [Yahoo gold futures GC=F](https://finance.yahoo.com/quote/GC=F/).
+TradingView's third-party 2259 and 2899 stock embeds were removed because they did not support the requested market correctly and one defaulted to Apple Inc. All current market charts are source-verified and interactive.
 
-## Visual features
+## Charts, metrics and predictions
 
-1. Native SVG candlestick and line views, 1M/3M/6M/1Y ranges, daily volume and exact bar OHLC hover details.
-2. Local calculation of RSI(14), MACD(12,26,9), 20-day and 50-day simple moving averages using actual delayed daily prices.
-3. Separate HKEX 2899 parent-company and COMEX gold futures history, with independent source checks.
-4. 2027–2029 hypothetical bear/base/bull scenario chart and CSV export.
-5. Local-only conditional award calculator with user-supplied share count, the publicly disclosed HK$87.48 base purchase price, and optional charges.
-6. Official HKEX issuer-disclosure and external market-news links.
+The front page now contains:
+- Dynamically refreshed stock, parent, gold futures and observed 52-week range KPIs, with provider source dates.
+- Price/volume candlesticks and line charts, with adjustable history range and daily OHLC inspection.
+- Interactive, separately labelled parent and gold futures charts.
+- Technical analysis (RSI 14, MACD 12/26/9, simple moving averages) computed from returned daily OHLC history.
+- Risk pulse derived from daily returns and volume: 20-session annualized volatility, rolling drawdown, average volume, and price versus the published share-scheme purchase price.
+- Interactive normalized historical percent-return comparison of 2259, 2899 and gold futures, with series toggles, time-range options and hover inspection. Market sessions differ.
+- An interactive 2027–2029 **conditional sensitivity model** anchored to the most recent verified stock price and gold futures observations. Controls include assumed 2029 gold price, 2029 production, AISC escalation, relative valuation multiple, and dilution. Bear/base/bull curves and an annual scenario matrix recalculate when inputs or validated quotes change, and export to CSV.
+- A private-by-default share-award payout calculator. Users enter their own quantity locally. Prices populate from the verified delayed quote or a selected 2029 scenario only after explicit action.
+- A source-attributed Google News RSS panel with publication timestamps and a refresh control, plus links to official HKEX issuer publications and independent market-data publishers.
 
-## Privacy and boundaries
+### Scenario maths
 
-The generic award model does not contain personal grant quantities. The share-count box starts empty. The calculator does not send inputs to the server or write to browser storage. The read-only quote API accepts only the permitted public symbols. Market-data services receive their own quote requests, not grant data.
+Let S be the latest provider-delayed 2259.HK price, G the latest provider-delayed GC=F futures benchmark, P0=59.2 tonnes 2026 assumed production, and C0=US$1,678 per ounce assumed 2026 all-in sustaining cost. User input for 2029 gold, production, annual cost inflation, valuation multiple factor and share dilution is linearly phased from 2026 through 2029. Each bear/base/bull scenario independently scales the gold, production, cost and valuation assumptions.
 
-Historic reference HK$121.20 on 13 November 2026 and InvestingPro HK$174.48 fair-value estimate remain labelled **NOT LIVE**. Scenario paths are independent sensitivity examples, not analyst consensus, investment advice, or guarantees.
+Illustrative annual share price = S × (assumed annual production / P0) × (assumed annual gold-operating-surplus / (G − C0)) × assumed valuation factor ÷ (1 + assumed dilution). The model omits full mine-by-mine forecasts, debt, capital spending, tax, share-count changes not specified, foreign exchange, terminal value, asset disposals and several risks. **The model does not output analyst consensus, calibrated likelihoods or guaranteed 2029 prices.** It may produce outcomes significantly different from market performance. GC=F is a futures benchmark, not realized corporate gold revenue.
 
-## Running locally
+2027 and 2028 remain qualification years for an employee award. Cash settlement depends on individual grant terms and full eligibility; no price forecast is a payout promise.
 
-The static files `index.html`, `styles.css`, `app.js` and `markets.js` work in a web server. Without a Vercel API, a Github Pages version requests the separately deployed Vercel quote bridge. The backend is `api/market.js` and must be hosted in a serverless-compatible Node.js runtime.
+## Privacy and integrity
 
-Tests:
+No personal award share count is embedded in public code. The field initially displays an empty value. Personal calculator inputs are not saved in browser storage and are not sent to server functions. Read-only quote routes use predefined instruments only. External news provider links and RSS are third-party sources, not HKEX regulatory filings; HKEX disclosures govern the official record.
 
-    node --check tools/zijin-2259/app.js
-    node --check tools/zijin-2259/markets.js
-    node --check tools/zijin-2259/api/market.js
-    node --test tests/zijin-dashboard.test.mjs
+No brokerage execution, background alert service or licensed real-time market-data API is represented as implemented.
 
-Production endpoint: https://zijin-2259-intelligence.vercel.app/
+## Local and CI validation
 
-Deployment is independent of the executive website; the changes are in a reviewable GitHub PR. This is not an official product of Zijin Gold International, Zijin Mining, HKEX or Yahoo Finance.
+Node syntax:
+```bash
+node --check tools/zijin-2259/app.js
+node --check tools/zijin-2259/markets.js
+node --check tools/zijin-2259/intelligence.js
+node --check tools/zijin-2259/news.js
+node --check tools/zijin-2259/api/market.js
+node --check tools/zijin-2259/api/news.js
+node --test tests/zijin-dashboard.test.mjs
+```
+
+The deployment is isolated from the separate executive website's homepage. Public endpoints are Vercel project-specific. PR #178 tracks the repository version, while the Vercel deployment is delivered separately. Existing homepage performance-check failures do not arise from the standalone stock dashboard.
