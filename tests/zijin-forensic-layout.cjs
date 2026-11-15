@@ -52,6 +52,10 @@ async function auditViewport(browser,{name,width,height}){
   const rect=e=>{const r=e.getBoundingClientRect();return {left:r.left,right:r.right,top:r.top,bottom:r.bottom,width:r.width,height:r.height}};
   const view=window.innerWidth;
   const edgeTolerance=2;
+  const intersectRect=(a,b)=>{
+    const dx=Math.min(a.right,b.right)-Math.max(a.left,b.left),dy=Math.min(a.bottom,b.bottom)-Math.max(a.top,b.top);
+    return Math.max(0,dx)*Math.max(0,dy);
+  };
   const inspect=['.topbar','.hero-heading','.integrity-strip','.realtime-access','.metric-row','.market-live-strip','.overview-grid','.quant-kpis','.quant-main','.quant-two','.dynamic-model-grid','.comparison-panel','.stress-panel','.award-risk-panel','.eligibility-panel','.news-live','.mine-kpis','.mine-main','.evidence-grid','.data-ledger-panel','.footer'];
   const overrun=[],clipped=[],badText=[];
   for(const sel of inspect){
@@ -82,8 +86,11 @@ async function auditViewport(browser,{name,width,height}){
   const touchTargets=pick('button,select,a').filter(e=>{
     const r=e.getBoundingClientRect();return r.width>0&&r.height>0&&r.width<24&&r.height<24&&getComputedStyle(e).visibility!=='hidden';
   }).slice(0,20).map(e=>({tag:e.tagName,text:e.textContent.trim().slice(0,35),size:`${Math.round(e.getBoundingClientRect().width)}x${Math.round(e.getBoundingClientRect().height)}`}));
+  const heroTitle=document.querySelector('.hero-heading h1'),orbit=document.querySelector('.gold-orbit');
+  const orbitVisible=!!orbit&&getComputedStyle(orbit).display!=='none';
+  const heroOverlap=orbitVisible&&heroTitle&&intersectRect(heroTitle.getBoundingClientRect(),orbit.getBoundingClientRect())>20;
   const main=document.querySelector('main'),topbar=document.querySelector('.topbar');
-  return {viewport:view,documentScrollWidth:document.documentElement.scrollWidth,bodyScrollWidth:document.body.scrollWidth, mainWidth:Math.round(main?.getBoundingClientRect().width||0),topbarWidth:Math.round(topbar?.getBoundingClientRect().width||0),overrun,clipped,badText,gridOverlaps,touchTargets,sectionCount:document.querySelectorAll('main>.section').length,headingCount:document.querySelectorAll('h1').length,brokenAnchorTargets:[...document.querySelectorAll('a[href^="#"]')].filter(a=>!document.getElementById(a.hash.slice(1))).map(a=>a.hash),horizontalScrollArea:[...document.querySelectorAll('.stress-grid-scroll')].map(x=>({scrollWidth:x.scrollWidth,clientWidth:x.clientWidth}))};
+  return {viewport:view,documentScrollWidth:document.documentElement.scrollWidth,bodyScrollWidth:document.body.scrollWidth, mainWidth:Math.round(main?.getBoundingClientRect().width||0),topbarWidth:Math.round(topbar?.getBoundingClientRect().width||0),overrun,clipped,badText,gridOverlaps,touchTargets,sectionCount:document.querySelectorAll('main>.section').length,headingCount:document.querySelectorAll('h1').length,heroOverlap,brokenAnchorTargets:[...document.querySelectorAll('a[href^="#"]')].filter(a=>!document.getElementById(a.hash.slice(1))).map(a=>a.hash),horizontalScrollArea:[...document.querySelectorAll('.stress-grid-scroll')].map(x=>({scrollWidth:x.scrollWidth,clientWidth:x.clientWidth}))};
  });
  let data={name,width,height,...stats,runtimeErrors:errors};
  const isMobile=width<=430;
@@ -92,13 +99,27 @@ async function auditViewport(browser,{name,width,height}){
  for(const o of stats.clipped)report.issues.push({severity:'medium',viewport:name,type:'clipped-container',...o});
  for(const o of stats.badText)report.issues.push({severity:'medium',viewport:name,type:'clipped-text',...o});
  for(const o of stats.gridOverlaps)report.issues.push({severity:'high',viewport:name,type:'overlapping-grid',...o});
+ if(stats.heroOverlap)report.issues.push({severity:'high',viewport:name,type:'hero-title-art-collision'});
  if(errors.length)report.issues.push({severity:'high',viewport:name,type:'javascript-runtime-errors',errors});
  if(stats.headingCount!==1)report.issues.push({severity:'medium',viewport:name,type:'heading-hierarchy',h1s:stats.headingCount});
  if(stats.brokenAnchorTargets.length)report.issues.push({severity:'medium',viewport:name,type:'invalid-navigation-anchors',targets:stats.brokenAnchorTargets});
- if(isMobile)await page.locator('#menu-toggle').click();
+ // Capture a separate viewport drawer reference, then return to the top for
+ // a correct full-page screenshot. Sticky UI otherwise appears midway down.
  fs.mkdirSync('test-results/zijin-forensic',{recursive:true});
+ if(isMobile){
+   await page.evaluate(()=>window.scrollTo(0,0));
+   await page.locator('#menu-toggle').click();
+   if(name==='mobile-390')await page.screenshot({path:'test-results/zijin-forensic/mobile-390-drawer.png',fullPage:false,animations:'disabled',timeout:30000});
+   await page.keyboard.press('Escape');
+ }
+ await page.evaluate(()=>{
+   window.scrollTo({top:0,left:0,behavior:'instant'});
+   const qa=document.createElement('div');qa.textContent='FORENSIC QA • SYNTHETIC MARKET FIXTURES • NOT LIVE PRICES';
+   qa.setAttribute('style','position:fixed;top:0;left:0;right:0;background:#7a2c2c;color:#fff;font:bold 11px system-ui;padding:8px 12px;text-align:center;z-index:99999;pointer-events:none;letter-spacing:.05em');
+   document.body.append(qa);
+ });
+ await page.waitForTimeout(150);
  await page.screenshot({path:'test-results/zijin-forensic/'+name+'.png',fullPage:true,animations:'disabled',timeout:30000});
- if(isMobile)await page.locator('#menu-toggle').click();
  await page.close();report.viewports.push(data);
  console.log('VIEWPORT '+name+' width='+width+' scrollWidth='+stats.documentScrollWidth+' offscreen='+stats.overrun.length+' clipping='+stats.clipped.length+' textClip='+stats.badText.length+' overlaps='+stats.gridOverlaps.length+' JS='+errors.length);
 }
