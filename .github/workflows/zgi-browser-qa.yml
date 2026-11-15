@@ -4,6 +4,7 @@ on:
     paths:
       - "tools/zijin-2259/**"
       - "tests/zijin-browser-e2e.cjs"
+      - "tests/zijin-forensic-layout.cjs"
       - ".github/workflows/zgi-browser-qa.yml"
   workflow_dispatch:
 permissions:
@@ -32,3 +33,14 @@ jobs:
           curl -fsS http://127.0.0.1:4173/tools/zijin-2259/ > /dev/null
       - name: Test charts, local payoff and small screens
         run: node tests/zijin-browser-e2e.cjs
+
+      - name: Forensic seven-viewport geometry and screenshot audit
+        run: node tests/zijin-forensic-layout.cjs
+      - name: Upload screenshot and layout evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: zgi-forensic-layout-evidence
+          path: test-results/zijin-forensic/
+          if-no-files-found: warn
+          retention-days: 14
