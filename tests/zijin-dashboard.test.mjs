@@ -83,7 +83,7 @@ test('projection year points and scenario cards are actionable',()=>{
 });
 test('scenario outputs stay qualified and contractual baselines stay separate',()=>{
  assert.match(html,/not analyst price targets/);
- assert.match(html,/2026 target production is a company target of 59\.2 tonnes/);
+ assert.match(html,/2026 production is a company target of 59\.2 tonnes/);
  assert.match(html,/AISC of US\$1,649\/oz/);
  assert.match(html,/2027 and 2028 are qualification years/);
 });
@@ -138,7 +138,7 @@ test('probability lab, heatmap, financial evidence and local eligibility are vis
 test('latest reported company baseline is not confused with 2026 target',()=>{
  assert.match(html,/41 tonnes/);
  assert.match(html,/US\$1,649\/oz/);
- assert.match(html,/2026 target production is a company target/);
+ assert.match(html,/2026 production is a company target/);
  assert.match(analytics,/anchorGold-1649/);
  assert.doesNotMatch(analytics,/anchorGold-1678/);
  assert.match(html,/2026042902638\.pdf/);
