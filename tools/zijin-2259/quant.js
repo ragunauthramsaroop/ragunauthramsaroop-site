@@ -111,7 +111,7 @@ function bootstrappedFuture(bars,options={}){
    mean:mean(v),breakEvenProbability:priceLevels[0]!==undefined?v.filter(x=>x>priceLevels[0]).length/v.length:null,
    thresholds:Object.fromEntries(priceLevels.map(x=>[String(x),v.filter(y=>y>=x).length/v.length]))}
  });
- return {ok:true,simulations:n,dates,rows,histograms,lastClose,historicalObservations:returns.length,historicalAnnualVol,annualDrift,volatilityFactor,seed,blockSize:block,
+ return {ok:true,simulations:n,dates,rows,histograms,nov2029Samples:buckets[2].slice(),lastClose,historicalObservations:returns.length,historicalAnnualVol,annualDrift,volatilityFactor,seed,blockSize:block,
   disclaimer:"Empirical centered block-bootstrap conditional on user drift and volatility assumptions. Not calibrated real-world probabilities. Price-only, excludes dividends, fees, tax and vesting."};
 }
 function stressValuation(stockPrice,goldCurrent,assumedGold,tonnes,options={}){
