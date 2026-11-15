@@ -72,3 +72,24 @@ The expanded quant studio includes:
 No claim of 100% real-time access, audit of all 2029 events, licensed market-data entitlement, predictive accuracy, or guaranteed award payment is made.
 
 Additional validation: node --test tests/zijin-quant.test.mjs.
+
+## HKEX authorised free snapshot and licensed on-site integration
+
+The dashboard offers two distinct exchange-data access paths:
+
+1. **Free authorised HKEX Basic Market Prices:** the "OPEN AUTHORISED LIVE QUOTE SERVICE" button opens the licensed vendor etnet's own BMP search landing page. The visitor enters 2259 or 2899 there and requests a snapshot. HKEX's BMP guidance prohibits automatic refresh and unauthorised third-party copying or direct linking to a specific BMP result. This website does not scrape or iframe that vendor.
+2. **Licensed on-site vendor feed:** `/api/licensed-quote?symbol=2259.HK` or `2899.HK` is a server-side rights-gated adapter. Disabled unless a market-data provider has confirmed public redistribution, an HTTPS API/JSON relay and a secret key have been set in Vercel. The API never sends credentials to browsers. Incorrect symbols, currencies and stale timestamps are rejected or flagged. Automatic refreshing requires a *separate* affirmative contract flag.
+
+### Required Vercel environment settings after signing with a licensed vendor
+
+- `ZGI_HKEX_VENDOR_QUOTE_URL`: authorised provider-owned HTTPS quote relay endpoint (exact path, not HTML quote page).
+- `ZGI_HKEX_VENDOR_API_KEY`: secret provider bearer credential. Set as Vercel encrypted environment variable, never in GitHub.
+- `ZGI_HKEX_VENDOR_NAME`: public display attribution naming the licensed vendor.
+- `ZGI_HKEX_PUBLIC_DISPLAY_AUTHORIZED=true`: set only if the vendor contract expressly permits display on this independent website.
+- `ZGI_HKEX_AUTOMATIC_REFRESH_AUTHORIZED=true`: optional, set only if the contract expressly permits automated repeated retrieval and streaming-style website display. BMP manual-snapshot permission alone is not sufficient.
+
+Vendor relay response schema: `{"symbol":"2259.HK","currency":"HKD","exchange":"XHKG","price":121.2,"previousClose":126.5,"quoteTimestamp":"2026-11-13T08:08:15.000Z"}`. These are schema illustration values, not live data. The server computes age and response status. A site cannot legitimately bootstrap exchange rights from a GitHub library or an undocumented public endpoint.
+
+Provider onboarding reference: HKEX Information Vendors List, BMP guiding notes and marketdata@hkex.com.hk. An issuer-owned public investor-relations website might qualify for a listed-company BMP third-party service, while an independent individual research dashboard requires its own permitted use and vendor terms.
+
+The on-site adapter does not silently overwrite the delayed daily OHLC history. Valuation and backtesting continue to identify their delayed-source timestamps unless market-data and derived-data entitlements explicitly permit using licensed quotes for calculations.
