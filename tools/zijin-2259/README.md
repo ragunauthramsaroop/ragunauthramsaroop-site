@@ -55,3 +55,20 @@ node --test tests/zijin-dashboard.test.mjs
 ```
 
 The deployment is isolated from the separate executive website's homepage. Public endpoints are Vercel project-specific. PR #178 tracks the repository version, while the Vercel deployment is delivered separately. Existing homepage performance-check failures do not arise from the standalone stock dashboard.
+
+## Research-terminal expansion, 15 November 2026
+
+The expanded quant studio includes:
+- Statistical distribution fan and price-band histogram for FY2027, FY2028, November 2029 and December 2029.
+- Seeded deterministic centered historical block bootstrap using validated 2259 daily log returns, configurable annual log drift, volatility multiplier, sampling block length and 1,000–4,000 paths. Displayed frequencies are conditional simulations, not calibrated investment probabilities.
+- Historical 20-session interval calibration, 60-session annualized stock volatility and correlations to the parent company and previous-calendar-day COMEX gold futures. Short history and return alignment are disclosed.
+- A source-anchored stress-test heatmap for 2029 gold-price and production assumptions, using official unaudited 9M 2026 AISC US$1,649/oz and 2026 production guidance 59.2 tonnes.
+- Dated official 2025 audited / 9M 2026 unaudited financial evidence with links.
+- Private local-only three-year average ROE and employment eligibility screening, which does not determine award vesting.
+- Delayed market refresh status, source timestamps and user-triggered data checks.
+
+11 November 2029 is a Sunday. The statistical November 2029 checkpoint uses Monday 12 November 2029, the first possible weekday after Sunday. An HKEX holiday or trustee timetable might change the executable date.
+
+No claim of 100% real-time access, audit of all 2029 events, licensed market-data entitlement, predictive accuracy, or guaranteed award payment is made.
+
+Additional validation: node --test tests/zijin-quant.test.mjs.
