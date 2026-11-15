@@ -94,6 +94,16 @@ function bootstrappedFuture(bars,options={}){
      if(k<checkpoints.length&&day===checkpoints[k]){buckets[k].push(Math.exp(Math.max(-10,Math.min(17,logPrice))));k++}
    }
  }
+ const histograms=buckets.map(bucket=>{
+   const lower=quantile(bucket,.01),upper=quantile(bucket,.99),bins=24;
+   if(!finite(lower)||!finite(upper)||upper<=lower)return {lower,upper,counts:[]};
+   const counts=Array(bins).fill(0);
+   for(const value of bucket){
+     const i=Math.min(bins-1,Math.max(0,Math.floor((value-lower)/(upper-lower)*bins)));
+     counts[i]++;
+   }
+   return {lower,upper,counts};
+ });
  const priceLevels=Array.isArray(options.levels)?options.levels.filter(x=>finite(x)&&x>=0):[87.48,175,250];
  const rows=dates.map((date,i)=>{
   const v=buckets[i];
@@ -101,7 +111,7 @@ function bootstrappedFuture(bars,options={}){
    mean:mean(v),breakEvenProbability:priceLevels[0]!==undefined?v.filter(x=>x>priceLevels[0]).length/v.length:null,
    thresholds:Object.fromEntries(priceLevels.map(x=>[String(x),v.filter(y=>y>=x).length/v.length]))}
  });
- return {ok:true,simulations:n,dates,rows,lastClose,historicalObservations:returns.length,historicalAnnualVol,annualDrift,volatilityFactor,seed,blockSize:block,
+ return {ok:true,simulations:n,dates,rows,histograms,lastClose,historicalObservations:returns.length,historicalAnnualVol,annualDrift,volatilityFactor,seed,blockSize:block,
   disclaimer:"Empirical centered block-bootstrap conditional on user drift and volatility assumptions. Not calibrated real-world probabilities. Price-only, excludes dividends, fees, tax and vesting."};
 }
 function stressValuation(stockPrice,goldCurrent,assumedGold,tonnes,options={}){
