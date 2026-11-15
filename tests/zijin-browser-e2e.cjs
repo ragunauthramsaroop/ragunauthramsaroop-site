@@ -1,0 +1,109 @@
+/* E2E Chromium smoke test, executed on GitHub Actions without third-party browser credits.
+ * Mocked market source fixtures exercise the same production frontend through the HTTP origin.
+ * This is an interaction test, NOT a live quote or live-data entitlement validation.
+ */
+const { chromium } = require('playwright');
+const assert = require('node:assert/strict');
+const SITE = 'http://127.0.0.1:4173/tools/zijin-2259/';
+function bars(symbol){
+  const start=Date.UTC(2025,8,30,8,0,0),end=Date.UTC(2026,10,13,8,0,0);
+  const base=symbol==='2259.HK'?87:symbol==='2899.HK'?21:3550;
+  const slope=symbol==='2259.HK'?.12:symbol==='2899.HK'?.028:1.2;
+  const out=[];let idx=0;
+  for(let t=start;t<=end;t+=86400000){
+    const day=new Date(t).getUTCDay();
+    if(day===0||day===6)continue;
+    const close=Number((base+idx*slope+Math.sin(idx*.22)*base*.045+Math.cos(idx*.08)*base*.021).toFixed(2));
+    const open=Number((close*(1+Math.sin(idx*.43)*.004)).toFixed(2));
+    out.push({t:Math.floor(t/1000),o:open,h:Number((Math.max(open,close)*1.012).toFixed(2)),l:Number((Math.min(open,close)*.987).toFixed(2)),c:close,v:Math.round(1500000+(idx%31)*36712)});
+    idx++;
+  }
+  return out;
+}
+function feed(symbol){
+ const history=bars(symbol),latest=history.at(-1),prev=history.at(-2);
+ return {ok:true,symbol,sourceSymbol:symbol,currency:symbol==='GC=F'?'USD':'HKD',
+  displayName:symbol==='2259.HK'?'Zijin Gold International':symbol==='2899.HK'?'Zijin Mining Group':'COMEX Gold Futures',
+  provider:'E2E MOCK - NEVER LIVE',providerQuoteTime:'2026-11-13T08:08:15.000Z',latestBarTime:'2026-11-13T08:00:00.000Z',
+  fetchedAt:'2026-11-13T09:00:00.000Z',regularMarketPrice:latest.c,previousClose:prev.c,
+  change:latest.c-prev.c,changePercent:(latest.c/prev.c-1)*100,bars:history,marketState:'CLOSED',dataDelay:'E2E MOCK - source delayed'};
+}
+async function waitFor(page,fn,desc){
+ try{await page.waitForFunction(fn,{timeout:25000});}catch(e){throw Error('Timed out waiting for '+desc+': '+e.message)}
+}
+async function run(){
+ const browser=await chromium.launch({headless:true,args:['--no-sandbox']});
+ let passed=0,failures=[],errors=[];
+ try{
+  const page=await browser.newPage({viewport:{width:1440,height:900},reducedMotion:'reduce'});
+  page.on('pageerror',e=>errors.push(e.message));
+  await page.route('**/api/market?**',async route=>{
+   const s=new URL(route.request().url()).searchParams.get('symbol');
+   if(!['2259.HK','2899.HK','GC=F'].includes(s))return route.fulfill({status:400,body:JSON.stringify({ok:false})});
+   await route.fulfill({status:200,contentType:'application/json',body:JSON.stringify(feed(s))});
+  });
+  await page.route('**/api/news',route=>route.fulfill({status:200,contentType:'application/json',body:JSON.stringify({ok:true,checkedAt:'2026-11-13T10:00:00Z',articles:[]})}));
+  await page.route('**/api/licensed-quote?**',route=>route.fulfill({status:503,contentType:'application/json',body:JSON.stringify({ok:false,status:'not_connected',message:'No licensed on-site quote entitlement configured'})}));
+  await page.goto(SITE,{waitUntil:'domcontentloaded',timeout:30000});
+  async function check(name,fn){try{await fn();passed++;console.log('PASS '+name)}catch(e){failures.push(name+': '+e.message);console.error('FAIL '+name+': '+e.message)}}
+  await check('Correct market tickers, native charts and timestamps',async()=>{
+    await waitFor(page,()=>(document.querySelector('#live-kpi-2259')?.textContent||'').includes('HK$'),'2259 quote');
+    assert.equal(await page.locator('#market-chart svg').count(),1);
+    assert.equal(await page.locator('#gold-chart svg').count(),1);
+    assert.equal(await page.locator('#parent-chart svg').count(),1);
+    assert.equal(await page.locator('text=Apple Inc.').count(),0);
+    assert.match(await page.locator('#live-kpi-2259-asof').textContent(),/HKT/);
+  });
+  await check('Quant distribution reacts to drift changes',async()=>{
+    await waitFor(page,()=>!!document.querySelector('#quant-fan-chart svg')&&!document.querySelector('#quant-median-nov')?.textContent.includes('—'),'quant fan');
+    const before=(await page.locator('#quant-median-nov').textContent()).trim();
+    await page.locator('#quant-drift').evaluate(el=>{el.value='28';el.dispatchEvent(new Event('input',{bubbles:true}))});
+    await waitFor(page,()=>document.querySelector('#quant-drift-value')?.textContent.includes('+28%'),'updated drift');
+    await page.waitForTimeout(1300);
+    const after=(await page.locator('#quant-median-nov').textContent()).trim();
+    assert.notEqual(after,before,'new model median should differ');
+    assert.equal(await page.locator('#quant-histogram svg').count(),1);
+  });
+  await check('Gold x production sensitivity selection drives controls',async()=>{
+    await waitFor(page,()=>document.querySelectorAll('#stress-heatmap button').length===25,'25 heatmap buttons');
+    await page.locator('#stress-heatmap button').first().click({timeout:6000});
+    assert.equal(await page.locator('#model-gold').inputValue(),'3000');
+    assert.equal(await page.locator('#model-production').inputValue(),'50');
+    assert.match(await page.locator('#stress-readout').textContent(),/3,000/);
+  });
+  await check('Private award calculator and Monte Carlo spread work',async()=>{
+    await page.locator('#shares').fill('100');
+    await waitFor(page,()=>!!document.querySelector('#award-quant-chart svg'),'private payoff chart');
+    const text=(await page.locator('#award-quant-median').textContent()).trim();
+    assert.match(text,/HK\$/);
+    assert.notEqual(text,'—');
+    assert.match(await page.locator('#gross-spread').textContent(),/HK\$/);
+    assert.match(await page.locator('#award-quant-source').textContent(),/100 shares/);
+  });
+  await check('Audited asset bar chart and issuer 2025 totals',async()=>{
+    assert.equal(await page.locator('#mine-bars button.mine-row').count(),9);
+    assert.equal(await page.locator('#mine-donut svg').count(),1);
+    await page.locator('#mine-bars button.mine-row').filter({hasText:'Aurora'}).click();
+    assert.match(await page.locator('#mine-selection').textContent(),/Aurora/);
+  });
+  await check('Real-time permission gate fails closed',async()=>{
+    await waitFor(page,()=>document.querySelector('#licensed-connection-state')?.textContent.includes('NOT CONNECTED'),'entitlement gate');
+    assert.match(await page.locator('#licensed-status').textContent(),/No HKEX-licensed on-site entitlement/);
+    assert.equal(await page.locator('#licensed-2259-price').textContent(),'—');
+  });
+  await check('Mobile menu and responsive layout',async()=>{
+    await page.setViewportSize({width:390,height:844});
+    const button=page.locator('#menu-toggle');
+    assert.equal(await button.isVisible(),true);
+    await button.click();
+    assert.equal(await button.getAttribute('aria-expanded'),'true');
+    await page.locator('.side-nav a[href="#mines"]').click();
+    assert.equal(await button.getAttribute('aria-expanded'),'false');
+    assert.equal(await page.locator('#mines').isVisible(),true);
+  });
+  await check('No runtime exceptions',async()=>{assert.deepEqual(errors,[])});
+ }finally{await browser.close()}
+ console.log('E2E checks: '+passed+' passed, '+failures.length+' failed');
+ if(failures.length){for(const f of failures)console.error(f);process.exitCode=1}
+}
+run().catch(e=>{console.error(e);process.exitCode=1});
