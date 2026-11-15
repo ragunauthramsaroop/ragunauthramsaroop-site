@@ -116,7 +116,8 @@ function buildProjections(){
   const stockPrice=stock.regularMarketPrice,goldPrice=gold.regularMarketPrice;
   set("model-anchor-stock","HK$"+number(stockPrice));
   set("model-anchor-gold","US$"+number(goldPrice));
-  const status="PROVIDER-DELAYED: 2259 "+clock(stock.providerQuoteTime)+" | GC=F "+clock(gold.providerQuoteTime)+".";
+  const sourceState=market.fresh?.stock&&market.fresh?.gold?"PROVIDER-DELAYED SOURCE OBSERVATIONS":"REFRESH FAILED FOR ONE OR MORE INSTRUMENTS; PREVIOUS VALIDATED OBSERVATIONS";
+  const status=sourceState+": 2259 "+clock(stock.providerQuoteTime)+" | GC=F "+clock(gold.providerQuoteTime)+".";
   set("model-data-status",status+" Calculations rerun on feed updates and control changes. No model outcome is a live stock quote.");
   set("model-basis","Anchor: HK$"+number(stockPrice)+" on 2259.HK, US$"+number(goldPrice)+" on GC=F gold futures. Assumed 2026 production 59.2t and cost US$1,678/oz. These historical baselines are fixed assumptions; change 2029 assumptions above.");
   set("model-last-update","VALUATION UPDATED FROM "+clock(stock.providerQuoteTime)+" AND "+clock(gold.providerQuoteTime));
