@@ -16,6 +16,7 @@
   <script defer src="./news.js"></script>
   <script defer src="./quant.js"></script>
   <script defer src="./quant-ui.js"></script>
+  <script defer src="./decision-ui.js"></script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -247,9 +248,20 @@
                 <button type="button" class="case-card" data-case="bull"><span>BULL / UPSIDE</span><strong id="scenario-bull-price">—</strong><small>Conditional 2029 price</small></button>
               </div>
               <div class="model-matrix" id="dynamic-model-table" aria-live="polite"></div>
-              <p class="scenario-note">Method: starting market price × hypothetical relative production × operating margin ratio × valuation factor ÷ dilution. Baseline production is 59.2 tonnes for 2026 and baseline AISC is US$1,678/oz, both historical reference assumptions. Gold futures serve as a proxy, not a direct company realised selling price. Risks, capital requirements, taxes, earnings quality and market valuation might differ materially. No calibrated confidence probabilities.</p>
+              <p class="scenario-note">Method: starting market price × hypothetical relative production × operating margin ratio × valuation factor ÷ dilution. Baseline 2026 production is a company target of 59.2 tonnes, not realized output, and cost reference is the unaudited 9M 2026 AISC of US$1,649/oz. Gold futures serve as a proxy, not a direct company realised selling price. Risks, capital requirements, taxes, earnings quality and market valuation might differ materially. No calibrated confidence probabilities.</p>
             </article>
           </div>
+          <article class="panel stress-panel">
+            <div class="panel-heading"><div><p class="eyebrow">INSTITUTIONAL SENSITIVITY MATRIX</p><h3>Gold price × 2029 production</h3><p class="comparison-intro">Each cell represents a hypothetical equity price. The grid updates with verified stock and gold anchors and your valuation, AISC and dilution assumptions. Select a cell to test its inputs.</p></div><span class="source-tag">INTERACTIVE MODEL · NOT ANALYST TARGETS</span></div>
+            <div class="stress-grid-scroll"><div id="stress-heatmap" class="stress-heatmap" role="grid" aria-label="Illustrative 2029 equity price surface by gold price and production tonnes">Waiting for validated 2259 and gold futures data.</div></div>
+            <div class="stress-legend"><span>LOWER HYPOTHETICAL VALUE</span><div></div><span>HIGHER HYPOTHETICAL VALUE</span></div>
+            <div class="stress-readout" id="stress-readout">Select a heatmap cell to update the gold and production controls.</div>
+            <p class="widget-disclaimer">Reference data: 2026 target production 59.2 tonnes, not an audited outcome. 9M 2026 unaudited all-in sustaining cost was US$1,649/oz. Simplified operating-margin scaling omits cash taxes, sustaining capital reinvestment, asset transactions and the difference between gold futures and realized gold prices.</p>
+          </article>
+          <article class="panel decision-memo">
+            <div class="panel-heading"><div><p class="eyebrow">EXECUTIVE DECISION INTELLIGENCE</p><h3>What the current evidence supports</h3></div><span class="source-tag">RULE-BASED, SOURCE-ATTRIBUTED</span></div>
+            <div id="decision-summary" class="decision-summary" aria-live="polite"><p>The decision memo will populate after the market data and statistical stress results pass source checks.</p></div>
+          </article>
           <div class="dynamic-model-foot"><span>2027 and 2028 are qualification years. 2029 vesting is conditional.</span><span id="model-last-update">Source observations pending</span></div>
         </section>
 
@@ -278,6 +290,21 @@
               <p id="model-message" class="model-message">All values depend on the share count, assumed sale price and full vesting.</p>
             </article>
           </div>
+
+          <article class="panel eligibility-panel">
+            <div class="panel-heading"><div><p class="eyebrow">LOCAL-ONLY PERFORMANCE SCREEN</p><h3>2026–2028 award eligibility checklist</h3></div><span class="privacy-tag">PRIVATE SESSION</span></div>
+            <p class="widget-disclaimer">The 2026 Employee Share Incentive Scheme includes a three-year average return-on-equity requirement and individual performance, employment and scheme conditions. Enter values to test the published 15% three-year average threshold. This tool does not decide whether the company will approve vesting.</p>
+            <div class="eligibility-fields">
+              <div><label for="elig-roe-2026">2026 company ROE (%)</label><input type="number" id="elig-roe-2026" min="-100" max="100" step=".1" placeholder="Not reported"></div>
+              <div><label for="elig-roe-2027">2027 company ROE (%)</label><input type="number" id="elig-roe-2027" min="-100" max="100" step=".1" placeholder="Not reported"></div>
+              <div><label for="elig-roe-2028">2028 company ROE (%)</label><input type="number" id="elig-roe-2028" min="-100" max="100" step=".1" placeholder="Not reported"></div>
+              <div><label for="elig-performance">Individual assessment status</label><select id="elig-performance"><option value="unknown">Not yet determined</option><option value="pass">All applicable tests met</option><option value="fail">A required test not met</option></select></div>
+              <div><label for="elig-employment">Employment eligibility at vesting</label><select id="elig-employment"><option value="unknown">Not yet determined</option><option value="pass">Assume eligible</option><option value="fail">Assume ineligible</option></select></div>
+            </div>
+            <div id="eligibility-result" class="eligibility-result" aria-live="polite"><strong>UNDETERMINED</strong><span>The scheme requires verified company and individual conditions.</span></div>
+            <button class="button button-subtle" type="button" id="eligibility-reset">CLEAR ELIGIBILITY ASSUMPTIONS</button>
+          </article>
+
           <article class="panel vesting-panel"><div class="panel-heading"><div><p class="eyebrow">PAYMENT & ELIGIBILITY</p><h3>Vesting pathway</h3></div><span class="source-tag">PUBLIC SCHEME TERMS</span></div>
             <div class="vesting-steps"><div><span class="step-mark">01</span><strong>2026</strong><small>Grant acceptance; no default upfront purchase fee</small></div><div><span class="step-mark">02</span><strong>2026–2028</strong><small>Company ROE and annual individual performance tests</small></div><div><span class="step-mark">03</span><strong>2029</strong><small>Conditional vesting and trustee settlement notice</small></div><div><span class="step-mark">04</span><strong>SETTLEMENT</strong><small>Pay, trustee-assisted partial sale, or net cash election</small></div></div>
             <p class="widget-disclaimer">The individual grant letter determines the exact vesting date, number of shares, performance conditions and price. Resignation or other events may forfeit unvested awards; clawback and personal tax obligations apply.</p>
@@ -325,6 +352,7 @@
 
 <section id="sources" class="section" aria-labelledby="sources-heading">
           <div class="section-head"><div><p class="section-kicker">08 / AUDIT TRAIL</p><h2 id="sources-heading">Data provenance & safeguards</h2><p>Market-source separation and modelling assumptions, visible by design.</p></div><span class="section-index">06</span></div>
+          <article class="panel data-ledger-panel"><div class="panel-heading"><div><p class="eyebrow">DATA ENGINE AUDIT TRAIL</p><h3>Feed status, provenance & freshness</h3></div><button type="button" id="ledger-refresh" class="button button-subtle">REQUEST NEW QUOTES ↻</button></div><div class="data-ledger" id="data-ledger" aria-live="polite">Awaiting market-source checks.</div></article>
           <div class="governance-grid">
             <article class="panel"><span class="governance-icon">01</span><h3>Market widgets</h3><p>Yahoo Finance OHLC history is retrieved by a read-only Vercel API with symbol verification and provider quote timestamp. Data availability, delay and downstream usage rights remain subject to Yahoo and HKEX terms. Chart computation runs locally.</p></article>
             <article class="panel"><span class="governance-icon">02</span><h3>Historical references</h3><p>Live-data-labelled KPIs use the newest available 2259.HK, 2899.HK and GC=F provider observations with timestamps. Historical published mining targets and incentive-plan prices are labelled reference assumptions, never live data.</p></article>
