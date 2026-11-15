@@ -5,12 +5,14 @@ on:
     paths:
       - "tools/zijin-2259/**"
       - "tests/zijin-dashboard.test.mjs"
+      - "tests/zijin-quant.test.mjs"
       - ".github/workflows/zijin-dashboard-check.yml"
   push:
     branches: [main]
     paths:
       - "tools/zijin-2259/**"
       - "tests/zijin-dashboard.test.mjs"
+      - "tests/zijin-quant.test.mjs"
       - ".github/workflows/zijin-dashboard-check.yml"
 
 permissions:
@@ -36,8 +38,11 @@ jobs:
           node --check tools/zijin-2259/intelligence.js
           node --check tools/zijin-2259/news.js
           node --check tools/zijin-2259/api/news.js
+          node --check tools/zijin-2259/quant.js
+          node --check tools/zijin-2259/quant-ui.js
+          node --check tools/zijin-2259/decision-ui.js
       - name: Verify market sources, privacy and calculator rules
-        run: node --test tests/zijin-dashboard.test.mjs
+        run: node --test tests/zijin-dashboard.test.mjs tests/zijin-quant.test.mjs
       - name: Verify HTTP-free static paths
         run: |
           test -s tools/zijin-2259/index.html
@@ -48,4 +53,7 @@ jobs:
           test -s tools/zijin-2259/intelligence.js
           test -s tools/zijin-2259/news.js
           test -s tools/zijin-2259/api/news.js
+          test -s tools/zijin-2259/quant.js
+          test -s tools/zijin-2259/quant-ui.js
+          test -s tools/zijin-2259/decision-ui.js
           grep -q 'name="robots" content="noindex,nofollow"' tools/zijin-2259/index.html
