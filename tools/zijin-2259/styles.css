@@ -108,3 +108,20 @@ main{max-width:1660px;margin:0 auto;padding:0 clamp(20px,3vw,56px) 50px}.section
  .realtime-head>.source-tag{max-width:100%;white-space:normal;overflow-wrap:anywhere}
  .award-quant-kpis strong{overflow-wrap:anywhere}
 }
+
+
+/* Visual screenshot review, 360–768px: remove orbit/heading collision,
+   increase legibility of quantitative annotations without breaking card grids. */
+@media(max-width:900px){
+ .gold-orbit{display:none}
+ .hero-heading{min-height:0;padding:29px 0 32px}
+}
+@media(max-width:680px){
+ .hero-heading h1{font-size:clamp(36px,9.5vw,44px);line-height:1.1}
+ .hero-lead{font-size:13px;line-height:1.7}
+ .realtime-option>p,.decision-note p,.evidence-card p{font-size:12px;line-height:1.7}
+ .widget-disclaimer,.chart-caption,.form-foot,.filing-foot{font-size:11px;line-height:1.75}
+ .metric-eyebrow,.metric-foot{font-size:9px}
+ .source-tag,.eyebrow{font-size:9px}
+ .quant-footnote,.quant-coverage p,.mine-selection,.news-feed-status{font-size:11px}
+}
