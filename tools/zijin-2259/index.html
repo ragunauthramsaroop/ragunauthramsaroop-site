@@ -17,6 +17,7 @@
   <script defer src="./quant.js"></script>
   <script defer src="./quant-ui.js"></script>
   <script defer src="./decision-ui.js"></script>
+  <script defer src="./licensed-ui.js"></script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -72,6 +73,29 @@
             <span class="status-dot"></span>
             <p><strong>Independent delayed-market data.</strong> Native price charts use a timestamped Yahoo Finance data bridge. No Apple or unrelated substitute symbols. If the provider fails, a dated historical snapshot appears instead, clearly labelled.</p>
           </div>
+          <section class="realtime-access" aria-label="HKEX real-time market-data access">
+            <div class="realtime-head"><div><p class="eyebrow">MARKET DATA ACCESS · 2259 / 2899</p><h2>Authorised real-time access</h2><p>Free user-requested snapshots on an HKEX-authorised vendor website. Licensed on-site prices activate only after documented vendor redistribution rights and a secure API are configured.</p></div><span class="source-tag" id="licensed-connection-state">ON-SITE LICENCE NOT CONNECTED</span></div>
+            <div class="realtime-options">
+              <div class="realtime-option manual">
+                <span class="realtime-tag">AVAILABLE WITHOUT A NEW API KEY</span>
+                <h3>HKEX-authorised Basic Market Prices</h3>
+                <p>Open the licensed vendor's own quote-search page. Enter 2259 for Zijin Gold International or 2899 for Zijin Mining Group and request a fresh quote manually. Free BMP rules prohibit automatic refresh and unauthorised copying into this dashboard.</p>
+                <a class="button button-gold" href="https://www.etnet.com.hk/www/eng/stocks/realtime/index.php" target="_blank" rel="noopener noreferrer">OPEN AUTHORISED LIVE QUOTE SERVICE ↗</a>
+                <small>External HKEX-authorised vendor service · manually refreshed · service controls apply</small>
+              </div>
+              <div class="realtime-option integration">
+                <span class="realtime-tag">PREPARED FOR CONTRACTED PROVIDER</span>
+                <h3>Direct licensed market feed</h3>
+                <div class="licensed-grid">
+                  <div><span>2259 · LICENSED QUOTE</span><strong id="licensed-2259-price">—</strong><small id="licensed-2259-meta">No connected licensed source</small></div>
+                  <div><span>2899 · LICENSED QUOTE</span><strong id="licensed-2899-price">—</strong><small id="licensed-2899-meta">No connected licensed source</small></div>
+                </div>
+                <button id="licensed-refresh" type="button" class="button button-subtle">CHECK LICENCED FEED CONNECTION ↻</button>
+                <p class="licensed-status" id="licensed-status" role="status">No market-data vendor entitlement has been connected. Delayed research charts stay independent.</p>
+              </div>
+            </div>
+            <p class="realtime-foot">HKEX's Basic Market Prices service is snapshot-only. This website neither scrapes vendor BMP results nor presents Yahoo Finance as HKEX-licensed real-time data. Realtime integration requires explicit vendor distribution and display permission.</p>
+          </section>
           <div class="metric-row" aria-live="polite">
             <div class="metric-card"><span class="metric-eyebrow">2259 · VERIFIED QUOTE</span><div class="metric-value" id="live-kpi-2259">—</div><div class="metric-foot" id="live-kpi-2259-asof">FETCHING MARKET OBSERVATION</div></div>
             <div class="metric-card"><span class="metric-eyebrow">2899 · PARENT PRICE</span><div class="metric-value" id="live-kpi-2899">—</div><div class="metric-foot" id="live-kpi-2899-asof">FETCHING MARKET OBSERVATION</div></div>
@@ -353,7 +377,16 @@
 <section id="sources" class="section" aria-labelledby="sources-heading">
           <div class="section-head"><div><p class="section-kicker">08 / AUDIT TRAIL</p><h2 id="sources-heading">Data provenance & safeguards</h2><p>Market-source separation and modelling assumptions, visible by design.</p></div><span class="section-index">06</span></div>
           <article class="panel data-ledger-panel"><div class="panel-heading"><div><p class="eyebrow">DATA ENGINE AUDIT TRAIL</p><h3>Feed status, provenance & freshness</h3></div><button type="button" id="ledger-refresh" class="button button-subtle">REQUEST NEW QUOTES ↻</button></div><div class="data-ledger" id="data-ledger" aria-live="polite">Awaiting market-source checks.</div></article>
-          <div class="governance-grid">
+          <article class="panel license-compliance">
+              <div class="panel-heading"><div><p class="eyebrow">HKEX LICENSING REGISTER</p><h3>Authorised data provider connection</h3></div><span class="source-tag">HARD RIGHTS CHECK</span></div>
+              <p>HKEX classifies less-than-15-minute-delayed data as real-time. Basic Market Prices are available through licensed vendors on a manual snapshot basis. This dashboard uses separate delayed research feeds until the licensed provider contract permits data display here.</p>
+              <div class="licensing-links">
+                <a href="https://www.hkex.com.hk/Services/Market-Data-Services/Real-Time-Data-Services/Data-Licensing/HKEX-IS/Market-Data-Vendor-Licence/Information-Vendors-List?sc_lang=en" target="_blank" rel="noopener noreferrer">HKEX OFFICIAL VENDOR REGISTER ↗</a>
+                <a href="https://www.hkex.com.hk/Services/Market-Data-Services/Real-Time-Data-Services/Data-Licensing/HKEX-IS/Market-Data-Vendor-Licence/Basic-Market-Prices-%28BMP%29-Service/Notes-to-Listed-Companies-for-enabling-BMP-Service-on-their-Corporate-Website?sc_lang=en" target="_blank" rel="noopener noreferrer">LISTED-COMPANY BMP PROGRAMME ↗</a>
+              </div>
+              <p class="widget-disclaimer">Provider integration is disabled until production secrets and a rights confirmation are supplied through Vercel's server-side environment. API keys are never committed to GitHub or exposed in the browser.</p>
+            </article>
+                    <div class="governance-grid">
             <article class="panel"><span class="governance-icon">01</span><h3>Market widgets</h3><p>Yahoo Finance OHLC history is retrieved by a read-only Vercel API with symbol verification and provider quote timestamp. Data availability, delay and downstream usage rights remain subject to Yahoo and HKEX terms. Chart computation runs locally.</p></article>
             <article class="panel"><span class="governance-icon">02</span><h3>Historical references</h3><p>Live-data-labelled KPIs use the newest available 2259.HK, 2899.HK and GC=F provider observations with timestamps. Historical published mining targets and incentive-plan prices are labelled reference assumptions, never live data.</p></article>
             <article class="panel"><span class="governance-icon">03</span><h3>Scenario modelling</h3><p>2027–2029 prices recalculate from validated delayed stock and gold feeds plus your editable assumptions. Market-linked models remain hypothetical sensitivity outputs, not analyst consensus or guaranteed returns.</p></article>
