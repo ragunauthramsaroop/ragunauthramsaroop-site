@@ -78,6 +78,14 @@
       if(!manuallyChosen){inputs.target.value=verifiedQuote.toFixed(2);text('calc-market-context','Using newest verified delayed 2259.HK observation, '+sourceAsOf+'.');calculate();}
     }
   });
+  document.addEventListener('zgi:manual-price',e=>{
+    const quote=e.detail;
+    if(!quote||quote.verified!==false||quote.exchangeTimestampKnown!==false)return;
+    const observed=Number(quote.price);
+    if(!Number.isFinite(observed)||observed<=0||observed>100000)return;
+    const time=Number.isFinite(Date.parse(quote.entryTime))?new Intl.DateTimeFormat('en-GB',{timeZone:'Asia/Hong_Kong',day:'2-digit',month:'short',hour:'2-digit',minute:'2-digit',hourCycle:'h23'}).format(new Date(quote.entryTime))+' HKT':'unknown time';
+    setTarget(observed,'USER-ENTERED REFERENCE · entered '+time+'. This is a private hypothetical award-model input, not a verified exchange quote. Automated prices and historical forecast charts remain unchanged.',false);
+  });
   document.addEventListener('zgi:scenario-select',e=>{
     const price=e.detail?.price,kind=e.detail?.scenario||'selected';
     if(Number.isFinite(price)&&price>0)setTarget(price,'Hypothetical '+kind.toUpperCase()+' 2029 scenario. This is not a market quote.',true);
