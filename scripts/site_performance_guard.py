@@ -1,6 +1,7 @@
 """Static performance regression guard for the public GitHub Pages export."""
 from html.parser import HTMLParser
 from pathlib import Path
+from compile_home_styles import compile_css
 import re
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -45,7 +46,7 @@ check(any(x.get("rel") == "preload" and x.get("as") == "image" and x.get("href")
 check(any(x.get("class") == "portrait" and x.get("fetchpriority") == "high"
           and x.get("width") and x.get("height") for x in page.images),
       "Hero must reserve dimensions and load with high priority")
-check([x.get("href") for x in page.links if x.get("rel") == "stylesheet" and x.get("media") != "not all"] == ["/assets/home-compiled-2026.css?v=1"],
+check([x.get("href") for x in page.links if x.get("rel") == "stylesheet" and x.get("media") != "not all"] == ["/assets/home-compiled-2026.css?v=2"],
       "Homepage must use one render-blocking consolidated stylesheet")
 check((ROOT / "assets/home-compiled-2026.css").exists() and (ROOT / "assets/home-compiled-2026.css").stat().st_size <= 75_000,
       "Homepage consolidated stylesheet is missing or too large")
@@ -117,22 +118,9 @@ search = ROOT / "assets/search-index.json"
 check(search.exists() and search.stat().st_size <= 400_000, "Search index exceeded size baseline")
 
 # Protect the compiled homepage against silent drift when source theme layers change.
-home_layers = (
-    "assets/home-flagship-editorial-2026.css",
-    "assets/home-signature-2026.css",
-    "assets/flagship-system-2026.css",
-)
 compiled_css = ROOT / "assets/home-compiled-2026.css"
-if compiled_css.exists():
-    expected_css = "\n\n".join(
-        f"/* Source layer {i}: {layer}; source files remain for maintenance */\n" +
-        (ROOT / layer).read_text(encoding="utf-8").strip()
-        for i, layer in enumerate(home_layers, 1)
-     ) + "\n"
-    check(compiled_css.read_text(encoding="utf-8") == expected_css,
-          "Compiled homepage theme is out of sync with its three source stylesheets")
-else:
-    check(False, "Compiled homepage theme missing")
+check(compiled_css.exists() and compiled_css.read_text(encoding="utf-8") == compile_css(),
+      "Compiled homepage theme is out of sync with all four CSS sources")
 
 if errors:
     for error in errors:
