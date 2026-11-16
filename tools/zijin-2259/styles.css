@@ -125,3 +125,30 @@ main{max-width:1660px;margin:0 auto;padding:0 clamp(20px,3vw,56px) 50px}.section
  .source-tag,.eyebrow{font-size:9px}
  .quant-footnote,.quant-coverage p,.mine-selection,.news-feed-status{font-size:11px}
 }
+
+
+/* Privately entered quote comparison. Source data never sent to any server. */
+.manual-bridge{margin:17px 0 7px;border:1px solid #486267;background:linear-gradient(155deg,#15242b,#1b292e 65%,#12212c);padding:21px;border-radius:3px;display:flex;flex-direction:column;gap:14px}
+.manual-bridge-heading{display:flex;justify-content:space-between;flex-wrap:wrap;gap:13px;align-items:flex-start}
+.manual-bridge-heading>div{min-width:0}
+.manual-bridge-heading h3{color:#edddb9;font:800 17px Manrope,sans-serif;margin:8px 0 0;letter-spacing:-.025em}
+.manual-bridge-heading>.source-tag{color:#a0cabd;white-space:normal}
+.manual-bridge>p{font-size:11px;color:#b6c9d0;line-height:1.8;margin:0}
+.manual-quote-form{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr) minmax(0,1.1fr) auto;gap:11px;align-items:end}
+.manual-quote-form label{font-size:10px;display:flex;flex-direction:column;gap:5px;color:#f0dfbc;font-weight:800;letter-spacing:.02em;min-width:0}
+.manual-quote-form label span{color:#95aabb;font-size:9px;font-weight:500;letter-spacing:0}
+.manual-quote-form input,.manual-quote-form select{width:100%;background:#0e1b29;color:#f8eddd;border:1px solid #4e6670;min-height:43px;font:700 12px Manrope,sans-serif;padding:9px;border-radius:2px}
+.manual-quote-form input:focus-visible,.manual-quote-form select:focus-visible{outline:2px solid #e6c48b;outline-offset:2px}
+.manual-quote-form .button{height:43px;white-space:normal;font-size:10px}
+.manual-quote-result{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.manual-quote-result>div{border:1px solid #38535d;background:#0e1e29;padding:13px;min-width:0;display:flex;flex-direction:column;gap:7px}
+.manual-quote-result span{font-size:9px;letter-spacing:.085em;color:#9badbc;font-weight:800}
+.manual-quote-result strong{font:800 23px Manrope,sans-serif;color:#f1ce8b;overflow-wrap:anywhere}
+.manual-quote-result small{font-size:10px;color:#b1bdc3;line-height:1.5}
+.manual-quote-footer{display:flex;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap}
+.manual-quote-footer p{margin:0;color:#b7c9d0;max-width:650px;flex:1;font-size:10px;line-height:1.7}
+.manual-quote-footer .button{white-space:normal;text-align:center;max-width:270px}
+.manual-quote-footer .button:disabled{opacity:.38;cursor:not-allowed}
+.manual-quote-disclosure{font-size:10px;color:#93aab6;line-height:1.65;border-top:1px solid #304752;padding-top:11px}
+@media(max-width:1100px){.manual-quote-form{grid-template-columns:repeat(2,minmax(0,1fr))}.manual-quote-form .button{width:100%}}
+@media(max-width:680px){.manual-bridge{padding:13px}.manual-quote-form{grid-template-columns:1fr}.manual-quote-form label{font-size:11px}.manual-quote-result strong{font-size:18px}.manual-quote-footer .button{max-width:none;width:100%}}
