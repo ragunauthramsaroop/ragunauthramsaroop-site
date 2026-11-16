@@ -149,6 +149,31 @@ async function run(){
     })));
     for(const item of rows)assert.equal(item.label,item.marker,'section index must match heading');
   });
+  await check('Chart-first reading order and source disclosures preserved',async()=>{
+    const order=await page.evaluate(()=>{
+      const nodes=[...document.querySelectorAll('main>.section')];
+      const earlier=(a,b)=>{
+        const x=document.querySelector(a),y=document.querySelector(b);
+        return !!(x&&y&&(x.compareDocumentPosition(y)&Node.DOCUMENT_POSITION_FOLLOWING));
+      };
+      return {
+        ids:nodes.map(node=>node.id),
+        active:document.documentElement.classList.contains('visual-first'),
+        marketAheadOfLicense:earlier('#market-chart','.realtime-access'),
+        mainChartAheadOfQuoteDetail:earlier('#market-chart','.overview-grid'),
+        quantFanAheadOfInputs:earlier('#quant-fan-chart','.quant-controls'),
+        scenarioChartAheadOfInputs:earlier('#scenario-chart','.model-controls'),
+        mineAheadOfHeadlines:earlier('#mine-donut','#issuer-news-feed'),
+        awardChartAheadOfForm:earlier('#award-quant-chart','#award-form'),
+        liveMarketSourceExists:!!document.querySelector('#global-market-source'),
+        licensedStatusExists:!!document.querySelector('#licensed-connection-state'),
+        uniqueMarketChart:document.querySelectorAll('#market-chart').length===1
+      };
+    });
+    assert.equal(order.active,true);
+    assert.deepEqual(order.ids.slice(0,10),['overview','charting','technicals','risk-lab','scenarios','mines','settlement','evidence','news','sources']);
+    for(const [key,value] of Object.entries(order))if(!['ids','active'].includes(key))assert.equal(value,true,key);
+  });
   await check('No runtime exceptions',async()=>{assert.deepEqual(errors,[])});
  }finally{await browser.close()}
  console.log('E2E checks: '+passed+' passed, '+failures.length+' failed');
