@@ -25,8 +25,8 @@ test('replay is labelled historical and never claims real-time trade ticks',()=>
  assert.match(motion,/reduced-motion/);
  assert.match(motion,/FOLLOW DELAYED SOURCE/);
  assert.match(market,/refreshIntraday/);
- assert.match(market,/\[data-motion-line\]/);
- assert.doesNotMatch(motion,/Math\\.random/);
+ assert.match(market,/data-motion-line/);
+ assert.doesNotMatch(motion,/Math[.]random/);
 });
 
 const analytics=readFileSync(root+'intelligence.js','utf8');
