@@ -123,3 +123,7 @@ Official legal explanation: HKEX's April 2023 guiding notes for BMP require user
 https://www.hkex.com.hk/-/media/HKEX-Market/Services/Market-Data-Services/Real-Time-Data-Services/Data-Licensing/Licence-Agreements-Guiding-Notes-Vendor-Licence/Guiding-Notes/Guiding-Notes-on-Basic-Market-Prices-Service_eng-v202304.pdf
 
 The existing dedicated licensed provider API is still the direct upgrade path once redisplay and retrieval rights are documented. Neither GitHub, an unauthenticated open-source wrapper nor Yahoo historical bars grants a lawful streaming licence.
+
+## November 2026 market-data integrity correction
+
+The unofficial Yahoo chart endpoint was observed to repeat the 13 November 2026 daily OHLCV of 2259.HK as a synthetic 16 November pre-opening daily bar. The unchanged quote (HK$121.20) appeared with a newer timestamp and false previous close (HK$121.20, 0.00% return) instead of the 13 November settlement relative to 12 November (HK$126.50, -4.19%). The API now removes an exact duplicate full OHLCV daily carry-forward observation and computes the last daily close and prior-session change from retained validated bars. Upstream metadata refresh timestamps are retained separately as provider metadata, and never used as a daily exchange trade timestamp. The published quote timestamp is the retained session-bar timestamp, not a real-time exchange trade or licensed feed. Regression tests reproduce the defect and verify the corrected price and date.
