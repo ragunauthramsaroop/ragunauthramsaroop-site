@@ -56,9 +56,23 @@ export default async function handler(req,res){
           ohlc.push({t,o,h,l,c,v:Number.isFinite(volume)&&volume>=0?volume:null});
         }
         if(ohlc.length<2){lastError="Insufficient OHLC bars";continue}
+        // Yahoo occasionally mirrors the preceding session's full daily OHLCV
+        // into a new pre-opening timestamp. Such a bar is NOT a trade or a
+        // completed trading session. Require every price and volume to match
+        // before discarding a carry-forward placeholder.
+        let rejectedCarryForwardBars=0;
+        if(interval==="1d"){
+          const sameBar=(a,b)=>["o","h","l","c"].every(key=>Math.abs(a[key]-b[key])<1e-6)&&a.v===b.v;
+          while(ohlc.length>=3&&sameBar(ohlc.at(-1),ohlc.at(-2))){
+            ohlc.pop();rejectedCarryForwardBars++;
+          }
+        }
         const last=ohlc.at(-1);
-        const lastValidQuote=Number.isFinite(quote)&&quote>0?quote:last.c;
+        // Daily market statistics are based on the last verified daily bar,
+        // NOT on an upstream metadata refresh clock or unofficial tick price.
+        const lastValidQuote=interval==="1d"?last.c:Number.isFinite(quote)&&quote>0?quote:last.c;
         const marketTime=Number.isFinite(time)&&time>0?time:last.t;
+        const observationTime=interval==="1d"?last.t:marketTime;
         // For daily bars, use the preceding trading session. chartPreviousClose is often
         // the first close in the selected chart range, not the prior day's close.
         const previousClose=Number(interval==="1d"&&ohlc.length>=2?ohlc.at(-2).c:meta.previousClose);
@@ -68,12 +82,15 @@ export default async function handler(req,res){
           ok:true,symbol,displayName:selected.name,currency:selected.currency,kind:selected.kind,
           provider:"Yahoo Finance chart (unofficial, delayed)",sourceSymbol:meta.symbol,sourceCurrency:meta.currency||null,
           exchange:meta.exchangeName||null,exchangeTimezone:meta.exchangeTimezoneName||null,
-          providerQuoteTime:new Date(marketTime*1000).toISOString(),
+          providerQuoteTime:new Date(observationTime*1000).toISOString(),
+          upstreamMetadataTime:new Date(marketTime*1000).toISOString(),
+          observationType:interval==="1d"?"LAST VALID DAILY BAR":"PROVIDER QUOTE METADATA",
+          rejectedCarryForwardBars,
           latestBarTime:new Date(last.t*1000).toISOString(),
           fetchedAt:new Date().toISOString(),
           regularMarketPrice:lastValidQuote,previousClose:Number.isFinite(previousClose)&&previousClose>0?previousClose:null,
           change,changePercent,marketState:meta.marketState||"unknown",range,interval,
-          dataDelay:"Provider/exchange delayed; not licensed real-time HKEX data",
+          dataDelay:"Provider/exchange delayed; daily bar timestamp is session evidence, not a live trade timestamp; not licensed real-time HKEX data",
           bars:ohlc.slice(-440)
         });
       }catch(err){lastError=err?.name==="AbortError"?"Upstream timeout":"Provider fetch error";}
