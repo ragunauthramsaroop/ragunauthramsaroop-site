@@ -3,6 +3,16 @@ import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
 const root='tools/zijin-2259/';
 const html=readFileSync(root+'index.html','utf8');
+const visualFirst=readFileSync(root+'visual-first.js','utf8');
+const visualCss=readFileSync(root+'visual-first.css','utf8');
+test('visual-first assets precede core application and preserve private controls',()=>{
+ assert.match(html,/visual-first[.]css/);
+ assert.ok(html.indexOf('visual-first.js')<html.indexOf('app.js'));
+ for(const target of ['overview-grid','realtime-access','quant-controls','model-controls','award-risk-panel'])assert.match(visualFirst,new RegExp(target));
+ assert.match(visualCss,/quant-main/);
+ assert.match(visualCss,/dynamic-model-grid/);
+});
+
 const css=readFileSync(root+'styles.css','utf8');
 const app=readFileSync(root+'app.js','utf8');
 const market=readFileSync(root+'markets.js','utf8');
