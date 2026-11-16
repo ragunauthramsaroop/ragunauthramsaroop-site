@@ -1,0 +1,73 @@
+name: ZGI intelligence dashboard checks
+
+on:
+  pull_request:
+    paths:
+      - "tools/zijin-2259/**"
+      - "tests/zijin-dashboard.test.mjs"
+      - "tests/zijin-quant.test.mjs"
+      - "tests/zijin-licensed-feed.test.mjs"
+      - "tests/zijin-market-integrity.test.mjs"
+      - ".github/workflows/zijin-dashboard-check.yml"
+  push:
+    branches: [main]
+    paths:
+      - "tools/zijin-2259/**"
+      - "tests/zijin-dashboard.test.mjs"
+      - "tests/zijin-quant.test.mjs"
+      - "tests/zijin-licensed-feed.test.mjs"
+      - "tests/zijin-market-integrity.test.mjs"
+      - ".github/workflows/zijin-dashboard-check.yml"
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Read repository
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          persist-credentials: false
+      - name: Set Node
+        uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020
+        with:
+          node-version: '22'
+      - name: Verify JavaScript syntax
+        run: |
+          node --check tools/zijin-2259/app.js
+          node --check tools/zijin-2259/markets.js
+          node --check tools/zijin-2259/api/market.js
+          node --check tools/zijin-2259/intelligence.js
+          node --check tools/zijin-2259/news.js
+          node --check tools/zijin-2259/api/news.js
+          node --check tools/zijin-2259/quant.js
+          node --check tools/zijin-2259/quant-ui.js
+          node --check tools/zijin-2259/decision-ui.js
+          node --check tools/zijin-2259/licensed-ui.js
+          node --check tools/zijin-2259/api/licensed-quote.js
+          node --check tools/zijin-2259/portfolio.js
+          node --check tools/zijin-2259/risk-award.js
+          node --check tools/zijin-2259/manual-quote.js
+      - name: Verify market sources, privacy and calculator rules
+        run: node --test tests/zijin-dashboard.test.mjs tests/zijin-quant.test.mjs tests/zijin-licensed-feed.test.mjs tests/zijin-market-integrity.test.mjs
+      - name: Verify HTTP-free static paths
+        run: |
+          test -s tools/zijin-2259/index.html
+          test -s tools/zijin-2259/styles.css
+          test -s tools/zijin-2259/app.js
+          test -s tools/zijin-2259/markets.js
+          test -s tools/zijin-2259/api/market.js
+          test -s tools/zijin-2259/intelligence.js
+          test -s tools/zijin-2259/news.js
+          test -s tools/zijin-2259/api/news.js
+          test -s tools/zijin-2259/quant.js
+          test -s tools/zijin-2259/quant-ui.js
+          test -s tools/zijin-2259/decision-ui.js
+          test -s tools/zijin-2259/licensed-ui.js
+          test -s tools/zijin-2259/api/licensed-quote.js
+          test -s tools/zijin-2259/portfolio.js
+          test -s tools/zijin-2259/risk-award.js
+          test -s tools/zijin-2259/manual-quote.js
+          grep -q 'name="robots" content="noindex,nofollow"' tools/zijin-2259/index.html

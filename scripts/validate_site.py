@@ -40,6 +40,11 @@ def site_files(suffix):
         out.extend(Path(base)/f for f in files if f.endswith(suffix))
     return out
 html_pages=site_files(".html")
+# The independent 2259 market-research page deliberately has no tracking or
+# public search listing. Keep its asset, JSON-LD and legacy-dependency audits.
+STANDALONE_RESEARCH=TOOLS/"zijin-2259"/"index.html"
+def is_private_research_page(path, html):
+    return path==STANDALONE_RESEARCH and '<meta name="robots" content="noindex,nofollow">' in html
 home_runtime=(ROOT/"assets"/"home-runtime.js").read_text(encoding="utf-8",errors="replace") if (ROOT/"assets"/"home-runtime.js").exists() else ""
 for page in html_pages:
     text=page.read_text(encoding="utf-8",errors="replace")
@@ -47,7 +52,7 @@ for page in html_pages:
     analytics_loaded="/tools/assets/analytics-loader.js" in text
     if page==ROOT/"index.html" and "/assets/home-runtime.js" in text:
         analytics_loaded=analytics_loaded or "/tools/assets/analytics-loader.js" in home_runtime
-    if not is_redirect and not analytics_loaded:
+    if not is_redirect and not analytics_loaded and not is_private_research_page(page,text):
         issues.append((str(page),"missing analytics consent loader"))
 robots_text=(ROOT/"robots.txt").read_text(encoding="utf-8",errors="replace")
 if "Sitemap: https://ragunauthramsaroop.com/tools/sitemap.xml" not in robots_text:
@@ -72,7 +77,7 @@ for path in html_pages:
     for raw in p.jsonscripts:
         try:json.loads(raw)
         except Exception as ex:issues.append((str(path),"invalid JSON-LD: "+str(ex)))
-    if TOOLS in path.parents and path.name=="index.html" and path.parent.name!="assets":
+    if TOOLS in path.parents and path.name=="index.html" and path.parent.name!="assets" and not is_private_research_page(path,s):
         if not p.canonical or not p.canonical.startswith("https://ragunauthramsaroop.com/tools/"):issues.append((str(path),"canonical mismatch"))
         if p.canonical not in locs:issues.append((str(path),"missing from root sitemap"))
         if path.parent.parent==TOOLS and path.parent.name not in ("privacy","categories"):

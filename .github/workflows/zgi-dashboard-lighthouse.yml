@@ -1,0 +1,30 @@
+name: Lighthouse ZGI research dashboard
+on:
+  pull_request:
+    paths:
+      - "tools/zijin-2259/**"
+      - ".github/lighthouse/lighthouserc-zgi-*.json"
+      - ".github/workflows/zgi-dashboard-lighthouse.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  lighthouse:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    strategy:
+      fail-fast: false
+      matrix:
+        mode: [mobile, desktop]
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          persist-credentials: false
+      - name: Audit ZGI terminal route
+        uses: treosh/lighthouse-ci-action@v12
+        with:
+          configPath: ./.github/lighthouse/lighthouserc-zgi-${{ matrix.mode }}.json
+          uploadArtifacts: true
+          temporaryPublicStorage: false

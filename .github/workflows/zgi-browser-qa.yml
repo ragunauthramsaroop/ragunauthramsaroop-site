@@ -1,0 +1,46 @@
+name: ZGI browser interaction and model QA
+on:
+  pull_request:
+    paths:
+      - "tools/zijin-2259/**"
+      - "tests/zijin-browser-e2e.cjs"
+      - "tests/zijin-forensic-layout.cjs"
+      - ".github/workflows/zgi-browser-qa.yml"
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  browser-qa:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - name: Checkout project
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          persist-credentials: false
+      - name: Set Node.js
+        uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020
+        with:
+          node-version: '22'
+      - name: Install browser test runner
+        run: npm install --no-save --package-lock=false playwright
+      - name: Install Chromium
+        run: npx playwright install --with-deps chromium
+      - name: Serve static site
+        run: |
+          python3 -m http.server 4173 --bind 127.0.0.1 > /tmp/zgi-http.log 2>&1 &
+          sleep 2
+          curl -fsS http://127.0.0.1:4173/tools/zijin-2259/ > /dev/null
+      - name: Test charts, local payoff and small screens
+        run: node tests/zijin-browser-e2e.cjs
+
+      - name: Forensic seven-viewport geometry and screenshot audit
+        run: node tests/zijin-forensic-layout.cjs
+      - name: Upload screenshot and layout evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: zgi-forensic-layout-evidence
+          path: test-results/zijin-forensic/
+          if-no-files-found: warn
+          retention-days: 14
