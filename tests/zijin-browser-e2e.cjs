@@ -108,6 +108,21 @@ async function run(){
     await page.locator('#mine-bars button.mine-row').filter({hasText:'Aurora'}).click();
     assert.match(await page.locator('#mine-selection').textContent(),/Aurora/);
   });
+  await check('Private user-observed HKEX reference and explicit award handoff',async()=>{
+    const delayed=(await page.locator('#live-stock-price').textContent()).trim();
+    await page.locator('#manual-2259-input').fill('151.35');
+    await page.locator('#manual-2899-input').fill('30.20');
+    await page.locator('#manual-quote-provider').selectOption('etnet');
+    await page.locator('#manual-quote-form button[type="submit"]').click();
+    assert.match(await page.locator('#manual-2259-output').textContent(),/HK\\$151\\.35/);
+    assert.match(await page.locator('#manual-2259-delta').textContent(),/provider-delayed/);
+    assert.match(await page.locator('#manual-quote-status').textContent(),/USER-ENTERED REFERENCE/);
+    assert.equal(await page.locator('#manual-quote-award').isEnabled(),true);
+    await page.locator('#manual-quote-award').click();
+    assert.equal(await page.locator('#target').inputValue(),'151.35');
+    assert.match(await page.locator('#calc-market-context').textContent(),/USER-ENTERED REFERENCE/);
+    assert.equal((await page.locator('#live-stock-price').textContent()).trim(),delayed,'manual reference must not change exchange quote');
+  });
   await check('Real-time permission gate fails closed',async()=>{
     await waitFor(page,()=>document.querySelector('#licensed-connection-state')?.textContent.includes('NOT CONNECTED'),'entitlement gate');
     assert.match(await page.locator('#licensed-status').textContent(),/No HKEX-licensed on-site entitlement/);
