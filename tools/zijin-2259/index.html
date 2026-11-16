@@ -18,6 +18,7 @@
   <script defer src="./quant-ui.js"></script>
   <script defer src="./decision-ui.js"></script>
   <script defer src="./licensed-ui.js"></script>
+  <script defer src="./manual-quote.js"></script>
   <script defer src="./portfolio.js"></script>
   <script defer src="./risk-award.js"></script>
 </head>
@@ -97,6 +98,25 @@
                 <p class="licensed-status" id="licensed-status" role="status">No market-data vendor entitlement has been connected. Delayed research charts stay independent.</p>
               </div>
             </div>
+            <article class="manual-bridge" aria-label="Private user-observed quote workspace">
+              <div class="manual-bridge-heading">
+                <div><span class="realtime-tag">NO ACCOUNT, PAYMENT, OR API KEY</span><h3>Private market-price bridge</h3></div>
+                <span class="source-tag">USER-ENTERED REFERENCE</span>
+              </div>
+              <p>Request a real-time Basic Market Price on the authorised vendor website above. Enter the observed price here for a local comparison against the last delayed stock observation. This bridge does not fetch, scrape, store, publish or authenticate your entered quote.</p>
+              <form id="manual-quote-form" class="manual-quote-form" autocomplete="off">
+                <label>2259.HK <span>Observed HKD/share</span><input id="manual-2259-input" aria-label="User observed Zijin Gold International price in Hong Kong dollars" name="manual-2259" inputmode="decimal" type="number" min="0.01" max="100000" step="0.01" placeholder="e.g. 121.20" autocomplete="off"></label>
+                <label>2899.HK <span>Optional parent benchmark</span><input id="manual-2899-input" aria-label="User observed Zijin Mining price in Hong Kong dollars" name="manual-2899" inputmode="decimal" type="number" min="0.01" max="100000" step="0.01" placeholder="Optional" autocomplete="off"></label>
+                <label>Reference source <span>Selected by you</span><select id="manual-quote-provider" aria-label="Where you observed the stock price"><option value="etnet">etnet BMP service</option><option value="broker">Your licensed broker</option><option value="other">Other user-selected reference</option></select></label>
+                <button type="submit" class="button button-gold">COMPARE PRIVATELY ↗</button>
+              </form>
+              <div class="manual-quote-result" aria-live="polite">
+                <div><span>2259 · PRIVATE INPUT</span><strong id="manual-2259-output">—</strong><small id="manual-2259-delta">Enter an observed price to compare</small></div>
+                <div><span>2899 · PRIVATE INPUT</span><strong id="manual-2899-output">—</strong><small id="manual-2899-delta">Optional comparison</small></div>
+              </div>
+              <div class="manual-quote-footer"><p id="manual-quote-status" role="status">No personal quote entered. This module remains inactive until you submit your own reference.</p><button id="manual-quote-award" class="button button-subtle" type="button" disabled>USE 2259 PRICE IN AWARD MODEL ↗</button></div>
+              <small class="manual-quote-disclosure">Privacy: Your entries remain in browser memory for this tab, never in GitHub, Vercel storage or a server request. Entry time is not an exchange-trade timestamp. The historical charts and empirical bootstrap remain tied to their timestamped delayed source. Always verify exchange quotes independently.</small>
+            </article>
             <p class="realtime-foot">HKEX's Basic Market Prices service is snapshot-only. This website neither scrapes vendor BMP results nor presents Yahoo Finance as HKEX-licensed real-time data. Real-time integration requires explicit vendor distribution and display permission.</p>
           </section>
           <div class="metric-row" aria-live="polite">
