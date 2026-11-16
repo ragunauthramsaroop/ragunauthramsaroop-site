@@ -1,5 +1,5 @@
 {
-  "generated": "15 November 2026",
+  "generated": "16 November 2026",
   "algorithm": "SHA-256",
   "resources": [
     {
@@ -178,9 +178,9 @@
     },
     {
       "path": "/index.html",
-      "sha256": "3cc41da2a80be56d7cd92807c5a14a7b0006d07cbad17fd7d7260b6cba28290d",
-      "bytes": 27280,
-      "generated": "13 November 2026"
+      "sha256": "8adee9004dfe8951c0ee0ae4830755fd3f04e7c8f1451fd3c9caa016a98b554f",
+      "bytes": 24857,
+      "generated": "16 November 2026"
     },
     {
       "path": "/resume.html",
