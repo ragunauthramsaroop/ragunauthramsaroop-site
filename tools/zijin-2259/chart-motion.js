@@ -11,7 +11,7 @@
   const reduced = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
   const state = {bars:[],sourceTime:null,interval:"1d",archive:false,playing:!reduced,following:!!reduced,
     speed:1,progress:0,previousFrame:null,visibleIndex:-1,nextCheck:Date.now()+180000,
-    sourceAvailable:false,latestSourceTime:null};
+    sourceAvailable:false,latestSourceTime:null,lastDraw:0};
   function text(id,value){const el=byId(id);if(el)el.textContent=value;}
   function updateMode(){
     const replay=byId("motion-replay-toggle"),follow=byId("motion-follow");
@@ -29,7 +29,8 @@
     const n=bars.length,l=80,width=1110-80-70,top=26,bottom=352;
     const highs=bars.map(b=>b.h),lows=bars.map(b=>b.l);
     const a=Math.min(...lows),b=Math.max(...highs);
-    const padding=Math.max((b-a)*.045,.01);
+    let padding=(b-a)*.045;
+    if(padding<.01)padding=Math.max(.5,b*.02);
     const min=a-padding,max=b+padding;
     const p=state.following?1:Math.max(0,Math.min(1,state.progress));
     const floatIndex=p*(n-1),index=Math.min(n-1,Math.floor(floatIndex));
@@ -49,7 +50,7 @@
       const delta=Math.max(0,Math.min(100,t-state.previousFrame));
       state.progress += delta * state.speed/REPLAY_MS;
       if(state.progress>=1){state.progress=state.progress%1;state.visibleIndex=-1;}
-      draw();
+      if(t-state.lastDraw>=30){draw();state.lastDraw=t;}
     }
     state.previousFrame=t;
     requestAnimationFrame(frame);
@@ -58,7 +59,7 @@
     const detail=event?.detail||{};
     if(!Array.isArray(detail.bars)||detail.bars.length<2)return;
     const identifier=detail.interval+"|"+detail.sourceTime+"|"+detail.bars.length+"|"+detail.bars.at(-1).t;
-    const old=state.latestSourceTime;
+    const old=state.latestSourceTime,previousInterval=state.interval;
     const changed=state.identifier!==identifier;
     state.identifier=identifier;
     state.bars=detail.bars.filter(bar=>bar&&Number.isFinite(bar.t)&&Number.isFinite(bar.c));
@@ -68,7 +69,7 @@
     state.latestSourceTime=detail.bars.at(-1).t;
     state.sourceAvailable=!detail.archive;
     state.visibleIndex=-1;
-    if(changed&&old!==null&&detail.bars.at(-1).t>old&&state.following){
+    if(changed&&previousInterval===detail.interval&&old!==null&&detail.bars.at(-1).t>old&&state.following){
       text("motion-market-status","NEW VERIFIED "+(state.interval==="15m"?"15-MIN":"DAILY")+" BAR RECEIVED · DELAYED SOURCE");
     }else if(state.archive){
       text("motion-market-status","ARCHIVED DATA · PROVIDER NOT AVAILABLE");
@@ -76,6 +77,8 @@
       text("motion-market-status","CONNECTED TO DELAYED HISTORICAL DATA · NOT A LIVE TICK FEED");
     }
     if(!state.playing)state.progress=1;
+    state.nextCheck=Date.now()+(state.interval==="15m"?60000:180000);
+    updateCountdown();
     draw();
     updateMode();
   }
