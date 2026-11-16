@@ -7,6 +7,7 @@ on:
       - "tests/zijin-dashboard.test.mjs"
       - "tests/zijin-quant.test.mjs"
       - "tests/zijin-licensed-feed.test.mjs"
+      - "tests/zijin-market-integrity.test.mjs"
       - ".github/workflows/zijin-dashboard-check.yml"
   push:
     branches: [main]
@@ -15,6 +16,7 @@ on:
       - "tests/zijin-dashboard.test.mjs"
       - "tests/zijin-quant.test.mjs"
       - "tests/zijin-licensed-feed.test.mjs"
+      - "tests/zijin-market-integrity.test.mjs"
       - ".github/workflows/zijin-dashboard-check.yml"
 
 permissions:
@@ -49,7 +51,7 @@ jobs:
           node --check tools/zijin-2259/risk-award.js
           node --check tools/zijin-2259/manual-quote.js
       - name: Verify market sources, privacy and calculator rules
-        run: node --test tests/zijin-dashboard.test.mjs tests/zijin-quant.test.mjs tests/zijin-licensed-feed.test.mjs
+        run: node --test tests/zijin-dashboard.test.mjs tests/zijin-quant.test.mjs tests/zijin-licensed-feed.test.mjs tests/zijin-market-integrity.test.mjs
       - name: Verify HTTP-free static paths
         run: |
           test -s tools/zijin-2259/index.html
