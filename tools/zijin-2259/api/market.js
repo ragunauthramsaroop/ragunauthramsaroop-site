@@ -21,7 +21,7 @@ export default async function handler(req,res){
   const interval=typeof req.query.interval==="string"?req.query.interval:"1d";
   if(!ALLOWED.has(symbol)||!PERIODS.has(range)||!INTERVALS.has(interval))return makeError(res,400,"Unsupported symbol or range");
   if(interval==="15m"&&!["5d","1mo"].includes(range))return makeError(res,400,"Intraday interval requires 5d or 1mo range");
-  res.setHeader("Cache-Control","public, s-maxage=180, stale-while-revalidate=300");
+  res.setHeader("Cache-Control",interval==="15m"?"public, s-maxage=60, stale-while-revalidate=120":"public, s-maxage=180, stale-while-revalidate=300");
   const controller=new AbortController();
   const timeout=setTimeout(()=>controller.abort(),8000);
   const upstreams=["query1.finance.yahoo.com","query2.finance.yahoo.com"];
@@ -70,9 +70,11 @@ export default async function handler(req,res){
         const last=ohlc.at(-1);
         // Daily market statistics are based on the last verified daily bar,
         // NOT on an upstream metadata refresh clock or unofficial tick price.
-        const lastValidQuote=interval==="1d"?last.c:Number.isFinite(quote)&&quote>0?quote:last.c;
+        // Both daily and 15-minute chart prices derive from the same verified
+        // final historical bar, not an unsupported real-time quote metadata tick.
+        const lastValidQuote=last.c;
         const marketTime=Number.isFinite(time)&&time>0?time:last.t;
-        const observationTime=interval==="1d"?last.t:marketTime;
+        const observationTime=last.t;
         // For daily bars, use the preceding trading session. chartPreviousClose is often
         // the first close in the selected chart range, not the prior day's close.
         const previousClose=Number(interval==="1d"&&ohlc.length>=2?ohlc.at(-2).c:meta.previousClose);
@@ -84,7 +86,7 @@ export default async function handler(req,res){
           exchange:meta.exchangeName||null,exchangeTimezone:meta.exchangeTimezoneName||null,
           providerQuoteTime:new Date(observationTime*1000).toISOString(),
           upstreamMetadataTime:new Date(marketTime*1000).toISOString(),
-          observationType:interval==="1d"?"LAST VALID DAILY BAR":"PROVIDER QUOTE METADATA",
+          observationType:interval==="1d"?"LAST VALID DAILY BAR":interval==="15m"?"LAST VALID 15-MINUTE BAR":"LAST VALID HISTORICAL BAR",
           rejectedCarryForwardBars,
           latestBarTime:new Date(last.t*1000).toISOString(),
           fetchedAt:new Date().toISOString(),

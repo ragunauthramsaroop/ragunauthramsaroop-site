@@ -20,6 +20,18 @@ function bars(symbol){
   }
   return out;
 }
+function intradayFeed(symbol){
+ const original=feed(symbol);
+ const bars=[];
+ const start=Date.UTC(2026,10,13,1,0,0);
+ for(let i=0;i<65;i++){
+  const t=start+i*900000;
+  const c=Number((118+i*.035+Math.sin(i*.3)*1.3).toFixed(2));
+  bars.push({t:Math.floor(t/1000),o:c-.09,h:c+.21,l:c-.25,c,v:250000+i*470});
+ }
+ const last=bars.at(-1);
+ return {...original,bars,interval:'15m',latestBarTime:new Date(last.t*1000).toISOString(),providerQuoteTime:new Date(last.t*1000).toISOString(),regularMarketPrice:last.c};
+}
 function feed(symbol){
  const history=bars(symbol),latest=history.at(-1),prev=history.at(-2);
  return {ok:true,symbol,sourceSymbol:symbol,currency:symbol==='GC=F'?'USD':'HKD',
@@ -40,7 +52,8 @@ async function run(){
   await page.route('**/api/market?**',async route=>{
    const s=new URL(route.request().url()).searchParams.get('symbol');
    if(!['2259.HK','2899.HK','GC=F'].includes(s))return route.fulfill({status:400,body:JSON.stringify({ok:false})});
-   await route.fulfill({status:200,contentType:'application/json',body:JSON.stringify(feed(s))});
+   const is15m=new URL(route.request().url()).searchParams.get('interval')==='15m';
+   await route.fulfill({status:200,contentType:'application/json',body:JSON.stringify(is15m?intradayFeed(s):feed(s))});
   });
   await page.route('**/api/news',route=>route.fulfill({status:200,contentType:'application/json',body:JSON.stringify({ok:true,checkedAt:'2026-11-13T10:00:00Z',articles:[]})}));
   await page.route('**/api/licensed-quote?**',route=>route.fulfill({status:503,contentType:'application/json',body:JSON.stringify({ok:false,status:'not_connected',message:'No licensed on-site quote entitlement configured'})}));
@@ -53,6 +66,36 @@ async function run(){
     assert.equal(await page.locator('#parent-chart svg').count(),1);
     assert.equal(await page.locator('text=Apple Inc.').count(),0);
     assert.match(await page.locator('#live-kpi-2259-asof').textContent(),/HKT/);
+  });
+  await check('Historical candle motion is visible and paused on request',async()=>{
+    await waitFor(page,()=>!!document.querySelector('#market-chart svg [data-motion-line]'),'motion playhead');
+    const play=page.locator('#motion-replay-toggle');
+    if(await play.getAttribute('aria-pressed')==='false')await play.click();
+    const first=await page.locator('#market-chart [data-motion-line]').getAttribute('x1');
+    await page.waitForTimeout(550);
+    const second=await page.locator('#market-chart [data-motion-line]').getAttribute('x1');
+    assert.notEqual(first,second,'historical replay playhead must move');
+    await play.click();
+    assert.equal(await play.getAttribute('aria-pressed'),'false');
+    const paused=await page.locator('#market-chart [data-motion-line]').getAttribute('x1');
+    await page.waitForTimeout(220);
+    assert.equal(await page.locator('#market-chart [data-motion-line]').getAttribute('x1'),paused);
+    assert.match(await page.locator('#motion-mode-label').textContent(),/REPLAY PAUSED/);
+  });
+  await check('15-minute delayed OHLC bars load without changing portfolio daily data',async()=>{
+    await page.locator('[data-chart-interval="15m"]').click();
+    await waitFor(page,()=>/15-MINUTE OHLC/.test(document.querySelector('#market-chart-status')?.textContent||''),'intraday data');
+    assert.equal(await page.locator('[data-chart-interval="15m"]').getAttribute('aria-pressed'),'true');
+    assert.equal(await page.locator('[data-price-range="5d"]').isVisible(),true);
+    assert.match(await page.locator('#market-chart-timestamp').textContent(),/15-minute source observation:/);
+    assert.match(await page.locator('#motion-market-status').textContent(),/DELAYED/);
+    assert.match(await page.locator('#live-kpi-2259-asof').textContent(),/HKT/);
+    await page.locator('#motion-follow').click();
+    assert.equal(await page.locator('#motion-follow').getAttribute('aria-pressed'),'true');
+    assert.match(await page.locator('#motion-observation').textContent(),/LATEST VERIFIED BAR/);
+    await page.locator('[data-chart-interval="1d"]').click();
+    assert.equal(await page.locator('[data-price-range="5d"]').isVisible(),false);
+    assert.equal(await page.locator('[data-chart-interval="1d"]').getAttribute('aria-pressed'),'true');
   });
   await check('Quant distribution reacts to drift changes',async()=>{
     await waitFor(page,()=>!!document.querySelector('#quant-fan-chart svg')&&!document.querySelector('#quant-median-nov')?.textContent.includes('—'),'quant fan');

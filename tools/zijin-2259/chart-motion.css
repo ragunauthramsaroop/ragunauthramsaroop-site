@@ -1,0 +1,27 @@
+/* Provider-delayed market motion, clearly separated from real trade ticks. */
+.market-motion-controls{display:flex;align-items:center;gap:9px;flex-wrap:wrap;padding:9px 8px 11px;border-top:1px solid #293747;border-bottom:1px solid #293747;margin:0 7px 13px}
+.market-motion-controls button{border:1px solid #4a5565;background:#172432;color:#d8e2e9;border-radius:3px;padding:9px 12px;font-size:10px;font-weight:800;cursor:pointer}
+.market-motion-controls button[aria-pressed="true"]{border-color:#b99b65;background:#3b3529;color:#f3d7a4}
+.market-motion-controls button:focus-visible{outline:2px solid #f1d59c;outline-offset:3px}
+.motion-mode-label{margin-left:auto;font-size:9px;line-height:1.6;letter-spacing:.05em;font-weight:800;color:#f0bf7e}
+.market-motion-data{padding:0 8px 9px;display:flex;align-items:center;justify-content:space-between;gap:8px;flex-wrap:wrap;font-size:10px;color:#b6c8d5}
+#motion-observation{font-weight:750;color:#ecd3a7;font-variant-numeric:tabular-nums}
+.motion-market-strip{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;padding:9px 8px 0;color:#9eb2c1;font-size:9px;letter-spacing:.045em}
+.motion-refresh-track{height:3px;margin:8px 8px 0;background:#273849;overflow:hidden;border-radius:4px}
+.motion-refresh-track>span{display:block;height:100%;width:0;background:#d3b074;transition:width 1s linear}
+.native-chart [data-motion-trail]{fill:#e4bd7a;fill-opacity:.055}
+.native-chart [data-motion-line]{stroke:#edcd95;stroke-width:2;stroke-dasharray:6 5;opacity:.92}
+.native-chart [data-motion-dot]{stroke:#0c1420;stroke-width:3;fill:#edcd95}
+.native-chart svg [data-chart-motion]{pointer-events:none}
+.native-controls button[hidden]{display:none!important}
+.motion-interval-controls{display:flex;gap:5px}
+@media(max-width:680px){
+ .market-motion-controls{gap:6px;margin:0 0 10px;padding:10px 0}
+ .market-motion-controls button{font-size:9px;padding:10px 8px;flex:1 1 auto}
+ .motion-mode-label{width:100%;margin-left:0;font-size:9px}
+ .market-motion-data{font-size:9px;padding:0 0 8px}
+ .motion-market-strip{font-size:8px;padding:10px 0 0}
+ .motion-interval-controls{width:100%;justify-content:flex-end}
+ .motion-interval-controls button{flex:1}
+}
+@media(prefers-reduced-motion:reduce){.motion-refresh-track>span{transition:none}}

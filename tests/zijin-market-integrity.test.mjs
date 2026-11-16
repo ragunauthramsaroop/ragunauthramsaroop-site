@@ -57,6 +57,23 @@ test('source without duplicate bars retains the same settled close and change',a
   assert.equal(res.payload.previousClose,126.5);
  });
 });
+test('15-minute chart uses the final verified OHLC bar, not quote metadata time',async()=>{
+ const raw=upstream(false);
+ const data=raw.chart.result[0];
+ data.meta.regularMarketPrice=999;
+ data.meta.regularMarketTime=unix('2026-11-16T01:23:29.000Z');
+ data.timestamp=[unix('2026-11-13T08:00:00.000Z'),unix('2026-11-13T08:15:00.000Z')];
+ await withMockProvider(raw,async()=>{
+  const res=fakeResponse();
+  await handler({method:'GET',query:{symbol:'2259.HK',range:'1mo',interval:'15m'}},res);
+  assert.equal(res.code,200);
+  assert.equal(res.payload.regularMarketPrice,121.2);
+  assert.equal(res.payload.providerQuoteTime,'2026-11-13T08:15:00.000Z');
+  assert.equal(res.payload.upstreamMetadataTime,'2026-11-16T01:23:29.000Z');
+  assert.equal(res.payload.observationType,'LAST VALID 15-MINUTE BAR');
+  assert.match(res.headers['Cache-Control'],/s-maxage=60/);
+ });
+});
 test('quote metadata refresh never overrides daily-bar HKEX price',async()=>{
  const data=upstream(false);data.chart.result[0].meta.regularMarketPrice=250;
  await withMockProvider(data,async()=>{
