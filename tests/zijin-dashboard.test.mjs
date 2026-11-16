@@ -6,7 +6,7 @@ const html=readFileSync(root+'index.html','utf8');
 const visualFirst=readFileSync(root+'visual-first.js','utf8');
 const visualCss=readFileSync(root+'visual-first.css','utf8');
 test('visual-first assets precede core application and preserve private controls',()=>{
- assert.match(html,/visual-first\\.css/);
+ assert.match(html,/visual-first[.]css/);
  assert.ok(html.indexOf('visual-first.js')<html.indexOf('app.js'));
  for(const target of ['overview-grid','realtime-access','quant-controls','model-controls','award-risk-panel'])assert.match(visualFirst,new RegExp(target));
  assert.match(visualCss,/quant-main/);
