@@ -39,6 +39,7 @@ jobs:
           node --check tools/zijin-2259/visual-first.js
           node --check tools/zijin-2259/app.js
           node --check tools/zijin-2259/markets.js
+          node --check tools/zijin-2259/chart-motion.js
           node --check tools/zijin-2259/api/market.js
           node --check tools/zijin-2259/intelligence.js
           node --check tools/zijin-2259/news.js
@@ -61,6 +62,8 @@ jobs:
           test -s tools/zijin-2259/visual-first.css
           test -s tools/zijin-2259/app.js
           test -s tools/zijin-2259/markets.js
+          test -s tools/zijin-2259/chart-motion.js
+          test -s tools/zijin-2259/chart-motion.css
           test -s tools/zijin-2259/api/market.js
           test -s tools/zijin-2259/intelligence.js
           test -s tools/zijin-2259/news.js
