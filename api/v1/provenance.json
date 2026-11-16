@@ -130,9 +130,9 @@
     },
     {
       "path": "/assets/search-index.json",
-      "sha256": "f67f2862c6e9516247335ad3d5023471afd0dc403e783600ea845cc6eda0e1d6",
-      "bytes": 346103,
-      "generated": "13 November 2026"
+      "sha256": "ccba6f8ceb01aba2dd8da81a1e496e31d0956ce77c6dead0f4e8937d165c7d04",
+      "bytes": 347959,
+      "generated": "16 November 2026"
     },
     {
       "path": "/api/v1/capabilities.json",
