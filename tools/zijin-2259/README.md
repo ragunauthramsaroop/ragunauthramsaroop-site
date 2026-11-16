@@ -111,3 +111,15 @@ Reports and source links:
 ### What is still outside the application
 
 A licensed redistributable HKEX real-time stock quote feed remains unavailable without a contract and vendor credentials. Free BMP snapshots work only on an authorised provider's website, not as an unrestricted streaming data API. No institutional DCF accuracy claim, calibrated 2029 probability, complete mine-by-mine cost history or audited future outcome is represented as finished.
+
+
+## No-license user-controlled price bridge
+
+The dashboard includes a personal price-reference workspace beneath the authorised free BMP vendor link. A visitor obtains a snapshot on the etnet licensed information-vendor website and voluntarily types the observed 2259.HK price, with an optional 2899.HK comparison. The app computes a local percentage deviation versus the timestamped provider-delayed historical quote. With an additional explicit click, the 2259 reference populates the private conditional award scenario input.
+
+This implementation deliberately does **not** scrape, poll, link directly to a BMP result, imitate exchange timestamps, store or transmit the typed price, overwrite quote-history data, modify the official quote banner, or relabel a bootstrap simulation as a market-verified forecast. The entry time is browser time, not a validated exchange timestamp. Manual entry is a research aid, not a substitute for an HKEX-licensed automated datafeed.
+
+Official legal explanation: HKEX's April 2023 guiding notes for BMP require user-requested snapshots and prohibit automatic refreshing and direct result-page links:
+https://www.hkex.com.hk/-/media/HKEX-Market/Services/Market-Data-Services/Real-Time-Data-Services/Data-Licensing/Licence-Agreements-Guiding-Notes-Vendor-Licence/Guiding-Notes/Guiding-Notes-on-Basic-Market-Prices-Service_eng-v202304.pdf
+
+The existing dedicated licensed provider API is still the direct upgrade path once redisplay and retrieval rights are documented. Neither GitHub, an unauthenticated open-source wrapper nor Yahoo historical bars grants a lawful streaming licence.
