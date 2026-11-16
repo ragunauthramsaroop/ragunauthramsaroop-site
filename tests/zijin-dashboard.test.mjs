@@ -16,6 +16,19 @@ test('visual-first assets precede core application and preserve private controls
 const css=readFileSync(root+'styles.css','utf8');
 const app=readFileSync(root+'app.js','utf8');
 const market=readFileSync(root+'markets.js','utf8');
+const motion=readFileSync(root+'chart-motion.js','utf8');
+test('replay is labelled historical and never claims real-time trade ticks',()=>{
+ assert.match(html,/HISTORICAL REPLAY[^<]*NOT LIVE TRADES/);
+ assert.match(html,/15-MIN DELAYED/);
+ assert.ok(html.indexOf('markets.js')<html.indexOf('chart-motion.js'));
+ assert.match(motion,/zgi:chart/);
+ assert.match(motion,/reduced-motion/);
+ assert.match(motion,/FOLLOW DELAYED SOURCE/);
+ assert.match(market,/refreshIntraday/);
+ assert.match(market,/\[data-motion-line\]/);
+ assert.doesNotMatch(motion,/Math\\.random/);
+});
+
 const analytics=readFileSync(root+'intelligence.js','utf8');
 const news=readFileSync(root+'news.js','utf8');
 const api=readFileSync(root+'api/market.js','utf8');
