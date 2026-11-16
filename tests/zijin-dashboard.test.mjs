@@ -19,7 +19,7 @@ const market=readFileSync(root+'markets.js','utf8');
 const motion=readFileSync(root+'chart-motion.js','utf8');
 test('replay is labelled historical and never claims real-time trade ticks',()=>{
  assert.match(html,/HISTORICAL REPLAY[^<]*NOT LIVE TRADES/);
- assert.match(html,/15-MIN DELAYED/);
+ assert.match(html,/15-MIN BARS/);
  assert.ok(html.indexOf('markets.js')<html.indexOf('chart-motion.js'));
  assert.match(motion,/zgi:chart/);
  assert.match(motion,/reduced-motion/);
