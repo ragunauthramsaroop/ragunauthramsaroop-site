@@ -114,7 +114,7 @@ async function run(){
     await page.locator('#manual-2899-input').fill('30.20');
     await page.locator('#manual-quote-provider').selectOption('etnet');
     await page.locator('#manual-quote-form button[type="submit"]').click();
-    assert.match(await page.locator('#manual-2259-output').textContent(),/HK\\$151\\.35/);
+    assert.match(await page.locator('#manual-2259-output').textContent(),/HK\$151\.35/);
     assert.match(await page.locator('#manual-2259-delta').textContent(),/provider-delayed/);
     assert.match(await page.locator('#manual-quote-status').textContent(),/USER-ENTERED REFERENCE/);
     assert.equal(await page.locator('#manual-quote-award').isEnabled(),true);
