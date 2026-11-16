@@ -167,3 +167,16 @@ test('award loss frequencies derive from private share count and exact model obs
  assert.doesNotMatch(risk,/fetch\(|localStorage|sessionStorage|XMLHttpRequest/);
  assert.match(html,/<input id="shares"[^>]*value=""/);
 });
+
+test("User-observed price stays local and cannot replace exchange history",()=>{
+ const manual=readFileSync(root+'manual-quote.js','utf8');
+ const app=readFileSync(root+'app.js','utf8');
+ assert.match(html,/id="manual-quote-form"/);
+ assert.match(html,/id="manual-quote-award"/);
+ assert.match(html,/src="\.\/manual-quote\.js"/);
+ assert.match(manual,/zgi:manual-price/);
+ assert.match(app,/zgi:manual-price/);
+ assert.match(app,/USER-ENTERED REFERENCE/);
+ assert.doesNotMatch(manual,/fetch\s*\(|XMLHttpRequest|localStorage|sessionStorage|sendBeacon|indexedDB/);
+ assert.match(html,/This bridge does not fetch, scrape, store, publish or authenticate/);
+});
