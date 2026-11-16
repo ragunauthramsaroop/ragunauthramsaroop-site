@@ -1,0 +1,40 @@
+/* Graphics-first order. Keeps the original design tokens and panel components. */
+.visual-first #overview{padding-top:20px;padding-bottom:0}
+.visual-first #overview .hero-heading{min-height:170px}
+.visual-first #overview .hero-heading h1{font-size:clamp(42px,4.7vw,67px)}
+.visual-first #overview .hero-lead{margin:11px 0 15px;line-height:1.55}
+.visual-first #overview .gold-orbit{width:160px;height:160px}
+.visual-first #overview .orbit-ring{width:118px;height:118px}
+.visual-first #overview .orbit-ring span{font-size:32px}
+.visual-first #overview .integrity-strip{margin-bottom:14px}
+.visual-first #charting{padding-top:22px}
+.visual-first #charting .section-head{margin-bottom:14px}
+.visual-first #charting .overview-grid{margin-top:16px}
+.visual-first #risk-lab .quant-main,.visual-first #scenarios .dynamic-model-grid{display:block}
+.visual-first #risk-lab .quant-main .quant-forecast,
+.visual-first #scenarios .dynamic-model-grid .dynamic-forecast-panel{width:100%}
+.visual-first #risk-lab .quant-controls,.visual-first #scenarios .model-controls{margin-top:16px}
+.visual-first #technicals .two-column{grid-template-columns:minmax(0,1fr)}
+.visual-first #technicals .signal-notes{margin-top:16px}
+.visual-first #settlement .award-risk-panel{margin:0 0 16px}
+.visual-first #sources>.realtime-access{margin:17px 0}
+.visual-first #sources>.license-compliance{margin-bottom:0}
+.visual-first .chart-panel,.visual-first .dynamic-forecast-panel,
+.visual-first .quant-forecast,.visual-first .stress-panel{min-width:0}
+@media (max-width:680px){
+  .visual-first #overview{padding-top:12px}
+  .visual-first #overview .hero-heading{min-height:139px}
+  .visual-first #overview .hero-heading h1{font-size:clamp(37px,10vw,49px);line-height:1.04}
+  .visual-first #overview .hero-lead{font-size:11px;line-height:1.45;max-width:100%;margin:9px 0 8px}
+  .visual-first #overview .gold-orbit{display:none}
+  .visual-first #overview .integrity-strip{padding:10px 12px;margin-bottom:10px}
+  .visual-first #overview .metric-row{gap:8px;margin-bottom:12px}
+  .visual-first #overview .metric-card{padding:12px;min-height:116px}
+  .visual-first #overview .metric-value{font-size:clamp(19px,6vw,25px)}
+  .visual-first #charting{padding-top:15px}
+  .visual-first #charting .section-head{margin-bottom:12px}
+  .visual-first #charting .overview-grid{margin-top:12px}
+  .visual-first #technicals .signal-notes,
+  .visual-first #risk-lab .quant-controls,
+  .visual-first #scenarios .model-controls{margin-top:11px}
+}
