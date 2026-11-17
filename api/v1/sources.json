@@ -1,12 +1,12 @@
 {
-  "generated": "2026-11-16T20:24:53+00:00",
+  "generated": "2026-11-17T19:09:46+00:00",
   "sources": [
     {
       "name": "Guyana Bureau of Statistics",
       "url": "https://statisticsguyana.gov.gy/",
       "category": "economy",
       "note": "National statistics and headline indicators.",
-      "checked_at": "2026-11-16T20:24:53+00:00",
+      "checked_at": "2026-11-17T19:09:46+00:00",
       "status": "ok",
       "changed": false,
       "http_status": 200,
@@ -18,31 +18,31 @@
       "url": "https://www.ggmc.gov.gy/",
       "category": "mining",
       "note": "Mining regulation, geoscience and mineral data.",
-      "checked_at": "2026-11-16T20:24:53+00:00",
+      "checked_at": "2026-11-17T19:09:46+00:00",
       "status": "ok",
       "changed": false,
       "http_status": 200,
       "sha256": "63e828e1b630018fc15f0c2fcc359d4c755a0420592bf8292f577fc89efe361a",
-      "content_length": 414115
+      "content_length": 414994
     },
     {
       "name": "Guyana Energy Agency",
       "url": "https://gea.gov.gy/",
       "category": "energy",
       "note": "Energy policy, licensing, statistics and renewable-energy information.",
-      "checked_at": "2026-11-16T20:24:53+00:00",
+      "checked_at": "2026-11-17T19:09:46+00:00",
       "status": "ok",
       "changed": true,
       "http_status": 200,
-      "sha256": "909075f8dfd4cd6bfef4b340a9c06a9a0158e769fa1ae0e4c8f1c94c7453de87",
-      "content_length": 142401
+      "sha256": "a262d62e883eca0bccbd22addbd09b3553eafdea74d0768f5074cb24e67579f2",
+      "content_length": 142506
     },
     {
       "name": "Guyana Ministry of Finance",
       "url": "https://finance.gov.gy/",
       "category": "fiscal",
       "note": "Budget, mid-year reports and fiscal information.",
-      "checked_at": "2026-11-16T20:24:53+00:00",
+      "checked_at": "2026-11-17T19:09:46+00:00",
       "status": "ok",
       "changed": false,
       "http_status": 200,
@@ -54,7 +54,7 @@
       "url": "https://api.worldbank.org/v2/country/GUY?format=json",
       "category": "international-data",
       "note": "International development indicator source.",
-      "checked_at": "2026-11-16T20:24:53+00:00",
+      "checked_at": "2026-11-17T19:09:46+00:00",
       "status": "ok",
       "changed": false,
       "http_status": 200,
@@ -66,43 +66,43 @@
       "url": "https://epaguyana.org/",
       "category": "environment",
       "note": "Environmental authorization, assessment and compliance information.",
-      "checked_at": "2026-11-16T20:24:53+00:00",
+      "checked_at": "2026-11-17T19:09:46+00:00",
       "status": "ok",
-      "changed": false,
+      "changed": true,
       "http_status": 200,
-      "sha256": "7b3c0bc0e866fb2ff5393f1bb2a5c1675c2253978e3019a9e80040889c2c08ae",
-      "content_length": 1469498
+      "sha256": "66c2e2f6f660e747f2eb4d4626ec0e2e22f4732e669a3590b532e4d60cd17d1c",
+      "content_length": 1470628
     },
     {
       "name": "Guyana Power and Light",
       "url": "https://gplinc.com/",
       "category": "energy",
       "note": "Electricity utility, service and grid information.",
-      "checked_at": "2026-11-16T20:24:53+00:00",
+      "checked_at": "2026-11-17T19:09:46+00:00",
       "status": "ok",
       "changed": false,
       "http_status": 200,
       "sha256": "17f9c74b451e58a4c39b6964b27d34026addb4a557f9d4a5c450fc6ce5757236",
-      "content_length": 46254
+      "content_length": 75668
     },
     {
       "name": "Guyana Revenue Authority",
       "url": "https://www.gra.gov.gy/",
       "category": "revenue",
       "note": "Taxation, customs and revenue administration information.",
-      "checked_at": "2026-11-16T20:24:53+00:00",
+      "checked_at": "2026-11-17T19:09:46+00:00",
       "status": "ok",
       "changed": false,
       "http_status": 200,
       "sha256": "34cfa836ef5f7cf5131ab3dc414f8ec9dec7246feb94bafbeca2370b392dee15",
-      "content_length": 359247
+      "content_length": 359310
     },
     {
       "name": "Guyana National Bureau of Standards",
       "url": "https://gnbsgy.org/",
       "category": "standards",
       "note": "Standards, metrology and conformity services.",
-      "checked_at": "2026-11-16T20:24:53+00:00",
+      "checked_at": "2026-11-17T19:09:46+00:00",
       "status": "ok",
       "changed": false,
       "http_status": 200,
@@ -114,7 +114,7 @@
       "url": "https://gcaa-gy.org/",
       "category": "aviation",
       "note": "Civil aviation regulation and oversight information.",
-      "checked_at": "2026-11-16T20:24:53+00:00",
+      "checked_at": "2026-11-17T19:09:46+00:00",
       "status": "ok",
       "changed": false,
       "http_status": 200,
@@ -126,7 +126,7 @@
       "url": "https://mopw.gov.gy/",
       "category": "infrastructure",
       "note": "Public works and transport infrastructure information.",
-      "checked_at": "2026-11-16T20:24:53+00:00",
+      "checked_at": "2026-11-17T19:09:46+00:00",
       "status": "ok",
       "changed": false,
       "http_status": 200,
@@ -138,10 +138,10 @@
       "url": "https://goinvest.gov.gy/",
       "category": "investment",
       "note": "Investment facilitation and investor information.",
-      "checked_at": "2026-11-16T20:24:53+00:00",
+      "checked_at": "2026-11-17T19:09:46+00:00",
       "status": "error",
       "changed": false,
-      "error": "HTTPSConnectionPool(host='goinvest.gov.gy', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='goinvest.gov.gy', port=443) at 0x74bc4216cfe0>, 'Connection to goinvest.gov.gy timed out. (connect"
+      "error": "HTTPSConnectionPool(host='goinvest.gov.gy', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='goinvest.gov.gy', port=443) at 0x7bce7a3cdd30>, 'Connection to goinvest.gov.gy timed out. (connect"
     }
   ]
 }

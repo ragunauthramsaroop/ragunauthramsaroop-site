@@ -1,5 +1,5 @@
 {
-  "generated": "16 November 2026",
+  "generated": "17 November 2026",
   "algorithm": "SHA-256",
   "resources": [
     {
@@ -112,9 +112,9 @@
     },
     {
       "path": "/data/guyana-live.json",
-      "sha256": "db1a83af4bd773b7e3ead7a4908a888d99a19b929d8553e54b9136cbb7f34595",
-      "bytes": 1014,
-      "generated": "16 November 2026"
+      "sha256": "4494b246368c293579d18db2e1300d0397efada82787a3c9fa5834b41efad3ca",
+      "bytes": 1686,
+      "generated": "17 November 2026"
     },
     {
       "path": "/data/source-sources.json",
@@ -148,9 +148,9 @@
     },
     {
       "path": "/api/v1/guyana.json",
-      "sha256": "db1a83af4bd773b7e3ead7a4908a888d99a19b929d8553e54b9136cbb7f34595",
-      "bytes": 1014,
-      "generated": "16 November 2026"
+      "sha256": "4494b246368c293579d18db2e1300d0397efada82787a3c9fa5834b41efad3ca",
+      "bytes": 1686,
+      "generated": "17 November 2026"
     },
     {
       "path": "/api/v1/methodology.json",
@@ -172,9 +172,9 @@
     },
     {
       "path": "/api/v1/sources.json",
-      "sha256": "677c5617908f42ac05c2d7883cbdf8276014d85e78e11e4d6ef48f0d4bd3fe59",
-      "bytes": 5413,
-      "generated": "16 November 2026"
+      "sha256": "252edec9a73ebcb7b4703c61cf1cc85c35b14ad47c132af086567dd1cb1a5b56",
+      "bytes": 5412,
+      "generated": "17 November 2026"
     },
     {
       "path": "/index.html",
@@ -196,9 +196,9 @@
     },
     {
       "path": "/data/source-monitor.json",
-      "sha256": "677c5617908f42ac05c2d7883cbdf8276014d85e78e11e4d6ef48f0d4bd3fe59",
-      "bytes": 5413,
-      "generated": "16 November 2026"
+      "sha256": "252edec9a73ebcb7b4703c61cf1cc85c35b14ad47c132af086567dd1cb1a5b56",
+      "bytes": 5412,
+      "generated": "17 November 2026"
     },
     {
       "path": "/public-record/index.html",
