@@ -22,3 +22,27 @@
 @media(max-width:760px){.page-hero.premium{padding:33px 22px}.page-hero.premium h1{font-size:clamp(39px,9vw,60px)}.content-grid.premium-grid .content-main>.profile-block{padding:24px 22px 25px 31px}.content-grid.premium-grid .profile-block h2{font-size:clamp(25px,6.4vw,34px)}.content-grid.premium-grid .profile-block p{font-size:14px}}
 @media(prefers-reduced-motion:reduce){.content-grid.premium-grid .content-main>.profile-block{transition:none}.content-grid.premium-grid .content-main>.profile-block:hover{transform:none}}
 @media(prefers-contrast:more){.page-hero.premium p,.page-hero.premium .page-signal p{color:#fff}.content-grid.premium-grid .profile-block p{color:#243c32}}
+
+/* Coordinated executive journey motion, progressive and accessible. */
+.page-hero.premium .page-signal{transition:border-color .35s ease,box-shadow .35s ease,transform .4s cubic-bezier(.2,.82,.2,1)}
+.content-grid.premium-grid .content-main>.profile-block{transition:transform .38s cubic-bezier(.2,.82,.2,1),border-color .3s ease,box-shadow .38s ease}
+.content-grid.premium-grid .profile-block:before{transition:background-color .3s ease,box-shadow .3s ease}
+.content-grid.premium-grid .profile-block:focus-within{outline:2px solid #b38e55;outline-offset:4px}
+@media(hover:hover) and (pointer:fine){
+.page-hero.premium .page-signal:hover{transform:translateY(-4px);border-color:#ebc992;box-shadow:0 28px 58px #061d1740}
+.content-grid.premium-grid .content-main>.profile-block:hover{transform:translateY(-5px);box-shadow:0 24px 47px #0a2c201a}
+.content-grid.premium-grid .content-main>.profile-block:hover:before{background:#bb945a;box-shadow:0 0 0 6px #eae7dc}
+}
+@media(prefers-reduced-motion:no-preference){
+@keyframes executive-enter{from{opacity:.7;transform:translateY(17px)}to{opacity:1;transform:translateY(0)}}
+.page-hero.premium h1{animation:executive-enter .85s cubic-bezier(.2,.82,.2,1) both}
+.page-hero.premium .page-signal{animation:executive-enter .85s cubic-bezier(.2,.82,.2,1) .16s both}
+}
+@supports(animation-timeline:view()){
+@media(prefers-reduced-motion:no-preference){
+@keyframes executive-section-enter{from{opacity:.85;translate:0 17px}to{opacity:1;translate:0 0}}
+.content-grid.premium-grid .content-main>.profile-block{animation:executive-section-enter linear both;animation-timeline:view(block);animation-range:entry 0% entry 70%}
+}}
+@media(prefers-reduced-motion:reduce){
+.page-hero.premium h1,.page-hero.premium .page-signal,.content-grid.premium-grid .content-main>.profile-block{animation:none!important;transform:none!important;transition:none!important;opacity:1!important;translate:none!important}
+}
