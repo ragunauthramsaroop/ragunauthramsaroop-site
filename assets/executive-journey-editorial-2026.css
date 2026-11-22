@@ -1,0 +1,24 @@
+/* Executive journey visual refinement, first-party and CSS-only, 2026-11-22. */
+.page-hero.premium{position:relative;isolation:isolate;overflow:hidden;background:radial-gradient(ellipse 60% 80% at 95% 2%,#c69e6338,transparent 70%),linear-gradient(124deg,#08261e,#123d32 74%,#0d3026);color:#fbf6ea;border-radius:3px;border:1px solid #bfa77850;padding:clamp(32px,5vw,70px);gap:clamp(25px,4vw,60px)}
+.page-hero.premium:before{content:"";position:absolute;pointer-events:none;border:1px solid #d8bd8e30;width:min(54vw,580px);height:min(54vw,580px);border-radius:50%;right:-160px;top:-320px}
+.page-hero.premium h1{max-width:790px;font:400 clamp(42px,5.8vw,76px)/1.03 Georgia,"Iowan Old Style",serif;letter-spacing:-.051em;color:#fff9eb;text-wrap:balance}
+.page-hero.premium .eyebrow{font-weight:750;letter-spacing:.14em;text-transform:uppercase;color:#e7c48d}
+.page-hero.premium p{max-width:71ch;line-height:1.79;color:#dce7df}
+.page-hero.premium .page-breadcrumb,.page-hero.premium .page-breadcrumb a,.page-hero.premium .page-breadcrumb span{color:#f0e8d5}
+.page-hero.premium .page-signal{background:#faf3e911;border:1px solid #dac49e73;box-shadow:0 18px 44px #061d1745;border-radius:3px;padding:clamp(22px,2.8vw,36px)}
+.page-hero.premium .page-signal span{color:#e8c98e}
+.page-hero.premium .page-signal strong{color:#fffaf0}
+.page-hero.premium .page-signal p{color:#dce7df}
+.content-grid.premium-grid{position:relative;gap:clamp(35px,4vw,65px)}
+.content-grid.premium-grid .content-main>.profile-block{position:relative;padding:27px 28px 33px 50px;margin:0 0 16px;background:linear-gradient(135deg,#fffdf8,#f5f4ef);border:1px solid #d7dbd2;border-left:2px solid #b89a65;border-radius:2px;box-shadow:0 6px 18px #0a2c2010;transition:transform .25s ease,border-color .25s ease,box-shadow .25s ease}
+.content-grid.premium-grid .content-main>.profile-block:before{content:"";position:absolute;top:38px;left:-7px;width:12px;height:12px;border:2px solid #dfc18d;background:#173f32;border-radius:50%;box-shadow:0 0 0 5px #f8f6f0}
+.content-grid.premium-grid .profile-block .section-number{display:inline-block;color:#917048;font-size:11px;letter-spacing:.15em;font-weight:850;margin-bottom:10px}
+.content-grid.premium-grid .profile-block h2{font:400 clamp(25px,2.8vw,37px)/1.16 Georgia,"Iowan Old Style",serif;letter-spacing:-.035em;color:#15362c;margin:4px 0 14px;max-width:24ch}
+.content-grid.premium-grid .profile-block p{max-width:72ch;color:#4d655a;line-height:1.85;font-size:14px}
+.content-grid.premium-grid .profile-block a{color:#75582e;font-weight:700;text-underline-offset:4px}
+.content-grid.premium-grid .profile-next{border-top:2px solid #b89a65;background:#e9eee8;padding:clamp(23px,3vw,37px);border-radius:2px}
+.content-grid.premium-grid .profile-next h2{font:400 clamp(27px,3vw,40px)/1.17 Georgia,"Iowan Old Style",serif;letter-spacing:-.034em}
+@media(hover:hover) and (pointer:fine){.content-grid.premium-grid .content-main>.profile-block:hover{transform:translateY(-2px);border-color:#b9ac95;box-shadow:0 15px 36px #0a2c2017}}
+@media(max-width:760px){.page-hero.premium{padding:33px 22px}.page-hero.premium h1{font-size:clamp(39px,9vw,60px)}.content-grid.premium-grid .content-main>.profile-block{padding:24px 22px 25px 31px}.content-grid.premium-grid .profile-block h2{font-size:clamp(25px,6.4vw,34px)}.content-grid.premium-grid .profile-block p{font-size:14px}}
+@media(prefers-reduced-motion:reduce){.content-grid.premium-grid .content-main>.profile-block{transition:none}.content-grid.premium-grid .content-main>.profile-block:hover{transform:none}}
+@media(prefers-contrast:more){.page-hero.premium p,.page-hero.premium .page-signal p{color:#fff}.content-grid.premium-grid .profile-block p{color:#243c32}}
