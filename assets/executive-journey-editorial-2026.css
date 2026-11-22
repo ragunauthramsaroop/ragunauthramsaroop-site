@@ -46,3 +46,29 @@
 @media(prefers-reduced-motion:reduce){
 .page-hero.premium h1,.page-hero.premium .page-signal,.content-grid.premium-grid .content-main>.profile-block{animation:none!important;transform:none!important;transition:none!important;opacity:1!important;translate:none!important}
 }
+
+/* EDITION 05 | Executive journey aligned with the flagship dossier. */
+.page-hero.premium{background:radial-gradient(ellipse at 90% 20%,#b18d573c,transparent 65%),linear-gradient(127deg,#061c20,#123a33 72%,#08282a);border:1px solid #b3966850;box-shadow:0 28px 68px #102d251b;min-height:390px}
+.page-hero.premium:before{border-color:#d4b27d59;right:-110px;top:-235px;width:min(56vw,620px);height:min(56vw,620px)}
+.page-hero.premium .eyebrow{color:#edca90}
+.page-hero.premium h1{font:400 clamp(45px,5.7vw,78px)/1.04 "Iowan Old Style",Georgia,serif;letter-spacing:-.061em;color:#fff9ef;max-width:820px}
+.page-hero.premium p{color:#e4e8df;max-width:68ch}
+.page-hero.premium .page-signal{background:#fff9ed0b;border-color:#dcc29081;box-shadow:0 26px 62px #04181863}
+.content-grid.premium-grid{gap:clamp(28px,4vw,70px)}
+.content-grid.premium-grid .content-main>.profile-block{background:linear-gradient(128deg,#fffdf8,#f1f3eb);border:1px solid #d1dbd0;border-left:3px solid #b59766;box-shadow:0 10px 27px #102e240b;padding:clamp(26px,3vw,39px) clamp(28px,3vw,43px) clamp(28px,3vw,42px) clamp(36px,4vw,55px)}
+.content-grid.premium-grid .content-main>.profile-block:before{top:43px}
+.content-grid.premium-grid .profile-block h2{color:#0f3a31;font:400 clamp(29px,3vw,41px)/1.15 "Iowan Old Style",Georgia,serif;letter-spacing:-.047em;max-width:28ch}
+.content-grid.premium-grid .profile-block p{color:#445f52;font-size:14px;line-height:1.85}
+.content-grid.premium-grid .profile-block .section-number{color:#856232}
+.content-grid.premium-grid .profile-next{background:#e1ebe2;border-top:2px solid #bc965c}
+@media(hover:hover) and (pointer:fine){
+.content-grid.premium-grid .content-main>.profile-block:hover{transform:translateY(-4px);border-color:#b1c7b7;box-shadow:0 22px 51px #0c2e2217}
+}
+@media(max-width:760px){
+.page-hero.premium{min-height:0;padding:35px 23px}
+.page-hero.premium h1{font-size:clamp(41px,10vw,61px)}
+.content-grid.premium-grid .content-main>.profile-block{padding:26px 23px 29px 31px}
+}
+@media(prefers-reduced-motion:reduce){
+.content-grid.premium-grid .content-main>.profile-block,.page-hero.premium .page-signal{transition:none!important;transform:none!important}
+}
