@@ -72,3 +72,22 @@
 @media(prefers-reduced-motion:reduce){
 .content-grid.premium-grid .content-main>.profile-block,.page-hero.premium .page-signal{transition:none!important;transform:none!important}
 }
+
+/* Restore true editorials against legacy selectors with stronger specificity. */
+.shell main .page-hero.premium{
+ background:radial-gradient(ellipse 67% 80% at 85% 15%,#b68e5242,transparent 76%),linear-gradient(130deg,#071e22,#154338 75%,#092b2d)!important;
+ color:#fff9eb!important;border-color:#b89d6a94!important;
+}
+.shell main .page-hero.premium:before{display:none!important}
+.shell main .page-hero.premium h1{color:#fff8e8!important;-webkit-text-fill-color:#fff8e8!important;font-family:"Iowan Old Style",Georgia,serif!important;letter-spacing:-.06em!important}
+.shell main .page-hero.premium .page-breadcrumb,.shell main .page-hero.premium .page-breadcrumb a,.shell main .page-hero.premium .page-breadcrumb span{color:#ece3cc!important;-webkit-text-fill-color:#ece3cc!important}
+.shell main .page-hero.premium .eyebrow{color:#e9c38a!important;-webkit-text-fill-color:#e9c38a!important}
+.shell main .page-hero.premium>div:first-child>p:last-child{color:#e1e9e0!important;-webkit-text-fill-color:#e1e9e0!important}
+.shell main .page-hero.premium .page-signal{background:#062b2870!important;border:1px solid #d6b78089!important}
+.shell main .page-hero.premium .page-signal span{color:#f1d7a3!important;-webkit-text-fill-color:#f1d7a3!important}
+.shell main .page-hero.premium .page-signal strong{color:#fff9ed!important;-webkit-text-fill-color:#fff9ed!important}
+.shell main .page-hero.premium .page-signal p{color:#e0e9df!important;-webkit-text-fill-color:#e0e9df!important}
+.shell .topbar .menu-button{background:#faf8f1!important;border:1px solid #37584b!important;color:#153a32!important;-webkit-text-fill-color:#153a32!important;box-shadow:none!important}
+.shell .topbar .menu-button svg{stroke:#153a32!important;color:#153a32!important}
+.shell .topbar .menu-button:focus-visible{outline:3px solid #bf995b!important;outline-offset:3px}
+@media(max-width:760px){.shell main .page-hero.premium{padding:33px 22px!important}}
