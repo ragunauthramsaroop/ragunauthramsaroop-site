@@ -608,3 +608,10 @@ section{break-inside:avoid}
 .proof-lab__network{display:none}
 .lens-copy{display:none}
 }
+
+/* One-page briefing handoff from each executive reader mode. */
+.lens-export{display:inline-flex;align-items:center;gap:14px;min-height:43px;margin:22px 16px 0 0;color:#f0d49c;border:1px solid #d1b17e8c;padding:9px 15px;text-decoration:none;font-size:12px;font-weight:750;transition:background .25s ease,transform .3s ease}
+.lens-export:hover{background:#dec08a21;transform:translateY(-2px)}
+.lens-export span{font-size:18px}
+@media(max-width:520px){.lens-export{margin-right:0;min-height:46px}}
+@media print{.lens-export{display:none!important}}
