@@ -120,6 +120,14 @@ async def run():
               await page.screenshot(path=str(OUT/f"{name}.png"),animations="disabled",full_page=False)
               if key=="home" and device=="desktop":
                   await page.screenshot(path=str(OUT/"home-fullpage-desktop.png"),animations="disabled",full_page=True)
+              if key=="living-dossier":
+                  await page.locator(".lens-studio__interface").screenshot(
+                      path=str(OUT/f"executive-briefing-{device}.png"), animations="disabled")
+                  await page.locator("#proof-lab").screenshot(
+                      path=str(OUT/f"evidence-atlas-{device}.png"), animations="disabled")
+                  if device=="desktop":
+                      await page.screenshot(path=str(OUT/"experience-fullpage-desktop.png"),
+                                            animations="disabled",full_page=True)
               observation={"route":route,"device":device,"status":response.status if response else None,**measured}
               observations.append(observation)
               await ctx.close()
