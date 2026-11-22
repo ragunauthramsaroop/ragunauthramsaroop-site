@@ -53,6 +53,7 @@ img{max-width:100%;height:auto}
 .cover:before{content:"";position:absolute;z-index:-3;inset:0;background:radial-gradient(ellipse 54% 70% at 88% 25%,#be96543b,transparent 75%),radial-gradient(ellipse 65% 80% at 13% 96%,#326f552b,transparent 75%),linear-gradient(115deg,#071e21 0%,#0f3834 58%,#051b20 100%)}
 .cover:after{content:"";position:absolute;z-index:-2;inset:0;pointer-events:none;opacity:.16;background:radial-gradient(circle at var(--pointer-x,76%) var(--pointer-y,33%),#f2cf9270,transparent 30%)}
 .cover-grid{position:absolute;inset:0;z-index:-2;opacity:.35;pointer-events:none;background:repeating-linear-gradient(90deg,transparent 0 149px,#d2b68516 150px,transparent 151px),linear-gradient(180deg,transparent 90%,#debf8b12)}
+.connection-field{position:absolute;inset:0;z-index:-1;pointer-events:none;opacity:.47;max-width:100%}.connection-field[hidden]{display:none}
 .cover-noise{position:absolute;z-index:-1;inset:0;pointer-events:none;opacity:.25;background-image:radial-gradient(#c9b69342 .6px,transparent .7px);background-size:7px 7px;mask-image:linear-gradient(90deg,transparent,#000)}
 .cover-content{position:relative;z-index:3;width:100%;padding:clamp(65px,7vw,120px) 4% clamp(86px,7vw,125px) max(35px,calc((100vw - var(--max))/2));max-width:950px}
 .cover .eyebrow{color:#f0cb91;white-space:nowrap}
