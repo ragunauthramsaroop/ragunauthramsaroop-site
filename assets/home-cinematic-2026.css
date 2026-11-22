@@ -113,3 +113,12 @@ body .flag-speaking__foot{color:#fff}
 body .ms-cref{border-color:#fff}
 }
 @media print{body:before{display:none!important}body .flag-hero__copy:before,body .flag-hero h1,body .flag-hero__statement,body .flag-hero__summary,body .flag-hero__portrait-wrap{animation:none!important}}
+/* Restore the compact editorial briefing layout without secondary-route CSS. */
+@media(max-width:1100px){
+.flag-editorial-note{grid-template-columns:170px minmax(0,1fr);gap:20px 35px}
+.flag-editorial-note>a{grid-column:2}
+}
+@media(max-width:790px){
+.flag-editorial-note{width:min(calc(100% - 36px),var(--max));grid-template-columns:minmax(0,1fr);gap:16px;padding:32px 0}
+.flag-editorial-note>a{grid-column:1;max-width:330px;min-width:0}
+}
