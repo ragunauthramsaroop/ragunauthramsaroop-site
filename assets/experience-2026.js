@@ -283,7 +283,6 @@
       });
     }
   }
-}
   /* The audience briefing is a progressive enhancement. Without JavaScript,
      all three links navigate directly to their complete, accessible pages. */
   const lensTabs = $$("[data-lens]");
