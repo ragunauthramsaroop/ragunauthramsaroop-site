@@ -16,3 +16,18 @@
 @media(max-width:620px){.wrap{padding-left:17px;padding-right:17px}.wrap>h1{font-size:clamp(37px,11vw,55px)}.library-stats{grid-template-columns:repeat(2,minmax(0,1fr))}.library-stats div{padding:16px 13px}.paper,.white-paper{min-width:0}}
 @media(prefers-reduced-motion:reduce){.paper,.white-paper{transition:none}.paper:hover,.white-paper:hover{transform:none}}
 @media(prefers-contrast:more){.paper p,.white-paper p{color:#283d33}.note{color:#203328}}
+
+/* Edition 05. Final library treatment loads after the shared uniform theme. */
+body main.wrap .library-stats{background:linear-gradient(110deg,#0a332e,#174c3b)!important;border:1px solid #ae94678c!important;border-top:2px solid #c6aa77!important;box-shadow:0 20px 50px #0b30211b!important;padding:5px 12px}
+body main.wrap .library-stats div{border-color:#e5cf9a42!important;padding:21px 20px}
+body main.wrap .library-stats strong{color:#f3d6a6!important;-webkit-text-fill-color:#f3d6a6!important;font:400 clamp(26px,2.7vw,35px)/1.1 "Iowan Old Style",Georgia,serif}
+body main.wrap .library-stats span{color:#dce9e1!important;-webkit-text-fill-color:#dce9e1!important;font-size:11px}
+body main.wrap .paper,body main.wrap .white-paper,body main.wrap .paper:nth-child(n),body main.wrap .white-paper:nth-child(n){background:#fffcf6!important;border:1px solid #d3d7cb!important;border-radius:2px!important;box-shadow:0 9px 25px #0a2c200e}
+body main.wrap .paper:before,body main.wrap .white-paper:before{height:3px;background:linear-gradient(90deg,#ad8954,#d6b783)}
+body main.wrap .paper h2{font:400 clamp(28px,2.6vw,36px)/1.12 "Iowan Old Style",Georgia,serif;letter-spacing:-.046em;color:#11382e}
+body main.wrap .paper p,body main.wrap .white-paper p{color:#41594e!important}
+body main.wrap .white-paper h3{font-family:"Iowan Old Style",Georgia,serif;letter-spacing:-.043em;color:#11382e}
+body main.wrap .btn{border-radius:2px}
+@media(hover:hover) and (pointer:fine){body main.wrap .paper:hover,body main.wrap .white-paper:hover{transform:translateY(-4px);box-shadow:0 22px 50px #0a2c2020;border-color:#b8c6b4!important}}
+@media(max-width:520px){body main.wrap .library-stats{grid-template-columns:repeat(2,minmax(0,1fr));padding:0 8px}body main.wrap .library-stats div{padding:16px 12px}body main.wrap .library-stats div:nth-child(-n+2){border-bottom:1px solid #e5cf9a42!important}body main.wrap .library-stats div:nth-child(2){border-right:0}}
+@media(prefers-reduced-motion:reduce){body main.wrap .paper,body main.wrap .white-paper{transition:none!important;transform:none!important;animation:none!important}}
