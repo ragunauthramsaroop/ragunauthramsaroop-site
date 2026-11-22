@@ -218,45 +218,7 @@ body .site-header .brand-text small{color:#816c4e;letter-spacing:.16em}
 body .site-header .nav-links{gap:23px;font-size:12px}
 body .site-header .nav-links a{color:#26443b}
 body .site-header .nav-links .nav-cta{background:#103831;color:#fff7e9;border:1px solid #103831;padding:13px 21px}
-body .flag-hero{background:#f5f1e8;color:#173831;border:0}
-body .flag-hero:before{inset:0;opacity:1;background:linear-gradient(90deg,#f5f1e8 0 calc(50% + 72px),#103536 calc(50% + 72px) 100%)}
-body .flag-hero:after{inset:0 0 0 calc(50% + 72px);opacity:.36;mask-image:none;background:radial-gradient(circle at 49% 30%,rgba(224,189,130,.2),transparent 57%),repeating-linear-gradient(90deg,transparent 0 99px,rgba(238,225,199,.06) 100px,transparent 101px)}
-body .flag-hero__interior{width:min(calc(100% - 52px),1320px);grid-template-columns:minmax(0,1.11fr) minmax(370px,.84fr);gap:clamp(45px,6.5vw,108px);padding:67px 0 65px;min-height:700px;align-items:center}
-body .flag-hero__copy{align-self:center;padding:0}
-body .flag-hero__copy:before{top:-22px;background:#ae8555;width:50px;height:2px}
-body .flag-hero__topline{color:#866c49;font-size:10px;letter-spacing:.18em}
-body .flag-hero__topline .signal{background:#b28b58}
-body .flag-kicker{color:#476b5d;font-size:10px;letter-spacing:.14em;margin:28px 0 21px}
-body .flag-hero h1{color:#0e302c;font:400 clamp(66px,6.9vw,111px)/.91 "Iowan Old Style","Palatino Linotype",Georgia,serif;letter-spacing:-.073em;max-width:780px}
-body .flag-hero h1 em{color:#ad8350;letter-spacing:-.077em}
-body .flag-hero__statement{color:#1a4239;font-size:clamp(29px,2.85vw,44px);line-height:1.17;letter-spacing:-.039em;margin-top:29px;max-width:660px}
-body .flag-hero__statement span{color:#9b7145}
-body .flag-hero__summary{border-left:2px solid #b59362;padding-left:19px;color:#456055;font-size:15px;line-height:1.76;margin-top:25px;max-width:615px}
-body .flag-actions{gap:11px;margin-top:30px}
-body .flag-button{min-height:53px;padding:14px 19px;border-radius:1px;font-size:12px;box-shadow:none}
-body .flag-button:hover{transform:none}
-body .flag-button--gold{background:#123d35;color:#fff9ed;border:1px solid #123d35;box-shadow:none}
-body .flag-button--gold:hover{background:#235649;color:#fff}
-body .flag-button--outline{background:transparent;border:1px solid #8da294;color:#153b34}
-body .flag-button--outline:hover{background:#e6ebe3;border-color:#496b5b;color:#143e35}
-body .flag-hero__profile{max-width:484px;margin-left:auto;padding:26px 26px 30px;align-self:center;background:#103536;border:1px solid rgba(230,204,154,.24);box-shadow:0 22px 55px rgba(5,24,23,.11)}
-body .flag-hero__profile:after{inset:15px -15px -15px 20px;border-radius:0;border:1px solid rgba(219,190,137,.23)}
-body .flag-hero__orbit{opacity:.13;filter:none}
-body .flag-hero__portrait-wrap{aspect-ratio:4/3.87;border:7px solid #ece8db;border-radius:1px;background:#faf7ee;box-shadow:0 24px 58px rgba(0,15,16,.26)}
-body .flag-hero__portrait-line{inset:11px;border-radius:0;border-color:rgba(237,216,176,.74)}
-body .flag-hero .portrait{object-position:center 15%;filter:saturate(.88) contrast(1.035)}
-body .flag-hero__portrait-wrap:after{inset:55% 0 0;background:linear-gradient(transparent,rgba(7,29,26,.82))}
-body .flag-hero__image-caption{left:26px;bottom:20px;letter-spacing:.1em}
-body .flag-hero__position{padding:17px 0 0;margin:19px 0 0;border-top:1px solid rgba(235,221,193,.3)}
-body .flag-hero__position span{color:#debd87;font-size:10px}
-body .flag-hero__position strong{color:#fff6e8;font-size:14px}
-body .flag-hero__position small{color:#c5d9cb}
-body .flag-hero__bottomline{width:100%;min-height:52px;margin:0;padding-inline:max(26px,calc((100vw - 1320px)/2));background:#e7ebe2;border:0;color:#60786c;font-size:10px}
-body .flag-hero__bottomline a{color:#174638}
-body .flag-proof{background:#103934;border:0;padding-inline:max(26px,calc((100vw - 1320px)/2))}
-body .flag-proof>div{padding:30px 23px;border-color:rgba(239,226,192,.24)}
-body .flag-proof strong{color:#f1d7a9;font-size:clamp(27px,2.95vw,39px)}
-body .flag-proof span{color:#d0dfd3;font-size:10px}
+/* Edition 05: outdated split-cover overrides retired. */
 /* Executive finish gate: evidence moves out of the first-screen portrait. */
 body .flag-honours{background:#faf9f4;border-bottom:1px solid #d9d9cf;padding:62px max(26px,calc((100vw - 1320px)/2));display:grid;grid-template-columns:minmax(200px,.78fr) minmax(0,2fr);gap:clamp(30px,5vw,70px);align-items:start}
 body .flag-honours__intro p{margin:0 0 12px;color:#8e693b;text-transform:uppercase;letter-spacing:.15em;font-size:10px;font-weight:800}
