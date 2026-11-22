@@ -162,6 +162,17 @@ def main():
             page.locator('.mobile-nav a[href="#mandate"]').click()
             expect(page.locator('.mobile-nav')).not_to_have_attribute("open", "")
             assert page.evaluate("document.documentElement.scrollWidth <= innerWidth + 2"), "Mobile dossier overflows"
+            # Progressive enhancement: without JavaScript, the three briefing
+            # perspectives remain ordinary navigable links.
+            no_js = browser.new_context(javascript_enabled=False, viewport={"width":390,"height":844},
+                                        service_workers="block")
+            no_js_page = no_js.new_page()
+            no_js_page.goto(base + "/experience/", wait_until="domcontentloaded")
+            expect(no_js_page.locator('a[data-lens]')).to_have_count(3)
+            expect(no_js_page.locator('a[data-lens="recruiter"]')).to_have_attribute("href", "/recruiter-toolkit/")
+            expect(no_js_page.locator('a[data-lens="speaking"]')).to_have_attribute("href", "/media/")
+            expect(no_js_page.locator('a[data-claim-id]')).to_have_count(6)
+            no_js.close()
             # Narrow 320px phones must also remain usable.
             page.set_viewport_size({"width": 320, "height": 750})
             assert page.evaluate("document.documentElement.scrollWidth <= innerWidth + 2"), "320px dossier overflows"
