@@ -309,6 +309,7 @@
   };
   const linkForLens = $("#lens-primary");
   const secondaryForLens = $("#lens-secondary");
+  const exportForLens = $("#lens-export");
   let selectedLens = "board";
   function applyLens(name, updateUrl = false, focus = false) {
     const data = lensData[name];
@@ -330,6 +331,7 @@
     linkForLens.href = data.primary.url;
     linkForLens.replaceChildren(document.createTextNode(data.primary.text + " ↗"));
     secondaryForLens.href = data.secondary.url;
+    if(exportForLens) exportForLens.href = "/briefing/?lens=" + encodeURIComponent(name);
     secondaryForLens.replaceChildren(document.createTextNode(data.secondary.text + " ↗"));
     if (updateUrl && window.history && window.history.replaceState) {
       const url = new URL(window.location.href);
