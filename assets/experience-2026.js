@@ -338,6 +338,10 @@
     }
   }
   if (lensTabs.length === 3 && lensPanel && linkForLens && secondaryForLens) {
+    $(".lens-tabs")?.setAttribute("role", "tablist");
+    lensPanel.setAttribute("role", "tabpanel");
+    lensPanel.tabIndex = 0;
+    lensTabs.forEach(tab => {tab.setAttribute("role","tab");tab.setAttribute("aria-controls","lens-summary");});
     lensTabs.forEach((tab, index) => {
       tab.addEventListener("click", event => {
         event.preventDefault();
