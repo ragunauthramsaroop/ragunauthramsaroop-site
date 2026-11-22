@@ -140,7 +140,12 @@ def main():
             page.locator('.mobile-nav a[href="#mandate"]').click()
             expect(page.locator('.mobile-nav')).not_to_have_attribute("open", "")
             assert page.evaluate("document.documentElement.scrollWidth <= innerWidth + 2"), "Mobile dossier overflows"
-            results.append("PASS living executive dossier: four accessible lenses, keyboard control, real photo gallery, 390px mobile and source links")
+            # Narrow 320px phones must also remain usable.
+            page.set_viewport_size({"width": 320, "height": 750})
+            assert page.evaluate("document.documentElement.scrollWidth <= innerWidth + 2"), "320px dossier overflows"
+            expect(page.locator(".mobile-nav summary")).to_be_visible()
+            expect(page.locator(".cover-title")).to_be_visible()
+            results.append("PASS living executive dossier: four accessible lenses, keyboard control, real photo gallery, 390px/320px mobile and source links")
 
             # Pre-rendered executive pages must work without stale React hydration.
             page.set_viewport_size({"width": 390, "height": 844})
