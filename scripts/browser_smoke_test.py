@@ -119,6 +119,7 @@ def main():
             page.locator('a[data-lens="recruiter"]').click()
             expect(page.locator('#lens-title')).to_have_text('The executive-search dossier.')
             expect(page.locator('#lens-primary')).to_have_attribute("href", "/recruiter-toolkit/")
+            expect(page.locator('#lens-export')).to_have_attribute("href", "/briefing/?lens=recruiter")
             expect(page.locator('a[data-lens="recruiter"]')).to_have_attribute("aria-selected", "true")
             assert "lens=recruiter" in page.url
             page.locator('a[data-lens="recruiter"]').press("ArrowRight")
@@ -179,6 +180,42 @@ def main():
             expect(page.locator(".mobile-nav summary")).to_be_visible()
             expect(page.locator(".cover-title")).to_be_visible()
             results.append("PASS edition 07: executive briefing modes, source-backed six-claim network, mandate controls, gallery and first-fold mobile portrait")
+
+            # Executive brief builder: three audience versions, canonical sources,
+            # print media, no-JS fallback and mobile viewports.
+            page.set_viewport_size({"width": 1280, "height": 900})
+            page.goto(base + "/briefing/?lens=recruiter", wait_until="load")
+            expect(page.locator("#brief-edition")).to_have_text("02 / EXECUTIVE SEARCH")
+            expect(page.locator("#brief-title")).to_contain_text("A documented progression.")
+            expect(page.locator("#source-list a")).to_have_count(3, timeout=12000)
+            expect(page.locator('[data-brief="recruiter"]')).to_have_attribute("aria-current", "true")
+            page.locator('[data-brief="speaker"]').click()
+            expect(page.locator("#brief-edition")).to_have_text("03 / CONFERENCES & MEDIA")
+            expect(page.locator("#source-list a")).to_have_count(3)
+            expect(page.locator("#source-list")).to_contain_text("CREF")
+            assert "lens=speaker" in page.url
+            page.locator('[data-brief="board"]').click()
+            expect(page.locator("#brief-title")).to_contain_text("Accountable execution.")
+            expect(page.locator("#source-list")).to_contain_text("UNGIS")
+            page.emulate_media(media="print")
+            expect(page.locator(".site-navigation")).to_be_hidden()
+            expect(page.locator("#print-brief")).to_be_hidden()
+            expect(page.locator("#brief-title")).to_be_visible()
+            page.emulate_media(media="screen")
+            for width in (390, 320):
+                page.set_viewport_size({"width": width, "height": 844})
+                assert page.evaluate("document.documentElement.scrollWidth <= innerWidth + 2"), (
+                    f"Executive brief has horizontal overflow at {width}px"
+                )
+                expect(page.locator("#brief-title")).to_be_visible()
+            printless = browser.new_context(java_script_enabled=False, viewport={"width":390,"height":844},
+                                            service_workers="block")
+            printless_page = printless.new_page()
+            printless_page.goto(base + "/briefing/", wait_until="domcontentloaded")
+            expect(printless_page.locator('[data-brief="recruiter"]')).to_have_attribute("href", "/recruiter-toolkit/")
+            expect(printless_page.locator("#brief-title")).to_be_visible()
+            printless.close()
+            results.append("PASS board/recruiter/speaker source-backed printable briefs and 390px/320px layouts")
 
             # Pre-rendered executive pages must work without stale React hydration.
             page.set_viewport_size({"width": 390, "height": 844})

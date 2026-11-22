@@ -112,6 +112,7 @@ jobs:
           node --check service-worker.js
           node --check assets/home-runtime.js
           node --check assets/experience-2026.js
+          node --check assets/executive-brief-2026.js
           node --check assets/executive-static-nav.js
           node --check assets/accessibility.js
           node --check assets/research-assistant.js

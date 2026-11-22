@@ -13,6 +13,7 @@ xml=path.read_text(encoding="utf-8")
 required={
     "/":0.95,
     "/experience/":0.95,
+    "/briefing/":0.85,
     "/resume.html":0.90,
     "/public-record/":0.85,
     "/claim-graph/":0.80,
@@ -44,7 +45,7 @@ for base in ("white-papers","research-library","insights","book"):
 
 for route,priority in sorted(required.items()):
     url=SITE+route
-    route_lastmod="2026-11-22" if route=="/experience/" else lastmod
+    route_lastmod="2026-11-22" if route in ("/experience/","/briefing/") else lastmod
     if f"<loc>{url}</loc>" in xml:
         pattern=r"(<loc>"+re.escape(url)+r"</loc>\s*<lastmod>)[^<]+(</lastmod>)"
         xml=re.sub(pattern,rf"\g<1>{route_lastmod}\g<2>",xml,count=1)
