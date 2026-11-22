@@ -93,10 +93,19 @@ def main():
                             mainRight: rect ? rect.right : window.innerWidth
                         };
                     }""")
-                    assert metrics["scrollWidth"] <= metrics["innerWidth"] + 2, (
-                        f"Horizontal overflow on {route} at {width}px: "
-                        f"{metrics['scrollWidth']} > {metrics['innerWidth']}"
-                    )
+                    if metrics["scrollWidth"] > metrics["innerWidth"] + 2:
+                        offenders = page.evaluate("""() => [...document.querySelectorAll("body *")].map(el => {
+                          const r=el.getBoundingClientRect();
+                          return {element:el.tagName.toLowerCase()+"."+(el.className?.baseVal||el.className||"").toString().slice(0,65),
+                            left:Math.round(r.left),right:Math.round(r.right),width:Math.round(r.width),
+                            scroll:el.scrollWidth,client:el.clientWidth};
+                        }).filter(x => x.right > innerWidth+2 || x.left < -2 || x.scroll > x.client+30)
+                          .sort((a,b)=>b.right-a.right).slice(0,14)""")
+                        raise AssertionError(
+                            f"Horizontal overflow on {route} at {width}px: "
+                            f"{metrics['scrollWidth']} > {metrics['innerWidth']}; "
+                            f"offenders={offenders}"
+                        )
                     assert metrics["mainLeft"] >= -2 and metrics["mainRight"] <= metrics["innerWidth"] + 2, (
                         f"Main content escapes viewport on {route} at {width}px: {metrics}"
                     )

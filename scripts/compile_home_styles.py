@@ -1,4 +1,4 @@
-"""Build the single render-blocking homepage stylesheet from four maintained CSS sources.
+"""Build the single render-blocking homepage stylesheet from maintained, homepage-only CSS sources.
 
 Preserves selector order, media queries and authoring source files.
 Removes comments / unnecessary CSS formatting and converts numeric rgba colours
@@ -18,6 +18,7 @@ LAYERS = (
     "assets/home-signature-2026.css",
     "assets/flagship-system-2026.css",
     "assets/speaking-home.css",
+    "assets/home-cinematic-2026.css",
 )
 OUTPUT = ROOT / "assets/home-compiled-2026.css"
 RGBA = re.compile(r"rgba\(\s*(\d{1,3})\s*,\s*(\d{1,3})\s*,\s*(\d{1,3})\s*,\s*(0?\.\d+|1(?:\.0+)?|0)\s*\)", re.I)
@@ -33,7 +34,19 @@ def compact_rgba(match: re.Match[str]) -> str:
 
 
 def compile_css() -> str:
-    source = "\n\n".join((ROOT / path).read_text("utf-8") for path in LAYERS)
+    def homepage_layer(path: str) -> str:
+        source = (ROOT / path).read_text("utf-8")
+        if path == "assets/flagship-system-2026.css":
+            # Secondary executive routes still load the complete standalone stylesheet.
+            # Do not ship their unused selectors in the homepage critical CSS.
+            section_start = "/* Recruiter editorial dossier. */"
+            mobile_start = "/* Executive first-screen fit. */"
+            if section_start not in source or mobile_start not in source:
+                raise ValueError("Flagship CSS section markers changed")
+            source = source.split(section_start, 1)[0] + source.split(mobile_start, 1)[1].join([mobile_start, ""])
+        return source
+
+    source = "\n\n".join(homepage_layer(path) for path in LAYERS)
     # This set of reviewed local CSS sources contains no comments within
     # string literals or whitespace-sensitive quoted text.
     compact = re.sub(r"/\*[\s\S]*?\*/", "", source)
