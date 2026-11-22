@@ -20,7 +20,8 @@ ROUTES={
   "recruiter-screen":"/recruiter-mode/",
   "recruiter-toolkit":"/recruiter-toolkit/",
   "leadership":"/leadership/",
-  "research-library":"/research-library/"
+  "research-library":"/research-library/",
+  "living-dossier":"/experience/"
 }
 VIEWPORTS={"desktop":(1440,900),"mobile":(390,844)}
 
@@ -88,7 +89,8 @@ async def run():
                   return Math.round(100*(Math.max(x,y)+.05)/(Math.min(x,y)+.05))/100;
                 };
                 const research=location.pathname==='/research-library/';
-                const theme=location.pathname==='/'?'home-compiled-2026.css':location.pathname==='/leadership/'?'executive-journey-editorial-2026.css':'flagship-system-2026.css';
+                const living=location.pathname==='/experience/';
+                const theme=location.pathname==='/'?'home-compiled-2026.css':living?'experience-2026.css':location.pathname==='/leadership/'?'executive-journey-editorial-2026.css':'flagship-system-2026.css';
                 const header=document.querySelector('.shell .topbar');
                 const bg=header?getComputedStyle(header).backgroundColor:null;
                 const entries=header?[header.querySelector('.brand > div'),...header.querySelectorAll('.navlinks a:not(.contact-chip)'),header.querySelector('.menu-button')]:[];
