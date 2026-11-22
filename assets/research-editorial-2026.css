@@ -1,0 +1,18 @@
+/* Research reading experience, original first-party styling, 2026-11-22. */
+.wrap{max-width:1200px}
+.wrap>h1{font-size:clamp(43px,6.8vw,79px);line-height:1.01;letter-spacing:-.056em;max-width:850px;text-wrap:balance}
+.wrap>.lead{max-width:74ch}
+.library-stats{background:#fbfaf5;border:1px solid #d8dbd1;border-top:3px solid #ad8954;box-shadow:0 14px 38px #0a2e2110}
+.library-stats strong{font-family:Georgia,"Iowan Old Style",serif;font-weight:400;letter-spacing:-.03em}
+.library-section-head{border-bottom:1px solid #c9d2c7;padding-bottom:18px}
+.paper,.white-paper{position:relative;isolation:isolate;overflow:hidden;border:1px solid #d8ded5;border-top:3px solid #af956d;background:linear-gradient(145deg,#fffefa,#f5f6ef);box-shadow:0 9px 25px #0a2e210d;transition:box-shadow .25s ease,border-color .25s ease,transform .25s ease}
+.paper:before,.white-paper:before{content:"";position:absolute;pointer-events:none;z-index:-1;top:-115px;right:-115px;width:250px;height:250px;border:1px solid #cbb89a33;border-radius:50%}
+.paper h3,.white-paper h3{font-family:Georgia,"Iowan Old Style",serif;font-weight:400;letter-spacing:-.032em;line-height:1.18;text-wrap:balance;color:#14392d}
+.paper p,.white-paper p{max-width:66ch;line-height:1.72}
+.paper a,.white-paper a{text-underline-offset:4px}
+.paper a:focus-visible,.white-paper a:focus-visible{outline:3px solid #a98442;outline-offset:4px}
+.note{border-left:3px solid #ad8954;background:#ecefe7;color:#274037}
+@media(hover:hover) and (pointer:fine){.paper:hover,.white-paper:hover{border-color:#bca274;box-shadow:0 17px 42px #0a2e211d;transform:translateY(-2px)}}
+@media(max-width:620px){.wrap{padding-left:17px;padding-right:17px}.wrap>h1{font-size:clamp(37px,11vw,55px)}.library-stats{grid-template-columns:repeat(2,minmax(0,1fr))}.library-stats div{padding:16px 13px}.paper,.white-paper{min-width:0}}
+@media(prefers-reduced-motion:reduce){.paper,.white-paper{transition:none}.paper:hover,.white-paper:hover{transform:none}}
+@media(prefers-contrast:more){.paper p,.white-paper p{color:#283d33}.note{color:#203328}}
