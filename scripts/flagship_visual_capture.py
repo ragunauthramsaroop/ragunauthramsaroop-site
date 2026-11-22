@@ -18,7 +18,9 @@ ROUTES={
   "executive-profile":"/executive-profile/",
   "board-ceo":"/board-ceo-mode/",
   "recruiter-screen":"/recruiter-mode/",
-  "recruiter-toolkit":"/recruiter-toolkit/"
+  "recruiter-toolkit":"/recruiter-toolkit/",
+  "leadership":"/leadership/",
+  "research-library":"/research-library/"
 }
 VIEWPORTS={"desktop":(1440,900),"mobile":(390,844)}
 
@@ -29,7 +31,7 @@ class Quiet(SimpleHTTPRequestHandler):
     this preview-only rewrite, legacy <base> sends all CSS and JS to the live
     website, so a local screenshot silently captures old production styling.
     """
-    LEGACY={"/executive-profile/","/board-ceo-mode/","/recruiter-mode/"}
+    LEGACY={"/executive-profile/","/board-ceo-mode/","/recruiter-mode/","/leadership/"}
 
     def do_GET(self):
         route=self.path.split("?",1)[0]
@@ -85,7 +87,8 @@ async def run():
                   if(x===null||y===null)return null;
                   return Math.round(100*(Math.max(x,y)+.05)/(Math.min(x,y)+.05))/100;
                 };
-                const theme=location.pathname==='/'?'home-compiled-2026.css':'flagship-system-2026.css';
+                const research=location.pathname==='/research-library/';
+                const theme=location.pathname==='/'?'home-compiled-2026.css':location.pathname==='/leadership/'?'executive-journey-editorial-2026.css':'flagship-system-2026.css';
                 const header=document.querySelector('.shell .topbar');
                 const bg=header?getComputedStyle(header).backgroundColor:null;
                 const entries=header?[header.querySelector('.brand > div'),...header.querySelectorAll('.navlinks a:not(.contact-chip)'),header.querySelector('.menu-button')]:[];
@@ -94,9 +97,9 @@ async def run():
                   h1:[...document.querySelectorAll('h1')].map(e=>e.innerText.trim()),
                   scrollWidth:document.documentElement.scrollWidth,
                   viewport:innerWidth,
-                  css:[...document.querySelectorAll('link[rel=stylesheet]')].some(e=>e.href.includes(theme)),
-                  cssLoaded:[...document.styleSheets].some(e=>e.href&&e.href.includes(theme)),
-                  cssLocal:[...document.styleSheets].some(e=>e.href&&e.href.startsWith(location.origin+'/assets/'+theme)),
+                  css:research?document.querySelector('style')!==null:[...document.querySelectorAll('link[rel=stylesheet]')].some(e=>e.href.includes(theme)),
+                  cssLoaded:research?[...document.styleSheets].some(e=>!e.href):[...document.styleSheets].some(e=>e.href&&e.href.includes(theme)),
+                  cssLocal:research?true:[...document.styleSheets].some(e=>e.href&&e.href.startsWith(location.origin+'/assets/'+theme)),
                   baseURI:document.baseURI,
                   headerBackground:bg,
                   headerBrandFill:header?.querySelector('.brand>div')?getComputedStyle(header.querySelector('.brand>div')).webkitTextFillColor:null,
@@ -113,6 +116,8 @@ async def run():
               }""")
               name=f"{key}-{device}"
               await page.screenshot(path=str(OUT/f"{name}.png"),animations="disabled",full_page=False)
+              if key=="home" and device=="desktop":
+                  await page.screenshot(path=str(OUT/"home-fullpage-desktop.png"),animations="disabled",full_page=True)
               observation={"route":route,"device":device,"status":response.status if response else None,**measured}
               observations.append(observation)
               await ctx.close()
