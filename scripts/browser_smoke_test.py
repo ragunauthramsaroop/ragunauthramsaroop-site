@@ -164,7 +164,7 @@ def main():
             assert page.evaluate("document.documentElement.scrollWidth <= innerWidth + 2"), "Mobile dossier overflows"
             # Progressive enhancement: without JavaScript, the three briefing
             # perspectives remain ordinary navigable links.
-            no_js = browser.new_context(javascript_enabled=False, viewport={"width":390,"height":844},
+            no_js = browser.new_context(java_script_enabled=False, viewport={"width":390,"height":844},
                                         service_workers="block")
             no_js_page = no_js.new_page()
             no_js_page.goto(base + "/experience/", wait_until="domcontentloaded")
