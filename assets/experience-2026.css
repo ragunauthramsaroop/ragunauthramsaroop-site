@@ -421,3 +421,13 @@ html{scroll-behavior:auto}
 section{break-inside:avoid}
 .js-enhanced .reveal,.cover .reveal{opacity:1!important;transform:none!important;animation:none!important}
 }
+@media(max-width:365px){
+.identity-word{font-size:12px}
+.identity-word small{display:none}
+.identity-mark{width:34px;height:34px;font-size:17px}
+.mobile-nav summary{padding:8px 9px;font-size:11px}
+.cover-title{font-size:clamp(45px,12.4vw,54px)}
+.mandate-button>span:nth-child(2){font-size:16px}
+.section-index span:last-child{display:none}
+.portrait-label{left:9px;bottom:5%}
+}
