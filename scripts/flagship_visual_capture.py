@@ -21,7 +21,8 @@ ROUTES={
   "recruiter-toolkit":"/recruiter-toolkit/",
   "leadership":"/leadership/",
   "research-library":"/research-library/",
-  "living-dossier":"/experience/"
+  "living-dossier":"/experience/",
+  "executive-brief":"/briefing/"
 }
 VIEWPORTS={"desktop":(1440,900),"mobile":(390,844)}
 
@@ -118,6 +119,15 @@ async def run():
               }""")
               name=f"{key}-{device}"
               await page.screenshot(path=str(OUT/f"{name}.png"),animations="disabled",full_page=False)
+              if key=="executive-brief":
+                  if device=="desktop":
+                      await page.screenshot(path=str(OUT/"briefing-fullpage-desktop.png"),
+                                            animations="disabled",full_page=True)
+                  # A PDF-ready view must retain content and suppress controls in print media.
+                  await page.emulate_media(media="print")
+                  await page.screenshot(path=str(OUT/f"briefing-print-{device}.png"),
+                                        animations="disabled",full_page=True)
+                  await page.emulate_media(media="screen")
               if key=="home" and device=="desktop":
                   await page.screenshot(path=str(OUT/"home-fullpage-desktop.png"),animations="disabled",full_page=True)
               if key=="living-dossier":
