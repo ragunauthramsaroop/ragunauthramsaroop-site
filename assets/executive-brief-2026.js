@@ -19,7 +19,7 @@
     const ev=claim.evidence.find(x=>safeUrl(x.url));if(!ev)return;
     const url=safeUrl(ev.url),box=document.createElement("div"),label=document.createElement("span"),link=document.createElement("a");
     label.textContent=String(i+1).padStart(2,"0")+" / "+claim.classification.replaceAll("_"," ").toUpperCase();
-    link.href=url.href;link.textContent=ev.label+" ↗";
+    link.href=url.href;link.textContent=claim.title+" · "+ev.label+" ↗";
     if(url.origin!==location.origin){link.target="_blank";link.rel="noopener noreferrer";}
     box.append(label,link);out.appendChild(box);count++;
   });
