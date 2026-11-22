@@ -1,0 +1,50 @@
+name: Import Expominera 2026 conference photograph
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/import-expominera-photo.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  import-photo:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Download and verify user-provided photograph
+        shell: bash
+        run: |
+          curl --fail --location --silent --show-error --retry 3 \
+            'https://ragunauth-ramsaroop.floot.app/_cdn/static/35403e51-07b5-4a5f-a21f-437610e4b623-expominera-panama-2026-ragunauth-ramsaroop.jpeg' \
+            -o /tmp/expominera-panama-2026-original.jpeg
+          echo 'c09e1f1347da715cef28330ad797a67d55161c4218ba1863133ee9be6cf8d805  /tmp/expominera-panama-2026-original.jpeg' | sha256sum --check
+      - name: Optimize as first-party responsive web image
+        shell: bash
+        run: |
+          python -m pip install --disable-pip-version-check Pillow
+          python - <<'PY'
+          from PIL import Image
+          image = Image.open('/tmp/expominera-panama-2026-original.jpeg')
+          image.thumbnail((1280, 1280))
+          output = 'assets/expominera-panama-2026-ragunauth-ramsaroop.webp'
+          image.convert('RGB').save(output, 'WEBP', quality=76, method=6)
+          print('Wrote', output, image.size)
+          PY
+      - name: Commit photograph to website
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/expominera-panama-2026-ragunauth-ramsaroop.webp
+          if ! git diff --staged --quiet; then
+            git commit -m "Add optimized first-party Expominera Panama 2026 photograph"
+            git push origin HEAD:main
+          fi
