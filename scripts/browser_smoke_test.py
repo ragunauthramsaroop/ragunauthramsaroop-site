@@ -75,7 +75,7 @@ def main():
 
             alignment_routes = [
                 "/", "/executive-profile/", "/leadership/", "/evidence/",
-                "/research-library/", "/media/", "/resume.html", "/engage/",
+                "/research-library/", "/experience/", "/media/", "/resume.html", "/engage/",
                 "/recruiter-mode/", "/recruiter-toolkit/", "/board-ceo-mode/"
             ]
             for width, height in ((1440, 1000), (1024, 900), (390, 844)):
@@ -109,6 +109,39 @@ def main():
                     assert metrics["mainLeft"] >= -2 and metrics["mainRight"] <= metrics["innerWidth"] + 2, (
                         f"Main content escapes viewport on {route} at {width}px: {metrics}"
                     )
+            # The interactive dossier must work without third-party scripts.
+            page.goto(base + "/experience/", wait_until="load")
+            expect(page.locator("h1")).to_contain_text("decisions meet")
+            expect(page.locator('link[rel="stylesheet"][href^="/assets/experience-2026.css"]')).to_have_count(1)
+            expect(page.locator('script[src^="/assets/experience-2026.js"]')).to_have_count(1)
+            expect(page.locator('#mandate-institutions')).to_be_visible()
+            page.locator('button[data-focus="governance"]').click()
+            expect(page.locator('#mandate-governance')).to_be_visible()
+            expect(page.locator('#mandate-institutions')).to_be_hidden()
+            expect(page.locator('button[data-focus="governance"]')).to_have_attribute("aria-pressed", "true")
+            page.locator('button[data-focus="governance"]').press("ArrowRight")
+            expect(page.locator('#mandate-delivery')).to_be_visible()
+            expect(page.locator('button[data-focus="delivery"]')).to_have_attribute("aria-pressed", "true")
+            expect(page.locator(".gallery-counter")).to_have_text("01 / 02")
+            page.locator(".gallery-next").click()
+            expect(page.locator(".gallery-counter")).to_have_text("02 / 02")
+            expect(page.locator('[data-slide="0"]')).to_be_hidden()
+            expect(page.locator('[data-slide="1"]')).to_be_visible()
+            page.locator(".gallery-prev").click()
+            expect(page.locator(".gallery-counter")).to_have_text("01 / 02")
+            assert page.locator(".record-card").count() == 4
+            assert page.locator(".pathway").count() == 3
+            assert page.locator('.record-card[href="https://www.itu.int/net4/wsis/ungis/Home/MCG"]').count() == 1
+            assert page.evaluate("document.documentElement.scrollWidth <= innerWidth + 2")
+            page.set_viewport_size({"width": 390, "height": 844})
+            expect(page.locator(".mobile-nav summary")).to_be_visible()
+            page.locator(".mobile-nav summary").click()
+            expect(page.locator('.mobile-nav a[href="#mandate"]')).to_be_visible()
+            page.locator('.mobile-nav a[href="#mandate"]').click()
+            expect(page.locator('.mobile-nav')).not_to_have_attribute("open", "")
+            assert page.evaluate("document.documentElement.scrollWidth <= innerWidth + 2"), "Mobile dossier overflows"
+            results.append("PASS living executive dossier: four accessible lenses, keyboard control, real photo gallery, 390px mobile and source links")
+
             # Pre-rendered executive pages must work without stale React hydration.
             page.set_viewport_size({"width": 390, "height": 844})
             for route in ("/executive-profile/", "/board-ceo-mode/", "/recruiter-mode/"):
