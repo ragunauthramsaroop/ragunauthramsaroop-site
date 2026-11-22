@@ -114,6 +114,25 @@ def main():
             expect(page.locator("h1")).to_contain_text("decisions meet")
             expect(page.locator('link[rel="stylesheet"][href^="/assets/experience-2026.css"]')).to_have_count(1)
             expect(page.locator('script[src^="/assets/experience-2026.js"]')).to_have_count(1)
+            # Audience-specific briefing studio is keyboard accessible and shareable.
+            expect(page.locator('#lens-title')).to_have_text('The leadership lens.')
+            page.locator('a[data-lens="recruiter"]').click()
+            expect(page.locator('#lens-title')).to_have_text('The executive-search dossier.')
+            expect(page.locator('#lens-primary')).to_have_attribute("href", "/recruiter-toolkit/")
+            expect(page.locator('a[data-lens="recruiter"]')).to_have_attribute("aria-selected", "true")
+            assert "lens=recruiter" in page.url
+            page.locator('a[data-lens="recruiter"]').press("ArrowRight")
+            expect(page.locator('#lens-title')).to_have_text("The international dialogue.")
+            expect(page.locator('#lens-primary')).to_have_attribute("href", "/media/")
+            # Claim explorer must be populated from the actual canonical record.
+            expect(page.locator("#proof-network")).to_have_attribute("data-ready", "true", timeout=12000)
+            expect(page.locator("#proof-nodes .proof-dot")).to_have_count(6)
+            page.locator('a[data-claim-id="ungis-mcg-2026"]').click()
+            expect(page.locator("#proof-title")).to_contain_text("United Nations Group")
+            expect(page.locator("#proof-sources a")).to_have_attribute("href", "https://www.itu.int/net4/wsis/ungis/Home/MCG")
+            page.locator('a[data-claim-id="solar-context"]').click()
+            expect(page.locator("#proof-status")).to_contain_text("not presented as an individual achievement")
+            expect(page.locator('a[data-claim-id="solar-context"]')).to_have_attribute("aria-current", "true")
             expect(page.locator('#mandate-institutions')).to_be_visible()
             page.locator('button[data-focus="governance"]').click()
             expect(page.locator('#mandate-governance')).to_be_visible()
@@ -134,18 +153,32 @@ def main():
             assert page.locator('.record-card[href="https://www.itu.int/net4/wsis/ungis/Home/MCG"]').count() == 1
             assert page.evaluate("document.documentElement.scrollWidth <= innerWidth + 2")
             page.set_viewport_size({"width": 390, "height": 844})
+            expect(page.locator(".cover-mobile-portrait")).to_be_visible()
+            assert page.evaluate("""() => document.querySelector('.cover-mobile-portrait__photo').getBoundingClientRect().bottom < innerHeight"""), "Portrait must appear on mobile first screen"
+            expect(page.locator(".portrait-stage")).to_be_hidden()
             expect(page.locator(".mobile-nav summary")).to_be_visible()
             page.locator(".mobile-nav summary").click()
             expect(page.locator('.mobile-nav a[href="#mandate"]')).to_be_visible()
             page.locator('.mobile-nav a[href="#mandate"]').click()
             expect(page.locator('.mobile-nav')).not_to_have_attribute("open", "")
             assert page.evaluate("document.documentElement.scrollWidth <= innerWidth + 2"), "Mobile dossier overflows"
+            # Progressive enhancement: without JavaScript, the three briefing
+            # perspectives remain ordinary navigable links.
+            no_js = browser.new_context(java_script_enabled=False, viewport={"width":390,"height":844},
+                                        service_workers="block")
+            no_js_page = no_js.new_page()
+            no_js_page.goto(base + "/experience/", wait_until="domcontentloaded")
+            expect(no_js_page.locator('a[data-lens]')).to_have_count(3)
+            expect(no_js_page.locator('a[data-lens="recruiter"]')).to_have_attribute("href", "/recruiter-toolkit/")
+            expect(no_js_page.locator('a[data-lens="speaking"]')).to_have_attribute("href", "/media/")
+            expect(no_js_page.locator('a[data-claim-id]')).to_have_count(6)
+            no_js.close()
             # Narrow 320px phones must also remain usable.
             page.set_viewport_size({"width": 320, "height": 750})
             assert page.evaluate("document.documentElement.scrollWidth <= innerWidth + 2"), "320px dossier overflows"
             expect(page.locator(".mobile-nav summary")).to_be_visible()
             expect(page.locator(".cover-title")).to_be_visible()
-            results.append("PASS living executive dossier: four accessible lenses, keyboard control, real photo gallery, 390px/320px mobile and source links")
+            results.append("PASS edition 07: executive briefing modes, source-backed six-claim network, mandate controls, gallery and first-fold mobile portrait")
 
             # Pre-rendered executive pages must work without stale React hydration.
             page.set_viewport_size({"width": 390, "height": 844})
