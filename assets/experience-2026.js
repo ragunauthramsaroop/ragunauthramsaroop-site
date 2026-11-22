@@ -1,5 +1,5 @@
 /* Edition 06 / first-party interactive dossier.
-   No trackers, cookies, storage, network calls or external dependencies. */
+   No trackers, cookies, storage or external dependencies. Reads self-hosted public record JSON. */
 (() => {
   "use strict";
   const $ = (selector, root = document) => root.querySelector(selector);
@@ -282,5 +282,207 @@
         if (!document.hidden && visible && alive && !animationFrame) animationFrame = requestAnimationFrame(draw);
       });
     }
+  }
+}
+  /* The audience briefing is a progressive enhancement. Without JavaScript,
+     all three links navigate directly to their complete, accessible pages. */
+  const lensTabs = $$("[data-lens]");
+  const lensPanel = $("#lens-summary");
+  const lensData = {
+    board: {
+      ordinal: "01", title: "The leadership lens.",
+      description: "Strategic judgement across institutional relationships, governance, risk and responsible operating priorities.",
+      primary: {text:"Open board briefing",url:"/board-ceo-mode/"},
+      secondary: {text:"Examine the decision framework",url:"/decision-room/"}
+    },
+    recruiter: {
+      ordinal: "02", title: "The executive-search dossier.",
+      description: "Career progression, current responsibilities, verification boundaries and fast access to the public executive record.",
+      primary: {text:"Open recruiter toolkit",url:"/recruiter-toolkit/"},
+      secondary: {text:"Review the executive CV",url:"/resume.html"}
+    },
+    speaking: {
+      ordinal: "03", title: "The international dialogue.",
+      description: "Responsibility in mining, energy transition and institutional leadership, with conference briefings and speaking resources.",
+      primary: {text:"Open media briefing",url:"/media/"},
+      secondary: {text:"Review the Panama keynote",url:"/speaking/expominera-internacional-2026/"}
+    }
+  };
+  const linkForLens = $("#lens-primary");
+  const secondaryForLens = $("#lens-secondary");
+  let selectedLens = "board";
+  function applyLens(name, updateUrl = false, focus = false) {
+    const data = lensData[name];
+    if (!data || !lensPanel) return;
+    selectedLens = name;
+    lensTabs.forEach(tab => {
+      const active = tab.dataset.lens === name;
+      tab.classList.toggle("is-current", active);
+      tab.setAttribute("aria-selected", String(active));
+      tab.tabIndex = active ? 0 : -1;
+      if (active && focus) tab.focus();
+    });
+    lensPanel.dataset.lens = name;
+    const selectedTab = lensTabs.find(tab => tab.dataset.lens === name);
+    if (selectedTab) lensPanel.setAttribute("aria-labelledby", selectedTab.id);
+    $("#lens-title").textContent = data.title;
+    $("#lens-description").textContent = data.description;
+    $(".lens-count").textContent = "SELECTED PERSPECTIVE / " + data.ordinal;
+    linkForLens.href = data.primary.url;
+    linkForLens.replaceChildren(document.createTextNode(data.primary.text + " ↗"));
+    secondaryForLens.href = data.secondary.url;
+    secondaryForLens.replaceChildren(document.createTextNode(data.secondary.text + " ↗"));
+    if (updateUrl && window.history && window.history.replaceState) {
+      const url = new URL(window.location.href);
+      url.searchParams.set("lens", name);
+      window.history.replaceState(null, "", url.pathname + url.search + url.hash);
+    }
+  }
+  if (lensTabs.length === 3 && lensPanel && linkForLens && secondaryForLens) {
+    lensTabs.forEach((tab, index) => {
+      tab.addEventListener("click", event => {
+        event.preventDefault();
+        applyLens(tab.dataset.lens, true);
+      });
+      tab.addEventListener("keydown", event => {
+        if (!["ArrowLeft","ArrowRight","ArrowUp","ArrowDown","Home","End"].includes(event.key)) return;
+        event.preventDefault();
+        let next = index;
+        if (event.key === "Home") next = 0;
+        else if (event.key === "End") next = lensTabs.length - 1;
+        else if (event.key === "ArrowLeft" || event.key === "ArrowUp") next = (index + lensTabs.length - 1) % lensTabs.length;
+        else next = (index + 1) % lensTabs.length;
+        applyLens(lensTabs[next].dataset.lens, true, true);
+      });
+    });
+    const initial = new URLSearchParams(window.location.search).get("lens");
+    applyLens(lensData[initial] ? initial : "board");
+    const copy = $("#lens-copy"), feedback = $("#lens-copy-feedback");
+    if (copy && feedback) copy.addEventListener("click", async () => {
+      const url = new URL(window.location.href);
+      url.searchParams.set("lens", selectedLens);
+      if (!navigator.clipboard || !navigator.clipboard.writeText) {
+        feedback.textContent = "Share this page using your browser’s Share command.";
+        return;
+      }
+      try {
+        await navigator.clipboard.writeText(url.href);
+        feedback.textContent = "Briefing link copied.";
+      } catch {
+        feedback.textContent = "Copy the address from your browser’s address bar.";
+      }
+    });
+  }
+
+  /* Interactive claim-to-source atlas, populated ONLY from the canonical
+     self-hosted public executive record. No third-party services or
+     inferences about personal responsibility for company-wide outcomes. */
+  const proofNetwork = $("#proof-network");
+  const proofLinks = $("#proof-links");
+  const proofNodes = $("#proof-nodes");
+  const proofOptions = $$("[data-claim-id]");
+  const proofStatus = $("#proof-status");
+  const positions = [
+    [310,56],[489,158],[489,363],[310,464],[131,363],[131,158]
+  ];
+  const svgNS = "http://www.w3.org/2000/svg";
+  let claimsById = new Map();
+  function svgEl(tag, attrs) {
+    const node = document.createElementNS(svgNS, tag);
+    for (const [key, value] of Object.entries(attrs)) node.setAttribute(key, String(value));
+    return node;
+  }
+  function safeSourceUrl(raw) {
+    try {
+      const uri = new URL(raw, window.location.origin);
+      if (uri.protocol !== "https:" && uri.protocol !== "http:") return null;
+      if (uri.protocol === "http:" && uri.origin !== window.location.origin) return null;
+      return uri.href;
+    } catch { return null; }
+  }
+  function selectClaim(id, focus = false) {
+    const claim = claimsById.get(id);
+    if (!claim) return;
+    proofOptions.forEach(a => {
+      const current = a.dataset.claimId === id;
+      if (current) a.setAttribute("aria-current", "true");
+      else a.removeAttribute("aria-current");
+      if (focus && current) a.focus();
+    });
+    $$(".proof-dot, .proof-dot-number, .proof-edge", proofNetwork).forEach(node => {
+      node.classList.toggle("is-selected", node.dataset.claimId === id);
+    });
+    $("#proof-date").textContent =
+      (claim.classification === "company_reported_operating_context" ? "COMPANY-REPORTED CONTEXT" : "SOURCE-SCOPED PROFESSIONAL CLAIM")
+      + " / " + claim.effectiveFrom;
+    $("#proof-title").textContent = claim.title;
+    $("#proof-value").textContent = claim.value;
+    $("#proof-scope").textContent = claim.scope;
+    const sources = $("#proof-sources");
+    sources.replaceChildren();
+    for (const evidence of claim.evidence || []) {
+      const href = safeSourceUrl(evidence.url);
+      if (!href) continue;
+      const a = document.createElement("a");
+      a.href = href;
+      a.textContent = evidence.label + " ↗";
+      if (new URL(href).origin !== window.location.origin) {
+        a.target = "_blank";a.rel = "noopener noreferrer";
+      }
+      sources.appendChild(a);
+    }
+    if (proofStatus) {
+      proofStatus.textContent = claim.classification === "company_reported_operating_context"
+        ? "Company operating context. This is not presented as an individual achievement."
+        : "Claim scope and linked references are reproduced from the dated public record, not independently authenticated here.";
+    }
+  }
+  if (proofNetwork && proofLinks && proofNodes && proofOptions.length === 6) {
+    fetch("/api/v1/executive-record.json", {cache:"force-cache", credentials:"same-origin"})
+      .then(response => {if (!response.ok) throw new Error("Public record unavailable");return response.json();})
+      .then(record => {
+        if (!Array.isArray(record.claims) || record.claims.length !== 6) throw new Error("Claim schema mismatch");
+        const order = proofOptions.map(a => a.dataset.claimId);
+        claimsById = new Map(record.claims.map(c => [c.id,c]));
+        if (!order.every(id => claimsById.has(id))) throw new Error("Claim IDs out of sync");
+        proofLinks.replaceChildren();proofNodes.replaceChildren();
+        order.forEach((id, i) => {
+          const [x,y] = positions[i];
+          const claim = claimsById.get(id);
+          const line = svgEl("line",{x1:310,y1:260,x2:x,y2:y,class:"proof-edge","data-claim-id":id});
+          proofLinks.appendChild(line);
+          const g = svgEl("g",{"data-claim-id":id});
+          const circle = svgEl("circle",{cx:x,cy:y,r:23,class:"proof-dot" + (claim.classification === "company_reported_operating_context" ? " is-company":""),
+            "data-claim-id":id});
+          const text = svgEl("text",{x:x,y:y+4,"text-anchor":"middle",class:"proof-dot-number","data-claim-id":id});
+          text.textContent = String(i+1).padStart(2,"0");
+          g.append(circle,text);
+          proofNodes.appendChild(g);
+        });
+        proofOptions.forEach(a => {
+          a.addEventListener("click",event => {
+            event.preventDefault();
+            selectClaim(a.dataset.claimId);
+          });
+          a.addEventListener("keydown",event => {
+            if (!["ArrowUp","ArrowDown","Home","End"].includes(event.key)) return;
+            event.preventDefault();
+            const index = proofOptions.indexOf(a);
+            const next = event.key === "Home" ? 0 : event.key === "End" ? proofOptions.length - 1
+              : event.key === "ArrowDown" ? (index + 1) % proofOptions.length
+              : (index + proofOptions.length - 1) % proofOptions.length;
+            selectClaim(proofOptions[next].dataset.claimId, true);
+          });
+        });
+        selectClaim(order[0]);
+        proofNetwork.dataset.ready = "true";
+        if (proofStatus) proofStatus.dataset.state = "ready";
+      })
+      .catch(() => {
+        if (proofStatus) {
+          proofStatus.dataset.state = "error";
+          proofStatus.textContent = "The live claim explorer is unavailable. Source links above remain usable.";
+        }
+      });
   }
 })();
