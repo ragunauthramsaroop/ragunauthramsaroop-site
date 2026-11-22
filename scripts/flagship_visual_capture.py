@@ -91,7 +91,7 @@ async def run():
                 };
                 const research=location.pathname==='/research-library/';
                 const living=location.pathname==='/experience/';
-                const theme=location.pathname==='/'?'home-compiled-2026.css':living?'experience-2026.css':location.pathname==='/leadership/'?'executive-journey-editorial-2026.css':'flagship-system-2026.css';
+                const theme=location.pathname==='/'?'home-compiled-2026.css':living?'experience-2026.css':location.pathname==='/briefing/'?'executive-brief-2026.css':location.pathname==='/leadership/'?'executive-journey-editorial-2026.css':'flagship-system-2026.css';
                 const header=document.querySelector('.shell .topbar');
                 const bg=header?getComputedStyle(header).backgroundColor:null;
                 const entries=header?[header.querySelector('.brand > div'),...header.querySelectorAll('.navlinks a:not(.contact-chip)'),header.querySelector('.menu-button')]:[];
