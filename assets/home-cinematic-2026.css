@@ -47,7 +47,7 @@ body .flag-evidence__list a b{transition:transform .3s var(--kinetic-ease)}
 body .flag-desk__list>a{transition:background-color .3s ease,padding-left .3s var(--kinetic-ease)}
 body .flag-research__feature,body .flag-research__side>a{transition:transform .4s var(--kinetic-ease),box-shadow .4s ease}
 body .flag-research__feature h3,body .flag-research__side h3{transition:transform .45s var(--kinetic-ease)}
-body .flag-close{isolation:isolate}
+body .flag-close{isolation:isolate;overflow:hidden}
 body .flag-close:after{content:"";position:absolute;right:-130px;top:-190px;width:430px;height:430px;border-radius:50%;border:1px solid #ddbc8540;pointer-events:none}
 @media(hover:hover) and (pointer:fine){
 body .flag-hero__portrait-wrap:hover{box-shadow:0 30px 78px #001f184d}
