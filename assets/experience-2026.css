@@ -672,3 +672,5 @@ body[data-motion="off"] .reveal,body[data-motion="off"] .reveal:not(.is-visible)
 .journey-end>span{color:#405849}
 .proof-lab__options a[aria-current="true"]>span{color:#173b31}
 @media(prefers-reduced-motion:reduce){.js-enhanced .reveal{transition:none!important;transform:none!important}}
+
+@media(max-width:760px){.section-index:not(.section-index-light) span:last-child{opacity:1!important}}
