@@ -22,7 +22,7 @@ test('replay is labelled historical and never claims real-time trade ticks',()=>
  assert.match(html,/15-MIN BARS/);
  assert.ok(html.indexOf('markets.js')<html.indexOf('chart-motion.js'));
  assert.match(motion,/zgi:chart/);
- assert.match(motion,/reduced-motion/);
+ assert.match(readFileSync(root+"chart-motion.css","utf8"),/prefers-reduced-motion/);
  assert.match(motion,/FOLLOW DELAYED SOURCE/);
  assert.match(market,/refreshIntraday/);
  assert.match(market,/data-motion-line/);
