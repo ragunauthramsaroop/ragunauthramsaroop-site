@@ -13,7 +13,9 @@ from pathlib import Path
 from threading import Lock
 from time import time
 from getpass import getpass
+import io
 import json
+import logging
 import os
 import sys
 
@@ -111,7 +113,11 @@ class WebullProvider:
         from webull.core.client import ApiClient
         from webull.data.data_client import DataClient
 
-        self.client = DataClient(ApiClient(app_key, app_secret, "hk"))
+        api_client = ApiClient(app_key, app_secret, "hk")
+        # The official SDK otherwise creates a persistent HTTP log file.
+        # A CRITICAL-only memory logger avoids recording sensitive metadata on disk.
+        api_client.set_stream_logger(stream=io.StringIO(), log_level=logging.CRITICAL)
+        self.client = DataClient(api_client)
 
     def read_quotes(self):
         response = self.client.market_data.get_snapshot(
@@ -188,7 +194,7 @@ def make_handler(store, port):
                     self._send(503, json.dumps(body).encode(), "application/json; charset=utf-8")
                 return
             assets = {
-                "/": ("index.html", "text/html; charset=utf-8"),
+                "/": ("viewer.template", "text/html; charset=utf-8"),
                 "/viewer.js": ("viewer.js", "text/javascript; charset=utf-8"),
                 "/viewer.css": ("viewer.css", "text/css; charset=utf-8"),
             }
