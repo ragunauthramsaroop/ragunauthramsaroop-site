@@ -69,8 +69,12 @@ async function run(){
     assert.equal(await page.locator('text=Apple Inc.').count(),0);
     assert.match(await page.locator('#live-kpi-2259-asof').textContent(),/HKT/);
   });
-  await check('Historical candle motion is visible and paused on request',async()=>{
+  await check('Latest delayed bar is the default; historical replay remains optional',async()=>{
     await waitFor(page,()=>!!document.querySelector('#market-chart svg [data-motion-line]'),'motion playhead');
+    assert.equal(await page.locator('#motion-replay-toggle').getAttribute('aria-pressed'),'false');
+    assert.equal(await page.locator('#motion-follow').getAttribute('aria-pressed'),'true');
+    assert.match(await page.locator('#motion-observation').textContent(),/LATEST VERIFIED BAR/);
+    assert.match(await page.locator('#motion-mode-label').textContent(),/SOURCE MONITOR.*DELAYED/);
     const play=page.locator('#motion-replay-toggle');
     if(await play.getAttribute('aria-pressed')==='false')await play.click();
     const first=await page.locator('#market-chart [data-motion-line]').getAttribute('x1');

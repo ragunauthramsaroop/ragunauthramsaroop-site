@@ -18,7 +18,8 @@ const app=readFileSync(root+'app.js','utf8');
 const market=readFileSync(root+'markets.js','utf8');
 const motion=readFileSync(root+'chart-motion.js','utf8');
 test('replay is labelled historical and never claims real-time trade ticks',()=>{
- assert.match(html,/HISTORICAL REPLAY[^<]*NOT LIVE TRADES/);
+ assert.match(html,/SOURCE MONITOR[^<]*DELAYED/);
+ assert.match(html,/Historical replay is optional, not a real-time trade stream/);
  assert.match(html,/15-MIN BARS/);
  assert.ok(html.indexOf('markets.js')<html.indexOf('chart-motion.js'));
  assert.match(motion,/zgi:chart/);
@@ -266,4 +267,12 @@ test("fonts are requested early with optional face rendering, not late swap impo
  assert.doesNotMatch(css,/@import/);
  assert.match(html,/fonts\.gstatic\.com" crossorigin/);
  assert.match(html,/family=Manrope[^"]*display=optional/);
+});
+
+test('main chart starts at newest provider-delayed bar rather than replaying historical dates',()=>{
+ assert.match(motion,/playing:false,following:true/);
+ assert.match(motion,/speed:1,progress:1/);
+ assert.match(html,/id="motion-follow" aria-pressed="true"/);
+ assert.match(html,/id="motion-replay-toggle" aria-pressed="false"/);
+ assert.match(html,/15-MIN BARS/);
 });
