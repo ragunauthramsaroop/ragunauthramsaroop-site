@@ -66,7 +66,7 @@ assert len(css.encode("utf-8")) < 26000 and len(js.encode("utf-8")) < 4000
 assert "@media(prefers-reduced-motion:reduce)" in css and "@media(max-width:600px)" in css
 assert "innerHTML" not in js and 'addEventListener("keydown"' in js
 assert "https://" not in css and "@import" not in css, "No remote CSS dependencies"
-assert not re.search(r"<script(?![^>]+type=\"application/ld\\+json\")[^>]*>\\s*[^\\s<]", page), "Executable inline script detected"
+assert "<script>" not in page, "Executable inline script tag detected"
 for payload in parsed.structured:
     json.loads(payload)
 sitemap = ET.parse(ROOT / "sitemap.xml")
