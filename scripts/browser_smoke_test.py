@@ -128,7 +128,7 @@ def main():
             expect(page.locator('.route-bridge__choices a[href="/briefing/?lens=board"]')).to_have_count(1)
             expect(page.locator('.route-bridge__choices a[href="/briefing/?lens=recruiter"]')).to_have_count(1)
             expect(page.locator('.route-bridge__choices a[href="/briefing/?lens=speaker"]')).to_have_count(1)
-            expect(page.locator('.orientation-foot')).to_contain_text("2016")
+            expect(page.locator('.orientation-foot')).to_contain_text("Jul 2014")
             motion_button = page.locator(".motion-toggle--desktop")
             expect(motion_button).to_be_visible()
             state_before = page.evaluate("""() => ({
