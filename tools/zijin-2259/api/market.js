@@ -50,7 +50,9 @@ export default async function handler(req,res){
         const ohlc=[];
         for(let i=0;i<ts.length;i++){
           const t=Number(ts[i]),o=Number(series.open?.[i]),h=Number(series.high?.[i]),l=Number(series.low?.[i]),c=Number(series.close?.[i]);
-          const volume=Number(series.volume?.[i]);
+          // Missing volume is not a genuine zero-volume trading session.
+          const rawVolume=series.volume?.[i];
+          const volume=rawVolume===null||rawVolume===undefined||rawVolume===""?null:Number(rawVolume);
           if(!Number.isFinite(t)||!Number.isFinite(c)||c<=0||!Number.isFinite(o)||!Number.isFinite(h)||!Number.isFinite(l))continue;
           if(h<l||o>h*1.005||c>h*1.005||o<l*.995||c<l*.995)continue;
           ohlc.push({t,o,h,l,c,v:Number.isFinite(volume)&&volume>=0?volume:null});
