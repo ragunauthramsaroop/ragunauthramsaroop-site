@@ -45,7 +45,7 @@ External & Corporate Affairs | Government Relations | ESG & Sustainability | Soc
 ### ACCOUNT MANAGER
 - Managed client relationships, commercial communication, reporting, performance review and cross-functional service delivery.
 
-### SCOTIABANK GUYANA | GUYANA | 2014-2019
+### SCOTIABANK GUYANA | GUYANA | JUL 2014-MAY 2019
 ### RETAIL BANKING PROFESSIONAL
 - Delivered financial services in a regulated environment, supporting compliance, risk controls, relationship management and branch performance, with progression and performance recognition.
 
