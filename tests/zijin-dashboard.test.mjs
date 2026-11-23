@@ -245,3 +245,13 @@ test("Source-confidence terminal preserves source identity and browser-only priv
  assert.match(deskCss,/@media\(max-width:680px\)/);
  assert.match(deskCss,/prefers-reduced-motion/);
 });
+
+test("authorised real-time BMP snapshot is prominently linked only to vendor homepage",()=>{
+ assert.match(html,/id="desk-authorised-live"/);
+ assert.match(html,/OPEN REAL-TIME SNAPSHOT SERVICE/);
+ assert.match(html,/02259/);
+ assert.match(html,/02899/);
+ assert.match(html,/href="https:\/\/www\.etnet\.com\.hk\/www\/eng\/stocks\/realtime\/index\.php"/);
+ assert.doesNotMatch(html,/href="https:\/\/[^"]*etnet[^"]*quote\.php/);
+ assert.match(html,/DELAYED-PROVIDER CHECK EVERY 3 MINUTES/);
+});
