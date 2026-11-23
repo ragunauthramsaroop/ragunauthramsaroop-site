@@ -1,0 +1,28 @@
+name: ZGI private HKEX connector tests
+on:
+  pull_request:
+    paths:
+      - "tools/zgi-private-live/**"
+      - "tests/test_zgi_private_live.py"
+      - ".github/workflows/zgi-private-live.yml"
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  contracts:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v7
+        with:
+          python-version: "3.11"
+      - name: Validate isolated read-only local connector
+        run: |
+          python -m py_compile tools/zgi-private-live/app.py
+          python -m unittest discover -s tests -p 'test_zgi_private_live.py' -v
+          test ! -e tools/zgi-private-live/.env
+          test ! -e tools/zgi-private-live/.env.local
+          grep -Fq '127.0.0.1' tools/zgi-private-live/app.py
