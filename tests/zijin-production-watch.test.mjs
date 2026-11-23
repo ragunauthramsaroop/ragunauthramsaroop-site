@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {validateHome,validateMarket} from '../scripts/zijin-production-watch.mjs';
-const home='<title>ZGI Intelligence | HKEX 2259</title><h1 id="main-title">Zijin Gold</h1><div id="live-kpi-2259"></div><button id="motion-follow" aria-pressed="true">FOLLOW DELAYED SOURCE</button><a>OPEN AUTHORISED LIVE SNAPSHOT</a><meta name="robots" content="noindex,nofollow">';
+import {validateHome,validateMarket,validateIssuerRegistry,validateIssuerUI} from '../scripts/zijin-production-watch.mjs';
+const home='<title>ZGI Intelligence | HKEX 2259</title><h1 id="main-title">Zijin Gold</h1><div id="live-kpi-2259"></div><button id="motion-follow" aria-pressed="true">FOLLOW DELAYED SOURCE</button><a>OPEN AUTHORISED LIVE SNAPSHOT</a><section id="issuer-disclosures"></section><script defer src="./issuer-registry.js"></script><script defer src="./issuer-ui.js"></script><meta name="robots" content="noindex,nofollow">';
 const now=Date.parse('2026-11-23T12:00:00Z');
 const bar=t=>({t,o:100,h:102,l:99,c:101,v:1000});
 const data={
@@ -54,4 +54,14 @@ test('intraday market endpoint contract requires 15-minute intervals and source 
  assert.match(validateMarket(intraday,'2259.HK','HKD',now),/delayed bar/);
  assert.throws(()=>validateMarket({...intraday,sourceSymbol:'AAPL'},'2259.HK','HKD',now),/provider ticker mismatch/);
  assert.throws(()=>validateMarket({...intraday,barTimeIsLastTrade:true},'2259.HK','HKD',now),/semantics/);
+});
+
+test('live production must serve independently verified official filings and accessible search',()=>{
+ assert.throws(()=>validateHome(home.replace('id="issuer-disclosures"','id="other"')),/identity/);
+ const registry='window.ZGIIssuerRegistry REGISTRY_DATE="2026-11-23" 2026111201384.pdf 2026111300646.pdf https://www1.hkexnews.hk issuedPctOfOpening 2679956300';
+ assert.match(validateIssuerRegistry(registry),/verified/);
+ assert.throws(()=>validateIssuerRegistry(registry.replace('2026111201384.pdf','removed.pdf')),/registry/);
+ const ui='issuer-filings-list issuer-filing-search filterFilings issuer-export';
+ assert.match(validateIssuerUI(ui),/served/);
+ assert.throws(()=>validateIssuerUI(ui+" localStorage"),/local-only/);
 });
