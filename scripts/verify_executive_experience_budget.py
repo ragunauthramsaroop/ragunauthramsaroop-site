@@ -40,7 +40,7 @@ assert len(re.findall(r'class="route-bridge__choices"', experience)) == 1
 for lens in ('board', 'recruiter', 'speaker'):
     assert f'href="/briefing/?lens={lens}"' in experience
 assert '12+' not in home and '12+' not in experience and '12+' not in cv
-assert 'Jul 2014' in home and 'Jul 2014' in experience and 'Jul 2014' in cv
+assert '<strong>2014</strong><span>Professional career begins</span>' in home and 'Jul 2014' in experience and 'Jul 2014' in cv
 assert 'Jul 2014–May 2019' in cv
 assert 'Jun 2014–May 2019' not in cv
 assert '<strong>2016</strong><span>Career record begins' not in home
