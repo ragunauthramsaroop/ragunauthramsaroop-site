@@ -130,8 +130,8 @@
     },
     {
       "path": "/assets/search-index.json",
-      "sha256": "b432ea38cdebc3f562786b255611644447bc065d64cef5b49fa488515dc2ef50",
-      "bytes": 353423,
+      "sha256": "363ea8da6eb5d39db0f1387879b205d9ddf93244a8a3c0cc92e9dbd3dedb92ec",
+      "bytes": 353428,
       "generated": "23 November 2026"
     },
     {
@@ -178,14 +178,14 @@
     },
     {
       "path": "/index.html",
-      "sha256": "ba6a3c93534bb7f2ca85e6b03218f023e5bc9b5dec28f479a5f0eb17bc31393f",
-      "bytes": 24936,
+      "sha256": "203013e4b91a9332ad5e5da4dfa951c765ae6edf552b1f43741b8727ff1bd994",
+      "bytes": 24946,
       "generated": "23 November 2026"
     },
     {
       "path": "/resume.html",
-      "sha256": "4b3437d614daac29735414cbd2e97d183e5e23ebf63e8f0b4d61308c458f5c3d",
-      "bytes": 35100,
+      "sha256": "0c7ea226975d7268e452257846654c42472d5702161cd2eff784759e99f910e3",
+      "bytes": 35111,
       "generated": "23 November 2026"
     },
     {
