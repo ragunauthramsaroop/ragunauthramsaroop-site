@@ -177,6 +177,9 @@
     ];
     const dialog = el("dialog", "rr-command");
     dialog.setAttribute("aria-labelledby", "rr-command-title");
+    dialog.addEventListener("keydown", event => {
+      if (event.key === "Escape") { event.preventDefault(); dialog.close(); }
+    });
     const head = el("div", "rr-command__head");
     const eyebrow = el("p", "rr-command__eyebrow", "EXECUTIVE SITE / QUICK NAVIGATOR");
     const title = el("h2", "rr-command__title", "Where would you like to go?");
