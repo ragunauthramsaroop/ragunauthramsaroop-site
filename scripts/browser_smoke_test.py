@@ -109,7 +109,14 @@ def main():
             expect(page.locator("dialog.rr-command")).to_be_hidden()
             page.set_viewport_size({"width": 1280, "height": 900})
             expect(page.locator(".rr-rail")).to_be_visible()
-            results.append("PASS short-phone scrollable navigation, reachable search and visible desktop chapter guide")
+            rail_metrics = page.evaluate("""() => ({
+                targetWidth: document.querySelector('.rr-rail__link').getBoundingClientRect().width,
+                railLeft: document.querySelector('.rr-rail').getBoundingClientRect().left,
+                contentRight: document.querySelector('.flag-hero__interior').getBoundingClientRect().right
+            })""")
+            assert rail_metrics["targetWidth"] >= 24, rail_metrics
+            assert rail_metrics["railLeft"] >= rail_metrics["contentRight"] - 2, rail_metrics
+            results.append("PASS short-phone scrollable navigation, accessible desktop chapter targets and no content overlap")
 
             page.goto(base + "/resume.html", wait_until="domcontentloaded")
             expect(page.locator(".cv-metric").filter(has_text="Jul 2014").first).to_be_visible()
