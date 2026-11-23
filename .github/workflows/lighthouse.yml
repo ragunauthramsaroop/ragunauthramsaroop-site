@@ -8,6 +8,8 @@ on:
       - 'tools/assets/**'
       - 'search/**'
       - 'executive-profile/**'
+      - 'experience/**'
+      - 'briefing/**'
       - 'research-library/**'
       - 'tools/**'
       - '.github/lighthouse/**'
