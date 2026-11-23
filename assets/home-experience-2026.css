@@ -47,13 +47,6 @@
 .flag-pathway:after{content:"";position:absolute;bottom:0;left:0;width:100%;height:2px;background:linear-gradient(90deg,#bd9861,#e6c894,#bd9861);transform:scaleX(0);transform-origin:left;transition:transform .55s var(--rr-ease);pointer-events:none}
 .flag-pathway:hover:after,.flag-pathway:focus-within:after{transform:scaleX(1)}
 }
-@media(prefers-reduced-motion:no-preference){
-@view-transition{navigation:auto}
-.brand{view-transition-name:rr-identity}
-::view-transition-old(root){animation-duration:.24s;animation-timing-function:ease-in}
-::view-transition-new(root){animation-duration:.38s;animation-timing-function:var(--rr-ease)}
-::view-transition-old(rr-identity),::view-transition-new(rr-identity){animation-duration:.42s;animation-timing-function:var(--rr-ease)}
-}
 html[data-rr-motion=off],html[data-rr-motion=off] *{scroll-behavior:auto!important;animation:none!important;transition:none!important}
 html[data-rr-motion=off] .rr-reveal{opacity:1!important;transform:none!important}
 html[data-rr-motion=off]::view-transition-old(root),html[data-rr-motion=off]::view-transition-new(root){animation:none!important}
