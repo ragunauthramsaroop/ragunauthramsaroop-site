@@ -42,6 +42,7 @@ assert len(compiled.encode("utf-8")) <= 75_000
 assert "addScript(\"/assets/home-experience-2026.js\")" in runtime
 assert "addEventListener(\"load\"" in runtime
 assert "requestIdleCallback" in runtime
+assert 'const V="rr-public-v17"' in (ROOT / "service-worker.js").read_text("utf-8")
 
 assert len(script.encode("utf-8")) <= 13_000, "Deferred JS exceeds 13 KB"
 assert len(styles.encode("utf-8")) <= 9_000, "Deferred CSS exceeds 9 KB"
