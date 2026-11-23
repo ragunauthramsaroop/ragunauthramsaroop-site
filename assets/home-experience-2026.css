@@ -51,7 +51,7 @@
 html[data-rr-motion=off],html[data-rr-motion=off] *{scroll-behavior:auto!important;animation:none!important;transition:none!important}
 html[data-rr-motion=off] .rr-reveal{opacity:1!important;transform:none!important}
 html[data-rr-motion=off]::view-transition-old(root),html[data-rr-motion=off]::view-transition-new(root){animation:none!important}
-@media(min-width:1251px) and (max-width:1480px){.rr-rail{right:1px;width:24px;padding:12px 0}.rr-rail__list{gap:7px}.rr-rail__link{width:23px}.rr-rail__count{display:none}.rr-rail__motion{min-width:20px}.rr-rail__text{right:30px}}@media(max-width:1250px){.rr-rail{display:none}}
+@media(min-width:1251px) and (max-width:1480px){.rr-rail{right:0;width:26px;padding:12px 0}.rr-rail__list{gap:7px}.rr-rail__link{width:24px}.rr-rail__count{display:none}.rr-rail__motion{min-width:24px}.rr-rail__text{right:30px}}@media(max-width:1250px){.rr-rail{display:none}}
 @media(max-width:1180px){.rr-find{display:none}}
 @media(max-width:760px){.rr-command__head{padding:25px 19px 23px}.rr-command__field{margin:17px 15px 0}.rr-command__status{margin:15px 15px 10px}.rr-command__results{grid-template-columns:1fr;padding:0 15px 15px;gap:5px}.rr-command__result{padding:10px 12px}.rr-command__result strong{font-size:17px}.rr-command__foot{padding:12px 15px;font-size:8px;letter-spacing:.07em}.rr-command__title{padding-right:28px}.rr-command__close{right:11px;top:11px}.rr-backtop{bottom:20px;right:14px;width:44px;height:44px}}
 @media(prefers-reduced-motion:reduce){@view-transition{navigation:none}.rr-reveal{opacity:1;transform:none;transition:none}.rr-backtop,.rr-command__result,.rr-rail__dot,.flag-pathway:after{transition:none!important}html{scroll-behavior:auto}}
