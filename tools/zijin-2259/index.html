@@ -195,15 +195,15 @@
                 <div class="native-controls motion-interval-controls" role="group" aria-label="Historical price bar interval"><button type="button" data-chart-interval="1d" class="active" aria-pressed="true">DAILY</button><button type="button" data-chart-interval="15m" aria-pressed="false">15-MIN BARS</button></div>
               </div>
               <div class="market-motion-controls" role="group" aria-label="Historical replay and verified delayed price monitoring">
-                <button type="button" id="motion-replay-toggle" aria-pressed="true">PAUSE REPLAY</button>
+                <button type="button" id="motion-replay-toggle" aria-pressed="false">PLAY HISTORICAL REPLAY</button>
                 <button type="button" id="motion-speed" aria-label="Historical replay speed one times">1× SPEED</button>
-                <button type="button" id="motion-follow" aria-pressed="false">FOLLOW DELAYED SOURCE</button>
-                <span class="motion-mode-label" id="motion-mode-label">HISTORICAL REPLAY · NOT LIVE TRADES</span>
+                <button type="button" id="motion-follow" aria-pressed="true">FOLLOW DELAYED SOURCE ✓</button>
+                <span class="motion-mode-label" id="motion-mode-label">SOURCE MONITOR · DELAYED</span>
               </div>
               <div class="market-motion-data"><span id="motion-observation">Replay uses actual timestamped historical bars</span><span id="motion-market-status" role="status">CONNECTING TO PROVIDER-DELAYED OBSERVATIONS</span></div>
               <div id="market-chart" class="native-chart" aria-label="Historical OHLC stock chart for Zijin Gold International (2259.HK)" role="img"><div class="native-loading">Fetching verified HKEX:2259 price history…</div></div>
               <div class="native-data-foot"><span id="market-chart-status">SOURCE: YAHOO FINANCE · DELAYED DATA</span><span id="market-chart-timestamp">Timestamp pending</span></div>
-              <div class="motion-market-strip"><span>Chart motion is a historical replay, not a real-time exchange trade stream.</span><span id="motion-next-check">NEXT AUTOMATIC DATA CHECK 3:00</span></div>
+              <div class="motion-market-strip"><span>Opening view follows the latest available provider-delayed bar. Historical replay is optional, not a real-time trade stream.</span><span id="motion-next-check">NEXT AUTOMATIC DATA CHECK 3:00</span></div>
               <div class="motion-refresh-track" aria-hidden="true"><span id="motion-refresh-progress"></span></div>
             </div>
             <div class="chart-caption">Native SVG candlesticks, volume, RSI(14) and MACD(12,26,9) derive solely from the selected, verified 2259.HK daily or 15-minute historical OHLC bars. Indicator periods follow the selected bar interval. Provider observations are delayed. An archived fallback is dated and never a live tick.</div>
