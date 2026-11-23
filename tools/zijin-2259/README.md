@@ -159,3 +159,15 @@ We reviewed these maintained repositories for ideas and safety constraints, but 
 - [agency-agents](https://github.com/msitarzewski/agency-agents) (MIT): existing role profiles remain structured review checklists, not running autonomous workers.
 
 GitHub Actions provides the real, deterministic test workers. No external credentials, new spending, trackers, cookies or brokerage execution were added. CI runs source-gate tests, browser checks and accessibility/performance validation. A Vercel READY build alone does not prove public-route correctness, so every production release requires the independent eight-route health check.
+
+## Real-time HKEX market-data entitlement and free-snapshot route (23 November 2026)
+
+Do not substitute unofficial "real-time" scraped feeds or label Yahoo Finance data as real-time. The Hong Kong Exchange's Basic Market Prices (BMP) Service permits a separate user-requested, real-time snapshot on a licensed information vendor's own website, but explicitly prohibits automatic updating. HKEX guiding note 12.7 also restricts linking from third-party websites to the vendor's BMP homepage, rather than a pre-selected live quote page. This dashboard therefore provides a prominent direct link to the authorised ET Net BMP homepage, where visitors request 02259 or 02899 themselves. The dashboard does not frame, scrape, poll, proxy, reproduce, or autofill those free snapshots.
+
+Official HKEX source: https://www.hkex.com.hk/-/media/HKEX-Market/Services/Market-Data-Services/Real-Time-Data-Services/Data-Licensing_/HKEX_IS-Guiding-Note/Guiding-Notes-on-Basic-Market-Prices-Service_eng-v202304.pdf (sections 12.2, 12.6 and 12.7).
+
+For automatic real-time stock quotes **on the independent public site**, a data provider must grant explicit API, display and third-party redistribution rights for this domain. The existing read-only /api/licensed-quote endpoint requires the following private Vercel variables: ZGI_HKEX_VENDOR_QUOTE_URL, ZGI_HKEX_VENDOR_API_KEY, ZGI_HKEX_VENDOR_NAME, ZGI_HKEX_PUBLIC_DISPLAY_AUTHORIZED=true and, only if separately authorised, ZGI_HKEX_AUTOMATIC_REFRESH_AUTHORIZED=true. Never set the boolean flags or copy broker API secrets without documentary confirmation of permitted use. Provider approval and hosting terms should be reviewed before enabling public redistribution. Do not commit keys into Git.
+
+Webull's Hong Kong OpenAPI documentation says that HK Level 1 access is free and provides snapshot and streaming endpoints, but OpenAPI entitlement is separate from app/desktop subscription and documentation does **not** grant this independent public site a right to redistribute quotes. Such a personal account is not a drop-in licensed public-feed source. Documentation: https://developer.webull.hk/apis/docs/market-data-api/overview/ .
+
+HKEX third-party service guide: https://www.hkex.com.hk/-/media/HKEX-Market/Services/Market-Data-Services/Real-Time-Data-Services/Data-Licensing_/HKEX_IS-Guiding-Note/Guiding-Note-on-Third-Party-Service-%28v202304%29.pdf .
