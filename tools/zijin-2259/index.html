@@ -85,8 +85,12 @@
             <p><strong>Independent delayed-market data.</strong> Native price charts use a timestamped Yahoo Finance data bridge. No Apple or unrelated substitute symbols. If the provider fails, a dated historical snapshot appears instead, clearly labelled.</p>
           </div>
           <section class="research-desk" aria-labelledby="desk-title">
-            <div class="desk-head"><div><p class="desk-eyebrow">RESEARCH OPERATIONS / DATA CONFIDENCE</p><h2 id="desk-title">Market readiness desk</h2><p class="desk-subtitle">Verified source bars, not live exchange trades. Model outputs remain unavailable when either required anchor fails a seven-day source-integrity policy.</p></div>
+            <div class="desk-head"><div><p class="desk-eyebrow">RESEARCH OPERATIONS / DATA CONFIDENCE</p><h2 id="desk-title">Market readiness desk</h2><p class="desk-subtitle">Automatic charts use delayed provider prices. User-requested HKEX real-time snapshots open on the authorised vendor's own service. Model outputs are withheld when either anchor fails the seven-day source-integrity policy.</p></div>
               <div class="desk-actions"><a class="desk-link" href="#charting">VIEW CHARTS ↗</a><a class="desk-link" href="#scenarios">OPEN MODEL ↗</a><button id="desk-export" type="button" class="desk-export" disabled>EXPORT SOURCE BRIEF ↓</button></div></div>
+            <div class="desk-realtime-bridge" aria-label="Authorised real-time stock snapshots">
+              <div><span class="desk-realtime-tag">HKEX BASIC MARKET PRICES · FREE ON-DEMAND SNAPSHOTS</span><p>Need a current exchange snapshot? Open ET Net's authorised service and search <strong>02259</strong> for Zijin Gold International or <strong>02899</strong> for Zijin Mining. A new quote requires your request on the provider's own website.</p></div>
+              <a id="desk-authorised-live" class="desk-authorised-live" href="https://www.etnet.com.hk/www/eng/stocks/realtime/index.php" target="_blank" rel="noopener noreferrer" aria-label="Open ET Net's authorised Hong Kong real-time Basic Market Prices service in a new tab">OPEN REAL-TIME SNAPSHOT SERVICE ↗</a>
+            </div>
             <div class="desk-grid">
               <article id="desk-stock" class="desk-card" data-state="waiting"><div class="desk-card-header"><span class="desk-symbol">2259.HK</span><span class="desk-index">EQUITY / HKD</span></div><strong id="desk-stock-price" class="desk-price">PENDING</strong><span id="desk-stock-state" class="desk-source-state">CHECKING SOURCE</span><p id="desk-stock-asof" class="desk-asof">Waiting for provider history</p></article>
               <article id="desk-parent" class="desk-card" data-state="waiting"><div class="desk-card-header"><span class="desk-symbol">2899.HK</span><span class="desk-index">PARENT / HKD</span></div><strong id="desk-parent-price" class="desk-price">PENDING</strong><span id="desk-parent-state" class="desk-source-state">CHECKING SOURCE</span><p id="desk-parent-asof" class="desk-asof">Waiting for provider history</p></article>
@@ -143,7 +147,7 @@
             <div class="metric-card"><span class="metric-eyebrow">GOLD FUTURES · USD/OZ</span><div class="metric-value" id="live-kpi-gold">—</div><div class="metric-foot" id="live-kpi-gold-asof">COMEX FUTURES, NOT GOLD SPOT</div></div>
             <div class="metric-card"><span class="metric-eyebrow">2259 · 52-WEEK RANGE</span><div class="metric-value" id="live-kpi-range">—</div><div class="metric-foot" id="live-kpi-range-asof">COMPUTED FROM VENDOR HISTORICAL BARS</div></div>
           </div>
-          <div class="market-live-strip"><span class="stream-indicator"><i></i> AUTO-REFRESH EVERY 3 MINUTES</span><span id="global-market-source">Waiting for timestamped market response</span><button type="button" id="refresh-market-now" class="button button-subtle">REFRESH OBSERVATIONS ↻</button></div>
+          <div class="market-live-strip"><span class="stream-indicator"><i></i> DELAYED-PROVIDER CHECK EVERY 3 MINUTES</span><span id="global-market-source">Waiting for timestamped market response</span><button type="button" id="refresh-market-now" class="button button-subtle">REFRESH OBSERVATIONS ↻</button></div>
           <div class="overview-grid">
             <article class="panel quote-panel">
               <div class="panel-heading"><div><p class="eyebrow">STREAM 01</p><h2>Exchange-listed security</h2></div><span class="source-tag">YAHOO FINANCE · DELAYED</span></div>
