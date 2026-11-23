@@ -24,6 +24,17 @@ const variants={
 function number(n){return Number.isFinite(n)?fmt.format(n):"—"}
 function percent(n){return Number.isFinite(n)?(n>0?"+":"")+n.toFixed(1)+"%":"—"}
 function clock(t){if(!t||Number.isNaN(Date.parse(t)))return "Unavailable";return DATETIME.format(new Date(t))+" HKT"}
+const HKT_DATE=new Intl.DateTimeFormat("en-GB",{timeZone:"Asia/Hong_Kong",day:"2-digit",month:"short",year:"numeric"});
+const UTC_DATE=new Intl.DateTimeFormat("en-GB",{timeZone:"UTC",day:"2-digit",month:"short",year:"numeric"});
+function sourceLabel(data){
+  const iso=data?.providerQuoteTime;
+  if(!iso||Number.isNaN(Date.parse(iso)))return "Unavailable";
+  if(data.archive||data.interval==="1d"){
+    const isFutures=data.symbol==="GC=F";
+    return (isFutures?UTC_DATE:HKT_DATE).format(new Date(iso))+(isFutures?" UTC":" HKT")+" DAILY BAR • NOT TRADE TIME";
+  }
+  return clock(iso)+" PROVIDER BAR";
+}
 function set(id,s){const el=$(id);if(el)el.textContent=String(s)}
 function toDateKey(t){const p=DATEKEY.formatToParts(new Date(t*1000));const x={};p.forEach(k=>{x[k.type]=k.value});return x.year+"-"+x.month+"-"+x.day}
 function num(id){return Number($(id)?.value)}
@@ -41,14 +52,14 @@ function updateKPIs(){
   const cfg=[["2259",market.stock,"HK$"],["2899",market.parent,"HK$"],["gold",market.gold,"US$"]];
   for(const [key,d,prefix] of cfg){
     set("live-kpi-"+key,hasData(d)?prefix+number(d.regularMarketPrice):"UNAVAILABLE");
-    set("live-kpi-"+key+"-asof",hasData(d)?clock(d.providerQuoteTime)+" · "+ageLabel(d.providerQuoteTime):"PROVIDER NOT AVAILABLE");
+    set("live-kpi-"+key+"-asof",hasData(d)?sourceLabel(d)+" · "+ageLabel(d.providerQuoteTime):"PROVIDER NOT AVAILABLE");
   }
   const stock=market.stock;
   if(hasData(stock)&&!stock.archive){
     const b=stock.bars.slice(-252),min=Math.min(...b.map(d=>d.l)),max=Math.max(...b.map(d=>d.h));
     set("live-kpi-range","HK$"+number(min)+"–"+number(max));
-    set("live-kpi-range-asof","OBSERVED "+b.length+" SESSIONS · "+clock(stock.providerQuoteTime));
-    set("global-market-source","2259.HK AS OF "+clock(stock.providerQuoteTime)+" · "+ageLabel(stock.providerQuoteTime));
+    set("live-kpi-range-asof","OBSERVED "+b.length+" SESSIONS · "+sourceLabel(stock));
+    set("global-market-source","2259.HK AS OF "+sourceLabel(stock)+" · "+ageLabel(stock.providerQuoteTime));
   }else{
     set("live-kpi-range","UNAVAILABLE");
     set("live-kpi-range-asof","NO CURRENT PROVIDER HISTORY");
@@ -76,7 +87,7 @@ function pulse(){
   set("risk-drawdown",(dd*100).toFixed(1)+"%");
   set("risk-average-volume",Number.isFinite(average)?compact.format(average):"—");
   set("risk-price-vs-strike",percent((market.stock.regularMarketPrice/87.48-1)*100));
-  set("risk-data-note","Based on "+b.length+" verified daily bars, last timestamp "+clock(market.stock.providerQuoteTime)+". Volatility and drawdown are backward-looking, not forecasts.");
+  set("risk-data-note","Based on "+b.length+" verified daily bars, last timestamp "+sourceLabel(market.stock)+". Volatility and drawdown are backward-looking, not forecasts.");
 }
 function scenarioControls(){
   const gold=num("model-gold"),production=num("model-production"),cost=num("model-cost"),multiple=num("model-multiple"),dilution=num("model-dilution");
@@ -117,10 +128,10 @@ function buildProjections(){
   set("model-anchor-stock","HK$"+number(stockPrice));
   set("model-anchor-gold","US$"+number(goldPrice));
   const sourceState=market.fresh?.stock&&market.fresh?.gold?"PROVIDER-DELAYED SOURCE OBSERVATIONS":"REFRESH FAILED FOR ONE OR MORE INSTRUMENTS; PREVIOUS VALIDATED OBSERVATIONS";
-  const status=sourceState+": 2259 "+clock(stock.providerQuoteTime)+" | GC=F "+clock(gold.providerQuoteTime)+".";
+  const status=sourceState+": 2259 "+sourceLabel(stock)+" | GC=F "+sourceLabel(gold)+".";
   set("model-data-status",status+" Calculations rerun on feed updates and control changes. No model outcome is a live stock quote.");
   set("model-basis","Anchor: HK$"+number(stockPrice)+" on 2259.HK, US$"+number(goldPrice)+" on GC=F gold futures. Assumed 2026 target production 59.2t and 9M 2026 AISC US$1,649/oz. These historical baselines are fixed assumptions; change 2029 assumptions above.");
-  set("model-last-update","VALUATION UPDATED FROM "+clock(stock.providerQuoteTime)+" AND "+clock(gold.providerQuoteTime));
+  set("model-last-update","VALUATION UPDATED FROM "+sourceLabel(stock)+" AND "+sourceLabel(gold));
   const values={};
   for(const key of Object.keys(variants)){
     const seq=[stockPrice,...YEARS.map(y=>estimate(stockPrice,goldPrice,assumptions,key,y))];

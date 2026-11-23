@@ -84,3 +84,14 @@ test('quote metadata refresh never overrides daily-bar HKEX price',async()=>{
   assert.equal(res.payload.observationType,'LAST VALID DAILY BAR');
  });
 });
+
+test('missing market volume remains unknown rather than a false zero-volume session',async()=>{
+ const raw=upstream(false);
+ raw.chart.result[0].indicators.quote[0].volume=[null,0];
+ await withMockProvider(raw,async()=>{
+  const res=fakeResponse();
+  await handler({method:'GET',query:{symbol:'2259.HK',range:'1y',interval:'1d'}},res);
+  assert.equal(res.code,200);
+  assert.deepEqual(res.payload.bars.map(x=>x.v),[null,0]);
+ });
+});

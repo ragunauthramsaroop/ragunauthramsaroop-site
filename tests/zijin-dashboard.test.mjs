@@ -203,3 +203,12 @@ test("User-observed price stays local and cannot replace exchange history",()=>{
  assert.doesNotMatch(manual,/fetch\s*\(|XMLHttpRequest|localStorage|sessionStorage|sendBeacon|indexedDB/);
  assert.match(html,/This bridge does not fetch, scrape, store, publish or authenticate/);
 });
+
+test('daily source bar timestamps are not represented as final exchange trade times',()=>{
+ assert.match(api,/barTimestampMeaning:interval==="1d"/);
+ assert.match(api,/barTimeIsLastTrade:false/);
+ assert.match(market,/function describeBarTime\(data\)/);
+ assert.match(market,/HKT daily bar \(not last-trade time\)/);
+ assert.match(analytics,/function sourceLabel\(data\)/);
+ assert.match(analytics,/DAILY BAR • NOT TRADE TIME/);
+});

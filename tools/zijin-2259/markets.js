@@ -35,6 +35,13 @@ function cleanBars(raw){
     .sort((a,b)=>a.t-b.t).filter((b,i,a)=>i===0||b.t>a[i-1].t).slice(-440);
 }
 function formatTime(iso){const dt=new Date(iso);return !Number.isNaN(dt.getTime())?HKT.format(dt)+" HKT":"unavailable"}
+const DAILY_DATE=new Intl.DateTimeFormat("en-GB",{timeZone:"Asia/Hong_Kong",day:"2-digit",month:"short",year:"numeric"});
+function describeBarTime(data){
+  const iso=data?.providerQuoteTime,dt=new Date(iso);
+  if(!iso||Number.isNaN(dt.getTime()))return "unavailable";
+  if(data.archive||data.interval==="1d")return DAILY_DATE.format(dt)+" HKT daily bar (not last-trade time)";
+  return formatTime(iso)+" provider bar (not live trade)";
+}
 function formatDate(ts){return DATE.format(new Date(ts*1000))}
 function validateQuote(data,symbol,currency){
   if(!data||!data.ok||data.symbol!==symbol||data.currency!==currency||data.sourceSymbol?.toUpperCase()!==symbol.toUpperCase())throw new Error("Ticker or currency verification failed");
@@ -69,7 +76,7 @@ function noteRefreshStatus(){
   const data=state.stock;if(!data)return;
   const label=data.archive?"HISTORICAL SNAPSHOT • NOT A CURRENT QUOTE":"YAHOO FINANCE • EXCHANGE-DELAYED DATA";
   setText("market-chart-status",label);
-  setText("market-chart-timestamp","Latest observation: "+formatTime(data.providerQuoteTime));
+  setText("market-chart-timestamp","Latest observation: "+describeBarTime(data));
   const status=byId("stock-feed-state");
   if(status){
     status.className="feed-state "+(data.archive?"archived":"delayed");
@@ -85,7 +92,7 @@ function renderQuote(){
   const el=byId("live-stock-change");if(el)el.className="quote-change "+(ch>0?"positive":ch<0?"negative":"");
   setText("live-stock-open",formatPrice(last.o));setText("live-stock-high",formatPrice(last.h));setText("live-stock-low",formatPrice(last.l));
   setText("live-stock-volume",last.v===null?"Not reported":INTEGER.format(last.v));
-  setText("live-stock-time","SOURCE OBSERVATION: "+formatTime(data.providerQuoteTime)+(data.archive?" • ARCHIVED":" • UNLICENSED DELAYED DATA"));
+  setText("live-stock-time","SOURCE OBSERVATION: "+describeBarTime(data)+(data.archive?" • ARCHIVED":" • UNLICENSED DELAYED DATA"));
   noteRefreshStatus();
 }
 function simpleMA(values,p){return values.length<p?null:values.slice(-p).reduce((a,b)=>a+b,0)/p}
@@ -139,7 +146,7 @@ function technicals(data){
     card.append(label,value,comment);grid.append(card);
   }
   root.append(grid);
-  const p=document.createElement("p");p.className="technical-timestamp";p.textContent="Calculated from "+n+" "+(data.archive?"archived":"provider-delayed")+" daily bars · "+formatTime(data.providerQuoteTime);root.append(p);
+  const p=document.createElement("p");p.className="technical-timestamp";p.textContent="Calculated from "+n+" "+(data.archive?"archived":"provider-delayed")+" daily bars · "+describeBarTime(data);root.append(p);
 }
 function minMax(vals,extra=0.045){
   const a=Math.min(...vals),b=Math.max(...vals);let pad=(b-a)*extra;if(pad<.01)pad=Math.max(.5,b*.02);
@@ -239,7 +246,7 @@ function renderMain(){
   noteRefreshStatus();
   if(state.interval==="15m"&&state.intraday){
     setText("market-chart-status","2259.HK · PROVIDER-DELAYED 15-MINUTE OHLC BARS");
-    setText("market-chart-timestamp","15-minute source observation: "+formatTime(data.providerQuoteTime));
+    setText("market-chart-timestamp","15-minute source observation: "+describeBarTime(data));
   }
   document.dispatchEvent(new CustomEvent("zgi:chart",{detail:{bars,interval:state.interval==="15m"&&state.intraday?"15m":"1d",sourceTime:data.providerQuoteTime,archive:!!data.archive}}));
 }
@@ -280,7 +287,7 @@ function renderPeer(prefix,data){
   const ch=data.change;
   setText(prefix+"-change",(Number.isFinite(ch)?(ch>0?"+":"")+NUM.format(ch)+" ":"")+formatPercent(data.changePercent));
   const c=byId(prefix+"-change");if(c)c.className=ch<0?"negative":ch>0?"positive":"";
-  setText(prefix+"-status",(prefix==="gold"?"COMEX GOLD FUTURES (GC=F), NOT SPOT XAU/USD":"ZIJIN MINING (2899.HK), NOT ZIJIN GOLD (2259.HK)")+". "+(data.archive?"ARCHIVED":"Provider-delayed")+" source observation: "+formatTime(data.providerQuoteTime));
+  setText(prefix+"-status",(prefix==="gold"?"COMEX GOLD FUTURES (GC=F), NOT SPOT XAU/USD":"ZIJIN MINING (2899.HK), NOT ZIJIN GOLD (2259.HK)")+". "+(data.archive?"ARCHIVED":"Provider-delayed")+" source observation: "+describeBarTime(data));
   miniChart(prefix+"-chart",data,data.displayName,currency);
 }
 function errorPeer(prefix,symbol){

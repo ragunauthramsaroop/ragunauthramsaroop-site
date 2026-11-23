@@ -137,3 +137,7 @@ A 15-MIN BARS toggle requests historical 15-minute 2259.HK OHLC bars from the sa
 No animated point represents an exchange trade, exchange-real-time quote or synthetic price movement. An auto-moving playhead is an educational replay of past bars. True continuous on-site exchange-price changes still require contracted licensed vendor data, permissions, and authorised integration. The 15-minute feed is third-party historical data and not a licensed real-time HKEX stream.
 
 Tests validate historical animation, pause/resume, source timestamps, 15-minute mode and privacy. The production build includes the separate `chart-motion.js` and `chart-motion.css` assets.
+
+## Daily bar timestamp integrity (23 November 2026)
+
+Yahoo Finance daily OHLC timestamps are provider historical-bar labels, not the time of the last exchange trade. The dashboard now displays the date-only label for daily 2259.HK and 2899.HK bars in Hong Kong time, and the UTC bar date for COMEX GC=F. Intraday bars remain explicitly provider-delayed time-bucket observations. API clients receive `barTimestampMeaning` and `barTimeIsLastTrade:false`. The fetchedAt clock indicates retrieval time, not price execution time. Displayed daily OHLC might still be provisional during a trading session. No new market-data rights, feeds, or provider accuracy guarantees are implied.
