@@ -62,7 +62,7 @@ Administration Secretary | 2020-2021
 Account Manager
 - Managed client relationships, commercial communication, reporting, service performance and issue resolution, supporting customer retention and coordinated delivery.
 
-### SCOTIABANK GUYANA | GUYANA | 2014-2019
+### SCOTIABANK GUYANA | GUYANA | JUL 2014-MAY 2019
 Retail Banking Professional
 - Delivered financial services within a regulated international banking environment, supporting client relationships, compliance, risk controls, documentation and branch performance.
 - Built grounding in customer due diligence, financial discipline, service quality, operational risk and accountable handling of regulated processes.
