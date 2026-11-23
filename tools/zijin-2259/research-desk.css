@@ -33,3 +33,15 @@
 @media(max-width:680px){.research-desk{padding:15px 12px 12px;margin-bottom:12px}.research-desk .desk-grid{gap:7px}.research-desk .desk-card{padding:12px 10px;min-height:143px}.research-desk .desk-price{font-size:19px}.research-desk .desk-actions{width:100%;display:grid;grid-template-columns:1fr 1fr}.research-desk .desk-link,.research-desk .desk-export{min-width:0;white-space:normal;text-align:center;font-size:9px}.research-desk .desk-export{grid-column:1/-1}.research-desk .desk-foot{display:block}.research-desk .desk-foot a{display:inline-block;margin-top:8px}}
 @media(max-width:340px){.research-desk .desk-grid{grid-template-columns:1fr}.research-desk .desk-card{min-height:113px}}
 @media(prefers-reduced-motion:reduce){.research-desk .desk-card,.research-desk .desk-link,.research-desk .desk-export{transition:none!important;transform:none!important}}
+
+/* Licensed-source bridge. Vendor BMP service remains outside the dashboard. */
+.research-desk .desk-realtime-bridge{display:flex;align-items:center;justify-content:space-between;gap:18px;padding:12px 14px;margin-bottom:12px;border:1px solid #6e5b3f;background:linear-gradient(100deg,#25251d,#17232b);position:relative}
+.research-desk .desk-realtime-bridge>div{min-width:0;flex:1}
+.research-desk .desk-realtime-tag{display:inline-block;color:#e9c58d;font-weight:800;font-size:9px;letter-spacing:.11em;margin-bottom:4px}
+.research-desk .desk-realtime-bridge p{font-size:10px;color:#b7c4c9;line-height:1.6;max-width:680px}
+.research-desk .desk-realtime-bridge strong{color:#f4ddb1}
+.research-desk .desk-authorised-live{border:1px solid #dabb85;background:#dabb85;color:#192630;padding:12px 16px;min-height:44px;max-width:280px;text-align:center;font-size:10px;line-height:1.4;font-weight:800;letter-spacing:.04em;transition:background .16s ease}
+.research-desk .desk-authorised-live:hover{background:#f2d3a1}
+.research-desk .desk-authorised-live:focus-visible{outline:3px solid #fff;outline-offset:3px}
+@media(max-width:680px){.research-desk .desk-realtime-bridge{display:block;padding:12px}.research-desk .desk-authorised-live{display:flex;align-items:center;justify-content:center;margin-top:10px;width:100%;max-width:100%;min-height:46px}}
+@media(prefers-reduced-motion:reduce){.research-desk .desk-authorised-live{transition:none}}
