@@ -33,7 +33,7 @@ const getHktParts=date=>{
  const part=key=>v.find(x=>x.type===key)?.value;
  return {weekday:part("weekday"),minutes:Number(part("hour"))*60+Number(part("minute"))};
 };
-export default async function handler(req,res){
+module.exports = async function handler(req,res){
  res.setHeader("Content-Type","application/json; charset=utf-8");
  res.setHeader("Cache-Control","private, no-store, max-age=0");
  res.setHeader("Access-Control-Allow-Origin","https://zijin-2259-intelligence.vercel.app");
