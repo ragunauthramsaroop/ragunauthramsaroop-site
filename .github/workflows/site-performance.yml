@@ -96,6 +96,10 @@ jobs:
         run: |
           python scripts/test_leadership_atlas.py
           node --check assets/leadership-atlas-2026.js
+      - name: Verify Edition 11 navigation, motion and performance
+        run: |
+          python scripts/test_edition11_experience.py
+          node --check assets/home-experience-2026.js
       - name: Verify five-path flagship editorial design
         run: python scripts/test_flagship_edition3.py
       - name: Verify executive SEO and contrast regression

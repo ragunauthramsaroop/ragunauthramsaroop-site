@@ -16,3 +16,14 @@
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{animation:none!important;transition:none!important;scroll-behavior:auto!important;transform:none!important}}
 @media(prefers-contrast:more){.atlas-option{color:#fff}.atlas-cover__deck,.atlas-board__legend,.atlas-selection p{color:#fff}.atlas-connector{stroke:#ffe3ab}.atlas-cover__caption{background:#000}}
 @media print{.atlas-header,.atlas-cover__actions,.atlas-close,.atlas-footer,.atlas-options{display:none!important}.atlas-cover{color:#111;background:#fff}.atlas-intro,.atlas-sequence,.atlas-journey,.atlas-evidence{padding:25px 0;break-inside:avoid}.atlas-board{break-inside:avoid}.atlas-timeline{break-inside:avoid}}
+
+/* Edition 11 / page continuity across the executive journey. */
+@media(prefers-reduced-motion:no-preference){@view-transition{navigation:auto}.atlas-brand{view-transition-name:rr-identity}::view-transition-old(root){animation-duration:.24s}::view-transition-new(root){animation-duration:.38s}}
+@media(prefers-reduced-motion:reduce){@view-transition{navigation:none}}
+
+/* Visitor-controlled motion remains independent of device settings. */
+.atlas-motion-toggle{flex:0 0 auto;min-height:39px;padding:7px 11px;border:1px solid #a99266;background:transparent;color:#2b5743;cursor:pointer;font:750 10px/1.2 system-ui,sans-serif;letter-spacing:.03em}
+.atlas-motion-toggle:hover,.atlas-motion-toggle:focus-visible{background:#ece2cf}
+.atlas-motion-toggle[disabled]{cursor:default;opacity:.7}
+body[data-motion=off] *,body[data-motion=off] *:before,body[data-motion=off] *:after{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+@media(max-width:600px){.atlas-motion-toggle{padding:6px 8px;min-height:36px;font-size:9px}}

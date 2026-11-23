@@ -1,5 +1,5 @@
 /* Fresh online navigation, exact-route offline cache and budgeted static asset caching. */
-const V="rr-public-v16";
+const V="rr-public-v17";
 const CORE=["/assets/home-runtime.js","/assets/accessibility.css","/favicon-96.png"];
 const STATIC_FIRST=new Set(["/assets/home-runtime.js","/assets/accessibility.css","/assets/preview.png","/favicon-96.png"]);
 const MAX_DYNAMIC_ENTRIES=60;

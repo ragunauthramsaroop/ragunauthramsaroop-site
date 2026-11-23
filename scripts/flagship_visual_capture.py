@@ -22,6 +22,7 @@ ROUTES={
   "leadership":"/leadership/",
   "research-library":"/research-library/",
   "living-dossier":"/experience/",
+  "leadership-atlas":"/leadership-atlas/",
   "executive-brief":"/briefing/"
 }
 VIEWPORTS={"desktop":(1440,900),"mobile":(390,844)}
@@ -91,7 +92,7 @@ async def run():
                 };
                 const research=location.pathname==='/research-library/';
                 const living=location.pathname==='/experience/';
-                const theme=location.pathname==='/'?'home-compiled-2026.css':living?'experience-2026.css':location.pathname==='/briefing/'?'executive-brief-2026.css':location.pathname==='/leadership/'?'executive-journey-editorial-2026.css':'flagship-system-2026.css';
+                const theme=location.pathname==='/'?'home-compiled-2026.css':living?'experience-2026.css':location.pathname==='/leadership-atlas/'?'leadership-atlas-2026.css':location.pathname==='/briefing/'?'executive-brief-2026.css':location.pathname==='/leadership/'?'executive-journey-editorial-2026.css':'flagship-system-2026.css';
                 const header=document.querySelector('.shell .topbar');
                 const bg=header?getComputedStyle(header).backgroundColor:null;
                 const entries=header?[header.querySelector('.brand > div'),...header.querySelectorAll('.navlinks a:not(.contact-chip)'),header.querySelector('.menu-button')]:[];
@@ -130,6 +131,22 @@ async def run():
                   await page.emulate_media(media="screen")
               if key=="home" and device=="desktop":
                   await page.screenshot(path=str(OUT/"home-fullpage-desktop.png"),animations="disabled",full_page=True)
+              if key=="home":
+                  # Audit the progressive command navigator in both screen sizes.
+                  await page.locator(".rr-command").wait_for(state="attached",timeout=12000)
+                  if device=="mobile":
+                      await page.locator(".mobile-nav summary").click()
+                      await page.locator(".rr-mobile-find").click()
+                  else:
+                      await page.locator(".rr-find").click()
+                  await page.locator(".rr-command").wait_for(state="visible")
+                  await page.screenshot(path=str(OUT/f"quick-navigator-{device}.png"),
+                                        animations="disabled",full_page=False)
+                  await page.locator(".rr-command__close").click()
+              if key=="leadership-atlas":
+                  await page.locator('.atlas-option[data-domain="governance"]').click()
+                  await page.screenshot(path=str(OUT/f"atlas-governance-{device}.png"),
+                                        animations="disabled",full_page=False)
               if key=="living-dossier":
                   await page.locator(".lens-studio__interface").screenshot(
                       path=str(OUT/f"executive-briefing-{device}.png"), animations="disabled")

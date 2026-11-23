@@ -17,6 +17,7 @@ if(mobileMenu){
 addEventListener("load",()=>{
   setTimeout(()=>idle(()=>{if("serviceWorker" in navigator)navigator.serviceWorker.register("/service-worker.js",{updateViaCache:"none"}).catch(()=>{});},5000),3500);
   setTimeout(()=>idle(()=>addScript("/assets/accessibility.js"),1200),700);
+  setTimeout(()=>idle(()=>addScript("/assets/home-experience-2026.js"),1500),450);
   setTimeout(()=>idle(()=>addScript("/tools/assets/analytics-loader.js"),1200),3000);
 },{once:true});
 })();

@@ -3,6 +3,21 @@
   const board = document.querySelector(".atlas-board");
   const buttons = Array.from(document.querySelectorAll(".atlas-option[data-domain]"));
   if (!board || !buttons.length) return;
+  const reduce = window.matchMedia("(prefers-reduced-motion: reduce)");
+  const motionButton = document.querySelector(".atlas-motion-toggle");
+  let motionPaused = reduce.matches;
+  function setMotion(value) {
+    motionPaused = value;
+    document.body.dataset.motion = value ? "off" : "on";
+    if (!motionButton) return;
+    motionButton.disabled = reduce.matches;
+    motionButton.setAttribute("aria-pressed", String(value));
+    motionButton.textContent = reduce.matches ? "Motion reduced" : value ? "Resume motion" : "Pause motion";
+    motionButton.setAttribute("aria-label", motionButton.textContent);
+  }
+  motionButton?.addEventListener("click", () => { if (!reduce.matches) setMotion(!motionPaused); });
+  reduce.addEventListener?.("change", event => setMotion(event.matches));
+  setMotion(motionPaused);
 
   const domains = {
     government: {
@@ -50,6 +65,12 @@
     description.textContent = entry.description;
     link.textContent = entry.linkText;
     link.href = entry.link;
+    const panel = document.querySelector(".atlas-selection");
+    if (!motionPaused && panel?.animate) {
+      panel.getAnimations().forEach(animation => animation.cancel());
+      panel.animate([{opacity: .65, transform: "translateY(6px)"}, {opacity: 1, transform: "translateY(0)"}],
+        {duration: 260, easing: "cubic-bezier(.2,.78,.25,1)"});
+    }
   }
   buttons.forEach((button, index) => {
     button.addEventListener("click", () => select(button));
