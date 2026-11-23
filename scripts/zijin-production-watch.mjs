@@ -6,6 +6,8 @@ const SYMBOLS=[['2259.HK','HKD'],['2899.HK','HKD'],['GC=F','USD']];
 export function validateHome(html){
  if(typeof html!=='string'||!html.includes('<title>ZGI Intelligence')||
   !html.includes('id="main-title"')||!html.includes('id="live-kpi-2259"')||
+  !html.includes('id="motion-follow" aria-pressed="true"')||
+  !html.includes('OPEN AUTHORISED LIVE SNAPSHOT')||
   !html.includes('name="robots" content="noindex,nofollow"'))
   throw Error('Dashboard identity, privacy or market KPI markup missing');
  return 'Dashboard identity and noindex confirmed';
@@ -69,7 +71,13 @@ export async function auditProduction(){
   await check('/api/market?'+qs.toString(),symbol+' market bridge',200,
    raw=>validateMarket(JSON.parse(raw),symbol,currency),true,results);
  }
- await check('/api/market?symbol=AAPL','Unsupported symbol guard',400,raw=>{
+ const intradayQS=new URLSearchParams({symbol:'2259.HK',range:'1mo',interval:'15m'});
+ await check('/api/market?'+intradayQS.toString(),'2259.HK delayed 15-minute bridge',200,raw=>{
+  const data=JSON.parse(raw);
+  if(data.interval!=='15m')throw Error('Intraday endpoint did not return 15-minute bars');
+  return validateMarket(data,'2259.HK','HKD');
+ },true,results);
+  await check('/api/market?symbol=AAPL','Unsupported symbol guard',400,raw=>{
   if(JSON.parse(raw).ok!==false)throw Error('Invalid rejection');
   return 'Unrelated symbols rejected';
  },true,results);
