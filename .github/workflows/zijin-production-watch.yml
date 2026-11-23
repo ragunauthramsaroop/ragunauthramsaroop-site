@@ -1,0 +1,91 @@
+name: ZGI standalone production health and source integrity
+
+on:
+  pull_request:
+    paths:
+      - "scripts/zijin-production-watch.mjs"
+      - "tests/zijin-production-watch.test.mjs"
+      - ".github/workflows/zijin-production-watch.yml"
+  push:
+    branches: [main]
+    paths:
+      - "scripts/zijin-production-watch.mjs"
+      - "tests/zijin-production-watch.test.mjs"
+      - ".github/workflows/zijin-production-watch.yml"
+  schedule:
+    - cron: "29 */6 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: zgi-production-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  regression:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 7
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020
+        with:
+          node-version: "22"
+      - name: Monitor syntax
+        run: node --check scripts/zijin-production-watch.mjs
+      - name: Source integrity and licensing regression suite
+        run: node --test tests/zijin-production-watch.test.mjs tests/zijin-market-integrity.test.mjs tests/zijin-licensed-feed.test.mjs
+
+  production:
+    if: github.event_name != 'pull_request'
+    needs: regression
+    runs-on: ubuntu-24.04
+    timeout-minutes: 8
+    permissions:
+      contents: read
+      issues: write
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020
+        with:
+          node-version: "22"
+      - name: Validate public dashboard and read-only market routes
+        run: node scripts/zijin-production-watch.mjs
+      - name: Deduplicate production incident
+        if: failure()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          issue="$(gh issue list --repo "$GITHUB_REPOSITORY" --state open --limit 200 --json number,title --jq '.[] | select(.title=="[AUTO] ZGI production health incident") | .number' | head -1)"
+          if [ -z "$issue" ]; then
+            gh issue create --repo "$GITHUB_REPOSITORY" --title "[AUTO] ZGI production health incident" --body "The independent Zijin 2259 dashboard failed a production check. Verify the read-only market provider, timestamps, static assets and actual deployed version. Workflow: $GITHUB_SERVER_URL/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID"
+          else
+            echo "Existing incident remains open: #$issue"
+          fi
+      - name: Resolve incident after successful recovery
+        if: success()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          issue="$(gh issue list --repo "$GITHUB_REPOSITORY" --state open --limit 200 --json number,title --jq '.[] | select(.title=="[AUTO] ZGI production health incident") | .number' | head -1)"
+          if [ -n "$issue" ]; then
+            gh issue comment "$issue" --repo "$GITHUB_REPOSITORY" --body "Verified recovery: $GITHUB_SERVER_URL/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID"
+            gh issue close "$issue" --repo "$GITHUB_REPOSITORY"
+          fi
+      - name: Retain audit evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: zgi-production-health
+          path: audit/zgi-production/health.json
+          if-no-files-found: warn
+          retention-days: 14
