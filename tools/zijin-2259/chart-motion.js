@@ -11,7 +11,7 @@
   // Begin at the newest provider-delayed bar, never in a fabricated live replay.
   // Historical replay remains an explicit user-initiated option.
   const state = {bars:[],sourceTime:null,interval:"15m",archive:false,playing:false,following:true,
-    speed:1,progress:0,previousFrame:null,visibleIndex:-1,nextCheck:Date.now()+180000,
+    speed:1,progress:1,previousFrame:null,visibleIndex:-1,nextCheck:Date.now()+180000,
     sourceAvailable:false,latestSourceTime:null,lastDraw:0};
   function text(id,value){const el=byId(id);if(el)el.textContent=value;}
   function updateMode(){
