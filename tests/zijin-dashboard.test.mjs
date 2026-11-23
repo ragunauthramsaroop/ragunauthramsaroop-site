@@ -261,3 +261,9 @@ test("visual-first layout styles apply before first paint to prevent mobile shif
  assert.match(visualCss,/\.visual-first #overview/);
  assert.match(visualFirst,/document\.documentElement\.classList\.add\("visual-first"\)/);
 });
+
+test("fonts are requested early with optional face rendering, not late swap import",()=>{
+ assert.doesNotMatch(css,/@import/);
+ assert.match(html,/fonts\.gstatic\.com" crossorigin/);
+ assert.match(html,/family=Manrope[^"]*display=optional/);
+});
