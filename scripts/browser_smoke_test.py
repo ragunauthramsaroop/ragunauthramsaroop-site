@@ -61,6 +61,7 @@ def main():
             assert any("/assets/home-experience-2026.js" in url for url in delayed), delayed
             assert any("/assets/home-experience-2026.css" in url for url in delayed), delayed
             expect(page.locator(".rr-find")).to_be_visible()
+            assert page.locator(".rr-discipline-link").count() == 4
             page.locator(".rr-find").click()
             expect(page.locator("dialog.rr-command")).to_be_visible()
             page.locator(".rr-command__input").fill("recruiter")
