@@ -121,8 +121,25 @@ def main():
             expect(page.locator('.orientation-foot')).to_contain_text("2016")
             motion_button = page.locator(".motion-toggle--desktop")
             expect(motion_button).to_be_visible()
+            state_before = page.evaluate("""() => ({
+                deviceReduced: matchMedia('(prefers-reduced-motion: reduce)').matches,
+                bodyMotion: document.body.dataset.motion,
+                ready: document.body.classList.contains('motion-ready'),
+                buttons: [...document.querySelectorAll('.motion-toggle')].map(b=>({
+                    disabled:b.disabled,pressed:b.getAttribute('aria-pressed'),
+                    text:b.textContent,display:getComputedStyle(b).display
+                }))
+            })""")
             motion_button.click()
-            expect(motion_button).to_have_attribute("aria-pressed", "true")
+            state_after = page.evaluate("""() => ({
+                bodyMotion: document.body.dataset.motion,
+                buttons: [...document.querySelectorAll('.motion-toggle')].map(b=>({
+                    pressed:b.getAttribute('aria-pressed'),text:b.textContent
+                }))
+            })""")
+            assert motion_button.get_attribute("aria-pressed") == "true", (
+                f"Pause Motion state failed: before={state_before}, after={state_after}"
+            )
             expect(page.locator("body")).to_have_attribute("data-motion", "off")
             assert page.evaluate("getComputedStyle(document.querySelector('.connection-field')).display === 'none'")
             motion_button.click()
