@@ -8,8 +8,9 @@
   const REPLAY_MS = 30000;
   const fmtPrice = new Intl.NumberFormat("en-HK",{style:"currency",currency:"HKD",maximumFractionDigits:2});
   const fmtDate = new Intl.DateTimeFormat("en-GB",{timeZone:"Asia/Hong_Kong",day:"2-digit",month:"short",year:"numeric",hour:"2-digit",minute:"2-digit",hourCycle:"h23"});
-  const reduced = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-  const state = {bars:[],sourceTime:null,interval:"1d",archive:false,playing:false,following:true,
+  // Begin at the newest provider-delayed bar, never in a fabricated live replay.
+  // Historical replay remains an explicit user-initiated option.
+  const state = {bars:[],sourceTime:null,interval:"15m",archive:false,playing:false,following:true,
     speed:1,progress:1,previousFrame:null,visibleIndex:-1,nextCheck:Date.now()+180000,
     sourceAvailable:false,latestSourceTime:null,lastDraw:0};
   function text(id,value){const el=byId(id);if(el)el.textContent=value;}
@@ -18,7 +19,7 @@
     if(replay){replay.textContent=state.playing?"PAUSE REPLAY":"PLAY HISTORICAL REPLAY";replay.setAttribute("aria-pressed",String(state.playing));}
     if(follow){follow.setAttribute("aria-pressed",String(state.following));follow.textContent=state.following?"FOLLOW DELAYED SOURCE ✓":"FOLLOW DELAYED SOURCE";}
     const badge=byId("motion-mode-label");
-    if(badge)badge.textContent=state.playing?"HISTORICAL REPLAY · NOT LIVE TRADES":state.following?"SOURCE MONITOR · DELAYED":"REPLAY PAUSED · HISTORICAL DATA";
+    if(badge)badge.textContent=state.playing?"HISTORICAL REPLAY · NOT LIVE TRADES":state.following?"FOLLOWING DELAYED BAR · NOT LIVE TRADES":"REPLAY PAUSED · HISTORICAL DATA";
   }
   function draw(){
     const bars=state.bars,host=byId("market-chart"),svg=host?.querySelector("svg");

@@ -18,12 +18,12 @@ const app=readFileSync(root+'app.js','utf8');
 const market=readFileSync(root+'markets.js','utf8');
 const motion=readFileSync(root+'chart-motion.js','utf8');
 test('replay is labelled historical and never claims real-time trade ticks',()=>{
- assert.match(html,/SOURCE MONITOR[^<]*DELAYED/);
- assert.match(html,/Historical replay is optional, not a real-time trade stream/);
+ assert.match(html,/FOLLOWING DELAYED BARS[^<]*NOT LIVE TRADES/);
+ assert.match(html,/Historical replay is optional and never shows live trades/);
  assert.match(html,/15-MIN BARS/);
  assert.ok(html.indexOf('markets.js')<html.indexOf('chart-motion.js'));
  assert.match(motion,/zgi:chart/);
- assert.match(motion,/reduced-motion/);
+ assert.match(readFileSync(root+"chart-motion.css","utf8"),/prefers-reduced-motion/);
  assert.match(motion,/FOLLOW DELAYED SOURCE/);
  assert.match(market,/refreshIntraday/);
  assert.match(market,/data-motion-line/);
@@ -275,4 +275,17 @@ test('main chart starts at newest provider-delayed bar rather than replaying his
  assert.match(html,/id="motion-follow" aria-pressed="true"/);
  assert.match(html,/id="motion-replay-toggle" aria-pressed="false"/);
  assert.match(html,/15-MIN BARS/);
+});
+
+test("default chart follows newest provider-delayed 15-minute bars, not a simulated live replay",()=>{
+ const motion=readFileSync(root+"chart-motion.js","utf8");
+ const markets=readFileSync(root+"markets.js","utf8");
+ assert.match(markets,/range:"5d",dailyRange:"6mo",style:"candles",interval:"15m"/);
+ assert.match(markets,/activateControls\(\);\s*refreshIntraday\(\);\s*refresh\(\);/);
+ assert.match(markets,/Loading source-delayed 15-minute bars/);
+ assert.match(motion,/archive:false,playing:false,following:true/);
+ assert.match(html,/id="motion-follow" aria-pressed="true"/);
+ assert.match(html,/id="motion-replay-toggle" aria-pressed="false"/);
+ assert.match(html,/OPEN AUTHORISED LIVE SNAPSHOT/);
+ assert.match(html,/href="https:\/\/www\.etnet\.com\.hk\/www\/eng\/stocks\/realtime\/index\.php"/);
 });

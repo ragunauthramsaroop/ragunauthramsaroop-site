@@ -14,7 +14,7 @@ const SHORT_TIME=new Intl.DateTimeFormat("en-GB",{timeZone:"Asia/Hong_Kong",day:
 const COLORS={up:"#5dd2a6",down:"#ee8287",gold:"#e4bd7a",line:"#91b9e9",muted:"#8495a7",grid:"#344250",bg:"#0c1420"};
 const BASE_API=location.hostname.endsWith(".vercel.app")||location.hostname==="localhost"?"": "https://zijin-2259-intelligence.vercel.app";
 const BASE_ENDPOINT=BASE_API+"/api/market";
-const state={stock:null,gold:null,parent:null,range:"6mo",dailyRange:"6mo",style:"candles",interval:"1d",intraday:null,liveQuote:false};
+const state={stock:null,gold:null,parent:null,range:"5d",dailyRange:"6mo",style:"candles",interval:"15m",intraday:null,liveQuote:false};
 const DAYS={"5d":5,"1mo":31,"3mo":93,"6mo":186,"1y":370};
 const ARCHIVE=[
 ["2026-11-04",116.6,134.4,116.6,133.6,13696240],
@@ -166,7 +166,15 @@ function seriesForRange(bars,range){
   return filtered.length>=2?filtered:bars.slice(-2);
 }
 function renderMain(){
-  const host=byId("market-chart"),data=state.interval==="15m"&&state.intraday?state.intraday:state.stock;if(!host||!data)return;
+  const host=byId("market-chart");if(!host)return;
+  // Never disguise a daily candle as a 15-minute candle while the intraday
+  // provider request is still pending. On error the explicit daily fallback
+  // path updates the interval controls before rendering.
+  if(state.interval==="15m"&&!state.intraday){
+    host.textContent="Loading source-delayed 15-minute bars. No live tick feed is connected.";
+    return;
+  }
+  const data=state.interval==="15m"?state.intraday:state.stock;if(!data)return;
   const bars=seriesForRange(data.bars,state.range),n=bars.length;
   if(n<2){host.textContent="Insufficient verified bars";return}
   const prices=bars.map(b=>b.c),all=[...bars.map(b=>b.h),...bars.map(b=>b.l)], [min,max]=minMax(all);
@@ -376,10 +384,11 @@ async function refresh(){
   }finally{loading=false}
 }
 activateControls();
+refreshIntraday();
 refresh();
 // Only re-check at a measured interval; publisher timestamps determine quote freshness.
 setInterval(()=>{if(document.visibilityState==="visible")refresh();},180000);
 setInterval(()=>{if(document.visibilityState==="visible"&&state.interval==="15m")refreshIntraday();},60000);
-document.addEventListener("visibilitychange",()=>{if(document.visibilityState==="visible")refresh();});
-document.getElementById("refresh-market-now")?.addEventListener("click",refresh);
+document.addEventListener("visibilitychange",()=>{if(document.visibilityState==="visible"){refresh();if(state.interval==="15m")refreshIntraday();}});
+document.getElementById("refresh-market-now")?.addEventListener("click",()=>{refresh();if(state.interval==="15m")refreshIntraday();});
 })();

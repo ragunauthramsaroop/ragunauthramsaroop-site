@@ -189,21 +189,22 @@
             <div class="native-chart-panel">
               <div class="native-toolbar">
                 <div class="native-controls" role="group" aria-label="Market chart date range">
-                  <button type="button" data-price-range="5d" hidden>5D</button><button type="button" data-price-range="1mo">1M</button><button type="button" data-price-range="3mo">3M</button><button type="button" data-price-range="6mo" class="active">6M</button><button type="button" data-price-range="1y">1Y</button>
+                  <button type="button" data-price-range="5d" class="active">5D</button><button type="button" data-price-range="1mo">1M</button><button type="button" data-price-range="3mo">3M</button><button type="button" data-price-range="6mo">6M</button><button type="button" data-price-range="1y">1Y</button>
                 </div>
                 <div class="native-controls" role="group" aria-label="Chart display type"><button type="button" data-chart-style="candles" class="active">CANDLES</button><button type="button" data-chart-style="line">LINE</button></div>
-                <div class="native-controls motion-interval-controls" role="group" aria-label="Historical price bar interval"><button type="button" data-chart-interval="1d" class="active" aria-pressed="true">DAILY</button><button type="button" data-chart-interval="15m" aria-pressed="false">15-MIN BARS</button></div>
+                <div class="native-controls motion-interval-controls" role="group" aria-label="Historical price bar interval"><button type="button" data-chart-interval="1d" aria-pressed="false">DAILY</button><button type="button" data-chart-interval="15m" class="active" aria-pressed="true">15-MIN BARS</button></div>
               </div>
               <div class="market-motion-controls" role="group" aria-label="Historical replay and verified delayed price monitoring">
                 <button type="button" id="motion-replay-toggle" aria-pressed="false">PLAY HISTORICAL REPLAY</button>
                 <button type="button" id="motion-speed" aria-label="Historical replay speed one times">1× SPEED</button>
                 <button type="button" id="motion-follow" aria-pressed="true">FOLLOW DELAYED SOURCE ✓</button>
-                <span class="motion-mode-label" id="motion-mode-label">SOURCE MONITOR · DELAYED</span>
+                <a class="motion-authorised-live" href="https://www.etnet.com.hk/www/eng/stocks/realtime/index.php" target="_blank" rel="noopener noreferrer" aria-label="Open HKEX authorised vendor for manually requested real-time basic price snapshot">OPEN AUTHORISED LIVE SNAPSHOT ↗</a>
+                <span class="motion-mode-label" id="motion-mode-label">FOLLOWING DELAYED BARS · NOT LIVE TRADES</span>
               </div>
-              <div class="market-motion-data"><span id="motion-observation">Replay uses actual timestamped historical bars</span><span id="motion-market-status" role="status">CONNECTING TO PROVIDER-DELAYED OBSERVATIONS</span></div>
+              <div class="market-motion-data"><span id="motion-observation">Following the newest delayed provider bar, not an exchange trade</span><span id="motion-market-status" role="status">CONNECTING TO PROVIDER-DELAYED OBSERVATIONS</span></div>
               <div id="market-chart" class="native-chart" aria-label="Historical OHLC stock chart for Zijin Gold International (2259.HK)" role="img"><div class="native-loading">Fetching verified HKEX:2259 price history…</div></div>
               <div class="native-data-foot"><span id="market-chart-status">SOURCE: YAHOO FINANCE · DELAYED DATA</span><span id="market-chart-timestamp">Timestamp pending</span></div>
-              <div class="motion-market-strip"><span>Opening view follows the latest available provider-delayed bar. Historical replay is optional, not a real-time trade stream.</span><span id="motion-next-check">NEXT AUTOMATIC DATA CHECK 3:00</span></div>
+              <div class="motion-market-strip"><span>15-minute provider-delayed OHLC bars checked each minute. Historical replay is optional and never shows live trades.</span><span id="motion-next-check">NEXT AUTOMATIC DATA CHECK 3:00</span></div>
               <div class="motion-refresh-track" aria-hidden="true"><span id="motion-refresh-progress"></span></div>
             </div>
             <div class="chart-caption">Native SVG candlesticks, volume, RSI(14) and MACD(12,26,9) derive solely from the selected, verified 2259.HK daily or 15-minute historical OHLC bars. Indicator periods follow the selected bar interval. Provider observations are delayed. An archived fallback is dated and never a live tick.</div>

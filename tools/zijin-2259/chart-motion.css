@@ -25,3 +25,9 @@
  .motion-interval-controls button{flex:1}
 }
 @media(prefers-reduced-motion:reduce){.motion-refresh-track>span{transition:none}}
+
+/* Visually separate manually requested authorised real-time snapshots from delayed charts. */
+.market-motion-controls .motion-authorised-live{display:inline-flex;align-items:center;justify-content:center;padding:9px 12px;min-height:38px;border:1px solid #c2a36c;background:#d6b77c;color:#152331;font-size:10px;font-weight:800;letter-spacing:.025em;text-align:center;text-decoration:none;border-radius:3px}
+.market-motion-controls .motion-authorised-live:hover{background:#edd19c;color:#172432}
+.market-motion-controls .motion-authorised-live:focus-visible{outline:3px solid #f7d99b;outline-offset:3px}
+@media(max-width:680px){.market-motion-controls .motion-authorised-live{flex:1 1 100%;min-height:44px;font-size:10px}}
