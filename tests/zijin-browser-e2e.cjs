@@ -6,7 +6,9 @@ const { chromium } = require('playwright');
 const assert = require('node:assert/strict');
 const SITE = 'http://127.0.0.1:4173/tools/zijin-2259/';
 function bars(symbol){
-  const start=Date.UTC(2025,8,30,8,0,0),end=Date.UTC(2026,10,13,8,0,0);
+  // Sliding historical fixtures stay recent under the seven-day source policy.
+  const today=Math.floor(Date.now()/86400000)*86400000;
+  const end=today-86400000+8*3600000,start=end-410*86400000;
   const base=symbol==='2259.HK'?87:symbol==='2899.HK'?21:3550;
   const slope=symbol==='2259.HK'?.12:symbol==='2899.HK'?.028:1.2;
   const out=[];let idx=0;
@@ -23,7 +25,7 @@ function bars(symbol){
 function intradayFeed(symbol){
  const original=feed(symbol);
  const bars=[];
- const start=Date.UTC(2026,10,13,1,0,0);
+ const start=Date.now()-3600000-64*900000;
  for(let i=0;i<65;i++){
   const t=start+i*900000;
   const c=Number((118+i*.035+Math.sin(i*.3)*1.3).toFixed(2));
@@ -36,9 +38,9 @@ function feed(symbol){
  const history=bars(symbol),latest=history.at(-1),prev=history.at(-2);
  return {ok:true,symbol,sourceSymbol:symbol,currency:symbol==='GC=F'?'USD':'HKD',
   displayName:symbol==='2259.HK'?'Zijin Gold International':symbol==='2899.HK'?'Zijin Mining Group':'COMEX Gold Futures',
-  provider:'E2E MOCK - NEVER LIVE',providerQuoteTime:'2026-11-13T08:08:15.000Z',latestBarTime:'2026-11-13T08:00:00.000Z',
-  fetchedAt:'2026-11-13T09:00:00.000Z',regularMarketPrice:latest.c,previousClose:prev.c,
-  change:latest.c-prev.c,changePercent:(latest.c/prev.c-1)*100,bars:history,marketState:'CLOSED',dataDelay:'E2E MOCK - source delayed'};
+  provider:'Yahoo Finance E2E MOCK - NEVER LIVE',interval:'1d',providerQuoteTime:new Date(latest.t*1000).toISOString(),latestBarTime:new Date(latest.t*1000).toISOString(),
+  fetchedAt:new Date().toISOString(),regularMarketPrice:latest.c,previousClose:prev.c,
+  change:latest.c-prev.c,changePercent:(latest.c/prev.c-1)*100,bars:history,marketState:'CLOSED',dataDelay:'E2E MOCK of provider-delayed observations, NEVER LIVE'};
 }
 async function waitFor(page,fn,desc){
  try{await page.waitForFunction(fn,{timeout:25000});}catch(e){throw Error('Timed out waiting for '+desc+': '+e.message)}

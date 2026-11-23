@@ -1,9 +1,12 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="visual-first">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="color-scheme" content="dark">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&amp;family=Manrope:wght@400;500;600;700;800&amp;display=optional">
   <meta name="description" content="Independent HKEX:2259 intelligence terminal with delayed market sources, interactive gold and parent comparisons, empirical risk stress tests, financial research and conditional 2027–2029 valuation scenarios.">
   <meta name="robots" content="noindex,nofollow">
   <title>ZGI Intelligence | HKEX 2259</title>
@@ -12,8 +15,11 @@
   <link rel="stylesheet" href="./styles.css">
   <link rel="stylesheet" href="./visual-first.css">
   <link rel="stylesheet" href="./chart-motion.css">
+  <link rel="stylesheet" href="./research-desk.css">
   <script defer src="./visual-first.js"></script>
   <script defer src="./app.js"></script>
+  <script defer src="./source-gate.js"></script>
+  <script defer src="./research-desk.js"></script>
   <script defer src="./markets.js"></script>
   <script defer src="./chart-motion.js"></script>
   <script defer src="./intelligence.js"></script>
@@ -81,6 +87,21 @@
             <span class="status-dot"></span>
             <p><strong>Independent delayed-market data.</strong> Native price charts use a timestamped Yahoo Finance data bridge. No Apple or unrelated substitute symbols. If the provider fails, a dated historical snapshot appears instead, clearly labelled.</p>
           </div>
+          <section class="research-desk" aria-labelledby="desk-title">
+            <div class="desk-head"><div><p class="desk-eyebrow">RESEARCH OPERATIONS / DATA CONFIDENCE</p><h2 id="desk-title">Market readiness desk</h2><p class="desk-subtitle">Automatic charts use delayed provider prices. User-requested HKEX real-time snapshots open on the authorised vendor's own service. Model outputs are withheld when either anchor fails the seven-day source-integrity policy.</p></div>
+              <div class="desk-actions"><a class="desk-link" href="#charting">VIEW CHARTS ↗</a><a class="desk-link" href="#scenarios">OPEN MODEL ↗</a><button id="desk-export" type="button" class="desk-export" disabled>EXPORT SOURCE BRIEF ↓</button></div></div>
+            <div class="desk-realtime-bridge" aria-label="Authorised real-time stock snapshots">
+              <div><span class="desk-realtime-tag">HKEX BASIC MARKET PRICES · FREE ON-DEMAND SNAPSHOTS</span><p>Need a current exchange snapshot? Open ET Net's authorised service and search <strong>02259</strong> for Zijin Gold International or <strong>02899</strong> for Zijin Mining. A new quote requires your request on the provider's own website.</p></div>
+              <a id="desk-authorised-live" class="desk-authorised-live" href="https://www.etnet.com.hk/www/eng/stocks/realtime/index.php" target="_blank" rel="noopener noreferrer" aria-label="Open ET Net's authorised Hong Kong real-time Basic Market Prices service in a new tab">OPEN REAL-TIME SNAPSHOT SERVICE ↗</a>
+            </div>
+            <div class="desk-grid">
+              <article id="desk-stock" class="desk-card" data-state="waiting"><div class="desk-card-header"><span class="desk-symbol">2259.HK</span><span class="desk-index">EQUITY / HKD</span></div><strong id="desk-stock-price" class="desk-price">PENDING</strong><span id="desk-stock-state" class="desk-source-state">CHECKING SOURCE</span><p id="desk-stock-asof" class="desk-asof">Waiting for provider history</p></article>
+              <article id="desk-parent" class="desk-card" data-state="waiting"><div class="desk-card-header"><span class="desk-symbol">2899.HK</span><span class="desk-index">PARENT / HKD</span></div><strong id="desk-parent-price" class="desk-price">PENDING</strong><span id="desk-parent-state" class="desk-source-state">CHECKING SOURCE</span><p id="desk-parent-asof" class="desk-asof">Waiting for provider history</p></article>
+              <article id="desk-gold" class="desk-card" data-state="waiting"><div class="desk-card-header"><span class="desk-symbol">GC=F</span><span class="desk-index">FUTURES / USD</span></div><strong id="desk-gold-price" class="desk-price">PENDING</strong><span id="desk-gold-state" class="desk-source-state">CHECKING SOURCE</span><p id="desk-gold-asof" class="desk-asof">COMEX futures, not spot gold</p></article>
+              <article id="desk-model" class="desk-card" data-state="waiting"><div class="desk-card-header"><span class="desk-symbol">MODEL GATE</span><span class="desk-index">2259 + GC=F</span></div><strong id="desk-model-price" class="desk-price">PENDING</strong><span id="desk-model-state" class="desk-source-state">CHECKING SOURCE</span><p id="desk-model-asof" class="desk-asof">Awaiting both verified historical inputs</p></article>
+            </div>
+            <div class="desk-foot"><p id="desk-overall" role="status" aria-live="polite">Source checks have not finished. No live exchange connection is claimed.</p><a href="#sources">SEE DATA RIGHTS & AUDIT TRAIL ↗</a></div><p id="desk-export-note" aria-live="polite"></p>
+          </section>
           <section class="realtime-access" aria-label="HKEX real-time market-data access">
             <div class="realtime-head"><div><p class="eyebrow">MARKET DATA ACCESS · 2259 / 2899</p><h2>Authorised real-time access</h2><p>Free user-requested snapshots on an HKEX-authorised vendor website. Licensed on-site prices activate only after documented vendor redistribution rights and a secure API are configured.</p></div><span class="source-tag" id="licensed-connection-state">ON-SITE LICENCE NOT CONNECTED</span></div>
             <div class="realtime-options">
@@ -129,7 +150,7 @@
             <div class="metric-card"><span class="metric-eyebrow">GOLD FUTURES · USD/OZ</span><div class="metric-value" id="live-kpi-gold">—</div><div class="metric-foot" id="live-kpi-gold-asof">COMEX FUTURES, NOT GOLD SPOT</div></div>
             <div class="metric-card"><span class="metric-eyebrow">2259 · 52-WEEK RANGE</span><div class="metric-value" id="live-kpi-range">—</div><div class="metric-foot" id="live-kpi-range-asof">COMPUTED FROM VENDOR HISTORICAL BARS</div></div>
           </div>
-          <div class="market-live-strip"><span class="stream-indicator"><i></i> AUTO-REFRESH EVERY 3 MINUTES</span><span id="global-market-source">Waiting for timestamped market response</span><button type="button" id="refresh-market-now" class="button button-subtle">REFRESH OBSERVATIONS ↻</button></div>
+          <div class="market-live-strip"><span class="stream-indicator"><i></i> DELAYED-PROVIDER CHECK EVERY 3 MINUTES</span><span id="global-market-source">Waiting for timestamped market response</span><button type="button" id="refresh-market-now" class="button button-subtle">REFRESH OBSERVATIONS ↻</button></div>
           <div class="overview-grid">
             <article class="panel quote-panel">
               <div class="panel-heading"><div><p class="eyebrow">STREAM 01</p><h2>Exchange-listed security</h2></div><span class="source-tag">YAHOO FINANCE · DELAYED</span></div>

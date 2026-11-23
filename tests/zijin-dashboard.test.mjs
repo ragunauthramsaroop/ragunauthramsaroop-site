@@ -224,3 +224,46 @@ test('standalone Vercel runtime declares CommonJS for market, licensing, and new
   assert.doesNotMatch(source,/export default/);
  }
 });
+
+test("Source-confidence terminal preserves source identity and browser-only privacy",()=>{
+ const source=readFileSync(root+"source-gate.js","utf8");
+ const desk=readFileSync(root+"research-desk.js","utf8");
+ const deskCss=readFileSync(root+"research-desk.css","utf8");
+ for(const id of ["desk-title","desk-stock","desk-parent","desk-gold","desk-model","desk-overall","desk-export"])assert.match(html,new RegExp('id="'+id+'"'));
+ assert.match(html,/source-gate\.js/);
+ assert.match(html,/research-desk\.css/);
+ assert.ok(html.indexOf("source-gate.js")<html.indexOf("markets.js"));
+ assert.match(html,/id="desk-overall" role="status" aria-live="polite"/);
+ assert.match(source,/MAX_AGE=7\*DAY/);
+ assert.match(source,/assessPair/);
+ assert.match(analytics,/ZGIResearchGate.*assessPair/);
+ assert.match(readFileSync(root+"quant-ui.js","utf8"),/ZGIResearchGate.*assessFeed/);
+ assert.match(readFileSync(root+"decision-ui.js","utf8"),/ZGIResearchGate.*assessFeed/);
+ assert.match(desk,/zgi:market/);
+ assert.match(desk,/zijin-2259-source-brief/);
+ assert.doesNotMatch(desk,/localStorage|sessionStorage|sendBeacon|fetch\s*\(|XMLHttpRequest|award-quant/);
+ assert.match(deskCss,/@media\(max-width:680px\)/);
+ assert.match(deskCss,/prefers-reduced-motion/);
+});
+
+test("authorised real-time BMP snapshot is prominently linked only to vendor homepage",()=>{
+ assert.match(html,/id="desk-authorised-live"/);
+ assert.match(html,/OPEN REAL-TIME SNAPSHOT SERVICE/);
+ assert.match(html,/02259/);
+ assert.match(html,/02899/);
+ assert.match(html,/href="https:\/\/www\.etnet\.com\.hk\/www\/eng\/stocks\/realtime\/index\.php"/);
+ assert.doesNotMatch(html,/href="https:\/\/[^"]*etnet[^"]*quote\.php/);
+ assert.match(html,/DELAYED-PROVIDER CHECK EVERY 3 MINUTES/);
+});
+
+test("visual-first layout styles apply before first paint to prevent mobile shifts",()=>{
+ assert.match(html,/<html lang="en" class="visual-first">/);
+ assert.match(visualCss,/\.visual-first #overview/);
+ assert.match(visualFirst,/document\.documentElement\.classList\.add\("visual-first"\)/);
+});
+
+test("fonts are requested early with optional face rendering, not late swap import",()=>{
+ assert.doesNotMatch(css,/@import/);
+ assert.match(html,/fonts\.gstatic\.com" crossorigin/);
+ assert.match(html,/family=Manrope[^"]*display=optional/);
+});

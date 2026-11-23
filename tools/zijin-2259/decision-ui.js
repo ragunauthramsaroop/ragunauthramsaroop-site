@@ -11,7 +11,7 @@ const dt=new Intl.DateTimeFormat("en-GB",{timeZone:"Asia/Hong_Kong",year:"numeri
 let feeds=null,quant=null,selectedCell=null;
 const round=x=>Number.isFinite(x)?fmt.format(x):"—";
 const clock=x=>x&&Number.isFinite(Date.parse(x))?dt.format(new Date(x))+" HKT":"Unverified time";
-const valid=d=>d?.bars?.length>1&&Number.isFinite(d.regularMarketPrice)&&!d.archive;
+const valid=d=>d?.bars?.length>1&&Number.isFinite(d.regularMarketPrice)&&!d.archive&&window.ZGIResearchGate?.assessFeed(d,d?.symbol).usable===true;
 function set(id,s){const el=$(id);if(el)el.textContent=String(s)}
 function makeEl(tag,cls,text){const el=document.createElement(tag);if(cls)el.className=cls;if(text!==undefined)el.textContent=String(text);return el}
 function renderLedger(){

@@ -19,13 +19,15 @@ const ticker={stock:'2259.HK',parent:'2899.HK',gold:'GC=F'};
 function fixture(symbol){
  const base=symbol==='2259.HK'?87:symbol==='2899.HK'?19:3510,step=symbol==='GC=F'?1.1:symbol==='2259.HK'?.14:.018;
  const bars=[];let i=0;
- for(let t=Date.UTC(2025,8,30,8);t<=Date.UTC(2026,10,13,8);t+=86400000){
+ const today=Math.floor(Date.now()/86400000)*86400000;
+ const end=today-86400000+8*3600000;
+ for(let t=end-410*86400000;t<=end;t+=86400000){
   const day=new Date(t).getUTCDay();if(day===0||day===6)continue;
   const c=base+i*step+Math.sin(i*.11)*base*.04+Math.cos(i*.08)*base*.016,o=c*(1+Math.cos(i*.13)*.004);
   bars.push({t:Math.floor(t/1000),o,h:Math.max(o,c)*1.012,l:Math.min(o,c)*.988,c,v:1300000+i*18300});
   i++;
  }
- return {ok:true,symbol,sourceSymbol:symbol,currency:symbol==='GC=F'?'USD':'HKD',regularMarketPrice:bars.at(-1).c,previousClose:bars.at(-2).c,change:bars.at(-1).c-bars.at(-2).c,changePercent:1,provider:'FORENSIC FIXTURE - NON MARKET DATA',providerQuoteTime:'2026-11-13T08:08:15.000Z',bars,dataDelay:'Mocked delayed observations'};
+ return {ok:true,symbol,sourceSymbol:symbol,currency:symbol==='GC=F'?'USD':'HKD',regularMarketPrice:bars.at(-1).c,previousClose:bars.at(-2).c,change:bars.at(-1).c-bars.at(-2).c,changePercent:1,provider:'Yahoo Finance FORENSIC FIXTURE - NOT LIVE',interval:'1d',providerQuoteTime:new Date(bars.at(-1).t*1000).toISOString(),latestBarTime:new Date(bars.at(-1).t*1000).toISOString(),bars,dataDelay:'Mocked provider-delayed observations, never live'};
 }
 const report={generatedAt:new Date().toISOString(),scope:'Static mock-data responsive geometry test, not real exchange data or licensed feed',viewports:[],issues:[],summary:{}};
 function intersect(a,b){

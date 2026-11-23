@@ -24,9 +24,10 @@ function controls(){
  set("quant-block-value",$("quant-block").value+" trading days");
 }
 function updateIntegrity(){
- const good=feeds?.stock&&!feeds.stock.archive&&feeds.stock.bars?.length>=66;
+ const gate=window.ZGIResearchGate?.assessFeed(feeds?.stock,"2259.HK");
+ const good=gate?.usable===true&&feeds?.stock&&!feeds.stock.archive&&feeds.stock.bars?.length>=66;
  if(!good){
-  set("quant-data-integrity","Market observations insufficient for statistical bootstrapping. An archived stock snapshot is not treated as a current forecast anchor.");
+  set("quant-data-integrity","Statistical simulation withheld: "+(gate?.reason||"insufficient stock history")+". Archived or stale sources are not current model anchors.");
   set("quant-source-age","LIVE RESEARCH SUSPENDED");
   return false;
  }

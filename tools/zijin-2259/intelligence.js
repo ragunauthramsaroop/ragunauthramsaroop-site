@@ -40,7 +40,7 @@ function toDateKey(t){const p=DATEKEY.formatToParts(new Date(t*1000));const x={}
 function num(id){return Number($(id)?.value)}
 function setInput(id,value){if($(id))$(id).value=String(value)}
 function hasData(d){return d&&Array.isArray(d.bars)&&d.bars.length>1&&Number.isFinite(d.regularMarketPrice)}
-function feedOK(detail){return hasData(detail?.stock)&&hasData(detail?.gold)&&!detail.stock.archive}
+function feedOK(detail){return hasData(detail?.stock)&&hasData(detail?.gold)&&!detail.stock.archive&&window.ZGIResearchGate?.assessPair(detail).usable===true}
 function ageLabel(iso){
   if(!iso)return "UNKNOWN SOURCE AGE";
   const diff=(Date.now()-Date.parse(iso))/86400000;
@@ -122,8 +122,13 @@ function buildProjections(){
     set("model-anchor-stock","UNAVAILABLE");set("model-anchor-gold","UNAVAILABLE");
     set("model-basis","Select assumptions now. Calculations require verified 2259.HK and gold futures observations.");
     set("model-last-update","Model suspended until the market data is available.");
+    for(const key of Object.keys(variants))set("scenario-"+key+"-price","UNAVAILABLE");
+    document.querySelectorAll("[data-case]").forEach(button=>button.disabled=true);
+    if($("export-scenarios"))$("export-scenarios").disabled=true;
     return null;
   }
+  document.querySelectorAll("[data-case]").forEach(button=>button.disabled=false);
+  if($("export-scenarios"))$("export-scenarios").disabled=false;
   const stockPrice=stock.regularMarketPrice,goldPrice=gold.regularMarketPrice;
   set("model-anchor-stock","HK$"+number(stockPrice));
   set("model-anchor-gold","US$"+number(goldPrice));
