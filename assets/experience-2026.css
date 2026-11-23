@@ -674,3 +674,7 @@ body[data-motion="off"] .reveal,body[data-motion="off"] .reveal:not(.is-visible)
 @media(prefers-reduced-motion:reduce){.js-enhanced .reveal{transition:none!important;transform:none!important}}
 
 @media(max-width:760px){.section-index:not(.section-index-light) span:last-child{opacity:1!important}}
+
+/* Edition 11 / page continuity across the executive journey. */
+@media(prefers-reduced-motion:no-preference){@view-transition{navigation:auto}.identity{view-transition-name:rr-identity}::view-transition-old(root){animation-duration:.24s}::view-transition-new(root){animation-duration:.38s}}
+@media(prefers-reduced-motion:reduce){@view-transition{navigation:none}}
