@@ -119,6 +119,22 @@
     addEventListener("resize", requestPosition, { passive: true });
     updatePosition();
 
+    // Let readers open the deeper public briefing for each executive discipline.
+    const disciplineRoutes = [
+      ["/corporate-affairs/", "Explore external affairs"],
+      ["/esg-social-impact/", "Explore social responsibility"],
+      ["/compliance-governance/", "Explore governance"],
+      ["/leadership/", "Explore people leadership"]
+    ];
+    document.querySelectorAll(".flag-expertise__row").forEach((row, index) => {
+      const route = disciplineRoutes[index];
+      const copy = row.querySelector("div");
+      if (!route || !copy) return;
+      const link = el("a", "rr-discipline-link", route[1] + " ↗");
+      link.href = route[0];
+      copy.append(link);
+    });
+
     // Light reveals: normal HTML stays fully visible until the enhancement loads.
     if (!paused && "IntersectionObserver" in window) {
       const selectors = [
