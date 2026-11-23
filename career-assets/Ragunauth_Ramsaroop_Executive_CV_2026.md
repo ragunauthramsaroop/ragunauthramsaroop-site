@@ -69,7 +69,7 @@ Corporate affairs | government relations | compliance | executive coordination
 - Managed client relationships, commercial strategy, reporting, performance analysis, communications and cross-functional service delivery across assigned accounts.
 - Supervised teams and strengthened service quality, issue resolution, client retention and repeat business.
 
-### Retail Banking Professional | Scotiabank Guyana | Georgetown, Guyana | Jun 2014-May 2019
+### Retail Banking Professional | Scotiabank Guyana | Georgetown, Guyana | Jul 2014-May 2019
 - Delivered financial solutions in a regulated banking environment while managing customer relationships, branch operations, compliance, risk controls and service performance.
 - Worked within strict accuracy, anti-money-laundering and operational-control standards, earning Teller of the Month recognition and promotion to Gold Line Teller.
 
