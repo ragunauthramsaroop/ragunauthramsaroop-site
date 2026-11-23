@@ -1,0 +1,55 @@
+/* Evidence-led issuer disclosure desk: no remote dependencies or tracking. */
+.issuer-dossier{margin:16px 0 25px;border:1px solid #415961;border-top:2px solid #dbb67c;border-radius:3px;background:linear-gradient(135deg,#14242d,#0d1925 68%,#142b2b);padding:22px;color:#f1e7d9}
+.issuer-dossier *{box-sizing:border-box}
+.issuer-dossier-head{display:flex;justify-content:space-between;gap:20px;align-items:flex-start;margin-bottom:16px}
+.issuer-eyebrow{font-size:9px;font-weight:850;letter-spacing:.17em;color:#e0be86}
+.issuer-dossier h3{font:800 clamp(20px,2.4vw,28px)/1.18 Manrope,sans-serif;letter-spacing:-.04em;color:#f5f0e5;margin:6px 0 8px}
+.issuer-dossier-lead{color:#b3c3ca;font-size:11px;max-width:730px;line-height:1.7}
+.issuer-record-link{display:inline-flex;border:1px solid #a88c62;padding:10px 14px;font-size:10px;font-weight:800;letter-spacing:.045em;color:#f0d49a;min-height:42px;align-items:center;text-align:center}
+.issuer-record-link:hover{background:#273d43;border-color:#f5d29b}
+.issuer-verified{font-size:10px;color:#a9c8bf;margin-top:5px}
+.issuer-equity-caption{display:flex;align-items:center;justify-content:space-between;gap:10px;margin:0 0 11px}
+.issuer-equity-caption strong{font-size:10px;letter-spacing:.09em;color:#e8d6b5}
+.issuer-equity-caption span{font-size:9px;color:#a8b9be}
+.issuer-equity-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:9px}
+.issuer-equity-kpi{background:#0b1924;border:1px solid #36505b;padding:13px;min-height:91px;display:flex;flex-direction:column;justify-content:space-between;min-width:0}
+.issuer-equity-kpi:nth-child(2){border-top:2px solid #6fcdad}
+.issuer-equity-kpi:nth-child(4){border-top:2px solid #d9b67c}
+.issuer-equity-kpi span{color:#9fb4c3;font-size:9px;font-weight:750;letter-spacing:.075em;line-height:1.55}
+.issuer-equity-kpi strong{color:#f4ead8;font:800 clamp(17px,2.2vw,25px)/1.2 Manrope,sans-serif;letter-spacing:-.035em;overflow-wrap:anywhere}
+.issuer-equity-note{font-size:10px;color:#aebfc4;line-height:1.65;border-bottom:1px solid #36515b;padding:12px 0 16px;margin-bottom:14px}
+.issuer-equity-note strong{color:#f4d49e}
+.issuer-equity-note a{color:#f0d39a;text-decoration:underline}
+.issuer-toolbar{display:flex;justify-content:space-between;gap:12px;align-items:end;flex-wrap:wrap;margin-bottom:12px}
+.issuer-search{display:flex;flex-direction:column;gap:5px;flex:1;max-width:540px;min-width:180px}
+.issuer-search label{color:#cfb17e;font-size:9px;font-weight:800;letter-spacing:.11em}
+.issuer-search input{background:#101f2c;border:1px solid #5c7077;color:#f5f0e5;padding:10px 12px;font:500 12px Manrope,sans-serif;min-height:42px;width:100%;border-radius:2px}
+.issuer-search input::placeholder{color:#9aaeba}
+.issuer-dossier :is(button,input,a):focus-visible{outline:3px solid #e8c38a;outline-offset:3px}
+.issuer-export{font-size:10px;color:#192831;background:#d6b47d;border:1px solid #d6b47d;min-height:42px;padding:10px 13px;font-weight:800;border-radius:2px;cursor:pointer}
+.issuer-export:hover{background:#edd4a3}
+.issuer-categories{display:flex;flex-wrap:wrap;gap:7px;margin:8px 0 14px}
+.issuer-categories button{background:#10232f;color:#b5c9cb;border:1px solid #405961;font-size:10px;font-weight:700;padding:8px 10px;min-height:35px;cursor:pointer;border-radius:2px}
+.issuer-categories button:hover{background:#1f3540}
+.issuer-categories button.is-active{color:#18252d;background:#d8b77e;border-color:#d8b77e}
+.issuer-list-head{display:flex;justify-content:space-between;gap:12px;align-items:center;margin-bottom:11px}
+.issuer-list-head span{font-size:9px;letter-spacing:.07em;color:#9fb6c4}
+.issuer-filing-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+.issuer-filing-card{background:#0a1924;border:1px solid #3a5560;border-left:3px solid #b9a078;padding:15px;min-width:0;display:flex;flex-direction:column;gap:9px}
+.issuer-filing-meta,.issuer-filing-foot{display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap}
+.issuer-filing-kind{color:#dcbc85;font-size:9px;font-weight:800;letter-spacing:.08em;text-transform:uppercase}
+.issuer-filing-date{font-size:10px;color:#aec2c9}
+.issuer-filing-title{margin:0;color:#f4f0e6;font:750 14px/1.45 Manrope,sans-serif}
+.issuer-filing-scope{font-size:10px;font-weight:800;color:#8fd0ba}
+.issuer-filing-description{font-size:11px;line-height:1.65;color:#adbfca;flex:1}
+.issuer-filing-foot{padding-top:10px;border-top:1px solid #304852}
+.issuer-filing-source-type{font-size:9px;color:#7ea5b0}
+.issuer-filing-source{color:#ebcb90;font-size:10px;font-weight:800;white-space:normal}
+.issuer-filing-source:hover{text-decoration:underline}
+.issuer-empty{font-size:12px;color:#d4c7aa;padding:15px;border:1px dashed #53656b;grid-column:1/-1}
+.issuer-disclosure-note,.issuer-copy-status{color:#a2b8c3;font-size:10px;line-height:1.65;margin-top:13px}
+.issuer-copy-status{min-height:16px}
+@media(max-width:1080px){.issuer-dossier-head{display:block}.issuer-record-link{margin-top:12px}.issuer-equity-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:720px){.issuer-dossier{padding:14px 12px}.issuer-filing-grid{grid-template-columns:1fr}.issuer-toolbar{align-items:stretch}.issuer-export{width:100%}.issuer-equity-kpi strong{font-size:18px}}
+@media(max-width:370px){.issuer-equity-grid{grid-template-columns:1fr}}
+@media(prefers-reduced-motion:reduce){.issuer-dossier *, .issuer-dossier *:before,.issuer-dossier *:after{transition:none!important;animation:none!important}}

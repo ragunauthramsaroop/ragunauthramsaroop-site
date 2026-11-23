@@ -175,3 +175,15 @@ HKEX third-party service guide: https://www.hkex.com.hk/-/media/HKEX-Market/Serv
 ## Default following of source-delayed 15-minute bars (23 November 2026)
 
 The primary 2259 chart now opens on the newest available **provider-delayed 15-minute OHLC bar** and refreshes the selected interval once per minute while the tab is visible. Daily bars remain available and continue to underpin source-checked model inputs. There is no simulated replay on initial load. Historical replay starts only when the visitor chooses the replay button. If 15-minute history is unavailable, the view explicitly falls back to labelled delayed daily bars without pretending the candles represent 15-minute observations. A prominent link opens the authorised vendor's live Basic Market Price homepage; each real-time snapshot must be requested manually on the vendor's own site, as required by HKEX. Automatic real-time display on this public dashboard remains disabled until licensed vendor API, display and redistribution permissions are documented and configured. No streaming subscription or user credentials were added.
+
+## Primary issuer disclosure intelligence, 23 November 2026
+
+The News & Filings view now contains a searchable, responsive primary-source disclosure desk for HKEX:02259. Eight curated official HKEX issuer filings cover financial reports, scheme circulars, aggregate share grants, new share issuance, governance and a corporate transaction. Every item retains its release date, category, reporting scope, document title and a direct official PDF link.
+
+Source: https://www1.hkexnews.hk/search/titlesearch.xhtml?category=0&lang=EN&market=SEHK&stockId=1000274494 . The registry is editorially curated as of **23 November 2026**, NOT a live filing alert or an automatic HKEX crawler. The official registry link must always be used to check for later announcements or corrections.
+
+The 13 November 2026 Next Day Disclosure Return reconciles 2,676,339,300 opening issued shares at 31 October plus 3,617,000 new shares issued to the share-scheme trustee, resulting in 2,679,956,300 issued shares at 13 November. The relative issuance is 0.1351% of the opening shares. The 12 November Grant of Award Shares announcement identifies a company-wide 3,617,000 award-share grant to 255 selected participants, subject to acceptance. These are aggregate company records and do not establish the grant, vesting or entitlement of any individual.
+
+The Evidence Desk filters by keyword and topic, has keyboard-accessible controls, avoids HTML injection, and exports a source-only evidence note locally, excluding private award quantities and user model inputs. Unit and Chromium tests validate share arithmetic, issuer-domain allowlisting, exact source catalog size, category filtering and client privacy. No market-data rights or provider integration is altered.
+
+Primary issuer filings: https://www1.hkexnews.hk/listedco/listconews/sehk/2026/1112/2026111201384.pdf and https://www1.hkexnews.hk/listedco/listconews/sehk/2026/1113/2026111300646.pdf.

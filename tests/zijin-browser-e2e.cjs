@@ -69,6 +69,20 @@ async function run(){
     assert.equal(await page.locator('text=Apple Inc.').count(),0);
     assert.match(await page.locator('#live-kpi-2259-asof').textContent(),/HKT/);
   });
+  await check('Official HKEX disclosure desk filters only curated issuer records',async()=>{
+    assert.equal(await page.locator('#issuer-filings-list .issuer-filing-card').count(),8);
+    assert.match(await page.locator('#issuer-shares-issued').textContent(),/3,617,000/);
+    assert.match(await page.locator('#issuer-shares-percent').textContent(),/0\.1351%/);
+    await page.locator('button[data-issuer-filter="Share scheme"]').click();
+    assert.equal(await page.locator('#issuer-filings-list .issuer-filing-card').count(),2);
+    await page.locator('#issuer-filing-search').fill('award');
+    assert.equal(await page.locator('#issuer-filings-list .issuer-filing-card').count(),1);
+    const official=await page.locator('#issuer-filings-list a.issuer-filing-source').getAttribute('href');
+    assert.match(official,/^https:\/\/www1\.hkexnews\.hk\/listedco\/listconews\/sehk\//);
+    await page.locator('#issuer-filing-search').fill('');
+    await page.locator('button[data-issuer-filter="All"]').click();
+    assert.equal(await page.locator('#issuer-filings-list .issuer-filing-card').count(),8);
+  });
   await check('Initial chart follows newest delayed 15-minute bars without auto replay',async()=>{
     await waitFor(page,()=>/15-MINUTE OHLC/.test(document.querySelector('#market-chart-status')?.textContent||''),'default delayed 15-minute chart');
     assert.equal(await page.locator('[data-chart-interval="15m"]').getAttribute('aria-pressed'),'true');

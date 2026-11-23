@@ -16,10 +16,13 @@
   <link rel="stylesheet" href="./visual-first.css">
   <link rel="stylesheet" href="./chart-motion.css">
   <link rel="stylesheet" href="./research-desk.css">
+  <link rel="stylesheet" href="./issuer-dossier.css">
   <script defer src="./visual-first.js"></script>
   <script defer src="./app.js"></script>
   <script defer src="./source-gate.js"></script>
   <script defer src="./research-desk.js"></script>
+  <script defer src="./issuer-registry.js"></script>
+  <script defer src="./issuer-ui.js"></script>
   <script defer src="./markets.js"></script>
   <script defer src="./chart-motion.js"></script>
   <script defer src="./intelligence.js"></script>
@@ -407,6 +410,39 @@
 
         <section id="news" class="section" aria-labelledby="news-heading">
           <div class="section-head"><div><p class="section-kicker">06 / EVENTS & FILINGS</p><h2 id="news-heading">Research and disclosure flow</h2><p>Third-party issuer-related headlines refreshed by source RSS, with publication timestamps. Official HKEX filings remain the definitive corporate record.</p></div><span class="section-index">06</span></div>
+          <section id="issuer-disclosures" class="issuer-dossier" aria-labelledby="issuer-disclosures-title">
+            <div class="issuer-dossier-head">
+              <div><p class="issuer-eyebrow">PRIMARY ISSUER EVIDENCE / HKEX 02259</p>
+                <h3 id="issuer-disclosures-title">Official disclosure intelligence</h3>
+                <p class="issuer-dossier-lead">Source-linked corporate actions, financial reports and share-scheme disclosures. Every record opens the original issuer filing. This register is curated, not a live notification feed.</p>
+                <p class="issuer-verified" id="issuer-verified-at">Curated 23 Nov 2026 · Official filings to 13 Nov</p></div>
+              <a class="issuer-record-link" id="issuer-record-link" href="https://www1.hkexnews.hk/search/titlesearch.xhtml?category=0&amp;lang=EN&amp;market=SEHK&amp;stockId=1000274494" target="_blank" rel="noopener noreferrer">CHECK COMPLETE HKEX REGISTER ↗</a>
+            </div>
+            <div class="issuer-equity-caption"><strong>VERIFIED EQUITY ISSUANCE · 13 NOV 2026</strong><span>Company-level figures / HKEX return</span></div>
+            <div class="issuer-equity-grid">
+              <div class="issuer-equity-kpi"><span>OPENING ISSUED SHARES · 31 OCT</span><strong id="issuer-shares-opening">PENDING</strong></div>
+              <div class="issuer-equity-kpi"><span>NEW SHARES ISSUED TO TRUSTEE</span><strong id="issuer-shares-issued">PENDING</strong></div>
+              <div class="issuer-equity-kpi"><span>CLOSING ISSUED SHARES · 13 NOV</span><strong id="issuer-shares-closing">PENDING</strong></div>
+              <div class="issuer-equity-kpi"><span>ISSUE / OPENING SHARE CAPITAL</span><strong id="issuer-shares-percent">PENDING</strong></div>
+            </div>
+            <p class="issuer-equity-note"><strong id="issuer-grant-participants">255 SELECTED PARTICIPANTS</strong> received a company-wide award-share grant announcement dated 12 November, subject to acceptance. The new shares were issued to a trustee on 13 November. These are aggregate public records, not individual entitlements or market trades. <a href="https://www1.hkexnews.hk/listedco/listconews/sehk/2026/1113/2026111300646.pdf" target="_blank" rel="noopener noreferrer">VERIFY CAPITAL RETURN ↗</a> <a href="https://www1.hkexnews.hk/listedco/listconews/sehk/2026/1112/2026111201384.pdf" target="_blank" rel="noopener noreferrer">VERIFY GRANT ↗</a></p>
+            <div class="issuer-toolbar">
+              <div class="issuer-search"><label for="issuer-filing-search">SEARCH VERIFIED CORPORATE RECORDS</label><input id="issuer-filing-search" type="search" placeholder="Try: award shares, results, Allied Gold, governance" autocomplete="off" maxlength="90"></div>
+              <button id="issuer-export" type="button" class="issuer-export">EXPORT CITED EVIDENCE BRIEF ↓</button>
+            </div>
+            <div class="issuer-categories" role="group" aria-label="Filter official issuer filings">
+              <button type="button" data-issuer-filter="All" class="is-active" aria-pressed="true">ALL</button>
+              <button type="button" data-issuer-filter="Results" aria-pressed="false">FINANCIAL RESULTS</button>
+              <button type="button" data-issuer-filter="Share capital" aria-pressed="false">SHARE CAPITAL</button>
+              <button type="button" data-issuer-filter="Share scheme" aria-pressed="false">SHARE SCHEME</button>
+              <button type="button" data-issuer-filter="Corporate action" aria-pressed="false">TRANSACTIONS</button>
+              <button type="button" data-issuer-filter="Governance" aria-pressed="false">GOVERNANCE</button>
+            </div>
+            <div class="issuer-list-head"><span id="issuer-filing-count" role="status" aria-live="polite">CHECKING ISSUER FILINGS</span><span id="issuer-disclosure-state">ALL CATEGORIES</span></div>
+            <div id="issuer-filings-list" class="issuer-filing-grid" aria-label="Curated verified HKEX issuer filings"></div>
+            <p class="issuer-disclosure-note">HKEX releases may appear after the last editorial update. Verify dates and later corrections in the official issuer register. Award, financial and market data have different evidence standards.</p>
+            <p id="issuer-copy-status" class="issuer-copy-status" aria-live="polite"></p>
+          </section>
           <div class="two-column">
             <article class="panel"><div class="panel-heading"><div><p class="eyebrow">SECURITY-RELATED NEWS</p><h3>Verified source channels</h3></div><span class="source-tag">OFFICIAL + INDEPENDENT</span></div>
               <div class="news-live"><div class="news-stream-head"><span class="status-dot"></span><span>REFRESHED ISSUER-RELATED HEADLINES</span><button type="button" id="refresh-news-now" class="button button-subtle">REFRESH NEWS ↻</button></div><p id="news-provider-status" class="news-feed-status">Connecting to Google News RSS, source dates are shown per article.</p><div id="issuer-news-feed" class="issuer-news-feed" aria-live="polite">Waiting for available news feed.</div></div>
