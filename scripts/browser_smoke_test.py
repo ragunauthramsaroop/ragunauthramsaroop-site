@@ -33,6 +33,8 @@ def main():
             expect(page.locator("#honours-title")).to_contain_text("public record")
             assert page.locator(".flag-honours__grid .flag-hero__affiliation").count() == 3
             expect(page.locator("body")).to_contain_text("Liaison Director, Social Responsibility Department")
+            expect(page.locator(".flag-proof")).to_contain_text("Jul 2014")
+            expect(page.locator(".flag-proof")).not_to_contain_text("Career record begins")
             expect(page.locator("#decision-paths")).to_contain_text("Two audiences.")
             assert "five role progressions" not in page.locator("body").inner_text().lower()
             expect(page.locator(".flag-hero__portrait-wrap img")).to_have_attribute("width", "800")
@@ -73,6 +75,12 @@ def main():
             page.set_viewport_size({"width": 1280, "height": 900})
             results.append("PASS fast homepage: one critical runtime, no platform CSS, delayed analytics, desktop and mobile")
 
+            page.goto(base + "/resume.html", wait_until="domcontentloaded")
+            expect(page.locator(".cv-metric").filter(has_text="Jul 2014").first).to_be_visible()
+            expect(page.locator("body")).to_contain_text("Jul 2014–May 2019")
+            expect(page.locator("body")).not_to_contain_text("Jun 2014–May 2019")
+            results.append("PASS verified July 2014 career chronology in homepage and executive CV")
+
             alignment_routes = [
                 "/", "/executive-profile/", "/leadership/", "/evidence/",
                 "/research-library/", "/experience/", "/media/", "/resume.html", "/engage/",
@@ -112,6 +120,8 @@ def main():
             # The interactive dossier must work without third-party scripts.
             page.set_viewport_size({"width": 1280, "height": 900})
             page.goto(base + "/experience/", wait_until="load")
+            expect(page.locator(".orientation-foot")).to_contain_text("Jul 2014")
+            expect(page.locator(".timeline-year").first).to_have_text("2014–19")
             expect(page.locator("h1")).to_contain_text("decisions meet")
             # Decision-first links, real content, and user motion control.
             expect(page.locator('.route-bridge__choices a')).to_have_count(3)
