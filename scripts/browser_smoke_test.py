@@ -110,6 +110,7 @@ def main():
                         f"Main content escapes viewport on {route} at {width}px: {metrics}"
                     )
             # The interactive dossier must work without third-party scripts.
+            page.set_viewport_size({"width": 1280, "height": 900})
             page.goto(base + "/experience/", wait_until="load")
             expect(page.locator("h1")).to_contain_text("decisions meet")
             # Decision-first links, real content, and user motion control.
