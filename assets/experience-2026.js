@@ -9,7 +9,7 @@
   const progress = $("#reading-bar");
   const cover = $(".cover");
   /* Motion is optional and visitor-controlled. Reading progress stays functional. */
-  const motionControls = $(".motion-toggle");
+  const motionControls = Array.from(document.querySelectorAll(".motion-toggle"));
   let motionPaused = prefersReduced.matches;
   document.body.classList.add("motion-ready");
   function setMotionState(paused) {
@@ -27,7 +27,7 @@
       }
     }
     if (paused) {
-      $(".reveal").forEach(el => el.classList.add("is-visible"));
+      document.querySelectorAll(".reveal").forEach(el => el.classList.add("is-visible"));
     }
     document.dispatchEvent(new Event(paused ? "dossier:motion-pause" : "dossier:motion-resume"));
   }
