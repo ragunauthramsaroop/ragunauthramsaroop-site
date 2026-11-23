@@ -212,3 +212,15 @@ test('daily source bar timestamps are not represented as final exchange trade ti
  assert.match(analytics,/function sourceLabel\(data\)/);
  assert.match(analytics,/DAILY BAR • NOT TRADE TIME/);
 });
+
+test('standalone Vercel runtime declares CommonJS for market, licensing, and news APIs',()=>{
+ const rootConfig=JSON.parse(readFileSync(root+'package.json','utf8'));
+ const apiConfig=JSON.parse(readFileSync(root+'api/package.json','utf8'));
+ assert.equal(rootConfig.type,'commonjs');
+ assert.equal(apiConfig.type,'commonjs');
+ for(const file of ['market.js','news.js','licensed-quote.js']){
+  const source=readFileSync(root+'api/'+file,'utf8');
+  assert.match(source,/module\.exports\s*=\s*async function handler\(/);
+  assert.doesNotMatch(source,/export default/);
+ }
+});
