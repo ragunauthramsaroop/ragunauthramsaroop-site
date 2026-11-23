@@ -651,3 +651,24 @@ body[data-motion="off"] *,body[data-motion="off"] *::before,body[data-motion="of
 body[data-motion="off"] .reveal,body[data-motion="off"] .reveal:not(.is-visible){opacity:1!important;transform:none!important;translate:none!important}
 @media(prefers-reduced-motion:reduce){.connection-field{display:none!important}}
 @media print{.route-bridge,.motion-toggle,.motion-ready .motion-toggle--desktop,.motion-ready .mobile-nav .motion-toggle--mobile{display:none!important}}
+
+/* ACCESSIBILITY FINISH: readable content remains visible during scroll motion.
+   Use transforms for editorial entrance, not low-opacity text. */
+.js-enhanced .reveal:not(.is-visible):not(.cover .reveal){opacity:1!important;transform:translateY(12px)}
+.js-enhanced .reveal{transition:transform .68s var(--ease)!important}
+.route-bridge__intro>span{color:#664722}
+.route-bridge__choices a>span{color:#664924}
+.route-bridge__choices a:nth-child(2)>span{color:#ffe0a2}
+.route-bridge__note{color:#395447}
+.section-index:not(.section-index-light) span{color:#3c5749}
+.orientation-kicker,.eyebrow:not(.pale){color:#694c2a}
+.orientation-title em{color:#78552b}
+.orientation-bottom p{color:#375347}
+.lens-studio__intro .display-heading em{color:#76552f}
+.lens-tab>span{color:#6a4c27}
+.lens-tab small{color:#375347}
+.stage .display-heading em,.journey .display-heading em,.pathways .display-heading em{color:#76552f}
+.stage-lead,.journey-head>p{color:#365247}
+.journey-end>span{color:#405849}
+.proof-lab__options a[aria-current="true"]>span{color:#173b31}
+@media(prefers-reduced-motion:reduce){.js-enhanced .reveal{transition:none!important;transform:none!important}}
