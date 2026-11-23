@@ -8,6 +8,7 @@ on:
       - "tests/zijin-quant.test.mjs"
       - "tests/zijin-licensed-feed.test.mjs"
       - "tests/zijin-market-integrity.test.mjs"
+      - "tests/zijin-source-gate.test.mjs"
       - ".github/workflows/zijin-dashboard-check.yml"
   push:
     branches: [main]
@@ -17,6 +18,7 @@ on:
       - "tests/zijin-quant.test.mjs"
       - "tests/zijin-licensed-feed.test.mjs"
       - "tests/zijin-market-integrity.test.mjs"
+      - "tests/zijin-source-gate.test.mjs"
       - ".github/workflows/zijin-dashboard-check.yml"
 
 permissions:
@@ -36,6 +38,8 @@ jobs:
           node-version: '22'
       - name: Verify JavaScript syntax
         run: |
+          node --check tools/zijin-2259/source-gate.js
+          node --check tools/zijin-2259/research-desk.js
           node --check tools/zijin-2259/visual-first.js
           node --check tools/zijin-2259/app.js
           node --check tools/zijin-2259/markets.js
@@ -53,11 +57,14 @@ jobs:
           node --check tools/zijin-2259/risk-award.js
           node --check tools/zijin-2259/manual-quote.js
       - name: Verify market sources, privacy and calculator rules
-        run: node --test tests/zijin-dashboard.test.mjs tests/zijin-quant.test.mjs tests/zijin-licensed-feed.test.mjs tests/zijin-market-integrity.test.mjs
+        run: node --test tests/zijin-dashboard.test.mjs tests/zijin-quant.test.mjs tests/zijin-licensed-feed.test.mjs tests/zijin-market-integrity.test.mjs tests/zijin-source-gate.test.mjs
       - name: Verify HTTP-free static paths
         run: |
           test -s tools/zijin-2259/index.html
           test -s tools/zijin-2259/styles.css
+          test -s tools/zijin-2259/source-gate.js
+          test -s tools/zijin-2259/research-desk.js
+          test -s tools/zijin-2259/research-desk.css
           test -s tools/zijin-2259/visual-first.js
           test -s tools/zijin-2259/visual-first.css
           test -s tools/zijin-2259/app.js
