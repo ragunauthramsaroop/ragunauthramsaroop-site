@@ -33,7 +33,7 @@ assert 'prefers-reduced-motion' in css
 assert 'dossier:motion-pause' in js and 'dossier:motion-resume' in js
 assert 'body[data-motion="off"]' in css
 assert 'fetch("/api/v1/executive-record.json"' in js
-assert 'data-motion="off"' in js
+assert 'document.body.dataset.motion' in js
 assert '/tools/assets/analytics-loader.js' in experience
 assert 'default-src \'self\'' in experience
 assert len(re.findall(r'class="route-bridge__choices"', experience)) == 1
