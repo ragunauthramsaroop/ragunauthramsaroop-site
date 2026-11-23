@@ -618,3 +618,13 @@
 @media(max-width:1250px){.site-header .nav-links{display:none}.site-header .mobile-nav{display:block}.flag-hero__interior{grid-template-columns:minmax(0,1.22fr) minmax(280px,.78fr);gap:34px}}
 @media(max-width:980px){.flag-hero__interior{grid-template-columns:1fr;min-height:0;gap:32px;width:min(calc(100% - 48px),760px);padding:51px 0 43px}.flag-hero__copy{width:100%;max-width:720px}.flag-hero h1{font-size:clamp(57px,7.6vw,79px)}.flag-hero__profile{max-width:340px;margin:0 auto;padding:0}}
 @media(max-width:530px){.flag-hero__interior{width:min(calc(100% - 36px),760px);padding:44px 0 35px}.flag-kicker{margin-top:23px;letter-spacing:.1em}.flag-hero h1{font-size:clamp(43px,12.5vw,61px);line-height:1.03;letter-spacing:-.051em}.flag-hero h1 em{letter-spacing:-.058em}.flag-hero__statement{font-size:clamp(25px,6.9vw,33px);margin-top:23px}.flag-hero__summary{font-size:13.5px;line-height:1.7}.flag-hero__profile{width:min(100%,305px);max-width:305px}.flag-hero__portrait-wrap{aspect-ratio:4/4.15}.flag-hero__links{gap:13px}}
+
+/* Edition 11: cross-document transitions. Standard navigation remains the fallback. */
+@media(prefers-reduced-motion:no-preference){
+@view-transition{navigation:auto}
+.brand{view-transition-name:rr-identity}
+::view-transition-old(root){animation-duration:.24s}
+::view-transition-new(root){animation-duration:.38s}
+::view-transition-old(rr-identity),::view-transition-new(rr-identity){animation-duration:.4s}
+}
+@media(prefers-reduced-motion:reduce){@view-transition{navigation:none}}
