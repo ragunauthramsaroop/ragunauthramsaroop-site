@@ -76,6 +76,7 @@ assert "overflow-y:auto" in compiled, "Mobile menu must scroll on short screens"
 assert "@media(max-width:1480px){.rr-rail{display:none}}" not in styles
 assert "@media(max-width:1250px){.rr-rail{display:none}}" in styles
 assert "min-width:1251px" in styles and "max-width:1480px" in styles
+assert ".rr-rail__link{width:24px}" in styles
 assert 'menu_metrics["content"] > menu_metrics["height"]' in browser
 assert "rr-command::backdrop" in styles
 assert "rr-rail__link[aria-current=location]" in styles
