@@ -8,6 +8,31 @@
   const smallScreen = window.matchMedia("(max-width: 760px)");
   const progress = $("#reading-bar");
   const cover = $(".cover");
+  /* Motion is optional and visitor-controlled. Reading progress stays functional. */
+  const motionControls = Array.from(document.querySelectorAll(".motion-toggle"));
+  let motionPaused = prefersReduced.matches;
+  document.body.classList.add("motion-ready");
+  function setMotionState(paused) {
+    motionPaused = paused;
+    document.body.dataset.motion = paused ? "off" : "on";
+    for (const button of motionControls) {
+      button.setAttribute("aria-pressed", String(paused));
+      if (prefersReduced.matches) {
+        button.textContent = "Device motion reduced";
+        button.disabled = true;
+      } else {
+        button.textContent = paused ? "Resume motion" : "Pause motion";
+      }
+    }
+    if (paused) {
+      document.querySelectorAll(".reveal").forEach(el => el.classList.add("is-visible"));
+    }
+    document.dispatchEvent(new Event(paused ? "dossier:motion-pause" : "dossier:motion-resume"));
+  }
+  for (const button of motionControls) button.addEventListener("click", () => {
+    if (!prefersReduced.matches) setMotionState(!motionPaused);
+  });
+  setMotionState(motionPaused);
   let rafScheduled = false;
 
   function updateProgress() {
@@ -177,6 +202,7 @@
     let pointerRaf = 0;
     let point = null;
     cover.addEventListener("pointermove", event => {
+      if (motionPaused) return;
       const rect = cover.getBoundingClientRect();
       point = [(event.clientX - rect.left) / rect.width * 100,
                (event.clientY - rect.top) / rect.height * 100];
@@ -223,7 +249,7 @@
       }
       function draw(time) {
         animationFrame = 0;
-        if (!alive || !visible || document.hidden) return;
+        if (!alive || !visible || document.hidden || motionPaused) return;
         if (time - previousTime < 31) {
           animationFrame = requestAnimationFrame(draw);
           return;
@@ -258,7 +284,7 @@
       }
       const heroObserver = new IntersectionObserver(entries => {
         visible = entries[0]?.isIntersecting ?? false;
-        if (visible && !animationFrame) animationFrame = requestAnimationFrame(draw);
+        if (visible && !animationFrame && !motionPaused) animationFrame = requestAnimationFrame(draw);
         if (!visible && animationFrame) {
           cancelAnimationFrame(animationFrame);
           animationFrame = 0;
@@ -266,7 +292,7 @@
       }, {threshold: 0});
       heroObserver.observe(cover);
       resizeCanvas();
-      animationFrame = requestAnimationFrame(draw);
+      if (!motionPaused) animationFrame = requestAnimationFrame(draw);
       window.addEventListener("resize", () => {
         if (smallScreen.matches || prefersReduced.matches) {
           alive = false;
@@ -279,7 +305,19 @@
         resizeCanvas();
       }, {passive: true});
       document.addEventListener("visibilitychange", () => {
-        if (!document.hidden && visible && alive && !animationFrame) animationFrame = requestAnimationFrame(draw);
+        if (!document.hidden && visible && alive && !animationFrame && !motionPaused) animationFrame = requestAnimationFrame(draw);
+      });
+      document.addEventListener("dossier:motion-pause", () => {
+        if (animationFrame) cancelAnimationFrame(animationFrame);
+        animationFrame = 0;
+        context.clearRect(0, 0, width, height);
+        canvas.hidden = true;
+      });
+      document.addEventListener("dossier:motion-resume", () => {
+        if (!alive || !visible || document.hidden || smallScreen.matches) return;
+        canvas.hidden = false;
+        resizeCanvas();
+        if (!animationFrame) animationFrame = requestAnimationFrame(draw);
       });
     }
   }
