@@ -64,6 +64,7 @@ for route in ("/leadership-atlas/", "/experience/", "/board-ceo-mode/",
 assert all(route in script for route in ("/corporate-affairs/", "/esg-social-impact/", "/compliance-governance/", "/leadership/"))
 assert "rr-discipline-link" in styles and "rr-discipline-link" in script
 assert "innerHTML" not in script, "Never inject untrusted HTML"
+assert "FILTERS LOCALLY" in script and "NO SEARCH DATA COLLECTED" not in script
 assert "localStorage" not in script and "sessionStorage" not in script
 assert "fetch(" not in script and "XMLHttpRequest" not in script
 assert "https://" not in styles and "@import" not in styles
