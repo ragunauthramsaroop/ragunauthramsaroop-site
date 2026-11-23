@@ -92,6 +92,10 @@ jobs:
         run: python scripts/verify_executive_experience_budget.py
       - name: Verify first-party executive art direction
         run: python scripts/executive_visual_guard.py
+      - name: Verify accessible interactive leadership atlas
+        run: |
+          python scripts/test_leadership_atlas.py
+          node --check assets/leadership-atlas-2026.js
       - name: Verify five-path flagship editorial design
         run: python scripts/test_flagship_edition3.py
       - name: Verify executive SEO and contrast regression
