@@ -208,7 +208,7 @@
       list.append(link);
       return { link, search: (name + " " + description + " " + tags).toLowerCase() };
     });
-    const footer = el("div", "rr-command__foot", "CTRL / ⌘ + K  ·  LOCAL NAVIGATION  ·  NO SEARCH DATA COLLECTED");
+    const footer = el("div", "rr-command__foot", "CTRL / ⌘ + K  ·  FILTERS LOCALLY  ·  ENTER OPENS SITE SEARCH");
     dialog.append(head, field, status, list, footer);
     addMotionButton(footer, "rr-dialog-motion");
     setPaused(paused);

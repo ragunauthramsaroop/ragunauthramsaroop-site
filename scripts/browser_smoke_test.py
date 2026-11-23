@@ -61,6 +61,7 @@ def main():
             assert any("/assets/home-experience-2026.js" in url for url in delayed), delayed
             assert any("/assets/home-experience-2026.css" in url for url in delayed), delayed
             expect(page.locator(".rr-find")).to_be_visible()
+            expect(page.locator(".rr-rail")).to_be_visible()
             assert page.locator(".rr-discipline-link").count() == 4
             page.locator(".rr-find").click()
             expect(page.locator("dialog.rr-command")).to_be_visible()
@@ -72,6 +73,7 @@ def main():
             expect(page.locator("#rr-analytics-choice")).to_be_attached()
             page.wait_for_function("getComputedStyle(document.querySelector('#rr-analytics-choice')).position === 'static'")
             page.set_viewport_size({"width": 390, "height": 844})
+            expect(page.locator(".rr-rail")).to_be_hidden()
             # Optional analytics stays off until consent; on mobile the choice must not cover the hero.
             expect(page.locator("#rr-analytics-choice")).to_be_attached()
             page.wait_for_function("getComputedStyle(document.querySelector('#rr-analytics-choice')).position === 'static'")
@@ -87,8 +89,34 @@ def main():
             expect(page.locator("dialog.rr-command")).to_be_visible()
             page.keyboard.press("Escape")
             expect(page.locator("dialog.rr-command")).to_be_hidden()
+            # Short-phone viewport: all menu destinations remain reachable via internal scrolling.
+            page.set_viewport_size({"width": 320, "height": 568})
+            page.locator(".mobile-nav summary").click()
+            menu_metrics = page.evaluate("""() => {
+                const m = document.querySelector('.mobile-nav>div');
+                const box = m.getBoundingClientRect();
+                return { height: m.clientHeight, content: m.scrollHeight,
+                         bottom: box.bottom, viewport: window.innerHeight,
+                         overflow: getComputedStyle(m).overflowY };
+            }""")
+            assert menu_metrics["overflow"] == "auto", menu_metrics
+            assert menu_metrics["bottom"] <= menu_metrics["viewport"] - 3, menu_metrics
+            assert menu_metrics["content"] > menu_metrics["height"], menu_metrics
+            page.locator(".rr-mobile-find").scroll_into_view_if_needed()
+            page.locator(".rr-mobile-find").click()
+            expect(page.locator("dialog.rr-command")).to_be_visible()
+            page.locator(".rr-command__close").click()
+            expect(page.locator("dialog.rr-command")).to_be_hidden()
             page.set_viewport_size({"width": 1280, "height": 900})
-            results.append("PASS fast homepage: one critical runtime, deferred enhancements, desktop and mobile navigator")
+            expect(page.locator(".rr-rail")).to_be_visible()
+            rail_metrics = page.evaluate("""() => ({
+                targetWidth: document.querySelector('.rr-rail__link').getBoundingClientRect().width,
+                railLeft: document.querySelector('.rr-rail').getBoundingClientRect().left,
+                contentRight: document.querySelector('.flag-hero__interior').getBoundingClientRect().right
+            })""")
+            assert rail_metrics["targetWidth"] >= 24, rail_metrics
+            assert rail_metrics["railLeft"] >= rail_metrics["contentRight"] - 2, rail_metrics
+            results.append("PASS short-phone scrollable navigation, accessible desktop chapter targets and no content overlap")
 
             page.goto(base + "/resume.html", wait_until="domcontentloaded")
             expect(page.locator(".cv-metric").filter(has_text="Jul 2014").first).to_be_visible()

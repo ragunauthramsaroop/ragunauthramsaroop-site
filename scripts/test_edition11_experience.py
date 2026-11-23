@@ -64,12 +64,21 @@ for route in ("/leadership-atlas/", "/experience/", "/board-ceo-mode/",
 assert all(route in script for route in ("/corporate-affairs/", "/esg-social-impact/", "/compliance-governance/", "/leadership/"))
 assert "rr-discipline-link" in styles and "rr-discipline-link" in script
 assert "innerHTML" not in script, "Never inject untrusted HTML"
+assert "FILTERS LOCALLY" in script and "NO SEARCH DATA COLLECTED" not in script
 assert "localStorage" not in script and "sessionStorage" not in script
 assert "fetch(" not in script and "XMLHttpRequest" not in script
 assert "https://" not in styles and "@import" not in styles
 assert "prefers-reduced-motion:reduce" in styles
 assert "data-rr-motion=off" in styles
 assert "rr-command__result[hidden]" in styles
+assert "max-height:calc(100dvh - 130px)" in compiled
+assert "max-height:calc(100vh - 130px)" in compiled
+assert "overflow-y:auto" in compiled, "Mobile menu must scroll on short screens"
+assert "@media(max-width:1480px){.rr-rail{display:none}}" not in styles
+assert "@media(max-width:1250px){.rr-rail{display:none}}" in styles
+assert "min-width:1251px" in styles and "max-width:1480px" in styles
+assert ".rr-rail__link{width:24px}" in styles
+assert 'menu_metrics["content"] > menu_metrics["height"]' in browser
 assert "rr-command::backdrop" in styles
 assert "rr-rail__link[aria-current=location]" in styles
 
