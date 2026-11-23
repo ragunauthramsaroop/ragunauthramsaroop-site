@@ -87,6 +87,10 @@ export default async function handler(req,res){
           providerQuoteTime:new Date(observationTime*1000).toISOString(),
           upstreamMetadataTime:new Date(marketTime*1000).toISOString(),
           observationType:interval==="1d"?"LAST VALID DAILY BAR":interval==="15m"?"LAST VALID 15-MINUTE BAR":"LAST VALID HISTORICAL BAR",
+          // Yahoo's daily OHLC bar timestamp identifies a price bar; it is not
+          // the time of the last exchange trade or an intraday price update.
+          barTimestampMeaning:interval==="1d"?"DAILY PRICE BAR LABEL; NOT LAST-TRADE TIME":"PROVIDER BAR TIMESTAMP; NOT LIVE TRADE TIME",
+          barTimeIsLastTrade:false,
           rejectedCarryForwardBars,
           latestBarTime:new Date(last.t*1000).toISOString(),
           fetchedAt:new Date().toISOString(),
