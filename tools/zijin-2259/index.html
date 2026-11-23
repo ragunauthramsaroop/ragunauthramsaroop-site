@@ -12,8 +12,11 @@
   <link rel="stylesheet" href="./styles.css">
   <link rel="stylesheet" href="./visual-first.css">
   <link rel="stylesheet" href="./chart-motion.css">
+  <link rel="stylesheet" href="./research-desk.css">
   <script defer src="./visual-first.js"></script>
   <script defer src="./app.js"></script>
+  <script defer src="./source-gate.js"></script>
+  <script defer src="./research-desk.js"></script>
   <script defer src="./markets.js"></script>
   <script defer src="./chart-motion.js"></script>
   <script defer src="./intelligence.js"></script>
@@ -81,6 +84,17 @@
             <span class="status-dot"></span>
             <p><strong>Independent delayed-market data.</strong> Native price charts use a timestamped Yahoo Finance data bridge. No Apple or unrelated substitute symbols. If the provider fails, a dated historical snapshot appears instead, clearly labelled.</p>
           </div>
+          <section class="research-desk" aria-labelledby="desk-title">
+            <div class="desk-head"><div><p class="desk-eyebrow">RESEARCH OPERATIONS / DATA CONFIDENCE</p><h2 id="desk-title">Market readiness desk</h2><p class="desk-subtitle">Verified source bars, not live exchange trades. Model outputs remain unavailable when either required anchor fails a seven-day source-integrity policy.</p></div>
+              <div class="desk-actions"><a class="desk-link" href="#charting">VIEW CHARTS ↗</a><a class="desk-link" href="#scenarios">OPEN MODEL ↗</a><button id="desk-export" type="button" class="desk-export" disabled>EXPORT SOURCE BRIEF ↓</button></div></div>
+            <div class="desk-grid">
+              <article id="desk-stock" class="desk-card" data-state="waiting"><div class="desk-card-header"><span class="desk-symbol">2259.HK</span><span class="desk-index">EQUITY / HKD</span></div><strong id="desk-stock-price" class="desk-price">PENDING</strong><span id="desk-stock-state" class="desk-source-state">CHECKING SOURCE</span><p id="desk-stock-asof" class="desk-asof">Waiting for provider history</p></article>
+              <article id="desk-parent" class="desk-card" data-state="waiting"><div class="desk-card-header"><span class="desk-symbol">2899.HK</span><span class="desk-index">PARENT / HKD</span></div><strong id="desk-parent-price" class="desk-price">PENDING</strong><span id="desk-parent-state" class="desk-source-state">CHECKING SOURCE</span><p id="desk-parent-asof" class="desk-asof">Waiting for provider history</p></article>
+              <article id="desk-gold" class="desk-card" data-state="waiting"><div class="desk-card-header"><span class="desk-symbol">GC=F</span><span class="desk-index">FUTURES / USD</span></div><strong id="desk-gold-price" class="desk-price">PENDING</strong><span id="desk-gold-state" class="desk-source-state">CHECKING SOURCE</span><p id="desk-gold-asof" class="desk-asof">COMEX futures, not spot gold</p></article>
+              <article id="desk-model" class="desk-card" data-state="waiting"><div class="desk-card-header"><span class="desk-symbol">MODEL GATE</span><span class="desk-index">2259 + GC=F</span></div><strong id="desk-model-price" class="desk-price">PENDING</strong><span id="desk-model-state" class="desk-source-state">CHECKING SOURCE</span><p id="desk-model-asof" class="desk-asof">Awaiting both verified historical inputs</p></article>
+            </div>
+            <div class="desk-foot"><p id="desk-overall" role="status" aria-live="polite">Source checks have not finished. No live exchange connection is claimed.</p><a href="#sources">SEE DATA RIGHTS & AUDIT TRAIL ↗</a></div><p id="desk-export-note" aria-live="polite"></p>
+          </section>
           <section class="realtime-access" aria-label="HKEX real-time market-data access">
             <div class="realtime-head"><div><p class="eyebrow">MARKET DATA ACCESS · 2259 / 2899</p><h2>Authorised real-time access</h2><p>Free user-requested snapshots on an HKEX-authorised vendor website. Licensed on-site prices activate only after documented vendor redistribution rights and a secure API are configured.</p></div><span class="source-tag" id="licensed-connection-state">ON-SITE LICENCE NOT CONNECTED</span></div>
             <div class="realtime-options">
