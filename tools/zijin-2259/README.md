@@ -141,3 +141,21 @@ Tests validate historical animation, pause/resume, source timestamps, 15-minute 
 ## Daily bar timestamp integrity (23 November 2026)
 
 Yahoo Finance daily OHLC timestamps are provider historical-bar labels, not the time of the last exchange trade. The dashboard now displays the date-only label for daily 2259.HK and 2899.HK bars in Hong Kong time, and the UTC bar date for COMEX GC=F. Intraday bars remain explicitly provider-delayed time-bucket observations. API clients receive `barTimestampMeaning` and `barTimeIsLastTrade:false`. The fetchedAt clock indicates retrieval time, not price execution time. Displayed daily OHLC might still be provisional during a trading session. No new market-data rights, feeds, or provider accuracy guarantees are implied.
+
+## Source-confidence command deck, 23 November 2026
+
+The home screen now features a responsive, first-party Market Readiness Desk for 2259.HK, 2899.HK and COMEX gold futures. Each card is bound to the exact source instrument, provider-delayed historical close, bar date, source status and explicit model gate. The "Export source brief" action produces a local, source-only text document containing the observed delayed prices, provider timestamps and reasons for any withheld instruments. The export never includes employee award share counts, manual quote inputs, employment information or model controls.
+
+A shared source-gate.js checks provider identity, currency, source symbol, sequential plausible OHLC bars, final close reconciliation, source timestamps, future timestamps, archive status and a conservative seven-calendar-day maximum source age. Source validity governs the 2027–2029 model, empirical bootstrap and decision/stress analysis. Source-held outputs are reset and scenario buttons/export are disabled, preventing stale previously drawn projections from appearing usable. Seven calendar days is an application safety threshold, **not an automated HKEX holiday calendar**. Research remains delayed and conditional, never official real-time prices.
+
+### Open-source research and engineering decisions
+
+We reviewed these maintained repositories for ideas and safety constraints, but **did not copy upstream source or add third-party runtime dependencies**:
+
+- [TradingView lightweight-charts](https://github.com/tradingview/lightweight-charts) (Apache-2.0): financial chart interaction pattern. The existing first-party SVG charts remain because they avoid a separate runtime library, data licensing confusion and bundle weight.
+- [Apache ECharts](https://github.com/apache/echarts) (Apache-2.0): accessible chart presentation patterns, no library import.
+- [Microsoft Playwright](https://github.com/microsoft/playwright) (Apache-2.0): existing GitHub browser interaction tests remain the browser acceptance layer.
+- [Lighthouse CI](https://github.com/GoogleChrome/lighthouse-ci) (Apache-2.0): existing mobile and desktop performance budgets remain release gates.
+- [agency-agents](https://github.com/msitarzewski/agency-agents) (MIT): existing role profiles remain structured review checklists, not running autonomous workers.
+
+GitHub Actions provides the real, deterministic test workers. No external credentials, new spending, trackers, cookies or brokerage execution were added. CI runs source-gate tests, browser checks and accessibility/performance validation. A Vercel READY build alone does not prove public-route correctness, so every production release requires the independent eight-route health check.
