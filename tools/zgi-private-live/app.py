@@ -12,8 +12,10 @@ from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
 from threading import Lock
 from time import time
+from getpass import getpass
 import json
 import os
+import sys
 
 SYMBOLS = {"02259": "Zijin Gold International", "02899": "Zijin Mining Group"}
 BIND_HOST = "127.0.0.1"
@@ -210,7 +212,16 @@ def main():
             raise ValueError
     except ValueError:
         raise SystemExit("ZGI_PRIVATE_PORT must be between 1024 and 65535")
-    provider = WebullProvider(os.getenv("WEBULL_APP_KEY"), os.getenv("WEBULL_APP_SECRET"))
+    key = os.getenv("WEBULL_APP_KEY")
+    secret = os.getenv("WEBULL_APP_SECRET")
+    if not key or not secret:
+        if not sys.stdin.isatty():
+            raise SystemExit("Set Webull OpenAPI credentials in your secure local environment")
+        if not key:
+            key = getpass("Webull App Key (hidden): ")
+        if not secret:
+            secret = getpass("Webull App Secret (hidden): ")
+    provider = WebullProvider(key, secret)
     store = QuoteStore(provider)
     with ThreadingHTTPServer((BIND_HOST, port), make_handler(store, port)) as server:
         print(f"Private read-only quote viewer: http://127.0.0.1:{port}")
