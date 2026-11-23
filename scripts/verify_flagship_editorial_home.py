@@ -23,7 +23,7 @@ assert "/assets/home-compiled-2026.css?v=2" in home and "home-signature-2026.css
 assert len(home.encode("utf-8"))<25000
 for target in ("/resume.html","/executive-profile/","/recruiter-mode/","/recruiter-toolkit/","/board-ceo-mode/","/engage/","/proof-in-practice/","/media/","/public-record/","/research-library/","/guyana-intelligence/","/insights/aurora-operating-context/"):
     assert target in page.links, "Executive audience route omitted: "+target
-for fact in ("Director since 2025","2016","Career record begins","Financial services and natural resources","Ragunauth"):
+for fact in ("Director since 2025","Jul 2014","Professional career begins","Financial services and natural resources","Ragunauth"):
     assert fact in home, "Personal career fact missing: "+fact
 assert "49.4" not in home and "10,000" not in home and "89%" not in home, "Employer operating metrics must stay off personal homepage"
 assert any(img.get("class")=="portrait" and img.get("fetchpriority")=="high" and img.get("alt") for img in page.images)
