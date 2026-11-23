@@ -75,7 +75,7 @@ async function run(){
     assert.match(await page.locator('#issuer-shares-percent').textContent(),/0\.1351%/);
     await page.locator('button[data-issuer-filter="Share scheme"]').click();
     assert.equal(await page.locator('#issuer-filings-list .issuer-filing-card').count(),2);
-    await page.locator('#issuer-filing-search').fill('grant');
+    await page.locator('#issuer-filing-search').fill('award');
     assert.equal(await page.locator('#issuer-filings-list .issuer-filing-card').count(),1);
     const official=await page.locator('#issuer-filings-list a.issuer-filing-source').getAttribute('href');
     assert.match(official,/^https:\/\/www1\.hkexnews\.hk\/listedco\/listconews\/sehk\//);
