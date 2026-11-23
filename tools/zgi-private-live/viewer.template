@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="robots" content="noindex,nofollow">
+  <title>ZGI Private HKEX Quote Viewer</title>
+  <link rel="stylesheet" href="/viewer.css">
+  <script src="/viewer.js" defer></script>
+</head>
+<body>
+<main>
+  <header>
+    <div><span class="eyebrow">ZIJIN / PRIVATE RESEARCH</span><h1>HKEX market observation desk</h1>
+    <p>Personal, read-only broker view. Webull Hong Kong OpenAPI entitlement required. Not a public quotation service.</p></div>
+    <div class="status" id="connection" role="status" aria-live="polite">CONNECTING</div>
+  </header>
+  <section class="quotes" aria-label="Broker trade observations">
+    <article class="quote" data-symbol="02259"><span class="eyebrow">HKEX 02259</span><h2>Zijin Gold International</h2>
+      <div class="value" id="price-02259">WITHHELD</div><div class="state" id="state-02259">Waiting for authorised source</div>
+      <p class="date" id="date-02259">Last-trade time unavailable</p></article>
+    <article class="quote" data-symbol="02899"><span class="eyebrow">HKEX 02899</span><h2>Zijin Mining Group</h2>
+      <div class="value" id="price-02899">WITHHELD</div><div class="state" id="state-02899">Waiting for authorised source</div>
+      <p class="date" id="date-02899">Last-trade time unavailable</p></article>
+  </section>
+  <section class="foot"><div><span class="eyebrow">SOURCE CONTROL</span><p id="source">No feed connected. Price observations do not imply ongoing trades. No account credentials reach the browser.</p></div>
+    <div><span class="eyebrow">LAST REQUEST</span><p id="fetched">Pending</p></div></section>
+  <footer><a href="https://zijin-2259-intelligence.vercel.app/" target="_blank" rel="noopener noreferrer">Public delayed-research dashboard</a>
+    <p>This local quote viewer is separate from the public dashboard. Do not republish broker data without written permission.</p></footer>
+</main>
+</body>
+</html>
