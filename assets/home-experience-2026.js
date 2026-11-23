@@ -191,6 +191,8 @@
     });
     const footer = el("div", "rr-command__foot", "CTRL / ⌘ + K  ·  LOCAL NAVIGATION  ·  NO SEARCH DATA COLLECTED");
     dialog.append(head, field, status, list, footer);
+    addMotionButton(footer, "rr-dialog-motion");
+    setPaused(paused);
     document.body.append(dialog);
 
     function filter() {
