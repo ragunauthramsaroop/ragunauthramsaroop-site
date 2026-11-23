@@ -19,11 +19,9 @@
       button.setAttribute("aria-pressed", String(paused));
       if (prefersReduced.matches) {
         button.textContent = "Device motion reduced";
-        button.setAttribute("aria-label", "Device reduced-motion setting is active");
         button.disabled = true;
       } else {
         button.textContent = paused ? "Resume motion" : "Pause motion";
-        button.setAttribute("aria-label", paused ? "Resume decorative motion" : "Pause decorative motion");
       }
     }
     if (paused) {
