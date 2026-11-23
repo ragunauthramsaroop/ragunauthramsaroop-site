@@ -615,3 +615,39 @@ section{break-inside:avoid}
 .lens-export span{font-size:18px}
 @media(max-width:520px){.lens-export{margin-right:0;min-height:46px}}
 @media print{.lens-export{display:none!important}}
+
+/* EDITION 09: decision-first navigation and visitor-controlled decorative motion. */
+.motion-toggle{display:inline-flex;justify-content:center;align-items:center;flex:none;min-height:44px;padding:9px 13px;color:#e8d4ac;border:1px solid #b99a674f;background:#ffffff07;font:750 10px/1.2 system-ui,sans-serif;letter-spacing:.035em;white-space:nowrap;cursor:pointer;transition:background .2s ease,border-color .2s ease}
+.motion-toggle:hover,.motion-toggle:focus-visible{background:#d6b78521;border-color:#e2c68a}
+.motion-toggle[aria-pressed="true"]{border-color:#d6b785a8;color:#fff0cf;background:#d9b57b1f}
+.motion-toggle:disabled{opacity:.8;cursor:default}
+.motion-toggle--mobile{display:none}
+.route-bridge{padding:0 max(30px,calc((100vw - var(--max))/2)) 52px;background:linear-gradient(135deg,#eeecdf,#f8f5eb);border-bottom:1px solid #cdd2c5}
+.route-bridge__intro{display:grid;grid-template-columns:230px minmax(0,1fr);gap:35px;align-items:center;padding:34px 0 33px;border-bottom:1px solid #c7d0c2}
+.route-bridge__intro>span{font:800 9px/1.7 system-ui,sans-serif;letter-spacing:.13em;color:#8f7149;max-width:200px}
+.route-bridge__intro h2{margin:0;max-width:940px;font:400 clamp(30px,3.2vw,49px)/1.09 "Iowan Old Style",Georgia,serif;letter-spacing:-.052em;text-wrap:balance;color:#103932}
+.route-bridge__intro h2 em{color:#a48250;font-weight:400}
+.route-bridge__choices{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:13px;margin-top:25px}
+.route-bridge__choices a{display:flex;min-width:0;flex-direction:column;gap:9px;min-height:170px;padding:23px clamp(17px,2vw,29px);background:#fffcf5;border:1px solid #cad2c5;text-decoration:none;color:#133a30;transition:transform .3s var(--ease),border-color .25s,box-shadow .3s}
+.route-bridge__choices a:first-child{background:#e8eee3}
+.route-bridge__choices a:nth-child(2){background:#0d3a33;color:#fff9ef;border-color:#0d3a33}
+.route-bridge__choices a:nth-child(3){background:#eee6d8}
+.route-bridge__choices a>span{color:#9c7545;font-size:9px;letter-spacing:.14em;font-weight:850}
+.route-bridge__choices a:nth-child(2)>span{color:#e7c38a}
+.route-bridge__choices a strong{font:400 clamp(22px,2.1vw,30px)/1.13 "Iowan Old Style",Georgia,serif;letter-spacing:-.04em}
+.route-bridge__choices a small{display:flex;justify-content:space-between;align-items:end;gap:11px;margin-top:auto;font-size:11px;line-height:1.55;color:#4f6759}
+.route-bridge__choices a:nth-child(2) small{color:#cee2d4}
+.route-bridge__choices a small span{font-size:18px;color:#936f40}
+.route-bridge__choices a:nth-child(2) small span{color:#e5c48b}
+.route-bridge__note{max-width:930px;color:#5a6e60;font-size:11px;line-height:1.75;margin:20px 0 0}
+@media(hover:hover) and (pointer:fine){.route-bridge__choices a:hover{transform:translateY(-4px);border-color:#a88b5e;box-shadow:0 18px 36px #0b392819}}
+@media(max-width:1220px){.top-inner{gap:16px}.motion-toggle--desktop{padding:9px 10px}.route-bridge{padding-inline:35px}.route-bridge__intro{grid-template-columns:180px 1fr;gap:20px}}
+@media(max-width:880px){.route-bridge__intro{display:block;padding:30px 0}.route-bridge__intro>span{display:block;max-width:none;margin-bottom:12px}.route-bridge__choices{gap:9px}.route-bridge__choices a{padding:17px 14px}.route-bridge__choices a strong{font-size:23px}}
+@media(max-width:760px){.motion-toggle--desktop{display:none}.mobile-nav .motion-toggle--mobile{display:block;text-align:left;width:100%;min-height:47px;background:#e4c89412;color:#fff5dc;border:0;border-top:1px solid #d6c09535;font-size:12px;letter-spacing:.02em;padding:12px}.route-bridge{padding:0 24px 34px}.route-bridge__intro h2{font-size:clamp(34px,6vw,48px)}.route-bridge__choices{grid-template-columns:1fr;gap:8px}.route-bridge__choices a{min-height:100px;padding:17px 20px;gap:6px}.route-bridge__choices a strong{font-size:26px}.route-bridge__choices a small{margin-top:3px}.route-bridge__note{font-size:10px}}
+@media(max-width:520px){.route-bridge{padding-inline:18px}.route-bridge__intro{padding:24px 0}.route-bridge__intro h2{font-size:36px}.route-bridge__choices{margin-top:17px}.route-bridge__choices a{min-height:99px;padding:14px 16px}.route-bridge__choices a strong{font-size:24px}}
+body[data-motion="off"] .connection-field{display:none!important}
+body[data-motion="off"] .cover:after{opacity:0!important}
+body[data-motion="off"] *,body[data-motion="off"] *::before,body[data-motion="off"] *::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+body[data-motion="off"] .reveal,body[data-motion="off"] .reveal:not(.is-visible){opacity:1!important;transform:none!important;translate:none!important}
+@media(prefers-reduced-motion:reduce){.connection-field{display:none!important}}
+@media print{.route-bridge,.motion-toggle{display:none!important}}
