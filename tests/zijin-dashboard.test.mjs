@@ -18,7 +18,7 @@ const app=readFileSync(root+'app.js','utf8');
 const market=readFileSync(root+'markets.js','utf8');
 const motion=readFileSync(root+'chart-motion.js','utf8');
 test('replay is labelled historical and never claims real-time trade ticks',()=>{
- assert.match(html,/HISTORICAL REPLAY[^<]*NOT LIVE TRADES/);
+ assert.match(html,/FOLLOWING DELAYED BARS[^<]*NOT LIVE TRADES/);
  assert.match(html,/15-MIN BARS/);
  assert.ok(html.indexOf('markets.js')<html.indexOf('chart-motion.js'));
  assert.match(motion,/zgi:chart/);
@@ -266,4 +266,17 @@ test("fonts are requested early with optional face rendering, not late swap impo
  assert.doesNotMatch(css,/@import/);
  assert.match(html,/fonts\.gstatic\.com" crossorigin/);
  assert.match(html,/family=Manrope[^"]*display=optional/);
+});
+
+test("default chart follows newest provider-delayed 15-minute bars, not a simulated live replay",()=>{
+ const motion=readFileSync(root+"chart-motion.js","utf8");
+ const markets=readFileSync(root+"markets.js","utf8");
+ assert.match(markets,/range:"5d",dailyRange:"6mo",style:"candles",interval:"15m"/);
+ assert.match(markets,/activateControls\(\);\s*refreshIntraday\(\);\s*refresh\(\);/);
+ assert.match(markets,/Loading source-delayed 15-minute bars/);
+ assert.match(motion,/archive:false,playing:false,following:true/);
+ assert.match(html,/id="motion-follow" aria-pressed="true"/);
+ assert.match(html,/id="motion-replay-toggle" aria-pressed="false"/);
+ assert.match(html,/OPEN AUTHORISED LIVE SNAPSHOT/);
+ assert.match(html,/href="https:\/\/www\.etnet\.com\.hk\/www\/eng\/stocks\/realtime\/index\.php"/);
 });
