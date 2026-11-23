@@ -224,3 +224,24 @@ test('standalone Vercel runtime declares CommonJS for market, licensing, and new
   assert.doesNotMatch(source,/export default/);
  }
 });
+
+test("Source-confidence terminal preserves source identity and browser-only privacy",()=>{
+ const source=readFileSync(root+"source-gate.js","utf8");
+ const desk=readFileSync(root+"research-desk.js","utf8");
+ const deskCss=readFileSync(root+"research-desk.css","utf8");
+ for(const id of ["desk-title","desk-stock","desk-parent","desk-gold","desk-model","desk-overall","desk-export"])assert.match(html,new RegExp('id="'+id+'"'));
+ assert.match(html,/source-gate\.js/);
+ assert.match(html,/research-desk\.css/);
+ assert.ok(html.indexOf("source-gate.js")<html.indexOf("markets.js"));
+ assert.match(html,/id="desk-overall" role="status" aria-live="polite"/);
+ assert.match(source,/MAX_AGE=7\*DAY/);
+ assert.match(source,/assessPair/);
+ assert.match(analytics,/ZGIResearchGate.*assessPair/);
+ assert.match(readFileSync(root+"quant-ui.js","utf8"),/ZGIResearchGate.*assessFeed/);
+ assert.match(readFileSync(root+"decision-ui.js","utf8"),/ZGIResearchGate.*assessFeed/);
+ assert.match(desk,/zgi:market/);
+ assert.match(desk,/zijin-2259-source-brief/);
+ assert.doesNotMatch(desk,/localStorage|sessionStorage|sendBeacon|fetch\s*\(|XMLHttpRequest|award-quant/);
+ assert.match(deskCss,/@media\(max-width:680px\)/);
+ assert.match(deskCss,/prefers-reduced-motion/);
+});
