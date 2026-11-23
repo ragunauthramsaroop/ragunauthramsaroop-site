@@ -112,6 +112,21 @@ def main():
             # The interactive dossier must work without third-party scripts.
             page.goto(base + "/experience/", wait_until="load")
             expect(page.locator("h1")).to_contain_text("decisions meet")
+            # Decision-first links, real content, and user motion control.
+            expect(page.locator('.route-bridge__choices a')).to_have_count(3)
+            expect(page.locator('.route-bridge__choices a[href="/briefing/?lens=board"]')).to_have_count(1)
+            expect(page.locator('.route-bridge__choices a[href="/briefing/?lens=recruiter"]')).to_have_count(1)
+            expect(page.locator('.route-bridge__choices a[href="/briefing/?lens=speaker"]')).to_have_count(1)
+            expect(page.locator('.orientation-foot')).to_contain_text("2016")
+            motion_button = page.locator(".motion-toggle--desktop")
+            expect(motion_button).to_be_visible()
+            motion_button.click()
+            expect(motion_button).to_have_attribute("aria-pressed", "true")
+            expect(page.locator("body")).to_have_attribute("data-motion", "off")
+            assert page.evaluate("getComputedStyle(document.querySelector('.connection-field')).display === 'none'")
+            motion_button.click()
+            expect(motion_button).to_have_attribute("aria-pressed", "false")
+            expect(page.locator("body")).to_have_attribute("data-motion", "on")
             expect(page.locator('link[rel="stylesheet"][href^="/assets/experience-2026.css"]')).to_have_count(1)
             expect(page.locator('script[src^="/assets/experience-2026.js"]')).to_have_count(1)
             # Audience-specific briefing studio is keyboard accessible and shareable.
@@ -160,6 +175,13 @@ def main():
             expect(page.locator(".mobile-nav summary")).to_be_visible()
             page.locator(".mobile-nav summary").click()
             expect(page.locator('.mobile-nav a[href="#mandate"]')).to_be_visible()
+            mobile_motion = page.locator(".motion-toggle--mobile")
+            expect(mobile_motion).to_be_visible()
+            mobile_motion.click()
+            expect(mobile_motion).to_have_attribute("aria-pressed", "true")
+            expect(page.locator("body")).to_have_attribute("data-motion", "off")
+            mobile_motion.click()
+            expect(page.locator("body")).to_have_attribute("data-motion", "on")
             page.locator('.mobile-nav a[href="#mandate"]').click()
             expect(page.locator('.mobile-nav')).not_to_have_attribute("open", "")
             assert page.evaluate("document.documentElement.scrollWidth <= innerWidth + 2"), "Mobile dossier overflows"
@@ -173,13 +195,30 @@ def main():
             expect(no_js_page.locator('a[data-lens="recruiter"]')).to_have_attribute("href", "/recruiter-toolkit/")
             expect(no_js_page.locator('a[data-lens="speaking"]')).to_have_attribute("href", "/media/")
             expect(no_js_page.locator('a[data-claim-id]')).to_have_count(6)
+            expect(no_js_page.locator(".motion-toggle--desktop")).to_be_hidden()
+            expect(no_js_page.locator('.route-bridge__choices a')).to_have_count(3)
             no_js.close()
             # Narrow 320px phones must also remain usable.
             page.set_viewport_size({"width": 320, "height": 750})
             assert page.evaluate("document.documentElement.scrollWidth <= innerWidth + 2"), "320px dossier overflows"
             expect(page.locator(".mobile-nav summary")).to_be_visible()
             expect(page.locator(".cover-title")).to_be_visible()
-            results.append("PASS edition 07: executive briefing modes, source-backed six-claim network, mandate controls, gallery and first-fold mobile portrait")
+            # The site must also fit tablet and laptop widths after adding header controls.
+            for width in (768, 1024, 1440):
+                page.set_viewport_size({"width": width, "height": 900})
+                assert page.evaluate("document.documentElement.scrollWidth <= innerWidth + 2"), (
+                    f"Executive dossier overflows at {width}px"
+                )
+            # Device-level reduced motion is respected without an additional click.
+            reduced_context = browser.new_context(
+                viewport={"width":1440,"height":900}, reduced_motion="reduce", service_workers="block"
+            )
+            reduced_page = reduced_context.new_page()
+            reduced_page.goto(base + "/experience/", wait_until="load")
+            expect(reduced_page.locator("body")).to_have_attribute("data-motion", "off")
+            expect(reduced_page.locator(".motion-toggle--desktop")).to_be_disabled()
+            reduced_context.close()
+            results.append("PASS edition 09: decision-first links, motion opt-out, reduced-motion, career chronology, 320-1440px mobile/desktop and evidence flows")
 
             # Executive brief builder: three audience versions, canonical sources,
             # print media, no-JS fallback and mobile viewports.
