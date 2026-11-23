@@ -255,3 +255,9 @@ test("authorised real-time BMP snapshot is prominently linked only to vendor hom
  assert.doesNotMatch(html,/href="https:\/\/[^"]*etnet[^"]*quote\.php/);
  assert.match(html,/DELAYED-PROVIDER CHECK EVERY 3 MINUTES/);
 });
+
+test("visual-first layout styles apply before first paint to prevent mobile shifts",()=>{
+ assert.match(html,/<html lang="en" class="visual-first">/);
+ assert.match(visualCss,/\.visual-first #overview/);
+ assert.match(visualFirst,/document\.documentElement\.classList\.add\("visual-first"\)/);
+});
