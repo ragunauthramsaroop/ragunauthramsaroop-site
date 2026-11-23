@@ -33,7 +33,7 @@ def main():
             expect(page.locator("#honours-title")).to_contain_text("public record")
             assert page.locator(".flag-honours__grid .flag-hero__affiliation").count() == 3
             expect(page.locator("body")).to_contain_text("Liaison Director, Social Responsibility Department")
-            expect(page.locator(".flag-proof")).to_contain_text("Jul 2014")
+            expect(page.locator(".flag-proof")).to_contain_text("2014")
             expect(page.locator(".flag-proof")).not_to_contain_text("Career record begins")
             expect(page.locator("#decision-paths")).to_contain_text("Two audiences.")
             assert "five role progressions" not in page.locator("body").inner_text().lower()
@@ -41,8 +41,8 @@ def main():
             expect(page.locator(".flag-hero__portrait-wrap img")).to_have_attribute("height", "1030")
             expect(page.locator(".flag-hero__portrait-wrap img")).to_have_attribute("src", "/assets/randy-portrait.jpg")
             assert page.locator('link[rel="stylesheet"][href^="/assets/home-compiled-2026.css"]').count() == 1
-            assert page.locator('link[rel="stylesheet"]').count() == 1
-            assert page.locator('script[src]').count() == 1
+            assert page.locator('link[rel="stylesheet"][href^="/assets/home-compiled-2026.css"]').count() == 1
+            assert page.locator('script[src="/assets/home-runtime.js"]').count() == 1
             expect(page.locator('script[src]')).to_have_attribute("src", "/assets/home-runtime.js")
             assert page.locator('script[src^="/_next/static/"]').count() == 0
             assert page.locator('script:not([src]):not([type="application/ld+json"])').count() == 0
@@ -58,6 +58,15 @@ def main():
             delayed = page.evaluate("performance.getEntriesByType('resource').map(e => e.name)")
             assert any("/assets/accessibility.js" in url for url in delayed), delayed
             assert any("/tools/assets/analytics-loader.js" in url for url in delayed), delayed
+            assert any("/assets/home-experience-2026.js" in url for url in delayed), delayed
+            assert any("/assets/home-experience-2026.css" in url for url in delayed), delayed
+            expect(page.locator(".rr-find")).to_be_visible()
+            page.locator(".rr-find").click()
+            expect(page.locator("dialog.rr-command")).to_be_visible()
+            page.locator(".rr-command__input").fill("recruiter")
+            assert page.locator(".rr-command__result:visible").count() == 1
+            page.keyboard.press("Escape")
+            expect(page.locator("dialog.rr-command")).to_be_hidden()
             # Every viewport keeps the privacy decision in flow after the page.
             expect(page.locator("#rr-analytics-choice")).to_be_attached()
             page.wait_for_function("getComputedStyle(document.querySelector('#rr-analytics-choice')).position === 'static'")
@@ -72,14 +81,19 @@ def main():
             expect(page.locator(".nav-links")).to_be_hidden()
             page.locator(".mobile-nav summary").click()
             expect(page.locator(".mobile-nav a").first).to_be_visible()
+            expect(page.locator(".rr-mobile-find")).to_be_visible()
+            page.locator(".rr-mobile-find").click()
+            expect(page.locator("dialog.rr-command")).to_be_visible()
+            page.keyboard.press("Escape")
+            expect(page.locator("dialog.rr-command")).to_be_hidden()
             page.set_viewport_size({"width": 1280, "height": 900})
-            results.append("PASS fast homepage: one critical runtime, no platform CSS, delayed analytics, desktop and mobile")
+            results.append("PASS fast homepage: one critical runtime, deferred enhancements, desktop and mobile navigator")
 
             page.goto(base + "/resume.html", wait_until="domcontentloaded")
             expect(page.locator(".cv-metric").filter(has_text="Jul 2014").first).to_be_visible()
             expect(page.locator("body")).to_contain_text("Jul 2014–May 2019")
             expect(page.locator("body")).not_to_contain_text("Jun 2014–May 2019")
-            results.append("PASS verified July 2014 career chronology in homepage and executive CV")
+            results.append("PASS year-only homepage milestone with detailed career chronology in executive CV")
 
             alignment_routes = [
                 "/", "/executive-profile/", "/leadership/", "/evidence/",
