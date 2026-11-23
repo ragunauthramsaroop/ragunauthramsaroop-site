@@ -45,7 +45,8 @@ test("filter category and search only curated source records, no arbitrary provi
  assert.equal(Registry.filterFilings().length,8);
  assert.equal(Registry.filterFilings("award","Share scheme").length,1);
  assert.equal(Registry.filterFilings("2026-10","All").length,2);
- assert.equal(Registry.filterFilings("results","Results").length,2);
+ assert.equal(Registry.filterFilings("results","Results").length,3);
+ assert.equal(Registry.filterFilings("Six Months","Results").length,1);
  assert.equal(Registry.filterFilings("Allied","Corporate action").length,1);
  assert.deepEqual(Registry.filterFilings("anything","Unsupported category"),[]);
  assert.equal(Registry.filterFilings("confidential").length,0);
