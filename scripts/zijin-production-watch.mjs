@@ -15,6 +15,12 @@ export function validateMarket(data,symbol,currency,now=Date.now()){
   throw Error('Market instrument or currency mismatch');
  if(!String(data.dataDelay||'').toLowerCase().includes('delayed'))
   throw Error('Delayed-source declaration missing');
+ if(String(data.sourceSymbol||'').toUpperCase()!==symbol.toUpperCase())
+  throw Error('Underlying provider ticker mismatch');
+ if(data.barTimeIsLastTrade!==false||typeof data.barTimestampMeaning!=='string')
+  throw Error('Source bar time semantics missing');
+ if(data.interval==='1d'&&!data.barTimestampMeaning.includes('DAILY PRICE BAR LABEL'))
+  throw Error('Daily bar falsely presented as trade timestamp');
  if(!Array.isArray(data.bars)||data.bars.length<2)throw Error('Insufficient OHLC bars');
  const last=data.bars.at(-1),price=Number(data.regularMarketPrice);
  if(!Number.isFinite(price)||price<=0||!last||!Number.isFinite(last.t)||
@@ -23,7 +29,15 @@ export function validateMarket(data,symbol,currency,now=Date.now()){
  if(data.bars.some((bar,index)=>!Number.isFinite(bar.t)||
     (index>0&&bar.t<=data.bars[index-1].t)))
   throw Error('Unordered or invalid bar timestamps');
+ if(data.bars.some(bar=>![bar.o,bar.h,bar.l,bar.c].every(Number.isFinite)||
+    bar.l<=0||bar.h<bar.l||bar.o<bar.l*.995||bar.o>bar.h*1.005||
+    bar.c<bar.l*.995||bar.c>bar.h*1.005||
+    (bar.v!==null&&(!Number.isFinite(bar.v)||bar.v<0))))
+  throw Error('Invalid OHLC price bounds or trading volume');
  const asOf=Date.parse(data.latestBarTime);
+ const quoteAsOf=Date.parse(data.providerQuoteTime);
+ if(!Number.isFinite(quoteAsOf)||Math.abs(quoteAsOf-asOf)>60000)
+  throw Error('Provider daily-bar source timestamp mismatch');
  if(!Number.isFinite(asOf)||Math.abs(asOf-last.t*1000)>60000||
     asOf>now+3600000||now-asOf>7*86400000)
   throw Error('Market observation stale, future dated or inconsistent');
