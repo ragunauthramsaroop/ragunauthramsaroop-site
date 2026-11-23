@@ -1,5 +1,5 @@
 {
-  "generated": "22 November 2026",
+  "generated": "23 November 2026",
   "algorithm": "SHA-256",
   "resources": [
     {
@@ -130,9 +130,9 @@
     },
     {
       "path": "/assets/search-index.json",
-      "sha256": "88944857a26e3882a00608b10f5bde18a4e39dcb83f406ea818a69911a8c5b75",
-      "bytes": 353417,
-      "generated": "22 November 2026"
+      "sha256": "b432ea38cdebc3f562786b255611644447bc065d64cef5b49fa488515dc2ef50",
+      "bytes": 353423,
+      "generated": "23 November 2026"
     },
     {
       "path": "/api/v1/capabilities.json",
@@ -178,15 +178,15 @@
     },
     {
       "path": "/index.html",
-      "sha256": "155d4826d69ac8b6127f634bf3fda9bb45345c8fbb627909a20002ee11f2fb65",
-      "bytes": 24947,
-      "generated": "22 November 2026"
+      "sha256": "ba6a3c93534bb7f2ca85e6b03218f023e5bc9b5dec28f479a5f0eb17bc31393f",
+      "bytes": 24936,
+      "generated": "23 November 2026"
     },
     {
       "path": "/resume.html",
-      "sha256": "d9f85ef9554e3a90db8a88eb96b4c00b7259429156f550eaee6f2743fce289a0",
-      "bytes": 35135,
-      "generated": "05 November 2026"
+      "sha256": "4b3437d614daac29735414cbd2e97d183e5e23ebf63e8f0b4d61308c458f5c3d",
+      "bytes": 35100,
+      "generated": "23 November 2026"
     },
     {
       "path": "/data/public-profile.json",
