@@ -9,8 +9,8 @@
   const fmtPrice = new Intl.NumberFormat("en-HK",{style:"currency",currency:"HKD",maximumFractionDigits:2});
   const fmtDate = new Intl.DateTimeFormat("en-GB",{timeZone:"Asia/Hong_Kong",day:"2-digit",month:"short",year:"numeric",hour:"2-digit",minute:"2-digit",hourCycle:"h23"});
   const reduced = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-  const state = {bars:[],sourceTime:null,interval:"1d",archive:false,playing:!reduced,following:!!reduced,
-    speed:1,progress:0,previousFrame:null,visibleIndex:-1,nextCheck:Date.now()+180000,
+  const state = {bars:[],sourceTime:null,interval:"1d",archive:false,playing:false,following:true,
+    speed:1,progress:1,previousFrame:null,visibleIndex:-1,nextCheck:Date.now()+180000,
     sourceAvailable:false,latestSourceTime:null,lastDraw:0};
   function text(id,value){const el=byId(id);if(el)el.textContent=value;}
   function updateMode(){
