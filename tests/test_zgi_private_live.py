@@ -90,7 +90,8 @@ class TestQuoteContracts(unittest.TestCase):
     def test_private_transport_constraints(self):
         self.assertEqual(app.BIND_HOST, "127.0.0.1")
         self.assertGreaterEqual(app.MIN_REFRESH_SECONDS, 5)
-        for path in ["index.html", "viewer.js", "viewer.css", "requirements.txt"]:
+        self.assertFalse((ROOT / "index.html").exists())
+        for path in ["viewer.template", "viewer.js", "viewer.css", "requirements.txt"]:
             self.assertTrue((ROOT / path).exists())
         src = (ROOT / "viewer.js").read_text()
         self.assertNotIn("localStorage", src)
