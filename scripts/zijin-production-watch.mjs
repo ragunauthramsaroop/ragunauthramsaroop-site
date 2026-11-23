@@ -8,6 +8,9 @@ export function validateHome(html){
   !html.includes('id="main-title"')||!html.includes('id="live-kpi-2259"')||
   !html.includes('id="motion-follow" aria-pressed="true"')||
   !html.includes('OPEN AUTHORISED LIVE SNAPSHOT')||
+  !html.includes('id="issuer-disclosures"')||
+  !html.includes('issuer-registry.js')||
+  !html.includes('issuer-ui.js')||
   !html.includes('name="robots" content="noindex,nofollow"'))
   throw Error('Dashboard identity, privacy or market KPI markup missing');
  return 'Dashboard identity and noindex confirmed';
@@ -45,6 +48,26 @@ export function validateMarket(data,symbol,currency,now=Date.now()){
   throw Error('Market observation stale, future dated or inconsistent');
  return symbol+' '+currency+' delayed bar '+new Date(asOf).toISOString();
 }
+export function validateIssuerRegistry(source){
+ if(typeof source!=='string'||!source.includes('ZGIIssuerRegistry')||
+    !source.includes('REGISTRY_DATE="2026-11-23"')||
+    !source.includes('2026111201384.pdf')||
+    !source.includes('2026111300646.pdf')||
+    !source.includes('https://www1.hkexnews.hk')||
+    !source.includes('issuedPctOfOpening')||
+    !source.includes('2679956300'))
+  throw Error('Curated HKEX disclosure registry or equity issuance reconciliation missing');
+ return 'Issuer documents, editorial date and share-capital evidence verified';
+}
+export function validateIssuerUI(source){
+ if(typeof source!=='string'||!source.includes('issuer-filings-list')||
+    !source.includes('issuer-filing-search')||
+    !source.includes('filterFilings')||
+    !source.includes('issuer-export')||
+    source.includes('localStorage')||source.includes('sessionStorage'))
+  throw Error('Disclosure search or local-only export missing');
+ return 'First-party disclosure search and local export served';
+}
 async function check(path,name,expectedStatus,inspect,required,results){
  try{
   const response=await fetch(new URL(path,BASE),{
@@ -62,6 +85,13 @@ async function check(path,name,expectedStatus,inspect,required,results){
 export async function auditProduction(){
  const results=[];
  await check('/','Public dashboard',200,validateHome,true,results);
+ await check('/issuer-registry.js','Official issuer source registry',200,validateIssuerRegistry,true,results);
+ await check('/issuer-ui.js','Issuer research search UI',200,validateIssuerUI,true,results);
+ await check('/issuer-dossier.css','Issuer research styles',200,raw=>{
+   if(!raw.includes('.issuer-dossier')||!raw.includes('@media(max-width:720px)'))
+    throw Error('Responsive issuer disclosure styling unavailable');
+   return 'Source-linked responsive issuer research styling served';
+ },true,results);
  await check('/markets.js','Market chart script',200,raw=>{
   if(!raw.includes('zgi:market'))throw Error('Market events missing');
   return 'First-party script served';
