@@ -5,11 +5,12 @@ const home='<title>ZGI Intelligence | HKEX 2259</title><h1 id="main-title">Zijin
 const now=Date.parse('2026-11-23T12:00:00Z');
 const bar=t=>({t,o:100,h:102,l:99,c:101,v:1000});
 const data={
- ok:true,symbol:'2259.HK',currency:'HKD',
+ ok:true,symbol:'2259.HK',sourceSymbol:'2259.HK',currency:'HKD',interval:'1d',
+ barTimestampMeaning:'DAILY PRICE BAR LABEL; NOT LAST-TRADE TIME',barTimeIsLastTrade:false,
  dataDelay:'Provider/exchange delayed; not licensed real-time data',
  regularMarketPrice:101,
  bars:[bar(Date.parse('2026-11-19T08:00:00Z')/1000),bar(Date.parse('2026-11-20T08:00:00Z')/1000)],
- latestBarTime:'2026-11-20T08:00:00.000Z'
+ latestBarTime:'2026-11-20T08:00:00.000Z',providerQuoteTime:'2026-11-20T08:00:00.000Z'
 };
 test('dashboard identity and noindex are required',()=>{
  assert.match(validateHome(home),/confirmed/);
@@ -29,4 +30,16 @@ test('future-dated, stale and reordered bars are rejected',()=>{
 });
 test('unqualified real-time-like quote labels are rejected',()=>{
  assert.throws(()=>validateMarket({...data,dataDelay:'LIVE TICKS'},'2259.HK','HKD',now),/Delayed-source/);
+});
+
+test('monitor rejects provider identity spoofing and unsupported last-trade claims',()=>{
+ assert.throws(()=>validateMarket({...data,sourceSymbol:'AAPL'},'2259.HK','HKD',now),/provider ticker mismatch/);
+ assert.throws(()=>validateMarket({...data,barTimeIsLastTrade:true},'2259.HK','HKD',now),/semantics/);
+ assert.throws(()=>validateMarket({...data,barTimestampMeaning:'LAST TRADE TICK'},'2259.HK','HKD',now),/falsely presented/);
+ assert.throws(()=>validateMarket({...data,providerQuoteTime:'2026-11-23T08:00:00Z'},'2259.HK','HKD',now),/source timestamp mismatch/);
+});
+test('monitor treats missing volume as unknown but rejects negative and impossible OHLC',()=>{
+ assert.match(validateMarket({...data,bars:data.bars.map(b=>({...b,v:null}))},'2259.HK','HKD',now),/delayed bar/);
+ assert.throws(()=>validateMarket({...data,bars:[{...data.bars[0],v:-5},data.bars[1]]},'2259.HK','HKD',now),/Invalid OHLC/);
+ assert.throws(()=>validateMarket({...data,bars:[{...data.bars[0],h:98},data.bars[1]]},'2259.HK','HKD',now),/Invalid OHLC/);
 });
