@@ -1,5 +1,5 @@
 /* ZGI Intelligence: navigation and client-only share-settlement calculations.
-   No personal award quantity is embedded, persisted or sent to any network. */
+   No personal award quantity is embedded or sent to any network. Optional local saving is handled by the chart tracker. */
 (() => {
   "use strict";
   const $=id=>document.getElementById(id);
@@ -41,7 +41,7 @@
     if(!valid){
       ['share-value','purchase-cost','cash-outcome','shares-to-sell','remaining-shares'].forEach(k=>text(k,'—'));
       text('gross-spread','ENTER SHARES & PRICE');
-      text('model-message','Enter a whole-number share quantity. Select a verified market quote or a dynamic 2029 scenario price. This calculator never stores or transmits your inputs.');
+      text('model-message','Enter a whole-number share quantity. Select a verified market quote or a dynamic 2029 scenario price. Inputs are not transmitted. Only an explicitly saved quantity stays on this device.');
       return;
     }
     const gross=shares*sale,purchase=shares*strike,spread=gross-purchase,net=spread-charges;
