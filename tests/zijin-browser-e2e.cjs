@@ -163,6 +163,29 @@ async function run(){
     assert.equal(coverDisplayed,coverExpected,'whole share sales must fund entered fees as well as purchase');
     await page.locator('#charge').fill('0');
   });
+  await check('Manual award simulator is independent and saved quantity stays on device',async()=>{
+    await page.locator('#chart-award-shares').fill('100');
+    await page.locator('#chart-award-save').click();
+    assert.equal(await page.locator('#chart-award-shares').getAttribute('readonly'),'');
+    const observed=await page.locator('#chart-award-price').textContent();
+    const payout=await page.locator('#chart-award-payout').textContent();
+    await page.locator('#award-sim-price').fill('120');
+    assert.equal(await page.locator('#award-sim-payout').textContent(),'HK$3,252.00');
+    await page.locator('#award-sim-quantity').fill('200');
+    assert.equal(await page.locator('#award-sim-payout').textContent(),'HK$6,504.00');
+    await page.locator('#award-sim-price').fill('80');
+    assert.equal(await page.locator('#award-sim-payout').getAttribute('data-sign'),'loss');
+    assert.equal(await page.locator('#chart-award-price').textContent(),observed);
+    assert.equal(await page.locator('#chart-award-payout').textContent(),payout);
+    assert.equal(await page.evaluate(()=>localStorage.getItem('zgi.private.award.quantity.v1')),'100');
+    await page.locator('#award-sim-quantity').fill('');
+    await page.locator('#award-sim-price').fill('');
+    assert.equal(await page.locator('#award-sim-payout').textContent(),'Enter price');
+    await page.locator('#chart-award-clear').click();
+    assert.equal(await page.evaluate(()=>localStorage.getItem('zgi.private.award.quantity.v1')),null);
+    assert.equal(await page.locator('#chart-award-shares').inputValue(),'');
+    await page.locator('#shares').fill('100');
+  });
   await check('Private eligibility screening responds to ROE and employment conditions',async()=>{
     await page.locator('#elig-roe-2026').fill('15');
     await page.locator('#elig-roe-2027').fill('15');
