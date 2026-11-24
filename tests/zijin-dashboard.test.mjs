@@ -290,3 +290,26 @@ test("default chart follows newest provider-delayed 15-minute bars, not a simula
  assert.match(html,/OPEN ZIJIN GOLD QUOTE \(DELAYED\)/);
  assert.match(html,/href="https:\/\/www\.etnet\.com\.hk\/www\/eng\/stocks\/realtime\/index\.php"/);
 });
+
+test('Pro calculator matches USD award and rejects invalid DCF assumptions',()=>{
+ const src=readFileSync(root+'pro.js','utf8');
+ const mod={exports:{}};
+ new Function('module',src)(mod);
+ const p=mod.exports;
+ const a=p.gross(10000,250,87.48,7.8);
+ assert.ok(Math.abs(a.gross-208358.974359)<0.01);
+ assert.ok(Math.abs(p.target(10000,87.48,7.8,1000000)-867.48)<0.0001);
+ assert.equal(p.dcf(100,0.05,0.02,0.02,5,10,100,7.8),null);
+ assert.ok(Math.abs(p.multiple(100,8,100,100,7.8)-54.6)<1e-8);
+ assert.ok(Math.abs(p.nav(1000,0,100,100,7.8)-70.2)<1e-8);
+ assert.equal(p.gross(0,250,87.48,7.8),null);
+});
+test('Pro interface keeps market integrity and local assumptions explicit',()=>{
+ for(const id of ['pro-workbench','pro-valuation','pro-health','pro-price-alert','pro-payout-alert','settlement-currency'])assert.match(html,new RegExp('id="'+id+'"'));
+ assert.match(market,/Source confidence policy rejected observation/);
+ assert.match(market,/fullRSI\(fullPrices\)\.slice\(offset\)/);
+ assert.match(motion,/STALE · PAYOUT WITHHELD/);
+ assert.match(motion,/function stopFrame/);
+ assert.match(api,/bars:ohlc\.slice\(interval==="15m"\?-1600:-440\)/);
+ assert.doesNotMatch(readFileSync(root+'pro.js','utf8'),/fetch\s*\(|XMLHttpRequest|localStorage|sessionStorage|sendBeacon/);
+});
