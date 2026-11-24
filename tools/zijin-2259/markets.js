@@ -238,6 +238,8 @@ function renderMain(){
     const i=Math.round(k*(n-1)/5),xx=x(i);
     svg+='<text x="'+xx+'" y="585" text-anchor="middle" font-size="12" fill="'+colors.muted+'" font-family="Arial">'+(state.interval==="15m"&&state.intraday?SHORT_TIME.format(new Date(bars[i].t*1000)):formatDate(bars[i].t))+'</text>';
   }
+  // Crosshairs expose exact source OHLC, and keyboard access selects adjacent observations.
+  svg+='<g data-chart-crosshair="1" visibility="hidden" pointer-events="none" aria-hidden="true"><line data-cross-x="1" x1="0" y1="'+top+'" x2="0" y2="'+macdBottom+'" stroke="#aebfce" stroke-dasharray="4 4" opacity=".8"/><line data-cross-y="1" x1="'+l+'" y1="0" x2="'+(w-r)+'" y2="0" stroke="#aebfce" stroke-dasharray="4 4" opacity=".8"/></g>';
   // Mouse / tap interaction with exact source OHLC data, never another security.
   svg+='<rect x="'+l+'" y="'+top+'" width="'+width+'" height="'+(priceBottom-top)+'" fill="transparent" pointer-events="all" data-interactive-chart="1"/>';
   svg+='<g data-chart-motion="1" aria-hidden="true" pointer-events="none"><rect data-motion-trail="1" x="'+l+'" y="'+top+'" width="0" height="'+(macdBottom-top)+'"/><line data-motion-line="1" x1="'+l+'" y1="'+top+'" x2="'+l+'" y2="'+macdBottom+'"/><circle data-motion-dot="1" cx="'+l+'" cy="'+priceY(bars[0].c)+'" r="6"/></g></svg>';
@@ -245,15 +247,20 @@ function renderMain(){
   const info=document.createElement("div");info.className="chart-hover-card";info.textContent="HOVER A SESSION FOR OHLC · STOCK CODE 2259.HK";
   host.appendChild(info);
   const graph=host.querySelector("svg"),hit=graph.querySelector('[data-interactive-chart]');
-  const pick=event=>{
-    const rect=graph.getBoundingClientRect(),scaled=(event.clientX-rect.left)/rect.width*w;
-    const idx=Math.min(n-1,Math.max(0,Math.floor((scaled-l)/width*n)));
-    const b=bars[idx];if(!b)return;
-    info.textContent=(state.interval==="15m"&&state.intraday?SHORT_TIME.format(new Date(b.t*1000))+" HKT":formatDate(b.t))+"  O "+NUM.format(b.o)+" · H "+NUM.format(b.h)+" · L "+NUM.format(b.l)+" · C "+NUM.format(b.c)+" · VOL "+INTEGER.format(b.v||0);
+  const cross=graph.querySelector("[data-chart-crosshair]");let selected=n-1;
+  const selectIndex=idx=>{
+    selected=Math.min(n-1,Math.max(0,idx));const b=bars[selected];if(!b)return;
+    if(cross){const cx=x(selected),cy=priceY(b.c),vx=cross.querySelector("[data-cross-x]"),hy=cross.querySelector("[data-cross-y]");cross.setAttribute("visibility","visible");vx.setAttribute("x1",cx);vx.setAttribute("x2",cx);hy.setAttribute("y1",cy);hy.setAttribute("y2",cy);}
+    info.textContent=(state.interval==="15m"&&state.intraday?SHORT_TIME.format(new Date(b.t*1000))+" HKT":formatDate(b.t))+"  O "+NUM.format(b.o)+" · H "+NUM.format(b.h)+" · L "+NUM.format(b.l)+" · C "+NUM.format(b.c)+" · VOL "+(b.v===null?"not reported":INTEGER.format(b.v));
   };
+  const pick=event=>{const rect=graph.getBoundingClientRect(),scaled=(event.clientX-rect.left)/rect.width*w;selectIndex(Math.floor((scaled-l)/width*n));};
   if(hit)hit.addEventListener("pointermove",pick);
   if(hit)hit.addEventListener("pointerdown",pick);
-  if(hit)hit.addEventListener("pointerleave",()=>{info.textContent="HOVER A SESSION FOR OHLC · STOCK CODE 2259.HK";});
+  if(hit)hit.addEventListener("pointerleave",()=>{if(cross)cross.setAttribute("visibility","hidden");info.textContent="HOVER A SESSION FOR OHLC · STOCK CODE 2259.HK";});
+  info.tabIndex=0;info.setAttribute("aria-label","Historical chart observations. Use left and right arrow keys to inspect exact values.");
+  info.addEventListener("focus",()=>selectIndex(selected));
+  info.addEventListener("keydown",event=>{if(event.key==="ArrowLeft"||event.key==="ArrowRight"){event.preventDefault();selectIndex(selected+(event.key==="ArrowLeft"?-1:1));}});
+  info.addEventListener("blur",()=>{if(cross)cross.setAttribute("visibility","hidden");});
   noteRefreshStatus();
   if(state.interval==="15m"&&state.intraday){
     setText("market-chart-status","2259.HK · PROVIDER-DELAYED 15-MINUTE OHLC BARS");
