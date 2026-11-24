@@ -390,6 +390,7 @@
                 </div>
                 <label for="charge">Estimated taxes and fees <span>HKD, illustrative input</span></label>
                 <input id="charge" type="number" min="0" max="1000000000" step="0.01" value="0">
+                <label for="settlement-currency">Settlement display currency</label><select id="settlement-currency"><option value="USD" selected>USD · chart FX assumption</option><option value="HKD">HKD · original currency</option></select><p class="form-note">Share price, purchase price and fees are entered in HKD. USD output uses the editable chart exchange rate, not a live FX feed.</p>
                 <div class="calc-buttons"><button class="button button-gold" type="submit">CALCULATE OUTCOME</button><button class="button button-subtle" id="calc-use-market" type="button">USE VERIFIED MARKET PRICE</button><button class="button button-subtle" id="reset-model" type="button">RESET INPUTS</button></div><div class="calc-market-context" id="calc-market-context">Market price awaits provider verification. Selected model scenarios are illustrative.</div>
               </form>
               <p class="form-foot">Company scheme terms also permit trustee-assisted sales, subject to vesting, compliance, tax and charges. The calculator does not determine personal tax liabilities.</p>
