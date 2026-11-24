@@ -205,7 +205,25 @@
                 <span class="motion-mode-label" id="motion-mode-label">FOLLOWING DELAYED BARS · NOT LIVE TRADES</span>
               </div>
               <div class="market-motion-data"><span id="motion-observation">Following the newest delayed provider bar, not an exchange trade</span><span id="motion-market-status" role="status">CONNECTING TO PROVIDER-DELAYED OBSERVATIONS</span></div>
-              <div id="market-chart" class="native-chart" aria-label="Historical OHLC stock chart for Zijin Gold International (2259.HK)" role="img"><div class="native-loading">Fetching verified HKEX:2259 price history…</div></div>
+              <div class="chart-award-layout">
+<div id="market-chart" class="native-chart" aria-label="Historical OHLC stock chart for Zijin Gold International (2259.HK)" role="img"><div class="native-loading">Fetching verified HKEX:2259 price history…</div></div>
+<aside class="chart-award-monitor" id="chart-award-monitor" aria-labelledby="chart-award-title">
+<p class="award-mini-eyebrow">PRIVATE SESSION · HKEX 2259</p><h4 id="chart-award-title">Personal payout tracker</h4>
+<div class="award-mini-input"><label for="chart-award-shares">Your award shares<input id="chart-award-shares" type="number" min="1" max="100000000" step="1" inputmode="numeric" autocomplete="off" placeholder="Enter shares"></label><button type="button" id="chart-award-clear">CLEAR</button></div>
+<div class="award-mini-kpi"><span>LATEST VERIFIED PRICE · HKD</span><strong id="chart-award-price">—</strong></div>
+<div class="award-mini-kpi" aria-live="polite"><span>ESTIMATED GROSS PAYOUT</span><strong id="chart-award-payout" data-sign="neutral">Enter shares</strong><span>Conditional on full vesting, before taxes and fees</span></div>
+<dl class="award-mini-rows">
+<div><dt>Scheme purchase price</dt><dd id="chart-award-basis">HK$87.48</dd></div>
+<div><dt>Gross share value</dt><dd id="chart-award-value">—</dd></div>
+<div><dt>Total purchase cost</dt><dd id="chart-award-cost">—</dd></div>
+<div><dt>After entered fees</dt><dd id="chart-award-net">—</dd></div>
+<div><dt>Return above cost</dt><dd id="chart-award-return">—</dd></div>
+<div><dt>Payout sensitivity</dt><dd id="chart-award-sensitivity">—</dd></div>
+</dl>
+<p id="chart-award-source" role="status">AWAITING VERIFIED 2259.HK DATA</p>
+<p class="award-mini-foot">Updates with verified delayed observations, never historical replay. No licensed real-time feed is assumed. Not a payable or vested balance. Your quantity stays in this tab and is not stored or transmitted.</p>
+<a href="#settlement">Open award settlement model ↗</a>
+</aside></div>
               <div class="native-data-foot"><span id="market-chart-status">SOURCE: YAHOO FINANCE · DELAYED DATA</span><span id="market-chart-timestamp">Timestamp pending</span></div>
               <div class="motion-market-strip"><span>15-minute provider-delayed OHLC bars checked each minute. Historical replay is optional and never shows live trades.</span><span id="motion-next-check">NEXT AUTOMATIC DATA CHECK 3:00</span></div>
               <div class="motion-refresh-track" aria-hidden="true"><span id="motion-refresh-progress"></span></div>
@@ -356,7 +374,7 @@
           <div class="calculator-grid">
             <article class="panel calculator-inputs">
               <div class="panel-heading"><div><p class="eyebrow">PERSONAL INPUTS / LOCAL ONLY</p><h3>Define your position</h3></div><span class="privacy-tag">NO STORAGE</span></div>
-              <form id="award-form" novalidate>
+              <form id="award-form" novalidate autocomplete="off">
                 <label for="shares">Number of award shares <span>Enter private quantity</span></label>
                 <input id="shares" name="shares" type="number" min="0" max="100000000" step="1" value="" placeholder="Enter your shares" inputmode="numeric">
                 <div class="form-dual">
