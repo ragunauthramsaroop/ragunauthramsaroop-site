@@ -122,12 +122,14 @@
 })();
 
 
-/* Adjacent award monitor: local inputs only, never uses historical replay or scenario prices. */
+/* Adjacent award monitor: private market and manual scenario modes, never uses historical replay. */
 (()=>{
 "use strict";
 const $=id=>document.getElementById(id), panel=$("chart-award-monitor");
 if(!panel)return;
-const qty=$("chart-award-shares"),shared=$("shares"),strike=$("strike"),charge=$("charge");
+const qty=$("chart-award-shares"),shared=$("shares"),strike=$("strike"),charge=$("charge"),manual=$("chart-award-manual-price"),manualQty=$("chart-award-manual-shares");
+const manualMode=$("chart-award-mode-manual"),marketMode=$("chart-award-mode-market");
+let mode="market";
 const hkd=new Intl.NumberFormat("en-HK",{style:"currency",currency:"HKD",currencyDisplay:"narrowSymbol",minimumFractionDigits:2,maximumFractionDigits:2});
 const timeFmt=new Intl.DateTimeFormat("en-GB",{timeZone:"Asia/Hong_Kong",year:"numeric",month:"short",day:"2-digit",hour:"2-digit",minute:"2-digit",hourCycle:"h23"});
 const money=n=>Number.isFinite(n)?(n<0?"−":"")+"HK$"+hkd.format(Math.abs(n)).replace(/[^0-9.,]/g,""):"—";
@@ -135,19 +137,22 @@ const put=(id,v)=>{const el=$(id);if(el)el.textContent=v};
 const num=e=>e&&e.value.trim()!==""?Number(e.value):NaN;
 let observation=null,dailyFailed=false,intradayFailed=false;
 function render(){
- const p=observation?.price,n=num(shared),b=num(strike),fee=num(charge);
+ const isManual=mode==="manual";
+ const p=isManual?num(manual):observation?.price,n=num(isManual?manualQty:shared),b=num(strike),fee=num(charge);
+ put("chart-award-price-label",isManual?"ASSUMED STOCK PRICE · HKD":"LATEST VERIFIED PRICE · HKD");
+ put("chart-award-payout-label",isManual?"HYPOTHETICAL GROSS PAYOUT":"ESTIMATED GROSS PAYOUT");
  const valid=Number.isInteger(n)&&n>0&&n<=1e8&&Number.isFinite(b)&&b>=0&&b<=1e6;
- const has=Number.isFinite(p)&&p>0;
+ const has=Number.isFinite(p)&&p>0&&p<=1e6;
  const v=valid&&has?n*(p-b):NaN;
- put("chart-award-price",money(p));put("chart-award-basis",money(b));
- put("chart-award-payout",valid?(has?money(v):"Awaiting price"):"Enter shares");
+ put("chart-award-price",has?money(p):"—");put("chart-award-basis",money(b));
+ put("chart-award-payout",valid?(has?money(v):(isManual?"Enter stock price":"Awaiting price")):"Enter shares");
  put("chart-award-value",valid&&has?money(n*p):"—");
  put("chart-award-cost",valid?money(n*b):"—");
  put("chart-award-net",valid&&has&&Number.isFinite(fee)&&fee>=0&&fee<=1e9?money(v-fee):"—");
  put("chart-award-return",valid&&has&&b>0?((p-b)/b*100).toFixed(2)+"%":"—");
  put("chart-award-sensitivity",valid?money(n)+" per HK$1":"—");
  $("chart-award-payout").dataset.sign=Number.isFinite(v)?(v<0?"loss":"gain"):"neutral";
- put("chart-award-source",observation?(observation.archive?"ARCHIVED · NOT CURRENT":observation.kind==="15m"?"DELAYED 15-MIN BAR":"DELAYED DAILY OBSERVATION")+" · "+timeFmt.format(new Date(observation.ts))+" HKT"+(dailyFailed||intradayFailed?" · latest refresh issue":""):"AWAITING VERIFIED 2259.HK DATA");
+ put("chart-award-source",isManual?"MANUAL SCENARIO · NOT A MARKET QUOTE":observation?(observation.archive?"ARCHIVED · NOT CURRENT":observation.kind==="15m"?"DELAYED 15-MIN BAR":"DELAYED DAILY OBSERVATION")+" · "+timeFmt.format(new Date(observation.ts))+" HKT"+(dailyFailed||intradayFailed?" · latest refresh issue":""):"AWAITING VERIFIED 2259.HK DATA");
 }
 function accept(price,ts,kind,archive){
  if(!Number.isFinite(price)||price<=0||!Number.isFinite(ts)||ts<=0||ts>Date.now()+300000)return;
@@ -155,11 +160,26 @@ function accept(price,ts,kind,archive){
  if(observation&&!observation.archive&&!archive&&(ts<observation.ts||(ts===observation.ts&&observation.kind==="15m"&&kind!=="15m")))return;
  observation={price,ts,kind,archive};render();
 }
+function setMode(next){
+ mode=next;
+ const isManual=mode==="manual";
+ marketMode.setAttribute("aria-pressed",String(!isManual));
+ manualMode.setAttribute("aria-pressed",String(isManual));
+ $("chart-award-market-inputs").hidden=isManual;
+ $("chart-award-manual-inputs").hidden=!isManual;
+ if(isManual&&!manualQty.value&&shared.value)manualQty.value=shared.value;
+ render();
+}
+marketMode?.addEventListener("click",()=>setMode("market"));
+manualMode?.addEventListener("click",()=>setMode("manual"));
+manual?.addEventListener("input",render);
+manualQty?.addEventListener("input",render);
+$("chart-award-manual-clear")?.addEventListener("click",()=>{manual.value="";manualQty.value="";render()});
 qty.value=shared.value;
 qty.addEventListener("input",()=>{shared.value=qty.value;shared.dispatchEvent(new Event("input",{bubbles:true}));render()});
 shared.addEventListener("input",()=>{if(qty.value!==shared.value)qty.value=shared.value;render()});
 for(const e of [strike,charge])e.addEventListener("input",render);
-$("reset-model")?.addEventListener("click",()=>{qty.value=shared.value;render()});
+$("reset-model")?.addEventListener("click",()=>{qty.value=shared.value;if(manual)manual.value="";if(manualQty)manualQty.value="";render()});
 $("chart-award-clear")?.addEventListener("click",()=>{qty.value="";shared.value="";shared.dispatchEvent(new Event("input",{bubbles:true}));render()});
 document.addEventListener("zgi:chart",e=>{
  const d=e.detail;if(!d||d.interval!=="15m"||d.archive)return;
