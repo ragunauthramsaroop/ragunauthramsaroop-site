@@ -213,17 +213,18 @@
 <div id="chart-award-market-inputs"><div class="award-mini-input"><label for="chart-award-shares">Your award shares<input id="chart-award-shares" type="number" min="1" max="100000000" step="1" inputmode="numeric" autocomplete="off" placeholder="Enter shares"></label><button type="button" id="chart-award-clear">CLEAR</button></div></div>
 <div id="chart-award-manual-inputs" hidden><div class="award-mini-input"><label for="chart-award-manual-shares">Number of shares<input id="chart-award-manual-shares" type="number" min="1" max="100000000" step="1" inputmode="numeric" autocomplete="off" placeholder="Enter shares"></label><button type="button" id="chart-award-manual-clear">CLEAR</button></div><label class="award-mini-manual-label" for="chart-award-manual-price">Assumed stock price (HKD)<input id="chart-award-manual-price" type="number" min="0.01" max="1000000" step="0.01" inputmode="decimal" autocomplete="off" placeholder="e.g. 150.00"></label></div>
 <div class="award-mini-kpi"><span id="chart-award-price-label">LATEST VERIFIED PRICE · HKD</span><strong id="chart-award-price">—</strong></div>
-<div class="award-mini-kpi" aria-live="polite"><span id="chart-award-payout-label">ESTIMATED GROSS PAYOUT</span><strong id="chart-award-payout" data-sign="neutral">Enter shares</strong><span>Conditional on full vesting, before taxes and fees</span></div>
+<div class="award-mini-kpi" aria-live="polite"><span id="chart-award-payout-label">ESTIMATED GROSS PAYOUT · USD</span><strong id="chart-award-payout" data-sign="neutral">Enter shares</strong><span id="chart-award-payout-hkd">—</span><span>Conditional on full vesting, before taxes and fees</span></div>
+<label class="award-mini-manual-label" for="chart-award-fx">Conversion rate · HKD per USD (illustrative, editable)<input id="chart-award-fx" type="number" min="0.01" max="100" step="0.0001" value="7.80" inputmode="decimal" autocomplete="off"></label>
 <dl class="award-mini-rows">
 <div><dt>Scheme purchase price</dt><dd id="chart-award-basis">HK$87.48</dd></div>
-<div><dt>Gross share value</dt><dd id="chart-award-value">—</dd></div>
-<div><dt>Total purchase cost</dt><dd id="chart-award-cost">—</dd></div>
-<div><dt>After entered fees</dt><dd id="chart-award-net">—</dd></div>
+<div><dt>Gross share value (USD)</dt><dd id="chart-award-value">—</dd></div>
+<div><dt>Total purchase cost (USD)</dt><dd id="chart-award-cost">—</dd></div>
+<div><dt>After entered fees (USD)</dt><dd id="chart-award-net">—</dd></div>
 <div><dt>Return above cost</dt><dd id="chart-award-return">—</dd></div>
 <div><dt>Payout sensitivity</dt><dd id="chart-award-sensitivity">—</dd></div>
 </dl>
 <p id="chart-award-source" role="status">AWAITING VERIFIED 2259.HK DATA</p>
-<p class="award-mini-foot">Market mode follows verified delayed observations. Manual mode calculates using your own share count and assumed price without changing the chart or settlement model. Inputs stay in this tab. Not a vested or payable balance.</p>
+<p class="award-mini-foot">Market mode follows verified delayed observations. Manual mode calculates using your own share count and assumed price without changing the chart or settlement model. Inputs stay in this tab. USD amounts use your entered exchange rate, not a live FX feed. Not a vested or payable balance.</p>
 <a href="#settlement">Open award settlement model ↗</a>
 </aside></div>
               <div class="native-data-foot"><span id="market-chart-status">SOURCE: YAHOO FINANCE · DELAYED DATA</span><span id="market-chart-timestamp">Timestamp pending</span></div>
