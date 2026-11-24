@@ -56,3 +56,14 @@
 .chart-award-monitor #chart-award-source{font-size:10px;color:#e1c897;line-height:1.5;margin:7px 0 0}
 .chart-award-monitor a{color:#e5c88e;font-size:11px}
 @media(max-width:1150px){.chart-award-layout{grid-template-columns:minmax(0,1fr)}}
+
+/* Local award tools: chart retains its full row; calculators sit side by side below on narrower desktops. */
+.award-simulator{grid-column:2}
+.chart-award-monitor .award-save{margin-top:8px;width:100%;font:inherit;font-size:10px;font-weight:700;background:#1a2736;color:#dce6ef;border:1px solid #506075;border-radius:3px;padding:10px;cursor:pointer}
+.chart-award-monitor input[readonly]{color:#f0d29b;cursor:default}
+#award-sim-payout[data-sign="gain"]{color:#5dd2a6}
+#award-sim-payout[data-sign="loss"]{color:#ee8287}
+@media(min-width:1151px) and (max-width:1799px){.chart-award-layout>.native-chart{grid-row:span 2}}
+@media(min-width:1800px){.chart-award-layout{grid-template-columns:minmax(0,1fr) minmax(245px,292px) minmax(245px,292px)}.award-simulator{grid-column:3}}
+@media(min-width:650px) and (max-width:1150px){.chart-award-layout{grid-template-columns:repeat(2,minmax(0,1fr))}.chart-award-layout>.native-chart{grid-column:1/-1}.award-simulator{grid-column:2}}
+@media(max-width:649px){.award-simulator{grid-column:1}}
