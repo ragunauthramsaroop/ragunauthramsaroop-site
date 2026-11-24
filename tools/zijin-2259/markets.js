@@ -14,7 +14,7 @@ const SHORT_TIME=new Intl.DateTimeFormat("en-GB",{timeZone:"Asia/Hong_Kong",day:
 const COLORS={up:"#5dd2a6",down:"#ee8287",gold:"#e4bd7a",line:"#91b9e9",muted:"#8495a7",grid:"#344250",bg:"#0c1420"};
 const BASE_API=location.hostname.endsWith(".vercel.app")||location.hostname==="localhost"?"": "https://zijin-2259-intelligence.vercel.app";
 const BASE_ENDPOINT=BASE_API+"/api/market";
-const state={stock:null,gold:null,parent:null,range:"5d",dailyRange:"6mo",style:"candles",interval:"15m",intraday:null,liveQuote:false};
+const state={stock:null,gold:null,parent:null,range:"5d",dailyRange:"6mo",style:"candles",interval:"15m",intraday:null,liveQuote:false,stockRefreshFailed:false,intradayRefreshFailed:false};
 const DAYS={"5d":5,"1mo":31,"3mo":93,"6mo":186,"1y":370};
 const ARCHIVE=[
 ["2026-11-04",116.6,134.4,116.6,133.6,13696240],
@@ -31,8 +31,8 @@ function formatPrice(value,cur="HKD"){return Number.isFinite(value)?(cur==="USD"
 function formatPercent(value){return Number.isFinite(value)?(value>0?"+":"")+value.toFixed(2)+"%":"—"}
 function cleanBars(raw){
   if(!Array.isArray(raw))return [];
-  return raw.filter(b=>b&&[b.t,b.o,b.h,b.l,b.c].every(Number.isFinite)&&b.c>0&&b.h>=b.l&&b.h>0)
-    .sort((a,b)=>a.t-b.t).filter((b,i,a)=>i===0||b.t>a[i-1].t).slice(-440);
+  return raw.filter(b=>b&&Number.isFinite(b.t)&&[b.o,b.h,b.l,b.c].every(v=>Number.isFinite(v)&&v>0)&&b.h>=b.l)
+    .sort((a,b)=>a.t-b.t).filter((b,i,a)=>i===0||b.t>a[i-1].t).slice(-1600);
 }
 function formatTime(iso){const dt=new Date(iso);return !Number.isNaN(dt.getTime())?HKT.format(dt)+" HKT":"unavailable"}
 const DAILY_DATE=new Intl.DateTimeFormat("en-GB",{timeZone:"Asia/Hong_Kong",day:"2-digit",month:"short",year:"numeric"});
@@ -50,6 +50,7 @@ function validateQuote(data,symbol,currency){
   const latest=data.regularMarketPrice;
   if(!Number.isFinite(latest)||latest<=0)throw new Error("Invalid provider quote");
   if(!data.providerQuoteTime||Number.isNaN(Date.parse(data.providerQuoteTime)))throw new Error("Missing provider timestamp");
+  if(window.ZGIResearchGate?.assessFeed({...data,bars},symbol).usable!==true)throw new Error("Source confidence policy rejected observation");
   return {...data,bars};
 }
 async function load(symbol,range="1y",interval="1d"){
@@ -79,8 +80,8 @@ function noteRefreshStatus(){
   setText("market-chart-timestamp","Latest observation: "+describeBarTime(data));
   const status=byId("stock-feed-state");
   if(status){
-    status.className="feed-state "+(data.archive?"archived":"delayed");
-    status.textContent=data.archive?"ARCHIVED 13 NOV 2026 • PROVIDER UNAVAILABLE":"VERIFIED 2259.HK • DELAYED MARKET-DATA FEED";
+    status.className="feed-state "+(data.archive||state.stockRefreshFailed?"archived":"delayed");
+    status.textContent=data.archive?"ARCHIVED 13 NOV 2026 • PROVIDER UNAVAILABLE":state.stockRefreshFailed?"REFRESH FAILED • PREVIOUS OBSERVATION RETAINED":"VERIFIED 2259.HK • DELAYED MARKET-DATA FEED";
   }
 }
 function renderQuote(){
@@ -181,7 +182,9 @@ function renderMain(){
   const w=1110,h=590,l=80,r=70,top=26,priceBottom=352,volTop=374,volBottom=424,rsiTop=454,rsiBottom=501,macdTop=525,macdBottom=564;
   const width=w-l-r, x=i=>l+(i+.5)*(width/n), priceY=v=>top+(max-v)*(priceBottom-top)/(max-min);
   const volMax=Math.max(1,...bars.map(b=>b.v||0));
-  const rsi=fullRSI(prices),macd=fullMACD(prices);
+  const fullPrices=data.bars.map(b=>b.c),offset=data.bars.length-bars.length;
+  const rsi=fullRSI(fullPrices).slice(offset),macd=fullMACD(fullPrices);
+  for(const key of Object.keys(macd))if(Array.isArray(macd[key]))macd[key]=macd[key].slice(offset);
   const colors=COLORS;
   let svg='<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 '+w+' '+h+'" role="img" aria-label="'+(data.archive?'Archived':'Provider-delayed')+' 2259.HK candlestick chart with volume, RSI and MACD"><defs><linearGradient id="native-goldshade" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#e4bd7a" stop-opacity=".21"/><stop offset="100%" stop-color="#e4bd7a" stop-opacity=".0"/></linearGradient></defs>';
   const gridTicks=5;
@@ -256,7 +259,7 @@ function renderMain(){
     setText("market-chart-status","2259.HK · PROVIDER-DELAYED 15-MINUTE OHLC BARS");
     setText("market-chart-timestamp","15-minute source observation: "+describeBarTime(data));
   }
-  document.dispatchEvent(new CustomEvent("zgi:chart",{detail:{bars,interval:state.interval==="15m"&&state.intraday?"15m":"1d",sourceTime:data.providerQuoteTime,archive:!!data.archive}}));
+  document.dispatchEvent(new CustomEvent("zgi:chart",{detail:{bars,interval:state.interval==="15m"&&state.intraday?"15m":"1d",sourceTime:data.providerQuoteTime,archive:!!data.archive,refreshFailed:state.interval==="15m"?state.intradayRefreshFailed:state.stockRefreshFailed}}));
 }
 function miniChart(hostId,data,label,currency){
   const host=byId(hostId);if(!host||!data)return;
@@ -323,9 +326,10 @@ async function refreshIntraday(){
   try{
     const data=await load("2259.HK","1mo","15m");
     if(state.interval!=="15m")return;
-    state.intraday=data;
+    state.intraday=data;state.intradayRefreshFailed=false;
     renderMain();
   }catch{
+    state.intradayRefreshFailed=true;
     if(state.interval==="15m"&&!state.intraday){
       state.interval="1d";
       state.range=state.dailyRange;
@@ -368,6 +372,7 @@ async function refresh(){
   if(loading)return;loading=true;
   try {
     const [stock,gold,parent]=await Promise.allSettled([load("2259.HK","1y"),load("GC=F","1y"),load("2899.HK","1y")]);
+    state.stockRefreshFailed=stock.status!=="fulfilled";
     if(stock.status==="fulfilled"){state.stock=stock.value;state.liveQuote=true}
     else if(!state.stock){state.stock=archiveStock();state.liveQuote=false}
     else if(state.liveQuote){const s=byId("stock-feed-state");if(s){s.className="feed-state archived";s.textContent="PREVIOUS PROVIDER RESPONSE • LATEST REFRESH FAILED";}}
