@@ -42,21 +42,23 @@ module.exports = async function handler(req,res){
         if(actualSymbol!==symbol.toUpperCase()){lastError="Provider symbol mismatch";continue}
         const selected=ALLOWED.get(symbol);
         const returnedCurrency=String(meta.currency||"").toUpperCase();
-        if(returnedCurrency&&returnedCurrency!==selected.currency){lastError="Provider currency mismatch";continue}
+        if(returnedCurrency!==selected.currency){lastError="Provider currency mismatch";continue}
         const returnedExchange=String(meta.exchangeName||"").toUpperCase();
-        if(symbol.endsWith(".HK")&&returnedExchange&&!/(HK|HKG|SEHK)/.test(returnedExchange)){lastError="Provider exchange mismatch";continue}
+        if(!returnedExchange||(symbol.endsWith(".HK")&&!/^(HK|HKG|SEHK|HKSE)$/.test(returnedExchange))){lastError="Provider exchange mismatch";continue}
         const quote=Number(meta.regularMarketPrice);
         const time=Number(meta.regularMarketTime);
         const ohlc=[];
         for(let i=0;i<ts.length;i++){
-          const t=Number(ts[i]),o=Number(series.open?.[i]),h=Number(series.high?.[i]),l=Number(series.low?.[i]),c=Number(series.close?.[i]);
+          const [t,o,h,l,c]=[ts[i],series.open?.[i],series.high?.[i],series.low?.[i],series.close?.[i]].map(v=>typeof v==="number"?v:NaN);
           // Missing volume is not a genuine zero-volume trading session.
           const rawVolume=series.volume?.[i];
           const volume=rawVolume===null||rawVolume===undefined||rawVolume===""?null:Number(rawVolume);
-          if(!Number.isFinite(t)||!Number.isFinite(c)||c<=0||!Number.isFinite(o)||!Number.isFinite(h)||!Number.isFinite(l))continue;
+          if(!Number.isFinite(t)||t<=0||t*1000>Date.now()+300000||![o,h,l,c].every(v=>Number.isFinite(v)&&v>0))continue;
           if(h<l||o>h*1.005||c>h*1.005||o<l*.995||c<l*.995)continue;
           ohlc.push({t,o,h,l,c,v:Number.isFinite(volume)&&volume>=0?volume:null});
         }
+        ohlc.sort((a,b)=>a.t-b.t);
+        for(let i=ohlc.length-1;i>0;i--)if(ohlc[i].t===ohlc[i-1].t)ohlc.splice(i-1,1);
         if(ohlc.length<2){lastError="Insufficient OHLC bars";continue}
         // Yahoo occasionally mirrors the preceding session's full daily OHLCV
         // into a new pre-opening timestamp. Such a bar is NOT a trade or a
@@ -99,7 +101,7 @@ module.exports = async function handler(req,res){
           regularMarketPrice:lastValidQuote,previousClose:Number.isFinite(previousClose)&&previousClose>0?previousClose:null,
           change,changePercent,marketState:meta.marketState||"unknown",range,interval,
           dataDelay:"Provider/exchange delayed; daily bar timestamp is session evidence, not a live trade timestamp; not licensed real-time HKEX data",
-          bars:ohlc.slice(-440)
+          bars:ohlc.slice(interval==="15m"?-1600:-440)
         });
       }catch(err){lastError=err?.name==="AbortError"?"Upstream timeout":"Provider fetch error";}
     }
