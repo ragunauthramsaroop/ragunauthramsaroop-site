@@ -95,7 +95,7 @@
               <div class="desk-actions"><a class="desk-link" href="#charting">VIEW CHARTS ↗</a><a class="desk-link" href="#scenarios">OPEN MODEL ↗</a><button id="desk-export" type="button" class="desk-export" disabled>EXPORT SOURCE BRIEF ↓</button></div></div>
             <div class="desk-realtime-bridge" aria-label="Authorised real-time stock snapshots">
               <div><span class="desk-realtime-tag">HKEX BASIC MARKET PRICES · FREE ON-DEMAND SNAPSHOTS</span><p>Need a current exchange snapshot? Open ET Net's authorised service and search <strong>02259</strong> for Zijin Gold International or <strong>02899</strong> for Zijin Mining. A new quote requires your request on the provider's own website.</p></div>
-              <a id="desk-authorised-live" class="desk-authorised-live" href="https://www.etnet.com.hk/www/eng/stocks/realtime/index.php" target="_blank" rel="noopener noreferrer" aria-label="Open ET Net's authorised Hong Kong real-time Basic Market Prices service in a new tab">OPEN ET NET · SEARCH 02259 / 02899 ↗</a>
+              <a id="desk-authorised-live" class="desk-authorised-live" href="https://www.etnet.com.hk/www/eng/stocks/realtime/index.php" target="_blank" rel="noopener noreferrer" aria-label="Open ET Net's authorised Hong Kong real-time Basic Market Prices service in a new tab">OPEN REAL-TIME SNAPSHOT SERVICE · SEARCH 02259 / 02899 ↗</a>
             </div>
             <div class="desk-grid">
               <article id="desk-stock" class="desk-card" data-state="waiting"><div class="desk-card-header"><span class="desk-symbol">2259.HK</span><span class="desk-index">EQUITY / HKD</span></div><strong id="desk-stock-price" class="desk-price">PENDING</strong><span id="desk-stock-state" class="desk-source-state">CHECKING SOURCE</span><p id="desk-stock-asof" class="desk-asof">Waiting for provider history</p></article>
@@ -112,7 +112,7 @@
                 <span class="realtime-tag">AVAILABLE WITHOUT A NEW API KEY</span>
                 <h3>HKEX-authorised Basic Market Prices</h3>
                 <p>Open the licensed vendor's own quote-search page. Enter 2259 for Zijin Gold International or 2899 for Zijin Mining Group and request a fresh quote manually. Free BMP rules prohibit automatic refresh and unauthorised copying into this dashboard.</p>
-                <a class="button button-gold" href="https://www.etnet.com.hk/www/eng/stocks/realtime/index.php" target="_blank" rel="noopener noreferrer">OPEN ET NET · MANUAL LIVE SNAPSHOT ↗</a>
+                <a class="button button-gold" href="https://www.etnet.com.hk/www/eng/stocks/realtime/index.php" target="_blank" rel="noopener noreferrer">OPEN AUTHORISED LIVE QUOTE SERVICE · MANUAL SNAPSHOT ↗</a>
                 <small>External HKEX-authorised vendor service · manually refreshed · service controls apply</small>
               </div>
               <div class="realtime-option integration">
@@ -201,7 +201,7 @@
                 <button type="button" id="motion-replay-toggle" aria-pressed="false">PLAY HISTORICAL REPLAY</button>
                 <button type="button" id="motion-speed" aria-label="Historical replay speed one times">1× SPEED</button>
                 <button type="button" id="motion-follow" aria-pressed="true">FOLLOW DELAYED SOURCE ✓</button>
-                <a class="motion-authorised-live" href="https://content.etnet.com.hk/content/cpyrevamp/eng/stock_quote.php?code=02259" target="_blank" rel="noopener noreferrer" aria-label="Open ET Net stock-specific delayed market quote for Zijin Gold International, HKEX 02259">OPEN ZIJIN GOLD QUOTE (DELAYED) ↗</a>
+                <a class="motion-authorised-live" href="https://www.etnet.com.hk/www/eng/stocks/realtime/index.php" target="_blank" rel="noopener noreferrer" aria-label="Open ET Net authorised manual snapshot homepage and search 02259">OPEN AUTHORISED LIVE SNAPSHOT ↗</a>
                 <span class="motion-mode-label" id="motion-mode-label">FOLLOWING DELAYED BARS · NOT LIVE TRADES</span>
               </div>
               <div class="market-motion-data"><span id="motion-observation">Following the newest delayed provider bar, not an exchange trade</span><span id="motion-market-status" role="status">CONNECTING TO PROVIDER-DELAYED OBSERVATIONS</span></div>
@@ -227,11 +227,11 @@
 </aside>
 <aside class="chart-award-monitor award-simulator" aria-labelledby="award-sim-title">
 <p class="award-mini-eyebrow">PRIVATE HYPOTHETICAL MODEL</p><h4 id="award-sim-title">Stock price simulator</h4>
-<p class="award-mini-foot">Shares: <strong id="award-sim-shares">Enter shares in tracker</strong></p>
+<p class="award-mini-foot">Scenario shares: <strong id="award-sim-shares">Enter shares in tracker</strong></p><label for="award-sim-quantity">Override shares (optional)<input id="award-sim-quantity" type="number" min="1" max="100000000" step="1" inputmode="numeric" autocomplete="off" placeholder="Use tracker quantity"></label>
 <label for="award-sim-price">Your stock price (HKD)<input id="award-sim-price" type="number" min="0" max="1000000" step="0.01" inputmode="decimal" autocomplete="off" placeholder="Enter price"></label>
 <div class="award-mini-kpi" aria-live="polite"><span>ESTIMATED GROSS PAYOUT</span><strong id="award-sim-payout" data-sign="neutral">Enter price</strong><span>Conditional on full vesting, before taxes and fees</span></div>
 <dl class="award-mini-rows"><div><dt>Gross share value</dt><dd id="award-sim-value">—</dd></div><div><dt>Total purchase cost</dt><dd id="award-sim-cost">—</dd></div><div><dt>After entered fees</dt><dd id="award-sim-net">—</dd></div><div><dt>Return above cost</dt><dd id="award-sim-return">—</dd></div><div><dt>Payout sensitivity</dt><dd id="award-sim-sensitivity">—</dd></div></dl>
-<p class="award-mini-foot">Manual price only. Does not change market observations or chart. Shares and purchase price follow your local award inputs.</p>
+<p class="award-mini-foot">Manual price only. Does not change market observations or chart. Blank share override follows your saved tracker quantity. Scenario overrides are not saved.</p>
 </aside></div>
               <div class="native-data-foot"><span id="market-chart-status">SOURCE: YAHOO FINANCE · DELAYED DATA</span><span id="market-chart-timestamp">Timestamp pending</span></div>
               <div class="motion-market-strip"><span>15-minute provider-delayed OHLC bars checked each minute. Historical replay is optional and never shows live trades.</span><span id="motion-next-check">NEXT AUTOMATIC DATA CHECK 3:00</span></div>
