@@ -120,3 +120,58 @@
   updateCountdown();
   setInterval(updateCountdown,1000);
 })();
+
+
+/* Adjacent award monitor: local inputs only, never uses historical replay or scenario prices. */
+(()=>{
+"use strict";
+const $=id=>document.getElementById(id), panel=$("chart-award-monitor");
+if(!panel)return;
+const qty=$("chart-award-shares"),shared=$("shares"),strike=$("strike"),charge=$("charge");
+const hkd=new Intl.NumberFormat("en-HK",{style:"currency",currency:"HKD",currencyDisplay:"narrowSymbol",minimumFractionDigits:2,maximumFractionDigits:2});
+const timeFmt=new Intl.DateTimeFormat("en-GB",{timeZone:"Asia/Hong_Kong",year:"numeric",month:"short",day:"2-digit",hour:"2-digit",minute:"2-digit",hourCycle:"h23"});
+const money=n=>Number.isFinite(n)?(n<0?"−":"")+"HK$"+hkd.format(Math.abs(n)).replace(/[^0-9.,]/g,""):"—";
+const put=(id,v)=>{const el=$(id);if(el)el.textContent=v};
+const num=e=>e&&e.value.trim()!==""?Number(e.value):NaN;
+let observation=null,dailyFailed=false,intradayFailed=false;
+function render(){
+ const p=observation?.price,n=num(shared),b=num(strike),fee=num(charge);
+ const valid=Number.isInteger(n)&&n>0&&n<=1e8&&Number.isFinite(b)&&b>=0&&b<=1e6;
+ const has=Number.isFinite(p)&&p>0;
+ const v=valid&&has?n*(p-b):NaN;
+ put("chart-award-price",money(p));put("chart-award-basis",money(b));
+ put("chart-award-payout",valid?(has?money(v):"Awaiting price"):"Enter shares");
+ put("chart-award-value",valid&&has?money(n*p):"—");
+ put("chart-award-cost",valid?money(n*b):"—");
+ put("chart-award-net",valid&&has&&Number.isFinite(fee)&&fee>=0&&fee<=1e9?money(v-fee):"—");
+ put("chart-award-return",valid&&has&&b>0?((p-b)/b*100).toFixed(2)+"%":"—");
+ put("chart-award-sensitivity",valid?money(n)+" per HK$1":"—");
+ $("chart-award-payout").dataset.sign=Number.isFinite(v)?(v<0?"loss":"gain"):"neutral";
+ put("chart-award-source",observation?(observation.archive?"ARCHIVED · NOT CURRENT":observation.kind==="15m"?"DELAYED 15-MIN BAR":"DELAYED DAILY OBSERVATION")+" · "+timeFmt.format(new Date(observation.ts))+" HKT"+(dailyFailed||intradayFailed?" · latest refresh issue":""):"AWAITING VERIFIED 2259.HK DATA");
+}
+function accept(price,ts,kind,archive){
+ if(!Number.isFinite(price)||price<=0||!Number.isFinite(ts)||ts<=0||ts>Date.now()+300000)return;
+ if(observation&&!observation.archive&&archive)return;
+ if(observation&&!observation.archive&&!archive&&(ts<observation.ts||(ts===observation.ts&&observation.kind==="15m"&&kind!=="15m")))return;
+ observation={price,ts,kind,archive};render();
+}
+qty.value=shared.value;
+qty.addEventListener("input",()=>{shared.value=qty.value;shared.dispatchEvent(new Event("input",{bubbles:true}));render()});
+shared.addEventListener("input",()=>{if(qty.value!==shared.value)qty.value=shared.value;render()});
+for(const e of [strike,charge])e.addEventListener("input",render);
+$("reset-model")?.addEventListener("click",()=>{qty.value=shared.value;render()});
+$("chart-award-clear")?.addEventListener("click",()=>{qty.value="";shared.value="";shared.dispatchEvent(new Event("input",{bubbles:true}));render()});
+document.addEventListener("zgi:chart",e=>{
+ const d=e.detail;if(!d||d.interval!=="15m"||d.archive)return;
+ const last=d.bars?.[d.bars.length-1];if(!last)return;
+ intradayFailed=false;accept(last.c,last.t*1000,"15m",false);
+});
+document.addEventListener("zgi:market",e=>{
+ const d=e.detail?.stock;if(!d||d.symbol!=="2259.HK"||d.currency!=="HKD")return;
+ dailyFailed=e.detail?.fresh?.stock===false;
+ accept(d.regularMarketPrice,Date.parse(d.providerQuoteTime),"daily",!!d.archive);render();
+});
+const marketStatus=$("motion-market-status");
+if(marketStatus&&typeof MutationObserver!=="undefined")new MutationObserver(()=>{intradayFailed=/FAILED|UNAVAILABLE/i.test(marketStatus.textContent);render()}).observe(marketStatus,{childList:true,characterData:true,subtree:true});
+render();
+})();
