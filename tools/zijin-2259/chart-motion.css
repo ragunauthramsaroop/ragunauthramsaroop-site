@@ -56,3 +56,12 @@
 .chart-award-monitor #chart-award-source{font-size:10px;color:#e1c897;line-height:1.5;margin:7px 0 0}
 .chart-award-monitor a{color:#e5c88e;font-size:11px}
 @media(max-width:1150px){.chart-award-layout{grid-template-columns:minmax(0,1fr)}}
+
+
+/* Independent calculation modes */
+.chart-award-monitor .award-mini-modes{display:grid;grid-template-columns:1fr 1fr;gap:5px;margin:0 0 12px}
+.chart-award-monitor .award-mini-modes button{padding:9px 5px;min-height:36px;border:1px solid #506075;background:#0b131e;color:#c3d1df;border-radius:3px;font:inherit;font-size:10px;font-weight:800;cursor:pointer}
+.chart-award-monitor .award-mini-modes button[aria-pressed="true"]{background:#d6b77c;color:#152331;border-color:#e0c48d}
+.chart-award-monitor .award-mini-modes button:focus-visible{outline:2px solid #f1d59c;outline-offset:2px}
+.chart-award-monitor [hidden]{display:none!important}
+.chart-award-monitor .award-mini-manual-label{display:block;margin-top:10px}
