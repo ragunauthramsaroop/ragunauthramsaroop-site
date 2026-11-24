@@ -3,7 +3,7 @@
 (() => {
   "use strict";
   const $=id=>document.getElementById(id);
-  const money=n=>Number.isFinite(n)?'HK$'+Math.abs(n).toLocaleString('en-HK',{minimumFractionDigits:2,maximumFractionDigits:2}):'—';
+  const money=n=>{const currency=$('settlement-currency')?.value||'USD',fx=Number($('chart-award-fx')?.value);if(!Number.isFinite(n)||(currency==='USD'&&(!Number.isFinite(fx)||fx<=0)))return '—';return (currency==='USD'?'US$':'HK$')+(Math.abs(n)/(currency==='USD'?fx:1)).toLocaleString('en-US',{minimumFractionDigits:2,maximumFractionDigits:2});};
   const whole=n=>Number.isFinite(n)?Math.round(n).toLocaleString('en-HK'):'—';
   function marketTime(){
     try {
@@ -57,6 +57,8 @@
     else text('model-message','Illustrative sell-to-cover quantity includes the purchase cost and entered taxes or fees, rounded up to whole shares. Trustee execution, withholding, applicable charges and vesting terms govern actual settlement.');
   }
   for(const input of Object.values(inputs)){input?.addEventListener('input',()=>{if(input===inputs.target)manuallyChosen=true;calculate();});}
+  $('settlement-currency')?.addEventListener('change',calculate);
+  $('chart-award-fx')?.addEventListener('input',calculate);
   $('award-form')?.addEventListener('submit',e=>{e.preventDefault();calculate();});
   function setTarget(price,note,scroll=false){
     if(!Number.isFinite(price)||price<=0)return;
