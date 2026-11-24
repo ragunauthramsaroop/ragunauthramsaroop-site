@@ -46,7 +46,12 @@
       state.visibleIndex=index;
     }
   }
+  let frameId=null;
+  function stopFrame(){if(frameId!==null)cancelAnimationFrame(frameId);frameId=null;state.previousFrame=null;}
+  function startFrame(){if(frameId===null&&state.playing&&!document.hidden){state.previousFrame=null;frameId=requestAnimationFrame(frame);}}
   function frame(t){
+    frameId=null;
+    if(!state.playing||document.hidden){state.previousFrame=null;return;}
     if(state.previousFrame!==null&&state.playing&&!document.hidden&&state.bars.length>1){
       const delta=Math.max(0,Math.min(100,t-state.previousFrame));
       state.progress += delta * state.speed/REPLAY_MS;
@@ -54,7 +59,7 @@
       if(t-state.lastDraw>=30){draw();state.lastDraw=t;}
     }
     state.previousFrame=t;
-    requestAnimationFrame(frame);
+    frameId=requestAnimationFrame(frame);
   }
   function receiveChart(event){
     const detail=event?.detail||{};
@@ -68,12 +73,14 @@
     state.archive=!!detail.archive;
     state.sourceTime=detail.sourceTime||null;
     state.latestSourceTime=detail.bars.at(-1).t;
-    state.sourceAvailable=!detail.archive;
+    state.sourceAvailable=!detail.archive&&!detail.refreshFailed;
     state.visibleIndex=-1;
     if(changed&&previousInterval===detail.interval&&old!==null&&detail.bars.at(-1).t>old&&state.following){
       text("motion-market-status","NEW VERIFIED "+(state.interval==="15m"?"15-MIN":"DAILY")+" BAR RECEIVED · DELAYED SOURCE");
     }else if(state.archive){
       text("motion-market-status","ARCHIVED DATA · PROVIDER NOT AVAILABLE");
+    }else if(detail.refreshFailed){
+      text("motion-market-status","REFRESH FAILED · PREVIOUS VERIFIED BARS RETAINED");
     }else{
       text("motion-market-status","CONNECTED TO DELAYED HISTORICAL DATA · NOT A LIVE TICK FEED");
     }
@@ -104,10 +111,11 @@
   byId("motion-replay-toggle")?.addEventListener("click",()=>{
     state.playing=!state.playing;
     if(state.playing){state.following=false;if(state.progress>=1)state.progress=0;}
+    if(state.playing)startFrame();else stopFrame();
     updateMode();draw();
   });
   byId("motion-follow")?.addEventListener("click",()=>{
-    state.playing=false;state.following=true;state.progress=1;state.visibleIndex=-1;
+    state.playing=false;stopFrame();state.following=true;state.progress=1;state.visibleIndex=-1;
     updateMode();draw();
   });
   byId("motion-speed")?.addEventListener("click",event=>{
@@ -116,7 +124,7 @@
     event.currentTarget.setAttribute("aria-label","Historical replay speed "+state.speed+" times");
   });
   updateMode();
-  requestAnimationFrame(frame);
+  document.addEventListener("visibilitychange",()=>{if(document.hidden)stopFrame();else startFrame();});
   updateCountdown();
   setInterval(updateCountdown,1000);
 })();
@@ -138,12 +146,14 @@ const money=n=>Number.isFinite(n)?(n<0?"−":"")+"HK$"+hkd.format(Math.abs(n)).r
 const put=(id,v)=>{const el=$(id);if(el)el.textContent=v};
 const num=e=>e&&e.value.trim()!==""?Number(e.value):NaN;
 let observation=null,dailyFailed=false,intradayFailed=false;
+const maxAge=()=>((window.ZGIResearchGate?.MAX_AGE_DAYS||7)*86400000);
 function render(){
  const isManual=mode==="manual";
  const fx=fxInput?num(fxInput):7.8;
  const fxValid=Number.isFinite(fx)&&fx>0&&fx<=100;
  const usd=h=>fxValid&&Number.isFinite(h)?usdFormatter.format(h/fx):"—";
- const p=isManual?num(manual):observation?.price,n=num(isManual?manualQty:shared),b=num(strike),fee=num(charge);
+ const usable=observation&&!observation.archive&&Date.now()-observation.ts<=maxAge();
+ const p=isManual?num(manual):usable?observation.price:NaN,n=num(isManual?manualQty:shared),b=num(strike),fee=num(charge);
  put("chart-award-price-label",isManual?"ASSUMED STOCK PRICE · HKD":"LATEST VERIFIED PRICE · HKD");
  put("chart-award-payout-label",isManual?"HYPOTHETICAL GROSS PAYOUT · USD":"ESTIMATED GROSS PAYOUT · USD");
  const valid=Number.isInteger(n)&&n>0&&n<=1e8&&Number.isFinite(b)&&b>=0&&b<=1e6;
@@ -158,7 +168,7 @@ function render(){
  put("chart-award-return",valid&&has&&b>0?((p-b)/b*100).toFixed(2)+"%":"—");
  put("chart-award-sensitivity",valid&&fxValid?usd(n)+" per HK$1":"—");
  $("chart-award-payout").dataset.sign=Number.isFinite(v)?(v<0?"loss":"gain"):"neutral";
- put("chart-award-source",isManual?"MANUAL SCENARIO · NOT A MARKET QUOTE":observation?(observation.archive?"ARCHIVED · NOT CURRENT":observation.kind==="15m"?"DELAYED 15-MIN BAR":"DELAYED DAILY OBSERVATION")+" · "+timeFmt.format(new Date(observation.ts))+" HKT"+(dailyFailed||intradayFailed?" · latest refresh issue":""):"AWAITING VERIFIED 2259.HK DATA");
+ put("chart-award-source",isManual?"MANUAL SCENARIO · NOT A MARKET QUOTE":observation?(observation.archive?"ARCHIVED · NOT CURRENT":!usable?"STALE · PAYOUT WITHHELD":observation.kind==="15m"?"DELAYED 15-MIN BAR":"DELAYED DAILY OBSERVATION")+" · "+timeFmt.format(new Date(observation.ts))+" HKT"+(dailyFailed||intradayFailed?" · latest refresh issue":""):"AWAITING VERIFIED 2259.HK DATA");
 }
 function accept(price,ts,kind,archive){
  if(!Number.isFinite(price)||price<=0||!Number.isFinite(ts)||ts<=0||ts>Date.now()+300000)return;
@@ -191,7 +201,7 @@ $("chart-award-clear")?.addEventListener("click",()=>{qty.value="";shared.value=
 document.addEventListener("zgi:chart",e=>{
  const d=e.detail;if(!d||d.interval!=="15m"||d.archive)return;
  const last=d.bars?.[d.bars.length-1];if(!last)return;
- intradayFailed=false;accept(last.c,last.t*1000,"15m",false);
+ intradayFailed=!!d.refreshFailed;accept(last.c,last.t*1000,"15m",false);render();
 });
 document.addEventListener("zgi:market",e=>{
  const d=e.detail?.stock;if(!d||d.symbol!=="2259.HK"||d.currency!=="HKD")return;
