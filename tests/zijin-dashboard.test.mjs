@@ -253,7 +253,8 @@ test("authorised real-time BMP snapshot is prominently linked only to vendor hom
  assert.match(html,/02259/);
  assert.match(html,/02899/);
  assert.match(html,/href="https:\/\/www\.etnet\.com\.hk\/www\/eng\/stocks\/realtime\/index\.php"/);
- assert.doesNotMatch(html,/href="https:\/\/[^"]*etnet[^"]*quote\.php/);
+ assert.match(html,/motion-authorised-live[^>]*href="https:\/\/content\.etnet\.com\.hk\/content\/cpyrevamp\/eng\/stock_quote\.php\?code=02259"[^>]*>OPEN ZIJIN GOLD QUOTE \(DELAYED\)/);
+ assert.doesNotMatch(html,/href="https:\/\/www\.etnet\.com\.hk\/www\/eng\/stocks\/realtime\/[^"]*\?/);
  assert.match(html,/DELAYED-PROVIDER CHECK EVERY 3 MINUTES/);
 });
 
