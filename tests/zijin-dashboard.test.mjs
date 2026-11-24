@@ -249,7 +249,7 @@ test("Source-confidence terminal preserves source identity and browser-only priv
 
 test("authorised real-time BMP snapshot is prominently linked only to vendor homepage",()=>{
  assert.match(html,/id="desk-authorised-live"/);
- assert.match(html,/OPEN REAL-TIME SNAPSHOT SERVICE/);
+ assert.match(html,/OPEN ET NET · SEARCH 02259 \/ 02899/);
  assert.match(html,/02259/);
  assert.match(html,/02899/);
  assert.match(html,/href="https:\/\/www\.etnet\.com\.hk\/www\/eng\/stocks\/realtime\/index\.php"/);
@@ -287,6 +287,6 @@ test("default chart follows newest provider-delayed 15-minute bars, not a simula
  assert.match(motion,/archive:false,playing:false,following:true/);
  assert.match(html,/id="motion-follow" aria-pressed="true"/);
  assert.match(html,/id="motion-replay-toggle" aria-pressed="false"/);
- assert.match(html,/OPEN AUTHORISED LIVE SNAPSHOT/);
+ assert.match(html,/OPEN ZIJIN GOLD QUOTE \(DELAYED\)/);
  assert.match(html,/href="https:\/\/www\.etnet\.com\.hk\/www\/eng\/stocks\/realtime\/index\.php"/);
 });
