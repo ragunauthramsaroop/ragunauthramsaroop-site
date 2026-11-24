@@ -29,7 +29,7 @@ The front page now contains:
 
 ### Scenario maths
 
-Let S be the latest provider-delayed 2259.HK price, G the latest provider-delayed GC=F futures benchmark, P0=59.2 tonnes 2026 assumed production, and C0=US$1,678 per ounce assumed 2026 all-in sustaining cost. User input for 2029 gold, production, annual cost inflation, valuation multiple factor and share dilution is linearly phased from 2026 through 2029. Each bear/base/bull scenario independently scales the gold, production, cost and valuation assumptions.
+Let S be the latest provider-delayed 2259.HK price, G the latest provider-delayed GC=F futures benchmark, P0=59.2 tonnes 2026 assumed production, and C0=US$1,649 per ounce reported 9M 2026 all-in sustaining cost. User input for 2029 gold, production, annual cost inflation, valuation multiple factor and share dilution is linearly phased from 2026 through 2029. Each bear/base/bull scenario independently scales the gold, production, cost and valuation assumptions.
 
 Illustrative annual share price = S × (assumed annual production / P0) × (assumed annual gold-operating-surplus / (G − C0)) × assumed valuation factor ÷ (1 + assumed dilution). The model omits full mine-by-mine forecasts, debt, capital spending, tax, share-count changes not specified, foreign exchange, terminal value, asset disposals and several risks. **The model does not output analyst consensus, calibrated likelihoods or guaranteed 2029 prices.** It may produce outcomes significantly different from market performance. GC=F is a futures benchmark, not realized corporate gold revenue.
 
