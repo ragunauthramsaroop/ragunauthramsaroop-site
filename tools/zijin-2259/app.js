@@ -73,10 +73,10 @@
   });
   document.addEventListener('zgi:market',e=>{
     const stock=e.detail?.stock;
-    if(stock&&!stock.archive&&Number.isFinite(stock.regularMarketPrice)){
+    if(stock&&window.ZGIResearchGate?.assessFeed(stock,'2259.HK').usable===true){
       verifiedQuote=stock.regularMarketPrice;sourceAsOf=stock.providerQuoteTime;
       if(!manuallyChosen){inputs.target.value=verifiedQuote.toFixed(2);text('calc-market-context','Using newest verified delayed 2259.HK observation, '+sourceAsOf+'.');calculate();}
-    }
+    }else{verifiedQuote=null;sourceAsOf=null;if(!manuallyChosen){inputs.target.value='';text('calc-market-context','Source confidence policy withheld the market price. Manual scenarios remain available.');calculate();}}
   });
   document.addEventListener('zgi:manual-price',e=>{
     const quote=e.detail;
