@@ -134,6 +134,37 @@ const money=n=>Number.isFinite(n)?(n<0?"−":"")+"HK$"+hkd.format(Math.abs(n)).r
 const put=(id,v)=>{const el=$(id);if(el)el.textContent=v};
 const num=e=>e&&e.value.trim()!==""?Number(e.value):NaN;
 let observation=null,dailyFailed=false,intradayFailed=false;
+const key="zgi.private.award.quantity.v1",save=$("chart-award-save");
+const validQty=n=>Number.isInteger(n)&&n>0&&n<=1e8;
+let saved=null;
+try{const raw=localStorage.getItem(key);if(raw!==null&&validQty(Number(raw)))saved=Number(raw)}catch{}
+function showSaved(){
+ const locked=saved!==null;
+ qty.readOnly=shared.readOnly=locked;
+ save.setAttribute("aria-pressed",String(locked));
+ save.textContent=locked?"EDIT SAVED SHARES":"SAVE SHARES ON THIS DEVICE";
+ put("chart-award-save-status",locked?"Saved on this browser. Edit or clear to change.":"Optional: save your quantity locally for future visits.");
+}
+function syncQuantity(value){
+ qty.value=shared.value=value;
+ shared.dispatchEvent(new Event("input",{bubbles:true}));
+}
+function forget(){
+ try{localStorage.removeItem(key)}catch{put("chart-award-save-status","Browser storage could not be cleared.");return false}
+ saved=null;showSaved();return true;
+}
+function renderSimulator(n,b,fee,valid){
+ const p=num($("award-sim-price")),has=Number.isFinite(p)&&p>=0&&p<=1e6;
+ const v=valid&&has?n*(p-b):NaN;
+ put("award-sim-shares",valid?n.toLocaleString("en-HK"):"Enter shares in tracker");
+ put("award-sim-payout",valid?(has?money(v):"Enter price"):"Enter shares");
+ put("award-sim-value",valid&&has?money(n*p):"—");
+ put("award-sim-cost",valid?money(n*b):"—");
+ put("award-sim-net",valid&&has&&Number.isFinite(fee)&&fee>=0&&fee<=1e9?money(v-fee):"—");
+ put("award-sim-return",valid&&has&&b>0?((p-b)/b*100).toFixed(2)+"%":"—");
+ put("award-sim-sensitivity",valid?money(n)+" per HK$1":"—");
+ $("award-sim-payout").dataset.sign=Number.isFinite(v)?(v<0?"loss":"gain"):"neutral";
+}
 function render(){
  const p=observation?.price,n=num(shared),b=num(strike),fee=num(charge);
  const valid=Number.isInteger(n)&&n>0&&n<=1e8&&Number.isFinite(b)&&b>=0&&b<=1e6;
@@ -147,6 +178,7 @@ function render(){
  put("chart-award-return",valid&&has&&b>0?((p-b)/b*100).toFixed(2)+"%":"—");
  put("chart-award-sensitivity",valid?money(n)+" per HK$1":"—");
  $("chart-award-payout").dataset.sign=Number.isFinite(v)?(v<0?"loss":"gain"):"neutral";
+ renderSimulator(n,b,fee,valid);
  put("chart-award-source",observation?(observation.archive?"ARCHIVED · NOT CURRENT":observation.kind==="15m"?"DELAYED 15-MIN BAR":"DELAYED DAILY OBSERVATION")+" · "+timeFmt.format(new Date(observation.ts))+" HKT"+(dailyFailed||intradayFailed?" · latest refresh issue":""):"AWAITING VERIFIED 2259.HK DATA");
 }
 function accept(price,ts,kind,archive){
@@ -156,11 +188,19 @@ function accept(price,ts,kind,archive){
  observation={price,ts,kind,archive};render();
 }
 qty.value=shared.value;
-qty.addEventListener("input",()=>{shared.value=qty.value;shared.dispatchEvent(new Event("input",{bubbles:true}));render()});
-shared.addEventListener("input",()=>{if(qty.value!==shared.value)qty.value=shared.value;render()});
-for(const e of [strike,charge])e.addEventListener("input",render);
-$("reset-model")?.addEventListener("click",()=>{qty.value=shared.value;render()});
-$("chart-award-clear")?.addEventListener("click",()=>{qty.value="";shared.value="";shared.dispatchEvent(new Event("input",{bubbles:true}));render()});
+qty.addEventListener("input",()=>{syncQuantity(saved===null?qty.value:String(saved));render()});
+shared.addEventListener("input",()=>{if(saved!==null)shared.value=String(saved);if(qty.value!==shared.value)qty.value=shared.value;render()});
+for(const e of [strike,charge,$("award-sim-price")])e.addEventListener("input",render);
+$("reset-model")?.addEventListener("click",()=>{syncQuantity(saved===null?shared.value:String(saved));render()});
+$("chart-award-clear")?.addEventListener("click",()=>{if(forget()){syncQuantity("");render()}});
+save.addEventListener("click",()=>{
+ if(saved!==null){if(forget())qty.focus();return}
+ const n=num(shared);
+ if(!validQty(n)){put("chart-award-save-status","Enter a valid whole-number quantity first.");qty.focus();return}
+ try{localStorage.setItem(key,String(n));saved=n;showSaved()}catch{put("chart-award-save-status","Browser storage unavailable. Quantity stays in this tab.")}
+});
+showSaved();
+if(saved!==null)syncQuantity(String(saved));
 document.addEventListener("zgi:chart",e=>{
  const d=e.detail;if(!d||d.interval!=="15m"||d.archive)return;
  const last=d.bars?.[d.bars.length-1];if(!last)return;
