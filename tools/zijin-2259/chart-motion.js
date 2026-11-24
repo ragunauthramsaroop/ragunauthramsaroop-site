@@ -154,6 +154,9 @@ function forget(){
  saved=null;showSaved();return true;
 }
 function renderSimulator(n,b,fee,valid){
+ const override=$("award-sim-quantity");
+ if(override.value.trim()!=="")n=num(override);
+ valid=validQty(n)&&Number.isFinite(b)&&b>=0&&b<=1e6;
  const p=num($("award-sim-price")),has=Number.isFinite(p)&&p>=0&&p<=1e6;
  const v=valid&&has?n*(p-b):NaN;
  put("award-sim-shares",valid?n.toLocaleString("en-HK"):"Enter shares in tracker");
@@ -166,7 +169,7 @@ function renderSimulator(n,b,fee,valid){
  $("award-sim-payout").dataset.sign=Number.isFinite(v)?(v<0?"loss":"gain"):"neutral";
 }
 function render(){
- const p=observation?.price,n=num(shared),b=num(strike),fee=num(charge);
+ const p=Number.isFinite(observation?.price)?Math.round(observation.price*100)/100:NaN,n=num(shared),b=num(strike),fee=num(charge);
  const valid=Number.isInteger(n)&&n>0&&n<=1e8&&Number.isFinite(b)&&b>=0&&b<=1e6;
  const has=Number.isFinite(p)&&p>0;
  const v=valid&&has?n*(p-b):NaN;
@@ -190,7 +193,7 @@ function accept(price,ts,kind,archive){
 qty.value=shared.value;
 qty.addEventListener("input",()=>{syncQuantity(saved===null?qty.value:String(saved));render()});
 shared.addEventListener("input",()=>{if(saved!==null)shared.value=String(saved);if(qty.value!==shared.value)qty.value=shared.value;render()});
-for(const e of [strike,charge,$("award-sim-price")])e.addEventListener("input",render);
+for(const e of [strike,charge,$("award-sim-price"),$("award-sim-quantity")])e.addEventListener("input",render);
 $("reset-model")?.addEventListener("click",()=>{syncQuantity(saved===null?shared.value:String(saved));render()});
 $("chart-award-clear")?.addEventListener("click",()=>{if(forget()){syncQuantity("");render()}});
 save.addEventListener("click",()=>{
