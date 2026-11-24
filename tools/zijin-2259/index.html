@@ -210,6 +210,7 @@
 <aside class="chart-award-monitor" id="chart-award-monitor" aria-labelledby="chart-award-title">
 <p class="award-mini-eyebrow">PRIVATE SESSION · HKEX 2259</p><h4 id="chart-award-title">Personal payout tracker</h4>
 <div class="award-mini-input"><label for="chart-award-shares">Your award shares<input id="chart-award-shares" type="number" min="1" max="100000000" step="1" inputmode="numeric" autocomplete="off" placeholder="Enter shares"></label><button type="button" id="chart-award-clear">CLEAR</button></div>
+<button class="award-save" type="button" id="chart-award-save" aria-pressed="false">SAVE SHARES ON THIS DEVICE</button><p id="chart-award-save-status" class="award-mini-foot" role="status">Optional: save your quantity locally for future visits.</p>
 <div class="award-mini-kpi"><span>LATEST VERIFIED PRICE · HKD</span><strong id="chart-award-price">—</strong></div>
 <div class="award-mini-kpi" aria-live="polite"><span>ESTIMATED GROSS PAYOUT</span><strong id="chart-award-payout" data-sign="neutral">Enter shares</strong><span>Conditional on full vesting, before taxes and fees</span></div>
 <dl class="award-mini-rows">
@@ -221,8 +222,16 @@
 <div><dt>Payout sensitivity</dt><dd id="chart-award-sensitivity">—</dd></div>
 </dl>
 <p id="chart-award-source" role="status">AWAITING VERIFIED 2259.HK DATA</p>
-<p class="award-mini-foot">Updates with verified delayed observations, never historical replay. No licensed real-time feed is assumed. Not a payable or vested balance. Your quantity stays in this tab and is not stored or transmitted.</p>
+<p class="award-mini-foot">Updates with verified delayed observations, never historical replay. No licensed real-time feed is assumed. Not a payable or vested balance. Your quantity is not transmitted. Saving on this device is optional. Clear removes the saved quantity.</p>
 <a href="#settlement">Open award settlement model ↗</a>
+</aside>
+<aside class="chart-award-monitor award-simulator" aria-labelledby="award-sim-title">
+<p class="award-mini-eyebrow">PRIVATE HYPOTHETICAL MODEL</p><h4 id="award-sim-title">Stock price simulator</h4>
+<p class="award-mini-foot">Shares: <strong id="award-sim-shares">Enter shares in tracker</strong></p>
+<label for="award-sim-price">Your stock price (HKD)<input id="award-sim-price" type="number" min="0" max="1000000" step="0.01" inputmode="decimal" autocomplete="off" placeholder="Enter price"></label>
+<div class="award-mini-kpi" aria-live="polite"><span>ESTIMATED GROSS PAYOUT</span><strong id="award-sim-payout" data-sign="neutral">Enter price</strong><span>Conditional on full vesting, before taxes and fees</span></div>
+<dl class="award-mini-rows"><div><dt>Gross share value</dt><dd id="award-sim-value">—</dd></div><div><dt>Total purchase cost</dt><dd id="award-sim-cost">—</dd></div><div><dt>After entered fees</dt><dd id="award-sim-net">—</dd></div><div><dt>Return above cost</dt><dd id="award-sim-return">—</dd></div><div><dt>Payout sensitivity</dt><dd id="award-sim-sensitivity">—</dd></div></dl>
+<p class="award-mini-foot">Manual price only. Does not change market observations or chart. Shares and purchase price follow your local award inputs.</p>
 </aside></div>
               <div class="native-data-foot"><span id="market-chart-status">SOURCE: YAHOO FINANCE · DELAYED DATA</span><span id="market-chart-timestamp">Timestamp pending</span></div>
               <div class="motion-market-strip"><span>15-minute provider-delayed OHLC bars checked each minute. Historical replay is optional and never shows live trades.</span><span id="motion-next-check">NEXT AUTOMATIC DATA CHECK 3:00</span></div>
@@ -370,10 +379,10 @@
         </section>
 
         <section id="settlement" class="section" aria-labelledby="settlement-heading">
-          <div class="section-head"><div><p class="section-kicker">05 / PRIVATE-IN-THIS-SESSION CALCULATOR</p><h2 id="settlement-heading">Award settlement laboratory</h2><p>Model a vested share award using the publicly disclosed HK$87.48 purchase price. Enter your own share count privately; nothing is saved or transmitted by this calculator.</p></div><span class="section-index">05</span></div>
+          <div class="section-head"><div><p class="section-kicker">05 / PRIVATE-IN-THIS-SESSION CALCULATOR</p><h2 id="settlement-heading">Award settlement laboratory</h2><p>Model a vested share award using the publicly disclosed HK$87.48 purchase price. Enter your own share count privately. Only an explicitly saved share count is retained on this device; no personal inputs are transmitted.</p></div><span class="section-index">05</span></div>
           <div class="calculator-grid">
             <article class="panel calculator-inputs">
-              <div class="panel-heading"><div><p class="eyebrow">PERSONAL INPUTS / LOCAL ONLY</p><h3>Define your position</h3></div><span class="privacy-tag">NO STORAGE</span></div>
+              <div class="panel-heading"><div><p class="eyebrow">PERSONAL INPUTS / LOCAL ONLY</p><h3>Define your position</h3></div><span class="privacy-tag">LOCAL ONLY</span></div>
               <form id="award-form" novalidate autocomplete="off">
                 <label for="shares">Number of award shares <span>Enter private quantity</span></label>
                 <input id="shares" name="shares" type="number" min="0" max="100000000" step="1" value="" placeholder="Enter your shares" inputmode="numeric">
@@ -539,7 +548,7 @@
             <article class="panel"><span class="governance-icon">01</span><h3>Market widgets</h3><p>Yahoo Finance OHLC history is retrieved by a read-only Vercel API with symbol verification and provider quote timestamp. Data availability, delay and downstream usage rights remain subject to Yahoo and HKEX terms. Chart computation runs locally.</p></article>
             <article class="panel"><span class="governance-icon">02</span><h3>Historical references</h3><p>Live-data-labelled KPIs use the newest available 2259.HK, 2899.HK and GC=F provider observations with timestamps. Historical published mining targets and incentive-plan prices are labelled reference assumptions, never live data.</p></article>
             <article class="panel"><span class="governance-icon">03</span><h3>Scenario modelling</h3><p>2027–2029 prices recalculate from validated delayed stock and gold feeds plus your editable assumptions. Market-linked models remain hypothetical sensitivity outputs, not analyst consensus or guaranteed returns.</p></article>
-            <article class="panel"><span class="governance-icon">04</span><h3>Privacy</h3><p>No account, cookie, tracker or browser storage is used by the award calculator. Personal share counts never leave the browser. Separate read-only market-data requests retrieve only fixed public symbols.</p></article>
+            <article class="panel"><span class="governance-icon">04</span><h3>Privacy</h3><p>No account or tracker is used by the award calculator. Personal share counts never leave the browser. Optional device-local storage retains only the share quantity until cleared. Separate read-only market-data requests retrieve only fixed public symbols.</p></article>
           </div>
           <div class="closing-banner"><div><p class="eyebrow">MARKET-DATA INTEGRITY</p><h2>Precision in evidence.<br><em>Discipline in interpretation.</em></h2><p>Prices, forecasts and awards require different standards of proof. No chart removes the risks of market losses, award forfeiture, taxes or clawback.</p></div><a href="#overview" class="button button-gold">RETURN TO OVERVIEW ↑</a></div>
         </section>
